@@ -1,0 +1,15 @@
+# Replace this placeholder with a local AI-TOD-v2 YOLO-format root.
+path: /path/to/AI-TOD-v2-YOLO
+train: train/images
+val: val/images
+
+names:
+  0: airplane
+  1: bridge
+  2: storage-tank
+  3: ship
+  4: swimming-pool
+  5: vehicle
+  6: person
+  7: wind-mill
+

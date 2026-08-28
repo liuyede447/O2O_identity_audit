@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "protocol": "random_image_stratified_active_identity_v1",
+  "selection_before_inference": true,
+  "outcome_blind_selection": true,
+  "seed": 20260823,
+  "requested_images": 300,
+  "dataset_total_images": 548,
+  "eligible_images": 537,
+  "stratum_population_counts": {
+    "t_only": 4,
+    "s_only": 24,
+    "t_and_s": 509
+  },
+  "stratum_sample_allocation": {
+    "t_only": 2,
+    "s_only": 14,
+    "t_and_s": 284
+  },
+  "checkpoint": "runs/detect/experiments/p2_protocol_visdrone_b4/yolo26s_visdrone_p3baseline_native_b4_e150_s0/weights/best.pt",
+  "checkpoint_sha256": "e7cffd98c6055bb0818873f94e6566feb697660ec5666f21f13c6304b412d0e8",
+  "data": "configs/visdrone_server.yaml",
+  "imgsz": 800,
+  "selected_images": 300,
+  "audited_gt_by_bin": {
+    "s_16_32": 6446,
+    "t_8_16": 8106
+  },
+  "records": 58002,
+  "elapsed_sec": 125.25735175423324
+}

@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "protocol": "ipw_o2m_toprank_descriptive_v1",
+  "estimand_warning": "Not an O2O loss-active identity.",
+  "scale_rows": [
+    {
+      "size_bin": "all",
+      "raw_n": 7434,
+      "raw_valid_n": 6421,
+      "weighted_invalid_rank_margin_rate": 0.1361934782174702,
+      "weighted_rank_fragility_rate_valid": 0.7311509351094364,
+      "weighted_set_instability_valid": 0.1178529960070321,
+      "weighted_post_nms_fn_rate_valid": 0.09344934944291111
+    },
+    {
+      "size_bin": "s_16_32",
+      "raw_n": 992,
+      "raw_valid_n": 992,
+      "weighted_invalid_rank_margin_rate": 0.0,
+      "weighted_rank_fragility_rate_valid": 0.7166632884975248,
+      "weighted_set_instability_valid": 0.09760046259470816,
+      "weighted_post_nms_fn_rate_valid": 0.13915357974869022
+    },
+    {
+      "size_bin": "t_8_16",
+      "raw_n": 6442,
+      "raw_valid_n": 5429,
+      "weighted_invalid_rank_margin_rate": 0.15718831791537735,
+      "weighted_rank_fragility_rate_valid": 0.7338007988890289,
+      "weighted_set_instability_valid": 0.12155728671571106,
+      "weighted_post_nms_fn_rate_valid": 0.08508981475052356
+    }
+  ]
+}

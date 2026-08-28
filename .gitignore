@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.onnx
+*.engine
+*.log
+.DS_Store
+.idea/
+.vscode/
+runs/
+outputs/
+data/raw/
+data/external/
+

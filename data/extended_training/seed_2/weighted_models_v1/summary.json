@@ -1,0 +1,154 @@
+{
+  "status": "complete",
+  "protocol": "inverse_probability_weighted_stratified_cluster_bootstrap_v1",
+  "sources": {
+    "selected_images": {
+      "path": "runs/audit/extended_training_e300_s2_v1/o2o/selected_images.csv",
+      "sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+    },
+    "audit": {
+      "path": "runs/audit/extended_training_e300_s2_v1/o2o/per_gt.csv",
+      "sha256": "2702a779847607a2da18ea697c32bb8e6dc3d4b2a6a2112cd7f0de2b57c125a3"
+    },
+    "outcomes": {
+      "path": "runs/audit/extended_training_e300_s2_v1/o2o/outcomes/per_gt_outcomes.csv",
+      "sha256": "948c854d6b6421afc7c7928dfbf1134c3c5b8e2a059e03310d2dee6ea3782f46"
+    }
+  },
+  "valid_invalid_boundary": {
+    "all": {
+      "raw_total": 7434,
+      "raw_valid": 6416,
+      "weighted_total": 327665.42173913517,
+      "weighted_valid": 282819.9478261055,
+      "raw_invalid_rate": 0.1369383911756793,
+      "weighted_invalid_rate": 0.13686361433869132
+    },
+    "s_16_32": {
+      "raw_total": 992,
+      "raw_valid": 992,
+      "weighted_total": 43764.59456521691,
+      "weighted_valid": 43764.59456521691,
+      "raw_invalid_rate": 0.0,
+      "weighted_invalid_rate": 0.0
+    },
+    "t_8_16": {
+      "raw_total": 6442,
+      "raw_valid": 5424,
+      "weighted_total": 283900.8271739255,
+      "weighted_valid": 239055.35326088945,
+      "raw_invalid_rate": 0.15802545793231915,
+      "weighted_invalid_rate": 0.1579617585459253
+    }
+  },
+  "margin_to_flip_any": {
+    "outcome": "flip",
+    "n_gt": 6416,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260823,
+      "margin_OR_median": 0.0035194572222864255,
+      "margin_OR_percentile_CI_95": [
+        0.0023708704084148637,
+        0.0050317609440600816
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": 8.387014850668331,
+        "OR": 4389.694223439728,
+        "wald_ci_95": [
+          3806.935556424402,
+          5061.660511374294
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": -5.644654274479885,
+        "OR": 0.0035363708034349926,
+        "wald_ci_95": [
+          0.0033519538898086495,
+          0.0037309339180979523
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": -0.9023527513270986,
+        "OR": 0.4056142268228473,
+        "wald_ci_95": [
+          0.3941892516013109,
+          0.4173703375542498
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": -0.16734505736886354,
+        "OR": 0.8459076742961772,
+        "wald_ci_95": [
+          0.8387197389631935,
+          0.8531572111534256
+        ]
+      }
+    ]
+  },
+  "margin_to_fn": {
+    "outcome": "fn",
+    "n_gt": 6416,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260823,
+      "margin_OR_median": 0.13486000621267066,
+      "margin_OR_percentile_CI_95": [
+        0.09028048236638175,
+        0.19374306442449096
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": -3.068583800059498,
+        "OR": 0.04648694306781268,
+        "wald_ci_95": [
+          0.03990751141918901,
+          0.054151105868028425
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": -1.9976950166921752,
+        "OR": 0.1356475885964817,
+        "wald_ci_95": [
+          0.1295583511673774,
+          0.14202301994619335
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": 0.5375167047398899,
+        "OR": 1.7117507971978585,
+        "wald_ci_95": [
+          1.6549597432742342,
+          1.7704906742386999
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": -0.060718762936873415,
+        "OR": 0.9410878713512448,
+        "wald_ci_95": [
+          0.932877514075054,
+          0.9493704888819552
+        ]
+      }
+    ]
+  }
+}

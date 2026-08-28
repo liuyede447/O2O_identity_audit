@@ -1,0 +1,154 @@
+{
+  "status": "complete",
+  "protocol": "inverse_probability_weighted_stratified_cluster_bootstrap_v1",
+  "sources": {
+    "selected_images": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/selected_images.csv",
+      "sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+    },
+    "audit": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/per_gt.csv",
+      "sha256": "7ef54c7af3ced71373fa6a9633189f4d0b29d9739fbf5ec1340b044d07736f17"
+    },
+    "outcomes": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/outcomes/per_gt_outcomes.csv",
+      "sha256": "2c0898daff72c5e848881444b1d89b08b29b24d324a675fa4fc2ba1bef40ce79"
+    }
+  },
+  "valid_invalid_boundary": {
+    "all": {
+      "raw_total": 7434,
+      "raw_valid": 6386,
+      "weighted_total": 327665.42173913517,
+      "weighted_valid": 281497.6423913228,
+      "raw_invalid_rate": 0.14097390368576812,
+      "weighted_invalid_rate": 0.14089914981803597
+    },
+    "s_16_32": {
+      "raw_total": 992,
+      "raw_valid": 991,
+      "weighted_total": 43764.59456521691,
+      "weighted_valid": 43720.4641304343,
+      "raw_invalid_rate": 0.0010080645161290036,
+      "weighted_invalid_rate": 0.0010083592735412594
+    },
+    "t_8_16": {
+      "raw_total": 6442,
+      "raw_valid": 5395,
+      "weighted_total": 283900.8271739255,
+      "weighted_valid": 237777.1782608891,
+      "raw_invalid_rate": 0.1625271654765601,
+      "weighted_invalid_rate": 0.16246394690769883
+    }
+  },
+  "margin_to_flip_any": {
+    "outcome": "flip",
+    "n_gt": 6386,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260823,
+      "margin_OR_median": 0.002369451223640982,
+      "margin_OR_percentile_CI_95": [
+        0.0015338797814836173,
+        0.0035906779750025826
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": 10.18611050581081,
+        "OR": 26532.09750966659,
+        "wald_ci_95": [
+          22854.211274467645,
+          30801.85922009481
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": -6.031469858553527,
+        "OR": 0.002401960839962723,
+        "wald_ci_95": [
+          0.0022762684139579293,
+          0.0025345938296805195
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": -1.200506799812132,
+        "OR": 0.30104160541592795,
+        "wald_ci_95": [
+          0.2922747987265103,
+          0.31007137319492467
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": -0.14876332713856136,
+        "OR": 0.8617730490585972,
+        "wald_ci_95": [
+          0.854331635550414,
+          0.8692792788895004
+        ]
+      }
+    ]
+  },
+  "margin_to_fn": {
+    "outcome": "fn",
+    "n_gt": 6386,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260823,
+      "margin_OR_median": 0.1940598169847958,
+      "margin_OR_percentile_CI_95": [
+        0.13299010293232577,
+        0.30381275394917
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": -2.3943370193532876,
+        "OR": 0.09123314468583309,
+        "wald_ci_95": [
+          0.07837375700097036,
+          0.10620247143649245
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": -1.6486304726969652,
+        "OR": 0.19231310640129093,
+        "wald_ci_95": [
+          0.18414488132218876,
+          0.20084365434521462
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": 0.35513702408025105,
+        "OR": 1.4263760887632142,
+        "wald_ci_95": [
+          1.3789986799167917,
+          1.4753812140836917
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": -0.07250022026929245,
+        "OR": 0.930065541795377,
+        "wald_ci_95": [
+          0.9217623253879546,
+          0.9384435534084721
+        ]
+      }
+    ]
+  }
+}

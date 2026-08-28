@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "protocol": "ipw_descriptive_class_scale_v1",
+  "inference_note": "Descriptive IPW rates only; primary inference remains the adjusted image-cluster bootstrap model.",
+  "small_cell_rule": "raw_valid_n < 100",
+  "sources": {
+    "selected_images": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/selected_images.csv",
+      "sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+    },
+    "audit": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/per_gt.csv",
+      "sha256": "7ef54c7af3ced71373fa6a9633189f4d0b29d9739fbf5ec1340b044d07736f17"
+    },
+    "outcomes": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/outcomes/per_gt_outcomes.csv",
+      "sha256": "2c0898daff72c5e848881444b1d89b08b29b24d324a675fa4fc2ba1bef40ce79"
+    },
+    "manifest": {
+      "path": "runs/audit/yolov10s_aitod_phenomenon_audit_v1_formal300/sampling_manifest.json",
+      "sha256": "7c9003fed8eeb25010217bf819972f495cc0ccbfb1cd37ed13d61e0243af7155"
+    },
+    "data": {
+      "path": "configs/aitod_v2.yaml",
+      "sha256": "1f5a0e11a28c9f77e95576120aa4e278d2d0a965f4c65c334d7bfafedeeef00e"
+    }
+  },
+  "scale_rows": [
+    {
+      "size_bin": "all",
+      "raw_n": 7434,
+      "raw_valid_n": 6386,
+      "weighted_n": 327665.42173913517,
+      "weighted_valid_n": 281497.6423913228,
+      "weighted_invalid_rate": 0.14089914981803597,
+      "weighted_fragility_rate_valid": 0.22416080278315403,
+      "weighted_fn_rate_valid": 0.10009333385759957,
+      "weighted_fn_rate_all": 0.10480641294930655,
+      "weighted_margin_mean_valid": 0.8567580797247919,
+      "weighted_margin_median_valid": 0.971490175475067,
+      "small_valid_cell": false
+    },
+    {
+      "size_bin": "s_16_32",
+      "raw_n": 992,
+      "raw_valid_n": 991,
+      "weighted_n": 43764.59456521691,
+      "weighted_valid_n": 43720.4641304343,
+      "weighted_invalid_rate": 0.0010083592735412594,
+      "weighted_fragility_rate_valid": 0.09589082338742623,
+      "weighted_fn_rate_valid": 0.15039718615501588,
+      "weighted_fn_rate_all": 0.15125389103118317,
+      "weighted_margin_mean_valid": 0.8575874499607827,
+      "weighted_margin_median_valid": 0.9763912617331933,
+      "small_valid_cell": false
+    },
+    {
+      "size_bin": "t_8_16",
+      "raw_n": 6442,
+      "raw_valid_n": 5395,
+      "weighted_n": 283900.8271739255,
+      "weighted_valid_n": 237777.1782608891,
+      "weighted_invalid_rate": 0.16246394690769883,
+      "weighted_fragility_rate_valid": 0.2477460058467965,
+      "weighted_fn_rate_valid": 0.09084388533576127,
+      "weighted_fn_rate_all": 0.09764632445268195,
+      "weighted_margin_mean_valid": 0.8566055821137147,
+      "weighted_margin_median_valid": 0.9708008569835399,
+      "small_valid_cell": false
+    }
+  ],
+  "class_scale_cells": 16,
+  "small_class_scale_cells": 12
+}

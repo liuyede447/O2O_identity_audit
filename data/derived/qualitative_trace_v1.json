@@ -1,0 +1,366 @@
+{
+  "status": "complete",
+  "protocol": "o2o_qualitative_trace_v1",
+  "checkpoint_sha256": "50922eca528550ded68e24203907552b48b4ce1fcebfc37c5187e077e7ef95d3",
+  "image_id": "0000170_00401_d_0000001__160_0",
+  "image_path": "AI-TOD-v2/val/images/0000170_00401_d_0000001__160_0.png",
+  "input_hw": [
+    800,
+    800
+  ],
+  "records": [
+    {
+      "gt_id": 45,
+      "class_id": 6,
+      "gt_xyxy": [
+        369.0,
+        379.0000305175781,
+        379.0,
+        401.0000305175781
+      ],
+      "native": {
+        "candidate": 11223,
+        "alignment_score": 0.12112757563591003,
+        "stride": 16,
+        "anchor_xy": [
+          376.0,
+          392.0
+        ],
+        "decoded_xyxy": [
+          370.24871826171875,
+          378.5748291015625,
+          379.2420349121094,
+          401.107177734375
+        ]
+      },
+      "runner_up": {
+        "candidate": 4846,
+        "alignment_score": 0.0002585187030490488,
+        "stride": 8,
+        "anchor_xy": [
+          372.0,
+          388.0
+        ],
+        "decoded_xyxy": [
+          364.86553955078125,
+          376.2538757324219,
+          373.83612060546875,
+          400.31524658203125
+        ]
+      },
+      "margin": 0.9978657320375669,
+      "replays": [
+        {
+          "state": "left_1px",
+          "active_identity": 11223,
+          "runner_up": 4846,
+          "margin": 0.9509927872573486,
+          "active": {
+            "candidate": 11223,
+            "alignment_score": 0.032610755413770676,
+            "stride": 16,
+            "anchor_xy": [
+              376.0,
+              392.0
+            ],
+            "decoded_xyxy": [
+              370.24871826171875,
+              378.5748291015625,
+              379.2420349121094,
+              401.107177734375
+            ]
+          }
+        },
+        {
+          "state": "right_1px",
+          "active_identity": 11223,
+          "runner_up": 4846,
+          "margin": 0.9998480529808792,
+          "active": {
+            "candidate": 11223,
+            "alignment_score": 0.16513888537883759,
+            "stride": 16,
+            "anchor_xy": [
+              376.0,
+              392.0
+            ],
+            "decoded_xyxy": [
+              370.24871826171875,
+              378.5748291015625,
+              379.2420349121094,
+              401.107177734375
+            ]
+          }
+        },
+        {
+          "state": "up_1px",
+          "active_identity": 11223,
+          "runner_up": 4846,
+          "margin": 0.9960716570741277,
+          "active": {
+            "candidate": 11223,
+            "alignment_score": 0.09003213047981262,
+            "stride": 16,
+            "anchor_xy": [
+              376.0,
+              392.0
+            ],
+            "decoded_xyxy": [
+              370.24871826171875,
+              378.5748291015625,
+              379.2420349121094,
+              401.107177734375
+            ]
+          }
+        },
+        {
+          "state": "down_1px",
+          "active_identity": 11223,
+          "runner_up": 4846,
+          "margin": 0.9979292643516755,
+          "active": {
+            "candidate": 11223,
+            "alignment_score": 0.0761134922504425,
+            "stride": 16,
+            "anchor_xy": [
+              376.0,
+              392.0
+            ],
+            "decoded_xyxy": [
+              370.24871826171875,
+              378.5748291015625,
+              379.2420349121094,
+              401.107177734375
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "gt_id": 16,
+      "class_id": 6,
+      "gt_xyxy": [
+        237.0,
+        333.0,
+        246.0,
+        345.0
+      ],
+      "native": {
+        "candidate": 4230,
+        "alignment_score": 0.026113828644156456,
+        "stride": 8,
+        "anchor_xy": [
+          244.0,
+          340.0
+        ],
+        "decoded_xyxy": [
+          237.30775451660156,
+          332.1037902832031,
+          247.86183166503906,
+          348.4406433105469
+        ]
+      },
+      "runner_up": {
+        "candidate": 12757,
+        "alignment_score": 0.025609102100133896,
+        "stride": 32,
+        "anchor_xy": [
+          240.0,
+          336.0
+        ],
+        "decoded_xyxy": [
+          237.7420654296875,
+          332.8119201660156,
+          245.8675079345703,
+          346.1454162597656
+        ]
+      },
+      "margin": 0.019327941179401738,
+      "replays": [
+        {
+          "state": "left_1px",
+          "active_identity": 12757,
+          "runner_up": 4230,
+          "margin": -0.018060227259576622,
+          "active": {
+            "candidate": 12757,
+            "alignment_score": 0.007449326571077108,
+            "stride": 32,
+            "anchor_xy": [
+              240.0,
+              336.0
+            ],
+            "decoded_xyxy": [
+              237.7420654296875,
+              332.8119201660156,
+              245.8675079345703,
+              346.1454162597656
+            ]
+          }
+        },
+        {
+          "state": "right_1px",
+          "active_identity": 4230,
+          "runner_up": 12757,
+          "margin": 0.5265844672295734,
+          "active": {
+            "candidate": 4230,
+            "alignment_score": 0.03775440528988838,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              340.0
+            ],
+            "decoded_xyxy": [
+              237.30775451660156,
+              332.1037902832031,
+              247.86183166503906,
+              348.4406433105469
+            ]
+          }
+        },
+        {
+          "state": "up_1px",
+          "active_identity": 4230,
+          "runner_up": 12757,
+          "margin": 0.4745283389609217,
+          "active": {
+            "candidate": 4230,
+            "alignment_score": 0.02183734066784382,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              340.0
+            ],
+            "decoded_xyxy": [
+              237.30775451660156,
+              332.1037902832031,
+              247.86183166503906,
+              348.4406433105469
+            ]
+          }
+        },
+        {
+          "state": "down_1px",
+          "active_identity": 4230,
+          "runner_up": 12757,
+          "margin": 0.05987421162973184,
+          "active": {
+            "candidate": 4230,
+            "alignment_score": 0.027207203209400177,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              340.0
+            ],
+            "decoded_xyxy": [
+              237.30775451660156,
+              332.1037902832031,
+              247.86183166503906,
+              348.4406433105469
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "gt_id": 17,
+      "class_id": 6,
+      "gt_xyxy": [
+        243.0,
+        312.0,
+        251.0,
+        324.0
+      ],
+      "native": {
+        "candidate": 3930,
+        "alignment_score": 0.06573237478733063,
+        "stride": 8,
+        "anchor_xy": [
+          244.0,
+          316.0
+        ],
+        "decoded_xyxy": [
+          244.56475830078125,
+          312.8134460449219,
+          251.16134643554688,
+          324.10943603515625
+        ]
+      },
+      "runner_up": null,
+      "margin": null,
+      "replays": [
+        {
+          "state": "left_1px",
+          "active_identity": 3930,
+          "runner_up": null,
+          "margin": null,
+          "active": {
+            "candidate": 3930,
+            "alignment_score": 0.010897216387093067,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              316.0
+            ],
+            "decoded_xyxy": [
+              244.56475830078125,
+              312.8134460449219,
+              251.16134643554688,
+              324.10943603515625
+            ]
+          }
+        },
+        {
+          "state": "right_1px",
+          "active_identity": null,
+          "runner_up": null,
+          "margin": null,
+          "active": null
+        },
+        {
+          "state": "up_1px",
+          "active_identity": 3930,
+          "runner_up": 10965,
+          "margin": 0.7121375388155712,
+          "active": {
+            "candidate": 3930,
+            "alignment_score": 0.023663267493247986,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              316.0
+            ],
+            "decoded_xyxy": [
+              244.56475830078125,
+              312.8134460449219,
+              251.16134643554688,
+              324.10943603515625
+            ]
+          }
+        },
+        {
+          "state": "down_1px",
+          "active_identity": 3930,
+          "runner_up": 4030,
+          "margin": 0.47188786856014026,
+          "active": {
+            "candidate": 3930,
+            "alignment_score": 0.06099683791399002,
+            "stride": 8,
+            "anchor_xy": [
+              244.0,
+              316.0
+            ],
+            "decoded_xyxy": [
+              244.56475830078125,
+              312.8134460449219,
+              251.16134643554688,
+              324.10943603515625
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

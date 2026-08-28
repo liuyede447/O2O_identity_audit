@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this audit package, please cite the repository release and the associated manuscript."
+title: "Loss-active O2O identity audit"
+type: software
+version: 1.0.0
+date-released: 2026-08-27
+url: "https://github.com/liuyede447/o2o-identity-audit"
+repository-code: "https://github.com/liuyede447/o2o-identity-audit"
+authors:
+  - family-names: Liu
+    given-names: Yede
+    orcid: "https://orcid.org/0009-0004-1760-860X"
+    affiliation: "Sichuan Normal University"
+  - family-names: Wang
+    given-names: Fang
+    email: "fang66320@gmail.com"
+    affiliation: "Sichuan Normal University"
+  - family-names: Li
+    given-names: Jun
+    affiliation: "Sichuan Normal University"
+keywords:
+  - tiny-object detection
+  - one-to-one assignment
+  - assignment stability
+  - aerial imagery
+  - reproducibility

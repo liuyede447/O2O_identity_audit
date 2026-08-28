@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "protocol": "random_image_stratified_o2m_toprank_replay_v1",
+  "estimand": "native O2M top-ranked alignment candidate",
+  "not_o2o_loss_active_identity": true,
+  "selection_before_inference": true,
+  "outcome_blind_selection": true,
+  "seed": 20260823,
+  "requested_images": 300,
+  "dataset_total_images": 14018,
+  "eligible_images": 13184,
+  "stratum_population_counts": {
+    "t_only": 7018,
+    "s_only": 76,
+    "t_and_s": 6090
+  },
+  "stratum_sample_allocation": {
+    "t_only": 160,
+    "s_only": 2,
+    "t_and_s": 138
+  },
+  "checkpoint": "runs/detect/experiments/p2_protocol_aitod_b4/yolo26s_aitodv2_p3baseline_native_b4_e100_s0/weights/best.pt",
+  "checkpoint_sha256": "50922eca528550ded68e24203907552b48b4ce1fcebfc37c5187e077e7ef95d3",
+  "data": "configs/aitod_v2.yaml",
+  "imgsz": 800,
+  "model_contract": "yolo26_o2m",
+  "head": "Detect",
+  "end2end": true,
+  "reg_max": 1,
+  "o2m_topk": 10,
+  "inference_postprocess": "O2O NMS-free; audited O2M branch is training-only",
+  "selected_images": 300,
+  "focal_gt_by_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "audited_gt_by_bin": {
+    "s_16_32": 992,
+    "t_8_16": 6442
+  },
+  "excluded_no_legal_replay_by_bin": {
+    "t_8_16": 7,
+    "s_16_32": 3
+  },
+  "records": 29616,
+  "elapsed_sec": 63.77274706680328
+}

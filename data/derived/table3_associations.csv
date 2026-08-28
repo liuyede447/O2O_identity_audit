@@ -1,0 +1,6 @@
+dataset,outcome,n_gt,image_clusters,bootstrap_median_or_per_0p1,ci_low,ci_high
+AI-TOD-v2,Any-direction fragility,6429,288,0.5516,0.5268,0.5750
+VisDrone,Any-direction fragility,13954,300,0.4987,0.4846,0.5118
+AI-TOD-v2,FN@IoU50,6429,288,0.8220,0.7940,0.8527
+VisDrone,FN@IoU50,13954,300,0.8907,0.8734,0.9069
+

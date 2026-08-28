@@ -1,0 +1,155 @@
+{
+  "status": "complete",
+  "protocol": "o2m_toprank_ipw_stratified_cluster_bootstrap_v1",
+  "estimand_warning": "O2M top-ranked alignment candidate is not an O2O loss-active identity.",
+  "sources": {
+    "selected_images": {
+      "path": "runs/audit/yolo26_same_model_o2m_o2o_specificity_v1_formal300/selected_images.csv",
+      "sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+    },
+    "audit": {
+      "path": "runs/audit/yolo26_same_model_o2m_o2o_specificity_v1_formal300/per_gt.csv",
+      "sha256": "185f28989b0c96f1a5579f63a13b0edd20f3933c2ecb0f8cab047863126a32f7"
+    },
+    "outcomes": {
+      "path": "runs/audit/yolo26_same_model_o2m_o2o_specificity_v1_formal300/outcomes/per_gt_outcomes.csv",
+      "sha256": "a613fe458e77e6cc04ff737afae26559d281582841a147442ba330d1842a8eed"
+    }
+  },
+  "rank_margin_boundary": {
+    "all": {
+      "raw_total": 7434,
+      "raw_valid": 6421,
+      "weighted_total": 327665.42173913517,
+      "weighted_valid": 283039.52826088807,
+      "raw_invalid_rate": 0.13626580575733116,
+      "weighted_invalid_rate": 0.1361934782174702
+    },
+    "s_16_32": {
+      "raw_total": 992,
+      "raw_valid": 992,
+      "weighted_total": 43764.59456521691,
+      "weighted_valid": 43764.59456521691,
+      "raw_invalid_rate": 0.0,
+      "weighted_invalid_rate": 0.0
+    },
+    "t_8_16": {
+      "raw_total": 6442,
+      "raw_valid": 5429,
+      "weighted_total": 283900.8271739255,
+      "weighted_valid": 239274.93369567193,
+      "raw_invalid_rate": 0.15724930145917415,
+      "weighted_invalid_rate": 0.15718831791537735
+    }
+  },
+  "rank_margin_to_flip_any": {
+    "outcome": "flip",
+    "n_gt": 6421,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260823,
+      "margin_OR_median": 0.04005514544714228,
+      "margin_OR_percentile_CI_95": [
+        0.02530543691934664,
+        0.060008130777626234
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": 5.982109576453238,
+        "OR": 396.2754603803897,
+        "wald_ci_95": [
+          351.7677486392382,
+          446.4145479713636
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": -3.198513535295311,
+        "OR": 0.04082284061180799,
+        "wald_ci_95": [
+          0.03929677748720777,
+          0.04240816734042823
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": -0.912863581726967,
+        "OR": 0.40137321181634267,
+        "wald_ci_95": [
+          0.3912055402424874,
+          0.41180514740131013
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": 0.1464956746921157,
+        "OR": 1.15776992309625,
+        "wald_ci_95": [
+          1.149992472936626,
+          1.1655999724966593
+        ]
+      }
+    ]
+  },
+  "rank_margin_to_post_nms_fn": {
+    "outcome": "fn",
+    "n_gt": 6421,
+    "n_images": 288,
+    "sampling_weight": "inverse image inclusion probability",
+    "bootstrap": {
+      "unit": "image_id within image stratum",
+      "replicates_requested": 5000,
+      "replicates_ok": 5000,
+      "seed": 20260824,
+      "margin_OR_median": 14.909742666725345,
+      "margin_OR_percentile_CI_95": [
+        9.650678853199187,
+        24.826150083168546
+      ]
+    },
+    "terms": [
+      {
+        "term": "intercept",
+        "coef": -4.361056002949857,
+        "OR": 0.012764900756835996,
+        "wald_ci_95": [
+          0.010889872463178499,
+          0.014962773153021207
+        ]
+      },
+      {
+        "term": "margin",
+        "coef": 2.6858948916037235,
+        "OR": 14.671324752725702,
+        "wald_ci_95": [
+          14.020205340600707,
+          15.3526831291559
+        ]
+      },
+      {
+        "term": "log_area",
+        "coef": 0.17540487895864534,
+        "OR": 1.191728624791901,
+        "wald_ci_95": [
+          1.1510259089589432,
+          1.2338706749293986
+        ]
+      },
+      {
+        "term": "native_o2m_positive_count",
+        "coef": 0.10629563279072281,
+        "OR": 1.1121506161013768,
+        "wald_ci_95": [
+          1.101939122022892,
+          1.122456738466698
+        ]
+      }
+    ]
+  }
+}

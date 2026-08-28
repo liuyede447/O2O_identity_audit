@@ -1,0 +1,43 @@
+{
+  "version": "CURRENT_FACTS_20260825_V1",
+  "figure_1": {
+    "detector": "YOLO26s",
+    "o2m_topk": 10,
+    "o2o_pre_topk": 7,
+    "o2o_post_topk": 1,
+    "regression": "direct LTRB",
+    "inference": "native NMS-free O2O",
+    "input_asset": "../assets/aitod_15324_input_detail.png"
+  },
+  "figure_2": {
+    "same_model_common_valid": {
+      "n_gt": 6393,
+      "o2m_gradient_pp": 1.69,
+      "o2m_ci_pp": [-3.47, 6.60],
+      "o2o_gradient_pp": 15.06,
+      "o2o_ci_pp": [11.75, 18.29],
+      "excess_gradient_pp": 13.37,
+      "excess_ci_pp": [7.29, 19.91]
+    },
+    "population_contrasts": [
+      {"dataset": "AI-TOD-v2", "estimand": "O2O fragility", "point_pp": 15.10, "ci_pp": [11.79, 18.33]},
+      {"dataset": "VisDrone", "estimand": "O2O fragility", "point_pp": 24.56, "ci_pp": [22.99, 26.10]},
+      {"dataset": "AI-TOD-v2", "estimand": "Undefined competition", "point_pp": 15.48, "ci_pp": [12.78, 18.84]},
+      {"dataset": "VisDrone", "estimand": "Undefined competition", "point_pp": 7.07, "ci_pp": [6.46, 7.71]}
+    ],
+    "margin_associations_per_0p1": [
+      {"dataset": "AI-TOD-v2", "outcome": "Fragility", "or": 0.5516, "ci": [0.5268, 0.5750], "n_gt": 6429},
+      {"dataset": "VisDrone", "outcome": "Fragility", "or": 0.4987, "ci": [0.4846, 0.5118], "n_gt": 13954},
+      {"dataset": "AI-TOD-v2", "outcome": "FN@IoU50", "or": 0.8220, "ci": [0.7940, 0.8527], "n_gt": 6429},
+      {"dataset": "VisDrone", "outcome": "FN@IoU50", "or": 0.8907, "ci": [0.8734, 0.9069], "n_gt": 13954}
+    ]
+  },
+  "figure_3": {
+    "image_asset": "../assets/0000170_00401_d_0000001__160_0.png",
+    "trace_asset": "../assets/qualitative_trace_v1.json",
+    "image_id": "0000170_00401_d_0000001__160_0",
+    "checkpoint_sha256": "50922eca528550ded68e24203907552b48b4ce1fcebfc37c5187e077e7ef95d3",
+    "cases": {"stable_gt": 45, "fragile_gt": 16, "undefined_gt": 17}
+  }
+}
+

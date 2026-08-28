@@ -1,0 +1,9 @@
+dataset_scope,estimand,point_estimate,unit,ci_low,ci_high
+AI-TOD-v2,O2O fragility scale contrast,15.10,percentage points,11.79,18.33
+VisDrone,O2O fragility scale contrast,24.56,percentage points,22.99,26.10
+AI-TOD-v2,undefined-competition scale contrast,15.48,percentage points,12.78,18.84
+VisDrone,undefined-competition scale contrast,7.07,percentage points,6.46,7.71
+YOLO26 common-valid,paired O2O-minus-O2M specificity contrast,13.37,percentage points,7.29,19.91
+AI-TOD-v2,fragility-FN adjusted OR,2.409,odds ratio,1.973,2.973
+VisDrone,fragility-FN adjusted OR,2.164,odds ratio,1.938,2.437
+YOLO26 strict same-stride,paired O2O-minus-O2M specificity contrast,10.35,percentage points,3.54,18.17

@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "protocol": "ipw_descriptive_class_scale_v1",
+  "inference_note": "Descriptive IPW rates only; primary inference remains the adjusted image-cluster bootstrap model.",
+  "small_cell_rule": "raw_valid_n < 100",
+  "sources": {
+    "selected_images": {
+      "path": "runs/audit/aitod_random_stratified_active_v2/selected_images.csv",
+      "sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+    },
+    "audit": {
+      "path": "runs/audit/aitod_random_stratified_active_v2/per_gt.csv",
+      "sha256": "e6ac23f7296b3f5db4de7106e9e5020b830ca051faee95874f0612fce4f858b0"
+    },
+    "outcomes": {
+      "path": "runs/audit/aitod_random_stratified_active_v2/outcomes/per_gt_outcomes.csv",
+      "sha256": "16b76826e2a85594911e9da57909991b18cdfdabb46bb1e4018b97988b91b54f"
+    },
+    "manifest": {
+      "path": "runs/audit/aitod_random_stratified_active_v2/sampling_manifest.json",
+      "sha256": "f1d1c77c4e96d6bdce9f33cd031e0ab7798dde141363cb4cf57f11638eb436fa"
+    },
+    "data": {
+      "path": "configs/aitod_v2.yaml",
+      "sha256": "1f5a0e11a28c9f77e95576120aa4e278d2d0a965f4c65c334d7bfafedeeef00e"
+    }
+  },
+  "scale_rows": [
+    {
+      "size_bin": "all",
+      "raw_n": 7434,
+      "raw_valid_n": 6429,
+      "weighted_n": 327665.42173913517,
+      "weighted_valid_n": 283393.1076087144,
+      "weighted_invalid_rate": 0.13511439167257444,
+      "weighted_fragility_rate_valid": 0.22359962238503556,
+      "weighted_fn_rate_valid": 0.09209076488731609,
+      "weighted_fn_rate_all": 0.09805926006415316,
+      "weighted_margin_mean_valid": 0.8495781859816658,
+      "weighted_margin_median_valid": 0.9613932802979558,
+      "small_valid_cell": false
+    },
+    {
+      "size_bin": "s_16_32",
+      "raw_n": 992,
+      "raw_valid_n": 991,
+      "weighted_n": 43764.59456521691,
+      "weighted_valid_n": 43720.4641304343,
+      "weighted_invalid_rate": 0.0010083592735412594,
+      "weighted_fragility_rate_valid": 0.09589082338742623,
+      "weighted_fn_rate_valid": 0.13828466109555151,
+      "weighted_fn_rate_all": 0.1391535797486885,
+      "weighted_margin_mean_valid": 0.8512826526950421,
+      "weighted_margin_median_valid": 0.9624812362816267,
+      "small_valid_cell": false
+    },
+    {
+      "size_bin": "t_8_16",
+      "raw_n": 6442,
+      "raw_valid_n": 5438,
+      "weighted_n": 283900.8271739255,
+      "weighted_valid_n": 239672.6434782809,
+      "weighted_invalid_rate": 0.15578744217095652,
+      "weighted_fragility_rate_valid": 0.24689593140339175,
+      "weighted_fn_rate_valid": 0.08366419374049111,
+      "weighted_fn_rate_all": 0.09172438510859203,
+      "weighted_margin_mean_valid": 0.8492672615694247,
+      "weighted_margin_median_valid": 0.9612733534868578,
+      "small_valid_cell": false
+    }
+  ],
+  "class_scale_cells": 16,
+  "small_class_scale_cells": 12
+}

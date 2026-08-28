@@ -1,0 +1,11 @@
+# Install the PyTorch build appropriate for your CUDA/CPU environment first.
+torch>=2.5
+torchvision>=0.20
+ultralytics==8.4.51
+numpy==2.0.2
+matplotlib==3.9.4
+pillow==10.4.0
+PyYAML==6.0.2
+tqdm>=4.66
+pycocotools>=2.0.7
+
