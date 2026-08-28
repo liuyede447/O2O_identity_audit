@@ -21,7 +21,7 @@ Each dataset directory contains:
 |---|---|
 | `data/primary/aitodv2` | AI-TOD-v2 population-facing estimates |
 | `data/primary/visdrone` | VisDrone population-facing replication |
-| `data/specificity/yolo26_same_model` | paired O2M/O2O scale-gradient specificity |
+| `data/specificity/yolo26_same_model` | paired O2M/O2O difference-in-scale-gradients |
 | `data/architecture/yolov10s_aitod` | compatible-detector replication |
 | `data/extended_training/seed_*` | 300-epoch seed stability checks |
 | `data/checkpoint_matrix` | independently fitted checkpoint rows in Figure 2C,D |

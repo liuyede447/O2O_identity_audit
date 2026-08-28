@@ -33,7 +33,7 @@ plt.rcParams["font.family"] = "sans-serif"
 plt.rcParams["font.sans-serif"] = ["Arial", "DejaVu Sans", "Liberation Sans"]
 plt.rcParams["svg.fonttype"] = "none"
 plt.rcParams["pdf.fonttype"] = 42
-plt.rcParams["font.size"] = 8.5
+plt.rcParams["font.size"] = 9.3
 plt.rcParams["axes.spines.right"] = False
 plt.rcParams["axes.spines.top"] = False
 plt.rcParams["axes.linewidth"] = 1.0
@@ -99,8 +99,8 @@ def read_rows():
 def direct_key(ax, items, y=0.965):
     x = 0.02
     for color, label in items:
-        ax.text(x, y, "■", transform=ax.transAxes, color=color, fontsize=7.8, va="top")
-        ax.text(x + 0.032, y, label, transform=ax.transAxes, color=INK, fontsize=7.0, va="top")
+        ax.text(x, y, "■", transform=ax.transAxes, color=color, fontsize=8.8, va="top")
+        ax.text(x + 0.032, y, label, transform=ax.transAxes, color=INK, fontsize=8.2, va="top")
         x += 0.48
 
 
@@ -133,15 +133,15 @@ def forest(ax, rows, field, lo_field, hi_field, color, title, xlim):
     ax.axhline(5.5, color=GREY_LIGHT, lw=0.7)
     ax.grid(axis="x", color=GREY_LIGHT, lw=0.55, ls="--", alpha=0.8)
     ax.set_axisbelow(True)
-    ax.set_title(title, loc="left", fontsize=9.3, weight="bold", color=INK, pad=8)
-    ax.tick_params(axis="both", labelsize=7.0, length=3)
-    ax.text(0.86, 0.965, "point ± 95% CI", transform=ax.transAxes, ha="right", va="top", fontsize=7.2, color=GREY)
+    ax.set_title(title, loc="left", fontsize=10.0, weight="bold", color=INK, pad=8)
+    ax.tick_params(axis="both", labelsize=8.0, length=3)
+    ax.text(0.86, 0.965, "point ± 95% CI", transform=ax.transAxes, ha="right", va="top", fontsize=8.0, color=GREY)
 
 
 def main():
     rows = read_rows()
-    fig = plt.figure(figsize=(190 / 25.4, 145 / 25.4), facecolor="white")
-    gs = fig.add_gridspec(2, 2, left=0.095, right=0.985, bottom=0.105, top=0.950, wspace=0.36, hspace=0.34)
+    fig = plt.figure(figsize=(190 / 25.4, 150 / 25.4), facecolor="white")
+    gs = fig.add_gridspec(2, 2, left=0.140, right=0.985, bottom=0.140, top=0.950, wspace=0.32, hspace=0.34)
 
     # (a) Same-model descriptive rates.
     ax = fig.add_subplot(gs[0, 0])
@@ -153,7 +153,7 @@ def main():
     bars2 = ax.bar(x + width / 2, o2o, width, color="#147EB3", edgecolor="#174A78", linewidth=0.7)
     for bars, vals, color in ((bars1, o2m, "#9B4800"), (bars2, o2o, "#0F527E")):
         for bar, value in zip(bars, vals):
-            ax.text(bar.get_x() + bar.get_width() / 2, value + 2.0, f"{value:.1f}%", ha="center", va="bottom", fontsize=7.2, weight="bold", color=color)
+            ax.text(bar.get_x() + bar.get_width() / 2, value + 2.0, f"{value:.1f}%", ha="center", va="bottom", fontsize=8.0, weight="bold", color=color)
     # A vertical double-headed gauge expresses the between-scale O2O gap
     # without implying a directional process or crossing either bar group.
     x_delta = 0.50
@@ -166,15 +166,15 @@ def main():
     ax.hlines([o2o[0], o2o[1]], x_delta - 0.035, x_delta + 0.035, colors="#147EB3", linewidth=0.8)
     # Keep the scale-gap label in the inter-group whitespace, separated from
     # the 24.7% bar label and the double-headed gauge.
-    ax.text(x_delta, 35.0, r"$\Delta_{\mathrm{O2O}}=15.10$ pp", ha="center", va="bottom", fontsize=7.2, color="#0F527E", weight="bold")
+    ax.text(x_delta, 35.0, r"$\Delta_{\mathrm{O2O}}=15.10$ pp", ha="center", va="bottom", fontsize=8.0, color="#0F527E", weight="bold")
     ax.set_xticks(x, ["8–16 px\n(Tiny)", "16–32 px\n(Small)"])
     ax.set_ylabel("Any-direction fragility (%)")
     ax.set_ylim(0, 94)
     ax.grid(axis="y", color=GREY_LIGHT, lw=0.55, ls="--", alpha=0.8)
     ax.set_axisbelow(True)
-    ax.set_title("(a) Same-model specificity (YOLO26s)", loc="left", fontsize=9.3, weight="bold", color=INK, pad=8)
+    ax.set_title("(a) Same-model branch contrast (YOLO26s)", loc="left", fontsize=10.0, weight="bold", color=INK, pad=8)
     direct_key(ax, [("#E9A400", "Native O2M top-rank"), ("#147EB3", "Loss-active O2O identity")])
-    ax.tick_params(axis="both", labelsize=7.0)
+    ax.tick_params(axis="both", labelsize=8.0)
 
     # (b) Undefined competition boundary.
     ax = fig.add_subplot(gs[0, 1])
@@ -185,15 +185,15 @@ def main():
     bars2 = ax.bar(x + width / 2, small, width, color=SMALL, edgecolor="#4E5D70", linewidth=0.7)
     for bars, vals, color in ((bars1, tiny, "#9A3500"), (bars2, small, "#46566D")):
         for bar, value in zip(bars, vals):
-            ax.text(bar.get_x() + bar.get_width() / 2, value + 0.55, f"{value:.2f}%", ha="center", va="bottom", fontsize=7.2, weight="bold", color=color)
+            ax.text(bar.get_x() + bar.get_width() / 2, value + 0.55, f"{value:.2f}%", ha="center", va="bottom", fontsize=8.0, weight="bold", color=color)
     ax.set_xticks(x, ["AI-TOD-v2", "VisDrone"])
     ax.set_ylabel("Undefined competition (%)")
     ax.set_ylim(0, 21)
     ax.grid(axis="y", color=GREY_LIGHT, lw=0.55, ls="--", alpha=0.8)
     ax.set_axisbelow(True)
-    ax.set_title("(b) Undefined-competition boundary", loc="left", fontsize=9.3, weight="bold", color=INK, pad=8)
+    ax.set_title("(b) Undefined-competition boundary", loc="left", fontsize=10.0, weight="bold", color=INK, pad=8)
     direct_key(ax, [(TINY, "8–16 px"), (SMALL, "16–32 px")])
-    ax.tick_params(axis="both", labelsize=7.0)
+    ax.tick_params(axis="both", labelsize=8.0)
 
     # (c,d) Forest plots. Legends are replaced by direct annotation.
     ax_c = fig.add_subplot(gs[1, 0])
@@ -209,7 +209,7 @@ def main():
         0.025,
         "Checkpoint rows are fitted separately and are not pooled; b4/b8 comparisons retain batch-size confounding.",
         ha="center",
-        fontsize=7.2,
+        fontsize=8.0,
         color=GREY,
         style="italic",
     )

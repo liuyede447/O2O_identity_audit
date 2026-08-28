@@ -10,18 +10,18 @@
   "outputs": [
     {
       "file": "fig2_quantitative_evidence.svg",
-      "bytes": 62940,
-      "sha256": "9006094917fd9663d10b50cf0a599ec685bdfeb86cac393032981e41e4ed59ec"
+      "bytes": 62908,
+      "sha256": "44af1d323ccbeb8ca6cabacf1a7da2d603287388ace0f472255e8d7bfe0b84a0"
     },
     {
       "file": "fig2_quantitative_evidence.pdf",
-      "bytes": 81519,
-      "sha256": "893e070b407b040b226b8dab3030907e335d5560c314690b7f1ca227958f26cc"
+      "bytes": 81676,
+      "sha256": "aaeacbcaf080197ca7b087650a433aabcd896919cec0b943d7cbdc0a490faca2"
     },
     {
       "file": "fig2_quantitative_evidence.png",
-      "bytes": 593271,
-      "sha256": "6f32094dcb8373e7fa127d5420a7b1fc2b30b5763a84779a0b295df2449ec549"
+      "bytes": 651513,
+      "sha256": "3a0ebe6649c5774fb9d950e0a2c96af4c7e1233eecd405e7e52b1395f8925886"
     }
   ],
   "main_tex_modified": true
