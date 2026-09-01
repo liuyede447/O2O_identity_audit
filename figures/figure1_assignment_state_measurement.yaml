@@ -1,0 +1,56 @@
+canvas: {width: 180, height: 105, width_mm: 180, background: "#FFFFFF"}
+style: {font_family: DejaVu Sans, font_size: 8.0, panel_title_size: 9.0, edge_width: 1.05, caption_size: 7.0}
+panels:
+  - {x: 3, y: 3, w: 58, h: 47, title: "A  Identity exchange", accent: supervision, fill: "#FFFDFC"}
+  - {x: 64, y: 3, w: 113, h: 47, title: "B  Native assignment states", accent: main, fill: "#FBFCFE"}
+  - {x: 3, y: 54, w: 84, h: 47, title: "C  Frozen replay", accent: aux, fill: "#FBFEFF"}
+  - {x: 90, y: 54, w: 87, h: 47, title: "D  Boundary readouts", accent: enhance, fill: "#FCFEFB"}
+nodes:
+  - {id: base_img, type: image, x: 7, y: 14, w: 21, h: 22, path: assets/fragile_base_overlay.png, label: "Base", role: neutral, font_size: 7.0}
+  - {id: shift_img, type: image, x: 36, y: 14, w: 21, h: 22, path: assets/fragile_left_1px_overlay.png, label: "Left 1 px", role: neutral, font_size: 7.0}
+  - {id: example_note, type: text, x: 7, y: 39, w: 50, h: 7, label: "Loss-active ID: 4230 → 12757", font_size: 7.2, max_lines: 1}
+
+  - {id: frozen, type: box, x: 68, y: 20, w: 18, h: 14, label: "Frozen\noutputs", role: neutral, font_size: 7.3}
+  - {id: o2o_elig, type: box, x: 92, y: 11, w: 18, h: 11, label: "Eligible\nset", role: main, saturated: false, font_size: 6.8}
+  - {id: o2o_top, type: box, x: 115, y: 11, w: 16, h: 11, label: "Top-7", role: main, saturated: false, font_size: 6.8}
+  - {id: conflict, type: box, x: 136, y: 11, w: 17, h: 11, label: "Conflict", role: supervision, saturated: false, font_size: 6.8}
+  - {id: active, type: box, x: 158, y: 11, w: 15, h: 11, label: "Active ID", role: main, linewidth: 1.5, font_size: 6.8}
+  - {id: o2o_label, type: text, x: 92, y: 25, w: 81, h: 5, label: "O2O: cardinality-one supervision state", font_size: 6.8, max_lines: 1}
+
+  - {id: o2m_elig, type: box, x: 92, y: 33, w: 18, h: 11, label: "Eligible\nset", role: output, saturated: false, font_size: 6.8}
+  - {id: o2m_top, type: box, x: 115, y: 33, w: 16, h: 11, label: "Top-10", role: output, saturated: false, font_size: 6.8}
+  - {id: posset, type: box, x: 136, y: 33, w: 17, h: 11, label: "Positive set", role: output, saturated: false, font_size: 6.8}
+  - {id: rank, type: box, x: 158, y: 33, w: 15, h: 11, label: "Set Top-1", role: output, linewidth: 1.5, font_size: 6.8}
+
+  - {id: left, type: op, x: 8, y: 71, w: 8, h: 8, label: "−x", role: supervision}
+  - {id: up, type: op, x: 26, y: 60, w: 8, h: 8, label: "−y", role: supervision}
+  - {id: base, type: op, x: 26, y: 71, w: 8, h: 8, label: "g", role: enhance}
+  - {id: right, type: op, x: 44, y: 71, w: 8, h: 8, label: "+x", role: supervision}
+  - {id: down, type: op, x: 26, y: 83, w: 8, h: 8, label: "+y", role: supervision}
+  - {id: replay_note, type: text, x: 54, y: 63, w: 28, h: 13, label: "Fixed 1 px\nor equivalent-side\nradius r", font_size: 7.0, max_lines: 3}
+  - {id: frozen_note, type: text, x: 8, y: 90, w: 74, h: 9, label: "Only the focal GT centre moves\nDetector outputs remain frozen", font_size: 6.6, max_lines: 2}
+
+  - {id: b_elig, type: box, x: 94, y: 65, w: 23, h: 12, label: "Eligibility\nboundary", role: enhance, saturated: false, font_size: 7.0}
+  - {id: b_rank, type: box, x: 122, y: 65, w: 23, h: 12, label: "Rank\nboundary", role: main, saturated: false, font_size: 7.0}
+  - {id: b_set, type: box, x: 150, y: 65, w: 23, h: 12, label: "Set\nturnover", role: output, saturated: false, font_size: 7.0}
+  - {id: readout1, type: pill, x: 94, y: 83, w: 21, h: 8, label: "Fragility", role: supervision, saturated: false, font_size: 6.8}
+  - {id: readout2, type: pill, x: 119, y: 83, w: 25, h: 8, label: "First radius / RMSR", role: main, saturated: false, font_size: 6.6}
+  - {id: readout3, type: pill, x: 148, y: 83, w: 25, h: 8, label: "Rank–Set / margin–ρR", role: output, saturated: false, font_size: 6.4}
+  - {id: boundary_note, type: text, x: 94, y: 94, w: 79, h: 4, label: "State objects encounter different local boundaries", font_size: 6.6, max_lines: 1}
+edges:
+  - {from: "base_img:right", to: "shift_img:left", kind: supervision}
+  - {from: "frozen:right", to: "o2o_elig:left", kind: main, via: [[89, 27], [89, 16.5]]}
+  - {from: "o2o_elig:right", to: "o2o_top:left", kind: main}
+  - {from: "o2o_top:right", to: "conflict:left", kind: main}
+  - {from: "conflict:right", to: "active:left", kind: main}
+  - {from: "frozen:right", to: "o2m_elig:left", kind: guide, via: [[89, 27], [89, 38.5]]}
+  - {from: "o2m_elig:right", to: "o2m_top:left", kind: main}
+  - {from: "o2m_top:right", to: "posset:left", kind: main}
+  - {from: "posset:right", to: "rank:left", kind: main}
+  - {from: "base:left", to: "left:right", kind: supervision}
+  - {from: "base:top", to: "up:bottom", kind: supervision}
+  - {from: "base:right", to: "right:left", kind: supervision}
+  - {from: "base:bottom", to: "down:top", kind: supervision}
+  - {from: "b_elig:bottom", to: "readout1:top", kind: guide}
+  - {from: "b_rank:bottom", to: "readout2:top", kind: main}
+  - {from: "b_set:bottom", to: "readout3:top", kind: main}

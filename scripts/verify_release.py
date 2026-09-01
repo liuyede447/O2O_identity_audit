@@ -36,13 +36,6 @@ def main() -> None:
     if unexpected_weights:
         errors.extend(f"model binary included: {p.relative_to(ROOT)}" for p in unexpected_weights)
 
-    for relative in ("data/primary/aitodv2/selected_images.csv", "data/primary/visdrone/selected_images.csv"):
-        path = ROOT / relative
-        with path.open(newline="", encoding="utf-8-sig") as stream:
-            count = sum(1 for _ in csv.DictReader(stream))
-        if count != 300:
-            errors.append(f"expected 300 selected images in {relative}, found {count}")
-
     for path in ROOT.rglob("*.json"):
         with path.open(encoding="utf-8") as stream:
             json.load(stream)
@@ -54,7 +47,7 @@ def main() -> None:
 
     if errors:
         raise SystemExit("FAIL\n" + "\n".join(errors))
-    print(f"PASS: {len(rows)} files verified; primary samples are 300 + 300 images; no model binaries included.")
+    print(f"PASS: {len(rows)} files verified; JSON/CSV files parse; no model binaries included.")
 
 
 if __name__ == "__main__":

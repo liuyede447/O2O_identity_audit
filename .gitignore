@@ -1,15 +1,12 @@
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.venv/
+env/
+tmp/
 *.pt
 *.pth
 *.onnx
-*.engine
-*.log
-.DS_Store
-.idea/
-.vscode/
-runs/
-outputs/
-data/raw/
-data/external/
+raw_data/
+raw_predictions/
 

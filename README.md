@@ -1,66 +1,53 @@
-# Loss-active O2O identity audit
+# O2O Identity Audit
 
-Code and derived evidence for the manuscript **“Scale-Conditioned Loss-Active
-One-to-One Identity Instability in Aerial Tiny-Object Detection.”**
+Reproducibility package for **Validated Read-Only Geometric Stress Testing of Native Assignment States in Aerial Tiny-Object Detection**.
 
-This repository implements a read-only audit of native one-to-one (O2O)
-loss-active identity stability. It includes the outcome-blind sampling
-manifests, derived per-object audit tables, bootstrap summaries, model hashes,
-and scripts used for the paper's AI-TOD-v2 and VisDrone analyses.
+This repository measures how frozen native O2O and O2M assignment states respond when only one focal ground-truth centre is replayed under controlled geometric shifts. It does not modify inference, retrain a detector, or claim a validated assignment intervention.
 
-## Contents
+## What is included
+
+- `manuscript/`: the current main manuscript and Supplementary Material PDFs.
+- `figures/`: Figures 1–5 as vector PDF/SVG, 600 dpi PNG, source scripts, and validation records.
+- `results/stress/`: fixed-pixel, equivalent-side, magnitude, dataset, detector-contract, and archived-stage summaries.
+- `results/eligibility_pathway/`: eligibility-lock, eligibility-stable, first-divergence, and pre-resolution controls.
+- `results/boundary/`: survival, cumulative-incidence, RMSR, rank-crossing status, and margin-construct tables.
+- `results/rank_set/`: O2M Rank–Set and transition-decomposition summaries.
+- `results/margin/`: nonlinear shape sensitivity and held-out incremental-value results.
+- `results/locality_budget/`: spillover and 1,000-repeat sample-efficiency results.
+- `data/per_object/`: curated per-object tables, selected-image IDs, and manifests for the principal fixed/equivalent-side, VisDrone, and YOLOv10 contracts.
+- `evidence/`: final evidence ledger, result-to-claim mapping, exclusions, manifest, and SHA-256 inventory.
+- `scripts/`: the analysis and validation entry points used for the included derived results.
+- `docs/ALL_RESULTS.md`: all Goal-mode results, including positive, null, negative, excluded, and invalidated records.
+
+## Evidence status
+
+The final evidence authority is `evidence/FINAL_EVIDENCE_MANIFEST.json`. The corresponding manifest SHA-256 is:
 
 ```text
-configs/          dataset-path templates
-data/             frozen derived tables and sampling manifests
-docs/             data dictionary, dataset access, and reproduction guide
-figures/          deterministic Figure 2 rebuild and outputs
-model_registry/   checkpoint SHA-256 identifiers
-scripts/          replay, outcome, bootstrap, and sensitivity analyses
+4f626da49dcd7ee87ffd33311e9c08c73629e2b7b4cb0b2c7e74501a7a5a1ca9
 ```
 
-The repository does **not** redistribute AI-TOD-v2 or VisDrone images,
-annotations, model weights, or raw prediction dumps. Obtain the datasets from
-their official sources and verify model artifacts with the supplied hashes.
+The prospective lockbox produced **no normative verdict**. Its only permitted analyzer invocation wrote the outcome-access receipt and then terminated before any H1–H5 estimate or decision. Corrective values in the package are explicitly post-access exploratory and do not recover confirmatory status.
 
-## Verify the release
+## Reproduction outline
 
-The integrity check uses the Python standard library:
+1. Create a Python environment and install `requirements.txt`.
+2. Obtain AI-TOD-v2 and/or VisDrone from their official repositories; raw benchmark files are not redistributed here.
+3. Verify package integrity with `python scripts/verify_release.py` after generating `SHA256SUMS.csv`, or compare against the included SHA-256 inventory.
+4. Run the relevant analysis script against the frozen derived inputs described in the evidence ledger.
+5. Regenerate Figures 2–5 with `python figures/make_final_result_figures.py` after adjusting its project root to the local checkout.
 
-```bash
-python scripts/verify_release.py
-```
+The internal audit used frozen checkpoint identities recorded by SHA-256. Model binaries, raw prediction dumps, benchmark images, and third-party annotations are intentionally excluded.
 
-## Rebuild Figure 2
+## Data access
 
-```bash
-python -m pip install -r requirements.txt
-python figures/make_figure2.py
-```
-
-The script writes SVG, PDF, and 600-dpi PNG outputs to `figures/`.
-
-## Run the audit
-
-1. Obtain AI-TOD-v2 or VisDrone from the sources in
-   [`docs/DATASET_ACCESS.md`](docs/DATASET_ACCESS.md).
-2. Install a PyTorch build for the local CUDA runtime, followed by the packages
-   in `requirements.txt`.
-3. Copy the appropriate YAML from `configs/` and set its dataset path.
-4. Obtain the checkpoint and verify its SHA-256 against
-   `model_registry/MODEL_ARTIFACTS_SHA256.csv`.
-5. Follow [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for the replay,
-   outcome construction, weighted models, and strict same-stride sensitivity.
-
-## Scientific scope
-
-The one-pixel replay is a deterministic sensitivity stress, not a model of
-annotation noise. The active-relative margin is an observational competition
-coordinate, not a calibrated confidence or validated treatment variable. The
-strict same-stride analysis is post hoc and does not replace the primary
-estimand.
+- AI-TOD-v2: <https://github.com/Chasel-Tsui/AI-TOD-v2>
+- VisDrone: <https://github.com/VisDrone/VisDrone-Dataset>
 
 ## Citation
 
-Use the repository's **Cite this repository** menu, generated from
-[`CITATION.cff`](CITATION.cff). The release version is `v1.0.0`.
+Use the metadata in `CITATION.cff`. For an archival DOI, create a tagged GitHub release and archive that release with Zenodo.
+
+## Contact
+
+Corresponding author: Jun Li, `lijun2022@sicnu.edu.cn`.

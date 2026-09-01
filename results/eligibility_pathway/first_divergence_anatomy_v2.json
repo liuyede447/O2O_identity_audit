@@ -1,0 +1,365 @@
+{
+  "status": "complete",
+  "protocol": "stratified image-cluster bootstrap of prespecified first-divergence taxonomy",
+  "bootstrap_replicates": 5000,
+  "fixed_1px": {
+    "pathways": {
+      "all": {
+        "eligibility_boundary": {
+          "point": 0.6709427047629606,
+          "ci_95": [
+            0.6301547156148377,
+            0.7106888898085866
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.0027387858538450195,
+          "ci_95": [
+            0.00046233659799073347,
+            0.005423581915329903
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.025052880575079824,
+          "ci_95": [
+            0.010714155881070232,
+            0.04121748303933902
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.3012656288081147,
+          "ci_95": [
+            0.26137084079086875,
+            0.34356675760852234
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.44718455259569256,
+          "ci_95": [
+            0.4117897024948446,
+            0.48728427813939656
+          ]
+        },
+        "flip_rows": 2194,
+        "contributing_images": 201
+      },
+      "t_8_16": {
+        "eligibility_boundary": {
+          "point": 0.6869213347322519,
+          "ci_95": [
+            0.6457232868884824,
+            0.7260092769006783
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.0028684091683235428,
+          "ci_95": [
+            0.0004643020014377304,
+            0.005603662516865167
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.025282465739157458,
+          "ci_95": [
+            0.010328347806489165,
+            0.041490659965579914
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.28492779036026705,
+          "ci_95": [
+            0.24709651502367194,
+            0.3287263368212404
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.45257298863478235,
+          "ci_95": [
+            0.41546663492529573,
+            0.4951204244817192
+          ]
+        },
+        "flip_rows": 2095,
+        "contributing_images": 199
+      },
+      "s_16_32": {
+        "eligibility_boundary": {
+          "point": 0.3333333333333333,
+          "ci_95": [
+            0.20778971028971036,
+            0.44555458924270797
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.0202020202020202,
+          "ci_95": [
+            0.0,
+            0.05494505494505494
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.6464646464646464,
+          "ci_95": [
+            0.5339785255882838,
+            0.7710929432013771
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.3333333333333333,
+          "ci_95": [
+            0.20778971028971036,
+            0.44555458924270797
+          ]
+        },
+        "flip_rows": 99,
+        "contributing_images": 33
+      }
+    },
+    "q_gap": {
+      "n_simple_reversals": 661,
+      "static_class_offset_median": 0.2377192731036686,
+      "static_class_offset_iqr": [
+        -0.4416151438022712,
+        0.9496467127026924
+      ],
+      "delta_geometry_gap_median": -1.0778476832680437,
+      "delta_geometry_gap_iqr": [
+        -1.7675149391417326,
+        -0.6110267695649164
+      ],
+      "delta_classification_term_unique": [
+        0.0
+      ],
+      "max_abs_exact_residual": 1.9045907689863029e-07
+    }
+  },
+  "normalized_k00625": {
+    "pathways": {
+      "all": {
+        "eligibility_boundary": {
+          "point": 0.5100534607423877,
+          "ci_95": [
+            0.46057014020999665,
+            0.5594118326389145
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.004840944710360227,
+          "ci_95": [
+            0.0008053051535837012,
+            0.009745104237071764
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.031441647742318814,
+          "ci_95": [
+            0.014350138800988791,
+            0.05175781659596989
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.4536639468049332,
+          "ci_95": [
+            0.4062206788646401,
+            0.5026496179723778
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.3183281336400417,
+          "ci_95": [
+            0.2791794347677021,
+            0.3612988595474449
+          ]
+        },
+        "flip_rows": 1241,
+        "contributing_images": 159
+      },
+      "t_8_16": {
+        "eligibility_boundary": {
+          "point": 0.5294704267503132,
+          "ci_95": [
+            0.47710136339343817,
+            0.5834870217573767
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.005364674956579663,
+          "ci_95": [
+            0.0009066366292627119,
+            0.010660164699146114
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.03216090703880481,
+          "ci_95": [
+            0.013607794176597816,
+            0.05373684022992508
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.4330039912543025,
+          "ci_95": [
+            0.3815771542084851,
+            0.4847302650222858
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.3170027944208659,
+          "ci_95": [
+            0.27473318978753025,
+            0.364955189462167
+          ]
+        },
+        "flip_rows": 1120,
+        "contributing_images": 157
+      },
+      "s_16_32": {
+        "eligibility_boundary": {
+          "point": 0.3305785123966943,
+          "ci_95": [
+            0.21276595744680862,
+            0.4277108433734938
+          ]
+        },
+        "topk_membership_transition": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_reassignment": {
+          "point": 0.024793388429752074,
+          "ci_95": [
+            0.0,
+            0.06194690265486724
+          ]
+        },
+        "within_set_geometry_rank_reversal": {
+          "point": 0.6446280991735539,
+          "ci_95": [
+            0.5454545454545455,
+            0.76
+          ]
+        },
+        "active_disappearance": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "compound_or_other": {
+          "point": 0.0,
+          "ci_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "geometry_clipping_transition": {
+          "point": 0.3305785123966943,
+          "ci_95": [
+            0.21276595744680862,
+            0.4277108433734938
+          ]
+        },
+        "flip_rows": 121,
+        "contributing_images": 37
+      }
+    },
+    "q_gap": {
+      "n_simple_reversals": 563,
+      "static_class_offset_median": 0.172777934458511,
+      "static_class_offset_iqr": [
+        -0.4989728635891736,
+        0.7734748404478797
+      ],
+      "delta_geometry_gap_median": -0.8773152773541311,
+      "delta_geometry_gap_iqr": [
+        -1.2785625704867534,
+        -0.5587083580036367
+      ],
+      "delta_classification_term_unique": [
+        0.0
+      ],
+      "max_abs_exact_residual": 1.9636248593801758e-07
+    }
+  }
+}

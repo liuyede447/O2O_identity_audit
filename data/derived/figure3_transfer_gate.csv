@@ -1,6 +1,0 @@
-dataset,metric,point,ci_low,ci_high,unit
-AI-TOD-v2,override precision,68.3,,,percent
-VisDrone,override precision,46.9,37.7,54.9,percent
-AI-TOD-v2,selected IoU delta,0.01945,,,IoU
-VisDrone,selected IoU delta,0.0032,-0.0024,0.0082,IoU
-

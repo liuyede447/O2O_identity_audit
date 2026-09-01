@@ -1,6 +1,0 @@
-detector_branch,estimand,valid_gt,fragility_8_16_pct,fragility_16_32_pct,invalid_8_16_pct,margin_fragility_or_per_0p1,margin_fragility_ci_low,margin_fragility_ci_high,margin_fn_or_per_0p1,margin_fn_ci_low,margin_fn_ci_high,note
-YOLO26 O2O,loss-active identity,6429,24.69,9.59,15.58,0.5516,0.5268,0.5750,0.8220,0.7940,0.8527,
-YOLO26 O2M,top-ranked candidate,6421,73.38,71.67,15.72,0.7249,0.6923,0.7548,,,,invalid rate is weighted O2M rank-margin rate; not O2O candidate deficiency
-YOLOv10-S O2O,loss-active identity,6386,24.77,9.59,16.25,0.5463,0.5231,0.5695,0.8488,0.8173,0.8877,
-YOLOv8s O2M,top-ranked candidate,,72.00,72.17,,,,,,,,
-

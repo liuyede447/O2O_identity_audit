@@ -1,0 +1,10 @@
+size_group,analysis,conditioning,n_rows,n_images,censoring_adjusted,estimate,ci_low,ci_high
+all,margin_vs_observed_rho_R,observed_cases_only,1592.0,173.0,False,0.6278781285091727,0.5841013603139612,0.6695550893169698
+all,specificity_control_margin_vs_eligibility_cause_overall_radius,observed_cases_only,3441.0,221.0,False,0.15308515444920348,0.11409903982850604,0.1938292247849038
+all,specificity_difference_rhoR_minus_eligibility_correlation,two_separately_observed_case_sets,,,False,0.47479297405996923,0.40510986219683737,0.5404315438694348
+t_8_16,margin_vs_observed_rho_R,observed_cases_only,1406.0,169.0,False,0.6265293614990947,0.5775672369677011,0.6721363116505676
+t_8_16,specificity_control_margin_vs_eligibility_cause_overall_radius,observed_cases_only,3014.0,213.0,False,0.13136754844820422,0.08991111364097401,0.1739221717675848
+t_8_16,specificity_difference_rhoR_minus_eligibility_correlation,two_separately_observed_case_sets,,,False,0.49516181305089046,0.42079571962339124,0.5643979296248702
+s_16_32,margin_vs_observed_rho_R,observed_cases_only,186.0,50.0,False,0.6314441169315879,0.5323806822512711,0.705696250810774
+s_16_32,specificity_control_margin_vs_eligibility_cause_overall_radius,observed_cases_only,427.0,101.0,False,0.35901732839192013,0.2735370209537183,0.44772172921760656
+s_16_32,specificity_difference_rhoR_minus_eligibility_correlation,two_separately_observed_case_sets,,,False,0.27242678853966773,0.1302953151965631,0.39493744685518745

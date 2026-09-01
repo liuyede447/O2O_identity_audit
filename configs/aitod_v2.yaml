@@ -1,5 +1,4 @@
-# Replace this placeholder with a local AI-TOD-v2 YOLO-format root.
-path: /path/to/AI-TOD-v2-YOLO
+path: /root/SWD-Diagnostic-TinyOD/data/processed/AI-TOD-v2-YOLO
 train: train/images
 val: val/images
 
@@ -12,4 +11,3 @@ names:
   5: vehicle
   6: person
   7: wind-mill
-

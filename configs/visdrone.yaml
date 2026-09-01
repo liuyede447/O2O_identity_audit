@@ -1,5 +1,4 @@
-# Replace this placeholder with a local VisDrone2019-DET YOLO-format root.
-path: /path/to/VisDrone2019-DET-YOLO
+path: D:/packet/lunwen/datasets/VisDrone/yolo
 train: images/train
 val: images/val
 test: images/test
@@ -15,4 +14,3 @@ names:
   7: awning-tricycle
   8: bus
   9: motor
-

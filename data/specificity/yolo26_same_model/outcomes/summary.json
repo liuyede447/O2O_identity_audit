@@ -1,7 +1,0 @@
-{
-  "status": "complete",
-  "estimand": "O2M top-ranked candidate; not O2O identity",
-  "joined_gt": 7434,
-  "missing": 0,
-  "predictions_postprocess": "formal NMS"
-}

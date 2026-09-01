@@ -1,0 +1,307 @@
+{
+  "status": "complete",
+  "purpose": "test whether linear-logit margin conclusions are driven by the extreme low-margin region",
+  "scope": "diagnostic shape sensitivity; no causal or best-predictor claim",
+  "n_gt": 6410,
+  "n_images": 288,
+  "weighted_gt_mass": 282555.96902173915,
+  "base_covariates": [
+    "log_area",
+    "log1p_o2m_count",
+    "log_q_active",
+    "active_ciou"
+  ],
+  "quintiles": {
+    "definition": "inverse-CDF weighted margin quintiles on the complete analysis frame",
+    "tie_rule": "boundary values enter the higher-numbered quintile",
+    "boundaries": [
+      0.8239616865408365,
+      0.9486165850927482,
+      0.981427530225408,
+      0.9934395523436992
+    ],
+    "bootstrap": "image clusters resampled within outcome-blind sampling stratum; point-estimate quintile boundaries held fixed"
+  },
+  "models": {
+    "linear_margin": "base covariates plus one linear margin term",
+    "restricted_cubic_margin": "base covariates plus cubic B-spline margin basis with linear-tail extrapolation",
+    "spline_knots": "training-fold-only inverse-CDF weighted margin quantiles",
+    "spline_n_knots": 4,
+    "spline_degree": 3,
+    "regularization": "near-unpenalized logistic regression, C=1e6"
+  },
+  "outcomes": {
+    "fragility": {
+      "source_column": "o2o_fragile",
+      "metric_protocol": "compute within each held-out image-grouped fold, then aggregate by fold test IPW mass",
+      "bootstrap_protocol": "resample image clusters within OOF fold x outcome-blind sampling stratum",
+      "fold_weighted_oof_metrics": {
+        "linear_margin": {
+          "roc_auc": 0.9272597557294703,
+          "pr_auc": 0.6456837516663527,
+          "log_loss": 0.17495655344113417
+        },
+        "restricted_cubic_margin": {
+          "roc_auc": 0.9196972651602682,
+          "pr_auc": 0.6415377681335823,
+          "log_loss": 0.17405357713355055
+        }
+      },
+      "fold_weighted_oof_metric_ci_95": {
+        "linear_margin": {
+          "roc_auc": [
+            0.9131918201806186,
+            0.9414303521774269
+          ],
+          "pr_auc": [
+            0.6085470903198857,
+            0.6912122237949407
+          ],
+          "log_loss": [
+            0.15219489928266583,
+            0.20123783902763384
+          ]
+        },
+        "restricted_cubic_margin": {
+          "roc_auc": [
+            0.9039334294264958,
+            0.9347245566736375
+          ],
+          "pr_auc": [
+            0.6035088044860851,
+            0.6866525662861576
+          ],
+          "log_loss": [
+            0.15139093103454188,
+            0.19996872438410715
+          ]
+        }
+      },
+      "spline_minus_linear_point": {
+        "roc_auc": -0.007562490569202107,
+        "pr_auc": -0.004145983532770403,
+        "log_loss": -0.000902976307583625
+      },
+      "spline_minus_linear_ci_95": {
+        "roc_auc": [
+          -0.01411466816569105,
+          -0.001382625550052791
+        ],
+        "pr_auc": [
+          -0.008130728507875098,
+          -0.0010869202263005366
+        ],
+        "log_loss": [
+          -0.002604256513840135,
+          0.0007494703943451164
+        ]
+      },
+      "bootstrap_replicates_requested": 5000,
+      "bootstrap_replicates_ok": 5000,
+      "fold_contracts": [
+        {
+          "fold": 0,
+          "n_train_gt": 5661,
+          "n_test_gt": 749,
+          "n_train_images": 234,
+          "n_test_images": 54,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.925400220221954,
+            0.9863813186784008,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 1,
+          "n_train_gt": 4839,
+          "n_test_gt": 1571,
+          "n_train_images": 225,
+          "n_test_images": 63,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.9294904911929636,
+            0.9867800132862264,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 2,
+          "n_train_gt": 4679,
+          "n_test_gt": 1731,
+          "n_train_images": 230,
+          "n_test_images": 58,
+          "spline_knots_from_training_weighted_quantiles": [
+            -145.2901688208747,
+            0.9276357817313412,
+            0.9874307928679934,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 3,
+          "n_train_gt": 5229,
+          "n_test_gt": 1181,
+          "n_train_images": 235,
+          "n_test_images": 53,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.9227916501988904,
+            0.9859007832345372,
+            0.9999999999905688
+          ]
+        },
+        {
+          "fold": 4,
+          "n_train_gt": 5232,
+          "n_test_gt": 1178,
+          "n_train_images": 228,
+          "n_test_images": 60,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.920810346667941,
+            0.9853245009074258,
+            0.9999999999956736
+          ]
+        }
+      ],
+      "interpretation": "shape sensitivity only; neither model is claimed to be a best predictor or causal model"
+    },
+    "coverage_based_miss": {
+      "source_column": "fn_at_iou50",
+      "metric_protocol": "compute within each held-out image-grouped fold, then aggregate by fold test IPW mass",
+      "bootstrap_protocol": "resample image clusters within OOF fold x outcome-blind sampling stratum",
+      "fold_weighted_oof_metrics": {
+        "linear_margin": {
+          "roc_auc": 0.9476482537867765,
+          "pr_auc": 0.792448608413723,
+          "log_loss": 0.1478447912940576
+        },
+        "restricted_cubic_margin": {
+          "roc_auc": 0.9470822002619305,
+          "pr_auc": 0.7870370886061469,
+          "log_loss": 0.14724896027584933
+        }
+      },
+      "fold_weighted_oof_metric_ci_95": {
+        "linear_margin": {
+          "roc_auc": [
+            0.9241412361313774,
+            0.9758256385661541
+          ],
+          "pr_auc": [
+            0.7464561008851095,
+            0.8496801642494733
+          ],
+          "log_loss": [
+            0.10238283849495566,
+            0.20004077841007112
+          ]
+        },
+        "restricted_cubic_margin": {
+          "roc_auc": [
+            0.9229514620239128,
+            0.975552776725697
+          ],
+          "pr_auc": [
+            0.7407573266718522,
+            0.8458087552677882
+          ],
+          "log_loss": [
+            0.10224780763568506,
+            0.19997330077215597
+          ]
+        }
+      },
+      "spline_minus_linear_point": {
+        "roc_auc": -0.0005660535248460663,
+        "pr_auc": -0.005411519807576148,
+        "log_loss": -0.0005958310182082593
+      },
+      "spline_minus_linear_ci_95": {
+        "roc_auc": [
+          -0.00122229007141533,
+          2.170177602565924e-05
+        ],
+        "pr_auc": [
+          -0.012982500860924714,
+          -0.00026621013874860713
+        ],
+        "log_loss": [
+          -0.007940899845167429,
+          0.0052615186753694875
+        ]
+      },
+      "bootstrap_replicates_requested": 5000,
+      "bootstrap_replicates_ok": 5000,
+      "fold_contracts": [
+        {
+          "fold": 0,
+          "n_train_gt": 5696,
+          "n_test_gt": 714,
+          "n_train_images": 231,
+          "n_test_images": 57,
+          "spline_knots_from_training_weighted_quantiles": [
+            -145.2901688208747,
+            0.925152992997494,
+            0.9866255453743312,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 1,
+          "n_train_gt": 5159,
+          "n_test_gt": 1251,
+          "n_train_images": 230,
+          "n_test_images": 58,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.9250487548067748,
+            0.9862279522485204,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 2,
+          "n_train_gt": 5084,
+          "n_test_gt": 1326,
+          "n_train_images": 230,
+          "n_test_images": 58,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.925152992997494,
+            0.9866065747185072,
+            0.9999999999905688
+          ]
+        },
+        {
+          "fold": 3,
+          "n_train_gt": 5212,
+          "n_test_gt": 1198,
+          "n_train_images": 229,
+          "n_test_images": 59,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.9271462114145252,
+            0.9864431637538326,
+            0.9999999999956736
+          ]
+        },
+        {
+          "fold": 4,
+          "n_train_gt": 4489,
+          "n_test_gt": 1921,
+          "n_train_images": 232,
+          "n_test_images": 56,
+          "spline_knots_from_training_weighted_quantiles": [
+            -149.22541978322386,
+            0.9212695951649724,
+            0.9857018670356144,
+            0.9999999999956736
+          ]
+        }
+      ],
+      "interpretation": "shape sensitivity only; neither model is claimed to be a best predictor or causal model"
+    }
+  }
+}

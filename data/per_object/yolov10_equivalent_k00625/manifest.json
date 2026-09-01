@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "protocol": "normalized_o2m_o2o_replay_and_incremental_value_v1",
+  "read_only": true,
+  "checkpoint": "E:\\two_paper\\beifen\\publication_reproducible\\checkpoints\\yolov10s_native_aitod\\best.pt",
+  "checkpoint_sha256": "ecf7ca8df8eded54b9500109123f94ef8eaddd736bd8351a968761f0f62a0d38",
+  "checkpoint_role": "YOLOv10-S frozen native best checkpoint normalized-stress cross-architecture replication",
+  "detector_contract": "yolov10",
+  "native_o2m_topk": 10,
+  "native_o2o_topk": 1,
+  "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+  "selection_seed": 20260823,
+  "requested_images": 300,
+  "stratum_population_counts": {
+    "t_only": 7018,
+    "s_only": 76,
+    "t_and_s": 6090
+  },
+  "stratum_sample_allocation": {
+    "t_only": 160,
+    "s_only": 2,
+    "t_and_s": 138
+  },
+  "normalized_shift": "delta_x = delta_y = kappa * sqrt(width * height)",
+  "normalization": "equivalent_side",
+  "kappa": 0.0625,
+  "bootstrap_replicates": 5000,
+  "selected_images": 300,
+  "focal_gt_by_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "audited_gt_by_bin": {
+    "s_16_32": 992,
+    "t_8_16": 6440
+  },
+  "per_gt_rows": 7432,
+  "per_direction_rows": 29612,
+  "audit_elapsed_sec": 518.2971813000001,
+  "common_valid_normalized_gt": 6348,
+  "total_elapsed_sec": 539.9215218000002,
+  "outputs": [
+    "per_direction.csv",
+    "per_gt.csv",
+    "normalized_perturbation_summary.json"
+  ]
+}

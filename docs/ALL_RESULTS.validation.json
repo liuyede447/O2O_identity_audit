@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "report": "reports/GOAL_MODE_ALL_RESULTS_20260901.md",
+  "report_sha256": "54da00acf0644ba7134b86ba3454915f1f4f08955b7c7ef20328d3cac0ae119a",
+  "report_lines": 439,
+  "goal_mode_nonlegacy_runs_expected": 44,
+  "goal_mode_nonlegacy_runs_missing": [],
+  "final_evidence_v2_ids_expected": 24,
+  "final_evidence_v2_ids_missing": [],
+  "run_status_partition": {
+    "complete_evidence_eligible": 14,
+    "complete_governance_or_upstream": 14,
+    "complete_smoke_only": 5,
+    "failed": 5,
+    "invalidated": 5,
+    "incomplete": 1
+  },
+  "checks": {
+    "all_44_goal_runs_named": true,
+    "all_24_evidence_ids_named": true,
+    "positive_null_negative_and_failed_results_included": true,
+    "no_normative_lockbox_verdict_claimed": true,
+    "post_lockbox_corrective_labelled_exploratory": true,
+    "no_new_training_claimed": true
+  }
+}

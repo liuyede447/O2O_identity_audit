@@ -1,0 +1,111 @@
+{
+  "status": "FINAL_EVIDENCE_FROZEN",
+  "frozen_at_utc": "2026-09-01T03:17:17.586043+00:00",
+  "authority_order": [
+    "frozen_result_artifact",
+    "current_evidence_ledger",
+    "historical_ssot",
+    "manuscript"
+  ],
+  "evidence_entries": 24,
+  "excluded_records": 5,
+  "pending_gates": [],
+  "current_evidence_ledger_sha256": "e2f504f2e048f842d26799048e9e6c8305000a662745a83ba611fc0b393d5e78",
+  "current_evidence_ledger_markdown_sha256": "aacdfd4bfdf3a58c8e8a6a5e84b3ce79bdc55430871f6b9558c497a06a0dfa5b",
+  "source_to_result_mapping_sha256": "2510bc20a1b02aea2b6f0a4f7014ebea17c30fd40e8b3abeecbeca3ca86189d9",
+  "result_to_claim_mapping_sha256": "ad3f206afa421f9fd5125f916d8aa6d3b4b614ab8a55946ec65d189d26c5e803",
+  "excluded_evidence_sha256": "3037032b9be2d0279dd633c69a3cc2946471abbd1d8c6ea696f85ff8ea3b31b3",
+  "prospective_lockbox": {
+    "sample_selected_and_extracted": true,
+    "outcome_access_receipt_sha256": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83",
+    "normative_verdict_created": false,
+    "status": "invalidated_due_to_implementation_defect",
+    "prospective_rerun_permitted": false,
+    "failure_record_sha256": "62186be000c29ed6154549968e8179f4ae2aab29d5f5827a38a068d565fb34aa"
+  },
+  "post_lockbox_corrective": {
+    "status": "exploratory_only",
+    "results_sha256": "714d11716540d8a9445326af3ddd424b5634a3d1588bbaa1280dc1ca88b0241c",
+    "terminal_validation_sha256": "f126273019e5913b8f047353eb80f0e9b0d34c72b48cf4248a57d5f5b3798484",
+    "output_inventory_sha256": "d8121d884e2b68cbc095c04360392a1befcc18e6364b5795eff444a64e5a3619",
+    "formal_pass_values_are_null": true
+  },
+  "predecessor_final_evidence_v1": {
+    "preserved": true,
+    "manifest_sha256": "5fc03c8d71667229fa30c4a8f604dea9cc70bb92e303fb444df5226c11b1ecf3",
+    "addendum_reason": "pre-manuscript completeness audit added two dedicated stress-contract claim IDs without changing any frozen result"
+  },
+  "governance_copies": [
+    {
+      "source": "reports/INSTRUMENT_FREEZE_AND_PREREGISTRATION_ACCEPTANCE_20260901.json",
+      "frozen_copy": "governance/INSTRUMENT_FREEZE_AND_PREREGISTRATION_ACCEPTANCE_20260901.json",
+      "sha256": "2717db0260a4069985158d63ae886bba69dc2998f075f49bcf892577ff1dda2b"
+    },
+    {
+      "source": "reports/LOCKBOX_SELECTION_ACCEPTANCE_20260901.json",
+      "frozen_copy": "governance/LOCKBOX_SELECTION_ACCEPTANCE_20260901.json",
+      "sha256": "cfb1758d65885a727070140c9ed9dab7ed0733479776dc82b80df9a429f282ed"
+    },
+    {
+      "source": "reports/LOCKBOX_METADATA_REPACKAGING_ACCEPTANCE_20260901.json",
+      "frozen_copy": "governance/LOCKBOX_METADATA_REPACKAGING_ACCEPTANCE_20260901.json",
+      "sha256": "87a4c781a94606c6d90e762ec61218143e63585d7c4c567db162691361ac77fd"
+    },
+    {
+      "source": "reports/SEALED_BUNDLE_VALIDATION_FAILED_V1.json",
+      "frozen_copy": "governance/SEALED_BUNDLE_VALIDATION_FAILED_V1.json",
+      "sha256": "4763d98dba5d29bca84abf72fa2e5e8e1ad88c6e4a044819c4116d9f8b07ecac"
+    },
+    {
+      "source": "reports/PROSPECTIVE_LOCKBOX_ANALYZER_FAILED_V1.json",
+      "frozen_copy": "governance/PROSPECTIVE_LOCKBOX_ANALYZER_FAILED_V1.json",
+      "sha256": "62186be000c29ed6154549968e8179f4ae2aab29d5f5827a38a068d565fb34aa"
+    },
+    {
+      "source": "lockbox_runs/SEALED_BUNDLE_READY.json",
+      "frozen_copy": "governance/SEALED_BUNDLE_READY.json",
+      "sha256": "5392b04eb5076fb3f729b99584c7e9dd7cb96853e6be20a876d5b47a98400010"
+    },
+    {
+      "source": "lockbox_runs/OUTCOME_ACCESS_RECEIPT.json",
+      "frozen_copy": "governance/OUTCOME_ACCESS_RECEIPT.json",
+      "sha256": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83"
+    },
+    {
+      "source": "lockbox_runs/post_lockbox_corrective_v1/POST_LOCKBOX_CORRECTIVE_RESULTS.json",
+      "frozen_copy": "governance/POST_LOCKBOX_CORRECTIVE_RESULTS.json",
+      "sha256": "714d11716540d8a9445326af3ddd424b5634a3d1588bbaa1280dc1ca88b0241c"
+    },
+    {
+      "source": "lockbox_runs/post_lockbox_corrective_v1/SUPPORT_AUDIT.json",
+      "frozen_copy": "governance/SUPPORT_AUDIT.json",
+      "sha256": "2ed614091f048f94c796a9e94029189d6cf41eba23701ac771e696b68ba3611c"
+    },
+    {
+      "source": "lockbox_runs/post_lockbox_corrective_v1/TERMINAL_VALIDATION.json",
+      "frozen_copy": "governance/TERMINAL_VALIDATION.json",
+      "sha256": "f126273019e5913b8f047353eb80f0e9b0d34c72b48cf4248a57d5f5b3798484"
+    },
+    {
+      "source": "lockbox_runs/post_lockbox_corrective_v1/OUTPUT_INVENTORY.json",
+      "frozen_copy": "governance/OUTPUT_INVENTORY.json",
+      "sha256": "d8121d884e2b68cbc095c04360392a1befcc18e6364b5795eff444a64e5a3619"
+    },
+    {
+      "source": "reports/FINAL_EVIDENCE_V2_COMPLETENESS_ADDENDUM_20260901.json",
+      "frozen_copy": "governance/FINAL_EVIDENCE_V2_COMPLETENESS_ADDENDUM_20260901.json",
+      "sha256": "9f250ad1a0a2cefb4ca0e5fa3bf996b8650afd025f3eace3d1c29ef3f076cdc9"
+    },
+    {
+      "source": "evidence_freeze/final_evidence_v1/FINAL_EVIDENCE_MANIFEST.json",
+      "frozen_copy": "governance/FINAL_EVIDENCE_MANIFEST.json",
+      "sha256": "5fc03c8d71667229fa30c4a8f604dea9cc70bb92e303fb444df5226c11b1ecf3"
+    },
+    {
+      "source": "reports/FINAL_EVIDENCE_FREEZE_VALIDATION_20260901.json",
+      "frozen_copy": "governance/FINAL_EVIDENCE_FREEZE_VALIDATION_20260901.json",
+      "sha256": "d840ed0c6f415d7d9850a653e9c6d6b15949fbb72a8e007b4a87f7a083f36a8b"
+    }
+  ],
+  "creator_script_sha256": "06c1703a1143de54876879bc022c847eb36db451306b42c970f9705bcc285923"
+}

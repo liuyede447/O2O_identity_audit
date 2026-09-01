@@ -1,0 +1,595 @@
+{
+  "status": "complete",
+  "selection_mode": "full",
+  "selected_images": 300,
+  "focal_direction_events": 29612,
+  "nonfocal_pair_events": 3549250,
+  "primary_relationship_raw_pair_counts": {
+    "shared_native_claim_no": 3543571,
+    "shared_native_claim_yes": 5679
+  },
+  "relationship_raw_pair_counts": {
+    "distant_nonsharing": 3489822,
+    "local_nonsharing": 53749,
+    "shared_conflict": 5679
+  },
+  "bootstrap_replicates": 5000,
+  "primary_estimands": {
+    "estimand": "IPW pair-level nonfocal spillover rate by any shared native claim in base or shift",
+    "shared_native_claim_yes": {
+      "rate": 0.0091591776654369,
+      "weighted_numerator": 2292.103260869565,
+      "weighted_denominator": 250252.0798913043,
+      "raw_numerator": 52,
+      "raw_denominator": 5679,
+      "ci95_lower": 0.0057869936142510275,
+      "ci95_upper": 0.01324830938922751
+    },
+    "shared_native_claim_no": {
+      "rate": 0.0,
+      "weighted_numerator": 0.0,
+      "weighted_denominator": 156200678.8304348,
+      "raw_numerator": 0,
+      "raw_denominator": 3543571,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.0
+    },
+    "shared_minus_nonshared_rate_difference": {
+      "estimate": 0.0091591776654369,
+      "ci95_lower": 0.0057869936142510275,
+      "ci95_upper": 0.01324830938922751,
+      "bootstrap_unit": "image cluster within frozen selection stratum"
+    },
+    "continuous_normalized_centre_distance": {
+      "analysis_role": "primary continuous structural measure; no cutoff is applied",
+      "pair_level_columns": [
+        "normalized_centre_distance_base",
+        "normalized_centre_distance_shift"
+      ],
+      "output": "nonfocal_events.csv"
+    }
+  },
+  "secondary_descriptive_estimands": {
+    "status": "secondary descriptive only; not a primary relationship",
+    "local_distance_threshold": 2.0,
+    "threshold_source": "CLI --local-distance-threshold",
+    "affects_primary_estimands": false,
+    "relationships": {
+      "shared_conflict": {
+        "pair_spillover": {
+          "all": {
+            "rate": 0.0091591776654369,
+            "weighted_numerator": 2292.103260869565,
+            "weighted_denominator": 250252.0798913043,
+            "raw_numerator": 52,
+            "raw_denominator": 5679,
+            "ci95_lower": 0.0057869936142510275,
+            "ci95_upper": 0.01324830938922751
+          },
+          "focal_flip": {
+            "rate": 0.07946009448513623,
+            "weighted_numerator": 1498.8271739130435,
+            "weighted_denominator": 18862.6402173913,
+            "raw_numerator": 34,
+            "raw_denominator": 428,
+            "ci95_lower": 0.047241314270713826,
+            "ci95_upper": 0.10664172924942347
+          },
+          "focal_stable": {
+            "rate": 0.0034283158646930953,
+            "weighted_numerator": 793.2760869565219,
+            "weighted_denominator": 231389.43967391303,
+            "raw_numerator": 18,
+            "raw_denominator": 5251,
+            "ci95_lower": 0.0018948344376155284,
+            "ci95_upper": 0.005548895818495659
+          }
+        },
+        "focal_any_spillover": {
+          "all": {
+            "rate": 0.011024143123593127,
+            "weighted_numerator": 2292.103260869565,
+            "weighted_denominator": 207916.6820652174,
+            "raw_numerator": 52,
+            "raw_denominator": 4718,
+            "ci95_lower": 0.006798876872820798,
+            "ci95_upper": 0.01622514963210317
+          },
+          "focal_flip": {
+            "rate": 0.10628740674508931,
+            "weighted_numerator": 1498.8271739130435,
+            "weighted_denominator": 14101.644021739125,
+            "raw_numerator": 34,
+            "raw_denominator": 320,
+            "ci95_lower": 0.05784689735106164,
+            "ci95_upper": 0.15694812119356674
+          },
+          "focal_stable": {
+            "rate": 0.00409295426693654,
+            "weighted_numerator": 793.2760869565219,
+            "weighted_denominator": 193815.03804347818,
+            "raw_numerator": 18,
+            "raw_denominator": 4398,
+            "ci95_lower": 0.0022348898787825167,
+            "ci95_upper": 0.0066293000641134
+          }
+        }
+      },
+      "local_nonsharing": {
+        "pair_spillover": {
+          "all": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 2369474.270108697,
+            "raw_numerator": 0,
+            "raw_denominator": 53749,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_flip": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 111561.50271739131,
+            "raw_numerator": 0,
+            "raw_denominator": 2531,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_stable": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 2257912.7673913054,
+            "raw_numerator": 0,
+            "raw_denominator": 51218,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          }
+        },
+        "focal_any_spillover": {
+          "all": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 913590.6744565216,
+            "raw_numerator": 0,
+            "raw_denominator": 20724,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_flip": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 39319.870652173915,
+            "raw_numerator": 0,
+            "raw_denominator": 892,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_stable": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 874270.8038043475,
+            "raw_numerator": 0,
+            "raw_denominator": 19832,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          }
+        }
+      },
+      "distant_nonsharing": {
+        "pair_spillover": {
+          "all": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 153831204.5603261,
+            "raw_numerator": 0,
+            "raw_denominator": 3489822,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_flip": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 6462132.901630431,
+            "raw_numerator": 0,
+            "raw_denominator": 146634,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_stable": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 147369071.6586957,
+            "raw_numerator": 0,
+            "raw_denominator": 3343188,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          }
+        },
+        "focal_any_spillover": {
+          "all": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 1290912.9842391307,
+            "raw_numerator": 0,
+            "raw_denominator": 29286,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_flip": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 53642.16684782608,
+            "raw_numerator": 0,
+            "raw_denominator": 1217,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          },
+          "focal_stable": {
+            "rate": 0.0,
+            "weighted_numerator": 0.0,
+            "weighted_denominator": 1237270.8173913048,
+            "raw_numerator": 0,
+            "raw_denominator": 28069,
+            "ci95_lower": 0.0,
+            "ci95_upper": 0.0
+          }
+        }
+      }
+    }
+  },
+  "estimates": {
+    "pair_spillover": {
+      "overall": {
+        "all": {
+          "rate": 1.4650620789104426e-05,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 156450930.91032618,
+          "raw_numerator": 52,
+          "raw_denominator": 3549250,
+          "ci95_lower": 8.244810163526695e-06,
+          "ci95_upper": 2.3833883527049906e-05
+        },
+        "focal_flip": {
+          "rate": 0.00022735141520673676,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 6592557.044565215,
+          "raw_numerator": 34,
+          "raw_denominator": 149593,
+          "ci95_lower": 0.00010508604841181427,
+          "ci95_upper": 0.00040183636892227975
+        },
+        "focal_stable": {
+          "rate": 5.2935052375993136e-06,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 149858373.86576098,
+          "raw_numerator": 18,
+          "raw_denominator": 3399657,
+          "ci95_lower": 2.7380804543405218e-06,
+          "ci95_upper": 8.955377657288832e-06
+        }
+      },
+      "shared_native_claim_yes": {
+        "all": {
+          "rate": 0.0091591776654369,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 250252.0798913043,
+          "raw_numerator": 52,
+          "raw_denominator": 5679,
+          "ci95_lower": 0.0057869936142510275,
+          "ci95_upper": 0.01324830938922751
+        },
+        "focal_flip": {
+          "rate": 0.07946009448513623,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 18862.6402173913,
+          "raw_numerator": 34,
+          "raw_denominator": 428,
+          "ci95_lower": 0.047241314270713826,
+          "ci95_upper": 0.10664172924942347
+        },
+        "focal_stable": {
+          "rate": 0.0034283158646930953,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 231389.43967391303,
+          "raw_numerator": 18,
+          "raw_denominator": 5251,
+          "ci95_lower": 0.0018948344376155284,
+          "ci95_upper": 0.005548895818495659
+        }
+      },
+      "shared_native_claim_no": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 156200678.8304348,
+          "raw_numerator": 0,
+          "raw_denominator": 3543571,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 6573694.404347825,
+          "raw_numerator": 0,
+          "raw_denominator": 149165,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 149626984.42608702,
+          "raw_numerator": 0,
+          "raw_denominator": 3394406,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      },
+      "shared_conflict": {
+        "all": {
+          "rate": 0.0091591776654369,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 250252.0798913043,
+          "raw_numerator": 52,
+          "raw_denominator": 5679,
+          "ci95_lower": 0.0057869936142510275,
+          "ci95_upper": 0.01324830938922751
+        },
+        "focal_flip": {
+          "rate": 0.07946009448513623,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 18862.6402173913,
+          "raw_numerator": 34,
+          "raw_denominator": 428,
+          "ci95_lower": 0.047241314270713826,
+          "ci95_upper": 0.10664172924942347
+        },
+        "focal_stable": {
+          "rate": 0.0034283158646930953,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 231389.43967391303,
+          "raw_numerator": 18,
+          "raw_denominator": 5251,
+          "ci95_lower": 0.0018948344376155284,
+          "ci95_upper": 0.005548895818495659
+        }
+      },
+      "local_nonsharing": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 2369474.270108697,
+          "raw_numerator": 0,
+          "raw_denominator": 53749,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 111561.50271739131,
+          "raw_numerator": 0,
+          "raw_denominator": 2531,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 2257912.7673913054,
+          "raw_numerator": 0,
+          "raw_denominator": 51218,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      },
+      "distant_nonsharing": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 153831204.5603261,
+          "raw_numerator": 0,
+          "raw_denominator": 3489822,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 6462132.901630431,
+          "raw_numerator": 0,
+          "raw_denominator": 146634,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 147369071.6586957,
+          "raw_numerator": 0,
+          "raw_denominator": 3343188,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      }
+    },
+    "focal_any_spillover": {
+      "overall": {
+        "all": {
+          "rate": 0.0017734231884512525,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 1292473.942934783,
+          "raw_numerator": 52,
+          "raw_denominator": 29322,
+          "ci95_lower": 0.0009742420110693882,
+          "ci95_upper": 0.0026981252050288355
+        },
+        "focal_flip": {
+          "rate": 0.027781364534808648,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 53950.81195652174,
+          "raw_numerator": 34,
+          "raw_denominator": 1224,
+          "ci95_lower": 0.0125234949882875,
+          "ci95_upper": 0.0443799567331858
+        },
+        "focal_stable": {
+          "rate": 0.000640501632238345,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 1238523.1309782611,
+          "raw_numerator": 18,
+          "raw_denominator": 28098,
+          "ci95_lower": 0.00033343393324372064,
+          "ci95_upper": 0.0009780262499640687
+        }
+      },
+      "shared_native_claim_yes": {
+        "all": {
+          "rate": 0.011024143123593127,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 207916.6820652174,
+          "raw_numerator": 52,
+          "raw_denominator": 4718,
+          "ci95_lower": 0.006798876872820798,
+          "ci95_upper": 0.01622514963210317
+        },
+        "focal_flip": {
+          "rate": 0.10628740674508931,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 14101.644021739125,
+          "raw_numerator": 34,
+          "raw_denominator": 320,
+          "ci95_lower": 0.05784689735106164,
+          "ci95_upper": 0.15694812119356674
+        },
+        "focal_stable": {
+          "rate": 0.00409295426693654,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 193815.03804347818,
+          "raw_numerator": 18,
+          "raw_denominator": 4398,
+          "ci95_lower": 0.0022348898787825167,
+          "ci95_upper": 0.0066293000641134
+        }
+      },
+      "shared_native_claim_no": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 1292430.0804347831,
+          "raw_numerator": 0,
+          "raw_denominator": 29321,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 53950.81195652174,
+          "raw_numerator": 0,
+          "raw_denominator": 1224,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 1238479.2684782613,
+          "raw_numerator": 0,
+          "raw_denominator": 28097,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      },
+      "shared_conflict": {
+        "all": {
+          "rate": 0.011024143123593127,
+          "weighted_numerator": 2292.103260869565,
+          "weighted_denominator": 207916.6820652174,
+          "raw_numerator": 52,
+          "raw_denominator": 4718,
+          "ci95_lower": 0.006798876872820798,
+          "ci95_upper": 0.01622514963210317
+        },
+        "focal_flip": {
+          "rate": 0.10628740674508931,
+          "weighted_numerator": 1498.8271739130435,
+          "weighted_denominator": 14101.644021739125,
+          "raw_numerator": 34,
+          "raw_denominator": 320,
+          "ci95_lower": 0.05784689735106164,
+          "ci95_upper": 0.15694812119356674
+        },
+        "focal_stable": {
+          "rate": 0.00409295426693654,
+          "weighted_numerator": 793.2760869565219,
+          "weighted_denominator": 193815.03804347818,
+          "raw_numerator": 18,
+          "raw_denominator": 4398,
+          "ci95_lower": 0.0022348898787825167,
+          "ci95_upper": 0.0066293000641134
+        }
+      },
+      "local_nonsharing": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 913590.6744565216,
+          "raw_numerator": 0,
+          "raw_denominator": 20724,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 39319.870652173915,
+          "raw_numerator": 0,
+          "raw_denominator": 892,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 874270.8038043475,
+          "raw_numerator": 0,
+          "raw_denominator": 19832,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      },
+      "distant_nonsharing": {
+        "all": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 1290912.9842391307,
+          "raw_numerator": 0,
+          "raw_denominator": 29286,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_flip": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 53642.16684782608,
+          "raw_numerator": 0,
+          "raw_denominator": 1217,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        },
+        "focal_stable": {
+          "rate": 0.0,
+          "weighted_numerator": 0.0,
+          "weighted_denominator": 1237270.8173913048,
+          "raw_numerator": 0,
+          "raw_denominator": 28069,
+          "ci95_lower": 0.0,
+          "ci95_upper": 0.0
+        }
+      }
+    }
+  },
+  "elapsed_sec": 11656.766952799997
+}

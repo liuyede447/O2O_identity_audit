@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "protocol": "eligibility_stable_sensitivity_and_paired_pathway_contrast_v1",
+  "read_only": true,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260830,
+  "source_sha256": {
+    "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\per_direction_anatomy.csv": "d6c88f8d0af026c854fe30ac0e3303254ec79a6c7a59e7864d28730821d67976",
+    "results\\five_experiment_upgrade_20260830\\anatomy_normalized_k00625_v2\\per_direction_anatomy.csv": "5b41e6f7c0603ba389d256ec771a28279d557a4743ee66cb1da81868dab66a79"
+  },
+  "fixed_1px": {
+    "definition": "object-level: retain a focal object only when candidate-pair eligibility is unchanged for every legal replay direction; direction-level: retain each unchanged-eligibility direction",
+    "object_level": {
+      "retained_objects": 6217,
+      "all_objects": 7434,
+      "weighted_retention": 0.836333971143709,
+      "point": {
+        "fragility_8_16": 0.07946611377548803,
+        "fragility_16_32": 0.045895003566856704,
+        "scale_contrast": 0.03357111020863132
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.06572347598710535,
+          0.09428585431866426
+        ],
+        "fragility_16_32": [
+          0.02653762793479238,
+          0.07005810542967764
+        ],
+        "scale_contrast": [
+          0.01108504213315887,
+          0.054775248746271286
+        ]
+      },
+      "object_or_direction_rows": 6217,
+      "contributing_images": 282
+    },
+    "direction_level": {
+      "retained_directions": 28144,
+      "all_directions": 29616,
+      "point": {
+        "fragility_8_16": 0.027062255576113334,
+        "fragility_16_32": 0.01687616940026266,
+        "scale_contrast": 0.010186086175850675
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.022148864551610425,
+          0.03200437488181629
+        ],
+        "fragility_16_32": [
+          0.010077125486495241,
+          0.02531833990156304
+        ],
+        "scale_contrast": [
+          0.0018681724236397348,
+          0.01735249670624736
+        ]
+      },
+      "object_or_direction_rows": 28144,
+      "contributing_images": 300
+    }
+  },
+  "equivalent_side_k00625": {
+    "definition": "object-level: retain a focal object only when candidate-pair eligibility is unchanged for every legal replay direction; direction-level: retain each unchanged-eligibility direction",
+    "object_level": {
+      "retained_objects": 6999,
+      "all_objects": 7432,
+      "weighted_retention": 0.9417465841137966,
+      "point": {
+        "fragility_8_16": 0.06200583404948481,
+        "fragility_16_32": 0.051486270746199214,
+        "scale_contrast": 0.010519563303285594
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.052493811295513365,
+          0.07218510709146753
+        ],
+        "fragility_16_32": [
+          0.03260497331124118,
+          0.07518744606605246
+        ],
+        "scale_contrast": [
+          -0.011938453267132602,
+          0.029554381601317667
+        ]
+      },
+      "object_or_direction_rows": 6999,
+      "contributing_images": 293
+    },
+    "direction_level": {
+      "retained_directions": 28979,
+      "all_directions": 29612,
+      "point": {
+        "fragility_8_16": 0.021008270193304705,
+        "fragility_16_32": 0.020802086873249366,
+        "scale_contrast": 0.00020618332005533854
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.01762897285847073,
+          0.024722675327193765
+        ],
+        "fragility_16_32": [
+          0.013317227814930279,
+          0.030197873230013127
+        ],
+        "scale_contrast": [
+          -0.008554240705406389,
+          0.007601768976519309
+        ]
+      },
+      "object_or_direction_rows": 28979,
+      "contributing_images": 300
+    }
+  },
+  "pathway_fraction_difference_equivalent_minus_fixed": {
+    "definition": "equivalent-side minus fixed-pixel pathway fraction using paired stratified image-cluster resampling",
+    "point": {
+      "eligibility_boundary": -0.16088924402057292,
+      "topk_membership_transition": 0.0021021588565152075,
+      "conflict_reassignment": 0.006388767167238997,
+      "within_set_geometry_rank_reversal": 0.15239831799681858,
+      "active_disappearance": 0.0,
+      "compound_or_other": 0.0
+    },
+    "ci_95": {
+      "eligibility_boundary": [
+        -0.18915665577145815,
+        -0.13335443820946227
+      ],
+      "topk_membership_transition": [
+        -0.0004100142081521113,
+        0.004838399813610286
+      ],
+      "conflict_reassignment": [
+        -0.007051658682642256,
+        0.019600247560442423
+      ],
+      "within_set_geometry_rank_reversal": [
+        0.12686689077941063,
+        0.17825373380096632
+      ],
+      "active_disappearance": [
+        0.0,
+        0.0
+      ],
+      "compound_or_other": [
+        0.0,
+        0.0
+      ]
+    },
+    "paired_images": 201
+  }
+}
