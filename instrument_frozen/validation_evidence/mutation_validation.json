@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "protocol": "audit_instrument_mutation_suite_v1",
+  "mutations": [
+    {
+      "id": "M1_remove_ciou_clip",
+      "expected_failure": "unclipped negative CIoU produces nonzero q where the frozen contract requires zero",
+      "killed": true
+    },
+    {
+      "id": "M2_topk_6_or_8",
+      "expected_failure": "Top-k membership parity changes relative to native Top-7",
+      "killed": true
+    },
+    {
+      "id": "M3_corrupt_target_gt_idx",
+      "expected_failure": "exact native/reference target_gt_idx parity detects the injected ownership error",
+      "killed": true
+    },
+    {
+      "id": "M4_disable_stal_expansion",
+      "expected_failure": "tiny-object eligibility mask shrinks relative to the native STAL contract",
+      "killed": true
+    },
+    {
+      "id": "M5_impute_missing_runner_as_zero",
+      "expected_failure": "margin-domain invariant rejects a finite value when no positive runner-up exists",
+      "killed": true
+    },
+    {
+      "id": "M6_disable_conflict",
+      "expected_failure": "conflict-stage parity differs and conflict-labelled transitions are impossible",
+      "killed": true
+    }
+  ],
+  "killed": 6,
+  "total": 6,
+  "source_sha256": {
+    "reference": "35f0071c8c9b7771d2c0765ec0f051eb495a653feae64a58a17fd2aa4c4b4a63",
+    "oracle_cases": "9858b62ce369a109701a725cda507ba204f1fde042092eba1e884cd2e4eb687a",
+    "mutation_suite": "41b0d8bb45756f3297f343a3eb013a18a8bb8e5f0a620c5c16a1265b01267cf3"
+  }
+}

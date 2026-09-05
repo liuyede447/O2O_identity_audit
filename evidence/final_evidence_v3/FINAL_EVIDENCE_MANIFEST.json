@@ -1,0 +1,35 @@
+{
+  "status": "FINAL_EVIDENCE_FROZEN",
+  "frozen_at_utc": "2026-09-03T07:53:21.162146+00:00",
+  "authority_order": [
+    "frozen_result_artifact",
+    "current_evidence_ledger",
+    "historical_ssot",
+    "manuscript"
+  ],
+  "evidence_entries": 27,
+  "excluded_records": 5,
+  "pending_gates": [],
+  "active_manuscript_authority": {
+    "boundary_grid_resolution": "EV-BOUNDARY-GRID-CONVERGENCE-V1",
+    "boundary_geometry": "EV-BOUNDARY-GEOMETRY-V3",
+    "margin_rho_R_construct": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+    "superseded_for_active_manuscript_boundary_claims": [
+      "EV-BOUNDARY-GEOMETRY-V2",
+      "EV-MARGIN-RHOR-CONSTRUCT-V2"
+    ]
+  },
+  "predecessor_final_evidence_v2": {
+    "path": "evidence_freeze/final_evidence_v2",
+    "manifest_sha256": "4f626da49dcd7ee87ffd33311e9c08c73629e2b7b4cb0b2c7e74501a7a5a1ca9",
+    "sha256sums_sha256": "cea0c7dcb471c9ac72141fae685549d8f84821f868329f5e4704f76f0bfabdc2",
+    "preserved": true
+  },
+  "current_evidence_ledger_sha256": "780e697fe6dd6c1a0a72d227e9b0258507af49f76c750bd0c5a638c6a33f0db8",
+  "current_evidence_ledger_markdown_sha256": "435db6ee701449b4fefcbfd08fff409ef9b5941147228345a5a70c334e43f93a",
+  "source_to_result_mapping_sha256": "30a2a3fe83d71de933db5b2d4ef7ef124e85541aed53b865c8a551b5c7df2976",
+  "result_to_claim_mapping_sha256": "48d4deaef3cff1733b88cbc4ad3ebb030d21f417016c4ba7bc83708129070c01",
+  "excluded_evidence_sha256": "3037032b9be2d0279dd633c69a3cc2946471abbd1d8c6ea696f85ff8ea3b31b3",
+  "validation_sha256": "528ed0b42a1da20931dae299637c6daa9cd32f425ef65ff038c279db5df6b394",
+  "creator_script_sha256": "70f6a3409ad2543f1ef33c1e6af15457678a2aecb9610796b20838b642ee238e"
+}

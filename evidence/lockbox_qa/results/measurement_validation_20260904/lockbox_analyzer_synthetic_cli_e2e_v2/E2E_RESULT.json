@@ -1,0 +1,135 @@
+{
+  "all_zero_outcome_cluster_retained": true,
+  "analyzer_sha256": "3e587b048dc1b2c0465d4ef0215fb5a4012d479af6bdfd19d30db250d7c46905",
+  "artifact_role": "synthetic_post_failure_software_qa_not_scientific_evidence",
+  "bootstrap_replicates": 99,
+  "duplicate_key_failed_closed": true,
+  "empty_stratum_retained": true,
+  "expected_verdict_reproduced": true,
+  "historical_lockbox_v1_touched": false,
+  "normal_verdict_sha256": "7ec9c72c83db31fc906b843ad636103f2407d15c92cd06bf59fd7729b17a89e6",
+  "normative_or_scientific_status_changed": false,
+  "raw_merge_order_invariant": true,
+  "rehearsal_script_sha256": "aff63c85568a225d0dcb47cdfc53d8a175ee52c8ea5190b9310c2c6801a86d23",
+  "reverse_verdict_sha256": "5d9585529a5bf5faec8e2809b5e6275f8d13fb757314d51ef94f846ad1d358e6",
+  "scientific_payload_sha256": "bab0ad01ec8c14da39ea83b8b1ad602532e8185fad88cdcff6a6ff6639434f9f",
+  "selected_clusters": 300,
+  "status": "PASS",
+  "support_audit": {
+    "fixed_common_valid": 597,
+    "fixed_only": 3,
+    "intersection": 594,
+    "normalized_common_valid": 597,
+    "normalized_only": 3
+  },
+  "synthetic_scientific_payload": {
+    "bootstrap_replicates": 99,
+    "branch_support_audit": {
+      "fixed_common_valid": 597,
+      "fixed_only": 3,
+      "intersection": 594,
+      "normalized_common_valid": 597,
+      "normalized_only": 3
+    },
+    "seed": 7,
+    "selected_image_clusters": 300,
+    "tier_a": {
+      "H1": {
+        "ci_95_two_sided": [
+          1.4402633719747815,
+          1.548966251140164
+        ],
+        "direction": "greater_than_zero",
+        "formal_pass": true,
+        "formal_status": "formally_tested_pass",
+        "metric": "normalized_paired_gap",
+        "one_sided_bound": {
+          "kind": "lower",
+          "level": 0.95,
+          "value": 1.446272446943588
+        },
+        "point_estimate": 1.494949494949495,
+        "raw_directional_pass": true,
+        "raw_empirical_p": 0.01
+      },
+      "H2": {
+        "ci_95_two_sided": [
+          -1.0,
+          -0.9898648648648649
+        ],
+        "direction": "less_than_zero",
+        "formal_pass": true,
+        "formal_status": "formally_tested_pass",
+        "metric": "normalized_o2m_gap",
+        "one_sided_bound": {
+          "kind": "upper",
+          "level": 0.95,
+          "value": -0.98989898989899
+        },
+        "point_estimate": -0.9966329966329966,
+        "raw_directional_pass": true,
+        "raw_empirical_p": 0.01
+      },
+      "H3": {
+        "ci_95_two_sided": [
+          0.4434507642926085,
+          0.5516628873771731
+        ],
+        "direction": "greater_than_zero",
+        "formal_pass": true,
+        "formal_status": "formally_tested_pass",
+        "metric": "fixed_minus_normalized_o2o_gap",
+        "one_sided_bound": {
+          "kind": "lower",
+          "level": 0.95,
+          "value": 0.4528686224776099
+        },
+        "point_estimate": 0.4983164983164983,
+        "raw_directional_pass": true,
+        "raw_empirical_p": 0.01
+      }
+    },
+    "tier_b": {
+      "H4": {
+        "ci_95_two_sided": [
+          1.0,
+          1.0
+        ],
+        "direction": "greater_than_zero",
+        "formal_pass": true,
+        "formal_status": "formally_tested_pass",
+        "holm_adjusted_p": 0.02,
+        "metric": "fixed_eligibility_minus_normalized",
+        "one_sided_bound": {
+          "kind": "lower",
+          "level": 0.95,
+          "value": 1.0
+        },
+        "point_estimate": 1.0,
+        "raw_directional_pass": true,
+        "raw_empirical_p": 0.01
+      },
+      "H5": {
+        "ci_95_two_sided": [
+          1.0,
+          1.0
+        ],
+        "direction": "greater_than_zero",
+        "formal_pass": true,
+        "formal_status": "formally_tested_pass",
+        "holm_adjusted_p": 0.02,
+        "metric": "normalized_within_minus_fixed",
+        "one_sided_bound": {
+          "kind": "lower",
+          "level": 0.95,
+          "value": 1.0
+        },
+        "point_estimate": 1.0,
+        "raw_directional_pass": true,
+        "raw_empirical_p": 0.01
+      }
+    }
+  },
+  "unequal_raw_rosters_handled": true,
+  "zero_row_selected_cluster_retained": true
+}

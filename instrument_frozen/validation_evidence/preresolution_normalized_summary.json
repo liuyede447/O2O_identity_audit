@@ -1,0 +1,84 @@
+{
+  "status": "complete",
+  "estimand": "IPW any-direction identity fragility for 8-16 px versus 16-32 px focal GTs; paired comparison of native pre-conflict Top-7 q winner and final loss-active identity",
+  "primary_pre_resolution_definition": "highest-q candidate inside the native pre-conflict Top-7 mask",
+  "secondary_definition": null,
+  "n_gt": 7432,
+  "n_images": 300,
+  "n_directional_replays": 29612,
+  "focal_gt_by_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "point": {
+    "preconflict_top7_fragility_8_16": 0.12016536740581021,
+    "preconflict_top7_fragility_16_32": 0.08671889752454502,
+    "preconflict_top7_scale_gap_8_16_minus_16_32": 0.03344646988126519,
+    "loss_active_fragility_8_16": 0.11923902693878712,
+    "loss_active_fragility_16_32": 0.08974397534516868,
+    "loss_active_scale_gap_8_16_minus_16_32": 0.02949505159361844,
+    "loss_active_minus_preconflict_scale_gap": -0.003951418287646752,
+    "any_direction_fragility_disagreement_rate": 0.005780591262487415,
+    "any_direction_conflict_involved_rate": 0.14369771883947896,
+    "fragility_disagreement_with_conflict_rate": 0.005780591262487415
+  },
+  "ci_95": {
+    "preconflict_top7_fragility_8_16": [
+      0.10537279559621004,
+      0.1352440989293157
+    ],
+    "preconflict_top7_fragility_16_32": [
+      0.0559131371614751,
+      0.12493190411350914
+    ],
+    "preconflict_top7_scale_gap_8_16_minus_16_32": [
+      -0.002298104773839175,
+      0.0652152698750502
+    ],
+    "loss_active_fragility_8_16": [
+      0.10499173066365441,
+      0.1332201412582622
+    ],
+    "loss_active_fragility_16_32": [
+      0.05731060015326476,
+      0.12979038043297172
+    ],
+    "loss_active_scale_gap_8_16_minus_16_32": [
+      -0.0076343980553576505,
+      0.06198165820571554
+    ],
+    "loss_active_minus_preconflict_scale_gap": [
+      -0.009859027164087477,
+      0.0003415156503585589
+    ],
+    "any_direction_fragility_disagreement_rate": [
+      0.0025533839384156124,
+      0.009713969946997175
+    ],
+    "any_direction_conflict_involved_rate": [
+      0.10954409934489397,
+      0.17894351926300722
+    ],
+    "fragility_disagreement_with_conflict_rate": [
+      0.0025533839384156124,
+      0.009713969946997175
+    ]
+  },
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "image cluster within frozen outcome-blind sampling stratum",
+  "conflict_localisation": {
+    "directional_rows": 29612,
+    "directional_pre_vs_active_flip_disagreement_count": 96,
+    "directional_pre_vs_active_flip_disagreement_weighted_rate": 0.0032399408902662,
+    "conflict_involved_weighted_rate": 0.10383394280215497,
+    "conflict_involved_among_flip_disagreements_weighted_rate": 1.0,
+    "flip_disagreement_without_recorded_conflict_count": 0,
+    "pre_vs_active_identity_disagreement_weighted_rate": 0.011704430919242545,
+    "conflict_involved_among_identity_disagreements_weighted_rate": 1.0,
+    "definition": "conflict_involved means the focal GT's native pre-conflict Top-7 mask differs from its post-conflict mask at base or shifted state; it localises but does not establish causality",
+    "conflict_involved_among_any_direction_fragility_disagreements_weighted_rate": 1.0,
+    "any_direction_fragility_disagreement_count": 43,
+    "any_direction_fragility_disagreement_without_recorded_conflict_count": 0
+  },
+  "interpretation_guardrail": "Conflict-stage coincidence localises disagreement between the two identity definitions; it is not a causal effect estimate."
+}

@@ -1,0 +1,67 @@
+{
+  "bootstrap": {
+    "count_standardization": {
+      "interval": "percentile 95%",
+      "replicates": 2000,
+      "seed": 20260901,
+      "unit": "image cluster",
+      "within": "outcome-blind sampling stratum"
+    },
+    "rank_set": 5000
+  },
+  "count_support": {
+    "adequate_overlap_k": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "common_valid_gt": 6377,
+    "contributing_images": 288,
+    "selected_images": 300
+  },
+  "figure": "Figure 5",
+  "rank_set_support": {
+    "equivalent": {
+      "directions": 29612,
+      "focal_gt": 7432,
+      "images": 300
+    },
+    "fixed": {
+      "directions": 29616,
+      "focal_gt": 7434,
+      "images": 300
+    }
+  },
+  "source_csv": "figures_final/source_data/fig5_source.csv",
+  "source_csv_sha256": "6a15ed93a17f275f454c8e8fd90add06453702494059229220f5201da932b1bd",
+  "sources": {
+    "count_strata": {
+      "authority": "SOURCE_ADDENDUM",
+      "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+      "sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365"
+    },
+    "count_summary": {
+      "authority": "SOURCE_ADDENDUM",
+      "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
+      "sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25"
+    },
+    "rank_equivalent": {
+      "authority": "EV-RANK-SET-NORMALIZED-V1",
+      "path": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+      "sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d"
+    },
+    "rank_fixed": {
+      "authority": "EV-RANK-SET-FIXED-V1",
+      "path": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+      "sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4"
+    }
+  },
+  "status": "SOURCE_BOUND_WITH_ADDENDUM",
+  "warnings": [
+    "K=0 is retained in the distribution although full_common_support begins at K=1.",
+    "Crude points and K=3-7 standardized estimates use different supports.",
+    "Positive-count controls are registered as a figure-only SOURCE_ADDENDUM, not a new final_evidence_v3 entry."
+  ]
+}

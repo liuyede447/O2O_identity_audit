@@ -1,0 +1,1516 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS_FOR_FINAL_FIGURES",
+  "low_fidelity_allowed": true,
+  "final_figure_generation_allowed": true,
+  "science_results_recomputed": false,
+  "authority_order": [
+    "frozen source artifact",
+    "final_evidence_v3",
+    "current manuscript",
+    "old figure"
+  ],
+  "primary_checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "ledger": {
+    "path": "evidence_freeze/final_evidence_v3/CURRENT_EVIDENCE_LEDGER.json",
+    "sha256": "780e697fe6dd6c1a0a72d227e9b0258507af49f76c750bd0c5a638c6a33f0db8",
+    "status": "FINAL_EVIDENCE_FROZEN"
+  },
+  "summary": {
+    "panels": 24,
+    "panel_status_counts": {
+      "PASS": 18,
+      "WARN": 6,
+      "FAIL": 0
+    },
+    "source_references": 63,
+    "missing_sources": 0,
+    "sha256_conflicts": 0,
+    "unresolved_evidence_links": 0,
+    "semantic_identity_conflicts": 0
+  },
+  "blocking_findings": [],
+  "source_addendum_policy": "These sources are SHA-verified for figure construction only. They are not inserted into final_evidence_v3, do not upgrade evidence stage, and cannot support new scientific claims.",
+  "panels": [
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Method schematic with one primary-checkpoint AI-TOD-v2 context crop; no sampled estimate",
+      "image_n": 1,
+      "weighting": null,
+      "bootstrap_unit": null,
+      "bootstrap_repetitions": null,
+      "ci_type": null,
+      "evidence_class": "method contract plus figure-only qualitative SOURCE_ADDENDUM",
+      "interpretation_class": "controlled counterfactual replay schematic",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "displayed_gt": 3,
+        "focal_gt": 1
+      },
+      "statistical_unit": "assignment-state replay contract",
+      "point_estimate_columns": [
+        "true GT box coordinates"
+      ],
+      "ci_columns": [],
+      "panel_status": "WARN",
+      "status_reason": "The real-image context is SHA-verified against the primary-checkpoint figure trace and is used only for explanatory rendering; it does not add an aggregate estimate.",
+      "figure_number": "Fig1",
+      "panel": "a",
+      "panel_id": "Fig1a",
+      "scientific_question": "What is frozen and what moves in focal-GT replay?",
+      "source_artifacts": [
+        {
+          "path": "manuscript/content/methods.tex",
+          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "evidence_id": null,
+          "authority": "CONTRACT_SOURCE",
+          "role": "method definition"
+        },
+        {
+          "path": "results/measurement_validation_20260831/fixed_branch_replay_v1/manifest.json",
+          "expected_sha256": "38299ec8fdc5ede460922bd686334b02d914815b320dad01dd6e150bb36a975a",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "fixed replay contract"
+        },
+        {
+          "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/manifest.json",
+          "expected_sha256": "5f98a6bd29d0e6c0c1b398c895a4fcd21001653a5bed197ee4fe3dae476484d5",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side replay contract"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+          "expected_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint qualitative candidate trace"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+          "expected_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint trace validation"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+          "expected_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "real AI-TOD-v2 source image"
+        }
+      ]
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Method schematic; no sampled estimate",
+      "image_n": null,
+      "weighting": null,
+      "bootstrap_unit": null,
+      "bootstrap_repetitions": null,
+      "ci_type": null,
+      "evidence_class": "method contract",
+      "interpretation_class": "descriptive algorithm schematic",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": "native O2O Top-7 and O2M Top-10 paths",
+      "statistical_unit": "native assignment path",
+      "figure_number": "Fig1",
+      "panel": "b",
+      "panel_id": "Fig1b",
+      "scientific_question": "Which native assignment states are followed for O2O and O2M?",
+      "source_artifacts": [
+        {
+          "path": "manuscript/content/methods.tex",
+          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "evidence_id": null,
+          "authority": "CONTRACT_SOURCE",
+          "role": "method definition"
+        },
+        {
+          "path": "manuscript/supplementary.tex",
+          "expected_sha256": "4dac51d9b341274ad985e865211448e5c6401719af0aad3637aeb6ed3542319e",
+          "evidence_id": null,
+          "authority": "CONTRACT_SOURCE",
+          "role": "native-path contract"
+        }
+      ],
+      "object_direction_trajectory_n": null,
+      "point_estimate_columns": [],
+      "ci_columns": [],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "method concept bound to observed cardinal trajectories",
+      "censoring_or_conditioning": "right and competing censoring retained; cardinal directions only, not a full 2D minimum radius",
+      "stress_contract": "four cardinal rays, equivalent-area-side r in [0,.25], step 1/1024",
+      "object_direction_trajectory_n": {
+        "focal_gt": 7431,
+        "directional_trajectories": 29724,
+        "curve_rows": 7593288
+      },
+      "statistical_unit": "focal-GT directional cardinal trajectory",
+      "point_estimate_columns": [
+        "base state",
+        "shift state",
+        "first observed cardinal boundary"
+      ],
+      "ci_columns": [],
+      "figure_number": "Fig1",
+      "panel": "c",
+      "panel_id": "Fig1c",
+      "scientific_question": "How do base and shifted native states define stable, changed, undefined, and first-cardinal-boundary readouts?",
+      "source_artifacts": [
+        {
+          "path": "manuscript/content/methods.tex",
+          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "evidence_id": null,
+          "authority": "CONTRACT_SOURCE",
+          "role": "method definition"
+        },
+        {
+          "path": "runs/20260902_boundary_full_grid_1024_population_v1/per_direction_boundary_events.csv",
+          "expected_sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "canonical boundary events"
+        },
+        {
+          "path": "runs/20260902_boundary_full_grid_1024_population_v1/o2m_rank_set_radius_curve.csv",
+          "expected_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "canonical full-grid curve"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "selected": 300,
+        "contributing": 288
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "descriptive/observational",
+      "censoring_or_conditioning": "common-valid endpoint support; fixed and equivalent-side supports differ by one GT",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "fixed_common_valid_gt": 6378,
+        "equivalent_side_common_valid_gt": 6377
+      },
+      "statistical_unit": "common-valid focal GT",
+      "point_estimate_columns": [
+        "O2O 8-16 minus 16-32",
+        "O2M 8-16 minus 16-32",
+        "paired O2O-minus-O2M"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig2",
+      "panel": "a",
+      "panel_id": "Fig2a",
+      "scientific_question": "How do branch scale contrasts differ between fixed and equivalent-area stress?",
+      "source_artifacts": [
+        {
+          "path": "results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
+          "expected_sha256": "aece532fd9ea842247ed22ea03557e13ece6209144d83f3598beadd38ba0bcfe",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "fixed endpoint estimates"
+        },
+        {
+          "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json",
+          "expected_sha256": "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side endpoint estimates"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": [
+        "AI-TOD-v2",
+        "VisDrone"
+      ],
+      "checkpoint": {
+        "AI-TOD-v2": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+        "VisDrone": "e7cffd98c6055bb0818873f94e6566feb697660ec5666f21f13c6304b412d0e8"
+      },
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "AI-TOD-v2": {
+          "selected": 300,
+          "contributing": 288
+        },
+        "VisDrone": {
+          "selected": 300,
+          "contributing": 300
+        }
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery sensitivity",
+      "interpretation_class": "tested-point sensitivity; connecting lines imply no continuous dose response",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": "equivalent-side kappa in {.03125,.0625,.125}",
+      "object_direction_trajectory_n": {
+        "AI-TOD-v2_common_valid_gt_range": [
+          6376,
+          6378
+        ],
+        "VisDrone_common_valid_gt": 13911
+      },
+      "statistical_unit": "common-valid focal GT",
+      "point_estimate_columns": [
+        "paired",
+        "o2o",
+        "o2m"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig2",
+      "panel": "b",
+      "panel_id": "Fig2b",
+      "scientific_question": "Does the tested paired response direction persist across kappa and dataset?",
+      "source_artifacts": [
+        {
+          "path": "results/stress_contract_sensitivity_20260829/frozen_matrix/stress_contract_sensitivity.json",
+          "expected_sha256": "1776ecbdff504d1e77e8842cc11d6513511470e7214d3fe846a5a1b4207e6601",
+          "evidence_id": "EV-STRESS-CONTRACT-KAPPA-DATASET-V1",
+          "authority": "final_evidence_v3",
+          "role": "kappa by dataset estimates"
+        },
+        {
+          "path": "results/stress_contract_sensitivity_20260829/frozen_matrix/kappa_sensitivity_matrix.csv",
+          "expected_sha256": "38ee31b39b02f383cba7b816aa3b34fdccc7440d051cb725524bfb879815f0a8",
+          "evidence_id": "EV-STRESS-CONTRACT-KAPPA-DATASET-V1",
+          "authority": "final_evidence_v3",
+          "role": "tested kappa matrix"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": {
+        "epoch0": "a7a60c7a...",
+        "epoch20": "0a83492f...",
+        "epoch40": "41019d81...",
+        "epoch60": "4e901f50...",
+        "epoch80": "80ed8764...",
+        "epoch300": "46ff9c34..."
+      },
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Six physically archived checkpoints: 0,20,40,60,80,300",
+      "image_n": null,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery descriptive",
+      "interpretation_class": "archived-stage description; no interpolation or predictive correlation",
+      "censoring_or_conditioning": "no checkpoints archived between 80 and 300",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "archived_checkpoints": 6,
+        "trajectory_rows": 12
+      },
+      "statistical_unit": "checkpoint by stress-contract trajectory point",
+      "point_estimate_columns": [
+        "paired_contrast_pp",
+        "mAP50-95"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig2",
+      "panel": "c",
+      "panel_id": "Fig2c",
+      "scientific_question": "Is the paired response visible at the physically archived training stages?",
+      "source_artifacts": [
+        {
+          "path": "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+          "expected_sha256": "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9",
+          "evidence_id": "EV-LEARNING-DYNAMICS-V1",
+          "authority": "final_evidence_v3",
+          "role": "archived-stage estimates"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": {
+        "YOLO26s": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+        "YOLOv10-S": "ecf7ca8df8eded54b9500109123f94ef8eaddd736bd8351a968761f0f62a0d38"
+      },
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "YOLO26s_contributing": 288,
+        "YOLOv10-S_contributing": 288
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "compatible-detector replication",
+      "interpretation_class": "replication of response signature, not architecture invariance",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "object_direction_trajectory_n": {
+        "YOLO26s_common_valid_gt": 6377,
+        "YOLOv10-S_common_valid_gt": 6348
+      },
+      "statistical_unit": "common-valid focal GT",
+      "point_estimate_columns": [
+        "o2o_scale_contrast",
+        "o2m_scale_contrast",
+        "paired_branch_difference"
+      ],
+      "ci_columns": [
+        "ci95[0]",
+        "ci95[1]"
+      ],
+      "figure_number": "Fig2",
+      "panel": "d",
+      "panel_id": "Fig2d",
+      "scientific_question": "Is the response signature reproduced under a compatible detector contract?",
+      "source_artifacts": [
+        {
+          "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json",
+          "expected_sha256": "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side endpoint estimates"
+        },
+        {
+          "path": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+          "expected_sha256": "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb",
+          "evidence_id": "EV-YOLOV10-NORMALIZED-V1",
+          "authority": "final_evidence_v3",
+          "role": "YOLOv10-S estimates"
+        },
+        {
+          "path": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/manifest.json",
+          "expected_sha256": "c1e14e823fabfef6f8b6847c158b0da829f12d9e41ea7b4251e4c6ec8215270f",
+          "evidence_id": "EV-YOLOV10-NORMALIZED-V1",
+          "authority": "final_evidence_v3",
+          "role": "YOLOv10-S contract"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "as recorded by frozen eligibility-lock artifact (not explicitly identified)",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "counterfactual sensitivity/localisation",
+      "censoring_or_conditioning": "lock-support differs from primary common-valid endpoint support; not a causal contribution fraction",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "per_gt_rows": 14866,
+        "per_direction_rows": 59228,
+        "fixed_gt": 7434,
+        "equivalent_side_gt": 7432,
+        "fixed_directions": 29616,
+        "equivalent_side_directions": 29612
+      },
+      "statistical_unit": "GT and directional replay on lock support",
+      "point_estimate_columns": [
+        "fixed_o2o_gap_reduction.point",
+        "fixed_o2o_gap_fraction_removed.point",
+        "normalized_o2o_gap_reduction.point"
+      ],
+      "ci_columns": [
+        "*.ci95[0]",
+        "*.ci95[1]"
+      ],
+      "figure_number": "Fig3",
+      "panel": "a",
+      "panel_id": "Fig3a",
+      "scientific_question": "How much is the fixed O2O scale gap attenuated under base-eligibility locking?",
+      "source_artifacts": [
+        {
+          "path": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+          "expected_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+          "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+          "authority": "final_evidence_v3",
+          "role": "eligibility-lock estimates"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery conditional sensitivity",
+      "interpretation_class": "observational subset",
+      "censoring_or_conditioning": "post-replay eligibility-stable conditioning changes the estimand",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "fixed_retained_gt": 6217,
+        "equivalent_side_retained_gt": 6999
+      },
+      "statistical_unit": "post-replay conditioned focal GT",
+      "point_estimate_columns": [
+        "fixed object/direction gap",
+        "normalized object/direction gap"
+      ],
+      "ci_columns": [
+        "ci95 low",
+        "ci95 high"
+      ],
+      "figure_number": "Fig3",
+      "panel": "b",
+      "panel_id": "Fig3b",
+      "scientific_question": "What response remains in the observational eligibility-stable subset?",
+      "source_artifacts": [
+        {
+          "path": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+          "expected_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+          "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+          "authority": "final_evidence_v3",
+          "role": "eligibility-stable subset"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "fixed_contributing": 201,
+        "equivalent_side_contributing": 159
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery plus figure-only descriptive addendum",
+      "interpretation_class": "descriptive localisation; first-observed exclusive, any-stage non-exclusive",
+      "censoring_or_conditioning": "identity-flip rows only; execution-order dependent and not causal fractions",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "fixed_flip_directions": 2194,
+        "equivalent_side_flip_directions": 1241
+      },
+      "statistical_unit": "O2O identity-flip directional replay",
+      "point_estimate_columns": [
+        "exclusive first-observed pathway fraction",
+        "non-exclusive flag__* and pair__* occurrence"
+      ],
+      "ci_columns": [
+        "ci95",
+        "ci_95.*"
+      ],
+      "panel_status": "WARN",
+      "status_reason": "Any-stage co-occurrence is SHA-verified in SOURCE_ADDENDUM; it remains descriptive and does not upgrade EV-PATHWAY-ANATOMY-V2.",
+      "figure_number": "Fig3",
+      "panel": "c",
+      "panel_id": "Fig3c",
+      "scientific_question": "Where is the first difference observed, and which stages occur anywhere on flip paths?",
+      "source_artifacts": [
+        {
+          "path": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+          "expected_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+          "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+          "authority": "final_evidence_v3",
+          "role": "exclusive first-observed labels"
+        },
+        {
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+          "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "non-exclusive any-stage summary"
+        },
+        {
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
+          "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "non-exclusive any-stage rows"
+        }
+      ]
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery control",
+      "interpretation_class": "same-branch descriptive control, not conflict mediation",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "fixed_objects": 7434,
+        "fixed_directions": 29616,
+        "equivalent_side_objects": 7432,
+        "equivalent_side_directions": 29612
+      },
+      "statistical_unit": "focal GT and directional replay",
+      "point_estimate_columns": [
+        "pre-conflict winner scale gap",
+        "loss-active scale gap",
+        "paired difference",
+        "definition disagreement"
+      ],
+      "ci_columns": [
+        "ci95 low",
+        "ci95 high"
+      ],
+      "figure_number": "Fig3",
+      "panel": "d",
+      "panel_id": "Fig3d",
+      "scientific_question": "How does pre-conflict rank state compare with final loss-active O2O identity?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+          "expected_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+          "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+          "authority": "final_evidence_v3",
+          "role": "fixed pre-resolution control"
+        },
+        {
+          "path": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+          "expected_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+          "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side pre-resolution control"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "Kaplan-Meier state persistence",
+      "censoring_or_conditioning": "base-undefined excluded; right censoring retained; cardinal, not full 2D geometry",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "object_direction_trajectory_n": {
+        "focal_gt": 7431,
+        "directional_trajectories": 29724,
+        "o2o_base_defined": 29048,
+        "o2m_base_defined": 28996
+      },
+      "statistical_unit": "focal-GT directional trajectory",
+      "point_estimate_columns": [
+        "survival",
+        "radius"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig4",
+      "panel": "a",
+      "panel_id": "Fig4a",
+      "scientific_question": "How do O2O and O2M native states persist over cardinal distance?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+          "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "KM and Aalen-Johansen estimates"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "Aalen-Johansen first-boundary incidence",
+      "censoring_or_conditioning": "competing first causes and right censoring retained; reserved other may be zero",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "object_direction_trajectory_n": {
+        "focal_gt": 7431,
+        "directional_trajectories": 29724,
+        "o2o_base_defined": 29048
+      },
+      "statistical_unit": "focal-GT directional trajectory",
+      "point_estimate_columns": [
+        "cause-specific cumulative incidence",
+        "radius"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig4",
+      "panel": "b",
+      "panel_id": "Fig4b",
+      "scientific_question": "Which native-path cause is first observed at the O2O boundary?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+          "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "KM and Aalen-Johansen estimates"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "restricted mean summary",
+      "censoring_or_conditioning": "base-undefined excluded; branch supports reported separately",
+      "stress_contract": "equivalent-area-side cardinal r; primary truncation tau=.125",
+      "object_direction_trajectory_n": {
+        "focal_gt": 7431,
+        "directional_trajectories": 29724,
+        "o2o_base_defined": 29048,
+        "o2m_base_defined": 28996
+      },
+      "statistical_unit": "focal-GT directional trajectory",
+      "point_estimate_columns": [
+        "rmcbd",
+        "o2o_minus_o2m"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig4",
+      "panel": "c",
+      "panel_id": "Fig4c",
+      "scientific_question": "What are absolute and paired restricted mean cardinal boundary distances?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr.csv",
+          "expected_sha256": "58505fa4a2ce39bbfb86bf7de769b63b35f4c003bc11898317b7c116933fe725",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD absolute estimates"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+          "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "RMCBD contrasts at tau .125"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery prespecified tau sensitivity",
+      "interpretation_class": "ordering across tested truncation horizons, not magnitude robustness",
+      "censoring_or_conditioning": "base-undefined excluded; truncation-specific right censoring",
+      "stress_contract": "equivalent-area-side cardinal r; tau in {.05,.0625,.10,.125,.20,.25}",
+      "object_direction_trajectory_n": {
+        "focal_gt": 7431,
+        "directional_trajectories": 29724
+      },
+      "statistical_unit": "focal-GT directional trajectory",
+      "point_estimate_columns": [
+        "o2o_minus_o2m by tau and size stratum"
+      ],
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "figure_number": "Fig4",
+      "panel": "d",
+      "panel_id": "Fig4d",
+      "scientific_question": "Does branch ordering persist across prespecified truncation horizons?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00500/rmsr_contrasts.csv",
+          "expected_sha256": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD contrasts at tau .05"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00625/rmsr_contrasts.csv",
+          "expected_sha256": "1be655cbe4b74aa55741ea09ac8e720d7d28bdf10e92cd07bf42c134871e5af1",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD contrasts at tau .0625"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01000/rmsr_contrasts.csv",
+          "expected_sha256": "ada6e5f87a6343e8b261e5e21372c9a0e124eb20b7bf7c083312acf231273498",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD contrasts at tau .10"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+          "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "RMCBD contrasts at tau .125"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02000/rmsr_contrasts.csv",
+          "expected_sha256": "7a20f920d38e312b62ac57e9e55be85cdc6e11b232c6d568e0d171b232dc3af3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD contrasts at tau .20"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02500/rmsr_contrasts.csv",
+          "expected_sha256": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "RMCBD contrasts at tau .25"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Concept examples bound to frozen Rank-Set definitions",
+      "image_n": null,
+      "weighting": null,
+      "bootstrap_unit": null,
+      "bootstrap_repetitions": null,
+      "ci_type": null,
+      "evidence_class": "method concept",
+      "interpretation_class": "non-numeric schematic; Top-1 is not the uniquely supervised O2M positive",
+      "censoring_or_conditioning": "none beyond panel support",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": null,
+      "statistical_unit": "conceptual assigned-positive set and assigned-set Top-1 state",
+      "point_estimate_columns": [],
+      "ci_columns": [],
+      "figure_number": "Fig5",
+      "panel": "a",
+      "panel_id": "Fig5a",
+      "scientific_question": "Why are O2M rank turnover and positive-set turnover distinct states?",
+      "source_artifacts": [
+        {
+          "path": "manuscript/content/methods.tex",
+          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "evidence_id": null,
+          "authority": "CONTRACT_SOURCE",
+          "role": "method definition"
+        },
+        {
+          "path": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+          "expected_sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
+          "evidence_id": "EV-RANK-SET-FIXED-V1",
+          "authority": "final_evidence_v3",
+          "role": "fixed Rank-Set metrics"
+        },
+        {
+          "path": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+          "expected_sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
+          "evidence_id": "EV-RANK-SET-NORMALIZED-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side Rank-Set metrics"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "discovery",
+      "interpretation_class": "descriptive/observational",
+      "censoring_or_conditioning": "empty-set undefined metrics excluded, not imputed",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "object_direction_trajectory_n": {
+        "fixed_gt": 7434,
+        "fixed_directions": 29616,
+        "equivalent_side_gt": 7432,
+        "equivalent_side_directions": 29612
+      },
+      "statistical_unit": "directional focal-GT replay",
+      "point_estimate_columns": [
+        "exact set equality",
+        "Jaccard",
+        "base retention",
+        "assigned Top-1 flip",
+        "rank-only among flips"
+      ],
+      "ci_columns": [
+        "ci95[0]",
+        "ci95[1]"
+      ],
+      "figure_number": "Fig5",
+      "panel": "b",
+      "panel_id": "Fig5b",
+      "scientific_question": "How do native O2M set persistence and rank turnover differ by stress contract?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+          "expected_sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
+          "evidence_id": "EV-RANK-SET-FIXED-V1",
+          "authority": "final_evidence_v3",
+          "role": "fixed Rank-Set metrics"
+        },
+        {
+          "path": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+          "expected_sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
+          "evidence_id": "EV-RANK-SET-NORMALIZED-V1",
+          "authority": "final_evidence_v3",
+          "role": "equivalent-side Rank-Set metrics"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "selected": 300,
+        "analysis": 288
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 2000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap where shown",
+      "evidence_class": "figure-only descriptive source addendum",
+      "interpretation_class": "descriptive distribution",
+      "censoring_or_conditioning": "K=0 must remain visible; K=3-7 shading denotes standardisation overlap only",
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "object_direction_trajectory_n": {
+        "common_valid_gt": 6377,
+        "positive_count_support": "K=0 is present; standardisation overlap is K=3-7"
+      },
+      "statistical_unit": "common-valid focal GT",
+      "point_estimate_columns": [
+        "positive_count",
+        "weighted proportion",
+        "positive_count_means"
+      ],
+      "ci_columns": [],
+      "panel_status": "WARN",
+      "status_reason": "Positive-count source is SOURCE_ADDENDUM; K=0 full support and K=3-7 overlap support must not be conflated.",
+      "figure_number": "Fig5",
+      "panel": "c",
+      "panel_id": "Fig5c",
+      "scientific_question": "How does native O2M positive count vary across the two scale groups?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
+          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count standardisation"
+        },
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+          "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count distribution"
+        }
+      ]
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "selected": 300,
+        "analysis": 288
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 2000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "figure-only descriptive standardisation addendum",
+      "interpretation_class": "descriptive conditioning, not a causal count intervention",
+      "censoring_or_conditioning": "crude estimates use full common support; standardised estimates use adequate-overlap K=3-7 support",
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "object_direction_trajectory_n": {
+        "common_valid_gt": 6377,
+        "overlap_positive_counts": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "coverage_8_16": 0.6028970374970802,
+        "coverage_16_32": 0.6429609485181138
+      },
+      "statistical_unit": "common-valid focal GT or directional replay, as metric-specific",
+      "point_estimate_columns": [
+        "crude_gap_small_minus_tiny",
+        "standardized_gap_small_minus_tiny"
+      ],
+      "ci_columns": [
+        "ci_95_gap_small_minus_tiny.low",
+        "ci_95_gap_small_minus_tiny.high"
+      ],
+      "panel_status": "WARN",
+      "status_reason": "SOURCE_ADDENDUM only. Full-support crude and K=3-7 standardised estimates have different support and must be visually labelled.",
+      "figure_number": "Fig5",
+      "panel": "d",
+      "panel_id": "Fig5d",
+      "scientific_question": "How do crude and count-standardised contrasts differ on their respective supports?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
+          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count standardisation"
+        },
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+          "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count distribution"
+        }
+      ]
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 173,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "conditional discovery analysis",
+      "interpretation_class": "conditional association, not prediction",
+      "censoring_or_conditioning": "observed crossings only; not censoring-adjusted population correlation",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "object_direction_trajectory_n": {
+        "observed_rho_R": 1593,
+        "all_directional_trajectories": 29724
+      },
+      "statistical_unit": "trajectory with observed comparable-pair crossing",
+      "point_estimate_columns": [
+        "o2o_base_margin",
+        "rho_R_radius",
+        "margin_vs_observed_rho_R_spearman.point"
+      ],
+      "ci_columns": [
+        "margin_vs_observed_rho_R_spearman.ci95"
+      ],
+      "figure_number": "Fig6",
+      "panel": "a",
+      "panel_id": "Fig6a",
+      "scientific_question": "How does native margin align with observed fixed-pair rank-crossing distance?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260902_boundary_full_grid_1024_population_v1/per_direction_boundary_events.csv",
+          "expected_sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "canonical boundary events"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+          "expected_sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+          "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+          "authority": "final_evidence_v3",
+          "role": "conditional margin associations"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": 300,
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": null,
+      "bootstrap_repetitions": null,
+      "ci_type": null,
+      "evidence_class": "discovery",
+      "interpretation_class": "descriptive estimand composition",
+      "censoring_or_conditioning": "mutually exclusive observed/competing/right-censored/undefined status",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "object_direction_trajectory_n": {
+        "observed_crossing": 1593,
+        "competing_censor": 7439,
+        "right_censor": 16548,
+        "undefined": 4144,
+        "total": 29724
+      },
+      "statistical_unit": "focal-GT directional trajectory",
+      "point_estimate_columns": [
+        "status",
+        "count",
+        "proportion"
+      ],
+      "ci_columns": [],
+      "figure_number": "Fig6",
+      "panel": "b",
+      "panel_id": "Fig6b",
+      "scientific_question": "What fraction of trajectories yield an observed fixed-pair crossing?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rho_R_status.csv",
+          "expected_sha256": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3_bound_output",
+          "role": "rank-crossing status composition"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "rho_R_observed_images": 173,
+        "eligibility_boundary_images": 221
+      },
+      "weighting": "inverse image-inclusion weights",
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "conditional discovery analysis",
+      "interpretation_class": "conditional specificity association",
+      "censoring_or_conditioning": "the two correlations use different observed supports; neither is censoring-adjusted",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "object_direction_trajectory_n": {
+        "rho_R_observed": 1593,
+        "eligibility_boundary_rows": 3444
+      },
+      "statistical_unit": "separately observed trajectory supports",
+      "point_estimate_columns": [
+        "margin_vs_observed_rho_R_spearman.point",
+        "margin_vs_eligibility_boundary_radius_spearman.point",
+        "specificity_correlation_difference.point"
+      ],
+      "ci_columns": [
+        "*.ci95"
+      ],
+      "figure_number": "Fig6",
+      "panel": "c",
+      "panel_id": "Fig6c",
+      "scientific_question": "Is conditional margin alignment stronger for rank crossing than eligibility-boundary distance?",
+      "source_artifacts": [
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+          "expected_sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+          "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+          "authority": "final_evidence_v3",
+          "role": "conditional margin associations"
+        },
+        {
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "authority": "final_evidence_v3",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
+    },
+    {
+      "dataset": [
+        "AI-TOD-v2",
+        "VisDrone"
+      ],
+      "checkpoint": {
+        "AI-TOD-v2": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+        "VisDrone": "e7cffd98c6055bb0818873f94e6566feb697660ec5666f21f13c6304b412d0e8"
+      },
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "image_n": {
+        "AI-TOD-v2": 288,
+        "VisDrone": 300
+      },
+      "weighting": "fold test weight; bootstrap within OOF fold x outcome-blind stratum",
+      "bootstrap_unit": "image cluster within OOF fold x outcome-blind stratum",
+      "bootstrap_repetitions": 5000,
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "evidence_class": "figure-only diagnostic SOURCE_ADDENDUM",
+      "interpretation_class": "held-out observational diagnostic increment, not treatment efficacy",
+      "censoring_or_conditioning": "rightward display must invert log-loss/Brier signs so right always means improvement",
+      "stress_contract": "equivalent_side_kappa_0.0625 baseline-state covariates",
+      "object_direction_trajectory_n": {
+        "AI-TOD-v2_gt": 6410,
+        "VisDrone_gt": 13946
+      },
+      "statistical_unit": "GT prediction evaluated in held-out image-grouped folds",
+      "point_estimate_columns": [
+        "M3_minus_M2_point.delta_roc_auc",
+        "delta_pr_auc",
+        "delta_log_loss",
+        "delta_brier"
+      ],
+      "ci_columns": [
+        "M3_minus_M2_ci_95.*"
+      ],
+      "panel_status": "WARN",
+      "status_reason": "Incremental-value artifacts are SHA-verified SOURCE_ADDENDUM only and cannot upgrade final_evidence_v3.",
+      "figure_number": "Fig6",
+      "panel": "d",
+      "panel_id": "Fig6d",
+      "scientific_question": "Does adding margin yield stable held-out diagnostic improvement?",
+      "source_artifacts": [
+        {
+          "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/incremental_value_summary_foldwise.json",
+          "expected_sha256": "0f555db9c5e1ecf3d738607551d45beb75f6f0a6f3e0820683b27d9aa5b32a88",
+          "evidence_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "AI-TOD-v2 held-out increment"
+        },
+        {
+          "path": "results/reviewer_controls_20260829/vis_b4e150_equiv_k00625/incremental_value_summary_foldwise.json",
+          "expected_sha256": "8227b831cfe73cc3533ae1b953e21e62c138e5f9205b35e54eba38c38371ed5c",
+          "evidence_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "VisDrone held-out increment"
+        }
+      ]
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "checkpoint": {
+        "primary": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
+      },
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "sample_support": "one frozen AI-TOD-v2 image with three deterministic qualitative GT states",
+      "image_n": 1,
+      "weighting": null,
+      "bootstrap_unit": null,
+      "bootstrap_repetitions": null,
+      "ci_type": null,
+      "evidence_class": "figure-only qualitative SOURCE_ADDENDUM",
+      "interpretation_class": "qualitative illustration only; overlays are audited assignment states, not final detections",
+      "censoring_or_conditioning": "deterministically selected within one frozen image; no aggregate estimate recomputed",
+      "stress_contract": "fixed_1px replay under the audited primary checkpoint",
+      "object_direction_trajectory_n": {
+        "cases": 3,
+        "gt_ids": [
+          40,
+          28,
+          17
+        ]
+      },
+      "statistical_unit": "qualitative GT-direction trace",
+      "point_estimate_columns": [
+        "candidate identity",
+        "runner identity",
+        "GT box",
+        "shifted GT box",
+        "decoded candidate box"
+      ],
+      "ci_columns": [],
+      "panel_status": "WARN",
+      "status_reason": "Primary-checkpoint trace is SHA-verified and exactly matches frozen fixed-pixel replay identities; it is a figure-only SOURCE_ADDENDUM and does not upgrade scientific evidence.",
+      "figure_number": "FigS1",
+      "panel": "",
+      "panel_id": "FigS1",
+      "scientific_question": "Can real-image stable, fragile and undefined cases be shown under the primary frozen checkpoint?",
+      "source_artifacts": [
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+          "expected_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint qualitative candidate trace"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+          "expected_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint trace validation"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+          "expected_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "real AI-TOD-v2 source image"
+        },
+        {
+          "path": "results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv",
+          "expected_sha256": "930a50dadb0abdfdcede0de344cb93ed2f68c0c5a4c1f183a2f70ddde8be87f8",
+          "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+          "authority": "final_evidence_v3",
+          "role": "frozen fixed-pixel replay identities"
+        }
+      ]
+    }
+  ],
+  "figs1_identity_audit": {
+    "status": "PASS",
+    "trace_checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+    "primary_checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+    "checkpoint_match": true,
+    "validation_pass": true,
+    "records_checked": 3,
+    "candidate_identity_conflicts": []
+  }
+}

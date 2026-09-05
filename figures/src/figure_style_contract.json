@@ -1,0 +1,61 @@
+{
+  "status": "FROZEN_FOR_FIGURE_PRODUCTION",
+  "target_venue": "Neurocomputing",
+  "canvas": "#FFFFFF",
+  "font": {
+    "primary": "Arial",
+    "fallbacks": ["Helvetica", "Liberation Sans"],
+    "panel_label_pt": 8.0,
+    "panel_title_pt": 7.8,
+    "axis_label_pt": 7.0,
+    "legend_pt": 7.0,
+    "tick_pt": 6.7,
+    "annotation_pt": 7.0,
+    "minimum_pt": 7.0
+  },
+  "branch_encoding": {
+    "O2O": {"color": "#1F4E79", "marker": "circle"},
+    "O2M": {"color": "#E67E22", "marker": "square"},
+    "Paired O2O-O2M": {"color": "#8E5AA7", "marker": "diamond"},
+    "Undefined/censored/auxiliary": {"color": "#7F8C8D"}
+  },
+  "mechanism_encoding": {
+    "Eligibility": "#009E73",
+    "Within-set rank": "#56B4E9",
+    "Top-k": "#E69F00",
+    "Conflict": "#A569BD",
+    "Other/reserved": "#95A5A6"
+  },
+  "stress_encoding": {
+    "Fixed 1 px": "solid line and filled marker",
+    "Equivalent-area-side": "dashed line and open marker",
+    "Axis-normalized": "secondary marker shape only"
+  },
+  "line_width_pt": {
+    "main": 1.15,
+    "secondary": 0.95,
+    "ci": 0.75,
+    "axis": 0.7,
+    "reference": 0.65,
+    "optional_horizontal_guide": 0.35
+  },
+  "export": {
+    "double_column_width_mm": 178.0,
+    "single_column_width_mm": 85.0,
+    "pdf_fonttype": 42,
+    "ps_fonttype": 42,
+    "svg_fonttype": "none",
+    "png_dpi": 600,
+    "color_space": "RGB"
+  },
+  "forbidden": [
+    "3D",
+    "gradient",
+    "drop shadow",
+    "glow",
+    "colored body text",
+    "dual y-axis",
+    "smoothing of KM/AJ",
+    "hard-coded scientific numbers"
+  ]
+}

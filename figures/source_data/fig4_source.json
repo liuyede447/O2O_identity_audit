@@ -1,0 +1,408 @@
+{
+  "evidence_version": "EV-BOUNDARY-GEOMETRY-V3",
+  "fig4_source_csv": "figures_final/source_data/fig4_source.csv",
+  "fig4_source_csv_sha256": "1a359e2b9a9802b24d320b42456a634c03166cce9eb8c71708ca6234d10053d7",
+  "figure": "Figure 4",
+  "interpretation_guards": {
+    "full_2d_boundary_claim": false,
+    "legacy_or_pre_topk_o2m_used": false,
+    "o2m_identity_claim": false,
+    "right_censoring_removed": false,
+    "smoothed_survival_or_cif": false,
+    "tau_magnitude_robustness_claim": false
+  },
+  "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
+  "manifest_sha256": "3f54c91a1f20a40ae37da5d4b50936907d891ce6c2ac6e32c27c08f0d5923907",
+  "panel_support": {
+    "Fig4a": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "base-undefined excluded; right censoring retained; cardinal, not full 2D geometry",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery",
+      "figure_number": "Fig4",
+      "image_n": 300,
+      "interpretation_class": "Kaplan-Meier state persistence",
+      "object_direction_trajectory_n": {
+        "directional_trajectories": 29724,
+        "focal_gt": 7431,
+        "o2m_base_defined": 28996,
+        "o2o_base_defined": 29048
+      },
+      "panel": "a",
+      "panel_id": "Fig4a",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "survival",
+        "radius"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "How do O2O and O2M native states persist over cardinal distance?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+          "role": "KM and Aalen-Johansen estimates"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "statistical_unit": "focal-GT directional trajectory",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "weighting": "inverse image-inclusion weights"
+    },
+    "Fig4b": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "competing first causes and right censoring retained; reserved other may be zero",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery",
+      "figure_number": "Fig4",
+      "image_n": 300,
+      "interpretation_class": "Aalen-Johansen first-boundary incidence",
+      "object_direction_trajectory_n": {
+        "directional_trajectories": 29724,
+        "focal_gt": 7431,
+        "o2o_base_defined": 29048
+      },
+      "panel": "b",
+      "panel_id": "Fig4b",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "cause-specific cumulative incidence",
+        "radius"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "Which native-path cause is first observed at the O2O boundary?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+          "role": "KM and Aalen-Johansen estimates"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "statistical_unit": "focal-GT directional trajectory",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": "equivalent-area-side cardinal r in [0,.25], 1/1024 grid",
+      "weighting": "inverse image-inclusion weights"
+    },
+    "Fig4c": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "base-undefined excluded; branch supports reported separately",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery",
+      "figure_number": "Fig4",
+      "image_n": 300,
+      "interpretation_class": "restricted mean summary",
+      "object_direction_trajectory_n": {
+        "directional_trajectories": 29724,
+        "focal_gt": 7431,
+        "o2m_base_defined": 28996,
+        "o2o_base_defined": 29048
+      },
+      "panel": "c",
+      "panel_id": "Fig4c",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "rmcbd",
+        "o2o_minus_o2m"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "What are absolute and paired restricted mean cardinal boundary distances?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "58505fa4a2ce39bbfb86bf7de769b63b35f4c003bc11898317b7c116933fe725",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr.csv",
+          "role": "RMCBD absolute estimates"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .125"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "statistical_unit": "focal-GT directional trajectory",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": "equivalent-area-side cardinal r; primary truncation tau=.125",
+      "weighting": "inverse image-inclusion weights"
+    },
+    "Fig4d": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "base-undefined excluded; truncation-specific right censoring",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci_low",
+        "ci_high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery prespecified tau sensitivity",
+      "figure_number": "Fig4",
+      "image_n": 300,
+      "interpretation_class": "ordering across tested truncation horizons, not magnitude robustness",
+      "object_direction_trajectory_n": {
+        "directional_trajectories": 29724,
+        "focal_gt": 7431
+      },
+      "panel": "d",
+      "panel_id": "Fig4d",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "o2o_minus_o2m by tau and size stratum"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "Does branch ordering persist across prespecified truncation horizons?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00500/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .05"
+        },
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "1be655cbe4b74aa55741ea09ac8e720d7d28bdf10e92cd07bf42c134871e5af1",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00625/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .0625"
+        },
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "ada6e5f87a6343e8b261e5e21372c9a0e124eb20b7bf7c083312acf231273498",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01000/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .10"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .125"
+        },
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "7a20f920d38e312b62ac57e9e55be85cdc6e11b232c6d568e0d171b232dc3af3",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02000/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .20"
+        },
+        {
+          "authority": "final_evidence_v3_bound_output",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02500/rmsr_contrasts.csv",
+          "role": "RMCBD contrasts at tau .25"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+          "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+          "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+          "role": "terminal binding manifest"
+        }
+      ],
+      "statistical_unit": "focal-GT directional trajectory",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": "equivalent-area-side cardinal r; tau in {.05,.0625,.10,.125,.20,.25}",
+      "weighting": "inverse image-inclusion weights"
+    }
+  },
+  "source_row_count": 1176,
+  "source_run": "runs/20260903_boundary_full_grid_1024_postprocess_v2",
+  "sources": [
+    {
+      "actual_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+      "panel_id": "Fig4a",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+      "role": "KM and Aalen-Johansen estimates"
+    },
+    {
+      "actual_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "panel_id": "Fig4a",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "role": "terminal binding manifest"
+    },
+    {
+      "actual_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740",
+      "panel_id": "Fig4b",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/survival_cif.csv",
+      "role": "KM and Aalen-Johansen estimates"
+    },
+    {
+      "actual_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "panel_id": "Fig4b",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "role": "terminal binding manifest"
+    },
+    {
+      "actual_sha256": "58505fa4a2ce39bbfb86bf7de769b63b35f4c003bc11898317b7c116933fe725",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "58505fa4a2ce39bbfb86bf7de769b63b35f4c003bc11898317b7c116933fe725",
+      "panel_id": "Fig4c",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr.csv",
+      "role": "RMCBD absolute estimates"
+    },
+    {
+      "actual_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "panel_id": "Fig4c",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .125"
+    },
+    {
+      "actual_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "panel_id": "Fig4c",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "role": "terminal binding manifest"
+    },
+    {
+      "actual_sha256": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00500/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .05"
+    },
+    {
+      "actual_sha256": "1be655cbe4b74aa55741ea09ac8e720d7d28bdf10e92cd07bf42c134871e5af1",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "1be655cbe4b74aa55741ea09ac8e720d7d28bdf10e92cd07bf42c134871e5af1",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_00625/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .0625"
+    },
+    {
+      "actual_sha256": "ada6e5f87a6343e8b261e5e21372c9a0e124eb20b7bf7c083312acf231273498",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "ada6e5f87a6343e8b261e5e21372c9a0e124eb20b7bf7c083312acf231273498",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01000/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .10"
+    },
+    {
+      "actual_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .125"
+    },
+    {
+      "actual_sha256": "7a20f920d38e312b62ac57e9e55be85cdc6e11b232c6d568e0d171b232dc3af3",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "7a20f920d38e312b62ac57e9e55be85cdc6e11b232c6d568e0d171b232dc3af3",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02000/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .20"
+    },
+    {
+      "actual_sha256": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+      "authority": "final_evidence_v3_bound_output",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_02500/rmsr_contrasts.csv",
+      "role": "RMCBD contrasts at tau .25"
+    },
+    {
+      "actual_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "expected_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "panel_id": "Fig4d",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "role": "terminal binding manifest"
+    }
+  ],
+  "status": "SOURCE_BOUND_DRAFT",
+  "title": "Grid-resolved cardinal boundary geometry"
+}

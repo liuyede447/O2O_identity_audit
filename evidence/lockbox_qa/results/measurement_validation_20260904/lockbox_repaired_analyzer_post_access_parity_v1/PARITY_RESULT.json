@@ -1,0 +1,33 @@
+{
+  "artifact_role": "post_access_software_qa_not_normative_verdict",
+  "bootstrap_replicates": 5000,
+  "corrective_bootstrap_sha256": "3359515d1793c0c57c04b6048676e48605eba8de2c2b10c16e2523e3bd3fc63d",
+  "corrective_results_sha256": "714d11716540d8a9445326af3ddd424b5634a3d1588bbaa1280dc1ca88b0241c",
+  "historical_receipt_unchanged": true,
+  "maximum_absolute_difference": {
+    "bootstrap": 9.71445146547012e-17,
+    "empirical_p": 0.0,
+    "interval": 0.0,
+    "point": 0.0
+  },
+  "normative_lockbox_verdict_created": false,
+  "prospective_status": "historical_lockbox_v1_remains_invalidated",
+  "receipt_sha256_after": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83",
+  "receipt_sha256_before": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83",
+  "receipt_sidecar_sha256_after": "64c57b9128d934578854dc9beb8234039d21ca5fd95748622bbf27d49524b1b8",
+  "receipt_sidecar_sha256_before": "64c57b9128d934578854dc9beb8234039d21ca5fd95748622bbf27d49524b1b8",
+  "repaired_analyzer_sha256": "3e587b048dc1b2c0465d4ef0215fb5a4012d479af6bdfd19d30db250d7c46905",
+  "scientific_claim_status_changed": false,
+  "seed": 20260831,
+  "status": "PASS",
+  "support_counts": {
+    "fixed_common_valid": 7246,
+    "fixed_only": 3,
+    "intersection": 7243,
+    "normalized_common_valid": 7243,
+    "normalized_only": 0,
+    "selected_image_clusters": 300
+  },
+  "tolerance": 1e-15,
+  "validator_sha256": "41f8f9b61414ea2e0518b2e885856b981199e3f1c000b6c148a86f5724120ba8"
+}

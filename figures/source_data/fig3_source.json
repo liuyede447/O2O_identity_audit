@@ -1,0 +1,316 @@
+{
+  "addendum_path": "figures_final/FIGURE_EVIDENCE_ADDENDUM.json",
+  "addendum_sha256": "b6ba417f67f94c7b74a20702261edb234e6e08632ab75a9f062723e49a11d406",
+  "fig3_source_csv": "figures_final/source_data/fig3_source.csv",
+  "fig3_source_csv_sha256": "47930e3d9c63845d82814548f59f37d74602a011f5dd15fe486f3ad180b301da",
+  "figure": "Figure 3",
+  "interpretation_guards": {
+    "any_stage_stacked": false,
+    "conflict_mediation_claim": false,
+    "eligibility_causal_contribution_claim": false,
+    "first_label_execution_order_invariant_claim": false,
+    "observational_subset_as_causal_proof": false
+  },
+  "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
+  "manifest_sha256": "3f54c91a1f20a40ae37da5d4b50936907d891ce6c2ac6e32c27c08f0d5923907",
+  "panel_support": {
+    "Fig3a": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "lock-support differs from primary common-valid endpoint support; not a causal contribution fraction",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "*.ci95[0]",
+        "*.ci95[1]"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery",
+      "figure_number": "Fig3",
+      "image_n": 300,
+      "interpretation_class": "counterfactual sensitivity/localisation",
+      "object_direction_trajectory_n": {
+        "equivalent_side_directions": 29612,
+        "equivalent_side_gt": 7432,
+        "fixed_directions": 29616,
+        "fixed_gt": 7434,
+        "per_direction_rows": 59228,
+        "per_gt_rows": 14866
+      },
+      "panel": "a",
+      "panel_id": "Fig3a",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "fixed_o2o_gap_reduction.point",
+        "fixed_o2o_gap_fraction_removed.point",
+        "normalized_o2o_gap_reduction.point"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "How much is the fixed O2O scale gap attenuated under base-eligibility locking?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+          "expected_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+          "path": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+          "role": "eligibility-lock estimates"
+        }
+      ],
+      "statistical_unit": "GT and directional replay on lock support",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "weighting": "as recorded by frozen eligibility-lock artifact (not explicitly identified)"
+    },
+    "Fig3b": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "post-replay eligibility-stable conditioning changes the estimand",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci95 low",
+        "ci95 high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery conditional sensitivity",
+      "figure_number": "Fig3",
+      "image_n": 300,
+      "interpretation_class": "observational subset",
+      "object_direction_trajectory_n": {
+        "equivalent_side_retained_gt": 6999,
+        "fixed_retained_gt": 6217
+      },
+      "panel": "b",
+      "panel_id": "Fig3b",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "fixed object/direction gap",
+        "normalized object/direction gap"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "What response remains in the observational eligibility-stable subset?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+          "expected_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+          "path": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+          "role": "eligibility-stable subset"
+        }
+      ],
+      "statistical_unit": "post-replay conditioned focal GT",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "weighting": "inverse image-inclusion weights"
+    },
+    "Fig3c": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "identity-flip rows only; execution-order dependent and not causal fractions",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci95",
+        "ci_95.*"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery plus figure-only descriptive addendum",
+      "figure_number": "Fig3",
+      "image_n": {
+        "equivalent_side_contributing": 159,
+        "fixed_contributing": 201
+      },
+      "interpretation_class": "descriptive localisation; first-observed exclusive, any-stage non-exclusive",
+      "object_direction_trajectory_n": {
+        "equivalent_side_flip_directions": 1241,
+        "fixed_flip_directions": 2194
+      },
+      "panel": "c",
+      "panel_id": "Fig3c",
+      "panel_status": "WARN",
+      "point_estimate_columns": [
+        "exclusive first-observed pathway fraction",
+        "non-exclusive flag__* and pair__* occurrence"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "Where is the first difference observed, and which stages occur anywhere on flip paths?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+          "expected_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+          "path": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+          "role": "exclusive first-observed labels"
+        },
+        {
+          "authority": "SOURCE_ADDENDUM",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+          "role": "non-exclusive any-stage summary"
+        },
+        {
+          "authority": "SOURCE_ADDENDUM",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
+          "role": "non-exclusive any-stage rows"
+        }
+      ],
+      "statistical_unit": "O2O identity-flip directional replay",
+      "status_reason": "Any-stage co-occurrence is SHA-verified in SOURCE_ADDENDUM; it remains descriptive and does not upgrade EV-PATHWAY-ANATOMY-V2.",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "weighting": "inverse image-inclusion weights"
+    },
+    "Fig3d": {
+      "bootstrap_repetitions": 5000,
+      "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
+      "censoring_or_conditioning": "none beyond panel support",
+      "checkpoint": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "ci_columns": [
+        "ci95 low",
+        "ci95 high"
+      ],
+      "ci_type": "95% stratified image-cluster percentile bootstrap",
+      "dataset": "AI-TOD-v2",
+      "evidence_class": "discovery control",
+      "figure_number": "Fig3",
+      "image_n": 300,
+      "interpretation_class": "same-branch descriptive control, not conflict mediation",
+      "object_direction_trajectory_n": {
+        "equivalent_side_directions": 29612,
+        "equivalent_side_objects": 7432,
+        "fixed_directions": 29616,
+        "fixed_objects": 7434
+      },
+      "panel": "d",
+      "panel_id": "Fig3d",
+      "panel_status": "PASS",
+      "point_estimate_columns": [
+        "pre-conflict winner scale gap",
+        "loss-active scale gap",
+        "paired difference",
+        "definition disagreement"
+      ],
+      "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
+      "scientific_question": "How does pre-conflict rank state compare with final loss-active O2O identity?",
+      "seed": {
+        "model": 0,
+        "selection": 20260823
+      },
+      "source_artifacts": [
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+          "expected_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+          "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+          "role": "fixed pre-resolution control"
+        },
+        {
+          "authority": "final_evidence_v3",
+          "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+          "expected_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+          "path": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+          "role": "equivalent-side pre-resolution control"
+        }
+      ],
+      "statistical_unit": "focal GT and directional replay",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "stress_contract": [
+        "fixed_1px",
+        "equivalent_side_kappa_0.0625"
+      ],
+      "weighting": "inverse image-inclusion weights"
+    }
+  },
+  "scientific_role": "localisation and sensitivity; not causal decomposition",
+  "source_row_count": 41,
+  "sources": [
+    {
+      "actual_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+      "expected_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+      "panel_id": "Fig3a",
+      "path": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+      "role": "eligibility-lock estimates"
+    },
+    {
+      "actual_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+      "expected_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+      "panel_id": "Fig3b",
+      "path": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+      "role": "eligibility-stable subset"
+    },
+    {
+      "actual_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+      "expected_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+      "panel_id": "Fig3c",
+      "path": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+      "role": "exclusive first-observed labels"
+    },
+    {
+      "actual_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+      "authority": "SOURCE_ADDENDUM",
+      "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+      "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+      "panel_id": "Fig3c",
+      "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+      "role": "non-exclusive any-stage summary"
+    },
+    {
+      "actual_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+      "authority": "SOURCE_ADDENDUM",
+      "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+      "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+      "panel_id": "Fig3c",
+      "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
+      "role": "non-exclusive any-stage rows"
+    },
+    {
+      "actual_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+      "expected_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+      "panel_id": "Fig3d",
+      "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+      "role": "fixed pre-resolution control"
+    },
+    {
+      "actual_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+      "authority": "final_evidence_v3",
+      "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+      "expected_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+      "panel_id": "Fig3d",
+      "path": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+      "role": "equivalent-side pre-resolution control"
+    }
+  ],
+  "status": "SOURCE_BOUND_DRAFT",
+  "title": "Eligibility and native-path localisation"
+}

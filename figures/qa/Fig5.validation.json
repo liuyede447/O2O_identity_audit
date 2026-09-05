@@ -1,0 +1,24 @@
+{
+  "contrast_orientation": "16-32 minus 8-16 in panels b and d",
+  "figure": "Fig5",
+  "interpretation_guards": {
+    "causal_count_explanation": false,
+    "o2m_top1_unique_positive": false
+  },
+  "outputs": {
+    "pdf": "ba85052117f0cc3da64400f2e96e5c9cad05a12576537782b83fd9c10007a097",
+    "png": "6edacf502def1ecba7fc7a14b9859a6d0f6bec5766059e215d49814130a89885",
+    "svg": "05688dae92a5fa992b71f8ffc8736debc73dc8b98f401a7e0c162e6a4e162ace"
+  },
+  "resolved_font": {
+    "family": "Arial",
+    "path": "C:\\Windows\\Fonts\\arial.ttf"
+  },
+  "source_addendum_used": true,
+  "source_rows": 35,
+  "status": "PASS",
+  "warnings_preserved": [
+    "K=0 retained",
+    "crude and standardized supports differ"
+  ]
+}

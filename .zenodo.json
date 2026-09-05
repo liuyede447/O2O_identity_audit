@@ -1,0 +1,37 @@
+{
+  "title": "Native assignment-state boundary audit",
+  "upload_type": "software",
+  "description": "Code and derived audit data supporting the manuscript 'Measuring Native Assignment-State Boundary Geometry in Aerial Tiny-Object Detection'.",
+  "creators": [
+    {
+      "name": "Liu, Yede",
+      "orcid": "0009-0004-1760-860X",
+      "affiliation": "Sichuan Normal University"
+    },
+    {
+      "name": "Wang, Fang",
+      "affiliation": "Sichuan Normal University"
+    },
+    {
+      "name": "Li, Jun",
+      "affiliation": "Sichuan Normal University"
+    }
+  ],
+  "access_right": "open",
+  "license": "agpl-3.0-only",
+  "keywords": [
+    "tiny-object detection",
+    "one-to-one assignment",
+    "assignment-state geometry",
+    "aerial imagery"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/liuyede447/O2O_identity_audit",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "version": "3.0.0",
+  "notes": "Metadata for Git tag v3.0.0. No DOI has been minted or asserted; Zenodo binding follows the GitHub release."
+}

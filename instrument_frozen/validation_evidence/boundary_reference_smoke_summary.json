@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "protocol": "continuous_boundary_numpy_reference_subset_v1",
+  "selected_images": 1,
+  "forward_calls": 1,
+  "one_forward_per_image": true,
+  "reference_trajectories": 48,
+  "production_trajectories_in_subset": 48,
+  "mismatches": 0,
+  "allowed_radius_and_bracket_tolerance": 0.001953126,
+  "maximum_event_radius_absolute_difference": 0.0,
+  "elapsed_sec": 17.881109000001743
+}

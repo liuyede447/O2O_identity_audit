@@ -1,24 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this audit package, please cite the associated manuscript."
-title: "O2O Identity Audit: Read-Only Geometric Stress Testing of Native Assignment States"
-version: 2.0.0
-date-released: 2026-09-01
+message: "If you use this software or its derived audit data, cite the associated manuscript and this release."
+title: "Native assignment-state boundary audit"
+type: software
+version: "3.0.0"
 repository-code: "https://github.com/liuyede447/O2O_identity_audit"
+url: "https://github.com/liuyede447/O2O_identity_audit"
+license: AGPL-3.0-only
 authors:
   - family-names: Liu
     given-names: Yede
     orcid: "https://orcid.org/0009-0004-1760-860X"
-    email: "liuyede0718@gmail.com"
+    affiliation: "Sichuan Normal University"
   - family-names: Wang
     given-names: Fang
-    email: "fang66320@gmail.com"
+    affiliation: "Sichuan Normal University"
   - family-names: Li
     given-names: Jun
-    email: "lijun2022@sicnu.edu.cn"
+    affiliation: "Sichuan Normal University"
 keywords:
   - tiny-object detection
   - one-to-one assignment
-  - geometric stress testing
-  - boundary geometry
+  - assignment-state geometry
   - aerial imagery
-
+  - reproducibility

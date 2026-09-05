@@ -1,0 +1,82 @@
+{
+  "analysis_role": "prospective precision planning from discovery data; not post-hoc power",
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260831,
+  "cluster_unit": "image",
+  "estimands": [
+    {
+      "bootstrap_mean": 0.17668951580966563,
+      "bootstrap_sd": 0.03354934449076978,
+      "direction_recovery_probability": 1.0,
+      "discovery_point_estimate": 0.17577137492527808,
+      "estimand": "normalized_paired_gap",
+      "expected_direction": "positive",
+      "hypothesis": "H1",
+      "normal_approx_95_expected_half_width": 0.06575550690683606,
+      "percentile_95_expected_half_width": 0.0656281467132302,
+      "percentile_95_high": 0.239931998826807,
+      "percentile_95_low": 0.1086757054003466
+    },
+    {
+      "bootstrap_mean": -0.1756373558765848,
+      "bootstrap_sd": 0.028723229080880014,
+      "direction_recovery_probability": 1.0,
+      "discovery_point_estimate": -0.17446047280898025,
+      "estimand": "normalized_o2m_gap",
+      "expected_direction": "negative",
+      "hypothesis": "H2",
+      "normal_approx_95_expected_half_width": 0.056296494518218346,
+      "percentile_95_expected_half_width": 0.05533231300860685,
+      "percentile_95_high": -0.11575064236865713,
+      "percentile_95_low": -0.22641526838587084
+    },
+    {
+      "bootstrap_mean": 0.14253386709963428,
+      "bootstrap_sd": 0.008884348598181439,
+      "direction_recovery_probability": 1.0,
+      "discovery_point_estimate": 0.1424141453751511,
+      "estimand": "fixed_minus_normalized_o2o_gap",
+      "expected_direction": "positive",
+      "hypothesis": "H3",
+      "normal_approx_95_expected_half_width": 0.017413003278534536,
+      "percentile_95_expected_half_width": 0.01733763994669564,
+      "percentile_95_high": 0.16080502834734856,
+      "percentile_95_low": 0.12612974845395727
+    },
+    {
+      "bootstrap_mean": 0.1611379540276437,
+      "bootstrap_sd": 0.014054361330286987,
+      "direction_recovery_probability": 1.0,
+      "discovery_point_estimate": 0.1608892440205728,
+      "estimand": "fixed_eligibility_minus_normalized",
+      "expected_direction": "positive",
+      "hypothesis": "H4a",
+      "normal_approx_95_expected_half_width": 0.02754604203307494,
+      "percentile_95_expected_half_width": 0.02777537052985593,
+      "percentile_95_high": 0.18976035873708139,
+      "percentile_95_low": 0.13420961767736952
+    },
+    {
+      "bootstrap_mean": 0.15243344306539722,
+      "bootstrap_sd": 0.013032207222554331,
+      "direction_recovery_probability": 1.0,
+      "discovery_point_estimate": 0.15239831799681863,
+      "estimand": "normalized_within_minus_fixed",
+      "expected_direction": "positive",
+      "hypothesis": "H4b",
+      "normal_approx_95_expected_half_width": 0.025542656795269257,
+      "percentile_95_expected_half_width": 0.025811711059794504,
+      "percentile_95_high": 0.17886616636695812,
+      "percentile_95_low": 0.12724274424736912
+    }
+  ],
+  "image_count": 300,
+  "protocol": "IPW stratified image-cluster bootstrap for lockbox H1--H4 estimands",
+  "status": "complete",
+  "stratification": "outcome-blind image sampling stratum",
+  "stratum_image_counts": {
+    "s_only": 2,
+    "t_and_s": 138,
+    "t_only": 160
+  }
+}

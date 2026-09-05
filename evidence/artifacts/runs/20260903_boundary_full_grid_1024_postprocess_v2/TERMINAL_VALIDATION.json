@@ -1,0 +1,131 @@
+{
+  "canonical_comparison": {},
+  "convergence": null,
+  "elapsed_sec": 2452.5266770000003,
+  "geometry": {
+    "tau_00500": {
+      "elapsed_sec": 201.52755709999997,
+      "inventory_sha256": "d72de7b78562c9f49bc85fd81f52a00bbf1951e87e9fa7ca9d04144c5c671b46",
+      "output_sha256": {
+        "analysis_results.json": "442c85da2de330646e0e783b8ba2cff771b8b5fb8103e37e55113683dbdaa955",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "c62f4336e47067ae71d7d886133b97c2224b12440b1b8d631e5e9dfbd0ffefcf",
+        "return_transition.csv": "eb5f5fb5588d414081403757f1b2cf3e42adfe4aa6c54a58090bebe8b479a9e3",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "dfdaf0db95ac2e64d272da21fd4f5f5331a0395002d0db87299cd55e84b1097c",
+        "rmsr_contrasts.csv": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee",
+        "survival_cif.csv": "ba10344f6950b6e1fbb9a64d0a187cb2e08121e697ea53dbc7009d4847cfa4c6"
+      },
+      "status": "PASS",
+      "summary_sha256": "dc36c5c45180dd987bc17ebfcc28c112a410383dbebecbc5115052ba92e609d5",
+      "tau": 0.05
+    },
+    "tau_00625": {
+      "elapsed_sec": 130.76585769999997,
+      "inventory_sha256": "5c5ba8a37b04d5fc320532827b5e9428875e3f615b5278283e7c59d71313e9df",
+      "output_sha256": {
+        "analysis_results.json": "091af1126a0095610d24222cdaaeb7a095aaf3e4fce8648056fb21b1b7d21a52",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "41ccab3db1bbbcb8253dd12917a9fd1fe51228aee76f0a0f5fb28bf5a6e62dc3",
+        "return_transition.csv": "d9063199393e6e39a4b35d434f28643cf881c9a731cbd33087f86000bd875fcf",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "40faf4a7a59316b8f4dff75466fd938efef2e57d1cee3e9ae700ecc509cfd32f",
+        "rmsr_contrasts.csv": "1be655cbe4b74aa55741ea09ac8e720d7d28bdf10e92cd07bf42c134871e5af1",
+        "survival_cif.csv": "20c447730f63968a4109fee9bc72f9cec464fb5b881a3f49f8cfc1286221acd0"
+      },
+      "status": "PASS",
+      "summary_sha256": "c8fa2bdaa446919cf671c4a4f75f1df493d1e24203c5342da6b68da76ea02ccc",
+      "tau": 0.0625
+    },
+    "tau_01000": {
+      "elapsed_sec": 404.21220790000007,
+      "inventory_sha256": "3b57bc5121f94e9ad96715bce124085936245da0233253909ac1f543862ae698",
+      "output_sha256": {
+        "analysis_results.json": "9a9c43d08e1a699524cfcade1b4b70f88036ecc8cad44e519d722d4440b06e14",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "9d87f603a0b33347a7c9058370234f3fefe3594bb7c6512077d23795b1793a76",
+        "return_transition.csv": "ac2dd6df0b8f56b47dac8150b50cd893e561ca7b2a17159e37eb26dc1e386605",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "92e5f90bc0f4bd299c54fe091820eb96b6f4da5bb2424aa8ffb63d95adeef8e3",
+        "rmsr_contrasts.csv": "ada6e5f87a6343e8b261e5e21372c9a0e124eb20b7bf7c083312acf231273498",
+        "survival_cif.csv": "03aad08868a7dea5f0b038a0c77ebf9d349b95debaa74e683681c3ee8a6d99c4"
+      },
+      "status": "PASS",
+      "summary_sha256": "0a35c038ee681ae30df296f89d74167a5d15c9818f7e98e21372325bf0092934",
+      "tau": 0.1
+    },
+    "tau_01250": {
+      "elapsed_sec": 571.7567073,
+      "inventory_sha256": "5bd9436e3461ddf08b6fdff0a4264283bc37a732867ee21eb15078fac19a0147",
+      "output_sha256": {
+        "analysis_results.json": "5e34589af03d12036dab22497d977a10eff9c72d1d436831dd6008b9aa2932c9",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "d342aa8b4b415c20cc0202fe26d3033843c19c0dd2509e2ff8278e9a03aa8687",
+        "return_transition.csv": "e4141e3db6da0b5b61c6ad0818dec3db89bdac049be746b8314868c3f1752550",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "58505fa4a2ce39bbfb86bf7de769b63b35f4c003bc11898317b7c116933fe725",
+        "rmsr_contrasts.csv": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+        "survival_cif.csv": "1a90951b52587823e82fe89c99a12c8512030f465a66915028285ed8a2773740"
+      },
+      "status": "PASS",
+      "summary_sha256": "8a75c998d1935e5b55bc6e9d624c2a8d59ae1d63f4882bc8cd800b405832a242",
+      "tau": 0.125
+    },
+    "tau_02000": {
+      "elapsed_sec": 369.20643589999963,
+      "inventory_sha256": "218c4d01262824ce1153db317ae7413451222cf450fa04abcf3dd61b2ed12f75",
+      "output_sha256": {
+        "analysis_results.json": "d46bc888a28d1a907110ae621185cbac044335ff8b86ca5b9ae644018aa5858c",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "ad7527b030a681d552408e9b85471b9b2c23ee4f7f09c35f8a8b607c66a357b8",
+        "return_transition.csv": "1ab0d7e7b84370a612b78b0790fc0e2585edc28ebcce4aa1b0e480d90251208b",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "31e03130a0f754a92d7463319b5d094f1b5bb3c8437e1a7eac99e080efa502bf",
+        "rmsr_contrasts.csv": "7a20f920d38e312b62ac57e9e55be85cdc6e11b232c6d568e0d171b232dc3af3",
+        "survival_cif.csv": "d12910cab32aeebe063d69371801ffd7c8c29308605b6f4a649f7eab296d674c"
+      },
+      "status": "PASS",
+      "summary_sha256": "6bba2e660251e78d431f9f272bb5c59bf2cf4f184d020cb524d98ccb950c8d30",
+      "tau": 0.2
+    },
+    "tau_02500": {
+      "elapsed_sec": 554.4826739,
+      "inventory_sha256": "37a0a1751ab5012eafcff9045d8e0348ecfebd62b5f8b54ebb21d721e0a73560",
+      "output_sha256": {
+        "analysis_results.json": "efcc4802be81e57126256881fa42aaf4385dbd1ddd794075f5b0224008611362",
+        "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+        "o2m_endpoint_rank_set.csv": "442349f7602fadf263f420f34acb1b2bb618fd5163435bb98473ee4eb54cc197",
+        "return_transition.csv": "64b320c876f12293233693944cf51518c03c31c8c313d3558b424576c8a91296",
+        "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+        "rmsr.csv": "5d35b89d4376d3b8e4305408d00bae48598220ce0ac6622ac6a4ea41fb16a0e9",
+        "rmsr_contrasts.csv": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+        "survival_cif.csv": "9a6fbb13373b6cd1803ea2b6ae2e0d5a1cff1355025dc92fbd475066a1acbdf3"
+      },
+      "status": "PASS",
+      "summary_sha256": "52245491faf153e687a5bc6d6414aef382e8eaa19b386aa8a4de589be8338ec5",
+      "tau": 0.25
+    }
+  },
+  "memory_contract": "tau jobs executed serially in fresh child processes; parent used streaming CSV validation",
+  "protocol": "dense_grid_serial_postprocess_v1",
+  "source_hashes": {
+    "curve_csv": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+    "event_csv": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+    "geometry_script": "df9c3d4cbc974cbbfa87da6a22e071085dc50ba9793b3e061d23ad3e03cab598",
+    "inventory_script": "cac201818ff0454d1e1363f857519af2fc444694153c4e7023bfef2541b50b0d",
+    "pipeline_script": "326da83b3a1446320fa14b55a3b52ddb60b3eacb9087090a34c1b662f78093c4",
+    "radius_manifest": "f6427ea0715be2b7b6f7cff3ab0408fddc1929b9afc69b792d6b45d79d11cffd",
+    "radius_summary": "d07f01efe23270cf54210057340c9eca72f8a9b5cef88a5934f3d2f51d46923b"
+  },
+  "source_validation": {
+    "artifact_dir": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_population_v1",
+    "curve_csv_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+    "curve_rows": 7593288,
+    "event_csv_sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+    "event_rows": 29724,
+    "manifest_sha256": "f6427ea0715be2b7b6f7cff3ab0408fddc1929b9afc69b792d6b45d79d11cffd",
+    "status": "PASS",
+    "summary_sha256": "d07f01efe23270cf54210057340c9eca72f8a9b5cef88a5934f3d2f51d46923b"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "20260901_prospective_lockbox_analyzer_v1",
+  "status": "invalidated_due_to_implementation_defect",
+  "outcome_access_timestamp_utc": "2026-09-01T02:35:31.981974+00:00",
+  "outcome_access_receipt": "lockbox_runs/OUTCOME_ACCESS_RECEIPT.json",
+  "outcome_access_receipt_sha256": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83",
+  "sealed_bundle_ready_sha256": "5392b04eb5076fb3f729b99584c7e9dd7cb96853e6be20a876d5b47a98400010",
+  "frozen_analyzer_sha256": "a31261314ae212c4154f35412e71de8e85e1b6405dbfbfa0505bbf818127fb01",
+  "failure": "fixed/normalized branch raw image rosters differ from the sealed selection",
+  "failure_location": "branch_image_aggregate before zero-cluster merge and before any H1-H5 estimate or verdict was written",
+  "normative_verdict_created": false,
+  "prospective_rerun_permitted": false,
+  "support_audit_structural_columns_only": {
+    "selected_images": 300,
+    "raw_images_per_role": 299,
+    "missing_selected_image": "1063__1200_1200",
+    "fixed_common_valid_gt": 7246,
+    "normalized_common_valid_gt": 7243,
+    "common_valid_intersection_gt": 7243,
+    "fixed_only_gt": 3,
+    "normalized_only_gt": 0
+  },
+  "defect": "The preregistration states that selected images with zero common-valid contribution remain zero-valued bootstrap clusters, but the frozen analyzer requires the raw branch/anatomy rosters to equal all 300 selected images before its later merge-and-fill-zero step. It also requires exactly equal fixed/normalized common-valid GT keys rather than applying a frozen intersection or other explicit rule.",
+  "disposition": "The prospective confirmatory family is invalidated and has no PASS/FAIL verdict. Any corrected analysis must retain the receipt and this record, disclose the support rule, and be labelled post-lockbox corrective/exploratory."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "smoke_complete",
+  "selected_images": 1,
+  "focal_direction_rows": 48,
+  "focal_gt_by_size_bin": {
+    "s_16_32": 3,
+    "t_8_16": 10
+  },
+  "excluded_base_box_outside_image_by_size_bin": {
+    "s_16_32": 1
+  },
+  "audited_focal_gt_by_size_bin": {
+    "t_8_16": 10,
+    "s_16_32": 2
+  },
+  "radius_curve_rows": 982,
+  "event_counts": {
+    "o2o": 6,
+    "o2m_legacy": 25,
+    "o2m_pre_topk": 25,
+    "o2m_assigned_positive": 25,
+    "rho_R": 0
+  },
+  "o2o_first_divergence_counts": {
+    "eligibility_boundary": 6,
+    "right_censored": 42
+  },
+  "elapsed_sec": 19.944986400001653
+}

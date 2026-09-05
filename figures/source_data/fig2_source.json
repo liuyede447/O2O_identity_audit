@@ -1,0 +1,37 @@
+{
+  "default_bootstrap": "5000 stratified image-cluster replicates",
+  "default_statistical_unit": "common-valid focal GT clustered by sampled image",
+  "default_weighting": "inverse image-inclusion weights",
+  "exceptions": {
+    "learning_dynamics": "row-specific archived checkpoint; no interpolation",
+    "yolov10": "compatible native detector contract, not architecture generalisation"
+  },
+  "fig2_source_csv": "figures_final/source_data/fig2_source.csv",
+  "fig2_source_csv_sha256": "380ef2f6688462598dcf4a1d010fd73d0fb0f407777a1d0a4e66f6b765a89ddb",
+  "figure": "Figure 2 low-fidelity",
+  "scientific_claim": "Observed scale response depends on the stress contract; the paired sign persists with different branch-wise decomposition.",
+  "source_row_count": 30,
+  "sources": {
+    "dynamics": {
+      "path": "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+      "sha256": "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9"
+    },
+    "equivalent": {
+      "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json",
+      "sha256": "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b"
+    },
+    "fixed": {
+      "path": "results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
+      "sha256": "aece532fd9ea842247ed22ea03557e13ece6209144d83f3598beadd38ba0bcfe"
+    },
+    "kappa": {
+      "path": "results/stress_contract_sensitivity_20260829/frozen_matrix/kappa_sensitivity_matrix.csv",
+      "sha256": "38ee31b39b02f383cba7b816aa3b34fdccc7440d051cb725524bfb879815f0a8"
+    },
+    "yolov10": {
+      "path": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+      "sha256": "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb"
+    }
+  },
+  "status": "SOURCE_BOUND"
+}

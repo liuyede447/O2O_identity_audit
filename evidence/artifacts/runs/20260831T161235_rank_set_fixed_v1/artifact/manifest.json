@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "protocol": "o2m_rank_set_decoupling_v1",
+  "read_only": true,
+  "script_sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+  "data_sha256": "23fb59a4541db5f64a6c43e666b168872a5be48487ca7ce0c72033adeaf6413e",
+  "selected_images_source": "E:\\two_paper\\beifen\\publication_reproducible\\results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "selected_images_processed": 300,
+  "smoke_manifest_prefix_only": false,
+  "stratum_population_counts": {
+    "t_only": 7018,
+    "s_only": 76,
+    "t_and_s": 6090
+  },
+  "stratum_sample_allocation": {
+    "t_and_s": 138,
+    "t_only": 160,
+    "s_only": 2
+  },
+  "detector_contract": "YOLO26 native O2M Top-10 -> multi-GT conflict resolution -> Top-10",
+  "rank_contracts": {
+    "legacy_q_positive_top1": "q Top-1 among all candidates with q > 0",
+    "pre_conflict_topk_top1": "q Top-1 inside the native pre-conflict Top-10 mask",
+    "assigned_set_q_top1": "q Top-1 inside P_g = fg_mask & (target_gt_idx == focal_gt)"
+  },
+  "set_contract": "exact membership; no Jaccard or retention threshold",
+  "empty_set_contract": {
+    "empty_empty": "separate structural state; Jaccard and retention are undefined",
+    "empty_to_nonempty": "separate structural state; Jaccard is zero and base retention is undefined",
+    "nonempty_to_empty": "separate structural state; Jaccard and base retention are zero",
+    "nonempty_nonempty": "Jaccard and base retention are calculated normally"
+  },
+  "stress": "fixed_1px",
+  "kappa": null,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260831,
+  "elapsed_sec": 505.8330911000012,
+  "direction_rows": 29616,
+  "focal_gt": 7434,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction_rank_set.csv",
+    "rank_set_summary.json",
+    "manifest.json"
+  ]
+}

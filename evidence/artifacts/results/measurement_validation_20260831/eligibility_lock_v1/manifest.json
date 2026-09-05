@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "protocol": "native_vs_base_eligibility_lock_v1",
+  "read_only": true,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "selection_seed": 20260823,
+  "selected_images": 300,
+  "bootstrap_replicates": 5000,
+  "kappa": 0.0625,
+  "definition": "shifted eligibility mask is replaced by the corresponding base-state branch mask before q, Top-k, conflict, and Top-1",
+  "elapsed_sec": 2124.0907454,
+  "per_gt_rows": 14866,
+  "per_direction_rows": 59228,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction.csv",
+    "per_gt.csv",
+    "summary.json"
+  ]
+}

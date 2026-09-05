@@ -1,0 +1,152 @@
+{
+  "checks": {
+    "any_stage_not_stacked": "PASS",
+    "arial_or_permitted_fallback": "PASS",
+    "cooccurrence_summary_csv_parity": "PASS",
+    "first_observed_exclusive_100pct": "PASS",
+    "interpretation_guards": "PASS",
+    "manuscript_unchanged": "PASS (not touched by this script)",
+    "minimum_visible_font": "PASS",
+    "pdf_final_size": "PASS",
+    "pdf_type42_embedded": "PASS",
+    "png_600_dpi": "PASS",
+    "png_rgb": "PASS",
+    "source_hashes": "PASS",
+    "source_number_ci_n_support_parity": "PASS",
+    "svg_editable_text": "PASS",
+    "text_clipping_and_cross_panel_overlap": "PASS"
+  },
+  "cooccurrence_crosscheck": {
+    "max_abs_difference": 3.552713678800501e-15,
+    "rows": 42,
+    "status": "PASS"
+  },
+  "evidence_parity": {
+    "comparisons": 198,
+    "maximum_absolute_numeric_difference": 0.0,
+    "n_mismatches": [],
+    "status": "PASS"
+  },
+  "failures": [],
+  "figure": "Fig3",
+  "interpretation_guards": {
+    "any_stage_stacked": false,
+    "conflict_mediation_claim": false,
+    "eligibility_causal_contribution_claim": false,
+    "first_label_execution_order_invariant_claim": false,
+    "observational_subset_as_causal_proof": false
+  },
+  "notes": [
+    "Eligibility attenuation is explicitly limited to lock support and is not a causal contribution fraction.",
+    "The eligibility-stable observational subset is retained in source data for supplementary placement and omitted from the main figure.",
+    "Active-missing and geometry-clipping any-stage rows are retained in source data for supplementary placement and omitted from the main figure.",
+    "Only mutually exclusive first-observed labels are stacked; any-stage occurrence is a non-exclusive dot plot.",
+    "First-observed labels are execution-order dependent; all pathway values are descriptive, not causal.",
+    "Pre-resolution estimates are a same-branch descriptive control, not a mediation analysis."
+  ],
+  "output_validation": {
+    "outputs": {
+      "pdf": {
+        "bytes": 56552,
+        "path": "figures_final/draft/Fig3.pdf",
+        "sha256": "c378a26b8cbd527bf2cffa14e03959678fa172cb161bb09b2dd91e01906ceaf6"
+      },
+      "png": {
+        "bytes": 401249,
+        "path": "figures_final/draft/Fig3.png",
+        "sha256": "3f711fc87964a6a82d2ad71132fa9c24f7973da841bd534eaae40de7526f8790"
+      },
+      "svg": {
+        "bytes": 59724,
+        "path": "figures_final/draft/Fig3.svg",
+        "sha256": "be16a6b1fb1e1cb04aee3fcb12af005408cb8f170ae09e52d6b62d89b25b5ebe"
+      }
+    },
+    "pdf_fonts": {
+      "all_embedded": true,
+      "font_rows": [
+        "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     15  0",
+        "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     22  0"
+      ],
+      "status": "PASS",
+      "truetype_or_cid_truetype": true
+    },
+    "pdf_geometry": {
+      "height_mm": 130.00000000000915,
+      "target_mm": [
+        178.0,
+        130.0
+      ],
+      "width_mm": 178.0000000000147,
+      "within_0_1_mm": true
+    },
+    "png": {
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "dpi_600": true,
+      "mode": "RGB",
+      "pixels": [
+        4204,
+        3070
+      ]
+    },
+    "svg_editable_text": true,
+    "svg_text_nodes": 61
+  },
+  "preflight": {
+    "axes_count": 4,
+    "geometry": {
+      "clipped_text": [],
+      "figure_pixel_bounds": [
+        0.0,
+        0.0,
+        700.7874015748032,
+        511.8110236220473
+      ],
+      "foreign_panel_text_intrusions": [],
+      "status": "PASS"
+    },
+    "minimum_visible_font_pt": 7.0,
+    "resolved_font": {
+      "family": "Arial",
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    "visible_text_count": 62
+  },
+  "source_data": {
+    "csv": "figures_final/source_data/fig3_source.csv",
+    "csv_sha256": "47930e3d9c63845d82814548f59f37d74602a011f5dd15fe486f3ad180b301da",
+    "json": "figures_final/source_data/fig3_source.json",
+    "json_sha256": "cc6dc2f39850ef8efacec625fca2f492f643676cddc2833a23574b9432e3deed"
+  },
+  "source_validation": {
+    "actual_panel_rows": {
+      "a": 5,
+      "b": 4,
+      "c": 24,
+      "d": 8
+    },
+    "all_values_finite": true,
+    "any_stage_authority": [
+      "SOURCE_ADDENDUM"
+    ],
+    "any_stage_source_addendum_only": true,
+    "ci_order_valid": true,
+    "exclusive_composition_sum_valid": true,
+    "exclusive_composition_sums": {
+      "Equivalent-area-side": 100.0,
+      "Fixed 1 px": 100.00000000000001
+    },
+    "expected_panel_rows": {
+      "a": 5,
+      "b": 4,
+      "c": 24,
+      "d": 8
+    },
+    "status": "PASS"
+  },
+  "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
+  "status": "PASS"
+}

@@ -1,0 +1,196 @@
+{
+  "file_count": 37,
+  "files": [
+    {
+      "bytes": 2706,
+      "path": "manifest.json",
+      "sha256": "501fe2a809e8c2c09c8d6176ce077453adf3198de030ec0d950b301926b20680"
+    },
+    {
+      "bytes": 0,
+      "path": "mismatches.csv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 396038,
+      "path": "reference_trajectories.csv",
+      "sha256": "7c6a52f9d028d031be184f1319ba2d73ae0cbfdf28da027e930e28b2d029b238"
+    },
+    {
+      "bytes": 2625,
+      "path": "selected_images.csv",
+      "sha256": "2ae39baa80d8b4027956c5995aa57fd27dfea5d7b5a91638aa59763856a8f5e4"
+    },
+    {
+      "bytes": 265804,
+      "path": "serialized_inputs/105__1800_1914.npz",
+      "sha256": "018b7990187e89c1f8484fbbfef8500633b28235792d515f6ea348df9360fe12"
+    },
+    {
+      "bytes": 266191,
+      "path": "serialized_inputs/1121__0_0.npz",
+      "sha256": "ddd4091200a1e1dd1970a975a9324caeb6017f88a334abf5543171addae02975"
+    },
+    {
+      "bytes": 265424,
+      "path": "serialized_inputs/1133__1800_1200.npz",
+      "sha256": "2b1b9b2d2d0f5b8742fe273d42fc979770e13029db7b2a8696f6e40bc90ceeda"
+    },
+    {
+      "bytes": 267642,
+      "path": "serialized_inputs/1216__2093_1200.npz",
+      "sha256": "a052d3468bf5a4fe611110d6dc7ac8feb8e8912a6b39335861151c0b5e4a11f7"
+    },
+    {
+      "bytes": 264751,
+      "path": "serialized_inputs/1834__1800_1800.npz",
+      "sha256": "099d7e3f2e92fa39ba1dee6db39195dfc052c7ce31a5950e7faa6db67d0e5c33"
+    },
+    {
+      "bytes": 265862,
+      "path": "serialized_inputs/1891__2400_2477.npz",
+      "sha256": "94f2242a43c12add3f83d883d626f6dabd5ca5698046a46b8ed159272a43871f"
+    },
+    {
+      "bytes": 264959,
+      "path": "serialized_inputs/1ee79129f.npz",
+      "sha256": "ac9ce4ca751e037273ac27e5bc5d4b495ec3a6d3e85b0455ee0074fcb655d4d0"
+    },
+    {
+      "bytes": 264660,
+      "path": "serialized_inputs/2353__0_600.npz",
+      "sha256": "692c3b15620e0768aa00b486da07602ef5ccfb84bcb8e5becab40bebcb89ac03"
+    },
+    {
+      "bytes": 265611,
+      "path": "serialized_inputs/2514__2113_0.npz",
+      "sha256": "a0e8d40212595005af7ee848dc0e29a6b27812757ad9f29ead15df7639057cde"
+    },
+    {
+      "bytes": 265460,
+      "path": "serialized_inputs/2591__1800_1800.npz",
+      "sha256": "a06c3b0e121cf65017e79f2ba5e98f6c8f39feda58e9ca060f8a6a406ca06490"
+    },
+    {
+      "bytes": 265653,
+      "path": "serialized_inputs/362__0_1200.npz",
+      "sha256": "4313f6d3e8eeac57a28737208eb541aaeefd339d12951b8af06e74c026d1ba68"
+    },
+    {
+      "bytes": 264744,
+      "path": "serialized_inputs/38af45d7f.npz",
+      "sha256": "dca09ffc689e950c5b9db5b27347aff7298c65f40880d18082ddb38771f01bad"
+    },
+    {
+      "bytes": 264803,
+      "path": "serialized_inputs/3d4e85911.npz",
+      "sha256": "a5296fcc915d03cb86f70fae0d4889f14fba0e46f3a50de4103a9e203cbe1a84"
+    },
+    {
+      "bytes": 265412,
+      "path": "serialized_inputs/42__1800_1200.npz",
+      "sha256": "3eeddbe49d03dae5638ed797683ca7ff4d115b0b1d15d433cb8df02e9439528f"
+    },
+    {
+      "bytes": 265245,
+      "path": "serialized_inputs/46__1200_1200.npz",
+      "sha256": "a493f475f591d7ede910923a0794c286039d48898ff8d2f99da6450e39c2e6bc"
+    },
+    {
+      "bytes": 264734,
+      "path": "serialized_inputs/56435f779.npz",
+      "sha256": "71ece342dcdbf42184d4ea796bc607d39a9eda3fed12c26c1718e34cdc961f46"
+    },
+    {
+      "bytes": 264908,
+      "path": "serialized_inputs/5bb210460.npz",
+      "sha256": "2a8fb3c941867a9b0bb44e7172916aafac3ff3168b57e13e9a292c0e8d92011a"
+    },
+    {
+      "bytes": 265076,
+      "path": "serialized_inputs/72__1200_1200.npz",
+      "sha256": "fc7be66311552f0c4f157f38b451b605144873225dc5824be879ed9593718f39"
+    },
+    {
+      "bytes": 264875,
+      "path": "serialized_inputs/7f5c1c971.npz",
+      "sha256": "67466f8207a25b5ec12a4618cf0489da089c77589fce4d21ac3acc4b435e3404"
+    },
+    {
+      "bytes": 264790,
+      "path": "serialized_inputs/8242a22a8.npz",
+      "sha256": "45137f0c43b1016d071698e46be447f20e3af953ced6aac4780964c438c78850"
+    },
+    {
+      "bytes": 267040,
+      "path": "serialized_inputs/860__1200_2417.npz",
+      "sha256": "637414c72bb5e1bd5c5dd0897a884956bc295c3bf985b21f1ef534fe188639b8"
+    },
+    {
+      "bytes": 265459,
+      "path": "serialized_inputs/905__2400_1200.npz",
+      "sha256": "d9f861b1082fd0028177430e4e4ee59cc2d5abcbc0918b2c85837ddbba1e7ac3"
+    },
+    {
+      "bytes": 264804,
+      "path": "serialized_inputs/99__1200_1800.npz",
+      "sha256": "2bcc1c0709b9e7bc36b686069052f40f879c95c108e05baa61d1714698cc61ec"
+    },
+    {
+      "bytes": 264938,
+      "path": "serialized_inputs/9ca7e6f4e.npz",
+      "sha256": "d84acf98659e64529abbd7e588f3bdc251410b2edfe0eff36a6cbe41cdd4a4dc"
+    },
+    {
+      "bytes": 264806,
+      "path": "serialized_inputs/a9487f190.npz",
+      "sha256": "29b7a680c78461801e0ee0556e1000d3f84079b38e0a732192907dcccb3f3e21"
+    },
+    {
+      "bytes": 264828,
+      "path": "serialized_inputs/c47428cd8.npz",
+      "sha256": "94d76be095ec1b401d2b20f40a9af94c168b5d05053f3192e83c346cbdcfa3b9"
+    },
+    {
+      "bytes": 264821,
+      "path": "serialized_inputs/d67d144f8.npz",
+      "sha256": "74dcbda923ac433e0fc945c19d41f7770501036d996a5791075e1602cf4f0b2a"
+    },
+    {
+      "bytes": 264709,
+      "path": "serialized_inputs/dce1c718f.npz",
+      "sha256": "053d18a0c4a657f80025e96a76476b9470dd8051aebb3c2898f4e8c3ea5d3ae1"
+    },
+    {
+      "bytes": 265215,
+      "path": "serialized_inputs/P1357__1.0__3200___1200.npz",
+      "sha256": "04c467ea75f77f4ce7aa6dad7c9046c8768b74f7cb93b055cbf970d79095cd7a"
+    },
+    {
+      "bytes": 265425,
+      "path": "serialized_inputs/P1727__1.0__2400___3000.npz",
+      "sha256": "15a8b54df214d7d066cee411d7ad51c6d3e15716f898a29a67087029d2c1c845"
+    },
+    {
+      "bytes": 3806,
+      "path": "serialized_inputs_manifest.csv",
+      "sha256": "b8730595b24e1a9fb7936b824a92377d0b1a914aacc59ed754bba6764ee16972"
+    },
+    {
+      "bytes": 421,
+      "path": "summary.json",
+      "sha256": "4d3a9568f5be5e1798fdc6b29dc757f381aba6df53228d60967b0f75ebe62aa7"
+    },
+    {
+      "bytes": 401707,
+      "path": "trajectory_comparison.csv",
+      "sha256": "32575b7228279eb0e55276803982f706d329862d83c1ffbeebc7dd2d6fec97cf"
+    }
+  ],
+  "generated_at_utc": "2026-08-31T19:34:30.505711+00:00",
+  "generator_sha256": "cac201818ff0454d1e1363f857519af2fc444694153c4e7023bfef2541b50b0d",
+  "protocol": "recursive_run_output_sha256_inventory_v1",
+  "run_id": "20260831_boundary_reference_formal_v2",
+  "status": "complete",
+  "total_bytes": 8765952
+}

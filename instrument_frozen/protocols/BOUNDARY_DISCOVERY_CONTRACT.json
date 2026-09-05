@@ -1,0 +1,88 @@
+{
+  "status": "DISCOVERY_CONTRACT_FORMALLY_QUALIFIED_PRE_FREEZE",
+  "created_at": "2026-08-31T16:07:52+08:00",
+  "scope": "AI-TOD-v2 seed-0 YOLO26s discovery sample only; this is not yet the prospective lockbox contract",
+  "sample_manifest": "results/five_experiment_upgrade_20260830/anatomy_fixed_1px_v2/selected_images.csv",
+  "sample_manifest_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "radius": {
+    "unit": "equivalent_side",
+    "rmax": 0.25,
+    "coarse_step": 0.015625,
+    "fine_step": 0.001953125,
+    "rmsr_tau": 0.125,
+    "directions": ["left", "right", "up", "down"],
+    "search": "forward coarse scan to the first observed base-identity same-to-changed bracket, followed by forward fine scan within that bracket",
+    "monotonicity_assumed": false,
+    "binary_search_used": false,
+    "right_censoring": true
+  },
+  "rho_R": {
+    "pair": "fixed base loss-active candidate A and fixed base native runner B",
+    "event": "first q_A <= q_B crossing",
+    "competing_censor_order": ["eligibility", "pre_topk", "conflict"],
+    "base_missing_or_tie": "undefined structural state"
+  },
+  "numeric_contract": {
+    "normative_execution": "native PyTorch float32 on CUDA",
+    "q_zero_domain_tolerance": 1e-12,
+    "q_parity_atol": 1e-6,
+    "q_parity_rtol": 2e-5,
+    "margin_parity_atol": 1e-6,
+    "margin_parity_rtol": 2e-6,
+    "radius_reporting_resolution": 0.001953125,
+    "reference_radius_tolerance": 0.001953126,
+    "tie_rule": "native ordering is normative; exact float32 q ties are an explicit undefined/numerical-boundary state rather than a substantive rank event",
+    "precision_guardrail": "reported radius precision may not exceed the fine step"
+  },
+  "base_box_domain": "A continuous legal trajectory is defined only for focal GT boxes fully inside the 800x800 model input at radius zero. Base-outside GTs are counted and excluded without clipping.",
+  "image_boundary_guard": "If an otherwise valid terminal image-boundary censor point rounds outside in native float32 arithmetic, move only that terminal point inward using the first successful guard in 8,16,32,64,128 times float32 epsilon times max image dimension; record the applied pixel guard.",
+  "o2m_empty_set_contract": {
+    "empty_empty": "structural state; Jaccard and retention null",
+    "empty_to_nonempty": "structural transition; Jaccard zero, base retention null",
+    "nonempty_to_empty": "structural transition; Jaccard and base retention zero",
+    "nonempty_nonempty": "calculate Jaccard and base retention"
+  },
+  "validation": {
+    "production_repeatability": "exact SHA-256 match for event CSV, curve CSV, and selected-images CSV across two runs",
+    "production_event_csv_sha256": "0e3ce357df392c94ac972d932a53a098e0e0066cecd83faab743e8c9c26671c6",
+    "production_curve_csv_sha256": "feb9438cbd7bd25e1fbf66df37ee0ceb3ebb35aaf938130d4c23452d1003beac",
+    "independent_reference_smoke": "48/48 trajectories, zero mismatches, maximum event-radius difference 0 after explicit base-box-domain validation",
+    "formal_production": {
+      "run_id": "20260831T174200_boundary_discovery_v2",
+      "selected_images": 300,
+      "audited_focal_gt": 7431,
+      "directional_trajectories": 29724,
+      "summary_sha256": "a6a251ded6e22a49435fc0f5d8e92819682fae760ac7b534edb219f336acb5b6",
+      "event_csv_sha256": "e43fcee03d5b95ecb7392a7e7ed365d646b11e6d7e3b48b35369d28f7aa8f57b",
+      "curve_csv_sha256": "e72f630400f462e8e1f87f29acd07928abda48a4c694c0e55cf25e854ebe4002"
+    },
+    "formal_independent_reference": {
+      "run_id": "20260831_boundary_reference_formal_v2",
+      "selected_images": 30,
+      "network_forward_calls": 30,
+      "reference_trajectories": 4408,
+      "production_trajectories": 4408,
+      "mismatches": 0,
+      "maximum_event_radius_absolute_difference": 0.0,
+      "summary_sha256": "4d3a9568f5be5e1798fdc6b29dc757f381aba6df53228d60967b0f75ebe62aa7",
+      "output_inventory_sha256": "ebc455fee2acd9b5609743ebf705e330f55d5e7648554419e07472014b3c636f"
+    },
+    "formal_geometry": {
+      "run_id": "20260831_boundary_geometry_formal_v2",
+      "bootstrap_replicates": 5000,
+      "bootstrap_seed": 20260831,
+      "tau": 0.125,
+      "endpoint_radii": [0.03125, 0.0625, 0.125],
+      "summary_sha256": "8e0b4339a9752894cf6ee91f06ef34dbe9b3505b3ae0ae6a6afc57742837063a",
+      "output_inventory_sha256": "80f83afaf76e8ecb8a565c6b52c40220ec55fb1ab9a50e3ec6ff96ff7af2e0f0",
+      "output_hashes_verified": 8
+    }
+  },
+  "source_sha256": {
+    "rank_set": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+    "boundary_runner": "c0fa096e3ba36cdcafcaf23b36157141fd8d9d0f2f740c2afa543871fdf9db60",
+    "boundary_analyzer": "87ba3955c3ea50bdf660d0d8472b2728f53382b294ffb5da46c4346e778882b8",
+    "boundary_reference": "6677982953b75685725c73d2548b15e299d4494a5cc5805670209b34afd5b19a"
+  }
+}

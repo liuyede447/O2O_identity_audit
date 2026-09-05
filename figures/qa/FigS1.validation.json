@@ -1,0 +1,320 @@
+{
+  "box_and_crop_validation": {
+    "actual_case_rows": {
+      "Fragile": 8,
+      "Stable": 8,
+      "Undefined": 5
+    },
+    "boxes_within_image": true,
+    "expected_case_rows": {
+      "Fragile": 8,
+      "Stable": 8,
+      "Undefined": 5
+    },
+    "overlays_within_crops": true,
+    "status": "PASS",
+    "total_overlay_rows": 21
+  },
+  "checks": {
+    "all_displayed_crops_exclude_black_padding": "PASS",
+    "arial_or_permitted_fallback": "PASS",
+    "boxes_within_source_and_crops": "PASS",
+    "frozen_per_direction_identity": "PASS",
+    "interpretation_guard_present": "PASS",
+    "labels_outside_images": "PASS",
+    "manuscript_unchanged": "PASS (not touched by this script)",
+    "minimum_visible_font": "PASS",
+    "old_qualitative_pack_excluded": "PASS",
+    "one_pixel_shift_coordinates": "PASS",
+    "pdf_final_size": "PASS",
+    "pdf_type42_embedded": "PASS",
+    "png_600_dpi": "PASS",
+    "png_rgb": "PASS",
+    "source_sha_and_primary_checkpoint_identity": "PASS",
+    "svg_editable_text_and_raster_image": "PASS",
+    "text_clipping_and_image_overlap": "PASS",
+    "trace_coordinate_and_candidate_parity": "PASS"
+  },
+  "coordinate_parity": {
+    "candidate_mismatches": [],
+    "coordinate_comparisons": 168,
+    "maximum_absolute_difference": 0.0,
+    "status": "PASS"
+  },
+  "failures": [],
+  "figure": "FigS1",
+  "identity_validation": {
+    "case_records": 3,
+    "identity_checks": 21,
+    "status": "PASS"
+  },
+  "interpretation_guards": {
+    "aggregate_estimate_claim": false,
+    "final_detection_claim": false,
+    "image_or_feature_shifted": false,
+    "missing_candidate_imputed": false,
+    "old_qualitative_pack_used": false
+  },
+  "notes": [
+    "Only the primary-checkpoint qualitative trace and its SHA-bound source image are used.",
+    "GT and candidate rectangles are copied exactly from trace xyxy fields; no box is hand positioned.",
+    "All semantic labels and the legend are outside image axes.",
+    "Base/shift detail insets render each source pixel as a same-colour vector cell; no interpolation, enhancement, or detail synthesis is applied.",
+    "Active and runner candidates use exact-coordinate corner marks to reduce target occlusion; GT extents remain full rectangles.",
+    "Overlays are audited assignment states, not final detections."
+  ],
+  "output_validation": {
+    "outputs": {
+      "pdf": {
+        "bytes": 529497,
+        "path": "figures_final/draft/FigS1.pdf",
+        "sha256": "90682c7854c0102c038106f026b1dc423c56aae2a4eedc5a90286ab40e4a7e89"
+      },
+      "png": {
+        "bytes": 652814,
+        "path": "figures_final/draft/FigS1.png",
+        "sha256": "d4e9f357057018fc923b2e75722a5d0cea9353d57afe2e6669f1189732fa7e1b"
+      },
+      "svg": {
+        "bytes": 3079002,
+        "path": "figures_final/draft/FigS1.svg",
+        "sha256": "d707aa4ca6f44996da68a883d225bec15c25c38302521d7740642473bfd86a88"
+      }
+    },
+    "pdf_fonts": {
+      "all_embedded": true,
+      "font_rows": [
+        "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     18  0",
+        "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     25  0"
+      ],
+      "status": "PASS",
+      "truetype_or_cid_truetype": true
+    },
+    "pdf_geometry": {
+      "height_mm": 169.99999999999028,
+      "target_mm": [
+        178,
+        170
+      ],
+      "width_mm": 178.0000000000147,
+      "within_0_1_mm": true
+    },
+    "png": {
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "dpi_600": true,
+      "mode": "RGB",
+      "pixels": [
+        4204,
+        4015
+      ]
+    },
+    "svg_contains_raster_source": true,
+    "svg_editable_text": true,
+    "svg_image_nodes": 3,
+    "svg_text_nodes": 13
+  },
+  "padding_crop_validation": {
+    "detected_nonpadding_bbox_xyxy": [
+      0,
+      0,
+      800,
+      540
+    ],
+    "displayed_crops": 9,
+    "failures": [],
+    "records": [
+      {
+        "all_black_rows": 0,
+        "case": "Stable",
+        "column": "context",
+        "crop_xyxy": [
+          331.5,
+          353.0000305175781,
+          511.5,
+          533.0000305175781
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Stable",
+        "column": "base",
+        "crop_xyxy": [
+          391.5,
+          413.0000305175781,
+          451.5,
+          473.0000305175781
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Stable",
+        "column": "shift",
+        "crop_xyxy": [
+          391.5,
+          413.0000305175781,
+          451.5,
+          473.0000305175781
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Fragile",
+        "column": "context",
+        "crop_xyxy": [
+          429.0,
+          360.0,
+          609.0,
+          540.0
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Fragile",
+        "column": "base",
+        "crop_xyxy": [
+          495.0,
+          477.5,
+          543.0,
+          525.5
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Fragile",
+        "column": "shift",
+        "crop_xyxy": [
+          495.0,
+          477.5,
+          543.0,
+          525.5
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Undefined",
+        "column": "context",
+        "crop_xyxy": [
+          157.5,
+          228.0,
+          337.5,
+          408.0
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Undefined",
+        "column": "base",
+        "crop_xyxy": [
+          231.5,
+          302.0,
+          263.5,
+          334.0
+        ],
+        "within_nonpadding_bbox": true
+      },
+      {
+        "all_black_rows": 0,
+        "case": "Undefined",
+        "column": "shift",
+        "crop_xyxy": [
+          231.5,
+          302.0,
+          263.5,
+          334.0
+        ],
+        "within_nonpadding_bbox": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "preflight": {
+    "axes_count": 9,
+    "geometry": {
+      "clipped_text": [],
+      "in_image_annotation_count": 0,
+      "status": "PASS",
+      "text_over_image_intrusions": []
+    },
+    "minimum_visible_font_pt": 7.0,
+    "resolved_font": {
+      "family": "Arial",
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    "visible_text_count": 13
+  },
+  "shift_coordinate_validation": {
+    "maximum_absolute_difference": 0.0,
+    "records": [
+      {
+        "direction": "down",
+        "expected_delta_xyxy": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "gt_id": 40,
+        "max_abs_difference": 0.0,
+        "observed_delta_xyxy": [
+          0.0,
+          1.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "direction": "up",
+        "expected_delta_xyxy": [
+          0.0,
+          -1.0,
+          0.0,
+          -1.0
+        ],
+        "gt_id": 28,
+        "max_abs_difference": 0.0,
+        "observed_delta_xyxy": [
+          0.0,
+          -1.0,
+          0.0,
+          -1.0
+        ]
+      },
+      {
+        "direction": "right",
+        "expected_delta_xyxy": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "gt_id": 17,
+        "max_abs_difference": 0.0,
+        "observed_delta_xyxy": [
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    ],
+    "status": "PASS"
+  },
+  "source_data": {
+    "csv": "figures_final/source_data/figs1_source.csv",
+    "csv_sha256": "c5d4f0b651ce46e97fa7d1bb728d7c203cb5b27a02aad3b6fb2d243e94bb4a94",
+    "json": "figures_final/source_data/figs1_source.json",
+    "json_sha256": "04ee168e33a4c3834fcc052fa2a76985eeed1886c0abfe063f61a5806ae9699c"
+  },
+  "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
+  "status": "PASS"
+}

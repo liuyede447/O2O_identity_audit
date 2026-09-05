@@ -1,0 +1,10 @@
+{
+  "count": 13184,
+  "protocol": "eligible_population_roster_v1",
+  "sha256": "d7426446ad09fd8c0e1ee041b5061a7fcb23f51d4af6c8a3b4ca14d4ec39d14f",
+  "strata_counts": {
+    "s_only": 76,
+    "t_and_s": 6090,
+    "t_only": 7018
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "protocol": "continuous_boundary_numpy_reference_subset_v1",
+  "selected_images": 30,
+  "forward_calls": 30,
+  "one_forward_per_image": true,
+  "reference_trajectories": 4408,
+  "production_trajectories_in_subset": 4408,
+  "mismatches": 0,
+  "allowed_radius_and_bracket_tolerance": 0.001953126,
+  "maximum_event_radius_absolute_difference": 0.0,
+  "elapsed_sec": 20993.568527799995,
+  "read_only": true,
+  "reference_assignment": "reference_o2o_assigner_numpy.assign_reference",
+  "production_results_used_only_for_comparison": true,
+  "subset": {
+    "selection_seed": 20260831,
+    "hash_expression": "SHA256(f'{seed}|{image_id}') first 64 bits, big endian",
+    "hash_threshold": null,
+    "hash_modulus": 10000,
+    "max_images_after_hash_ranking": 30,
+    "smoke": false
+  },
+  "scan": {
+    "units": "equivalent-side",
+    "rmax": 0.25,
+    "coarse_step": 0.015625,
+    "fine_step": 0.001953125,
+    "algorithm": "forward coarse scan to first active-identity change, then forward fine scan within the first bracket",
+    "monotonicity_assumed": false,
+    "image_boundary_numeric_guard": "independent float32 implementation of the prespecified 8,16,32,64,128 epsilon-times-max-image-dimension inward endpoint guard",
+    "base_box_domain": "exclude focal GTs whose unshifted box is not fully inside the model input; never clip"
+  },
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "data": "configs\\aitod_v2_local_g.yaml",
+  "selected_images_source": "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "production_output_dir": "runs\\20260831T174200_boundary_discovery_v2\\artifact",
+  "production_protocol": "continuous_assignment_boundary_radius_v1",
+  "source_sha256": {
+    "validator": "6677982953b75685725c73d2548b15e299d4494a5cc5805670209b34afd5b19a",
+    "reference_assigner": "35f0071c8c9b7771d2c0765ec0f051eb495a653feae64a58a17fd2aa4c4b4a63",
+    "selected_images": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+    "production_manifest": "607b6f16379079d8a7a80c95ea39f28668ae7d959af261123fb8380230ca2094",
+    "production_events": "e43fcee03d5b95ecb7392a7e7ed365d646b11e6d7e3b48b35369d28f7aa8f57b"
+  },
+  "outputs": [
+    "selected_images.csv",
+    "serialized_inputs/",
+    "serialized_inputs_manifest.csv",
+    "reference_trajectories.csv",
+    "trajectory_comparison.csv",
+    "mismatches.csv",
+    "summary.json"
+  ]
+}

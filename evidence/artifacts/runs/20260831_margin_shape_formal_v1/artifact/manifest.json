@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "read_only_input": true,
+  "cpu_only": true,
+  "input": {
+    "kind": "existing per-GT/incremental CSV",
+    "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\incremental_value_oof_predictions.csv",
+    "sha256": "882ea51ede89e6b0614efb8c937abd06b3aee614e4e11719024951cd665c8e05"
+  },
+  "script": "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_margin_shape_sensitivity.py",
+  "script_sha256": "e71bf06eecc76e239e5b570c6f26c359d4d16e986e584fb48bed9b1d0b70cfb7",
+  "arguments": {
+    "bootstrap": 5000,
+    "seed": 20260831,
+    "folds": 5,
+    "spline_n_knots": 4,
+    "spline_degree": 3,
+    "self_test": false
+  },
+  "software": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1"
+  },
+  "outputs_sha256": {
+    "margin_shape_metrics_by_fold.csv": "c2940ed995749870f422fa4ffd6b9b38b9a7cb237b2fd30febecceab27d21741",
+    "margin_shape_oof_predictions.csv": "b8e67fa981d3074741af312a2d450504c820f86b9b4ea85348946f19e8595e9a",
+    "margin_shape_summary.json": "7c294e69980dd12e5d792a0eab0b8905b98017761c4262386ee616710dc3e0f0",
+    "weighted_margin_quintiles.csv": "a3659a4cc78ccbff4bb2cd49c68e0e28ad94be305d27f0b68abe633e05ad3aa9"
+  }
+}

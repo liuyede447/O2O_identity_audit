@@ -1,0 +1,22 @@
+{
+  "analyzer_sha256": "a31261314ae212c4154f35412e71de8e85e1b6405dbfbfa0505bbf818127fb01",
+  "bootstrap_replicates": 5000,
+  "confirmatory_seed": 20260831,
+  "extraction_manifest_sha256": {
+    "fixed_anatomy": "7ea359bfc30186febf57f605d51163f21097427f6a5cc8172cdeeee5b0a2c57f",
+    "fixed_branch": "b013562b5c67ed4815361a11567a8ae292fc563d70c2cb6bcc3801aeeb0ffd32",
+    "normalized_anatomy": "96c5e1e20075e4297092116af87957a9e6d396ba9f88b6fab3709d4836e01ea3",
+    "normalized_branch": "e694e83d30c0f0458e7c0f54e33ee20fad0b82b7751bc86bb2d8dde22a968040"
+  },
+  "instrument_manifest_sha256": "a7f441cea8b1b2dfbb6d75756f94e9ff3ae49efe6fc8a5cd79cae06984a13a81",
+  "instrument_source_commit": "afa28c5587791d533992e8d7372cdec94c7fcb81",
+  "intended_output_dir": "E:\\two_paper\\beifen\\publication_reproducible\\lockbox_runs\\confirmatory_verdict_v1",
+  "outcome_access_is_irreversible": true,
+  "outcome_access_timestamp_utc": "2026-09-01T02:35:31.981974+00:00",
+  "preregistration_commit": "982657d84d3adaa34cfc0045744a73e6c0d3f4dd",
+  "preregistration_sha256": "c76e115f2d03a2ff4a9cbf05ec680b1179f5ecbd9134f815cc63cc6cea4d0474",
+  "sealed_bundle_ready_sha256": "5392b04eb5076fb3f729b99584c7e9dd7cb96853e6be20a876d5b47a98400010",
+  "selection_commit": "de2060c85702899e83cce77647f984087d9a4f1e",
+  "selection_manifest_sha256": "8c221ca61aee78d3687e94c45568dda56fd891fe2b37726c64e66b8567b6233b",
+  "status": "OUTCOME_ACCESS_OPENED"
+}

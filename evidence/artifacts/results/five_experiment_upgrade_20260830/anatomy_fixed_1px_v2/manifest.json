@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "protocol": "native_alignment_and_first_divergence_anatomy_v1",
+  "read_only": true,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "data": "configs\\aitod_v2_local_g.yaml",
+  "detector_contract": "YOLO26 native Top-7 -> conflict resolution -> Top-1",
+  "alignment": "q = p^0.5 * max(CIoU,0)^6",
+  "stress": "fixed_1px",
+  "kappa": null,
+  "selection_seed": 20260823,
+  "selected_images": 300,
+  "stratum_population_counts": {
+    "t_only": 7018,
+    "s_only": 76,
+    "t_and_s": 6090
+  },
+  "stratum_sample_allocation": {
+    "t_only": 160,
+    "s_only": 2,
+    "t_and_s": 138
+  },
+  "elapsed_sec": 342.40668159999996,
+  "direction_rows": 29616,
+  "q_pair_rows": 1662,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction_anatomy.csv",
+    "pairwise_q_gap.csv",
+    "anatomy_summary.json"
+  ]
+}

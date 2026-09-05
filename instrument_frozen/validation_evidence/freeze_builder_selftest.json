@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "bytecode_writes_disabled": true,
+    "commit_and_tag_accept_exact_head": true,
+    "finalized_inventory_accepts_exact_bundle": true,
+    "frozen_discovery_exclusion_resolves_inside_bundle": true,
+    "frozen_source_tamper_rejected": true,
+    "preregistration_commit_and_tag_created": true,
+    "preregistration_seal_revalidates": true,
+    "staged_inventory_accepts_exact_files": true,
+    "wrong_commit_rejected": true
+  },
+  "status": "PASS",
+  "tests": 9
+}

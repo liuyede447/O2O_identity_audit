@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "read_only": true,
+  "source_run": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0",
+  "source_results_sha256": "3e84079d4839d9e148ce80f2cbfcba54bed7c9de27cd9759aff7cf60081263ea",
+  "checkpoint_count": 6,
+  "epochs": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    300
+  ],
+  "missing_intermediate_epochs": "Only checkpoints physically present in the frozen archive are included; no interpolation.",
+  "forbidden_directory_used": false,
+  "inventory_sha256": "d772979c6bfcfb97063e5e0d36a0bf166d39120c80afe9d18c0e0dc46b60b668"
+}

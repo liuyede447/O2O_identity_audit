@@ -1,0 +1,170 @@
+{
+  "status": "post_lockbox_corrective_exploratory_complete",
+  "artifact_role": "exploratory_not_normative_verdict",
+  "prospective_status": "invalidated_due_to_support_contract_defect",
+  "normative_lockbox_verdict_exists": false,
+  "results": {
+    "H1": {
+      "metric": "normalized_paired_gap",
+      "point_estimate": 0.16687180599512852,
+      "ci_95_two_sided": [
+        0.12465309097327108,
+        0.20741287899580346
+      ],
+      "one_sided_empirical_p_descriptive": 0.0001999600079984003,
+      "one_sided_bound_descriptive": {
+        "kind": "lower",
+        "level": 0.95,
+        "value": 0.13204282624639102
+      },
+      "formal_status": "invalidated_prospective_not_retested",
+      "formal_pass": null,
+      "multiplicity_status": "not_applicable_post_lockbox_exploratory"
+    },
+    "H2": {
+      "metric": "normalized_o2m_gap",
+      "point_estimate": -0.1699262638435174,
+      "ci_95_two_sided": [
+        -0.20618143625437166,
+        -0.13344430679055888
+      ],
+      "one_sided_empirical_p_descriptive": 0.0001999600079984003,
+      "one_sided_bound_descriptive": {
+        "kind": "upper",
+        "level": 0.95,
+        "value": -0.13902012693562246
+      },
+      "formal_status": "invalidated_prospective_not_retested",
+      "formal_pass": null,
+      "multiplicity_status": "not_applicable_post_lockbox_exploratory"
+    },
+    "H3": {
+      "metric": "fixed_minus_normalized_o2o_gap",
+      "point_estimate": 0.13999471479757164,
+      "ci_95_two_sided": [
+        0.12514651260515308,
+        0.15603413023807686
+      ],
+      "one_sided_empirical_p_descriptive": 0.0001999600079984003,
+      "one_sided_bound_descriptive": {
+        "kind": "lower",
+        "level": 0.95,
+        "value": 0.12752907345607947
+      },
+      "formal_status": "invalidated_prospective_not_retested",
+      "formal_pass": null,
+      "multiplicity_status": "not_applicable_post_lockbox_exploratory"
+    },
+    "H4": {
+      "metric": "fixed_eligibility_minus_normalized",
+      "point_estimate": 0.21145507660049861,
+      "ci_95_two_sided": [
+        0.18537753521439118,
+        0.23438538199068268
+      ],
+      "one_sided_empirical_p_descriptive": 0.0001999600079984003,
+      "one_sided_bound_descriptive": {
+        "kind": "lower",
+        "level": 0.95,
+        "value": 0.1904517153274845
+      },
+      "formal_status": "invalidated_prospective_not_retested",
+      "formal_pass": null,
+      "multiplicity_status": "not_applicable_post_lockbox_exploratory"
+    },
+    "H5": {
+      "metric": "normalized_within_minus_fixed",
+      "point_estimate": 0.19309201612128685,
+      "ci_95_two_sided": [
+        0.16526323615167043,
+        0.2193654420660125
+      ],
+      "one_sided_empirical_p_descriptive": 0.0001999600079984003,
+      "one_sided_bound_descriptive": {
+        "kind": "lower",
+        "level": 0.95,
+        "value": 0.1698475772610481
+      },
+      "formal_status": "invalidated_prospective_not_retested",
+      "formal_pass": null,
+      "multiplicity_status": "not_applicable_post_lockbox_exploratory"
+    }
+  },
+  "bootstrap_replicates": 5000,
+  "seed": 20260831,
+  "support_audit": {
+    "status": "post_lockbox_support_audit",
+    "branch": {
+      "selected_images": 300,
+      "fixed_raw_roster": {
+        "raw_images": 299,
+        "missing_selected_images": 1,
+        "missing_selected_ids": [
+          "1063__1200_1200"
+        ]
+      },
+      "normalized_raw_roster": {
+        "raw_images": 299,
+        "missing_selected_images": 1,
+        "missing_selected_ids": [
+          "1063__1200_1200"
+        ]
+      },
+      "fixed_common_valid_gt": 7246,
+      "normalized_common_valid_gt": 7243,
+      "intersection_common_valid_gt": 7243,
+      "fixed_only_gt_count": 3,
+      "normalized_only_gt_count": 0,
+      "fixed_only_gt_keys": [
+        {
+          "image_id": "0000271_07201_d_0000408__560_0",
+          "gt_id": 10
+        },
+        {
+          "image_id": "1084__3000_1200",
+          "gt_id": 1
+        },
+        {
+          "image_id": "1127__3000_0",
+          "gt_id": 503
+        }
+      ],
+      "normalized_only_gt_keys": [],
+      "support_rule": "intersection of fixed and normalized common_valid_margin==1 GT keys",
+      "zero_valued_selected_clusters_after_merge": 14
+    },
+    "pathway": {
+      "selected_images": 300,
+      "fixed_raw_roster": {
+        "raw_images": 299,
+        "missing_selected_images": 1,
+        "missing_selected_ids": [
+          "1063__1200_1200"
+        ]
+      },
+      "normalized_raw_roster": {
+        "raw_images": 299,
+        "missing_selected_images": 1,
+        "missing_selected_ids": [
+          "1063__1200_1200"
+        ]
+      },
+      "support_rule": "all sealed directional rows; absent selected images retained as zero-valued clusters",
+      "zero_flip_clusters_fixed": 126,
+      "zero_flip_clusters_normalized": 156
+    }
+  },
+  "sealed_bundle_ready_sha256": "5392b04eb5076fb3f729b99584c7e9dd7cb96853e6be20a876d5b47a98400010",
+  "outcome_access_receipt_sha256": "8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83",
+  "outcome_access_timestamp_utc": "2026-09-01T02:35:31.981974+00:00",
+  "failed_prospective_analyzer_record": "E:\\two_paper\\beifen\\publication_reproducible\\reports\\PROSPECTIVE_LOCKBOX_ANALYZER_FAILED_V1.json",
+  "failed_prospective_analyzer_record_sha256": "62186be000c29ed6154549968e8179f4ae2aab29d5f5827a38a068d565fb34aa",
+  "frozen_analyzer_sha256": "a31261314ae212c4154f35412e71de8e85e1b6405dbfbfa0505bbf818127fb01",
+  "corrective_script_sha256": "84434bf346f1daff1b97bd7dfcf6f0d411e36d8d877068906092bf79db3486dc",
+  "validity_notes": [
+    "No H1-H5 result is confirmatory because the support rule was corrected after outcome access.",
+    "All 300 selected image clusters are retained; absent raw images contribute zero-valued clusters.",
+    "Branch contrasts use the fixed/normalized common-valid GT-key intersection and disclose asymmetric keys.",
+    "The original receipt and failed prospective analyzer record remain authoritative history."
+  ]
+}

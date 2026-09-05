@@ -1,0 +1,477 @@
+{
+  "decision_table": [
+    {
+      "category": "material_distance_mismatch",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_assigned_positive",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "observed or competing-censor transition distances may differ only by 0 or one 1/1024 step; terminal censor distances must agree",
+      "threshold": "0"
+    },
+    {
+      "category": "material_distance_mismatch",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_legacy",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "observed or competing-censor transition distances may differ only by 0 or one 1/1024 step; terminal censor distances must agree",
+      "threshold": "0"
+    },
+    {
+      "category": "material_distance_mismatch",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_pre_topk",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "observed or competing-censor transition distances may differ only by 0 or one 1/1024 step; terminal censor distances must agree",
+      "threshold": "0"
+    },
+    {
+      "category": "material_distance_mismatch",
+      "count": 2,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2o",
+      "material": true,
+      "proportion": 0.00045372050816696913,
+      "rule": "observed or competing-censor transition distances may differ only by 0 or one 1/1024 step; terminal censor distances must agree",
+      "threshold": "0"
+    },
+    {
+      "category": "material_distance_mismatch",
+      "count": 2,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": true,
+      "proportion": 0.00045372050816696913,
+      "rule": "observed or competing-censor transition distances may differ only by 0 or one 1/1024 step; terminal censor distances must agree",
+      "threshold": "0"
+    },
+    {
+      "category": "return_state_mismatch",
+      "count": 2,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_positive_set",
+      "material": true,
+      "proportion": 0.00045372050816696913,
+      "rule": "never-changed/changed-no-return/changed-then-returned state must be stable",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:coarse_missed_earlier_transition",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_assigned_positive",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:coarse_missed_earlier_transition",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_legacy",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:coarse_missed_earlier_transition",
+      "count": 1,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2m_pre_topk",
+      "material": true,
+      "proportion": 0.00022686025408348456,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:coarse_missed_earlier_transition",
+      "count": 2,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "o2o",
+      "material": true,
+      "proportion": 0.00045372050816696913,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:coarse_missed_earlier_transition",
+      "count": 2,
+      "decision": "FAIL",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": true,
+      "proportion": 0.00045372050816696913,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "0"
+    },
+    {
+      "category": "distance:fine_half_step_localization",
+      "count": 1139,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_assigned_positive",
+      "material": false,
+      "proportion": 0.2583938294010889,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:fine_half_step_localization",
+      "count": 1143,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_legacy",
+      "material": false,
+      "proportion": 0.25930127041742285,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:fine_half_step_localization",
+      "count": 1143,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_pre_topk",
+      "material": false,
+      "proportion": 0.25930127041742285,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:fine_half_step_localization",
+      "count": 480,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2o",
+      "material": false,
+      "proportion": 0.1088929219600726,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:fine_half_step_localization",
+      "count": 600,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": false,
+      "proportion": 0.13611615245009073,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_censor_distance",
+      "count": 2190,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_assigned_positive",
+      "material": false,
+      "proportion": 0.4968239564428312,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_censor_distance",
+      "count": 2180,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_legacy",
+      "material": false,
+      "proportion": 0.4945553539019964,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_censor_distance",
+      "count": 2180,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_pre_topk",
+      "material": false,
+      "proportion": 0.4945553539019964,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_censor_distance",
+      "count": 3513,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2o",
+      "material": false,
+      "proportion": 0.7969600725952813,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_censor_distance",
+      "count": 2397,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": false,
+      "proportion": 0.5437840290381125,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_sample",
+      "count": 1078,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_assigned_positive",
+      "material": false,
+      "proportion": 0.24455535390199637,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_sample",
+      "count": 1084,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_legacy",
+      "material": false,
+      "proportion": 0.24591651542649728,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_sample",
+      "count": 1084,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2m_pre_topk",
+      "material": false,
+      "proportion": 0.24591651542649728,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_sample",
+      "count": 413,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "o2o",
+      "material": false,
+      "proportion": 0.09369328493647913,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_sample",
+      "count": 741,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": false,
+      "proportion": 0.16810344827586207,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    },
+    {
+      "category": "distance:same_undefined_distance",
+      "count": 668,
+      "decision": "PASS",
+      "denominator": 4408,
+      "estimand": "rho_R",
+      "material": false,
+      "proportion": 0.1515426497277677,
+      "rule": "0 or one fine-grid step earlier is quantization-only; larger/late shifts are material",
+      "threshold": "reported_only"
+    }
+  ],
+  "distance_class_counts": {
+    "coarse_missed_earlier_transition:o2m_assigned_positive": 1,
+    "coarse_missed_earlier_transition:o2m_legacy": 1,
+    "coarse_missed_earlier_transition:o2m_pre_topk": 1,
+    "coarse_missed_earlier_transition:o2o": 2,
+    "coarse_missed_earlier_transition:rho_R": 2,
+    "fine_half_step_localization:o2m_assigned_positive": 1139,
+    "fine_half_step_localization:o2m_legacy": 1143,
+    "fine_half_step_localization:o2m_pre_topk": 1143,
+    "fine_half_step_localization:o2o": 480,
+    "fine_half_step_localization:rho_R": 600,
+    "same_censor_distance:o2m_assigned_positive": 2190,
+    "same_censor_distance:o2m_legacy": 2180,
+    "same_censor_distance:o2m_pre_topk": 2180,
+    "same_censor_distance:o2o": 3513,
+    "same_censor_distance:rho_R": 2397,
+    "same_sample:o2m_assigned_positive": 1078,
+    "same_sample:o2m_legacy": 1084,
+    "same_sample:o2m_pre_topk": 1084,
+    "same_sample:o2o": 413,
+    "same_sample:rho_R": 741,
+    "same_undefined_distance:rho_R": 668
+  },
+  "examples": [
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0126953125,
+      "estimand": "o2o",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1708984375,
+      "grid_1_512_distance": 0.18359375,
+      "key": "2514__2113_0/18/up"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0048828125,
+      "estimand": "rho_R",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1025390625,
+      "grid_1_512_distance": 0.107421875,
+      "key": "2514__2113_0/18/up"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0029296875,
+      "estimand": "o2o",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1962890625,
+      "grid_1_512_distance": 0.19921875,
+      "key": "42__1800_1200/14/left"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0029296875,
+      "estimand": "o2m_legacy",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1962890625,
+      "grid_1_512_distance": 0.19921875,
+      "key": "42__1800_1200/14/left"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0029296875,
+      "estimand": "o2m_pre_topk",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1962890625,
+      "grid_1_512_distance": 0.19921875,
+      "key": "42__1800_1200/14/left"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0029296875,
+      "estimand": "o2m_assigned_positive",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1962890625,
+      "grid_1_512_distance": 0.19921875,
+      "key": "42__1800_1200/14/left"
+    },
+    {
+      "category": "coarse_missed_earlier_transition",
+      "coarse_minus_fine": 0.0029296875,
+      "estimand": "rho_R",
+      "fine_step": 0.0009765625,
+      "grid_1_1024_distance": 0.1962890625,
+      "grid_1_512_distance": 0.19921875,
+      "key": "42__1800_1200/14/left"
+    },
+    {
+      "category": "return_state_mismatch",
+      "estimand": "o2m_positive_set",
+      "grid_1_1024": "changed_then_returned",
+      "grid_1_512": "never_changed",
+      "key": "1216__2093_1200/315/up"
+    },
+    {
+      "category": "return_state_mismatch",
+      "estimand": "o2m_positive_set",
+      "grid_1_1024": "changed_then_returned",
+      "grid_1_512": "changed_no_return",
+      "key": "1216__2093_1200/66/up"
+    }
+  ],
+  "fine_only_events_missed_by_1_512": {},
+  "gate_pass": false,
+  "grid_1_1024": {
+    "curve_csv_sha256": "1a36538891a8b3b4b3b91ba9fb3f953875440fe53f85549c71c7cb1aaa124e8c",
+    "directory": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_subset_v2",
+    "event_csv_sha256": "69d5da9d8782cd5ea5bc5101998df510f5532f2914b3efe7cb31bfa5d55fa4fd",
+    "fine_step": 0.0009765625,
+    "trajectory_count": 4408
+  },
+  "grid_1_512": {
+    "curve_csv_sha256": "a8c01e4a82d9b65549f3b6c98423768789e5b8a647676719a07c1120adcb517e",
+    "directory": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_512_subset_v2",
+    "event_csv_sha256": "4dbb2573486f7a5b4e298602b95b4158e2ccf417ae65e48aad232f9896bea7e2",
+    "fine_step": 0.001953125,
+    "trajectory_count": 4408
+  },
+  "key_audit": {
+    "only_1_1024": 0,
+    "only_1_512": 0,
+    "row_order_equal": true,
+    "shared": 4408
+  },
+  "material_mismatch_count": 9,
+  "material_trajectory_count": 4,
+  "material_trajectory_examples": [
+    "1216__2093_1200/315/up",
+    "1216__2093_1200/66/up",
+    "2514__2113_0/18/up",
+    "42__1800_1200/14/left"
+  ],
+  "materiality_rule": {
+    "consequence": "FAIL_NOT_CONVERGED requires the full run to use 1/1024; this script never starts that run",
+    "material": [
+      "any trajectory-key mismatch",
+      "any fine-only event missed by 1/512",
+      "any event/censor/competing-censor state change",
+      "any first-event-type change",
+      "any observed or competing-censor transition shift larger than one 1/1024 step or any later fine-grid transition",
+      "any terminal right-censor-distance change",
+      "any return-transition-state change"
+    ],
+    "pass": "zero material mismatches",
+    "quantization_only": "when both grids share the same observed or competing-censor transition type, the 1/1024 radius may equal the 1/512 radius or precede it by at most one 1/1024 step"
+  },
+  "memory_model": "event rows plus seven compact return labels per trajectory; curve CSVs are streamed once and never loaded as dataframes",
+  "mismatch_counts": {
+    "material_distance_mismatch:o2m_assigned_positive": 1,
+    "material_distance_mismatch:o2m_legacy": 1,
+    "material_distance_mismatch:o2m_pre_topk": 1,
+    "material_distance_mismatch:o2o": 2,
+    "material_distance_mismatch:rho_R": 2,
+    "return_state_mismatch:o2m_positive_set": 2
+  },
+  "protocol": "dense_grid_convergence_gate_v1",
+  "return_states_compared": [
+    "o2o",
+    "o2m_legacy",
+    "o2m_pre_topk",
+    "o2m_assigned_positive",
+    "o2m_positive_set",
+    "rho_R_order",
+    "rho_R_comparability"
+  ],
+  "self_test": {
+    "checks": {
+      "changed_censor_distance_is_material": true,
+      "half_step_is_nonmaterial": true,
+      "larger_earlier_shift_is_material": true,
+      "later_fine_event_is_material": true,
+      "same_sample_is_nonmaterial": true
+    },
+    "status": "PASS"
+  },
+  "status": "FAIL_NOT_CONVERGED"
+}

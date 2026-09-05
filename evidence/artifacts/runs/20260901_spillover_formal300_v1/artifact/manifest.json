@@ -1,0 +1,84 @@
+{
+  "status": "complete",
+  "protocol": "read_only_native_o2o_assignment_spillover_v2",
+  "read_only": true,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "data": "configs\\aitod_v2_local_g.yaml",
+  "selected_images_source": "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "source_selected_images": 300,
+  "audited_selected_images": 300,
+  "selection_mode": "full",
+  "gated_pilot_subset": {
+    "enabled": false,
+    "source_selected_images": 300,
+    "pilot_selected_images": null,
+    "max_images": null,
+    "subset_seed": null,
+    "ranking_rule": "ascending SHA256(f'{subset_seed}|{image_id}') with image_id as deterministic collision tie-break",
+    "selection_timing": "after frozen selected-manifest validation and before detector forward or outcome access",
+    "selected_subset_image_ids_sha256": null,
+    "selected_subset_hash_payload": "UTF-8 image_id values in SHA-256 rank order, each followed by newline",
+    "selected_images_csv_sha256": null
+  },
+  "stress": "equivalent_side",
+  "kappa": 0.0625,
+  "directions": [
+    "left",
+    "right",
+    "up",
+    "down"
+  ],
+  "focal_population": "valid 8--16 px and 16--32 px GTs in frozen selected images",
+  "nonfocal_population": "all other valid GTs in the same image",
+  "spillover_event": "change in native post-conflict loss-active O2O identity of a nonfocal GT",
+  "primary_estimands": {
+    "structural_relationship": "any shared native pre-conflict Top-k claim in base or shifted state: yes versus no",
+    "rate_comparison": "IPW pair-level nonfocal spillover rates and shared-minus-nonshared difference",
+    "continuous_measure": "base and shifted centre distance normalized by the arithmetic mean equivalent side length",
+    "uses_local_distance_threshold": false
+  },
+  "secondary_descriptive_estimands": {
+    "relationship_order": [
+      "shared_conflict",
+      "local_nonsharing",
+      "distant_nonsharing"
+    ],
+    "shared_conflict_definition": "at least one candidate jointly claimed in native pre-conflict Top-k by the focal and nonfocal GT in base or shifted state",
+    "local_nonsharing_definition": "no shared claim and normalized base-centre distance < local_distance_threshold",
+    "distant_nonsharing_definition": "no shared claim and normalized base-centre distance >= local_distance_threshold",
+    "local_distance_threshold": 2.0,
+    "threshold_source": "CLI --local-distance-threshold; must be fixed independently of these outcomes",
+    "affects_primary_estimands": false
+  },
+  "relationship_order": [
+    "shared_conflict",
+    "local_nonsharing",
+    "distant_nonsharing"
+  ],
+  "relationship_order_role": "backward-compatible secondary descriptive classification",
+  "shared_conflict_definition": "at least one candidate jointly claimed in native pre-conflict Top-k by the focal and nonfocal GT in base or shifted state",
+  "local_nonsharing_definition": "no shared claim and normalized base-centre distance < local_distance_threshold",
+  "distant_nonsharing_definition": "no shared claim and normalized base-centre distance >= local_distance_threshold",
+  "distance_normalizer": "arithmetic mean of focal and nonfocal equivalent side lengths sqrt(GT area)",
+  "distance_state_for_relationship": "base GT boxes; shifted distance is recorded descriptively but does not define the threshold class",
+  "local_distance_threshold": 2.0,
+  "weighting": "inverse inclusion probability from the selected-images manifest",
+  "bootstrap": "stratified image-cluster resampling with replacement within frozen selection strata",
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260831,
+  "script_sha256": "ef157da9cf6e97312242070cca896a94ae512c346c2228d08e66c682989fc936",
+  "smoke": false,
+  "elapsed_sec": 11656.766952799997,
+  "focal_direction_events": 29612,
+  "nonfocal_pair_events": 3549250,
+  "outputs": [
+    "selected_images.csv",
+    "focal_events.csv",
+    "nonfocal_events.csv",
+    "per_image_sufficient_statistics.csv",
+    "bootstrap_replicates.csv",
+    "summary.json"
+  ]
+}

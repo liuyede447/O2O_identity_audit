@@ -622,8 +622,12 @@ def main() -> None:
         raise FileNotFoundError("event or curve CSV not found")
     if args.output_dir.exists():
         raise FileExistsError(args.output_dir)
-    events = pd.read_csv(args.event_csv)
-    curves = pd.read_csv(args.curve_csv)
+    # Image identifiers are opaque strings.  In large mixed-ID CSVs, pandas'
+    # chunk-wise inference can otherwise parse numeric-looking IDs (for example
+    # ``06914``) as integers in only some chunks, destroying leading zeros and
+    # breaking the event/curve trajectory join.
+    events = pd.read_csv(args.event_csv, dtype={"image_id": str})
+    curves = pd.read_csv(args.curve_csv, dtype={"image_id": str})
     results = analyze(events, curves, args)
     args.output_dir.mkdir(parents=True)
     outputs = []

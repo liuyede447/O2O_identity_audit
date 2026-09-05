@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "predecessor_manifest_hash": true,
+    "predecessor_sha256sums_hash": true,
+    "convergence_gate_fail_closed": true,
+    "canonical_population_validation": true,
+    "six_tau_postprocess_terminal_validation": true,
+    "active_boundary_ids_unique": true
+  },
+  "canonical_input_sha256": {
+    "event_csv": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+    "curve_csv": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+    "population_manifest": "f6427ea0715be2b7b6f7cff3ab0408fddc1929b9afc69b792d6b45d79d11cffd",
+    "population_summary": "d07f01efe23270cf54210057340c9eca72f8a9b5cef88a5934f3d2f51d46923b",
+    "postprocess_terminal_validation": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d"
+  }
+}

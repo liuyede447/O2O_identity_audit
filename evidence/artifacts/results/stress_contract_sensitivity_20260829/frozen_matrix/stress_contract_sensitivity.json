@@ -1,0 +1,159 @@
+{
+  "status": "complete",
+  "protocol": "stress_contract_sensitivity_v1",
+  "read_only": true,
+  "rows": [
+    {
+      "dataset": "AI-TOD-v2",
+      "kappa": 0.03125,
+      "selected_images": 300,
+      "common_valid_gt": 6376,
+      "contributing_images": 288,
+      "o2o_scale_contrast": 0.01344649806734164,
+      "o2o_scale_contrast_ci_low": -0.007199407762822624,
+      "o2o_scale_contrast_ci_high": 0.031022230118430152,
+      "o2m_scale_contrast": -0.16846618555827442,
+      "o2m_scale_contrast_ci_low": -0.22302392508965438,
+      "o2m_scale_contrast_ci_high": -0.10998630979558495,
+      "paired_difference_in_scale_gradients": 0.18191268362561605,
+      "paired_difference_in_scale_gradients_ci_low": 0.12475386073919739,
+      "paired_difference_in_scale_gradients_ci_high": 0.23825956060470693
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "kappa": 0.0625,
+      "selected_images": 300,
+      "common_valid_gt": 6377,
+      "contributing_images": 288,
+      "o2o_scale_contrast": 0.0013109021162978768,
+      "o2o_scale_contrast_ci_low": -0.03414666200717069,
+      "o2o_scale_contrast_ci_high": 0.03150185944772035,
+      "o2m_scale_contrast": -0.17446047280897992,
+      "o2m_scale_contrast_ci_low": -0.22720688064830774,
+      "o2m_scale_contrast_ci_high": -0.11713930893404896,
+      "paired_difference_in_scale_gradients": 0.17577137492527778,
+      "paired_difference_in_scale_gradients_ci_low": 0.11063358076453472,
+      "paired_difference_in_scale_gradients_ci_high": 0.23975479643516684
+    },
+    {
+      "dataset": "AI-TOD-v2",
+      "kappa": 0.125,
+      "selected_images": 300,
+      "common_valid_gt": 6378,
+      "contributing_images": 288,
+      "o2o_scale_contrast": 0.08911156255195948,
+      "o2o_scale_contrast_ci_low": 0.04208455080713801,
+      "o2o_scale_contrast_ci_high": 0.1355333774270181,
+      "o2m_scale_contrast": -0.08361578903883249,
+      "o2m_scale_contrast_ci_low": -0.1133282738246857,
+      "o2m_scale_contrast_ci_high": -0.05407869827830493,
+      "paired_difference_in_scale_gradients": 0.17272735159079197,
+      "paired_difference_in_scale_gradients_ci_low": 0.11429514624054084,
+      "paired_difference_in_scale_gradients_ci_high": 0.23445637262565855
+    },
+    {
+      "dataset": "VisDrone",
+      "kappa": 0.03125,
+      "selected_images": 300,
+      "common_valid_gt": 13911,
+      "contributing_images": 300,
+      "o2o_scale_contrast": 0.05141120984917501,
+      "o2o_scale_contrast_ci_low": 0.03927153842342318,
+      "o2o_scale_contrast_ci_high": 0.06364446210773463,
+      "o2m_scale_contrast": -0.2964843125195466,
+      "o2m_scale_contrast_ci_low": -0.31731913765098013,
+      "o2m_scale_contrast_ci_high": -0.2759029824197536,
+      "paired_difference_in_scale_gradients": 0.3478955223687216,
+      "paired_difference_in_scale_gradients_ci_low": 0.3218905594520383,
+      "paired_difference_in_scale_gradients_ci_high": 0.3742348250946421
+    },
+    {
+      "dataset": "VisDrone",
+      "kappa": 0.0625,
+      "selected_images": 300,
+      "common_valid_gt": 13911,
+      "contributing_images": 300,
+      "o2o_scale_contrast": 0.11036525788345006,
+      "o2o_scale_contrast_ci_low": 0.09329353643866616,
+      "o2o_scale_contrast_ci_high": 0.1269596063254966,
+      "o2m_scale_contrast": -0.2621061345339576,
+      "o2m_scale_contrast_ci_low": -0.2785065615510495,
+      "o2m_scale_contrast_ci_high": -0.24571722987957417,
+      "paired_difference_in_scale_gradients": 0.3724713924174077,
+      "paired_difference_in_scale_gradients_ci_low": 0.3473121999125469,
+      "paired_difference_in_scale_gradients_ci_high": 0.3984662000121432
+    },
+    {
+      "dataset": "VisDrone",
+      "kappa": 0.125,
+      "selected_images": 300,
+      "common_valid_gt": 13911,
+      "contributing_images": 300,
+      "o2o_scale_contrast": 0.19969644259738395,
+      "o2o_scale_contrast_ci_low": 0.1773471284037393,
+      "o2o_scale_contrast_ci_high": 0.22249719217044678,
+      "o2m_scale_contrast": -0.16012585044440464,
+      "o2m_scale_contrast_ci_low": -0.1716714691365213,
+      "o2m_scale_contrast_ci_high": -0.14843876981433626,
+      "paired_difference_in_scale_gradients": 0.3598222930417886,
+      "paired_difference_in_scale_gradients_ci_low": 0.33392166815914637,
+      "paired_difference_in_scale_gradients_ci_high": 0.3856067052002831
+    }
+  ],
+  "verdict": {
+    "all_o2m_intervals_below_zero": true,
+    "all_paired_intervals_above_zero": true,
+    "all_o2o_intervals_include_zero": false,
+    "interpretation": "branch divergence is stable across tested kappa; absolute O2O response is kappa- and dataset-dependent"
+  },
+  "sources": [
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\ai_s0e300_equiv_k003125\\normalized_perturbation_summary.json",
+      "sha256": "ad89e4ba9ee6006736203d0ebe65385fa9e2125e31ae1f7b7036ad459c8a8122"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\ai_s0e300_equiv_k003125\\manifest.json",
+      "sha256": "902d02fd56b357109ab494862d46bca19b44243fe2d9a08742f5e0fa1956be78"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\normalized_perturbation_summary.json",
+      "sha256": "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\manifest.json",
+      "sha256": "5f98a6bd29d0e6c0c1b398c895a4fcd21001653a5bed197ee4fe3dae476484d5"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\ai_s0e300_equiv_k0125\\normalized_perturbation_summary.json",
+      "sha256": "a4b006e835717957373bc263035e72821c8896e3a894ccae21f33cc04be4eca7"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\ai_s0e300_equiv_k0125\\manifest.json",
+      "sha256": "21ed5e74d1a0764ba9139c728618f3976841ebdb6efd2dee8601edf56f8368b0"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\vis_b4e150_equiv_k003125\\normalized_perturbation_summary.json",
+      "sha256": "2a7f355775785bb1dc8052ce45e1023715803153d3b528a20f98abf2248fffc6"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\vis_b4e150_equiv_k003125\\manifest.json",
+      "sha256": "ad34db57682e80c91a1ec2cf224e608bf15227ba7e7fa39ed9aaa46c9e8a2e8b"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\vis_b4e150_equiv_k00625\\normalized_perturbation_summary.json",
+      "sha256": "211da44441805d30482b66a109b7cfc62395967bb72f98f30f11f36a3078cee1"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\vis_b4e150_equiv_k00625\\manifest.json",
+      "sha256": "8ddd993d034e010c08dd0853181fa314ebe46e25b486a9c2bd719982c624b024"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\vis_b4e150_equiv_k0125\\normalized_perturbation_summary.json",
+      "sha256": "12f7f6ef69b81a30858e31505ce44ce632072310121b0057123c127fb29943d2"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\stress_contract_sensitivity_20260829\\vis_b4e150_equiv_k0125\\manifest.json",
+      "sha256": "e60a7d86b36bf62387b7a75be3088d3f202f31288e2047e46ce68f45eee91117"
+    }
+  ]
+}

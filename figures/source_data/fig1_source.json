@@ -1,0 +1,112 @@
+{
+  "status": "SOURCE_BOUND",
+  "role": "three-column measurement schematic with a true-GT aerial crop; no aggregate estimate",
+  "image": {
+    "path": "figures_final/source_data/fig1_focal_audit_crop_500x375.png",
+    "sha256": "141745f9a8fddf94bf88cdb87e12d09b87303d276e208c894bcc806f5b05e426",
+    "original_path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+    "original_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+    "displayed_source_extent": [
+      120,
+      165,
+      620,
+      540
+    ],
+    "source_pixels": [
+      500,
+      375
+    ],
+    "displayed_size_mm": [
+      41.71875,
+      31.2890625
+    ],
+    "effective_source_ppi": [
+      304.4194756554307,
+      304.4194756554307
+    ]
+  },
+  "magnified_inset": {
+    "path": "figures_final/source_data/fig1_focal_gt_inset_nearest.png",
+    "sha256": "6f81f3e858fb644aa6efe3617d391db10dc1a07587642a3c5eb0c575bd2ff592",
+    "source_crop_xywh": [
+      383,
+      316,
+      32,
+      42
+    ],
+    "source_pixels": [
+      32,
+      42
+    ],
+    "replicated_pixels": [
+      320,
+      420
+    ],
+    "enlargement": "nearest-neighbour pixel replication; no interpolation or enhancement",
+    "base_gt_xyxy_in_display_crop": [
+      390,
+      324,
+      408,
+      350
+    ],
+    "shifted_gt_xyxy_in_display_crop": [
+      390,
+      323,
+      408,
+      349
+    ],
+    "displayed_shift": "up by one input pixel"
+  },
+  "trace": {
+    "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+    "sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+    "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
+  },
+  "displayed_gt": [
+    {
+      "gt_id": 40,
+      "xyxy": [
+        416,
+        430.0000305175781,
+        427,
+        455.0000305175781
+      ],
+      "focal": false
+    },
+    {
+      "gt_id": 28,
+      "xyxy": [
+        510,
+        489,
+        528,
+        515
+      ],
+      "focal": true
+    },
+    {
+      "gt_id": 17,
+      "xyxy": [
+        243,
+        312,
+        251,
+        324
+      ],
+      "focal": false
+    }
+  ],
+  "constraints": [
+    "three-column four-panel narrative",
+    "no overall title",
+    "no backbone",
+    "no dashboard",
+    "black Arial text",
+    "true GT coordinates",
+    "source crop above 300 ppi",
+    "nearest-neighbour focal inset",
+    "one-pixel shift shown explicitly",
+    "fixed versus scale-proportional stress visualised",
+    "four cardinal directions",
+    "no full 2-D radius",
+    "O2M Top-1 is a rank readout"
+  ]
+}

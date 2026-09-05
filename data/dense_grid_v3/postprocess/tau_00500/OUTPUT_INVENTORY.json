@@ -1,0 +1,71 @@
+{
+  "file_count": 12,
+  "files": [
+    {
+      "bytes": 478722,
+      "path": "analysis_results.json",
+      "sha256": "442c85da2de330646e0e783b8ba2cff771b8b5fb8103e37e55113683dbdaa955"
+    },
+    {
+      "bytes": 840,
+      "path": "COMMAND.json",
+      "sha256": "fedbe67f7f7eb58be6de0716096dce3c7dbfb85a0d267b547368acea69fef11d"
+    },
+    {
+      "bytes": 1472,
+      "path": "margin_construct.csv",
+      "sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22"
+    },
+    {
+      "bytes": 8679,
+      "path": "o2m_endpoint_rank_set.csv",
+      "sha256": "c62f4336e47067ae71d7d886133b97c2224b12440b1b8d631e5e9dfbd0ffefcf"
+    },
+    {
+      "bytes": 7008,
+      "path": "return_transition.csv",
+      "sha256": "eb5f5fb5588d414081403757f1b2cf3e42adfe4aa6c54a58090bebe8b479a9e3"
+    },
+    {
+      "bytes": 1494,
+      "path": "rho_R_status.csv",
+      "sha256": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab"
+    },
+    {
+      "bytes": 1462,
+      "path": "rmsr.csv",
+      "sha256": "dfdaf0db95ac2e64d272da21fd4f5f5331a0395002d0db87299cd55e84b1097c"
+    },
+    {
+      "bytes": 964,
+      "path": "rmsr_contrasts.csv",
+      "sha256": "f916abd6a835ce09047dec2628d3597eb06ba13a31ae96428be53d67dfa94dee"
+    },
+    {
+      "bytes": 0,
+      "path": "stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2601,
+      "path": "stdout.log",
+      "sha256": "fce2e178553451e6dba426ead3ffb8aecb1fa6b6fae45095784720dc1a6eaeea"
+    },
+    {
+      "bytes": 2647,
+      "path": "summary.json",
+      "sha256": "dc36c5c45180dd987bc17ebfcc28c112a410383dbebecbc5115052ba92e609d5"
+    },
+    {
+      "bytes": 172834,
+      "path": "survival_cif.csv",
+      "sha256": "ba10344f6950b6e1fbb9a64d0a187cb2e08121e697ea53dbc7009d4847cfa4c6"
+    }
+  ],
+  "generated_at_utc": "2026-09-03T01:50:40.330691+00:00",
+  "generator_sha256": "cac201818ff0454d1e1363f857519af2fc444694153c4e7023bfef2541b50b0d",
+  "protocol": "recursive_run_output_sha256_inventory_v1",
+  "run_id": "tau_00500",
+  "status": "complete",
+  "total_bytes": 678723
+}

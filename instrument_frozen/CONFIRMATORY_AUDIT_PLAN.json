@@ -1,0 +1,133 @@
+{
+  "confirmatory_families": {
+    "tier_a": {
+      "alpha": 0.05,
+      "bootstrap_test": "one_sided_empirical_bootstrap_p",
+      "hypotheses": {
+        "H1": {
+          "direction": "greater_than_zero",
+          "estimand": "normalized O2O scale gap minus normalized O2M scale gap",
+          "id": "H1",
+          "metric": "normalized_paired_gap"
+        },
+        "H2": {
+          "direction": "less_than_zero",
+          "estimand": "normalized 8-16 px minus 16-32 px O2M fragility gap",
+          "id": "H2",
+          "metric": "normalized_o2m_gap"
+        },
+        "H3": {
+          "direction": "greater_than_zero",
+          "estimand": "fixed O2O scale gap minus normalized O2O scale gap on the same lockbox images",
+          "id": "H3",
+          "metric": "fixed_minus_normalized_o2o_gap"
+        }
+      },
+      "order": [
+        "H1",
+        "H2",
+        "H3"
+      ],
+      "procedure": "hierarchical_gatekeeping"
+    },
+    "tier_b": {
+      "alpha": 0.05,
+      "bootstrap_test": "one_sided_empirical_bootstrap_p",
+      "hypotheses": {
+        "H4": {
+          "direction": "greater_than_zero",
+          "estimand": "fixed minus normalized eligibility first-divergence fraction",
+          "id": "H4",
+          "metric": "fixed_eligibility_minus_normalized"
+        },
+        "H5": {
+          "direction": "greater_than_zero",
+          "estimand": "normalized minus fixed within-set geometry first-divergence fraction",
+          "id": "H5",
+          "metric": "normalized_within_minus_fixed"
+        }
+      },
+      "order": [
+        "H4",
+        "H5"
+      ],
+      "procedure": "holm"
+    }
+  },
+  "frozen_at_utc": "2026-09-01T01:31:19.642836+00:00",
+  "frozen_checkpoint": {
+    "path": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+    "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
+  },
+  "instrument_source_commit": "afa28c5587791d533992e8d7372cdec94c7fcb81",
+  "instrument_source_tag": "audit_instrument_v1.0",
+  "one_time_rule": "The selected 300-image lockbox is executed once. No replacement sample, threshold change, or primary re-analysis is permitted after outcomes are opened.",
+  "population": "AI-TOD-v2 validation images eligible for the pre-existing t_only/s_only/t_and_s audit strata",
+  "protocol": "prospective_disjoint_audit_outcome_lockbox_H1_H5_v2",
+  "runtime_contract": {
+    "device_argument": "0",
+    "device_index": 0,
+    "device_type": "cuda",
+    "environment": {
+      "cuda_available": true,
+      "cuda_matmul_allow_tf32": false,
+      "cuda_runtime": "12.8",
+      "cudnn_allow_tf32": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+      "python_version": "3.13.5",
+      "torch": "2.11.0+cu128",
+      "torch_default_dtype": "torch.float32",
+      "ultralytics": "8.4.51"
+    },
+    "imgsz": 800,
+    "torch_default_dtype": "torch.float32",
+    "workers": 0
+  },
+  "sample": {
+    "allocation": {
+      "s_only": 2,
+      "t_and_s": 138,
+      "t_only": 160
+    },
+    "disjoint_from_discovery_manifest": true,
+    "name": "disjoint prospective audit-outcome lockbox",
+    "selection_is_outcome_blind": true,
+    "selection_seed": 20260831,
+    "size_images": 300
+  },
+  "statistics": {
+    "bootstrap_replicates": 5000,
+    "branch_estimand_domain": "fixed and normalized rows with common_valid_margin == 1 on exactly equal GT support; selected images with zero common-valid contribution remain zero-valued bootstrap clusters",
+    "confidence_level": 0.95,
+    "confirmatory_seed": 20260831,
+    "decision_rule": "one-sided empirical bootstrap p values at alpha=0.05; all outcomes reported regardless of verdict",
+    "pathway_estimand_domain": "all selected image clusters; pathway numerators and denominators use directional o2o_flip == 1 rows, while images with zero flips remain zero-valued bootstrap clusters",
+    "uncertainty": "5000 image-cluster bootstrap replicates within sampling stratum",
+    "unit": "ground-truth object for branch fragility; directional identity exchange for pathway composition",
+    "weighting": "inverse inclusion weights from the frozen stratified image selection"
+  },
+  "status": "FROZEN_BEFORE_OUTCOMES",
+  "stress_contract_parameters": {
+    "detector_contract": "yolo26",
+    "fixed": {
+      "anatomy_stress": "fixed_1px",
+      "branch_stress_mode": "fixed_1px",
+      "pixel_shift": 1.0
+    },
+    "imgsz": 800,
+    "normalized": {
+      "anatomy_stress": "equivalent_side",
+      "branch_stress_mode": "normalized",
+      "kappa": 0.0625,
+      "normalization": "equivalent_side"
+    }
+  },
+  "stress_contracts": {
+    "fixed": "one-pixel centre shift in each of four legal cardinal directions",
+    "normalized": "equivalent-side centre shift with kappa=0.0625 in each legal cardinal direction"
+  }
+}

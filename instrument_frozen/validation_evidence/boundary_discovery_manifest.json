@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "protocol": "continuous_assignment_boundary_radius_v1",
+  "read_only": true,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "data": "configs\\aitod_v2_local_g.yaml",
+  "selected_images_source": "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "source_selected_images": 300,
+  "audited_selected_images": 300,
+  "radius_units": "equivalent-side; pixel displacement = radius * sqrt(focal GT area)",
+  "rmax": 0.25,
+  "coarse_step": 0.015625,
+  "fine_step": 0.001953125,
+  "directions": [
+    "left",
+    "right",
+    "up",
+    "down"
+  ],
+  "search_algorithm": "forward coarse grid to first observed base-identity same-to-changed bracket, then forward fine grid within that bracket",
+  "monotonicity_assumed": false,
+  "binary_search_used": false,
+  "right_censoring": "at min(rmax, exact image-boundary legal radius) when no identity event is observed",
+  "base_box_domain": "a continuous legal trajectory is defined only when the unshifted focal GT box is fully inside the model input; base-outside GTs are retained as explicit exclusion counts and are never clipped",
+  "image_boundary_numeric_guard": "if the exact terminal censor point rounds outside under native float32 arithmetic, move only that endpoint inward by the smallest successful value in 8,16,32,64,128 times float32 epsilon times max image dimension; record the pixel guard per trajectory",
+  "o2o_estimand": "native post-conflict loss-active identity",
+  "rho_R_estimand": "first q_A <= q_B crossing for fixed base active A and base runner B while both candidates remain stage-comparable to base",
+  "rho_R_competing_censor_order": "eligibility -> pre-Top-k -> conflict; a discrete comparability loss at an evaluated radius takes precedence over q crossing",
+  "rho_R_tie_rule": "exact float32 q_A - q_B == 0 at base is undefined",
+  "o2m_estimands": {
+    "legacy": "highest q among all q>0 candidates",
+    "pre_topk": "highest q among native pre-conflict Top-10 members",
+    "assigned_positive": "highest q among native post-conflict positives assigned to focal GT",
+    "positive_set": "native post-conflict positives assigned to focal GT"
+  },
+  "o2m_empty_set_contract": "empty/empty is a separate structural state with undefined Jaccard and retention; transitions to or from empty are retained explicitly",
+  "script_sha256": "c0fa096e3ba36cdcafcaf23b36157141fd8d9d0f2f740c2afa543871fdf9db60",
+  "smoke": false,
+  "elapsed_sec": 12336.817332600003,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction_boundary_events.csv",
+    "o2m_rank_set_radius_curve.csv",
+    "summary.json"
+  ]
+}

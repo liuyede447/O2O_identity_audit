@@ -1,0 +1,59 @@
+{
+  "figure": "Figure 6",
+  "incremental_support": {
+    "AI-TOD-v2": {
+      "gt": 6410,
+      "images": 288
+    },
+    "VisDrone": {
+      "gt": 13946,
+      "images": 300
+    }
+  },
+  "observed_crossing_support": {
+    "conditioning": "observed fixed-pair crossings only",
+    "images": 173,
+    "rows": 1593
+  },
+  "observed_crossings_csv": "figures_final/source_data/fig6_observed_crossings.csv",
+  "observed_crossings_csv_sha256": "1dc8585a6b6e230586da995ad70630cc8f920d11f77011cd92196bf73b4c2b53",
+  "scatter_rule": "raw observed trajectories plus ten descriptive margin-decile medians; no regression fit",
+  "source_csv": "figures_final/source_data/fig6_source.csv",
+  "source_csv_sha256": "1364c327dfeba8fcaa3d30122681169f7858f4ee0b7a234abecf949f0155721a",
+  "sources": {
+    "events": {
+      "authority": "EV-BOUNDARY-GEOMETRY-V3",
+      "path": "runs/20260902_boundary_full_grid_1024_population_v1/per_direction_boundary_events.csv",
+      "sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d"
+    },
+    "increment_ai": {
+      "authority": "SOURCE_ADDENDUM",
+      "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/incremental_value_summary_foldwise.json",
+      "sha256": "0f555db9c5e1ecf3d738607551d45beb75f6f0a6f3e0820683b27d9aa5b32a88"
+    },
+    "increment_vis": {
+      "authority": "SOURCE_ADDENDUM",
+      "path": "results/reviewer_controls_20260829/vis_b4e150_equiv_k00625/incremental_value_summary_foldwise.json",
+      "sha256": "8227b831cfe73cc3533ae1b953e21e62c138e5f9205b35e54eba38c38371ed5c"
+    },
+    "margin": {
+      "authority": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+      "sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22"
+    },
+    "rho_status": {
+      "authority": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+      "path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rho_R_status.csv",
+      "sha256": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab"
+    }
+  },
+  "status": "SOURCE_BOUND_WITH_ADDENDUM",
+  "trajectory_status_support": {
+    "bootstrap": "5000 stratified image-cluster percentile replicates",
+    "rows": 29724
+  },
+  "warnings": [
+    "correlations use separately observed supports and are not censoring-adjusted",
+    "held-out incremental artifacts are figure-only SOURCE_ADDENDUM records"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "descriptive_decile_bins": 10,
+  "figure": "Fig6",
+  "interpretation_guards": {
+    "causal_claim": false,
+    "censoring_adjusted_claim": false,
+    "population_predictor": false,
+    "regression_fit": false
+  },
+  "observed_rows": 1593,
+  "outputs": {
+    "pdf": "7293c2399eb9ad66c1803a3d215b1dcaa404b998b260416d2cdd0ba6c92bc95c",
+    "png": "1a84685cc69fa1ee1c5286ac5e00c8cd0a037a402c8eedbef89616dc3674836f",
+    "svg": "fe124f257b51d0350a426d0d183d65a19158fc38c54676fbf85e7ab7915abd77"
+  },
+  "resolved_font": {
+    "family": "Arial",
+    "path": "C:\\Windows\\Fonts\\arial.ttf"
+  },
+  "source_addendum_used": true,
+  "source_rows": 18,
+  "status": "PASS"
+}

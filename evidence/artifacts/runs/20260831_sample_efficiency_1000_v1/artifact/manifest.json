@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "protocol": "outcome-blind stratified image-budget subsampling of frozen normalized audit",
+  "source_audit": "results\\reviewer_controls_20260829\\formal_s0e300_k00625",
+  "full_common_valid_images": 288,
+  "full_paired_contrast": 0.17577137492527778,
+  "budgets": [
+    25,
+    50,
+    100,
+    150,
+    200
+  ],
+  "repeats_per_budget": 1000,
+  "cluster_bootstrap_replicates_per_repeat": 0,
+  "nested_bootstrap_note": "disabled; precision of the full audit is estimated separately by the prospective precision-design analysis",
+  "seed": 20260831,
+  "ranking_definition": "Spearman ordering of O2O tiny/small and O2M tiny/small rates against the full audit",
+  "source_sha256": {
+    "analyzer": "2514a0ee5fb284088c47cbef58ef850cfd1d05b5fe7fb0eaa684bcb6f066a53d",
+    "input_per_gt": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de",
+    "normalized_contrasts_helper": "a3a472f04d2a2f9ffe232e68ccc30c21c18f433acaea63970916d1ca570c7dfc"
+  },
+  "expected_sha256": {
+    "input_per_gt": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de",
+    "normalized_contrasts_helper": "a3a472f04d2a2f9ffe232e68ccc30c21c18f433acaea63970916d1ca570c7dfc"
+  },
+  "outputs": [
+    "sample_efficiency_replicates.csv",
+    "sample_efficiency_summary.csv",
+    "manifest.json"
+  ]
+}

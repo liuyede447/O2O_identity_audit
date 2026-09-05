@@ -1,0 +1,144 @@
+{
+  "checks": {
+    "arial_or_permitted_fallback": "PASS",
+    "cardinal_not_full_2d_guard": "PASS",
+    "dense_v3_source_hashes_and_terminal_binding": "PASS",
+    "legacy_and_pre_topk_excluded": "PASS",
+    "manuscript_unchanged": "PASS (not touched by this script)",
+    "minimum_visible_font": "PASS",
+    "o2m_rank_state_not_identity_guard": "PASS",
+    "pdf_final_size": "PASS",
+    "pdf_type42_embedded": "PASS",
+    "png_600_dpi": "PASS",
+    "png_rgb": "PASS",
+    "source_estimate_ci_n_support_parity": "PASS",
+    "source_structure_and_tau_set": "PASS",
+    "svg_editable_text": "PASS",
+    "text_clipping_and_cross_panel_overlap": "PASS",
+    "unsmoothed_step_geometry": "PASS"
+  },
+  "evidence_parity": {
+    "comparisons": 5862,
+    "maximum_absolute_numeric_difference": 0.0,
+    "n_mismatches": [],
+    "status": "PASS"
+  },
+  "failures": [],
+  "figure": "Fig4",
+  "interpretation_guards": {
+    "full_2d_boundary_claim": false,
+    "legacy_or_pre_topk_o2m_used": false,
+    "o2m_identity_claim": false,
+    "right_censoring_removed": false,
+    "smoothed_survival_or_cif": false,
+    "tau_magnitude_robustness_claim": false
+  },
+  "notes": [
+    "Only dense 1/1024 EV-BOUNDARY-GEOMETRY-V3 sources are admitted.",
+    "O2M is the assigned-set Top-1 rank state; legacy and pre-Top-k aliases are excluded.",
+    "KM and Aalen-Johansen estimates are rendered as unsmoothed post-step functions.",
+    "The scan samples cardinal rays and does not estimate a full two-dimensional boundary radius.",
+    "Tau sensitivity supports ordering across tested horizons, not magnitude invariance."
+  ],
+  "output_validation": {
+    "outputs": {
+      "pdf": {
+        "bytes": 83915,
+        "path": "figures_final/draft/Fig4.pdf",
+        "sha256": "bd65731a0096b6cea2878994e5a14757eab834a3001ff09841579fc80f9338cb"
+      },
+      "png": {
+        "bytes": 592343,
+        "path": "figures_final/draft/Fig4.png",
+        "sha256": "2fa748d5caf55c7b9725e87f72a28b7b18dffcac57e31ae65df07f9bce9b3bc6"
+      },
+      "svg": {
+        "bytes": 216819,
+        "path": "figures_final/draft/Fig4.svg",
+        "sha256": "29f7141ba344a543b50e6ed8950adcda8084cb8d9dca30851d98aa2af42b0307"
+      }
+    },
+    "pdf_fonts": {
+      "all_embedded": true,
+      "font_rows": [
+        "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     18  0",
+        "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     25  0"
+      ],
+      "status": "PASS",
+      "truetype_or_cid_truetype": true
+    },
+    "pdf_geometry": {
+      "height_mm": 132.0000000000153,
+      "target_mm": [
+        178,
+        132
+      ],
+      "width_mm": 178.0000000000147,
+      "within_0_1_mm": true
+    },
+    "png": {
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "dpi_600": true,
+      "mode": "RGB",
+      "pixels": [
+        4204,
+        3118
+      ]
+    },
+    "svg_editable_text": true,
+    "svg_text_nodes": 75
+  },
+  "preflight": {
+    "axes_count": 6,
+    "geometry": {
+      "clipped_text": [],
+      "foreign_panel_text_intrusions": [],
+      "status": "PASS"
+    },
+    "minimum_visible_font_pt": 7.0,
+    "resolved_font": {
+      "family": "Arial",
+      "path": "C:\\Windows\\Fonts\\arial.ttf"
+    },
+    "visible_text_count": 74
+  },
+  "source_data": {
+    "csv": "figures_final/source_data/fig4_source.csv",
+    "csv_sha256": "1a359e2b9a9802b24d320b42456a634c03166cce9eb8c71708ca6234d10053d7",
+    "json": "figures_final/source_data/fig4_source.json",
+    "json_sha256": "a4f52955763e533cb207160beec1392397c3a3e2d52a8aa6ec39ded48396ded1"
+  },
+  "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
+  "status": "PASS",
+  "structural_validation": {
+    "actual_counts": {
+      "a/km_survival": 499,
+      "b/aj_cumulative_incidence": 650,
+      "c/rmcbd_absolute": 6,
+      "c/rmcbd_paired": 3,
+      "d/rmcbd_tau_sensitivity": 18
+    },
+    "all_values_finite": true,
+    "ci_order_valid": true,
+    "expected_counts": {
+      "a/km_survival": 499,
+      "b/aj_cumulative_incidence": 650,
+      "c/rmcbd_absolute": 6,
+      "c/rmcbd_paired": 3,
+      "d/rmcbd_tau_sensitivity": 18
+    },
+    "legacy_or_pre_topk_content": false,
+    "status": "PASS",
+    "tau_set": [
+      0.05,
+      0.0625,
+      0.1,
+      0.125,
+      0.2,
+      0.25
+    ]
+  }
+}

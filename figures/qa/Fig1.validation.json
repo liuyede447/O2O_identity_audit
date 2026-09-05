@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "figure": "Fig1",
+  "checks": [
+    {
+      "name": "all_outputs_exist",
+      "status": "PASS",
+      "detail": [
+        "E:\\two_paper\\beifen\\publication_reproducible\\figures_final\\draft\\Fig1.pptx",
+        "E:\\two_paper\\beifen\\publication_reproducible\\figures_final\\draft\\Fig1.pdf",
+        "E:\\two_paper\\beifen\\publication_reproducible\\figures_final\\draft\\Fig1.png",
+        "E:\\two_paper\\beifen\\publication_reproducible\\figures_final\\draft\\Fig1.svg"
+      ]
+    },
+    {
+      "name": "primary_checkpoint",
+      "status": "PASS",
+      "detail": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
+    },
+    {
+      "name": "displayed_gt_identity",
+      "status": "PASS",
+      "detail": {
+        "40": [
+          416,
+          430.0000305175781,
+          427,
+          455.0000305175781
+        ],
+        "28": [
+          510,
+          489,
+          528,
+          515
+        ],
+        "17": [
+          243,
+          312,
+          251,
+          324
+        ]
+      }
+    },
+    {
+      "name": "display_crop_sha",
+      "status": "PASS",
+      "detail": "141745f9a8fddf94bf88cdb87e12d09b87303d276e208c894bcc806f5b05e426"
+    },
+    {
+      "name": "original_image_sha",
+      "status": "PASS",
+      "detail": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa"
+    },
+    {
+      "name": "display_crop_pixels",
+      "status": "PASS",
+      "detail": [
+        500,
+        375
+      ]
+    },
+    {
+      "name": "embedded_crop_source_ppi",
+      "status": "PASS",
+      "detail": [
+        304.4194756554307,
+        304.4194756554307
+      ]
+    },
+    {
+      "name": "png_effective_ppi",
+      "status": "PASS",
+      "detail": {
+        "pixels": [
+          4205,
+          2234
+        ],
+        "effective_ppi_at_178mm": 600.0393258426966
+      }
+    },
+    {
+      "name": "pdf_size_178mm",
+      "status": "PASS",
+      "detail": {
+        "width_mm": 178.01166666666666,
+        "height_mm": 94.53033333333332
+      }
+    },
+    {
+      "name": "pptx_size_178mm",
+      "status": "PASS",
+      "detail": {
+        "width_mm": 178.0204861111111,
+        "height_mm": 94.54444444444444
+      }
+    },
+    {
+      "name": "pptx_min_font_7pt",
+      "status": "PASS",
+      "detail": {
+        "minimum_pt": 7.0,
+        "maximum_pt": 8.0,
+        "text_shapes": 62
+      }
+    },
+    {
+      "name": "pptx_arial_only",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "name": "no_legacy_qualitative_asset",
+      "status": "PASS",
+      "detail": "legacy qualitative pack excluded"
+    },
+    {
+      "name": "source_role_non_numeric",
+      "status": "PASS",
+      "detail": "three-column measurement schematic with a true-GT aerial crop; no aggregate estimate"
+    }
+  ],
+  "failures": 0,
+  "scientific_results_recomputed": false
+}

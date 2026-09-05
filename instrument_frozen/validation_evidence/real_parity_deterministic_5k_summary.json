@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "protocol": "native_production_numpy_reference_parity_v1",
+  "selected_images": 300,
+  "base_states": 300,
+  "sampled_direction_states": 5251,
+  "mismatches": 0,
+  "hash_sampling": {
+    "seed": 20260831,
+    "threshold": 900,
+    "modulus": 10000
+  },
+  "tolerances": {
+    "q_atol": 1e-06,
+    "q_rtol": 2e-05,
+    "margin_atol": 1e-06,
+    "margin_rtol": 2e-06
+  },
+  "elapsed_sec": 1561.0512222999969,
+  "source_sha256": {
+    "production": "b38679eb0439c99f5efef46448841d1cc5c0eb3bb9eee4467393ca14536f5c9f",
+    "reference": "35f0071c8c9b7771d2c0765ec0f051eb495a653feae64a58a17fd2aa4c4b4a63",
+    "validator": "cf06325e103ebc5e5d2ec9359cd6cb1271510c2ddb4e56931de7c99a655217b3",
+    "selected_images": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+  }
+}

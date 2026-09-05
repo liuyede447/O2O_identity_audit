@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "analysis_unit": "focal-GT direction",
+  "ipw": true,
+  "bootstrap": "stratified image-cluster percentile bootstrap",
+  "bootstrap_reps": 5000,
+  "seed": 20260831,
+  "ci_level": 0.95,
+  "tau": 0.25,
+  "endpoint_radii": [
+    0.03125,
+    0.0625,
+    0.125,
+    0.25
+  ],
+  "survival_estimator": "weighted Kaplan-Meier",
+  "cumulative_incidence_estimator": "weighted Aalen-Johansen competing-risks estimator",
+  "rmsr": "integral_0^tau S(r) dr",
+  "rho_R_correlations": "IPW-weighted Spearman conditional on observed rho_R only; no censoring-adjusted population correlation is claimed",
+  "eligibility_specificity_control": "IPW-weighted Spearman conditional on observed O2O events whose first divergence is eligibility",
+  "endpoint_conditioning": "endpoint and return-transition summaries condition on an exact replay state being available at the prespecified radius; no interpolation is used",
+  "event_censor_tie_rule": "events are processed before censoring at the same recorded radius",
+  "set_turnover_threshold": null,
+  "event_csv": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_population_v1\\per_direction_boundary_events.csv",
+  "event_csv_sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+  "curve_csv": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_population_v1\\o2m_rank_set_radius_curve.csv",
+  "curve_csv_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+  "script_sha256": "df9c3d4cbc974cbbfa87da6a22e071085dc50ba9793b3e061d23ad3e03cab598",
+  "outputs": [
+    "survival_cif.csv",
+    "rmsr.csv",
+    "rmsr_contrasts.csv",
+    "o2m_endpoint_rank_set.csv",
+    "return_transition.csv",
+    "rho_R_status.csv",
+    "margin_construct.csv",
+    "analysis_results.json"
+  ],
+  "output_sha256": {
+    "survival_cif.csv": "9a6fbb13373b6cd1803ea2b6ae2e0d5a1cff1355025dc92fbd475066a1acbdf3",
+    "rmsr.csv": "5d35b89d4376d3b8e4305408d00bae48598220ce0ac6622ac6a4ea41fb16a0e9",
+    "rmsr_contrasts.csv": "1aa4a5fc47c80230f93fe3a78b6b467a702e8336e657a2728394d7d2813fae92",
+    "o2m_endpoint_rank_set.csv": "442349f7602fadf263f420f34acb1b2bb618fd5163435bb98473ee4eb54cc197",
+    "return_transition.csv": "64b320c876f12293233693944cf51518c03c31c8c313d3558b424576c8a91296",
+    "rho_R_status.csv": "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
+    "margin_construct.csv": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+    "analysis_results.json": "efcc4802be81e57126256881fa42aaf4385dbd1ddd794075f5b0224008611362"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "bootstrap_reps": 5000,
+  "ci_level": 0.95,
+  "execution": "strictly serial subprocesses; at most one geometry dataframe pair resident",
+  "geometry_script": "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_assignment_boundary_geometry.py",
+  "input_dir": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_population_v1",
+  "output_root": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260903_boundary_full_grid_1024_postprocess_v2",
+  "protocol": "dense_grid_serial_postprocess_v1",
+  "python": "D:\\anaconda3\\python.exe",
+  "seed": 20260831,
+  "tau_jobs": [
+    {
+      "endpoint_radii": [
+        0.03125
+      ],
+      "label": "tau_00500",
+      "tau": 0.05
+    },
+    {
+      "endpoint_radii": [
+        0.03125,
+        0.0625
+      ],
+      "label": "tau_00625",
+      "tau": 0.0625
+    },
+    {
+      "endpoint_radii": [
+        0.03125,
+        0.0625,
+        0.1
+      ],
+      "label": "tau_01000",
+      "tau": 0.1
+    },
+    {
+      "endpoint_radii": [
+        0.03125,
+        0.0625,
+        0.125
+      ],
+      "label": "tau_01250",
+      "tau": 0.125
+    },
+    {
+      "endpoint_radii": [
+        0.03125,
+        0.0625,
+        0.125,
+        0.2
+      ],
+      "label": "tau_02000",
+      "tau": 0.2
+    },
+    {
+      "endpoint_radii": [
+        0.03125,
+        0.0625,
+        0.125,
+        0.25
+      ],
+      "label": "tau_02500",
+      "tau": 0.25
+    }
+  ]
+}

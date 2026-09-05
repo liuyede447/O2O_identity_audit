@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "protocol": "analytical_oracle_and_metamorphic_validation_v1",
+  "oracle_cases": [
+    {
+      "name": "O1_within_set",
+      "expected": "within_set_geometry_rank_reversal",
+      "observed": "within_set_geometry_rank_reversal",
+      "base_active": 0,
+      "shifted_active": 1,
+      "geometry_clipping": false,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    },
+    {
+      "name": "O2_eligibility",
+      "expected": "eligibility_boundary",
+      "observed": "eligibility_boundary",
+      "base_active": 4,
+      "shifted_active": 1,
+      "geometry_clipping": true,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    },
+    {
+      "name": "O3_top7",
+      "expected": "topk_membership_transition",
+      "observed": "topk_membership_transition",
+      "base_active": 0,
+      "shifted_active": 1,
+      "geometry_clipping": false,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    },
+    {
+      "name": "O4_conflict",
+      "expected": "conflict_reassignment",
+      "observed": "conflict_reassignment",
+      "base_active": 0,
+      "shifted_active": 1,
+      "geometry_clipping": false,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    },
+    {
+      "name": "O5_clipping",
+      "expected": "within_set_geometry_rank_reversal",
+      "observed": "within_set_geometry_rank_reversal",
+      "base_active": 0,
+      "shifted_active": 1,
+      "geometry_clipping": true,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    },
+    {
+      "name": "O6_disappearance",
+      "expected": "eligibility_boundary",
+      "observed": "eligibility_boundary",
+      "base_active": 5,
+      "shifted_active": null,
+      "geometry_clipping": false,
+      "checks": {
+        "expected_label": true,
+        "expected_clipping": true,
+        "expected_shift_active": true,
+        "native_reference_base": true,
+        "native_reference_shift": true
+      },
+      "pass": true
+    }
+  ],
+  "properties": {
+    "candidate_permutation_invariant": true,
+    "gt_order_invariant": true,
+    "direction_processing_order_invariant": true,
+    "equal_p_ranking_is_ciou_ranking": true,
+    "equal_ciou_ranking_is_p_ranking": true,
+    "conflict_off_eliminates_conflict_label": true,
+    "eligibility_lock_eliminates_eligibility_label": true
+  },
+  "source_sha256": {
+    "reference": "35f0071c8c9b7771d2c0765ec0f051eb495a653feae64a58a17fd2aa4c4b4a63",
+    "validator": "9858b62ce369a109701a725cda507ba204f1fde042092eba1e884cd2e4eb687a"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "status": "FIGURE_ONLY_SOURCE_ADDENDUM",
+  "governance": "These sources are SHA-verified for figure construction only. They are not inserted into final_evidence_v3, do not upgrade evidence stage, and cannot support new scientific claims.",
+  "entries": [
+    {
+      "addendum_id": "ADD-FIG-COOCCURRENCE-V1",
+      "admission": "WARN/SOURCE_ADDENDUM",
+      "scope": "Fig3c non-exclusive descriptive any-stage occurrence only",
+      "sources": [
+        {
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+          "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "non-exclusive any-stage summary",
+          "actual_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
+          "hash_status": "PASS"
+        },
+        {
+          "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
+          "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "non-exclusive any-stage rows",
+          "actual_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
+          "hash_status": "PASS"
+        }
+      ]
+    },
+    {
+      "addendum_id": "ADD-FIG-POSITIVE-COUNT-V1",
+      "admission": "WARN/SOURCE_ADDENDUM",
+      "scope": "Fig5c-d positive-count distribution/standardisation only; distinguish K=0 full support from K=3-7 overlap",
+      "sources": [
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
+          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count standardisation",
+          "actual_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
+          "hash_status": "PASS"
+        },
+        {
+          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+          "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
+          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "positive-count distribution",
+          "actual_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
+          "hash_status": "PASS"
+        }
+      ]
+    },
+    {
+      "addendum_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
+      "admission": "WARN/SOURCE_ADDENDUM",
+      "scope": "Fig6d held-out diagnostic increment only",
+      "sources": [
+        {
+          "path": "results/reviewer_controls_20260829/formal_s0e300_k00625/incremental_value_summary_foldwise.json",
+          "expected_sha256": "0f555db9c5e1ecf3d738607551d45beb75f6f0a6f3e0820683b27d9aa5b32a88",
+          "evidence_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "AI-TOD-v2 held-out increment",
+          "actual_sha256": "0f555db9c5e1ecf3d738607551d45beb75f6f0a6f3e0820683b27d9aa5b32a88",
+          "hash_status": "PASS"
+        },
+        {
+          "path": "results/reviewer_controls_20260829/vis_b4e150_equiv_k00625/incremental_value_summary_foldwise.json",
+          "expected_sha256": "8227b831cfe73cc3533ae1b953e21e62c138e5f9205b35e54eba38c38371ed5c",
+          "evidence_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "VisDrone held-out increment",
+          "actual_sha256": "8227b831cfe73cc3533ae1b953e21e62c138e5f9205b35e54eba38c38371ed5c",
+          "hash_status": "PASS"
+        }
+      ]
+    },
+    {
+      "addendum_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+      "admission": "WARN/SOURCE_ADDENDUM",
+      "scope": "Fig1a and FigS1 primary-checkpoint qualitative rendering only; no aggregate scientific estimate",
+      "sources": [
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+          "expected_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint qualitative candidate trace",
+          "actual_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+          "hash_status": "PASS"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+          "expected_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "primary-checkpoint trace validation",
+          "actual_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
+          "hash_status": "PASS"
+        },
+        {
+          "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+          "expected_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+          "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+          "authority": "SOURCE_ADDENDUM",
+          "role": "real AI-TOD-v2 source image",
+          "actual_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+          "hash_status": "PASS"
+        }
+      ]
+    }
+  ]
+}

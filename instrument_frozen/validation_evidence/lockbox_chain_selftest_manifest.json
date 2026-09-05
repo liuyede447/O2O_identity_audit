@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "role": "pre-freeze implementation qualification only; no lockbox selection or outcome access",
+  "supersedes_archive": "results/measurement_validation_20260831/lockbox_chain_selftests_pre_freeze_current_pre_bytecode_fix_20260901",
+  "tests": {
+    "freeze_builder": 9,
+    "selector": 9,
+    "sealed_bundle_validator": 6,
+    "confirmatory_analyzer": 26,
+    "run_output_inventory": 3,
+    "boundary_geometry_analyzer": 8
+  },
+  "report_sha256": {
+    "boundary_geometry_analyzer_selftest.json": "44b44c84699092007e82ac3eff7ed385fbdf8b03e700c83c5056a0a5c6701fe6",
+    "confirmatory_analyzer_selftest.json": "92f8fb03e25a487a5b610d3b40f1cb1c4e6d2a2e06e1509842a79260f58d72e4",
+    "freeze_builder_selftest.json": "610c69fda58e788ccda35e4ea954ba162123dd81645ad153de7a67f1efc211ba",
+    "run_output_inventory_selftest.json": "1a9e3255d26a6be643c4730a7c8bd5dd982271e9d8acc4a9f299e42c401ccbdb",
+    "sealed_bundle_validator_selftest.json": "f046ec3fea5585e760f191fd6b8cc1a393f084c32997a8d252e9a357043afd67",
+    "selector_selftest.json": "768fdee7078bbb8bda1d7608be53b756e25491380f2a5ecd845816174fa50c0c"
+  },
+  "script_sha256": {
+    "scripts/create_instrument_freeze_bundle.py": "6e22b866e953e83d37a961b92a7acb2abbf54075a3ab3a319087268b32dc6d98",
+    "scripts/create_run_output_inventory.py": "cac201818ff0454d1e1363f857519af2fc444694153c4e7023bfef2541b50b0d",
+    "scripts/prepare_disjoint_audit_lockbox.py": "45ffdcc42570b6d0da6929f15eed8034f2eeb99eb27b084d7529b3ca41bf1170",
+    "scripts/validate_frozen_extraction_contract.py": "ba8af89795efd44717d3359e5421fc35dbf2d91cb4db5c0f94698540ab5fdc52",
+    "scripts/run_reviewer_killer_controls.py": "a3a472f04d2a2f9ffe232e68ccc30c21c18f433acaea63970916d1ca570c7dfc",
+    "scripts/analyze_native_alignment_path_anatomy.py": "759003f4db31809e1d503dd10b9ae033b99064fc52cd4c434f0fc5c19a8906b7",
+    "scripts/validate_sealed_lockbox_bundle.py": "37a0fdd164aaeb87ca83e035906e2198169c965c83de0ce8d0782eb2f1d6a4e2",
+    "scripts/analyze_confirmatory_lockbox.py": "a31261314ae212c4154f35412e71de8e85e1b6405dbfbfa0505bbf818127fb01",
+    "scripts/analyze_assignment_boundary_geometry.py": "87ba3955c3ea50bdf660d0d8472b2728f53382b294ffb5da46c4346e778882b8"
+  }
+}

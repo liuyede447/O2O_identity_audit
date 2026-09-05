@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "selected_images": 300,
+  "focal_direction_rows": 29724,
+  "focal_gt_by_size_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "excluded_base_box_outside_image_by_size_bin": {
+    "s_16_32": 4,
+    "t_8_16": 9
+  },
+  "audited_focal_gt_by_size_bin": {
+    "s_16_32": 991,
+    "t_8_16": 6440
+  },
+  "radius_curve_rows": 608730,
+  "event_counts": {
+    "o2o": 6725,
+    "o2m_legacy": 15726,
+    "o2m_pre_topk": 15726,
+    "o2m_assigned_positive": 15597,
+    "rho_R": 1592
+  },
+  "o2o_first_divergence_counts": {
+    "conflict_reassignment": 171,
+    "eligibility_boundary": 4579,
+    "right_censored": 22999,
+    "topk_membership_transition": 28,
+    "within_set_geometry_rank_reversal": 1947
+  },
+  "elapsed_sec": 12336.817332600003
+}

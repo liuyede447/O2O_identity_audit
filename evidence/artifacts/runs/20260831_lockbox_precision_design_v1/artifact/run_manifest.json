@@ -1,0 +1,42 @@
+{
+  "analysis_role": "prospective precision planning from discovery data; not post-hoc power",
+  "inputs": {
+    "fixed_anatomy": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\per_direction_anatomy.csv",
+      "sha256": "d6c88f8d0af026c854fe30ac0e3303254ec79a6c7a59e7864d28730821d67976"
+    },
+    "fixed_per_gt": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\measurement_validation_20260831\\fixed_branch_replay_v1\\per_gt.csv",
+      "sha256": "0596d59486c5da70a577a6928f9b14fddc6c1ba115511e20486175dabada0d7a"
+    },
+    "normalized_anatomy": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\five_experiment_upgrade_20260830\\anatomy_normalized_k00625_v2\\per_direction_anatomy.csv",
+      "sha256": "5b41e6f7c0603ba389d256ec771a28279d557a4743ee66cb1da81868dab66a79"
+    },
+    "normalized_per_gt": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\per_gt.csv",
+      "sha256": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de"
+    }
+  },
+  "outputs": {
+    "precision_planning_estimands.csv": "be983f9b7086984c07e9ee788de0bf85ad334c06f561bccdb7cd9ab6d047aad8",
+    "precision_planning_summary.json": "f10d9407c79ca6e96871d997a4045b1269226390dba0b05e1df6eceb1e19e54f",
+    "self_test.json": "79d18d5b12a56875791ff6bb628b8fb076e19ddb19fb526d9c66a505a201e449"
+  },
+  "parameters": {
+    "expected_images": 300,
+    "reps": 5000,
+    "seed": 20260831
+  },
+  "script": {
+    "path": "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_lockbox_precision_design.py",
+    "sha256": "2756688b3da2b7c29aebd84f88f749cd0d45f02d70c74fba4e4f146161e96cc2"
+  },
+  "software": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5"
+  },
+  "status": "complete"
+}

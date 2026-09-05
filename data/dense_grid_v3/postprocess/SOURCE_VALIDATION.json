@@ -1,0 +1,10 @@
+{
+  "artifact_dir": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260902_boundary_full_grid_1024_population_v1",
+  "curve_csv_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+  "curve_rows": 7593288,
+  "event_csv_sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+  "event_rows": 29724,
+  "manifest_sha256": "f6427ea0715be2b7b6f7cff3ab0408fddc1929b9afc69b792d6b45d79d11cffd",
+  "status": "PASS",
+  "summary_sha256": "d07f01efe23270cf54210057340c9eca72f8a9b5cef88a5934f3d2f51d46923b"
+}
