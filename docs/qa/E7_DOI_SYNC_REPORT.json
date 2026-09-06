@@ -1,5 +1,5 @@
 {
-  "status": "PASS_WITH_METADATA_NOTE",
+  "status": "PASS",
   "github_release_url": "https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0",
   "github_tag": "v3.2.0",
   "github_commit": "1e5134a8f91f30f627715790624fd918e4a87a96",
@@ -60,16 +60,14 @@
     }
   ],
   "zenodo_metadata_review": {
-    "title": "Native assignment-state boundary audit",
-    "title_matches_article": false,
+    "title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection",
+    "title_matches_article": true,
     "description_contains_article_title": true,
-    "notes_still_prepublication": true,
-    "action": "Zenodo metadata can be edited to use the article title and replace the stale pre-publication note; the published DOI and archived v3.2.0 content remain valid."
+    "notes_still_prepublication": false,
+    "action": "Verified live Zenodo metadata and archive scope."
   },
   "manuscript_pdf_sha256": {
-    "main.pdf": "6430a440a472aae1c76912118e88bed524ec99c0d5d6733478b485337d4aaea1",
-    "supplementary.pdf": "eb2e26b5cf9321d2fe27ef4952f2d6d373c59adefb530fe4d6485308d05b729e"
-  },
-  "github_main_metadata_commit": "28534fb46c055d986e031a61d669a01dd58a01e9",
-  "release_tag_is_immutable": true
+    "main.pdf": "7f4d95a1899e21641be2297514f0feefa5c66e61fa928c5db2c24624317dca93",
+    "supplementary.pdf": "3c05c486d217fb5f14d3621d5cacdc78c4deb8a3dba57f523f1719c166e76906"
+  }
 }
