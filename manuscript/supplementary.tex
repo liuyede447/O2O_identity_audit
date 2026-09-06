@@ -38,7 +38,7 @@ This Supplementary Material expands the frozen evidence without adding training 
 \begin{center}
 \scriptsize\texttt{00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24}.
 \end{center}
-The v4 ledger contains 32 admitted records and five excluded historical records. The article-matched GitHub release v3.2.1 and Zenodo record 10.5281/zenodo.22501134 are the public archive records for this FINAL-P0 manuscript state; the immutable v3.2.0 record is retained unchanged.
+The v4 ledger contains 32 admitted records and five excluded historical records. The article-matched GitHub release v3.2.2 and Zenodo record 10.5281/zenodo.22523352 are the public archive records for this FINAL-P0 manuscript state; the immutable v3.2.0 record is retained unchanged.
 
 Principal endpoints are inverse-inclusion weighted. Unless stated otherwise, 95\% intervals use 5,000 image-cluster bootstrap replicates within frozen strata and quantify sampling uncertainty conditional on seed 0. Discovery and sensitivity analyses were not a confirmatory family and received no family-wise multiplicity correction. Fixed and equivalent-area-side contracts are not pooled. First-divergence labels localise the earliest instrumented change. The lockbox produced no normative verdict; post-access corrections remain exploratory.
 
@@ -564,7 +564,7 @@ A separate read-only parity check reproduced all five exploratory estimates, int
 
 \section{Reproducibility inventory}
 
-The article-matched GitHub release v3.2.1 provides the released code, derived analysis materials, complete (1/1024) dense-grid records, and checkpoints. The corresponding article source package is preserved in the \href{https://doi.org/10.5281/zenodo.22501134}{Zenodo record 10.5281/zenodo.22501134}. Release assets are bound to the SHA-256 manifests under AGPL-3.0-only. Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers; raw prediction dumps are not redistributed.
+The article-matched GitHub release v3.2.2 provides the released code, derived analysis materials, complete (1/1024) dense-grid records, and checkpoints. The corresponding article source package is preserved in the \href{https://doi.org/10.5281/zenodo.22523352}{Zenodo record 10.5281/zenodo.22523352}. Release assets are bound to the SHA-256 manifests under AGPL-3.0-only. Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers; raw prediction dumps are not redistributed.
 
 \begin{table}[ht]
 \centering
@@ -576,17 +576,17 @@ Component & Frozen record \\
 Evidence authority & \path{evidence_freeze/final_evidence_v4}; the v3 bundle is retained as the immutable predecessor \\
 Numerical manuscript values & \path{manuscript/generated_final_v2} and the canonical dense-grid post-processing root \path{runs/20260903_boundary_full_grid_1024_postprocess_v2} \\
 Boundary science freeze & \path{results/measurement_validation_20260903/dense_grid_science_freeze_v1} with the five prespecified structural decisions and machine-readable assessment \\
-Training/checkpoint contract & Public v3.2.1 asset registry plus v4 checkpoint-provenance audit, checkpoint-embedded training arguments, dataset template, and full-validation recheck records \\
+Training/checkpoint contract & Public v3.2.2 asset registry plus v4 checkpoint-provenance audit, checkpoint-embedded training arguments, dataset template, and full-validation recheck records \\
 Prospective record & Immutable access receipt, failed analyzer log, and no-verdict record \\
 Post-access repair QA & \path{results/measurement_validation_20260904/lockbox_analyzer_synthetic_cli_e2e_v2} and \path{results/measurement_validation_20260904/lockbox_repaired_analyzer_post_access_parity_v1}; software QA only \\
-Public materials & \href{https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.1}{GitHub v3.2.1}: complete dense curve, four checkpoints, and SHA-256 records; corresponding article source package preserved in \href{https://doi.org/10.5281/zenodo.22501134}{Zenodo 10.5281/zenodo.22501134}. \\
+Public materials & \href{https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.2}{GitHub v3.2.2}: complete dense curve, four checkpoints, and SHA-256 records; corresponding article source package preserved in \href{https://doi.org/10.5281/zenodo.22523352}{Zenodo 10.5281/zenodo.22523352}. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \begin{table}[p]
 \centering
-\caption{P0 support-clarification block. The left and right panels retain the displayed labels Table S33 and Table S35; counts are transcribed from the frozen P0 audit.}
+\caption{P0 support-clarification block. The left and right panels retain the displayed labels Table S33 and Table S35; counts are transcribed from the frozen P0 audit. Table S35 reports O2O branch counts; event, censoring, observability, and return rows are descriptive and are not mutually exclusive categories.}
 \begin{minipage}[t]{0.54\textwidth}
 \centering
 \textbf{Table S33. Primary-support flow}\\[2pt]
@@ -594,22 +594,23 @@ Public materials & \href{https://github.com/liuyede447/O2O_identity_audit/releas
 \resizebox{\linewidth}{!}{%
 \begin{tabular}{@{}p{0.43\linewidth}rr@{}}
 \toprule
-Executable stage & Fixed 1 px & Equivalent-area $\kappa=0.0625$ \\
+Stage & Fixed 1 px & Equivalent-area $\kappa=0.0625$ \\
 \midrule
-widest\_eligible\_endpoint\_population & 7,444 & 7,444 \\
-exclude\_no\_legal\_shift & 10 & 12 \\
-audited\_endpoint\_rows & 7,434 & 7,432 \\
-exclude\_base\_assigned\_o2o\_unavailable & 169 & 169 \\
-base\_assigned\_o2o\_present & 7,265 & 7,263 \\
-exclude\_runner\_positive\_alternative\_unavailable & 887 & 886 \\
-branch\_common\_valid\_support & 6,378 & 6,377 \\
+Widest eligible endpoint population & 7,444 & 7,444 \\
+No legal shift & 10 & 12 \\
+Audited endpoint rows & 7,434 & 7,432 \\
+Base assigned O2O unavailable & 169 & 169 \\
+Base assigned O2O present & 7,265 & 7,263 \\
+Runner/alternative unavailable & 887 & 886 \\
+Branch-common valid support & 6,378 & 6,377 \\
 \bottomrule
 \end{tabular}%
 }
+\par\scriptsize\emph{Full executable fields: \texttt{widest\_eligible\_endpoint\_population}; \texttt{exclude\_no\_legal\_shift}; \texttt{audited\_endpoint\_rows}; \texttt{exclude\_base\_assigned\_o2o\_unavailable}; \texttt{base\_assigned\_o2o\_present}; \texttt{exclude\_runner\_positive\_alternative\_unavailable}; \texttt{branch\_common\_valid\_support}.}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.40\textwidth}
 \centering
-\textbf{Table S35. Dense-grid risk set}\\[2pt]
+\textbf{Table S35. O2O dense-grid risk-set accounting}\\[2pt]
 \scriptsize
 \resizebox{\linewidth}{!}{%
 \begin{tabular}{@{}p{0.70\linewidth}r@{}}

@@ -1,7 +1,7 @@
 {
-  "status": "ARTICLE_MATCHED_V3.2.1_READY",
-  "version": "3.2.1",
-  "tag": "v3.2.1",
+  "status": "ARTICLE_MATCHED_V3.2.2_READY",
+  "version": "3.2.2",
+  "tag": "v3.2.2",
   "article_title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection",
   "required_content": [
     "code snapshot",
@@ -95,8 +95,8 @@
     }
   ],
   "manuscript_pdf_sha256": {
-    "main.pdf": "6e544ec39f7adda54a9ae2fd59810ebd12ffa89b782c8e88a311959fa079782b",
-    "supplementary.pdf": "169ab7bec7f43cebfb9c9120359fad620bc893e403a55e875f7de9384d816eea"
+    "main.pdf": "ab88b725cbc6ac6bc2b2e9ed40debdc6b36cbb624d10cb57f6b75e844f112744",
+    "supplementary.pdf": "97fa3311969e88a15afbd39dfd55c73a1d1b257451d51d663d2ec9248e0d0545"
   },
   "evidence_v4_manifest_sha256": "00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24",
   "author_approval_source": "docs/AUTHOR_RELEASE_APPROVAL_RECORD.md",
@@ -107,9 +107,10 @@
     "FINAL_P0_layout_QA": "PASS"
   },
   "curve_delivery_note": "The complete 1/1024 curve is uploaded as gzip-compressed CSV release asset; decompressing yields the raw SHA-256 listed in RELEASE_ASSET_MANIFEST.json.",
-  "zenodo_doi": "10.5281/zenodo.22501134",
+  "zenodo_doi": "10.5281/zenodo.22523352",
   "zenodo_concept_doi": "10.5281/zenodo.22501133",
   "article_source_zip": "article_source_v3.2.1.zip",
   "notes": "This manifest excludes cover letter, highlights submission files, Editorial Manager forms, reviewer suggestions, signatures, and account screenshots.",
-  "release_commit_note": "Prepared from immutable v3.2.0 commit with FINAL-P0 editorial/artwork/support updates; frozen scientific assets unchanged."
+  "release_commit_note": "Prepared from immutable v3.2.0 commit with FINAL-P0 editorial/artwork/support updates; frozen scientific assets unchanged.",
+  "zenodo_target_status": "reserved; publish corresponding Zenodo version after GitHub release"
 }

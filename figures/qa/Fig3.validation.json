@@ -148,6 +148,5 @@
     "status": "PASS"
   },
   "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
-  "status": "PASS",
-  "article_patch": "FINAL-P0 artwork and support-layout update"
+  "status": "PASS"
 }
