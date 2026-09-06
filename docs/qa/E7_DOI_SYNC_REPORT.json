@@ -69,5 +69,7 @@
   "manuscript_pdf_sha256": {
     "main.pdf": "6430a440a472aae1c76912118e88bed524ec99c0d5d6733478b485337d4aaea1",
     "supplementary.pdf": "eb2e26b5cf9321d2fe27ef4952f2d6d373c59adefb530fe4d6485308d05b729e"
-  }
+  },
+  "github_main_metadata_commit": "28534fb46c055d986e031a61d669a01dd58a01e9",
+  "release_tag_is_immutable": true
 }
