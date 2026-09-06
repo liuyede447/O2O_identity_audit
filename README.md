@@ -14,7 +14,7 @@ This package measures native post-training assignment states under controlled ge
 
 ## Contents
 
-The package includes the `final_evidence_v4` authority, claim-to-evidence map, generated numerical tables, figure source CSV/JSON and image-free Figure 2–6 PDFs/SVGs, manuscript/Supplement sources, dense-grid event/post-processing data, support map, checkpoint provenance, numerical QA, and reproduction commands. Figure 1 and Figure S1 contain third-party benchmark pixels and are represented by audit source records only; their image-bearing renders are not redistributed. The complete 1/1024 curve and four protocol-matched checkpoints are attached as GitHub release assets, not committed to Git history.
+The package includes the `final_evidence_v4` authority, claim-to-evidence map, generated numerical tables, figure source CSV/JSON and image-free Figure 2–6 PDFs/SVGs, dense-grid event/post-processing data, support map, checkpoint provenance, numerical QA, and reproduction commands. Figure 1 and Figure S1 contain third-party benchmark pixels and are represented by audit source records only; their image-bearing renders are not redistributed. The complete 1/1024 curve and four protocol-matched checkpoints are attached as GitHub release assets, not committed to Git history. The dense-grid gzip is uploaded as two ordered parts; concatenate `.part01` and `.part02`, then verify the manifest SHA-256 (the repository includes `scripts/join_dense_grid_asset.py`).
 
 ## Lockbox status
 

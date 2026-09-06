@@ -7,4 +7,4 @@ AI-TOD-v2 and VisDrone images/annotations are not redistributed. Obtain them fro
 The corresponding article source package is archived in Zenodo record 10.5281/zenodo.22537930. The complete dense-grid records and checkpoint assets remain available from the GitHub `v3.2.3` release.
 
 
-This release applies editorial and definition clarifications without changing frozen scientific data. Manuscript sources/PDFs and author submission files are intentionally not included.
+This release applies editorial and definition clarifications without changing frozen scientific data. Manuscript sources/PDFs and author submission files are intentionally not included. The complete dense-grid gzip is provided as two ordered release parts with a SHA-256 reconstruction check.

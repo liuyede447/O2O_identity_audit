@@ -4,9 +4,14 @@
   "zenodo_doi": "10.5281/zenodo.22537930",
   "assets": [
     {
-      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
-      "bytes": 178521298,
-      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d"
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
+      "bytes": 89260649,
+      "sha256": "df069a23ec2780a51449a04e4fb11ae918ab01369ad645d174330673173d33e0"
+    },
+    {
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part02",
+      "bytes": 89260649,
+      "sha256": "1a5fa36b8a250d1faf9a64f3e8f177de019967681702bc09aea52176ff18fb45"
     },
     {
       "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
