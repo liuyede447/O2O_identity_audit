@@ -1,15 +1,15 @@
 # Data and Code Availability release record
 
-Status date: 2026-09-06. Article-matched GitHub v3.2.0 publication is being completed; Zenodo DOI minting remains pending.
+Status date: 2026-09-06. Article-matched GitHub v3.2.0 and Zenodo archival are complete.
 
 ## Current manuscript wording
 
-AI-TOD-v2 and VisDrone are third-party datasets available from their official repositories under the providers' access and licence terms. Raw third-party images and annotations are not redistributed. The article-matched manuscript code, derived data, figure source data, evidence records, complete 1/1024 dense curve, and four trained checkpoints are released in GitHub `v3.2.0` at <https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0>, with asset digests recorded in the release manifest. Raw prediction dumps are not redistributed, and reproduction from source pixels requires obtaining the benchmark datasets under their providers' terms. A Zenodo DOI has not yet been minted.
+Code, derived data, figure-source tables, the complete 1/1024 dense-grid records, and four protocol-matched checkpoints corresponding to this article are archived in GitHub release `v3.2.0` (<https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0>) and Zenodo DOI <https://doi.org/10.5281/zenodo.22478277> (concept DOI <https://doi.org/10.5281/zenodo.22478276>). Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers. Raw prediction dumps are not redistributed.
 
 ## Verified release facts
 
 - Public release: `v3.2.0`; not a draft and not a prerelease.
-- Publication time and commit: recorded in the immutable GitHub release after tag creation.
+- Zenodo archive: DOI `10.5281/zenodo.22478277`; concept DOI `10.5281/zenodo.22478276`; archived 2026-09-06.
 - Public assets: five scientific assets (four checkpoints and the complete dense curve); sizes and SHA-256 digests are recorded in `RELEASE_ASSET_MANIFEST.json`.
 - Full public-download verification: four checkpoints and the 1,411,448,003-byte dense curve all match their local SHA-256 values.
 - Licence decision: AGPL-3.0-only for the released software, derived data, and checkpoint assets.

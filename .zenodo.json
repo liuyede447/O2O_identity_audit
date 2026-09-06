@@ -1,5 +1,5 @@
 {
-  "title": "Native assignment-state boundary audit",
+  "title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection — Reproducibility Package",
   "upload_type": "software",
   "description": "Code and derived audit data supporting the manuscript 'Stress-Dependent Cardinal Boundaries in Aerial Tiny-Object Detection'.",
   "creators": [
@@ -30,8 +30,14 @@
       "identifier": "https://github.com/liuyede447/O2O_identity_audit",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.22478277",
+      "relation": "isIdenticalTo",
+      "scheme": "doi",
+      "resource_type": "software"
     }
   ],
   "version": "3.2.0",
-  "notes": "Metadata for Git tag v3.2.0. No DOI has been minted or asserted; Zenodo binding follows the GitHub release."
+  "notes": "Metadata for Git tag v3.2.0. Zenodo version DOI 10.5281/zenodo.22478277 and concept DOI 10.5281/zenodo.22478276 were archived on 2026-09-06."
 }

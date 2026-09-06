@@ -4,4 +4,4 @@ This release synchronises the current Neurocomputing article package with the v4
 
 AI-TOD-v2 and VisDrone images/annotations are not redistributed. Obtain them from their official providers listed in `THIRD_PARTY_NOTICES.md`. Figure 1 and Figure S1 image-bearing renders are omitted for the same third-party-data reason; their source records remain for auditability.
 
-No Zenodo DOI is asserted. Mint the DOI from this exact GitHub `v3.2.0` release after publication metadata is final.
+Zenodo archive: `10.5281/zenodo.22478277` (concept DOI `10.5281/zenodo.22478276`), archived 2026-09-06 from this exact GitHub `v3.2.0` release.
