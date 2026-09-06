@@ -19,7 +19,7 @@
 - [x] Checkpoint redistribution rights approved; all four checkpoints are release assets.
 - [x] Third-party datasets remain excluded; only identifiers and derived statistics are released.
 - [x] GitHub Release selected for the 1.411 GB curve and four 60 MB checkpoints; Zenodo binding follows publication.
-- [x] Final version and tag are `3.1.0` and `v3.1.0`, newer than public `v3.0.0`.
+- [x] Final version and tag are `3.2.0` and `v3.2.0`, newer than public `v3.0.0`.
 
 ## Required during and after public upload
 

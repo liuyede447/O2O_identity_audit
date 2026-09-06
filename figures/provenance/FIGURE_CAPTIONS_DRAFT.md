@@ -1,6 +1,6 @@
 # Figure captions for author approval
 
-These captions formed the approval baseline for the figure set. Their panel structure and interpretation guards were synchronised into the authoritative main manuscript and Supplement on 2026-09-05, and final all-author approval was subsequently confirmed for v3.1.0.
+These captions formed the approval baseline for the figure set. Their panel structure and interpretation guards were synchronised into the authoritative main manuscript and Supplement on 2026-09-05, and final all-author approval was subsequently confirmed for v3.2.0.
 
 ## Figure 1. Read-only assignment-state measurement
 

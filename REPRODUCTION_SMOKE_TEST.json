@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "clean_environment": "e6_validation_env_v3_1_0\\Scripts\\python.exe",
   "level_1_verify_release": "PASS: 722 files verified; repository exclusion policy passed",
   "level_1_required_table_count": 19,

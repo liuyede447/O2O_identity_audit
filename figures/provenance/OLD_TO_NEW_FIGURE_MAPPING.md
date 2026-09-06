@@ -12,4 +12,4 @@ The approved figure set is retained under `figures_final/draft/` and copied byte
 | Figure 5 margin panels | `Fig6` | Margin/boundary relation | Replaced with dense v3 observed-crossing support, status composition, conditional correlations, and held-out diagnostic increment |
 | Supplementary qualitative figure | `FigS1` | Real-image examples | Rebuilt from the primary-checkpoint trace; legacy mismatched checkpoint pack excluded; exact boxes and no text over image targets |
 
-Manuscript paths, figure numbers, captions, references, and float order were synchronised on 2026-09-05. All-author and institutional approval was subsequently confirmed; the scientific and narrative content is frozen for the v3.1.0 release.
+Manuscript paths, figure numbers, captions, references, and float order were synchronised on 2026-09-05. All-author and institutional approval was subsequently confirmed; the scientific and narrative content is frozen for the v3.2.0 release.

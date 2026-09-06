@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or its derived audit data, cite the associated manuscript and this release."
 title: "Native assignment-state boundary audit"
 type: software
-version: "3.1.0"
+version: "3.2.0"
 repository-code: "https://github.com/liuyede447/O2O_identity_audit"
 url: "https://github.com/liuyede447/O2O_identity_audit"
 license: AGPL-3.0-only
