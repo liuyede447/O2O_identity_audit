@@ -38,9 +38,11 @@ This Supplementary Material expands the frozen evidence without adding training 
 \begin{center}
 \scriptsize\texttt{00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24}.
 \end{center}
-The v4 ledger contains 32 admitted records and five excluded historical records; no scientific gate is pending. Renewed author approval and release synchronisation remain operational gates.
+The v4 ledger contains 32 admitted records and five excluded historical records. The article-matched GitHub release v3.2.1 and Zenodo record 10.5281/zenodo.22501134 are the public archive records for this FINAL-P0 manuscript state; the immutable v3.2.0 record is retained unchanged.
 
 Principal endpoints are inverse-inclusion weighted. Unless stated otherwise, 95\% intervals use 5,000 image-cluster bootstrap replicates within frozen strata and quantify sampling uncertainty conditional on seed 0. Discovery and sensitivity analyses were not a confirmatory family and received no family-wise multiplicity correction. Fixed and equivalent-area-side contracts are not pooled. First-divergence labels localise the earliest instrumented change. The lockbox produced no normative verdict; post-access corrections remain exploratory.
+
+Endpoint scale gaps are reported as 8--16 minus 16--32 px, whereas Rank--Set contrasts are reported as 16--32 minus 8--16 px; every table and figure labels its orientation explicitly.
 
 \begin{table}[ht]
 \centering
@@ -79,11 +81,15 @@ Alignment & $q=p_{c_g}^{0.5}\max\{\mathrm{CIoU},0\}^{6}$ in native float32. & Sa
 Preselection & Native \texttt{topk} with $k=7$. & Native \texttt{topk} with $k=10$. \\
 Multi-GT claim & For every multiply claimed anchor, choose the GT with maximal clipped CIoU using native \texttt{argmax}. & Identical conflict operation. \\
 Final state & Apply native Top-1-by-$q$ among surviving claims; read the unique post-conflict assigned candidate from \texttt{fg\_mask} and \texttt{target\_gt\_idx}. Positive normalised \texttt{target\_scores} are required separately for nonzero box/DFL weight. & Retain the complete post-conflict positive set; assigned-set Top-1 is its maximal-$q$ member. \\
-Undefined/empty & Missing unique post-conflict assigned O2O identity or missing positive alternative is undefined; no extreme-value imputation. & Empty/empty, empty/nonempty, and nonempty/empty are explicit structural states; Top-1 is undefined for an empty set. \\
+Assigned-identity availability & Missing unique post-conflict assigned O2O identity is undefined for O2O identity states; a null shifted identity after a legal shift is a recorded departure. & Empty/empty, empty/nonempty, and nonempty/empty are explicit structural states; Top-1 is undefined when the assigned-set rank state is empty. \\
+Runner/margin availability & The positive alternative is required only for the assigned-relative margin; its absence does not make the assigned identity undefined. & The runner is required only for the O2M margin/rank-separation construct; it is not required to define positive-set membership. \\
+Primary common-support eligibility & Table 1 uses branch-common competition-defined support. & Same support restriction; this is separate from the intrinsic identity/set state definition. \\
 Tie order & Exact ties follow native PyTorch \texttt{topk}/\texttt{argmax}; no secondary symbolic tie rule is introduced. & Identical native ordering contract. \\
 \bottomrule
 \end{tabularx}
 \end{table}
+\smallskip
+\noindent\textit{Machine-readable support flag: \texttt{common\_valid\_margin==1}.}
 
 The registered checkpoint hash prefixes are \texttt{4b57787f7351} for YOLO26s and \texttt{ecf7ca8df8ed} for YOLOv10-S. Their complete SHA-256 values are retained in \path{MODEL_ARTIFACTS_SHA256.csv} and the detector-specific manifests. The YOLOv10-S extraction manifest (SHA-256 prefix \texttt{c1e14e823fab}) records the detector contract and checkpoint but not a contemporaneous source commit.
 
@@ -143,12 +149,12 @@ Photometric augmentation & \texttt{hsv\_h=0.015}, \texttt{hsv\_s=0.7}, \texttt{h
 Geometric augmentation & \texttt{translate=0.1}, \texttt{scale=0.5}, \texttt{degrees=0}, \texttt{shear=0}, \texttt{perspective=0}, \texttt{fliplr=0.5}, \texttt{flipud=0}. \\
 Composition augmentation & \texttt{mosaic=1.0}, \texttt{close\_mosaic=10}, \texttt{mixup=0}, \texttt{cutmix=0}, \texttt{copy\_paste=0}. \\
 Runtime arguments & \texttt{amp=false}, \texttt{deterministic=true}, \texttt{device=0}, \texttt{workers=8}, \texttt{cache=ram}; protocol-eligible seeds 0--3. \\
-Checkpoint selection & Training recorded \texttt{val=false}; embedded \texttt{best\_fitness} and \texttt{fitness} are null. A post-training scan on the full validation benchmark selected epoch 280 for seeds 0--2 and promoted it to the retained filename \texttt{best.pt}; the corresponding seed-3 promotion log was not recovered. Replay outcomes did not select weights. \\
+Checkpoint selection & Training recorded \texttt{val=false}; embedded \texttt{best\_fitness} and \texttt{fitness} are null. A post-training scan on the full validation benchmark selected epoch 280 for seeds 0--2 and promoted it to the retained filename \texttt{best.pt}; seed 3 remained protocol-eligible because its retained checkpoint metadata and hash establish the common training contract and embedded epoch 280 despite the missing promotion log, whereas seed 4 was excluded because its recorded model argument positively documents a different initialisation path. Replay outcomes did not select weights. \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-Complete seed-0--3 hashes and the checkpoint-provenance audit are retained in the release manifest and \path{results/measurement_validation_20260905/checkpoint_provenance_v1/summary.json}; seed 4 was excluded before analysis because it did not use the common initialisation.
+Complete seed-0--3 hashes and the checkpoint-provenance audit are retained in the release manifest and \path{results/measurement_validation_20260905/checkpoint_provenance_v1/summary.json}; seed 4 was excluded before analysis because its recorded model argument positively documents a different initialisation path.
 
 The coverage-based-miss outcome counts the absence of a frozen same-class prediction overlapping the focal GT at IoU $\geq0.5$; it is not the standard evaluator false negative.
 
@@ -339,7 +345,7 @@ Pre-conflict versus final assigned scale gaps were 17.18 versus 17.10 pp under f
 
 The formal analysis evaluated 29,724 trajectories from 7,431 focal GTs at every legal $1/1024$ point through $r_{\max}=0.25$ on four cardinal rays, retaining returns, right censoring, and competing changes. Raw event, cause, and return reports remain separate; the grid is not a two-dimensional minimum and cannot resolve sub-step intervals.
 
-The $1/64$ plus $1/512$ schedule was rejected after a narrow-state mutation and a 30-image comparison exposed nine material distance or return-state mismatches; legacy outputs are aliasing diagnostics only.
+The legacy adaptive $1/64$ plus $1/512$ schedule was shown by the narrow-state mutation to permit aliasing. Separately, a complete $1/512$-versus-$1/1024$ comparison on the frozen qualification subset found nine material distance or return-state mismatches across four trajectories. Legacy outputs are retained as qualification diagnostics only.
 
 \begin{table}[ht]
 \centering
@@ -366,7 +372,7 @@ The legacy eligible Top-1 field is inactive. Reported O2M Top-1 results use the 
 
 \begin{table}[ht]
 \centering
-\caption{Tiny-minus-small O2M Rank--Set contrasts in percentage points with 95\% stratified image-cluster bootstrap intervals.}
+\caption{O2M Rank--Set contrasts reported as 16--32 minus 8--16 px in percentage points with 95\% stratified image-cluster bootstrap intervals.}
 \label{tab:supp_rank_set}
 \resizebox{\textwidth}{!}{\input{generated_final_v2/tables/rank_set_summary.tex}}
 \end{table}
@@ -399,7 +405,7 @@ Alternative cutpoints and continuous log-area models used 6,376 object and 25,37
 \end{table}
 
 
-The strict post-replay same-stride subset retained 3,835 paired GTs. Its O2O contrast was $+10.23$ pp [7.30, 13.32], O2M was $-0.12$ pp [$-6.83$, 5.78], and the paired difference was $+10.35$ pp [3.54, 18.17]. This sensitivity rules out an explanation based solely on cross-stride switching but remains vulnerable to selection induced by post-replay conditioning.
+The strict post-replay same-stride subset retained 3,835 paired GTs. Its O2O contrast was $+10.23$ pp [7.30, 13.32], O2M was $-0.12$ pp [$-6.83$, 5.78], and the paired difference was $+10.35$ pp [3.54, 18.17]. The paired contrast remained positive within this post-replay selected same-stride subset. Because the subset is conditioned on replay outcomes and margin availability, this sensitivity does not identify the contribution of cross-stride switching to the full-population contrast.
 
 \section{Analysis support map and computational context}
 
@@ -454,7 +460,9 @@ Timing sources have SHA-256 prefixes \texttt{38299ec8fdc5}, \texttt{5e2f0e689bc3
 
 \section{Conditional margin alignment, shape, and held-out diagnostic value}
 
-Among 1,593 observed fixed-pair crossings, margin correlated with $\rho_R$ at $\rho=0.628$ [0.584, 0.669], versus 0.150 [0.111, 0.191] for observed eligibility-boundary distance; the difference was 0.477 [0.408, 0.543]. These conditional correlations are not censoring adjusted.
+These image-grouped out-of-fold comparisons evaluate the incremental diagnostic model conditional on the previously selected detector checkpoint; they are not an independent holdout for detector training or checkpoint selection. The frozen implementation used weighted logistic regression with the recorded log-area, log-positive-count, log-assigned-score, and assigned-CIoU features; standardisation and resolved optimiser details follow the retained code, and any historical training parameter not preserved there is not preserved.
+
+On their respective observed supports, margin showed a larger conditional association with observed rank-crossing distance than with observed eligibility-boundary distance. Because the two associations use different selected supports, their numerical difference does not isolate a construct-specific association contrast. Among 1,593 observed fixed-pair crossings, margin correlated with $\rho_R$ at $\rho=0.628$ [0.584, 0.669], versus 0.150 [0.111, 0.191] for observed eligibility-boundary distance; the difference was 0.477 [0.408, 0.543]. These conditional correlations are not censoring adjusted.
 
 \begin{table}[ht]
 \centering
@@ -556,7 +564,7 @@ A separate read-only parity check reproduced all five exploratory estimates, int
 
 \section{Reproducibility inventory}
 
-The article-matched GitHub release v3.2.0 provides the released code, derived analysis materials, complete (1/1024) dense-grid records, and checkpoints. The corresponding article source package is preserved in the \href{https://doi.org/10.5281/zenodo.22478277}{Zenodo record 10.5281/zenodo.22478277}. Release assets are bound to the SHA-256 manifests under AGPL-3.0-only. Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers; raw prediction dumps are not redistributed.
+The article-matched GitHub release v3.2.1 provides the released code, derived analysis materials, complete (1/1024) dense-grid records, and checkpoints. The corresponding article source package is preserved in the \href{https://doi.org/10.5281/zenodo.22501134}{Zenodo record 10.5281/zenodo.22501134}. Release assets are bound to the SHA-256 manifests under AGPL-3.0-only. Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers; raw prediction dumps are not redistributed.
 
 \begin{table}[ht]
 \centering
@@ -568,10 +576,72 @@ Component & Frozen record \\
 Evidence authority & \path{evidence_freeze/final_evidence_v4}; the v3 bundle is retained as the immutable predecessor \\
 Numerical manuscript values & \path{manuscript/generated_final_v2} and the canonical dense-grid post-processing root \path{runs/20260903_boundary_full_grid_1024_postprocess_v2} \\
 Boundary science freeze & \path{results/measurement_validation_20260903/dense_grid_science_freeze_v1} with the five prespecified structural decisions and machine-readable assessment \\
-Training/checkpoint contract & Public v3.2.0 asset registry plus v4 checkpoint-provenance audit, checkpoint-embedded training arguments, dataset template, and full-validation recheck records \\
+Training/checkpoint contract & Public v3.2.1 asset registry plus v4 checkpoint-provenance audit, checkpoint-embedded training arguments, dataset template, and full-validation recheck records \\
 Prospective record & Immutable access receipt, failed analyzer log, and no-verdict record \\
 Post-access repair QA & \path{results/measurement_validation_20260904/lockbox_analyzer_synthetic_cli_e2e_v2} and \path{results/measurement_validation_20260904/lockbox_repaired_analyzer_post_access_parity_v1}; software QA only \\
-Public materials & \href{https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0}{GitHub v3.2.0}: complete dense curve, four checkpoints, and SHA-256 records; corresponding article source package preserved in \href{https://doi.org/10.5281/zenodo.22478277}{Zenodo 10.5281/zenodo.22478277}. \\
+Public materials & \href{https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.1}{GitHub v3.2.1}: complete dense curve, four checkpoints, and SHA-256 records; corresponding article source package preserved in \href{https://doi.org/10.5281/zenodo.22501134}{Zenodo 10.5281/zenodo.22501134}. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{P0 support-clarification block. The left and right panels retain the displayed labels Table S33 and Table S35; counts are transcribed from the frozen P0 audit.}
+\begin{minipage}[t]{0.54\textwidth}
+\centering
+\textbf{Table S33. Primary-support flow}\\[2pt]
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}p{0.43\linewidth}rr@{}}
+\toprule
+Executable stage & Fixed 1 px & Equivalent-area $\kappa=0.0625$ \\
+\midrule
+widest\_eligible\_endpoint\_population & 7,444 & 7,444 \\
+exclude\_no\_legal\_shift & 10 & 12 \\
+audited\_endpoint\_rows & 7,434 & 7,432 \\
+exclude\_base\_assigned\_o2o\_unavailable & 169 & 169 \\
+base\_assigned\_o2o\_present & 7,265 & 7,263 \\
+exclude\_runner\_positive\_alternative\_unavailable & 887 & 886 \\
+branch\_common\_valid\_support & 6,378 & 6,377 \\
+\bottomrule
+\end{tabular}%
+}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.40\textwidth}
+\centering
+\textbf{Table S35. Dense-grid risk set}\\[2pt]
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}p{0.70\linewidth}r@{}}
+\toprule
+Metric & Count \\
+\midrule
+Total trajectories & 29,724 \\
+Initial state defined by O2O branch & 29,048 \\
+First events through $\tau$ & 2,511 \\
+Geometric censors before $\tau$ & 195 \\
+Observable through $\tau$ & 28,853 \\
+Returns after first departure & 14 \\
+\bottomrule
+\end{tabular}%
+}
+\end{minipage}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{State-inclusion matrix from the P0 audit. Runner availability enters the primary denominator through branch-common support; it is not an intrinsic requirement for O2O identity fragility.}
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}p{0.25\textwidth}p{0.18\textwidth}p{0.18\textwidth}p{0.15\textwidth}p{0.15\textwidth}@{}}
+\toprule
+State or condition & O2O identity fragility & O2M assigned-set Top-1 fragility & Margin & Dense boundary \\
+\midrule
+Base assigned identity present & Required & Required & Required & Required \\
+Base identity present / shifted identity absent & Fragility/event & Fragility/event & Not an endpoint event & First-departure event \\
+Base identity absent & Structural undefined/excluded & Structural undefined/excluded & Excluded & Structural undefined/excluded \\
+Runner absent & Intrinsic state defined; primary support excludes & Intrinsic state defined; primary support excludes & Undefined & Not required \\
+Runner available & Primary support eligible if both branches valid & Primary support eligible if both branches valid & Margin estimand defined if alternative exists & Not required \\
+O2M empty/nonempty states & Not an O2O identity requirement & Explicit structural states; empty Top-1 is undefined & Alternative/margin unavailable & Not applicable \\
 \bottomrule
 \end{tabularx}
 \end{table}

@@ -32,12 +32,12 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.22478277",
+      "identifier": "https://doi.org/10.5281/zenodo.22501134",
       "relation": "isIdenticalTo",
       "scheme": "doi",
       "resource_type": "software"
     }
   ],
-  "version": "3.2.0",
-  "notes": "Metadata for Git tag v3.2.0. Zenodo version DOI 10.5281/zenodo.22478277 and concept DOI 10.5281/zenodo.22478276 were archived on 2026-09-06."
+  "version": "3.2.1",
+  "notes": "Metadata for Git tag v3.2.1 and Zenodo version DOI 10.5281/zenodo.22501134."
 }

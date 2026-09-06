@@ -5519,7 +5519,7 @@ L 244.658465 287.623307
     <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="11.2248" y="168.586582" transform="rotate(-0 11.2248 168.586582)">c</text>
    </g>
    <g id="text_48">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="38.08" y="171.758569" transform="rotate(-0 38.08 171.758569)">Rank alignment is stronger than eligibility alignment</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="38.08" y="171.758569" transform="rotate(-0 38.08 171.758569)">Conditional associations on separate observed supports</text>
    </g>
    <g id="legend_3">
     <g id="LineCollection_7">
@@ -5927,7 +5927,7 @@ L 494.806929 287.623307
     <text style="font-weight: 700; font-size: 8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="261.373264" y="168.586582" transform="rotate(-0 261.373264 168.586582)">d</text>
    </g>
    <g id="text_67">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="288.228465" y="171.758569" transform="rotate(-0 288.228465 171.758569)">No stable incremental downstream diagnostic value</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Arial', sans-serif; text-anchor: start; fill: #222222" x="288.228465" y="171.758569" transform="rotate(-0 288.228465 171.758569)">Coverage-based miss: no stable diagnostic gain</text>
    </g>
    <g id="legend_4">
     <g id="LineCollection_17">

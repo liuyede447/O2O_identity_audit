@@ -1,0 +1,9 @@
+state_or_condition,o2o_identity_fragility,o2m_assigned_set_top1_fragility,dense_o2o_first_departure,margin_only,executable_interpretation
+base assigned identity present,required,required,required,required,Base identity is denominator-defining for identity fragility/first departure; margin also requires runner.
+base assigned identity unavailable,excluded/structural undefined,excluded/structural undefined,excluded/structural undefined,excluded,No base state to compare; counted separately before common support.
+shifted identity unavailable with base defined,event/fragility (identity differs),event/fragility (Top-1 differs if shifted rank null),first-departure event,not itself an event; margin at shifted state is not used for endpoint fragility,"Null shifted identity is a state departure, not an automatic undefined value."
+no legal shift,excluded,excluded,not observable beyond legal domain,excluded,No legal replay exists; per_gt row is not emitted by endpoint writer.
+O2M empty-set condition (o2m_rank null),not required for O2O intrinsic state; may be removed by common support,structural undefined for O2M assigned-set Top-1,not applicable to O2O,runner/alternative unavailable,Use exact executable field; positive_count==0 is a separate diagnostic and can coexist with rank.
+runner/positive alternative unavailable,"not intrinsic, but required indirectly by Table-1 common-valid support","not intrinsic, but required indirectly by Table-1 common-valid support",not required,required,Because common_valid_margin requires both O2O margin and O2M margin.
+margin unavailable,not intrinsic; causes common-valid exclusion,not intrinsic; causes common-valid exclusion,not required,undefined/excluded,Margin is a separate estimand.
+branch-common-valid restriction,Table-1 denominator restriction,Table-1 denominator restriction,not used,margin denominator restriction,Implemented as common_valid_margin==1.

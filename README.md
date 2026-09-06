@@ -1,6 +1,6 @@
 # Stress-Dependent Cardinal Assignment Boundaries — reproducibility package
 
-Article-matched release `v3.2.0` for **Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection**. The corresponding article source package is archived in Zenodo record `10.5281/zenodo.22478277`; the complete dense-grid records and checkpoint assets remain in the GitHub release. Concept DOI: `10.5281/zenodo.22478276`.
+Article-matched patch release `v3.2.1` for **Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection**. The corresponding article source package is archived in Zenodo record `10.5281/zenodo.22501134`; the complete dense-grid records and checkpoint assets remain in the GitHub release.
 
 This package measures native post-training assignment states under controlled geometric stress. It is read-only: no weights are updated and no detector-performance improvement or treatment effect is claimed. The article's primary mechanistic estimates are conditional on the audited seed-0 checkpoint; cross-dataset, archived-stage, detector-contract, and four-seed analyses are sensitivity or replication.
 
@@ -22,4 +22,4 @@ The historical Lockbox-v1 record is retained as governance and analyzer QA only:
 
 ## License and data
 
-Original code, derived audit data, and author-trained checkpoints are released under AGPL-3.0-only. AI-TOD-v2 and VisDrone images/annotations are not redistributed; obtain them from the official providers above and comply with their terms. The article-matched package is archived in Zenodo record `10.5281/zenodo.22478277`.
+Original code, derived audit data, and author-trained checkpoints are released under AGPL-3.0-only. AI-TOD-v2 and VisDrone images/annotations are not redistributed; obtain them from the official providers above and comply with their terms. The article-matched package is archived in Zenodo record `10.5281/zenodo.22501134`.

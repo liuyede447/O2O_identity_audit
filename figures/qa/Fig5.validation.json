@@ -6,9 +6,9 @@
     "o2m_top1_unique_positive": false
   },
   "outputs": {
-    "pdf": "3640db34c07a1d34b94b76c8c88629ba6147d943dde996a73b5f4d54d447b956",
-    "png": "bfbb112e230a13290a6ddacaa484fb3950cbed3cb99ef2f59337a7a8eb474639",
-    "svg": "cdfdaed3b775064513b4b96ea531f53fe6d6ad18ab1dc32b88eccd602d882f19"
+    "pdf": "ae8a9714ec3d326dfa5ed3ce52bbc61363a9fa61d0d8d58fa6370da90a1bae3a",
+    "png": "d23bad065a3afad6f9f812323165ecfbcf23d4cddfe59c916a112e7976a9d3b7",
+    "svg": "77c46d8412d15e1b31fe2d53bbf63173de70a05030306bbebe9b363860e8ac8a"
   },
   "resolved_font": {
     "family": "Arial",
@@ -20,5 +20,6 @@
   "warnings_preserved": [
     "K=0 retained",
     "support restriction and K standardisation are separated"
-  ]
+  ],
+  "article_patch": "FINAL-P0 artwork and support-layout update"
 }

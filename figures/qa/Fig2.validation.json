@@ -6,14 +6,15 @@
     "same_mechanism_claim": false
   },
   "outputs": {
-    ".pdf": "55a366e7a761a901a3d9dc97feda1d9f41879e1459297a18fb2e295d96cf1833",
-    ".png": "ad9c722806a7db5daa7ec4a10f7ddd8e9ba72758f498d15ca625f62d194ef47b",
-    ".svg": "25e6d43985d081acae7f9303f365e74c6f22be848d961f187d0ea06b1bde43db"
+    ".pdf": "ee34f35cdfabe56d04d6b4c0f39edbf52c9d00f1e8ea52397ae11b7e740357fe",
+    ".png": "6935c4d6bb3be8ccb5dc77f7907a8d0b28d35147f35778b9c70c0bb136d21cb7",
+    ".svg": "0b06f09653fda7861beb64d317a4f870a7a98990063ca67e5ca3ce4428bc0a18"
   },
   "resolved_font": {
     "family": "Arial",
     "path": "C:\\Windows\\Fonts\\arial.ttf"
   },
   "source_rows": 30,
-  "status": "PASS"
+  "status": "PASS",
+  "article_patch": "FINAL-P0 artwork and support-layout update"
 }

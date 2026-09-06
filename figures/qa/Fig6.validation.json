@@ -9,9 +9,9 @@
   },
   "observed_rows": 1593,
   "outputs": {
-    "pdf": "2e2264fb63a53a99286564f7febb87cabce0d268b32aabe65b3c4cbb983067e8",
-    "png": "6322b4556f7a9d658fd78073f0fb70d49b4be439fc0fbe465484d9e61db41e34",
-    "svg": "486ded2a906b9ea2cbed20700bc8f674df157ed9fae50c7dc07602ce637e7741"
+    "pdf": "9eea5ff6f859b620fd6f88d3cef48a8f3cb58890a9d36c2af6ab3a2960f5d865",
+    "png": "bfb959775f41430ef515c2bc4d3fe952c008d3c0c305b5ad7b480b9a7302e72c",
+    "svg": "16248ec3a68be0585f30b2290974ab23a2305f88bece98c4c7d5b2b153f19338"
   },
   "resolved_font": {
     "family": "Arial",
@@ -19,5 +19,6 @@
   },
   "source_addendum_used": true,
   "source_rows": 18,
-  "status": "PASS"
+  "status": "PASS",
+  "article_patch": ""
 }

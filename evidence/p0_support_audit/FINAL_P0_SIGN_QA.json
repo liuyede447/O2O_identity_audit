@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "transform": "estimate_new=-estimate_old; CI_low_new=-CI_high_old; CI_high_new=-CI_low_old",
+  "items": [
+    {
+      "metric": "fixed_jaccard",
+      "old": [
+        -4.19,
+        -4.89,
+        -3.5
+      ],
+      "new": [
+        4.19,
+        3.5,
+        4.89
+      ],
+      "pass": true
+    },
+    {
+      "metric": "fixed_retention",
+      "old": [
+        -2.26,
+        -2.78,
+        -1.78
+      ],
+      "new": [
+        2.26,
+        1.78,
+        2.78
+      ],
+      "pass": true
+    },
+    {
+      "metric": "fixed_top1_flip",
+      "old": [
+        -2.38,
+        -5.14,
+        0.42
+      ],
+      "new": [
+        2.38,
+        -0.42,
+        5.14
+      ],
+      "pass": true
+    },
+    {
+      "metric": "fixed_rank_only",
+      "old": [
+        -10.1,
+        -14.5,
+        -6.2
+      ],
+      "new": [
+        10.1,
+        6.2,
+        14.5
+      ],
+      "pass": true
+    },
+    {
+      "metric": "equiv_jaccard",
+      "old": [
+        5.91,
+        5.18,
+        6.64
+      ],
+      "new": [
+        -5.91,
+        -6.64,
+        -5.18
+      ],
+      "pass": true
+    },
+    {
+      "metric": "equiv_retention",
+      "old": [
+        4.93,
+        4.54,
+        5.31
+      ],
+      "new": [
+        -4.93,
+        -5.31,
+        -4.54
+      ],
+      "pass": true
+    },
+    {
+      "metric": "equiv_top1_flip",
+      "old": [
+        -12.8,
+        -16.02,
+        -9.33
+      ],
+      "new": [
+        12.8,
+        9.33,
+        16.02
+      ],
+      "pass": true
+    },
+    {
+      "metric": "equiv_rank_only",
+      "old": [
+        22.5,
+        18.39,
+        26.33
+      ],
+      "new": [
+        -22.5,
+        -26.33,
+        -18.39
+      ],
+      "pass": true
+    }
+  ],
+  "orientation_strings_found": {
+    "main": "16--32 minus 8--16",
+    "supplement": "16--32 minus 8--16",
+    "figure5": "16\u201332 minus 8\u201316 px contrast"
+  }
+}

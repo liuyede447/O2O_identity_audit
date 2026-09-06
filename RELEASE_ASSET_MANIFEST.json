@@ -1,6 +1,6 @@
 {
-  "version": "3.1.0",
-  "release_tag": "v3.1.0",
+  "version": "3.2.1",
+  "release_tag": "v3.2.1",
   "assets": [
     {
       "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
@@ -9,7 +9,7 @@
       "evidence_status": "discovery",
       "checkpoint_epoch": 280,
       "configured_epochs": 300,
-      "publication_status": "unchanged from public v3.0.0; article-matched v3.1.0 release",
+      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
       "staging_method": "hardlink",
       "media_type": "application/octet-stream"
@@ -21,7 +21,7 @@
       "evidence_status": "not used for a primary manuscript estimate",
       "checkpoint_epoch": 280,
       "configured_epochs": 300,
-      "publication_status": "unchanged from public v3.0.0; article-matched v3.1.0 release",
+      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
       "staging_method": "hardlink",
       "media_type": "application/octet-stream"
@@ -33,7 +33,7 @@
       "evidence_status": "sensitivity/replication",
       "checkpoint_epoch": 280,
       "configured_epochs": 300,
-      "publication_status": "unchanged from public v3.0.0; article-matched v3.1.0 release",
+      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
       "staging_method": "hardlink",
       "media_type": "application/octet-stream"
@@ -45,7 +45,7 @@
       "evidence_status": "sensitivity/replication",
       "checkpoint_epoch": 280,
       "configured_epochs": 300,
-      "publication_status": "unchanged from public v3.0.0; article-matched v3.1.0 release",
+      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
       "staging_method": "hardlink",
       "media_type": "application/octet-stream"
@@ -57,7 +57,7 @@
       "evidence_status": "active v3 dense-grid source",
       "checkpoint_epoch": "n/a",
       "configured_epochs": "n/a",
-      "publication_status": "article-matched v3.1.0 release; gzip-compressed complete curve",
+      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 178521298,
       "staging_method": "hardlink",
       "media_type": "text/csv",

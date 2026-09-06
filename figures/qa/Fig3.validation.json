@@ -49,17 +49,17 @@
       "pdf": {
         "bytes": 56576,
         "path": "figures_final/draft/Fig3.pdf",
-        "sha256": "72b77767a5d47e9de46021af43e49c4dacd23a33e9106684b96d4a40172bb01a"
+        "sha256": "9ede0163d839d64756b7fa508fc57a0195f29cc656fc774dd0db85055ac4b510"
       },
       "png": {
-        "bytes": 402642,
+        "bytes": 402112,
         "path": "figures_final/draft/Fig3.png",
-        "sha256": "e7925303cfa37ca408561d285b59821ba5c15c52d0a704b909247acf60df2828"
+        "sha256": "379c2f6b4532dfd590502e01e813ba572d4fa1087656126d60dda5ce7df2101d"
       },
       "svg": {
-        "bytes": 59816,
+        "bytes": 59814,
         "path": "figures_final/draft/Fig3.svg",
-        "sha256": "582b8e5a1dd3d0db393bd350201841b4b1f2b3cb548f934261b7632e76f1a10e"
+        "sha256": "d3f6e405f8aff4b3698d32e25c87fadee77711eb09f866b6b9f20af18ad95b27"
       }
     },
     "pdf_fonts": {
@@ -148,5 +148,6 @@
     "status": "PASS"
   },
   "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
-  "status": "PASS"
+  "status": "PASS",
+  "article_patch": "FINAL-P0 artwork and support-layout update"
 }
