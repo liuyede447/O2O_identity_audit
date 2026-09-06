@@ -4,7 +4,7 @@ Status date: 2026-09-06. Article-matched GitHub v3.2.0 and Zenodo archival are c
 
 ## Current manuscript wording
 
-Code, derived data, figure-source tables, the complete 1/1024 dense-grid records, and four protocol-matched checkpoints corresponding to this article are archived in GitHub release `v3.2.0` (<https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0>) and Zenodo DOI <https://doi.org/10.5281/zenodo.22478277> (concept DOI <https://doi.org/10.5281/zenodo.22478276>). Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers. Raw prediction dumps are not redistributed.
+Code, derived data, figure-source tables, the complete 1/1024 dense-grid records, and four protocol-matched checkpoints corresponding to this article are available from GitHub release `v3.2.0` (<https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.2.0>). The corresponding article source package is archived in Zenodo DOI <https://doi.org/10.5281/zenodo.22478277> (concept DOI <https://doi.org/10.5281/zenodo.22478276>). Raw AI-TOD-v2 and VisDrone images and annotations are not redistributed and must be obtained from their providers. Raw prediction dumps are not redistributed.
 
 ## Verified release facts
 
