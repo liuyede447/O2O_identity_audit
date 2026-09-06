@@ -8,8 +8,8 @@
   "level_2_dataset_commands": "Blocked until AI-TOD-v2 and VisDrone are obtained under provider terms; no pixels are redistributed.",
   "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved.",
   "article_matched_pdf_sha256": {
-    "main.pdf": "0c87a31076972118151fde712c9cdb63ef3dec1a2c2826b3b582f95c72d844cb",
-    "supplementary.pdf": "8cbc9c26d36702542715406f5a2cd70bf4fbd7af0614bcd6cac0d9291e9254bf"
+    "main.pdf": "c7df9ddcc37f37df7acf96f10f5ac1554507dde95b46290a7cde6db64e778eb1",
+    "supplementary.pdf": "3618dbdb8aa318441d27aa60cdf447ca6e3e18cfa6596e73358de5c89e5838e0"
   },
   "level_1_required_qa_files_present": true,
   "github_release_asset_verification": {
