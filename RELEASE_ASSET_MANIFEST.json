@@ -51,16 +51,17 @@
       "media_type": "application/octet-stream"
     },
     {
-      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv",
-      "sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
+      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d",
       "role": "complete 1/1024 rank-set curve; 7,593,288 rows",
       "evidence_status": "active v3 dense-grid source",
       "checkpoint_epoch": "n/a",
       "configured_epochs": "n/a",
-      "publication_status": "unchanged from public v3.0.0; article-matched v3.1.0 release",
-      "bytes": 1411448003,
+      "publication_status": "article-matched v3.1.0 release; gzip-compressed complete curve",
+      "bytes": 178521298,
       "staging_method": "hardlink",
-      "media_type": "text/csv"
+      "media_type": "text/csv",
+      "decompressed_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33"
     }
   ]
 }

@@ -33,10 +33,13 @@
   "repository_file_count": 722,
   "release_assets": [
     {
-      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv",
-      "bytes": 1411448003,
-      "sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
-      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\boundary_full_grid_1024_o2m_rank_set_radius_curve.csv"
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
+      "bytes": 178521298,
+      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\boundary_full_grid_1024_o2m_rank_set_radius_curve.csv",
+      "compression": "gzip",
+      "decompressed_name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv",
+      "decompressed_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33"
     },
     {
       "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
@@ -74,5 +77,6 @@
     "E3_ZERO_CONFLICT_REPORT": "PASS",
     "E4_PDF_PREFLIGHT_E6": "PASS",
     "clean_environment_smoke": "PASS"
-  }
+  },
+  "curve_delivery_note": "The complete 1/1024 curve is uploaded as gzip-compressed CSV; decompressing yields the raw SHA-256 listed above."
 }
