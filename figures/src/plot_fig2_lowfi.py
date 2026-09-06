@@ -305,7 +305,12 @@ def render(rows: list[dict]) -> None:
             capsize=2,
             label="Fixed" if filled else "Eq.-area",
         )
-    axc.text(4.5, axc.get_ylim()[0] + 0.06 * np.ptp(axc.get_ylim()), "No archive:\nepochs 100–280", ha="center", va="bottom", fontsize=FONT["annotation"], color=MUTED)
+    # Keep the archive gap annotation in the panel's upper whitespace, away from
+    # the 80/300 ticks and the final checkpoint marker.
+    y_top = axc.get_ylim()[1]
+    axc.text(0.35, y_top - 0.25, "No archive:\nepochs 100–280",
+             ha="left", va="top", fontsize=FONT["minimum"], color=MUTED)
+    axc.plot([4.05, 4.95], [y_top - 1.95, y_top - 1.95], color=MUTED, lw=0.8)
     axc.set_title("Physically archived checkpoints", loc="left", pad=4)
     axc.set_xlabel("Archived checkpoint")
     axc.set_ylabel("Paired contrast (pp)")

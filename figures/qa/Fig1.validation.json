@@ -72,10 +72,10 @@
       "status": "PASS",
       "detail": {
         "pixels": [
-          4205,
-          2234
+          4206,
+          2235
         ],
-        "effective_ppi_at_178mm": 600.0393258426966
+        "effective_ppi_at_178mm": 600.1820224719102
       }
     },
     {
@@ -100,7 +100,7 @@
       "detail": {
         "minimum_pt": 7.0,
         "maximum_pt": 8.0,
-        "text_shapes": 62
+        "text_shapes": 60
       }
     },
     {

@@ -119,7 +119,7 @@
     "csv": "figures_final/source_data/fig3_source.csv",
     "csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
     "json": "figures_final/source_data/fig3_source.json",
-    "json_sha256": "a0923330caa4d483fbc7e7042d10273ab325ebc454eb2baf211364e3fe5b91bd"
+    "json_sha256": "f29d753f36b6ed38e97ea52efcdc2a41b5e3c0e6c4ae2e8f739bd35ba132a72e"
   },
   "source_validation": {
     "actual_panel_rows": {

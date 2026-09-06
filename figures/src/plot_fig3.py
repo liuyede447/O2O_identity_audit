@@ -361,8 +361,8 @@ def render_panel_a(ax: Any, data: pd.DataFrame) -> None:
     ax.set_xlim(-4.5, 23)
     ax.set_xlabel("O2O scale gap: 8–16 minus 16–32 px (pp)")
     ax.set_title("Eligibility-lock sensitivity", loc="left", pad=4)
-    ax.text(0.01, 0.04, "Lock-support estimand",
-            transform=ax.transAxes, ha="left", va="bottom", fontsize=FONT["minimum"], color=MUTED)
+    ax.text(0.01, 0.86, "Lock-support estimand",
+            transform=ax.transAxes, ha="left", va="top", fontsize=FONT["minimum"], color=MUTED)
     handles = [
         Line2D([], [], marker="o", color=BRANCH["O2O"], markerfacecolor=BRANCH["O2O"], linestyle="none", label="Native"),
         Line2D([], [], marker="o", color=MECHANISM["Eligibility"], markerfacecolor=MECHANISM["Eligibility"], linestyle="none", label="Eligibility locked"),

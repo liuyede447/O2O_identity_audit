@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its derived audit data, cite the associated manuscript and this release."
 title: "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection"
 type: software
-version: "3.2.2"
-doi: "10.5281/zenodo.22523352"
+version: "3.2.3"
+doi: "10.5281/zenodo.22537930"
 repository-code: "https://github.com/liuyede447/O2O_identity_audit"
 url: "https://github.com/liuyede447/O2O_identity_audit"
 license: AGPL-3.0-only

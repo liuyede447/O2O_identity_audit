@@ -1,0 +1,250 @@
+{
+  "artifact_role": "figure_only_primary_checkpoint_trace_not_scientific_estimate",
+  "case_selection": "within one frozen selected image: maximum nonnegative-margin stable case, minimum nonnegative-margin fragile case, first base-active runner-undefined case",
+  "checkpoint": "release_candidates/O2O_identity_e300_checkpoints_20260901/checkpoints/yolo26s_aitodv2_e300_seed0_best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "dataset_index": 51,
+  "fixed_replay_source": "results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv",
+  "fixed_replay_source_sha256": "930a50dadb0abdfdcede0de344cb93ed2f68c0c5a4c1f183a2f70ddde8be87f8",
+  "image_id": "0000170_00401_d_0000001__160_0",
+  "input_hw": [
+    800,
+    800
+  ],
+  "records": [
+    {
+      "base": {
+        "active": {
+          "alignment_score": 4.037313556182198e-05,
+          "anchor_xy": [
+            420.0,
+            444.0
+          ],
+          "candidate": 5552,
+          "decoded_xyxy": [
+            409.7957458496094,
+            429.7852783203125,
+            442.4937744140625,
+            456.06451416015625
+          ],
+          "stride": 8
+        },
+        "margin": 0.9990909125028716,
+        "runner": {
+          "alignment_score": 3.670171366820796e-08,
+          "anchor_xy": [
+            420.0,
+            436.0
+          ],
+          "candidate": 5452,
+          "decoded_xyxy": [
+            406.3549499511719,
+            420.47149658203125,
+            448.9539794921875,
+            448.1000061035156
+          ],
+          "stride": 8
+        }
+      },
+      "case": "Stable",
+      "class_id": 6,
+      "direction": "down",
+      "frozen_row": {
+        "active": 5552,
+        "o2o_flip": 0,
+        "runner": 5452,
+        "shift_active": 5552
+      },
+      "gt_id": 40,
+      "gt_xyxy": [
+        416.0,
+        430.0000305175781,
+        427.0,
+        455.0000305175781
+      ],
+      "shift": {
+        "active": {
+          "alignment_score": 4.030341733596288e-05,
+          "anchor_xy": [
+            420.0,
+            444.0
+          ],
+          "candidate": 5552,
+          "decoded_xyxy": [
+            409.7957458496094,
+            429.7852783203125,
+            442.4937744140625,
+            456.06451416015625
+          ],
+          "stride": 8
+        },
+        "margin": 0.9989573551198725,
+        "runner": {
+          "alignment_score": 4.202115277962548e-08,
+          "anchor_xy": [
+            420.0,
+            452.0
+          ],
+          "candidate": 5652,
+          "decoded_xyxy": [
+            407.911865234375,
+            437.735107421875,
+            446.77801513671875,
+            468.6017761230469
+          ],
+          "stride": 8
+        }
+      },
+      "shift_gt_xyxy": [
+        416.0,
+        431.0000305175781,
+        427.0,
+        456.0000305175781
+      ]
+    },
+    {
+      "base": {
+        "active": {
+          "alignment_score": 0.043992780148983,
+          "anchor_xy": [
+            520.0,
+            504.0
+          ],
+          "candidate": 11582,
+          "decoded_xyxy": [
+            511.026123046875,
+            487.4058837890625,
+            526.6475219726562,
+            514.7091674804688
+          ],
+          "stride": 16
+        },
+        "margin": 0.12541003971018036,
+        "runner": {
+          "alignment_score": 0.0384756438434124,
+          "anchor_xy": [
+            516.0,
+            500.0
+          ],
+          "candidate": 6264,
+          "decoded_xyxy": [
+            511.2171936035156,
+            487.523681640625,
+            524.338623046875,
+            513.4573364257812
+          ],
+          "stride": 8
+        }
+      },
+      "case": "Fragile",
+      "class_id": 6,
+      "direction": "up",
+      "frozen_row": {
+        "active": 11582,
+        "o2o_flip": 1,
+        "runner": 6264,
+        "shift_active": 6264
+      },
+      "gt_id": 28,
+      "gt_xyxy": [
+        510.0,
+        489.0,
+        528.0,
+        515.0
+      ],
+      "shift": {
+        "active": {
+          "alignment_score": 0.05864264443516731,
+          "anchor_xy": [
+            516.0,
+            500.0
+          ],
+          "candidate": 6264,
+          "decoded_xyxy": [
+            511.2171936035156,
+            487.523681640625,
+            524.338623046875,
+            513.4573364257812
+          ],
+          "stride": 8
+        },
+        "margin": 0.1464930393739632,
+        "runner": {
+          "alignment_score": 0.05005190521478653,
+          "anchor_xy": [
+            520.0,
+            504.0
+          ],
+          "candidate": 11582,
+          "decoded_xyxy": [
+            511.026123046875,
+            487.4058837890625,
+            526.6475219726562,
+            514.7091674804688
+          ],
+          "stride": 16
+        }
+      },
+      "shift_gt_xyxy": [
+        510.0,
+        488.0,
+        528.0,
+        514.0
+      ]
+    },
+    {
+      "base": {
+        "active": {
+          "alignment_score": 0.09717386960983276,
+          "anchor_xy": [
+            244.0,
+            316.0
+          ],
+          "candidate": 3930,
+          "decoded_xyxy": [
+            243.96559143066406,
+            312.6734313964844,
+            250.92198181152344,
+            324.85382080078125
+          ],
+          "stride": 8
+        },
+        "margin": null,
+        "runner": null
+      },
+      "case": "Undefined",
+      "class_id": 6,
+      "direction": "right",
+      "frozen_row": {
+        "active": 3930,
+        "o2o_flip": 1,
+        "runner": null,
+        "shift_active": null
+      },
+      "gt_id": 17,
+      "gt_xyxy": [
+        243.0,
+        312.0,
+        251.0,
+        324.0
+      ],
+      "shift": {
+        "active": null,
+        "margin": null,
+        "runner": null
+      },
+      "shift_gt_xyxy": [
+        244.0,
+        312.0,
+        252.0,
+        324.0
+      ]
+    }
+  ],
+  "scientific_results_recomputed": false,
+  "selection_source": "results/five_experiment_upgrade_20260830/anatomy_fixed_1px_v2/selected_images.csv",
+  "selection_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "source_image": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+  "source_image_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+  "status": "PASS"
+}

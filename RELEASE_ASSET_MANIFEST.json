@@ -1,67 +1,32 @@
 {
-  "version": "3.2.2",
-  "release_tag": "v3.2.2",
+  "version": "3.2.3",
+  "tag": "v3.2.3",
+  "zenodo_doi": "10.5281/zenodo.22537930",
   "assets": [
     {
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
+      "bytes": 178521298,
+      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d"
+    },
+    {
       "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
-      "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
-      "role": "primary seed-0 discovery checkpoint",
-      "evidence_status": "discovery",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.2 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
     },
     {
       "name": "yolo26s_aitodv2_seed1_best_epoch280.pt",
-      "sha256": "d9432d90e9b7c024456a4bca94da8e5e805b03beeedb6158052792e3e755b549",
-      "role": "protocol-matched additional seed checkpoint",
-      "evidence_status": "not used for a primary manuscript estimate",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.2 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "d9432d90e9b7c024456a4bca94da8e5e805b03beeedb6158052792e3e755b549"
     },
     {
       "name": "yolo26s_aitodv2_seed2_best_epoch280.pt",
-      "sha256": "d83f86f570393d9e573d9c93900322bc4e8fca687a40233a108e97832d8e15f6",
-      "role": "multiseed sensitivity checkpoint",
-      "evidence_status": "sensitivity/replication",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.2 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "d83f86f570393d9e573d9c93900322bc4e8fca687a40233a108e97832d8e15f6"
     },
     {
       "name": "yolo26s_aitodv2_seed3_best_epoch280.pt",
-      "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2",
-      "role": "multiseed sensitivity checkpoint",
-      "evidence_status": "sensitivity/replication",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.2 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
-    },
-    {
-      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
-      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d",
-      "role": "complete 1/1024 rank-set curve; 7,593,288 rows",
-      "evidence_status": "active v3 dense-grid source",
-      "checkpoint_epoch": "n/a",
-      "configured_epochs": "n/a",
-      "publication_status": "article-matched v3.2.2 release; frozen asset retained byte-for-byte",
-      "bytes": 178521298,
-      "staging_method": "hardlink",
-      "media_type": "text/csv",
-      "decompressed_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33"
+      "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
     }
   ]
 }

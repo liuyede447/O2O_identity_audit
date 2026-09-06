@@ -66,19 +66,19 @@
   "output_validation": {
     "outputs": {
       "pdf": {
-        "bytes": 529497,
+        "bytes": 530730,
         "path": "figures_final/draft/FigS1.pdf",
-        "sha256": "90682c7854c0102c038106f026b1dc423c56aae2a4eedc5a90286ab40e4a7e89"
+        "sha256": "07b39fa27e219ddf494dcf19d856a4e2ed7f0ce6d4fcae72c81246978686b6f1"
       },
       "png": {
-        "bytes": 652814,
+        "bytes": 677375,
         "path": "figures_final/draft/FigS1.png",
-        "sha256": "d4e9f357057018fc923b2e75722a5d0cea9353d57afe2e6669f1189732fa7e1b"
+        "sha256": "e3b81318b66f48c5495dc6bcc9215a911b72012e1e3450419fa311439e527e11"
       },
       "svg": {
-        "bytes": 3079002,
+        "bytes": 3079026,
         "path": "figures_final/draft/FigS1.svg",
-        "sha256": "d707aa4ca6f44996da68a883d225bec15c25c38302521d7740642473bfd86a88"
+        "sha256": "146980748cd6881b33ec8aebadf48e564b0c08da9b18059ffba4f7cf5a68e38a"
       }
     },
     "pdf_fonts": {
@@ -313,7 +313,7 @@
     "csv": "figures_final/source_data/figs1_source.csv",
     "csv_sha256": "c5d4f0b651ce46e97fa7d1bb728d7c203cb5b27a02aad3b6fb2d243e94bb4a94",
     "json": "figures_final/source_data/figs1_source.json",
-    "json_sha256": "04ee168e33a4c3834fcc052fa2a76985eeed1886c0abfe063f61a5806ae9699c"
+    "json_sha256": "2f5e9520cf54dfba33b8b40cda36edddd6bcf087bbd40b27d5340261d28b8909"
   },
   "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
   "status": "PASS"

@@ -1,116 +1,59 @@
 {
-  "status": "ARTICLE_MATCHED_V3.2.2_READY",
-  "version": "3.2.2",
-  "tag": "v3.2.2",
-  "article_title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection",
+  "status": "ARTICLE_MATCHED_V3.2.3_READY",
+  "version": "3.2.3",
+  "tag": "v3.2.3",
+  "zenodo_doi": "10.5281/zenodo.22537930",
+  "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
-    "environment/dependencies",
-    "reproduction README",
-    "final_evidence_v4",
-    "claim-to-evidence map",
+    "derived data",
     "generated numerical tables",
-    "figure source CSV/JSON",
-    "image-free final figure PDFs/SVGs",
-    "Supplement source tables",
-    "complete 1/1024 dense-grid curve asset",
-    "four protocol-matched checkpoints",
-    "checkpoint SHA-256 manifest",
-    "permitted sampling manifests",
-    "detector/checkpoint provenance",
-    "analysis support map",
-    "numerical QA",
-    "manuscript reproduction commands"
+    "Figure 2-6 source/render files",
+    "final_evidence_v4",
+    "evidence ledger",
+    "instrument_frozen",
+    "four checkpoints",
+    "complete 1/1024 dense-grid asset",
+    "SHA-256 manifests"
   ],
-  "third_party_exclusions": [
-    "AI-TOD-v2 images and annotations",
-    "VisDrone images and annotations",
-    "image-bearing Figure 1/Figure S1 renders",
+  "explicit_exclusions": [
+    "main.tex",
+    "supplementary.tex",
+    "main.pdf",
+    "supplementary.pdf",
+    "author submission files",
+    "AI-TOD-v2 images/annotations",
+    "VisDrone images/annotations",
+    "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "lockbox_v1": "historical/no-verdict governance record included",
-  "lockbox_v2": "not included as a scientific artifact; abandoned before sample authorization/outcome access",
-  "repository_file_count": 743,
+  "repository_file_count": 782,
   "release_assets": [
     {
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
+      "bytes": 178521298,
+      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d"
+    },
+    {
       "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
-      "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
-      "role": "primary seed-0 discovery checkpoint",
-      "evidence_status": "discovery",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
     },
     {
       "name": "yolo26s_aitodv2_seed1_best_epoch280.pt",
-      "sha256": "d9432d90e9b7c024456a4bca94da8e5e805b03beeedb6158052792e3e755b549",
-      "role": "protocol-matched additional seed checkpoint",
-      "evidence_status": "not used for a primary manuscript estimate",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "d9432d90e9b7c024456a4bca94da8e5e805b03beeedb6158052792e3e755b549"
     },
     {
       "name": "yolo26s_aitodv2_seed2_best_epoch280.pt",
-      "sha256": "d83f86f570393d9e573d9c93900322bc4e8fca687a40233a108e97832d8e15f6",
-      "role": "multiseed sensitivity checkpoint",
-      "evidence_status": "sensitivity/replication",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
+      "sha256": "d83f86f570393d9e573d9c93900322bc4e8fca687a40233a108e97832d8e15f6"
     },
     {
       "name": "yolo26s_aitodv2_seed3_best_epoch280.pt",
-      "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2",
-      "role": "multiseed sensitivity checkpoint",
-      "evidence_status": "sensitivity/replication",
-      "checkpoint_epoch": 280,
-      "configured_epochs": 300,
-      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
       "bytes": 60231446,
-      "staging_method": "hardlink",
-      "media_type": "application/octet-stream"
-    },
-    {
-      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz",
-      "sha256": "bf0b4268292c156aa1938d1f045fc6db73a27d64228e0b30e13c14d6aa02bb3d",
-      "role": "complete 1/1024 rank-set curve; 7,593,288 rows",
-      "evidence_status": "active v3 dense-grid source",
-      "checkpoint_epoch": "n/a",
-      "configured_epochs": "n/a",
-      "publication_status": "article-matched v3.2.1 release; frozen asset retained byte-for-byte",
-      "bytes": 178521298,
-      "staging_method": "hardlink",
-      "media_type": "text/csv",
-      "decompressed_sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33"
+      "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
     }
   ],
-  "manuscript_pdf_sha256": {
-    "main.pdf": "ab88b725cbc6ac6bc2b2e9ed40debdc6b36cbb624d10cb57f6b75e844f112744",
-    "supplementary.pdf": "97fa3311969e88a15afbd39dfd55c73a1d1b257451d51d663d2ec9248e0d0545"
-  },
-  "evidence_v4_manifest_sha256": "00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24",
-  "author_approval_source": "docs/AUTHOR_RELEASE_APPROVAL_RECORD.md",
-  "release_asset_manifest": "RELEASE_ASSET_MANIFEST.json",
-  "preconditions": {
-    "E3_ZERO_CONFLICT_REPORT": "PASS",
-    "E4_PDF_PREFLIGHT_E6": "PASS",
-    "FINAL_P0_layout_QA": "PASS"
-  },
-  "curve_delivery_note": "The complete 1/1024 curve is uploaded as gzip-compressed CSV release asset; decompressing yields the raw SHA-256 listed in RELEASE_ASSET_MANIFEST.json.",
-  "zenodo_doi": "10.5281/zenodo.22523352",
-  "zenodo_concept_doi": "10.5281/zenodo.22501133",
-  "article_source_zip": "article_source_v3.2.1.zip",
-  "notes": "This manifest excludes cover letter, highlights submission files, Editorial Manager forms, reviewer suggestions, signatures, and account screenshots.",
-  "release_commit_note": "Prepared from immutable v3.2.0 commit with FINAL-P0 editorial/artwork/support updates; frozen scientific assets unchanged.",
-  "zenodo_target_status": "reserved; publish corresponding Zenodo version after GitHub release"
+  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; DOI is reserved for this package and will be backfilled into the manuscript later."
 }

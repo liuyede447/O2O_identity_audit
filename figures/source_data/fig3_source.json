@@ -1,6 +1,6 @@
 {
   "addendum_path": "figures_final/FIGURE_EVIDENCE_ADDENDUM.json",
-  "addendum_sha256": "b6ba417f67f94c7b74a20702261edb234e6e08632ab75a9f062723e49a11d406",
+  "addendum_sha256": "851a589591e1261fa2a9498c57f847156db10b794ff23cd7b761d948ed48caa0",
   "fig3_source_csv": "figures_final/source_data/fig3_source.csv",
   "fig3_source_csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
   "figure": "Figure 3",
@@ -12,7 +12,7 @@
     "observational_subset_as_causal_proof": false
   },
   "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
-  "manifest_sha256": "0e0bddeecca8e9b05ee1c3ff99085da73286e4762124d103c4f72f9b8ec125ce",
+  "manifest_sha256": "9f1f4c3e12dbcf6f1319d42fff19effb54fe3484328133179f5394f620d6bf30",
   "panel_support": {
     "Fig3a": {
       "bootstrap_repetitions": 5000,
@@ -209,12 +209,12 @@
       "panel_status": "PASS",
       "point_estimate_columns": [
         "pre-conflict winner scale gap",
-        "loss-active scale gap",
+        "final assigned scale gap",
         "paired difference",
         "definition disagreement"
       ],
       "sample_support": "Frozen outcome-blind stratified 300-image discovery sample",
-      "scientific_question": "How does pre-conflict rank state compare with final loss-active O2O identity?",
+      "scientific_question": "How does pre-conflict rank state compare with the final post-conflict assigned O2O identity?",
       "seed": {
         "model": 0,
         "selection": 20260823

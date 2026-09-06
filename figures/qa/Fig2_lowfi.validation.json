@@ -1,0 +1,19 @@
+{
+  "interpretation_guards": {
+    "architecture_generalisation_claim": false,
+    "archived_stage_interpolation": false,
+    "continuous_dose_response_claim": false,
+    "same_mechanism_claim": false
+  },
+  "outputs": {
+    ".pdf": "fe8fa32bc2f4fa7a3c427f56c70ff701ee5986297e5ff3b1b4e9c417e9e1eebe",
+    ".png": "0dfddc764c9667835dd294fcb56333bd289e80202f5da4323cdd9c8aa8315358",
+    ".svg": "0c0820d4783f201aa417abfcafc07bfdf5a8cab0612ec1833620c939af21405e"
+  },
+  "resolved_font": {
+    "family": "Arial",
+    "path": "C:\\Windows\\Fonts\\arial.ttf"
+  },
+  "source_rows": 30,
+  "status": "LOW_FIDELITY_RENDERED"
+}

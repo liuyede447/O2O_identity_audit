@@ -250,11 +250,11 @@ def render(rows: list[dict]) -> None:
     axb.set_yticks(ybase, metric_order)
     axb.set_xlabel("16–32 minus 8–16 px contrast (pp)")
     axb.set_title("Native Rank-Set contrasts", loc="left", pad=4)
-    axb.text(0.985, 0.88, "SET PERSISTENCE", transform=axb.transAxes,
-             ha="right", va="center", fontsize=FONT["minimum"],
+    axb.text(0.02, 0.93, "SET PERSISTENCE", transform=axb.transAxes,
+             ha="left", va="center", fontsize=FONT["minimum"],
              color=MUTED, fontweight="bold")
-    axb.text(0.985, 0.18, "RANK TURNOVER", transform=axb.transAxes,
-             ha="right", va="center", fontsize=FONT["minimum"],
+    axb.text(0.02, 0.42, "RANK TURNOVER", transform=axb.transAxes,
+             ha="left", va="center", fontsize=FONT["minimum"],
              color=MUTED, fontweight="bold")
     axb.legend(loc="lower right", bbox_to_anchor=(1.0, 1.01), ncol=2,
                borderaxespad=0.0, columnspacing=0.8, handletextpad=0.35)
