@@ -2,8 +2,8 @@
   "bootstrap": {
     "count_standardization": {
       "interval": "percentile 95%",
-      "replicates": 2000,
-      "seed": 20260901,
+      "replicates": 5000,
+      "seed": 20260905,
       "unit": "image cluster",
       "within": "outcome-blind sampling stratum"
     },
@@ -35,17 +35,17 @@
     }
   },
   "source_csv": "figures_final/source_data/fig5_source.csv",
-  "source_csv_sha256": "6a15ed93a17f275f454c8e8fd90add06453702494059229220f5201da932b1bd",
+  "source_csv_sha256": "53a34d4952239559d04cb87932daccba93138e0f405dfe758fa6af84c68670dc",
   "sources": {
     "count_strata": {
       "authority": "SOURCE_ADDENDUM",
-      "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+      "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
       "sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365"
     },
     "count_summary": {
       "authority": "SOURCE_ADDENDUM",
-      "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
-      "sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25"
+      "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+      "sha256": "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f"
     },
     "rank_equivalent": {
       "authority": "EV-RANK-SET-NORMALIZED-V1",
@@ -61,7 +61,7 @@
   "status": "SOURCE_BOUND_WITH_ADDENDUM",
   "warnings": [
     "K=0 is retained in the distribution although full_common_support begins at K=1.",
-    "Crude points and K=3-7 standardized estimates use different supports.",
+    "Full-support crude, overlap-support crude, and overlap-support standardized estimates are shown separately.",
     "Positive-count controls are registered as a figure-only SOURCE_ADDENDUM, not a new final_evidence_v3 entry."
   ]
 }

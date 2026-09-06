@@ -2,7 +2,7 @@
   "addendum_path": "figures_final/FIGURE_EVIDENCE_ADDENDUM.json",
   "addendum_sha256": "b6ba417f67f94c7b74a20702261edb234e6e08632ab75a9f062723e49a11d406",
   "fig3_source_csv": "figures_final/source_data/fig3_source.csv",
-  "fig3_source_csv_sha256": "47930e3d9c63845d82814548f59f37d74602a011f5dd15fe486f3ad180b301da",
+  "fig3_source_csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
   "figure": "Figure 3",
   "interpretation_guards": {
     "any_stage_stacked": false,
@@ -12,7 +12,7 @@
     "observational_subset_as_causal_proof": false
   },
   "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
-  "manifest_sha256": "3f54c91a1f20a40ae37da5d4b50936907d891ce6c2ac6e32c27c08f0d5923907",
+  "manifest_sha256": "0e0bddeecca8e9b05ee1c3ff99085da73286e4762124d103c4f72f9b8ec125ce",
   "panel_support": {
     "Fig3a": {
       "bootstrap_repetitions": 5000,

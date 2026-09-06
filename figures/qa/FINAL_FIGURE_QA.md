@@ -1,13 +1,13 @@
 # Final figure QA
 
 - Status: **PASS**
-- Approval state: **AUTHOR_APPROVED_INTEGRATED_RELEASE_READY**
+- Approval state: **INTEGRATED_IN_AUTHORITATIVE_MANUSCRIPT_AWAITING_FINAL_AUTHOR_APPROVAL**
 - Science frozen: **true**
 - Manuscript figures replaced: **true**
 
 | Figure | PDF size (mm) | PNG pixels | Effective PPI | Local QA |
 |---|---:|---:|---:|---|
-| Fig1 | 178.01 × 94.53 | 4205 × 2234 | 600.0 | PASS |
+| Fig1 | 178.01 × 94.53 | 4206 × 2235 | 600.1 | PASS |
 | Fig2 | 178.00 × 116.00 | 4204 × 2740 | 599.9 | PASS |
 | Fig3 | 178.00 × 130.00 | 4204 × 3070 | 599.9 | PASS |
 | Fig4 | 178.00 × 132.00 | 4204 × 3118 | 599.9 | PASS |
@@ -17,4 +17,4 @@
 
 Failures: **0**
 
-This package is author-approved, integrated in the authoritative manuscript and Supplement, preserves the frozen scientific evidence, and is ready for release.
+This package is integrated in the authoritative manuscript and Supplement, preserves the frozen scientific evidence, and awaits final author approval.

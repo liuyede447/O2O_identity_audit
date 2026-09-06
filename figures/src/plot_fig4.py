@@ -167,7 +167,7 @@ def build_rows(panels: dict[str, dict[str, Any]], verified: list[dict[str, str]]
                 raise RuntimeError(f"RMCBD support row not unique for {size_key}/{branch_key}")
             support_lookup[(size_key, branch_key)] = match.iloc[0].to_dict()
 
-    # Panel a: only the final loss-active O2O and assigned-positive O2M definitions.
+    # Panel a: only the final post-conflict assigned O2O and assigned-positive O2M definitions.
     for size_key, size_label in SIZE_GROUPS[1:]:
         for branch_key, branch_label in (("o2o", "O2O identity"),
                                          ("o2m_assigned_positive", "O2M assigned Top-1 state")):
@@ -318,7 +318,7 @@ def render_panel_a(fig: Any, spec: Any, data: pd.DataFrame) -> list[Any]:
     axes = [fig.add_subplot(inner[0, index]) for index in range(2)]
     for ax, (size_key, size_title) in zip(axes, SIZE_GROUPS[1:]):
         subset = data[(data.panel == "a") & (data.size_group == size_key)]
-        step_band(ax, subset[subset.estimand == "o2o"], color=BRANCH["O2O"], label="O2O loss-active ID")
+        step_band(ax, subset[subset.estimand == "o2o"], color=BRANCH["O2O"], label="O2O assigned ID")
         step_band(ax, subset[subset.estimand == "o2m_assigned_positive"], color=BRANCH["O2M"],
                   label="O2M assigned-set Top-1")
         ax.set_xlim(0, 0.128)
@@ -328,7 +328,7 @@ def render_panel_a(fig: Any, spec: Any, data: pd.DataFrame) -> list[Any]:
         ax.set_title(size_title, loc="left", pad=3)
         ax.set_xlabel("Cardinal distance r")
         finish_axes(ax)
-    axes[0].set_ylabel("Native-state survival S(r)")
+    axes[0].set_ylabel("First-departure survival S(r)")
     axes[1].tick_params(axis="y", labelleft=False)
     axes[0].legend(loc="lower left", handlelength=1.4, labelspacing=0.25)
     panel_label(axes[0], "a", x=-0.30, y=1.07)
@@ -484,7 +484,7 @@ def make_figure(rows: list[dict[str, Any]]) -> tuple[Any, dict[str, Any]]:
     render_panel_d(axd, data)
     fig.text(0.012, 0.012, "Cardinal rays only; not a 2-D minimum boundary",
              ha="left", va="bottom", fontsize=FONT["minimum"], color=MUTED)
-    fig.text(0.988, 0.012, "RMCBD magnitude increases with τ by construction",
+    fig.text(0.988, 0.012, "Branch RMCBD is nondecreasing; the contrast increased in these data",
              ha="right", va="bottom", fontsize=FONT["minimum"], color=MUTED)
     fig.subplots_adjust(left=0.09, right=0.992, top=0.95, bottom=0.125)
     fig.canvas.draw()

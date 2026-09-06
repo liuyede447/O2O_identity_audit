@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "artifact": "results/measurement_validation_20260831/parity_exhaustive_v1/INCOMPLETE.json",
+      "reason": "Incomplete exhaustive run; no final result."
+    },
+    {
+      "artifact": "runs/20260831T170918_boundary_discovery_v1/STATUS.json",
+      "reason": "Failed pre-outcome boundary run with partial output after a base-domain implementation defect; superseded only as validation, never as evidence."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/boundary_reference_smoke_v1/summary.json",
+      "reason": "Failed smoke caused by non-overlapping production/reference image subsets; not a semantic parity result."
+    },
+    {
+      "artifact": "reports/SEALED_BUNDLE_VALIDATION_FAILED_V1.json",
+      "reason": "First sealed-bundle validation failed before READY creation because extractor float re-serialization changed the selected-image metadata bytes. Original outcome artifacts were retained and later copied byte-for-byte into corrected packaging; this failed validation is not scientific evidence."
+    },
+    {
+      "artifact": "reports/PROSPECTIVE_LOCKBOX_ANALYZER_FAILED_V1.json",
+      "reason": "The only prospective analyzer invocation created the irreversible receipt and then failed before H1-H5 verdict generation because its raw-roster equality check preceded the preregistered zero-cluster merge and the fixed/normalized common-valid support differed by three keys. No prospective PASS/FAIL exists and no rerun is permitted."
+    }
+  ]
+}

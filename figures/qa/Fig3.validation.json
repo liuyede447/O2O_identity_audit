@@ -47,19 +47,19 @@
   "output_validation": {
     "outputs": {
       "pdf": {
-        "bytes": 56552,
+        "bytes": 56576,
         "path": "figures_final/draft/Fig3.pdf",
-        "sha256": "c378a26b8cbd527bf2cffa14e03959678fa172cb161bb09b2dd91e01906ceaf6"
+        "sha256": "72b77767a5d47e9de46021af43e49c4dacd23a33e9106684b96d4a40172bb01a"
       },
       "png": {
-        "bytes": 401249,
+        "bytes": 402642,
         "path": "figures_final/draft/Fig3.png",
-        "sha256": "3f711fc87964a6a82d2ad71132fa9c24f7973da841bd534eaae40de7526f8790"
+        "sha256": "e7925303cfa37ca408561d285b59821ba5c15c52d0a704b909247acf60df2828"
       },
       "svg": {
-        "bytes": 59724,
+        "bytes": 59816,
         "path": "figures_final/draft/Fig3.svg",
-        "sha256": "be16a6b1fb1e1cb04aee3fcb12af005408cb8f170ae09e52d6b62d89b25b5ebe"
+        "sha256": "582b8e5a1dd3d0db393bd350201841b4b1f2b3cb548f934261b7632e76f1a10e"
       }
     },
     "pdf_fonts": {
@@ -93,7 +93,7 @@
       ]
     },
     "svg_editable_text": true,
-    "svg_text_nodes": 61
+    "svg_text_nodes": 62
   },
   "preflight": {
     "axes_count": 4,
@@ -117,9 +117,9 @@
   },
   "source_data": {
     "csv": "figures_final/source_data/fig3_source.csv",
-    "csv_sha256": "47930e3d9c63845d82814548f59f37d74602a011f5dd15fe486f3ad180b301da",
+    "csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
     "json": "figures_final/source_data/fig3_source.json",
-    "json_sha256": "cc6dc2f39850ef8efacec625fca2f492f643676cddc2833a23574b9432e3deed"
+    "json_sha256": "a0923330caa4d483fbc7e7042d10273ab325ebc454eb2baf211364e3fe5b91bd"
   },
   "source_validation": {
     "actual_panel_rows": {

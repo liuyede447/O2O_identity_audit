@@ -1,0 +1,312 @@
+{
+  "entries": [
+    {
+      "evidence_id": "EV-INSTR-ORACLE-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/oracle_suite_v1/oracle_validation.json",
+      "artifact_sha256": "689a6dd98696bf364cbc622430ee21c51eecaa7f08fe954d66e9d5a1611d8f92",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "discovery_instrument"
+    },
+    {
+      "evidence_id": "EV-INSTR-MUTATION-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/mutation_suite_v1/mutation_validation.json",
+      "artifact_sha256": "9f59974b2d57ab375d6c84a4a9dd4e558acc972c28765ced6cd3beaa4b2def73",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "discovery_instrument"
+    },
+    {
+      "evidence_id": "EV-INSTR-PARITY-975-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/parity_full_v1/summary.json",
+      "artifact_sha256": "68e933ddf4eab8b203b1e96a649128be9d17211eaa64132c432a67f1cca87822",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "discovery_instrument"
+    },
+    {
+      "evidence_id": "EV-INSTR-PARITY-5251-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/parity_deterministic_5k_v1/summary.json",
+      "artifact_sha256": "391661c8eae8d10af84dcd2b81330bf5104aa783c35b5e5629a8401c016b8157",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "discovery_instrument"
+    },
+    {
+      "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+      "artifact_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+      "manifest_path": "results/measurement_validation_20260831/eligibility_lock_v1/manifest.json",
+      "manifest_sha256": "d56fc71a5268fccc0926988205b00973b7bc979957dba913ef863a33c794a4c8",
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+      "sources": [],
+      "artifact": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+      "artifact_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+      "manifest_path": {
+        "fixed": "results/five_experiment_upgrade_20260830/anatomy_fixed_1px_v2/manifest.json",
+        "normalized": "results/five_experiment_upgrade_20260830/anatomy_normalized_k00625_v2/manifest.json"
+      },
+      "manifest_sha256": {
+        "fixed": "5e2f0e689bc3d0630b3235d2cffbf65352ff40eb7ea0244bd6bf973e0574e5df",
+        "normalized": "2edf22926075fd74ca85d27d67a8bcb9013936fd438866905b5a04fea6c94cda"
+      },
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+      "sources": [],
+      "artifact": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+      "artifact_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+      "manifest_path": {
+        "fixed": "results/five_experiment_upgrade_20260830/anatomy_fixed_1px_v2/manifest.json",
+        "normalized": "results/five_experiment_upgrade_20260830/anatomy_normalized_k00625_v2/manifest.json"
+      },
+      "manifest_sha256": {
+        "fixed": "5e2f0e689bc3d0630b3235d2cffbf65352ff40eb7ea0244bd6bf973e0574e5df",
+        "normalized": "2edf22926075fd74ca85d27d67a8bcb9013936fd438866905b5a04fea6c94cda"
+      },
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-SAME-STRIDE-V1",
+      "sources": [],
+      "artifact": "results/same_stride_conditional_v1/summary.json",
+      "artifact_sha256": "d41e8cc5fa55cbf32ee94c6d6637bafa169debaf122f6119cce06690777f773e",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "discovery_sensitivity"
+    },
+    {
+      "evidence_id": "EV-RANK-SET-FIXED-V1",
+      "sources": [],
+      "artifact": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
+      "manifest_path": "runs/20260831T161235_rank_set_fixed_v1/artifact/manifest.json",
+      "manifest_sha256": "de961a80da946e859922da09b814a087da60f91bed6e63a36dfc83c8a0379c38",
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-RANK-SET-NORMALIZED-V1",
+      "sources": [],
+      "artifact": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
+      "manifest_path": "runs/20260831T162551_rank_set_normalized_v1/artifact/manifest.json",
+      "manifest_sha256": "d9623c38232f98948b69c1db8d2fc1e3192be25dd64c44c68be895cf7f30b893",
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+      "sources": [],
+      "artifact": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+      "artifact_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+      "manifest_path": "runs/20260831T163900_preresolution_fixed_v1/artifact/manifest.json",
+      "manifest_sha256": "edebfc2fb8e9e35f5f57e4b6948bb949ebf0a83cf63a8f0f9041252a28fe4097",
+      "evidence_stage_status": "discovery_control"
+    },
+    {
+      "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+      "sources": [],
+      "artifact": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+      "artifact_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+      "manifest_path": "runs/20260831T164000_preresolution_normalized_v1/artifact/manifest.json",
+      "manifest_sha256": "f452e8d711d700582fd7bf303cb62f4b7630d3cc1358a6a6b8f14592b6ef88c5",
+      "evidence_stage_status": "discovery_control"
+    },
+    {
+      "evidence_id": "EV-LEARNING-DYNAMICS-V1",
+      "sources": [],
+      "artifact": "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+      "artifact_sha256": "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9",
+      "manifest_path": "results/five_experiment_upgrade_20260830/learning_dynamics/inventory_manifest.json",
+      "manifest_sha256": "86f2061092539a18ddc978daa2f5258c0f152248cf9fcdd5a42335901ff2638b",
+      "evidence_stage_status": "discovery_descriptive"
+    },
+    {
+      "evidence_id": "EV-YOLOV10-NORMALIZED-V1",
+      "sources": [],
+      "artifact": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+      "artifact_sha256": "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb",
+      "manifest_path": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/manifest.json",
+      "manifest_sha256": "c1e14e823fabfef6f8b6847c158b0da829f12d9e41ea7b4251e4c6ec8215270f",
+      "evidence_stage_status": "discovery_replication"
+    },
+    {
+      "evidence_id": "EV-BOUNDARY-REFERENCE-FORMAL-V2",
+      "sources": [],
+      "artifact": "runs/20260831_boundary_reference_formal_v2/artifact/summary.json",
+      "artifact_sha256": "4d3a9568f5be5e1798fdc6b29dc757f381aba6df53228d60967b0f75ebe62aa7",
+      "manifest_path": "runs/20260831_boundary_reference_formal_v2/artifact/manifest.json",
+      "manifest_sha256": "501fe2a809e8c2c09c8d6176ce077453adf3198de030ec0d950b301926b20680",
+      "evidence_stage_status": "instrument"
+    },
+    {
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V2",
+      "sources": [],
+      "artifact": "runs/20260831_boundary_geometry_formal_v2/artifact/rmsr_contrasts.csv",
+      "artifact_sha256": "aec227c10adadfbc701f4ff0f1feeb65687a35672c1fecc25582a0a4fda02067",
+      "manifest_path": "runs/20260831_boundary_geometry_formal_v2/artifact/summary.json",
+      "manifest_sha256": "8e0b4339a9752894cf6ee91f06ef34dbe9b3505b3ae0ae6a6afc57742837063a",
+      "evidence_stage_status": "discovery"
+    },
+    {
+      "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V2",
+      "sources": [],
+      "artifact": "runs/20260831_boundary_geometry_formal_v2/artifact/margin_construct.csv",
+      "artifact_sha256": "084f2d5ead9fcadf7ba06d906fc7f85783d05db41808e47c2b5e8a7e2ca580de",
+      "manifest_path": "runs/20260831_boundary_geometry_formal_v2/artifact/summary.json",
+      "manifest_sha256": "8e0b4339a9752894cf6ee91f06ef34dbe9b3505b3ae0ae6a6afc57742837063a",
+      "evidence_stage_status": "discovery_construct_validation"
+    },
+    {
+      "evidence_id": "EV-SPILLOVER-FORMAL300-V1",
+      "sources": [],
+      "artifact": "runs/20260901_spillover_formal300_v1/artifact/summary.json",
+      "artifact_sha256": "eb18532d98ff6f4e651d4ccafb805981d774c6c8e24d76458d7df45a61f57f98",
+      "manifest_path": "runs/20260901_spillover_formal300_v1/artifact/manifest.json",
+      "manifest_sha256": "986c89d346685fbe7ab13199489c4f3536bf489674698b6a2ba925981f0dd6dd",
+      "evidence_stage_status": "gated_discovery"
+    },
+    {
+      "evidence_id": "EV-MARGIN-SHAPE-SENSITIVITY-V1",
+      "sources": [],
+      "artifact": "runs/20260831_margin_shape_formal_v1/artifact/margin_shape_summary.json",
+      "artifact_sha256": "7c294e69980dd12e5d792a0eab0b8905b98017761c4262386ee616710dc3e0f0",
+      "manifest_path": "runs/20260831_margin_shape_formal_v1/artifact/manifest.json",
+      "manifest_sha256": "64c94949ed181309489d3d57cf60e1cd9813adc26cf0cec4a6144db1a0c358e5",
+      "evidence_stage_status": "supplementary_diagnostic"
+    },
+    {
+      "evidence_id": "EV-SAMPLE-EFFICIENCY-1000-V1",
+      "sources": [],
+      "artifact": "runs/20260831_sample_efficiency_1000_v1/artifact/sample_efficiency_summary.csv",
+      "artifact_sha256": "0b6a900f84404dddcc534754fb99ffbfa17bbe27732822c924cb43efedad8c77",
+      "manifest_path": "runs/20260831_sample_efficiency_1000_v1/artifact/manifest.json",
+      "manifest_sha256": "b449101853e1a72b5808b19f9900579f7cddf2273a0548c439890d24efed7a93",
+      "evidence_stage_status": "supplementary_engineering"
+    },
+    {
+      "evidence_id": "EV-PRECISION-DESIGN-V1",
+      "sources": [],
+      "artifact": "runs/20260831_lockbox_precision_design_v1/artifact/precision_planning_summary.json",
+      "artifact_sha256": "f10d9407c79ca6e96871d997a4045b1269226390dba0b05e1df6eceb1e19e54f",
+      "manifest_path": "runs/20260831_lockbox_precision_design_v1/artifact/run_manifest.json",
+      "manifest_sha256": "e6bf946a934a95de1afe9c97431ffa7752902f3c90262cbf158ddacef34123c9",
+      "evidence_stage_status": "pre_freeze_precision_planning"
+    },
+    {
+      "evidence_id": "EV-LOCKBOX-CORRECTIVE-EXPLORATORY-V1",
+      "sources": [],
+      "artifact": "lockbox_runs/post_lockbox_corrective_v1/POST_LOCKBOX_CORRECTIVE_RESULTS.json",
+      "artifact_sha256": "714d11716540d8a9445326af3ddd424b5634a3d1588bbaa1280dc1ca88b0241c",
+      "manifest_path": "lockbox_runs/post_lockbox_corrective_v1/manifest.json",
+      "manifest_sha256": "49b338c604a440ea4446f2dd86bf8c4da72c99924ddd987b21c660c2d59d851a",
+      "evidence_stage_status": "post_lockbox_corrective_exploratory"
+    },
+    {
+      "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
+      "artifact_sha256": "aece532fd9ea842247ed22ea03557e13ece6209144d83f3598beadd38ba0bcfe",
+      "manifest_path": {
+        "fixed": "results/measurement_validation_20260831/fixed_branch_replay_v1/manifest.json",
+        "normalized": "results/reviewer_controls_20260829/formal_s0e300_k00625/manifest.json",
+        "normalized_summary": "results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json"
+      },
+      "manifest_sha256": {
+        "fixed": "38299ec8fdc5ede460922bd686334b02d914815b320dad01dd6e150bb36a975a",
+        "normalized": "5f98a6bd29d0e6c0c1b398c895a4fcd21001653a5bed197ee4fe3dae476484d5",
+        "normalized_summary": "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b"
+      },
+      "evidence_stage_status": "discovery_primary_stress_contract"
+    },
+    {
+      "evidence_id": "EV-STRESS-CONTRACT-KAPPA-DATASET-V1",
+      "sources": [],
+      "artifact": "results/stress_contract_sensitivity_20260829/frozen_matrix/stress_contract_sensitivity.json",
+      "artifact_sha256": "1776ecbdff504d1e77e8842cc11d6513511470e7214d3fe846a5a1b4207e6601",
+      "manifest_path": "results/stress_contract_sensitivity_20260829/frozen_matrix/kappa_sensitivity_matrix.csv",
+      "manifest_sha256": "38ee31b39b02f383cba7b816aa3b34fdccc7440d051cb725524bfb879815f0a8",
+      "evidence_stage_status": "discovery_stress_contract_sensitivity"
+    },
+    {
+      "evidence_id": "EV-BOUNDARY-GRID-CONVERGENCE-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260902/dense_grid_convergence_gate_v3/convergence_gate.json",
+      "artifact_sha256": "ceb27e511178e57fdfe490994ccb8443a72e239a98917b66450f77e05240b109",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "instrument_resolution_qualification"
+    },
+    {
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "sources": [],
+      "artifact": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+      "artifact_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "manifest_path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "manifest_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "evidence_stage_status": "discovery_dense_grid_primary"
+    },
+    {
+      "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+      "sources": [],
+      "artifact": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+      "artifact_sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+      "manifest_path": "runs/20260903_boundary_full_grid_1024_postprocess_v2/TERMINAL_VALIDATION.json",
+      "manifest_sha256": "a7982e8dc8c6af78fd51faca6c1ab4f7232f99eef10e09eacf242dba1dd8d80d",
+      "evidence_stage_status": "discovery_dense_grid_construct_validation"
+    },
+    {
+      "evidence_id": "EV-ASSIGNED-TARGET-SCORE-SEMANTICS-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260905/parity_5251_with_target_score_v1/summary.json",
+      "artifact_sha256": "9d17462c9c1f90d8ed35c1d7f5742440700738b0fcc1646af47c5a9f63545d2d",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "revision_instrument_qualification"
+    },
+    {
+      "evidence_id": "EV-CHECKPOINT-PROVENANCE-V1",
+      "sources": [],
+      "artifact": "results/measurement_validation_20260905/checkpoint_provenance_v1/summary.json",
+      "artifact_sha256": "a484e1bad34ef8fc9e2bd1435cea4235d3943ebfc3ea290e90930c7126966538",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "revision_provenance"
+    },
+    {
+      "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+      "sources": [],
+      "artifact": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+      "artifact_sha256": "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
+      "manifest_path": null,
+      "manifest_sha256": null,
+      "evidence_stage_status": "revision_descriptive_control"
+    },
+    {
+      "evidence_id": "EV-MULTISEED-FIXED-COMPLETION-V1",
+      "sources": [],
+      "artifact": "runs/20260905_multiseed_fixed_completion_v1/summary.json",
+      "artifact_sha256": "ea6f04a9288e2ee9c8db897aa9deb64c0f75ea6b05b27a339ea846c50d164725",
+      "manifest_path": "protocols/MULTISEED_FIXED_COMPLETION_SPEC_20260905.json",
+      "manifest_sha256": "fcbc63bb6064f6abe6d83059c9c766fcf6a3316a14703c573f18602b1f17e90d",
+      "evidence_stage_status": "revision_training_seed_sensitivity"
+    },
+    {
+      "evidence_id": "EV-MULTISEED-EQUIVALENT-RANKSET-V1",
+      "sources": [],
+      "artifact": "runs/20260905_multiseed_equivalent_rank_set_v1/summary.json",
+      "artifact_sha256": "c178a873ff06e0423ce99cdf6cda9a64da82dd40300410a3179a4c253fa17987",
+      "manifest_path": "protocols/MULTISEED_EQUIVALENT_RANK_SET_SPEC_20260905.json",
+      "manifest_sha256": "ecc9f5b3eb964407e35d626b2eede8647986d602d30488e8312df42857e2ac74",
+      "evidence_stage_status": "revision_training_seed_sensitivity"
+    }
+  ]
+}

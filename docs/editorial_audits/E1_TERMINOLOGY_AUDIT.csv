@@ -1,0 +1,8 @@
+term,preferred_term,locations,status,note
+loss-active,post-conflict assigned O2O identity,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+active identity,post-conflict assigned O2O identity,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+active candidate,assigned O2O candidate,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+active-relative,assigned-relative,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+fixed active/runner,fixed assigned/runner pair,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+loss winner,assigned O2O identity,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.
+loss-faithful,assignment-faithful,,PASS,Historical taxonomy labels are permitted only when explicitly identified; raw frozen evidence fields were not renamed.

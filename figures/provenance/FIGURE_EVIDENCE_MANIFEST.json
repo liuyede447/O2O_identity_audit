@@ -6,24 +6,24 @@
   "science_results_recomputed": false,
   "authority_order": [
     "frozen source artifact",
-    "final_evidence_v3",
+    "final_evidence_v4",
     "current manuscript",
     "old figure"
   ],
   "primary_checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
   "ledger": {
-    "path": "evidence_freeze/final_evidence_v3/CURRENT_EVIDENCE_LEDGER.json",
-    "sha256": "780e697fe6dd6c1a0a72d227e9b0258507af49f76c750bd0c5a638c6a33f0db8",
-    "status": "FINAL_EVIDENCE_FROZEN"
+    "path": "evidence_freeze/final_evidence_v4/CURRENT_EVIDENCE_LEDGER.json",
+    "sha256": "a55dc3c94427e51699cee915dd0d8e9171eb9206a9151fafee2cbaf4422e493f",
+    "status": "FINAL_EVIDENCE_V4_AWAITING_AUTHOR_REAPPROVAL"
   },
   "summary": {
     "panels": 24,
     "panel_status_counts": {
-      "PASS": 18,
-      "WARN": 6,
+      "PASS": 20,
+      "WARN": 4,
       "FAIL": 0
     },
-    "source_references": 63,
+    "source_references": 64,
     "missing_sources": 0,
     "sha256_conflicts": 0,
     "unresolved_evidence_links": 0,
@@ -70,7 +70,7 @@
       "source_artifacts": [
         {
           "path": "manuscript/content/methods.tex",
-          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "expected_sha256": "84918970a1f7209c8ea19aeeeca7573af95e2575ba1c1a4e36e7f6b0da064b67",
           "evidence_id": null,
           "authority": "CONTRACT_SOURCE",
           "role": "method definition"
@@ -119,14 +119,14 @@
         "model": 0,
         "selection": 20260823
       },
-      "sample_support": "Method schematic; no sampled estimate",
+      "sample_support": "Method schematic plus target-score semantic qualification",
       "image_n": null,
       "weighting": null,
       "bootstrap_unit": null,
       "bootstrap_repetitions": null,
       "ci_type": null,
-      "evidence_class": "method contract",
-      "interpretation_class": "descriptive algorithm schematic",
+      "evidence_class": "method contract and revision instrument qualification",
+      "interpretation_class": "descriptive algorithm schematic; assigned identity is distinguished from positive loss weight",
       "censoring_or_conditioning": "none beyond panel support",
       "stress_contract": "native O2O Top-7 and O2M Top-10 paths",
       "statistical_unit": "native assignment path",
@@ -137,17 +137,24 @@
       "source_artifacts": [
         {
           "path": "manuscript/content/methods.tex",
-          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "expected_sha256": "84918970a1f7209c8ea19aeeeca7573af95e2575ba1c1a4e36e7f6b0da064b67",
           "evidence_id": null,
           "authority": "CONTRACT_SOURCE",
           "role": "method definition"
         },
         {
           "path": "manuscript/supplementary.tex",
-          "expected_sha256": "4dac51d9b341274ad985e865211448e5c6401719af0aad3637aeb6ed3542319e",
+          "expected_sha256": "299d29bc2f6960ac136e17875d6d78a96ccc9241631bb9b8b65529d77b883e6b",
           "evidence_id": null,
           "authority": "CONTRACT_SOURCE",
           "role": "native-path contract"
+        },
+        {
+          "path": "results/measurement_validation_20260905/parity_5251_with_target_score_v1/summary.json",
+          "expected_sha256": "9d17462c9c1f90d8ed35c1d7f5742440700738b0fcc1646af47c5a9f63545d2d",
+          "evidence_id": "EV-ASSIGNED-TARGET-SCORE-SEMANTICS-V1",
+          "authority": "final_evidence_v4",
+          "role": "assigned-identity target-score qualification"
         }
       ],
       "object_direction_trajectory_n": null,
@@ -192,7 +199,7 @@
       "source_artifacts": [
         {
           "path": "manuscript/content/methods.tex",
-          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "expected_sha256": "84918970a1f7209c8ea19aeeeca7573af95e2575ba1c1a4e36e7f6b0da064b67",
           "evidence_id": null,
           "authority": "CONTRACT_SOURCE",
           "role": "method definition"
@@ -675,7 +682,7 @@
       "statistical_unit": "focal GT and directional replay",
       "point_estimate_columns": [
         "pre-conflict winner scale gap",
-        "loss-active scale gap",
+        "final assigned scale gap",
         "paired difference",
         "definition disagreement"
       ],
@@ -686,7 +693,7 @@
       "figure_number": "Fig3",
       "panel": "d",
       "panel_id": "Fig3d",
-      "scientific_question": "How does pre-conflict rank state compare with final loss-active O2O identity?",
+      "scientific_question": "How does pre-conflict rank state compare with the final post-conflict assigned O2O identity?",
       "source_artifacts": [
         {
           "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
@@ -995,7 +1002,7 @@
       "source_artifacts": [
         {
           "path": "manuscript/content/methods.tex",
-          "expected_sha256": "57bad850ba8eee7e9218836d965cdd8184f9a8a99ae1590f13476a1e6357df47",
+          "expected_sha256": "84918970a1f7209c8ea19aeeeca7573af95e2575ba1c1a4e36e7f6b0da064b67",
           "evidence_id": null,
           "authority": "CONTRACT_SOURCE",
           "role": "method definition"
@@ -1093,11 +1100,11 @@
       },
       "weighting": "inverse image-inclusion weights",
       "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
-      "bootstrap_repetitions": 2000,
+      "bootstrap_repetitions": 5000,
       "ci_type": "95% stratified image-cluster percentile bootstrap where shown",
-      "evidence_class": "figure-only descriptive source addendum",
+      "evidence_class": "revision descriptive control",
       "interpretation_class": "descriptive distribution",
-      "censoring_or_conditioning": "K=0 must remain visible; K=3-7 shading denotes standardisation overlap only",
+      "censoring_or_conditioning": "K=0 remains visible; K=3-7 shading denotes the restriction/standardisation overlap only",
       "stress_contract": "equivalent_side_kappa_0.0625",
       "object_direction_trajectory_n": {
         "common_valid_gt": 6377,
@@ -1110,28 +1117,28 @@
         "positive_count_means"
       ],
       "ci_columns": [],
-      "panel_status": "WARN",
-      "status_reason": "Positive-count source is SOURCE_ADDENDUM; K=0 full support and K=3-7 overlap support must not be conflated.",
       "figure_number": "Fig5",
       "panel": "c",
       "panel_id": "Fig5c",
       "scientific_question": "How does native O2M positive count vary across the two scale groups?",
       "source_artifacts": [
         {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
-          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
-          "role": "positive-count standardisation"
+          "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+          "expected_sha256": "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
+          "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+          "authority": "final_evidence_v4",
+          "role": "three-stage positive-count decomposition"
         },
         {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+          "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
           "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
+          "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+          "authority": "final_evidence_v4",
           "role": "positive-count distribution"
         }
-      ]
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
     },
     {
       "dataset": "AI-TOD-v2",
@@ -1147,11 +1154,11 @@
       },
       "weighting": "inverse image-inclusion weights",
       "bootstrap_unit": "image cluster within outcome-blind sampling stratum",
-      "bootstrap_repetitions": 2000,
+      "bootstrap_repetitions": 5000,
       "ci_type": "95% stratified image-cluster percentile bootstrap",
-      "evidence_class": "figure-only descriptive standardisation addendum",
-      "interpretation_class": "descriptive conditioning, not a causal count intervention",
-      "censoring_or_conditioning": "crude estimates use full common support; standardised estimates use adequate-overlap K=3-7 support",
+      "evidence_class": "revision descriptive control",
+      "interpretation_class": "descriptive restriction and standardisation, not a causal count intervention",
+      "censoring_or_conditioning": "full-support crude, K=3-7 overlap crude, and within-overlap standardised estimates are separately displayed",
       "stress_contract": "equivalent_side_kappa_0.0625",
       "object_direction_trajectory_n": {
         "common_valid_gt": 6377,
@@ -1168,34 +1175,36 @@
       "statistical_unit": "common-valid focal GT or directional replay, as metric-specific",
       "point_estimate_columns": [
         "crude_gap_small_minus_tiny",
+        "overlap_crude_gap_small_minus_tiny",
         "standardized_gap_small_minus_tiny"
       ],
       "ci_columns": [
-        "ci_95_gap_small_minus_tiny.low",
-        "ci_95_gap_small_minus_tiny.high"
+        "full_crude_ci_95_gap_small_minus_tiny",
+        "adequate_overlap_crude_ci_95_gap_small_minus_tiny",
+        "ci_95_gap_small_minus_tiny"
       ],
-      "panel_status": "WARN",
-      "status_reason": "SOURCE_ADDENDUM only. Full-support crude and K=3-7 standardised estimates have different support and must be visually labelled.",
       "figure_number": "Fig5",
       "panel": "d",
       "panel_id": "Fig5d",
-      "scientific_question": "How do crude and count-standardised contrasts differ on their respective supports?",
+      "scientific_question": "How much attenuation arises from support restriction versus within-overlap count standardisation?",
       "source_artifacts": [
         {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
-          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
-          "role": "positive-count standardisation"
+          "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+          "expected_sha256": "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
+          "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+          "authority": "final_evidence_v4",
+          "role": "three-stage positive-count decomposition"
         },
         {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+          "path": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
           "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
+          "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+          "authority": "final_evidence_v4",
           "role": "positive-count distribution"
         }
-      ]
+      ],
+      "panel_status": "PASS",
+      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source."
     },
     {
       "dataset": "AI-TOD-v2",

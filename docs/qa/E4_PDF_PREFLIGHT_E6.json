@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "current article-matched main and Supplement PDFs",
+  "checks": {
+    "main": {
+      "path": "manuscript\\main.pdf",
+      "sha256": "0c87a31076972118151fde712c9cdb63ef3dec1a2c2826b3b582f95c72d844cb",
+      "pages": 16,
+      "latex_blocking_error": false
+    },
+    "supplementary": {
+      "path": "manuscript\\supplementary.pdf",
+      "sha256": "8cbc9c26d36702542715406f5a2cd70bf4fbd7af0614bcd6cac0d9291e9254bf",
+      "pages": 16,
+      "latex_blocking_error": false
+    }
+  },
+  "blocking_issues": [],
+  "known_nonblocking_notices": [
+    "CAS class overfull-box notice and ordinary underfull hbox notices are visually inspected and do not clip content."
+  ]
+}

@@ -1,0 +1,49 @@
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@dblfptop}{0pt}
+\setlength{\@dblfpsep}{12pt}
+\setlength{\@dblfpbot}{0pt plus 1fil}
+\makeatother
+\setcounter{dbltopnumber}{3}
+\renewcommand{\dbltopfraction}{0.92}
+\renewcommand{\dblfloatpagefraction}{0.78}
+\renewcommand{\textfraction}{0.06}
+
+\shorttitle{Stress-Dependent Cardinal Assignment Boundaries}
+\shortauthors{Y. Liu et al.}
+
+\title[mode=title]{Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection}
+
+\author[1]{Yede Liu}[orcid=0009-0004-1760-860X]
+\ead{liuyede0718@gmail.com}
+\credit{Conceptualization, Methodology, Software, Formal analysis, Investigation, Data curation, Validation, Visualization, Writing--original draft}
+
+\author[1]{Fang Wang}
+\ead{fang66320@gmail.com}
+\credit{Validation, Investigation, Writing--review and editing}
+
+\author[1]{Jun Li}
+\cormark[1]
+\ead{lijun2022@sicnu.edu.cn}
+\credit{Supervision, Project administration, Writing--review and editing}
+
+\affiliation[1]{organization={College of Physics and Electronic Engineering, Sichuan Normal University},
+                addressline={Chenglong Campus, No. 1819, Section 2, Chenglong Avenue, Longquanyi District},
+                city={Chengdu},
+                postcode={610101},
+                state={Sichuan},
+                country={China}}
+\cortext[cor1]{Corresponding author: Jun Li (\href{mailto:lijun2022@sicnu.edu.cn}{lijun2022@sicnu.edu.cn}).}
+
+\begin{abstract}
+Many end-to-end dense detectors retain one post-conflict assigned candidate for one-to-one (O2O) supervision, but the stability of this discrete state under controlled geometric stress is poorly characterised. We developed a read-only audit that moves only a focal ground-truth centre while freezing model outputs, parameters, candidate grids, object extent, and other ground truths. Implementation qualification preceded interpretation through native-path checks and exact full-grid replay. On AI-TOD-v2, fixed one-pixel replay yielded an O2O 8--16-minus-16--32 px fragility contrast of \FixedOtwoOScalePP\ percentage points (pp), whereas equivalent-area-side replay yielded an O2O contrast of \NormalizedOtwoOScalePP\ pp and an assigned-set Top-1 contrast for one-to-many (O2M) supervision of \NormalizedOtwoMScalePP\ pp. The apparent scale response therefore depended on the stress contract rather than indicating a single intrinsic O2O penalty. Eligibility locking and pathway analysis separated hard eligibility changes from within-set rank exchange. Full-domain $1/1024$ replay yielded restricted mean cardinal boundary distances of 0.120 for O2O and 0.100 for the assigned-set Top-1 state through $\tau=0.125$; Rank--Set and positive-count analyses further distinguished Top-1 turnover from positive-set persistence. Assigned-relative margin aligned with observed rank-crossing distance but supplied no stable incremental diagnostic value. Primary mechanistic estimates are seed-0 AI-TOD-v2 discovery results; cross-dataset, stage, detector-contract, and training-seed analyses are sensitivity or replication. The audit resolves assignment change into stress-dependent eligibility, rank, set, and cardinal-boundary states without treating the branch contrast as a treatment effect or calibrated failure probability.
+\end{abstract}
+
+\begin{keywords}
+tiny-object detection \sep aerial imagery \sep one-to-one assignment \sep geometric stress testing \sep cardinal boundaries \sep assignment-state measurement
+\end{keywords}
+
+\maketitle

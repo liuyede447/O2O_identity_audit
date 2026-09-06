@@ -167,7 +167,7 @@ def render(rows: list[dict], observed: pd.DataFrame) -> None:
              color=BRANCH["O2O"], linewidth=LINE["secondary"], marker="o",
              markersize=3.2, markerfacecolor="white", markeredgewidth=0.8,
              label="decile medians (descriptive)")
-    axa.set_xlabel("Native active-relative margin")
+    axa.set_xlabel("Assigned-relative margin")
     axa.set_ylabel("Observed rank-crossing distance")
     axa.set_title("Observed fixed-pair crossings only\nn=1,593 · ρ=0.628 · no regression fit", loc="left", pad=4)
     axa.legend(loc="upper left")

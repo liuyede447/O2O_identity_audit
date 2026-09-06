@@ -277,7 +277,7 @@ def build_rows(panels: dict[str, dict[str, Any]], verified: dict[str, dict[str, 
                                      ("Equivalent-area-side", eq_pre, eq_pre_source)):
         metrics = (
             ("Pre-conflict Top-7 winner gap", "preconflict_top7_scale_gap_8_16_minus_16_32"),
-            ("Final loss-active gap", "loss_active_scale_gap_8_16_minus_16_32"),
+            ("Final assigned gap", "loss_active_scale_gap_8_16_minus_16_32"),
             ("Final minus pre-conflict", "loss_active_minus_preconflict_scale_gap"),
             ("Fragility-definition disagreement", "any_direction_fragility_disagreement_rate"),
         )
@@ -460,8 +460,8 @@ def render_panel_c(ax_left: Any, ax_right: Any, data: pd.DataFrame, *, display_l
 
 def render_panel_d(ax: Any, data: pd.DataFrame, *, display_label: str = "d") -> None:
     frame = data[data.kind == "pre_resolution_control"]
-    labels = ("Pre-conflict\nTop-7", "Loss-active", "Δ gap", "Definition\nmismatch")
-    source_labels = ("Pre-conflict Top-7 winner gap", "Final loss-active gap",
+    labels = ("Pre-conflict\nTop-7", "Final\nassigned", "Δ gap", "Definition\nmismatch")
+    source_labels = ("Pre-conflict Top-7 winner gap", "Final assigned gap",
                      "Final minus pre-conflict", "Fragility-definition disagreement")
     ys = np.arange(len(labels))[::-1]
     for index, source_label in enumerate(source_labels):
@@ -768,7 +768,7 @@ def evidence_parity(rows: list[dict[str, Any]], verified: dict[str, dict[str, st
 
     metrics = (
         ("Pre-conflict Top-7 winner gap", "preconflict_top7_scale_gap_8_16_minus_16_32"),
-        ("Final loss-active gap", "loss_active_scale_gap_8_16_minus_16_32"),
+        ("Final assigned gap", "loss_active_scale_gap_8_16_minus_16_32"),
         ("Final minus pre-conflict", "loss_active_minus_preconflict_scale_gap"),
         ("Fragility-definition disagreement", "any_direction_fragility_disagreement_rate"),
     )

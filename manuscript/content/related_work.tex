@@ -1,0 +1,21 @@
+\section{Related work}
+
+\subsection{Tiny-object geometry and scale-aware assignment}
+
+NWD, RFLA, SimD, dynamic coarse-to-fine learning, and normalized Gaussian label assignment reduce the brittleness of overlap-based matching for tiny objects~\cite{wang2021nwd,xu2022rfla,shi2024simd,xu2023dcfl,lin2026ngla}. Recent scale-aware assigners use virtual-anchor calibration or normalized Bhattacharyya distance~\cite{zhang2026vala,tian2026nbddla}; UGS addresses localisation gradients, and DALA separates dense and sparse objects by spatial density~\cite{sun2025ugs,liu2026dala}. These methods modify geometry, optimisation, positive construction, or supervision density.
+
+More broadly, dense-detector assignment includes adaptive and probabilistic candidate selection~\cite{zhang2020atss,kim2020paa}, optimal transport and task alignment~\cite{ge2021ota,feng2021tood}, and differentiable matching~\cite{zhang2019freeanchor,zhu2020autoassign}. These approaches optimise positive construction.
+
+\subsection{End-to-end dense detection and dual supervision}
+
+DeFCN introduced prediction-aware O2O assignment with an O2M auxiliary objective~\cite{wang2021defcn}. OneNet used class-aware matching for non-redundant prediction~\cite{sun2021onenet}. EOOD combined an oriented O2O assigner, gap regularisation, and O2M auxiliary heads~\cite{zhang2025eood}; DATE restored O2M supervision to accelerate O2O convergence~\cite{chen2026date}. Hybrid methods add grouped or auxiliary supervision while retaining one-to-one inference~\cite{jia2023hdetr,chen2023groupdetr,zong2023codetr}, and PaQ-DETR couples dynamic queries with quality-aware O2M assignment~\cite{kang2026paqdetr}. YOLOv10 aligned O2M and O2O criteria~\cite{wang2024yolov10}, whereas YOLO26 combined dual heads with direct LTRB regression, Progressive Loss, and small-target-aware positive coverage~\cite{jocher2026yolo26}.
+
+\subsection{Different meanings of assignment ambiguity}
+
+Stable-DINO studied inter-layer Hungarian-matching instability, and many-to-one pedestrian matching challenged arbitrary selection among similar proposals~\cite{liu2023stablematching,shastry2024favoring}. Both changed training to improve robustness. TCD linked assignment ambiguity to inconsistent preset intermediates and model predictions~\cite{liu2026tcd}. Its dynamic sample set addresses conventional single-stage assignment. DS-Det located query ambiguity in shared-weight decoders trained with O2M and O2O objectives~\cite{cao2025dsdet}. O2F assigned dynamic soft supervision to several ambiguous anchors~\cite{li2023o2f}. Output-level diagnostic tools such as TIDE decompose detection errors without accessing the training assignment path~\cite{bolya2020tide}. Our estimand retains one native O2O winner and measures its local stability. Existing assignment studies mainly replace matching or supervision rules. Our contribution is a post-training measurement of the native post-conflict assigned identity, not a replacement assigner.
+
+These strands address different objects of analysis: training-time matching-stability work studies or modifies matching during optimisation; output-level diagnosis decomposes errors after predictions are produced; and image/metamorphic robustness testing perturbs inputs and measures changes in model outputs~\cite{bolya2020tide,hu2024testoptimization,chen2026gts}. This work instead performs post-training, frozen-output, focal-GT-only replay of the native assignment path. It therefore makes no first-ever claim about assignment stability or robustness-boundary analysis; its scope is the stated diagnostic measurement contract.
+
+\subsection{Post-training neural-system testing and diagnostics}
+
+DNN testing studies how to select informative test inputs, estimate fault-revealing behaviour, and reduce labelling cost~\cite{hu2024testoptimization,chen2026gts}. Other diagnostic work uses near-miss concepts for model comparison and debugging~\cite{kaufman2026nma}, or treats anomalous behaviour as dependent on the evolving training state~\cite{moustakidis2026training}. These studies analyse prediction behaviour, representations, test selection, or training anomalies. Our audit instead targets the resolved native assignment state used to construct dense-detector supervision and measures its response while network outputs remain frozen.

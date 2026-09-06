@@ -12,7 +12,7 @@
     "tau_magnitude_robustness_claim": false
   },
   "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
-  "manifest_sha256": "3f54c91a1f20a40ae37da5d4b50936907d891ce6c2ac6e32c27c08f0d5923907",
+  "manifest_sha256": "9f1f4c3e12dbcf6f1319d42fff19effb54fe3484328133179f5394f620d6bf30",
   "panel_support": {
     "Fig4a": {
       "bootstrap_repetitions": 5000,

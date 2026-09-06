@@ -1,0 +1,292 @@
+{
+  "entries": [
+    {
+      "artifact": "results/measurement_validation_20260831/oracle_suite_v1/oracle_validation.json",
+      "artifact_sha256": "689a6dd98696bf364cbc622430ee21c51eecaa7f08fe954d66e9d5a1611d8f92",
+      "evidence_id": "EV-INSTR-ORACLE-V1",
+      "claim": "The analytical oracle suite recovered all six prespecified native-path cases and all seven property invariants passed.",
+      "evidence_stage_status": "discovery_instrument",
+      "multiplicity_status": null,
+      "validity_notes": "Instrument qualification; not a model-effect estimate."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/mutation_suite_v1/mutation_validation.json",
+      "artifact_sha256": "9f59974b2d57ab375d6c84a4a9dd4e558acc972c28765ced6cd3beaa4b2def73",
+      "evidence_id": "EV-INSTR-MUTATION-V1",
+      "claim": "All six prespecified audit-instrument mutations were detected.",
+      "evidence_stage_status": "discovery_instrument",
+      "multiplicity_status": null,
+      "validity_notes": "Positive-control sensitivity evidence; not a model-effect estimate."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/parity_full_v1/summary.json",
+      "artifact_sha256": "68e933ddf4eab8b203b1e96a649128be9d17211eaa64132c432a67f1cca87822",
+      "evidence_id": "EV-INSTR-PARITY-975-V1",
+      "claim": "Native, production, and independent NumPy implementations had zero mismatches across 300 base states and 975 deterministic directional states.",
+      "evidence_stage_status": "discovery_instrument",
+      "multiplicity_status": null,
+      "validity_notes": "Instrument qualification. The broader 5,251-direction extension is recorded separately; this result remains a valid narrower parity check."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/parity_deterministic_5k_v1/summary.json",
+      "artifact_sha256": "391661c8eae8d10af84dcd2b81330bf5104aa783c35b5e5629a8401c016b8157",
+      "evidence_id": "EV-INSTR-PARITY-5251-V1",
+      "claim": "Native, production, and independent NumPy implementations had zero mismatches across 300 base states and 5,251 deterministic directional states.",
+      "evidence_stage_status": "discovery_instrument",
+      "multiplicity_status": null,
+      "validity_notes": "Deterministic SHA-256 sampling; exit code zero and zero mismatches."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+      "artifact_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+      "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+      "claim": "The base-eligibility-lock counterfactual result is recorded in the frozen summary artifact.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": null,
+      "validity_notes": "Read-only structural gate ablation; does not by itself establish a full causal mechanism."
+    },
+    {
+      "artifact": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+      "artifact_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+      "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+      "claim": "The observational eligibility-stable sensitivity result is recorded in the frozen v2 summary artifact.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": null,
+      "validity_notes": "Conditioning changes the estimand and can induce selection; interpret with the eligibility-lock result."
+    },
+    {
+      "artifact": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+      "artifact_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+      "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+      "claim": "Corrected first-divergence pathway estimates and clustered intervals are recorded in the v2 bootstrap artifact.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": null,
+      "validity_notes": "Supersedes the pre-fix Top-k pathway proportions."
+    },
+    {
+      "artifact": "results/same_stride_conditional_v1/summary.json",
+      "artifact_sha256": "d41e8cc5fa55cbf32ee94c6d6637bafa169debaf122f6119cce06690777f773e",
+      "evidence_id": "EV-SAME-STRIDE-V1",
+      "claim": "The strict same-stride conditional analysis is recorded in its summary artifact.",
+      "evidence_stage_status": "discovery_sensitivity",
+      "multiplicity_status": null,
+      "validity_notes": "Conditioning on observed same-stride replay changes the estimand and can induce selection."
+    },
+    {
+      "artifact": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
+      "evidence_id": "EV-RANK-SET-FIXED-V1",
+      "claim": "Under fixed one-pixel replay, 16-32 px O2M assigned-positive sets were more persistent than 8-16 px sets while rank-only exchanges accounted for a larger share of assigned-set Top-1 flips.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": null,
+      "validity_notes": "Discovery evidence. Rank and set are distinct estimands; undefined empty-set Jaccard and retention values are excluded rather than imputed."
+    },
+    {
+      "artifact": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
+      "evidence_id": "EV-RANK-SET-NORMALIZED-V1",
+      "claim": "Under equivalent-side kappa=0.0625 replay, 8-16 px O2M positive sets were more persistent than 16-32 px sets, while assigned-set Top-1 flips were lower and rank-only exchanges accounted for a larger share of tiny-object flips.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": null,
+      "validity_notes": "Discovery evidence. Stress-contract reversal of set persistence requires joint interpretation with continuous boundary analysis; no causal redundancy claim is made."
+    },
+    {
+      "artifact": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+      "artifact_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+      "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+      "claim": "Under fixed one-pixel replay, the O2O pre-conflict Top-7 q winner and final post-conflict assigned O2O identity had nearly identical scale gaps; every recorded flip or fragility disagreement coincided with the instrumented conflict stage.",
+      "evidence_stage_status": "discovery_control",
+      "multiplicity_status": null,
+      "validity_notes": "Conflict coincidence localises disagreement but is not a causal effect estimate."
+    },
+    {
+      "artifact": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+      "artifact_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+      "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+      "claim": "Under equivalent-side kappa=0.0625 replay, the O2O pre-conflict Top-7 q winner and final post-conflict assigned O2O identity had similar scale gaps; every recorded flip or fragility disagreement coincided with the instrumented conflict stage.",
+      "evidence_stage_status": "discovery_control",
+      "multiplicity_status": null,
+      "validity_notes": "Conflict coincidence localises disagreement but is not a causal effect estimate."
+    },
+    {
+      "artifact": "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+      "artifact_sha256": "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9",
+      "evidence_id": "EV-LEARNING-DYNAMICS-V1",
+      "claim": "Branch-specific stress divergence was present at all six physically archived stages spanning the first completed epoch to the final checkpoint while formal mAP changed substantially.",
+      "evidence_stage_status": "discovery_descriptive",
+      "multiplicity_status": "descriptive trajectory; no predictive correlation claim",
+      "validity_notes": "Epoch0.pt is the first completed framework checkpoint, not random initialization. Checkpoints 100-280 were unavailable; no interpolation is permitted."
+    },
+    {
+      "artifact": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+      "artifact_sha256": "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb",
+      "evidence_id": "EV-YOLOV10-NORMALIZED-V1",
+      "claim": "A compatible YOLOv10-S detector contract reproduced the normalized near-flat O2O response, reverse O2M response, and positive paired branch divergence.",
+      "evidence_stage_status": "discovery_replication",
+      "multiplicity_status": "cross-architecture discovery replication; no architecture-invariance claim",
+      "validity_notes": "Replication across two compatible detector contracts, not proof of architecture invariance."
+    },
+    {
+      "artifact": "runs/20260831_boundary_reference_formal_v2/artifact/summary.json",
+      "artifact_sha256": "4d3a9568f5be5e1798fdc6b29dc757f381aba6df53228d60967b0f75ebe62aa7",
+      "evidence_id": "EV-BOUNDARY-REFERENCE-FORMAL-V2",
+      "claim": "A deterministic independent NumPy implementation reproduced every audited continuous O2O boundary trajectory in the prespecified 30-image subset within the frozen fine-step tolerance.",
+      "evidence_stage_status": "instrument",
+      "multiplicity_status": "not applicable to instrument validation",
+      "validity_notes": "Formal instrument qualification, not a scientific effect estimate. The recursive 37-file output inventory passed with SHA-256 ebc455fee2acd9b5609743ebf705e330f55d5e7648554419e07472014b3c636f. The process loaded launch-time dataset helper hash 70a6868f6a4bf4c4aa051bcf6fa8d19d10a5360820bfb20f1d325a34f9720e41 before later sealed-mode-only governance changes; the referenced helper functions and boundary estimators were unchanged."
+    },
+    {
+      "artifact": "runs/20260831_boundary_geometry_formal_v2/artifact/rmsr_contrasts.csv",
+      "artifact_sha256": "aec227c10adadfbc701f4ff0f1feeb65687a35672c1fecc25582a0a4fda02067",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V2",
+      "claim": "Across continuous equivalent-side replay through radius 0.125, the post-conflict assigned O2O identity had a larger restricted mean stability radius than each audited O2M rank definition; the O2O-minus-O2M gap was larger for 16-32 px than for 8-16 px focal objects.",
+      "evidence_stage_status": "discovery",
+      "multiplicity_status": "discovery analysis; no confirmatory multiplicity claim",
+      "validity_notes": "Continuous-radius discovery evidence. Base-undefined trajectories are reported separately rather than imputed; right censoring and competing boundary causes are retained. RMSR and endpoint evidence localise stability geometry but do not establish a causal training mechanism. All eight output hashes and recursive inventory SHA-256 80f83afaf76e8ecb8a565c6b52c40220ec55fb1ab9a50e3ec6ff96ff7af2e0f0 passed."
+    },
+    {
+      "artifact": "runs/20260831_boundary_geometry_formal_v2/artifact/margin_construct.csv",
+      "artifact_sha256": "084f2d5ead9fcadf7ba06d906fc7f85783d05db41808e47c2b5e8a7e2ca580de",
+      "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V2",
+      "claim": "Among trajectories with an observed fixed-pair q-order crossing, the native active-relative margin was positively associated with the crossing radius; this conditional association was substantially stronger than its association with eligibility-boundary radius.",
+      "evidence_stage_status": "discovery_construct_validation",
+      "multiplicity_status": "discovery construct-validation analysis; no confirmatory multiplicity claim",
+      "validity_notes": "The margin-rho_R correlation is conditional on observed rho_R and is not a censoring-adjusted population correlation. The eligibility control uses a different observed-case set. This supports construct localisation, not causality, incremental held-out prediction, or intervention efficacy."
+    },
+    {
+      "artifact": "runs/20260901_spillover_formal300_v1/artifact/summary.json",
+      "artifact_sha256": "eb18532d98ff6f4e651d4ccafb805981d774c6c8e24d76458d7df45a61f57f98",
+      "evidence_id": "EV-SPILLOVER-FORMAL300-V1",
+      "claim": "In the gated 300-image discovery extension, nonfocal O2O identity changes were rare overall and were observed only for focal-neighbor pairs sharing at least one native pre-conflict candidate claim in the base or shifted state; no changes were observed among nonsharing pairs in this sample.",
+      "evidence_stage_status": "gated_discovery",
+      "multiplicity_status": "gated discovery extension; no confirmatory multiplicity claim",
+      "validity_notes": "Validated as gated discovery evidence only. Terminal semantic validation SHA-256 20c61db890954585c5518ab2ec730bbcddf8a7563a0e2696fea8ad41fd2aeacf reproduced all summary rates, all 5000 bootstrap replicates, and all intervals with zero numeric difference; recursive inventory SHA-256 32b0151767c7ed03300b22c351de7fd15b63eb88547fb7ce9a4c9e0921d9a7f1 passed. The data-YAML path was frozen but its hash was not prebound in CONFIG.json; matching preflight and post-run SHA-256 23fb59a4541db5f64a6c43e666b168872a5be48487ca7ce0c72033adeaf6413e is contemporaneous provenance only. Observed concentration in shared-claim pairs localises structural coupling but does not establish causality, exclusivity, equivalence, or absence of nonshared spillover in other samples."
+    },
+    {
+      "artifact": "runs/20260831_margin_shape_formal_v1/artifact/margin_shape_summary.json",
+      "artifact_sha256": "7c294e69980dd12e5d792a0eab0b8905b98017761c4262386ee616710dc3e0f0",
+      "evidence_id": "EV-MARGIN-SHAPE-SENSITIVITY-V1",
+      "claim": "In image-grouped out-of-fold sensitivity analyses, replacing a linear native margin term with a training-fold-fitted restricted cubic spline did not produce a stable metric-wide improvement for either O2O fragility or coverage-based miss; spline AUC and PR-AUC were no better, while the small log-loss differences had intervals spanning zero.",
+      "evidence_stage_status": "supplementary_diagnostic",
+      "multiplicity_status": "supplementary descriptive sensitivity analysis; no confirmatory multiplicity claim and no equivalence claim",
+      "validity_notes": "Spline knots were estimated from weighted margin quantiles separately within each training fold and applied unchanged to held-out image groups. Terminal validation reproduced all 20 fold-model metric cells and both aggregate metric sets with maximum absolute difference 7.08e-14; 84/84 checks and recursive inventory SHA-256 6a59c30a69b0bee4b13ec6ce4c5bad710b95e00ffb514e377ff4886b2cc7c073 passed. This analysis does not establish causality, equivalence, or a best predictor."
+    },
+    {
+      "artifact": "runs/20260831_sample_efficiency_1000_v1/artifact/sample_efficiency_summary.csv",
+      "artifact_sha256": "0b6a900f84404dddcc534754fb99ffbfa17bbe27732822c924cb43efedad8c77",
+      "evidence_id": "EV-SAMPLE-EFFICIENCY-1000-V1",
+      "claim": "In 1,000 outcome-blind stratified subsamples per image budget, 100 images recovered the sign and O2O-versus-O2M branch ordering of the full normalized paired contrast in all replicates, but its median absolute error was 3.43 percentage points and its 95th-percentile absolute error was 8.41 percentage points; reduced budgets therefore support dominant-signature screening rather than precise effect estimation.",
+      "evidence_stage_status": "supplementary_engineering",
+      "multiplicity_status": "supplementary engineering analysis; no confirmatory hypothesis or multiplicity claim",
+      "validity_notes": "Terminal validation reproduced all five budget summaries and per-replicate error/sign identities with maximum absolute difference 5.56e-15; 48/48 checks and recursive inventory SHA-256 d9f63c73f4c121b82a9f00c4a0d4dc11db2cb2ff99ac12b399121ae3c4c3ce1c passed. No expensive nested bootstrap was performed. The result is not a sample-size recommendation, post-hoc power analysis, or precision guarantee."
+    },
+    {
+      "artifact": "runs/20260831_lockbox_precision_design_v1/artifact/precision_planning_summary.json",
+      "artifact_sha256": "f10d9407c79ca6e96871d997a4045b1269226390dba0b05e1df6eceb1e19e54f",
+      "evidence_id": "EV-PRECISION-DESIGN-V1",
+      "claim": "A discovery-based 300-image precision-planning bootstrap estimated percentile 95% half-widths of 6.56, 5.53, 1.73, 2.78, and 2.58 percentage points for the prespecified H1, H2, H3, H4a, and H4b estimands, respectively; these estimates are planning diagnostics and not post-hoc power, minimum detectable effects, or precision guarantees for the sealed lockbox.",
+      "evidence_stage_status": "pre_freeze_precision_planning",
+      "multiplicity_status": "prospective planning analysis only; no hypothesis test, power claim, or multiplicity decision",
+      "validity_notes": "The analysis used discovery outputs only and did not access sealed lockbox outcomes. Terminal validation passed 31/31 checks and recursive inventory SHA-256 d55fb59c901b12262d8c4e07e9f5477cc28f1ee6253c80c2f672fa7068a820d2 passed. The first validator attempt is retained under validation_history because it used 1.96 rather than the producer's exact Z_975 constant; correcting the validator did not rerun or alter experiment outputs."
+    },
+    {
+      "artifact": "lockbox_runs/post_lockbox_corrective_v1/POST_LOCKBOX_CORRECTIVE_RESULTS.json",
+      "artifact_sha256": "714d11716540d8a9445326af3ddd424b5634a3d1588bbaa1280dc1ca88b0241c",
+      "evidence_id": "EV-LOCKBOX-CORRECTIVE-EXPLORATORY-V1",
+      "claim": "After the prospective lockbox analyzer was irreversibly opened and invalidated by a support-contract defect, a separately labelled post-lockbox corrective analysis retained all 300 selected image clusters and used the disclosed 7,243-key fixed/normalized common-valid GT intersection. All five exploratory contrasts were in the preregistered directions, but none is a confirmatory verdict or formal hypothesis test.",
+      "evidence_stage_status": "post_lockbox_corrective_exploratory",
+      "multiplicity_status": "not applicable: prospective family invalidated before verdict; all reported H1-H5 analogues are post-lockbox exploratory and were not formally retested",
+      "validity_notes": "The normative prospective analyzer created receipt SHA-256 8a5eaee6703c75fec23ec287cf77db2f833a4d85540f21ac2c147b78a0464c83 and then failed before producing LOCKBOX_VERDICT.json. Prospective rerun is prohibited. The corrective analysis used a post-access support rule, so directional agreement cannot be claimed as confirmation. Independent terminal validation passed 23/23 checks, reproduced all five points exactly, and replayed all 5000 bootstrap values with maximum absolute difference 9.72e-17; recursive inventory SHA-256 d8121d884e2b68cbc095c04360392a1befcc18e6364b5795eff444a64e5a3619 passed."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
+      "artifact_sha256": "aece532fd9ea842247ed22ea03557e13ece6209144d83f3598beadd38ba0bcfe",
+      "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+      "claim": "On the frozen AI-TOD-v2 seed-0 discovery sample, fixed one-pixel replay produced a positive O2O 8-16 minus 16-32 px scale contrast, whereas equivalent-side kappa=0.0625 replay produced a near-zero O2O contrast and a negative O2M contrast; the O2O-minus-O2M paired branch contrast was positive under both contracts.",
+      "evidence_stage_status": "discovery_primary_stress_contract",
+      "multiplicity_status": "frozen discovery comparison; no confirmatory multiplicity claim",
+      "validity_notes": "This claim registers pre-existing frozen discovery rows omitted from final_evidence_v1; it does not modify or retrospectively confirm them. Fixed and normalized contracts answer different perturbation questions, so their estimates are not pooled. The prospective lockbox yielded no normative verdict."
+    },
+    {
+      "artifact": "results/stress_contract_sensitivity_20260829/frozen_matrix/stress_contract_sensitivity.json",
+      "artifact_sha256": "1776ecbdff504d1e77e8842cc11d6513511470e7214d3fe846a5a1b4207e6601",
+      "evidence_id": "EV-STRESS-CONTRACT-KAPPA-DATASET-V1",
+      "claim": "Across kappa=0.03125, 0.0625, and 0.125 on AI-TOD-v2 and VisDrone, equivalent-side O2M scale contrasts were negative and paired O2O-minus-O2M branch contrasts were positive, while the absolute O2O scale contrast varied with kappa and dataset.",
+      "evidence_stage_status": "discovery_stress_contract_sensitivity",
+      "multiplicity_status": "post hoc frozen discovery sensitivity grid; no confirmatory multiplicity claim",
+      "validity_notes": "This is a post hoc discovery sensitivity grid frozen before the final manuscript rewrite. It supports stability of the paired branch direction over the tested grid, not architecture invariance, a universal scale law, or confirmatory replication. The AI-TOD-v2 kappa=0.0625 row is shared with EV-STRESS-CONTRACT-PRIMARY-V1 and must not be double-counted."
+    },
+    {
+      "artifact": "results/measurement_validation_20260902/dense_grid_convergence_gate_v3/convergence_gate.json",
+      "artifact_sha256": "ceb27e511178e57fdfe490994ccb8443a72e239a98917b66450f77e05240b109",
+      "evidence_id": "EV-BOUNDARY-GRID-CONVERGENCE-V1",
+      "claim": "On the prespecified 30-image convergence subset, 1/512 and 1/1024 grids shared all 4,408 trajectory keys and event-state classifications, but nine material localization or return-state mismatches occurred across four trajectories; the full-population primary grid was therefore fixed at 1/1024.",
+      "evidence_stage_status": "instrument_resolution_qualification",
+      "multiplicity_status": "not applicable to deterministic convergence qualification",
+      "validity_notes": "This fail-closed gate selects numerical resolution; it is not a model-effect estimate. The absence of fine-only events did not override the prespecified zero-material-mismatch rule."
+    },
+    {
+      "artifact": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr_contrasts.csv",
+      "artifact_sha256": "9a0ad9465f0573b46c366231b14784f467579d68d2de96fdc5f01b1f10cb5027",
+      "evidence_id": "EV-BOUNDARY-GEOMETRY-V3",
+      "claim": "On the complete 300-image 1/1024 grid, post-conflict assigned O2O identity retained a larger restricted mean cause-specific boundary distance than assigned-positive O2M across all six audited truncation radii; the O2O-minus-O2M gap remained larger for 16-32 px than for 8-16 px focal objects at tau=0.125.",
+      "evidence_stage_status": "discovery_dense_grid_primary",
+      "multiplicity_status": "discovery analysis and prespecified tau sensitivity; no confirmatory multiplicity claim",
+      "validity_notes": "Supersedes EV-BOUNDARY-GEOMETRY-V2 for manuscript boundary claims. Base-undefined trajectories are excluded rather than imputed; right censoring and competing causes are retained. The terminal validator bound all six tau outputs to canonical event and curve SHA-256 values and PASS status."
+    },
+    {
+      "artifact": "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+      "artifact_sha256": "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
+      "evidence_id": "EV-MARGIN-RHOR-CONSTRUCT-V3",
+      "claim": "Among trajectories with an observed fixed-pair q-order crossing on the complete 1/1024 grid, the native active-relative margin was positively associated with crossing radius and more strongly than with eligibility-boundary radius on its separately observed support.",
+      "evidence_stage_status": "discovery_dense_grid_construct_validation",
+      "multiplicity_status": "discovery construct-validation analysis; no confirmatory multiplicity claim",
+      "validity_notes": "Supersedes EV-MARGIN-RHOR-CONSTRUCT-V2 for manuscript boundary claims. Both correlations are conditional on observed cases and use different supports; neither is a censoring-adjusted population correlation. This is construct localization, not a causal or predictive claim."
+    },
+    {
+      "artifact": "results/measurement_validation_20260905/parity_5251_with_target_score_v1/summary.json",
+      "artifact_sha256": "9d17462c9c1f90d8ed35c1d7f5742440700738b0fcc1646af47c5a9f63545d2d",
+      "evidence_id": "EV-ASSIGNED-TARGET-SCORE-SEMANTICS-V1",
+      "claim": "Native/production/reference parity remained exact, and every audited assigned O2O identity in the 300 base states and 5,251 sampled directional states had positive normalized target-score mass; assignment alone is nevertheless not sufficient for positive loss weight in the executable edge case.",
+      "evidence_stage_status": "revision_instrument_qualification",
+      "multiplicity_status": null,
+      "validity_notes": "Supports positive loss weight on the audited states while retaining assigned-identity terminology because assignment is not sufficient in general."
+    },
+    {
+      "artifact": "results/measurement_validation_20260905/checkpoint_provenance_v1/summary.json",
+      "artifact_sha256": "a484e1bad34ef8fc9e2bd1435cea4235d3943ebfc3ea290e90930c7126966538",
+      "evidence_id": "EV-CHECKPOINT-PROVENANCE-V1",
+      "claim": "The four released files named best.pt record val=false, null embedded best_fitness/fitness, and zero-based epoch 280; seeds 0--2 have recovered post-training scan logs showing epoch-280 promotion, while seed 3 retains an explicit missing-log caveat.",
+      "evidence_stage_status": "revision_provenance",
+      "multiplicity_status": null,
+      "validity_notes": "The filename is not evidence of online validation selection. Post-training selection and formal AP recheck used the same validation benchmark."
+    },
+    {
+      "artifact": "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+      "artifact_sha256": "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
+      "evidence_id": "EV-POSITIVE-COUNT-THREE-STAGE-V1",
+      "claim": "Full-support crude, K=3--7 overlap-support crude, and overlap-standardised estimates separate support restriction from count-composition standardisation; most Top-1 attenuation arose at the support-restriction step, while positive-set turnover remained large.",
+      "evidence_stage_status": "revision_descriptive_control",
+      "multiplicity_status": "descriptive; no confirmatory family",
+      "validity_notes": "Descriptive decomposition; neither restriction nor standardisation identifies a causal count effect."
+    },
+    {
+      "artifact": "runs/20260905_multiseed_fixed_completion_v1/summary.json",
+      "artifact_sha256": "ea6f04a9288e2ee9c8db897aa9deb64c0f75ea6b05b27a339ea846c50d164725",
+      "evidence_id": "EV-MULTISEED-FIXED-COMPLETION-V1",
+      "claim": "The fixed-one-pixel paired branch contrast retained the same direction across every protocol-eligible released seed under a crossed four-seed and image-cluster bootstrap.",
+      "evidence_stage_status": "revision_training_seed_sensitivity",
+      "multiplicity_status": "descriptive; no confirmatory family",
+      "validity_notes": "Four top-level seeds remain a limited training-randomness sample; seed 4 failed the frozen initialisation rule."
+    },
+    {
+      "artifact": "runs/20260905_multiseed_equivalent_rank_set_v1/summary.json",
+      "artifact_sha256": "c178a873ff06e0423ce99cdf6cda9a64da82dd40300410a3179a4c253fa17987",
+      "evidence_id": "EV-MULTISEED-EQUIVALENT-RANKSET-V1",
+      "claim": "The equivalent-area paired endpoint, positive-count difference, Top-1 turnover, and positive-set turnover retained their reported directions across every protocol-eligible released seed.",
+      "evidence_stage_status": "revision_training_seed_sensitivity",
+      "multiplicity_status": "descriptive; no confirmatory family",
+      "validity_notes": "Sensitivity across every protocol-eligible released seed. It does not extend eligibility-lock, first-divergence, or dense-boundary analyses beyond seed 0."
+    }
+  ]
+}

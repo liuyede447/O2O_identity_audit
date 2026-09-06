@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "status": "WORKING_LEDGER_PRE_LOCKBOX",
+  "updated_at": "2026-08-31T17:09:18+08:00",
+  "authority_order": [
+    "frozen_result_artifact",
+    "current_evidence_ledger",
+    "historical_ssot",
+    "manuscript"
+  ],
+  "historical_ssot": "../archive_backup/docs/极小目标检测_O2O_Ambiguity_统一事实源_20260822_V2.md",
+  "entries": [
+    {
+      "evidence_id": "EV-INSTR-ORACLE-V1",
+      "status": "validated_discovery_instrument",
+      "claim": "The analytical oracle suite recovered all six prespecified native-path cases and all seven property invariants passed.",
+      "artifact": "results/measurement_validation_20260831/oracle_suite_v1/oracle_validation.json",
+      "artifact_sha256": "689a6dd98696bf364cbc622430ee21c51eecaa7f08fe954d66e9d5a1611d8f92",
+      "validity_notes": "Instrument qualification; not a model-effect estimate."
+    },
+    {
+      "evidence_id": "EV-INSTR-MUTATION-V1",
+      "status": "validated_discovery_instrument",
+      "claim": "All six prespecified audit-instrument mutations were detected.",
+      "artifact": "results/measurement_validation_20260831/mutation_suite_v1/mutation_validation.json",
+      "artifact_sha256": "9f59974b2d57ab375d6c84a4a9dd4e558acc972c28765ced6cd3beaa4b2def73",
+      "validity_notes": "Positive-control sensitivity evidence; not a model-effect estimate."
+    },
+    {
+      "evidence_id": "EV-INSTR-PARITY-975-V1",
+      "status": "validated_discovery_instrument",
+      "claim": "Native, production, and independent NumPy implementations had zero mismatches across 300 base states and 975 deterministic directional states.",
+      "artifact": "results/measurement_validation_20260831/parity_full_v1/summary.json",
+      "artifact_sha256": "68e933ddf4eab8b203b1e96a649128be9d17211eaa64132c432a67f1cca87822",
+      "validity_notes": "The approximately 5k extension is still running and is not yet evidence."
+    },
+    {
+      "evidence_id": "EV-INSTR-PARITY-5251-V1",
+      "status": "validated_discovery_instrument",
+      "claim": "Native, production, and independent NumPy implementations had zero mismatches across 300 base states and 5,251 deterministic directional states.",
+      "artifact": "results/measurement_validation_20260831/parity_deterministic_5k_v1/summary.json",
+      "artifact_sha256": "391661c8eae8d10af84dcd2b81330bf5104aa783c35b5e5629a8401c016b8157",
+      "validity_notes": "Deterministic SHA-256 sampling used seed 20260831 and threshold 900/10000; exit code zero."
+    },
+    {
+      "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
+      "status": "validated_discovery",
+      "claim": "The base-eligibility-lock counterfactual result is recorded in the frozen summary artifact.",
+      "artifact": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+      "artifact_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
+      "validity_notes": "Read-only structural gate ablation; does not by itself establish a full causal mechanism."
+    },
+    {
+      "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
+      "status": "validated_discovery",
+      "claim": "The observational eligibility-stable sensitivity result is recorded in the frozen v2 summary artifact.",
+      "artifact": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+      "artifact_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
+      "validity_notes": "Conditioning changes the estimand and can induce selection; interpret with the eligibility-lock result."
+    },
+    {
+      "evidence_id": "EV-PATHWAY-ANATOMY-V2",
+      "status": "validated_discovery",
+      "claim": "Corrected first-divergence pathway estimates and clustered intervals are recorded in the v2 bootstrap artifact.",
+      "artifact": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+      "artifact_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
+      "validity_notes": "Supersedes the pre-fix Top-k pathway proportions."
+    },
+    {
+      "evidence_id": "EV-SAME-STRIDE-V1",
+      "status": "validated_discovery_sensitivity",
+      "claim": "The strict same-stride conditional analysis is recorded in its summary artifact.",
+      "artifact": "results/same_stride_conditional_v1/summary.json",
+      "artifact_sha256": "d41e8cc5fa55cbf32ee94c6d6637bafa169debaf122f6119cce06690777f773e",
+      "validity_notes": "Conditioning on observed same-stride replay changes the estimand and can induce selection."
+    },
+    {
+      "evidence_id": "EV-RANK-SET-FIXED-V1",
+      "status": "validated_discovery",
+      "claim": "Under fixed one-pixel replay, 16-32 px O2M assigned-positive sets were more persistent than 8-16 px sets while rank-only exchanges accounted for a larger share of assigned-set Top-1 flips.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "unit": "directional focal-GT replay",
+      "denominator": 29616,
+      "stress_contract": "fixed_1px",
+      "sampling": "300-image frozen outcome-blind stratified discovery sample",
+      "weighting": "inverse inclusion weights",
+      "uncertainty": "5000 stratified image-cluster bootstrap replicates",
+      "estimates": {
+        "tiny_minus_small_jaccard": [-0.04192575670618803, -0.0489224261330833, -0.03496952185394033],
+        "tiny_minus_small_base_retention": [-0.022577073680154713, -0.027769913632187452, -0.017782720122942474],
+        "tiny_minus_small_assigned_top1_flip": [-0.023813881021875705, -0.05135067710641439, 0.004169497445240964],
+        "tiny_minus_small_rank_only_share_among_flips": [-0.10097727314900584, -0.14499485885275892, -0.06198260849507615]
+      },
+      "artifact": "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
+      "script_sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+      "validity_notes": "Discovery evidence. Rank and set are deliberately distinct estimands; empty-set structural states are retained and excluded from undefined Jaccard/retention means."
+    },
+    {
+      "evidence_id": "EV-RANK-SET-NORMALIZED-V1",
+      "status": "validated_discovery",
+      "claim": "Under equivalent-side kappa=0.0625 replay, 8-16 px O2M positive sets were more persistent than 16-32 px sets, while assigned-set Top-1 flips were lower and rank-only exchanges accounted for a larger share of tiny-object flips.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "unit": "directional focal-GT replay",
+      "denominator": 29612,
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "sampling": "300-image frozen outcome-blind stratified discovery sample",
+      "weighting": "inverse inclusion weights",
+      "uncertainty": "5000 stratified image-cluster bootstrap replicates",
+      "estimates": {
+        "tiny_minus_small_jaccard": [0.0591351651256794, 0.05180862741823671, 0.06639437256021354],
+        "tiny_minus_small_base_retention": [0.049330706360187104, 0.04544596021174241, 0.05311181781316146],
+        "tiny_minus_small_assigned_top1_flip": [-0.12798626085468323, -0.16019636812430724, -0.09327815429321426],
+        "tiny_minus_small_rank_only_share_among_flips": [0.2249888249640588, 0.18388419878325651, 0.26327536341087576]
+      },
+      "artifact": "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+      "artifact_sha256": "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
+      "script_sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+      "validity_notes": "Discovery evidence. Stress-contract reversal of set persistence requires joint interpretation with the continuous boundary analysis; no causal redundancy claim is made."
+    },
+    {
+      "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
+      "status": "validated_discovery_control",
+      "claim": "Under fixed one-pixel replay, the O2O pre-conflict Top-7 q winner and final loss-active identity had nearly identical scale gaps; every recorded flip or fragility disagreement coincided with the instrumented conflict stage.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "unit": "ground-truth object for fragility and directional replay for conflict localisation",
+      "denominator": {"objects": 7434, "directions": 29616},
+      "stress_contract": "fixed_1px",
+      "sampling": "300-image frozen outcome-blind stratified discovery sample",
+      "weighting": "inverse inclusion weights",
+      "uncertainty": "5000 stratified image-cluster bootstrap replicates",
+      "estimates": {
+        "loss_active_minus_preconflict_scale_gap": {"point": -0.0007734406305484332, "ci95": [-0.0036692081603436, 0.0031320006384489563]},
+        "object_fragility_disagreement_rate": {"point": 0.0057798518947887005, "ci95": [0.0030070665832056392, 0.009211600941197773]},
+        "directional_disagreement_count": 134,
+        "directional_disagreement_with_conflict_fraction": 1.0,
+        "object_disagreement_count": 43,
+        "object_disagreement_with_conflict_fraction": 1.0
+      },
+      "artifact": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+      "artifact_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+      "script_sha256": "f411ad13033b69dcb8abeeeee6970487b41c7d2e6c31074af7209b16e2dbc796",
+      "validity_notes": "Conflict coincidence localises disagreement but is not a causal effect estimate."
+    },
+    {
+      "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
+      "status": "validated_discovery_control",
+      "claim": "Under equivalent-side kappa=0.0625 replay, the O2O pre-conflict Top-7 q winner and final loss-active identity had similar scale gaps; every recorded flip or fragility disagreement coincided with the instrumented conflict stage.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "unit": "ground-truth object for fragility and directional replay for conflict localisation",
+      "denominator": {"objects": 7432, "directions": 29612},
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "sampling": "300-image frozen outcome-blind stratified discovery sample",
+      "weighting": "inverse inclusion weights",
+      "uncertainty": "5000 stratified image-cluster bootstrap replicates",
+      "estimates": {
+        "loss_active_minus_preconflict_scale_gap": {"point": -0.003951418287646752, "ci95": [-0.009859027164087477, 0.0003415156503585589]},
+        "object_fragility_disagreement_rate": {"point": 0.005780591262487415, "ci95": [0.0025533839384156124, 0.009713969946997175]},
+        "directional_disagreement_count": 96,
+        "directional_disagreement_with_conflict_fraction": 1.0,
+        "object_disagreement_count": 43,
+        "object_disagreement_with_conflict_fraction": 1.0
+      },
+      "artifact": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+      "artifact_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+      "script_sha256": "f411ad13033b69dcb8abeeeee6970487b41c7d2e6c31074af7209b16e2dbc796",
+      "validity_notes": "Conflict coincidence localises disagreement but is not a causal effect estimate."
+    },
+    {
+      "evidence_id": "EV-LEARNING-DYNAMICS-V1",
+      "status": "validated_discovery_descriptive",
+      "claim": "Branch-specific stress divergence was present at all six physically archived stages spanning the first completed epoch to the final checkpoint while formal mAP changed substantially.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "multiple; recorded row-by-row in the trajectory artifact",
+      "seed": 0,
+      "unit": "checkpoint by stress-contract trajectory point",
+      "denominator": {"archived_checkpoints": 6, "trajectory_rows": 12},
+      "estimand": "paired O2O-minus-O2M scale-gradient contrast at each archived checkpoint",
+      "stress_contract": ["fixed_1px", "equivalent_side_kappa_0.0625"],
+      "sampling": "the frozen AI-TOD-v2 discovery audit design at each archived checkpoint",
+      "weighting": "inverse inclusion weights within each checkpoint audit",
+      "uncertainty": "checkpoint-specific clustered intervals recorded in the trajectory artifact",
+      "multiplicity_status": "descriptive trajectory; no predictive correlation claim",
+      "estimates": {
+        "map50_95_range": [0.1116257461294256, 0.2803662923510098],
+        "fixed_paired_contrast_pp_range": [11.838699793747216, 15.090622047077973],
+        "normalized_paired_contrast_pp_range": [17.34448432805994, 21.346738181004056]
+      },
+      "artifact": "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+      "artifact_sha256": "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9",
+      "validity_notes": "Epoch0.pt is the first completed framework checkpoint, not random initialization. Checkpoints 100-280 were unavailable; no interpolation is permitted."
+    },
+    {
+      "evidence_id": "EV-YOLOV10-NORMALIZED-V1",
+      "status": "validated_discovery_replication",
+      "claim": "A compatible YOLOv10-S detector contract reproduced the normalized near-flat O2O response, reverse O2M response, and positive paired branch divergence.",
+      "dataset": "AI-TOD-v2",
+      "checkpoint_sha256": "ecf7ca8df8eded54b9500109123f94ef8eaddd736bd8351a968761f0f62a0d38",
+      "seed": "not recorded in the legacy manifest",
+      "unit": "common-valid ground-truth object",
+      "denominator": {"ground_truth_objects": 6348, "images": 288},
+      "estimand": "population-weighted 8-16 minus 16-32 fragility rates and paired branch difference",
+      "stress_contract": "equivalent_side_kappa_0.0625",
+      "sampling": "300-image frozen outcome-blind stratified discovery sample; 288 images contributed common-valid observations",
+      "weighting": "inverse inclusion weights",
+      "uncertainty": "5000 stratified image-cluster bootstrap replicates",
+      "multiplicity_status": "cross-architecture discovery replication; no architecture-invariance claim",
+      "estimates": {
+        "o2o_scale_contrast": {"point": 0.009419628603096752, "ci95": [-0.01849375537710415, 0.03613443095386895]},
+        "o2m_scale_contrast": {"point": -0.2350266132229002, "ci95": [-0.2818050864161514, -0.18900616638040585]},
+        "paired_branch_difference": {"point": 0.24444624182599695, "ci95": [0.18887627686586642, 0.3006172568797857]}
+      },
+      "artifact": "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+      "artifact_sha256": "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb",
+      "validity_notes": "Replication across two compatible detector contracts, not proof of architecture invariance."
+    }
+  ],
+  "excluded_from_evidence": [
+    {
+      "artifact": "results/measurement_validation_20260831/parity_exhaustive_v1/INCOMPLETE.json",
+      "reason": "Incomplete exhaustive run; no final result."
+    },
+    {
+      "artifact": "runs/20260831T170918_boundary_discovery_v1/STATUS.json",
+      "reason": "Failed pre-outcome boundary run with partial output after a base-domain implementation defect; superseded only as validation, never as evidence."
+    },
+    {
+      "artifact": "results/measurement_validation_20260831/boundary_reference_smoke_v1/summary.json",
+      "reason": "Failed smoke caused by non-overlapping production/reference image subsets; not a semantic parity result."
+    }
+  ],
+  "pending": [
+    "boundary_radius_and_geometry",
+    "independent_boundary_reference",
+    "instrument_freeze",
+    "prospective_lockbox"
+  ]
+}

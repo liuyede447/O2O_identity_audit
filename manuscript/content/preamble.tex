@@ -1,0 +1,19 @@
+% Quantitative claims are restricted to frozen audits and formal rechecks.
+
+\usepackage[numbers]{natbib}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{placeins}
+\usepackage{url}
+\usepackage{needspace}
+
+\graphicspath{{figures/}}
+\hypersetup{colorlinks=true,citecolor=MidnightBlue,linkcolor=MidnightBlue,urlcolor=MidnightBlue}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.08}
+
+\newcommand{\map}{\mathrm{mAP}_{50:95}}
+\newcommand{\marginobs}{m_g}
+\newcommand{\frag}{Y_g^{\mathrm{frag}}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\input{generated_final_v2/evidence_values.tex}

@@ -1,0 +1,35 @@
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\noindent
+\begin{tabularx}{\textwidth}{@{}p{0.22\textwidth}XXc@{}}
+\toprule
+Case / defect name & Expected & Observed & Pass \\
+\midrule
+\multicolumn{4}{@{}l}{\textit{Analytical oracle cases}} \\
+\path{O1_within_set} & \path{within_set_geometry_rank_reversal} & \path{within_set_geometry_rank_reversal} & Yes \\
+\path{O2_eligibility} & \path{eligibility_boundary} & \path{eligibility_boundary} & Yes \\
+\path{O3_top7} & \path{topk_membership_transition} & \path{topk_membership_transition} & Yes \\
+\path{O4_conflict} & \path{conflict_reassignment} & \path{conflict_reassignment} & Yes \\
+\path{O5_clipping} & \path{within_set_geometry_rank_reversal} & \path{within_set_geometry_rank_reversal} & Yes \\
+\path{O6_disappearance} & \path{eligibility_boundary} & \path{eligibility_boundary} & Yes \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Metamorphic properties}} \\
+\path{candidate_permutation_invariant} & \path{true} & \path{true} & Yes \\
+\path{gt_order_invariant} & \path{true} & \path{true} & Yes \\
+\path{direction_processing_order_invariant} & \path{true} & \path{true} & Yes \\
+\path{equal_p_ranking_is_ciou_ranking} & \path{true} & \path{true} & Yes \\
+\path{equal_ciou_ranking_is_p_ranking} & \path{true} & \path{true} & Yes \\
+\path{conflict_off_eliminates_conflict_label} & \path{true} & \path{true} & Yes \\
+\path{eligibility_lock_eliminates_eligibility_label} & \path{true} & \path{true} & Yes \\
+\addlinespace
+\multicolumn{4}{@{}l}{\textit{Mutation cases}} \\
+\path{M1_remove_ciou_clip} & unclipped negative CIoU produces nonzero q where the frozen contract requires zero & \path{killed=true} & Yes \\
+\path{M2_topk_6_or_8} & Top-k membership parity changes relative to native Top-7 & \path{killed=true} & Yes \\
+\path{M3_corrupt_target_gt_idx} & exact native/reference \path{target_gt_idx} parity detects the injected ownership error & \path{killed=true} & Yes \\
+\path{M4_disable_stal_expansion} & tiny-object eligibility mask shrinks relative to the native STAL contract & \path{killed=true} & Yes \\
+\path{M5_impute_missing_runner_as_zero} & margin-domain invariant rejects a finite value when no positive runner-up exists & \path{killed=true} & Yes \\
+\path{M6_disable_conflict} & conflict-stage parity differs and conflict-labelled transitions are impossible & \path{killed=true} & Yes \\
+\bottomrule
+\end{tabularx}
+\endgroup

@@ -1,0 +1,20 @@
+{
+  "status": "FINAL_EVIDENCE_V4_AWAITING_AUTHOR_REAPPROVAL",
+  "frozen_at_utc": "2026-09-05T11:18:49.884222+00:00",
+  "evidence_entries": 32,
+  "excluded_records": 5,
+  "pending_scientific_gates": [],
+  "author_reapproval_required": true,
+  "predecessor_final_evidence_v3": {
+    "path": "evidence_freeze/final_evidence_v3",
+    "ledger_sha256": "780e697fe6dd6c1a0a72d227e9b0258507af49f76c750bd0c5a638c6a33f0db8",
+    "preserved": true
+  },
+  "current_evidence_ledger_sha256": "a55dc3c94427e51699cee915dd0d8e9171eb9206a9151fafee2cbaf4422e493f",
+  "current_evidence_ledger_markdown_sha256": "c476e2ada0452446170e7e636390f83b50c82d1d7bd40e381589e8ea77b4be59",
+  "source_to_result_mapping_sha256": "2b11ca9df001fe8be2a1fb4cc465f7b9152d9f20fe199df0ce30c8e3ab37c402",
+  "result_to_claim_mapping_sha256": "de4cb39d1afb985308af7b84f0f2638c7994ba8c99ba1ccc88c73373216390aa",
+  "excluded_evidence_sha256": "976b47a082c4d1a93fe2296eb16fec843eb5e77f90693c5c6eef6eca554b8340",
+  "validation_sha256": "3c8db7e0f69e81a01f2fb3803a7e3ef86b455c9b6a20fe1a0bee0f4685acd702",
+  "creator_script_sha256": "4837a4819a7bbe46ddf12d282092e1efa6ad0a0ca4e4fc6acf090cf296d40a34"
+}

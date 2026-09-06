@@ -46,12 +46,12 @@ SOURCES = {
         "EV-RANK-SET-NORMALIZED-V1",
     ),
     "count_summary": (
-        "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
-        "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
+        "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+        "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
         "SOURCE_ADDENDUM",
     ),
     "count_strata": (
-        "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
+        "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
         "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
         "SOURCE_ADDENDUM",
     ),
@@ -145,20 +145,28 @@ def source_rows() -> tuple[list[dict], dict]:
     ]
     for label, key in standard_metrics:
         item = count["standardized_analyses"][key]["adequate_overlap_support"]
+        bundle = count["standardized_analyses"][key]
         point = item["point"]
         interval = item["ci_95_gap_small_minus_tiny"]
+        full_interval = bundle["full_crude_ci_95_gap_small_minus_tiny"]
+        overlap_interval = bundle["adequate_overlap_crude_ci_95_gap_small_minus_tiny"]
         rows.append(
             {
                 "panel": "d",
                 "metric": label,
                 "crude": 100 * point["crude_gap_small_minus_tiny"],
+                "crude_ci_low": 100 * full_interval["low"],
+                "crude_ci_high": 100 * full_interval["high"],
+                "overlap_crude": 100 * point["overlap_crude_gap_small_minus_tiny"],
+                "overlap_ci_low": 100 * overlap_interval["low"],
+                "overlap_ci_high": 100 * overlap_interval["high"],
                 "standardized": 100 * point["standardized_gap_small_minus_tiny"],
                 "std_ci_low": 100 * interval["low"],
                 "std_ci_high": 100 * interval["high"],
                 "orientation": "16-32 minus 8-16",
                 "coverage_tiny": point["coverage_tiny"],
                 "coverage_small": point["coverage_small"],
-                "support_note": "crude point uses full common support; standardized estimate uses adequate-overlap K=3-7",
+                "support_note": "full crude, K=3-7 overlap crude, and K=3-7 standardized estimates separate restriction from count-composition changes",
                 "source_path": sources["count_summary"]["path"],
                 "source_sha256": sources["count_summary"]["sha256"],
                 "evidence_id": "SOURCE_ADDENDUM",
@@ -176,7 +184,7 @@ def source_rows() -> tuple[list[dict], dict]:
         "bootstrap": {"rank_set": 5000, "count_standardization": count["bootstrap"]},
         "warnings": [
             "K=0 is retained in the distribution although full_common_support begins at K=1.",
-            "Crude points and K=3-7 standardized estimates use different supports.",
+            "Full-support crude, overlap-support crude, and overlap-support standardized estimates are shown separately.",
             "Positive-count controls are registered as a figure-only SOURCE_ADDENDUM, not a new final_evidence_v3 entry.",
         ],
     }
@@ -274,13 +282,15 @@ def render(rows: list[dict]) -> None:
     pd_ = data[data.panel == "d"].copy().reset_index(drop=True)
     y = np.arange(len(pd_))[::-1]
     for index, record in pd_.iterrows():
-        axd.plot([record.crude, record.standardized], [y[index], y[index]], color=GUIDE, linewidth=LINE["secondary"], zorder=1)
-        axd.plot(record.crude, y[index], "o", color=MUTED, markersize=4.0, label="Crude (full support)" if index == 0 else None)
+        axd.plot([record.crude, record.overlap_crude, record.standardized], [y[index]] * 3, color=GUIDE, linewidth=LINE["secondary"], zorder=1)
+        axd.errorbar(record.crude, y[index], xerr=[[record.crude-record.crude_ci_low], [record.crude_ci_high-record.crude]], fmt="o", color=MUTED, ecolor=MUTED, markersize=4.0, elinewidth=LINE["ci"], capsize=2, label="Full crude" if index == 0 else None)
+        axd.errorbar(record.overlap_crude, y[index], xerr=[[record.overlap_crude-record.overlap_ci_low], [record.overlap_ci_high-record.overlap_crude]], fmt="o", markerfacecolor="white", markeredgecolor=MUTED, ecolor=MUTED, markersize=4.0, elinewidth=LINE["ci"], capsize=2, label="Overlap crude" if index == 0 else None)
         axd.errorbar(record.standardized, y[index], xerr=[[record.standardized - record.std_ci_low], [record.std_ci_high - record.standardized]], fmt="D", markersize=4.2, color=BRANCH["Paired"], ecolor=BRANCH["Paired"], elinewidth=LINE["ci"], capsize=2, label="K=3–7 standardized" if index == 0 else None)
     zero_line(axd)
+    axd.set_xlim(-8, 52)
     axd.set_yticks(y, pd_["metric"])
     axd.set_xlabel("16–32 minus 8–16 px contrast (pp)")
-    axd.set_title("Count conditioning mainly attenuates rank turnover", loc="left", pad=4)
+    axd.set_title("Support restriction precedes K standardisation", loc="left", pad=4)
     axd.legend(loc="upper right", frameon=True, facecolor="white",
                edgecolor="none", framealpha=1.0)
     finish_axes(axd)
@@ -294,7 +304,7 @@ def render(rows: list[dict]) -> None:
         "resolved_font": font,
         "source_rows": len(rows),
         "source_addendum_used": True,
-        "warnings_preserved": ["K=0 retained", "crude and standardized supports differ"],
+        "warnings_preserved": ["K=0 retained", "support restriction and K standardisation are separated"],
         "interpretation_guards": {"o2m_top1_unique_positive": False, "causal_count_explanation": False},
         "contrast_orientation": "16-32 minus 8-16 in panels b and d",
         "outputs": {ext: sha256(stem.with_suffix(f".{ext}")) for ext in ("pdf", "svg", "png")},

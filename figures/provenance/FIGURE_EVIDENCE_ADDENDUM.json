@@ -29,31 +29,6 @@
       ]
     },
     {
-      "addendum_id": "ADD-FIG-POSITIVE-COUNT-V1",
-      "admission": "WARN/SOURCE_ADDENDUM",
-      "scope": "Fig5c-d positive-count distribution/standardisation only; distinguish K=0 full support from K=3-7 overlap",
-      "sources": [
-        {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/summary.json",
-          "expected_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
-          "role": "positive-count standardisation",
-          "actual_sha256": "5e98371520fd5460157b0afa9cd7c749ee68b3053ef31e83a4ecfd4554bc0d25",
-          "hash_status": "PASS"
-        },
-        {
-          "path": "runs/20260901_o2m_positive_count_scale_controls_v4/artifact/exact_positive_count_strata.csv",
-          "expected_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
-          "evidence_id": "ADD-FIG-POSITIVE-COUNT-V1",
-          "authority": "SOURCE_ADDENDUM",
-          "role": "positive-count distribution",
-          "actual_sha256": "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
-          "hash_status": "PASS"
-        }
-      ]
-    },
-    {
       "addendum_id": "ADD-FIG-INCREMENTAL-VALUE-V1",
       "admission": "WARN/SOURCE_ADDENDUM",
       "scope": "Fig6d held-out diagnostic increment only",

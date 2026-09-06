@@ -70,7 +70,7 @@
     "old_qualitative_pack_used": false
   },
   "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
-  "manifest_sha256": "3f54c91a1f20a40ae37da5d4b50936907d891ce6c2ac6e32c27c08f0d5923907",
+  "manifest_sha256": "9f1f4c3e12dbcf6f1319d42fff19effb54fe3484328133179f5394f620d6bf30",
   "source_image": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
   "source_image_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
   "source_row_count": 21,

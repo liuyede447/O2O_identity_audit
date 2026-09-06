@@ -1,0 +1,78 @@
+{
+  "status": "ARTICLE_MATCHED_V3.1.0_READY",
+  "version": "3.1.0",
+  "tag": "v3.1.0",
+  "article_title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection",
+  "required_content": [
+    "code snapshot",
+    "environment/dependencies",
+    "reproduction README",
+    "final_evidence_v4",
+    "claim-to-evidence map",
+    "generated numerical tables",
+    "figure source CSV/JSON",
+    "image-free final figure PDFs/SVGs",
+    "Supplement source tables",
+    "complete 1/1024 dense curve asset",
+    "four protocol-matched checkpoints",
+    "checkpoint SHA-256 manifest",
+    "permitted sampling manifests",
+    "detector/checkpoint provenance",
+    "analysis support map",
+    "numerical QA",
+    "manuscript reproduction commands"
+  ],
+  "third_party_exclusions": [
+    "AI-TOD-v2 images and annotations",
+    "VisDrone images and annotations",
+    "image-bearing Figure 1/Figure S1 renders",
+    "raw prediction dumps"
+  ],
+  "lockbox_v1": "historical/no-verdict governance record included",
+  "lockbox_v2": "not included as a scientific artifact; abandoned before sample authorization/outcome access",
+  "repository_file_count": 722,
+  "release_assets": [
+    {
+      "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv",
+      "bytes": 1411448003,
+      "sha256": "3622652665b30f727258aa0528436e33ab402255e29935dcc8168a32ea5f6b33",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\boundary_full_grid_1024_o2m_rank_set_radius_curve.csv"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed0_best_epoch280.pt",
+      "bytes": 60231446,
+      "sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\yolo26s_aitodv2_seed0_best_epoch280.pt"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed1_best_epoch280.pt",
+      "bytes": 60231446,
+      "sha256": "d9432d90e9b7c024456a4bca94da8e5e805b03beeedb6158052792e3e755b549",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\yolo26s_aitodv2_seed1_best_epoch280.pt"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed2_best_epoch280.pt",
+      "bytes": 60231446,
+      "sha256": "d83f86f570393d9e573d9c93900322bc4e8fca687a40233a108e97832d8e15f6",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\yolo26s_aitodv2_seed2_best_epoch280.pt"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed3_best_epoch280.pt",
+      "bytes": 60231446,
+      "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2",
+      "source": "release_candidates\\O2O_assignment_state_audit_v3.0.0\\release_assets\\yolo26s_aitodv2_seed3_best_epoch280.pt"
+    }
+  ],
+  "manuscript_pdf_sha256": {
+    "main.pdf": "c7df9ddcc37f37df7acf96f10f5ac1554507dde95b46290a7cde6db64e778eb1",
+    "supplementary.pdf": "3618dbdb8aa318441d27aa60cdf447ca6e3e18cfa6596e73358de5c89e5838e0"
+  },
+  "evidence_v4_manifest_sha256": "00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24",
+  "author_approval_source": "docs/AUTHOR_RELEASE_APPROVAL_RECORD.md",
+  "release_asset_manifest": "RELEASE_ASSET_MANIFEST.json",
+  "preconditions": {
+    "E3_ZERO_CONFLICT_REPORT": "PASS",
+    "E4_PDF_PREFLIGHT_E6": "PASS",
+    "clean_environment_smoke": "PASS"
+  }
+}

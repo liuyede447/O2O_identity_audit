@@ -17,4 +17,4 @@ PyTorch, NumPy, pandas, SciPy, Matplotlib, statsmodels and other packages are de
 
 ## Model weights
 
-The separately staged checkpoints are author-trained artifacts based on the Ultralytics model implementation. All authors and the relevant institutional rights holder approved their public distribution as v3.0.0 release assets under AGPL-3.0-only.
+The separately staged checkpoints are author-trained artifacts based on the Ultralytics model implementation. All authors and the relevant institutional rights holder approved their public distribution as v3.1.0 release assets under AGPL-3.0-only.

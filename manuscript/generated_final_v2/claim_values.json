@@ -1,0 +1,147 @@
+{
+  "ledger_sha256": "780e697fe6dd6c1a0a72d227e9b0258507af49f76c750bd0c5a638c6a33f0db8",
+  "ledger_status": "FINAL_EVIDENCE_FROZEN",
+  "evidence_entries": 27,
+  "macros": {
+    "FixedOtwoOScalePP": {
+      "value": "14.37"
+    },
+    "FixedOtwoMScalePP": {
+      "value": "1.42"
+    },
+    "FixedPairedPP": {
+      "value": "12.95"
+    },
+    "NormalizedOtwoOScalePP": {
+      "value": "0.13"
+    },
+    "NormalizedOtwoMScalePP": {
+      "value": "-17.45"
+    },
+    "NormalizedPairedPP": {
+      "value": "17.58"
+    },
+    "FixedEligibilityPct": {
+      "value": "67.09"
+    },
+    "FixedWithinPct": {
+      "value": "30.13"
+    },
+    "NormalizedEligibilityPct": {
+      "value": "51.01"
+    },
+    "NormalizedWithinPct": {
+      "value": "45.37"
+    },
+    "EligibilityLockFixedGapPP": {
+      "value": "13.58"
+    },
+    "EligibilityLockFixedFractionPct": {
+      "value": "79.44"
+    },
+    "EligibilityLockNormalizedGapPP": {
+      "value": "3.15"
+    },
+    "MarginRankRadiusRho": {
+      "value": "0.628"
+    },
+    "MarginEligibilityRadiusRho": {
+      "value": "0.150"
+    },
+    "MarginRadiusRhoDifference": {
+      "value": "0.477"
+    },
+    "DynamicsMapLow": {
+      "value": "0.112"
+    },
+    "DynamicsMapHigh": {
+      "value": "0.280"
+    },
+    "DynamicsFixedPairedLowPP": {
+      "value": "11.84"
+    },
+    "DynamicsFixedPairedHighPP": {
+      "value": "15.09"
+    },
+    "DynamicsNormPairedLowPP": {
+      "value": "17.34"
+    },
+    "DynamicsNormPairedHighPP": {
+      "value": "21.35"
+    },
+    "YtenOtwoOPP": {
+      "value": "0.94"
+    },
+    "YtenOtwoMPP": {
+      "value": "-23.50"
+    },
+    "YtenPairedPP": {
+      "value": "24.44"
+    },
+    "OtwoORMCBD": {
+      "value": "0.11985"
+    },
+    "OtwoMRMCBD": {
+      "value": "0.10025"
+    },
+    "TinyRMCBDGap": {
+      "value": "0.01745"
+    },
+    "SmallRMCBDGap": {
+      "value": "0.03319"
+    },
+    "OtwoORMSR": {
+      "value": "0.11985"
+    },
+    "OtwoMRMSR": {
+      "value": "0.10025"
+    },
+    "TinyRMSRGap": {
+      "value": "0.01745"
+    },
+    "SmallRMSRGap": {
+      "value": "0.03319"
+    },
+    "SpilloverPairs": {
+      "value": "3549250"
+    },
+    "SpilloverChanges": {
+      "value": "52"
+    },
+    "SpilloverSharedPct": {
+      "value": "0.9159"
+    },
+    "SampleHundredMedianErrorPP": {
+      "value": "3.43"
+    },
+    "SampleHundredPNinetyFiveErrorPP": {
+      "value": "8.41"
+    },
+    "LockboxSelectedImages": {
+      "value": "300"
+    },
+    "LockboxIntersectionGT": {
+      "value": "7243"
+    },
+    "LockboxFixedOnlyGT": {
+      "value": "3"
+    }
+  },
+  "claim_ids": [
+    "EV-BOUNDARY-GEOMETRY-V3",
+    "EV-BOUNDARY-GRID-CONVERGENCE-V1",
+    "EV-LEARNING-DYNAMICS-V1",
+    "EV-LOCKBOX-CORRECTIVE-EXPLORATORY-V1",
+    "EV-MARGIN-RHOR-CONSTRUCT-V3",
+    "EV-PATHWAY-ANATOMY-V2",
+    "EV-PRERESOLUTION-FIXED-V1",
+    "EV-PRERESOLUTION-NORMALIZED-V1",
+    "EV-RANK-SET-FIXED-V1",
+    "EV-RANK-SET-NORMALIZED-V1",
+    "EV-SAMPLE-EFFICIENCY-1000-V1",
+    "EV-SPILLOVER-FORMAL300-V1",
+    "EV-STRESS-CONTRACT-KAPPA-DATASET-V1",
+    "EV-STRESS-CONTRACT-PRIMARY-V1",
+    "EV-YOLOV10-NORMALIZED-V1"
+  ]
+}

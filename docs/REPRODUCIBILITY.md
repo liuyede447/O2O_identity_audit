@@ -1,21 +1,16 @@
-# Reproducibility routes
+# Stress-Dependent Cardinal Assignment Boundaries — reproducibility package
 
-## Integrity-only route
+Article-matched release `v3.1.0` for **Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection**.
 
-Run `python scripts/verify_release.py`. This requires only the Python standard library and validates every repository file listed in `SHA256SUMS.txt`.
+This package measures native post-training assignment states under controlled geometric stress. It is read-only: no weights are updated and no detector-performance improvement or treatment effect is claimed. The article's primary mechanistic estimates are conditional on the audited seed-0 checkpoint; cross-dataset, archived-stage, detector-contract, and four-seed analyses are sensitivity or replication.
 
-## Derived-statistics route
+## Reproduction levels
 
-The active event table is `data/dense_grid_v3/population/per_direction_boundary_events.csv`; six-τ outputs are under `data/dense_grid_v3/postprocess/`. Re-run post-processing from the separately released curve with `scripts/run_dense_grid_postprocess.py`. Use `--help` for the exact CLI and retain the released τ set `.05, .0625, .10, .125, .20, .25`.
+**Level 1 — derived-data reproduction.** Run `python scripts/verify_release.py`, then use the released figure source data, generated manuscript tables, and dense-grid post-processing outputs to regenerate figures and tables.
 
-## Source-image replay route
+**Level 2 — replay reproduction.** Obtain AI-TOD-v2 from <https://github.com/Chasel-Tsui/AI-TOD-v2> and VisDrone from <https://github.com/VisDrone/VisDrone-Dataset>. Configure an absolute dataset path from `configs/aitod_v2.template.yaml`, verify the four checkpoint assets against `RELEASE_ASSET_MANIFEST.csv`, prepend `instrument_frozen/ultralytics_local` to `PYTHONPATH`, and run the documented replay command in `docs/REPRODUCIBILITY.md`.
 
-1. Obtain AI-TOD-v2 from its owner and configure an absolute local path.
-2. Obtain the intended checkpoint release asset and verify SHA-256.
-3. Prepend `instrument_frozen/ultralytics_local` to `PYTHONPATH` so the frozen source snapshot, which reports version 8.4.51, is imported.
-4. Use the released 300-image manifest; do not resample.
-5. Run the audit script with the configuration recorded in the v3 population manifest.
+**Level 3 — training reproduction.** The released checkpoints and training contract are provided for provenance and replay. The initial pretrained-weight hash, resolved `optimizer=auto` state, and complete training lineage were **not preserved**; exact from-scratch training reproduction is therefore not claimed.
 
-The internal environment inventory showed a source-tree/distribution metadata discrepancy (the frozen source reports 8.4.51 while the environment's installed distribution record reported 8.3.221). The frozen source tree and its hashes, not the installed metadata string, are the code authority.
 
-Exact from-scratch training is not claimed: the initial pretrained-weight hash, the resolved `optimizer=auto` state and full lineage reconciliation were not retained. The released `best.pt` files come from runs configured for 300 epochs and record selected checkpoint epoch 280. Do not describe them as weights taken at epoch 300.
+See the repository scripts and `requirements.txt` for the executable routes.

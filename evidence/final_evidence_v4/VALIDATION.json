@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": {
+    "predecessor_preserved": true,
+    "unique_evidence_ids": true,
+    "pending_scientific_gates": 0,
+    "author_reapproval_required": true
+  },
+  "entries": 32
+}

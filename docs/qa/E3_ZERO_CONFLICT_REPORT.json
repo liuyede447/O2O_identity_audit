@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "current E1/E5 article manuscript and final figure set",
+  "checks": {
+    "figure_evidence_manifest": true,
+    "figure_evidence_zero_conflict": true,
+    "final_figure_qa": true,
+    "sign_convention_qa": true,
+    "no_lockbox_v2_scientific_reference": true,
+    "generated_tables_untouched": true
+  },
+  "blocking_issues": [],
+  "author_content_approval": "asserted by the current E6 task instruction"
+}

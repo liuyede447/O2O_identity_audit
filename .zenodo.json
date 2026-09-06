@@ -1,7 +1,7 @@
 {
   "title": "Native assignment-state boundary audit",
   "upload_type": "software",
-  "description": "Code and derived audit data supporting the manuscript 'Measuring Native Assignment-State Boundary Geometry in Aerial Tiny-Object Detection'.",
+  "description": "Code and derived audit data supporting the manuscript 'Stress-Dependent Cardinal Boundaries in Aerial Tiny-Object Detection'.",
   "creators": [
     {
       "name": "Liu, Yede",
@@ -32,6 +32,6 @@
       "scheme": "url"
     }
   ],
-  "version": "3.0.0",
-  "notes": "Metadata for Git tag v3.0.0. No DOI has been minted or asserted; Zenodo binding follows the GitHub release."
+  "version": "3.1.0",
+  "notes": "Metadata for Git tag v3.1.0. No DOI has been minted or asserted; Zenodo binding follows the GitHub release."
 }
