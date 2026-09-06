@@ -1,6 +1,6 @@
 # Stress-Dependent Cardinal Assignment Boundaries — reproducibility package
 
-Article-matched release `v3.2.0` for **Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection**. Zenodo archive: `10.5281/zenodo.22478277`; concept DOI: `10.5281/zenodo.22478276`.
+Article-matched release `v3.2.0` for **Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection**. The corresponding article source package is archived in Zenodo record `10.5281/zenodo.22478277`; the complete dense-grid records and checkpoint assets remain in the GitHub release. Concept DOI: `10.5281/zenodo.22478276`.
 
 This package measures native post-training assignment states under controlled geometric stress. It is read-only: no weights are updated and no detector-performance improvement or treatment effect is claimed. The article's primary mechanistic estimates are conditional on the audited seed-0 checkpoint; cross-dataset, archived-stage, detector-contract, and four-seed analyses are sensitivity or replication.
 

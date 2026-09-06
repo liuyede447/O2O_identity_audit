@@ -15,6 +15,6 @@ Code, derived data, figure-source tables, the complete 1/1024 dense-grid records
 - Licence decision: AGPL-3.0-only for the released software, derived data, and checkpoint assets.
 - Exclusions: raw AI-TOD-v2/VisDrone images and annotations, and raw prediction dumps.
 
-## DOI backfill after Zenodo publication
+## DOI record
 
-Replace the final sentence with the minted DOI, add the DataCite-style software citation to the bibliography, update `CITATION.cff`, `.zenodo.json`, and the submission portal research-data field, then test the DOI outside the author account. Do not invent or reserve a placeholder DOI in the manuscript.
+The version DOI is `10.5281/zenodo.22478277` and the concept DOI is `10.5281/zenodo.22478276`. The DOI resolves to the archived article source package; the GitHub release remains the location for the complete dense-grid records and checkpoint assets.

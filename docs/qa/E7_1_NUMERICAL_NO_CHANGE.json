@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "E7.1 wording/metadata-only correction",
+  "scientific_numbers_changed": false,
+  "scientific_numbers_unchanged": true,
+  "generated_tables_untouched": true,
+  "generated_final_v2_hashes": {
+    "manuscript\\generated_final_v2\\claim_values.json": "543a7ca7a2fda3ea64e5f4a46197644b323a994425feca81fa7e1bed1664b80b",
+    "manuscript\\generated_final_v2\\evidence_values.tex": "bc969b297ffb79aa9549cac5b31131152b2c3fb778728bad820ca366d5574203",
+    "manuscript\\generated_final_v2\\manifest.json": "d06815ee416a46a1821a508df3bac2002fcb23dd8e05f60c775cbb9ee09e09dc",
+    "manuscript\\generated_final_v2\\tables\\axis_normalization_aspect.tex": "fccacce20730d25f87c7e75ab2ed5ff962af3b15a181eecebb07ff0e592a2e3a",
+    "manuscript\\generated_final_v2\\tables\\axis_normalization_summary.tex": "519c518b84b5f55cf743e6e76b7638f49d9b19a634280bba35a0e7b4bccd3c3c",
+    "manuscript\\generated_final_v2\\tables\\boundary_rmsr_summary.tex": "111af76f3235c1654357ca36aa544fb48d4bdc263b1b45372377a3c14de76a18",
+    "manuscript\\generated_final_v2\\tables\\continuous_size_controls.tex": "5a5876caf0abdf3e25fdde8885b81923cc4c8e06c57ac118ea342e44314a99f2",
+    "manuscript\\generated_final_v2\\tables\\first_divergence_cooccurrence.tex": "1fc572f73ac538482266f1481254a6d75de75fec85714f74153cf3789b0407bd",
+    "manuscript\\generated_final_v2\\tables\\four_valid_direction_sensitivity.tex": "060bf0dfd2fc0e20d9d6708e239ec651516054d9603dec7c22b5eadfea508875",
+    "manuscript\\generated_final_v2\\tables\\instrument_qualification_detail.tex": "2a7d8cd34ca318f4a27512873b4b409d1bbc9640bbd30b84a6f696af7fa48e8e",
+    "manuscript\\generated_final_v2\\tables\\lockbox_corrective_exploratory.tex": "d06271e5f933caacaa978fe6ac38186cc14a75e284063667b7a39bc9ddc2dd74",
+    "manuscript\\generated_final_v2\\tables\\multiseed_equivalent_endpoint.tex": "56556a427f491d2c3b1a3580ccfc87a2740f9f909c165eaef6f7d317859799d7",
+    "manuscript\\generated_final_v2\\tables\\multiseed_equivalent_rank_set.tex": "ec359946a0abcd13ec765e81bd97cfebef097a2df6a3908cec921578cb7c6d14",
+    "manuscript\\generated_final_v2\\tables\\multiseed_fixed_endpoint.tex": "62bad15d2edcd191158d85e25b5017320f9514ce6094a3b7c4eb7a88844f860e",
+    "manuscript\\generated_final_v2\\tables\\o2m_positive_count_controls.tex": "4466ed505208ffb1dfcd97018e15ace03a4675cb18ce8b936f9c38f6deacf252",
+    "manuscript\\generated_final_v2\\tables\\prospective_precision_planning.tex": "bdbc43eb46f71e6946654ca46dad685012b8f8786f796f3d5bad67c5eba4518b",
+    "manuscript\\generated_final_v2\\tables\\rank_set_empty_transitions.tex": "4d8fa29b599808011dd5e90652d1c0f34e205ce069712597ecd22d5b8d1ad0f8",
+    "manuscript\\generated_final_v2\\tables\\rank_set_summary.tex": "7a87cda1be8e3739c666fc02bd4c7fa47b8da7bc6dd55cf65e59f394544ad5ec",
+    "manuscript\\generated_final_v2\\tables\\rmcbd_tau_sensitivity.tex": "47ceace069e6d2cf345d97928ff19c671d770f3a42bd4405b1d57cab4f3e4c9e",
+    "manuscript\\generated_final_v2\\tables\\sample_efficiency_1000.tex": "ff2b03cf7c558f118c87601fd54d86148ed4e93a1e8bf9f167fdf535b94b1c7d",
+    "manuscript\\generated_final_v2\\tables\\stress_contract_primary.tex": "e8d52e375f54735ab710f1c557f02ecf3c79cbfca3bc09a75da110045d51619b",
+    "manuscript\\generated_final_v2\\tables\\stress_contract_primary_full.tex": "f1dc78b8a02a933e658efcfd3d82496a41a3b17d84fc4d31e37da0c800ca62ab"
+  },
+  "final_figure_pdf_hashes": {
+    "manuscript\\figures\\final_v4\\Figure_1.pdf": "6415aa57aaab4232fefa15016d57722b875e50abf5c24d8fd18e469ff3c4535f",
+    "manuscript\\figures\\final_v4\\Figure_2.pdf": "55a366e7a761a901a3d9dc97feda1d9f41879e1459297a18fb2e295d96cf1833",
+    "manuscript\\figures\\final_v4\\Figure_3.pdf": "72b77767a5d47e9de46021af43e49c4dacd23a33e9106684b96d4a40172bb01a",
+    "manuscript\\figures\\final_v4\\Figure_4.pdf": "509ac795abfa8ed42748aa94cecd6f2b67aa64891b4bb5de05c3b883cbe5c3dc",
+    "manuscript\\figures\\final_v4\\Figure_5.pdf": "3640db34c07a1d34b94b76c8c88629ba6147d943dde996a73b5f4d54d447b956",
+    "manuscript\\figures\\final_v4\\Figure_6.pdf": "2e2264fb63a53a99286564f7febb87cabce0d268b32aabe65b3c4cbb983067e8",
+    "manuscript\\figures\\final_v4\\Figure_S1.pdf": "07b39fa27e219ddf494dcf19d856a4e2ed7f0ce6d4fcae72c81246978686b6f1"
+  },
+  "evidence_v4_manifest_sha256": "00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24",
+  "support_counts_changed": false,
+  "scientific_source_files_changed": false,
+  "allowed_editorial_files": [
+    "manuscript/content/declarations.tex",
+    "manuscript/supplementary.tex",
+    "manuscript/DATA_CODE_AVAILABILITY_RELEASE_DRAFT.md",
+    "RELEASE_NOTES.md",
+    "release metadata wording",
+    "E7_1 audit outputs"
+  ]
+}
