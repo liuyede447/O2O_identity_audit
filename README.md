@@ -1,6 +1,6 @@
 # Stress-Dependent Assignment Stability — reproducibility package
 
-Article-matched release `v3.3.0` for **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**. This release supersedes the immutable `v3.2.3` predecessor. No Zenodo DOI is asserted yet; it is minted from this exact GitHub release and then backfilled (see `RELEASE_NOTES.md`).
+Article-matched release `v3.3.2` for **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**. This release supersedes the immutable `v3.3.1` predecessor. The corresponding Zenodo archive is generated from this release; cite the version DOI displayed on its Zenodo record (see `RELEASE_NOTES.md`).
 
 This package measures native post-training assignment states under controlled geometric stress. It is read-only: no weights are updated and no detector-performance improvement or treatment effect is claimed. The article's primary mechanistic estimates are conditional on the audited seed-0 checkpoint; cross-dataset, archived-stage, detector-contract, and four-seed analyses are sensitivity or replication.
 

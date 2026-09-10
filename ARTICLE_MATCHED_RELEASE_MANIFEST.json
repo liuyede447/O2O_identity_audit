@@ -1,7 +1,7 @@
 {
-  "status": "ARTICLE_MATCHED_V3.3.0_READY",
-  "version": "3.3.0",
-  "tag": "v3.3.0",
+  "status": "ARTICLE_MATCHED_V3.3.2_READY",
+  "version": "3.3.2",
+  "tag": "v3.3.2",
   "zenodo_doi": null,
   "article_manuscript_sources_in_repo": false,
   "required_content": [
@@ -72,9 +72,9 @@
       "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
     }
   ],
-  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; DOI is reserved for this package and will be backfilled into the manuscript later.",
+  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; cite the version DOI displayed on the corresponding Zenodo record.",
   "predecessor": {
-    "tag": "v3.2.3",
-    "zenodo_doi": "10.5281/zenodo.22537930"
+    "tag": "v3.3.1",
+    "zenodo_doi": "10.5281/zenodo.22683896"
   }
 }

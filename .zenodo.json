@@ -32,12 +32,12 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.22537930",
+      "identifier": "https://doi.org/10.5281/zenodo.22683896",
       "relation": "isNewVersionOf",
       "scheme": "doi",
       "resource_type": "software"
     }
   ],
-  "version": "3.3.0",
-  "notes": "Metadata for Git tag v3.3.0. No Zenodo DOI is asserted; mint the version DOI from this exact GitHub v3.3.0 release, then backfill."
+  "version": "3.3.2",
+  "notes": "Article-matched Zenodo archive for GitHub release v3.3.2."
 }
