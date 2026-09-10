@@ -30,22 +30,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--per-gt",
         type=Path,
-        default=ROOT / "results/reviewer_controls_20260829/formal_s0e300_k00625/per_gt.csv",
+        default=ROOT / "evidence/artifacts/results/reviewer_controls_20260829/formal_s0e300_k00625/per_gt.csv",
     )
     parser.add_argument(
         "--per-direction",
         type=Path,
-        default=ROOT / "results/reviewer_controls_20260829/formal_s0e300_k00625/per_direction.csv",
+        default=ROOT / "evidence/artifacts/results/reviewer_controls_20260829/formal_s0e300_k00625/per_direction.csv",
     )
     parser.add_argument(
         "--boundary-events",
         type=Path,
-        default=ROOT / "runs/20260831T174200_boundary_discovery_v2/artifact/per_direction_boundary_events.csv",
+        default=ROOT / "evidence/artifacts/runs/20260831T174200_boundary_discovery_v2/artifact/per_direction_boundary_events.csv",
     )
     parser.add_argument(
         "--rank-set",
         type=Path,
-        default=ROOT / "runs/20260831T162551_rank_set_normalized_v1/artifact/per_direction_rank_set.csv",
+        default=ROOT / "evidence/artifacts/runs/20260831T162551_rank_set_normalized_v1/artifact/per_direction_rank_set.csv",
     )
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--bootstrap-reps", type=int, default=2000)

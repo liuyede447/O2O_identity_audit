@@ -22,7 +22,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG_ROOT = ROOT / "figures_final"
+FIG_ROOT = ROOT / "figures"
 MANIFEST_PATH = FIG_ROOT / "FIGURE_EVIDENCE_MANIFEST.json"
 ADDENDUM_PATH = FIG_ROOT / "FIGURE_EVIDENCE_ADDENDUM.json"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -130,8 +130,8 @@ def load_and_verify_manifest() -> tuple[dict[str, dict[str, Any]], dict[str, dic
 
     addendum_sources = {norm_path(source["path"]): source for source in co["sources"]}
     for rel in (
-        "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
-        "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
+        "evidence/artifacts/runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+        "evidence/artifacts/runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
     ):
         source = addendum_sources.get(rel)
         if not source or source.get("authority") != "SOURCE_ADDENDUM":

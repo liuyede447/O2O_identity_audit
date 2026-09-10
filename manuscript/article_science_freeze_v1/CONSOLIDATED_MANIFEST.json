@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "ledger": "article_science_freeze_v1",
+  "scientific_recompute": false,
+  "purpose": "repo-relative single index for the frozen primary, corrected manuscript-generated, runner-free, and dense common-trajectory sources in this release",
+  "note": "Paths are relative to the repository root. The dense-grid post-processing root referenced by the manuscript is data/dense_grid_v3/postprocess and evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2.",
+  "records": [
+    {
+      "path": "manuscript/generated_final_v2/evidence_values.tex",
+      "sha256": "8855d89c7380104b52c268bf748fa7720db4efe7e52cd81153c807230982da15",
+      "size_bytes": 1841
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/axis_normalization_aspect.tex",
+      "sha256": "c472fd4062fb1d2c2ba5fc6d20dbd215b9e505d6cc547dc01669e6cae9ac109d",
+      "size_bytes": 713
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/axis_normalization_summary.tex",
+      "sha256": "8a66305db9575b6984724b90ea7d85a12b2e3613b432ffb1eef14b5a4788d3dc",
+      "size_bytes": 587
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/boundary_rmsr_summary.tex",
+      "sha256": "a6e0f93ee6bc267aec425e557bb30652c35c30434c43df9dacfc9d024191f329",
+      "size_bytes": 321
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/continuous_size_controls.tex",
+      "sha256": "749b821290299e38ba59bb76a28c33c40f49976ed75100298e3d0d5eb77409ea",
+      "size_bytes": 853
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/first_divergence_cooccurrence.tex",
+      "sha256": "58fb97dfa0455038b30a8ca305b639458b466df53bd68f2a787a25ab4fdf309d",
+      "size_bytes": 408
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/four_valid_direction_sensitivity.tex",
+      "sha256": "168bc93f755f9baccf08309318424cb9301ed6383ba8dd440a9cc778ea66fcd3",
+      "size_bytes": 542
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/instrument_qualification_detail.tex",
+      "sha256": "c684917363dd29b035960908209a4993f1fe600a4918f3e1807ff4d8f9935fd9",
+      "size_bytes": 2439
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/lockbox_corrective_exploratory.tex",
+      "sha256": "341a703c9def33177f097ee02ff2614f9d6ead67c78446fe012c853149a4476b",
+      "size_bytes": 433
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/multiseed_equivalent_endpoint.tex",
+      "sha256": "43c745b2721675d488ba3f0535734e8adfaeecbba074282767ea91a012e29069",
+      "size_bytes": 417
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/multiseed_equivalent_rank_set.tex",
+      "sha256": "6d8b6d623d1576d4583edfcd7b755a859aa16d5ac89374922f2325c0e6b0e6b6",
+      "size_bytes": 708
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/multiseed_fixed_endpoint.tex",
+      "sha256": "297f24d048cd275583472483d730a1907b3fe69361716cd6873d95cebab901d6",
+      "size_bytes": 357
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/o2m_positive_count_controls.tex",
+      "sha256": "40b0f0a8ae6af5fa93c227c87a884dce3941ac239058ce57bce0af838b702e36",
+      "size_bytes": 500
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/prospective_precision_planning.tex",
+      "sha256": "e6b1195e6ba9460b4873acd8afc94542976c9ac8ddf2ef1544bb4e1ebd73d76d",
+      "size_bytes": 470
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/rank_set_empty_transitions.tex",
+      "sha256": "403bd5739437ab000b0b50fc4b3bc614b103e270279a2535fc5dd58db13fdb7f",
+      "size_bytes": 765
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/rank_set_summary.tex",
+      "sha256": "4f9200cd05411e9cebcf0e86cbec30ee35aa3f16c6e27365ad3bcea1992dbb59",
+      "size_bytes": 413
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/rmcbd_tau_sensitivity.tex",
+      "sha256": "5e957bda2e128772c60b9be743dee35fcb9ee1d70fa378b41d360e7228b3f5cb",
+      "size_bytes": 645
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/sample_efficiency_1000.tex",
+      "sha256": "f862a745e1d5b305adb6c6bc83f2df422aa50fb7a571812c1c772cf854a3ec40",
+      "size_bytes": 288
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/stress_contract_primary.tex",
+      "sha256": "81ab9df9e01919c282e5d2ec9db1beda7bb2e0ac9cbd42fbc9e48d81a2c6ea6c",
+      "size_bytes": 517
+    },
+    {
+      "path": "manuscript/generated_final_v2/tables/stress_contract_primary_full.tex",
+      "sha256": "7f8a79853bcb03e13ec2be7767c16fe18ff033a423039795b83c5f9135013329",
+      "size_bytes": 553
+    },
+    {
+      "path": "manuscript/generated_support_sensitivity_v1/tables/dense_common_trajectory_sensitivity.tex",
+      "sha256": "a968455dd110456eb802517631af2e7c69a880282de6ad929aec4267181e962a",
+      "size_bytes": 1929
+    },
+    {
+      "path": "manuscript/generated_support_sensitivity_v1/tables/runner_free_endpoint_sensitivity.tex",
+      "sha256": "7ee8bf4d769d79ae640074c30ce880b00a84b97633b38eaa99912531aae5bcdf",
+      "size_bytes": 1312
+    },
+    {
+      "path": "data/support_sensitivity_20260909/DENSE_COMMON_RISKSET_COUNTS.csv",
+      "sha256": "8d6c99e4c94102c6671ce7a0cb75d76ae0bb9d624fe9632ac9d7efefab0e1099",
+      "size_bytes": 3047
+    },
+    {
+      "path": "data/support_sensitivity_20260909/DENSE_COMMON_TRAJECTORY_RMCBD.csv",
+      "sha256": "d6e83b3b962212432701559d41c400d76b3ae3ba2648f86fbb5d6533ae158a72",
+      "size_bytes": 2433
+    },
+    {
+      "path": "data/support_sensitivity_20260909/MANIFEST.json",
+      "sha256": "174674b00e3dfb7bac6d8689ea1e84b4fce987800c6bbf60ed61964b12517be0",
+      "size_bytes": 1981
+    },
+    {
+      "path": "data/support_sensitivity_20260909/RUNNER_FREE_ENDPOINT_SENSITIVITY.csv",
+      "sha256": "f79ce92f917f313f4027c813ab8d7d55fd945694ea645f526206f44acb3a4833",
+      "size_bytes": 3020
+    },
+    {
+      "path": "data/support_sensitivity_20260909/SUPPORT_SENSITIVITY_REPORT.md",
+      "sha256": "42431ae2c9b9b0131a436682b62ba7c55c17a9cd44dcc6d239eb057349db89ac",
+      "size_bytes": 8646
+    }
+  ]
+}

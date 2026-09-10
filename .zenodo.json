@@ -1,7 +1,7 @@
 {
-  "title": "Stress-Dependent Cardinal Boundaries of Native Assignment States in Aerial Tiny-Object Detection",
+  "title": "Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection",
   "upload_type": "software",
-  "description": "Code and derived audit data supporting the manuscript 'Stress-Dependent Cardinal Boundaries in Aerial Tiny-Object Detection'.",
+  "description": "Code and derived audit data supporting the manuscript 'Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection'.",
   "creators": [
     {
       "name": "Liu, Yede",
@@ -33,11 +33,11 @@
     },
     {
       "identifier": "https://doi.org/10.5281/zenodo.22537930",
-      "relation": "isIdenticalTo",
+      "relation": "isNewVersionOf",
       "scheme": "doi",
       "resource_type": "software"
     }
   ],
-  "version": "3.2.3",
-  "notes": "Metadata for Git tag v3.2.3 and Zenodo version DOI 10.5281/zenodo.22537930."
+  "version": "3.3.0",
+  "notes": "Metadata for Git tag v3.3.0. No Zenodo DOI is asserted; mint the version DOI from this exact GitHub v3.3.0 release, then backfill."
 }

@@ -1,23 +1,19 @@
 {
   "status": "PASS",
-  "version": "3.2.0",
-  "clean_environment": "e6_validation_env_v3_1_0\\Scripts\\python.exe",
-  "level_1_verify_release": "PASS: 722 files verified; repository exclusion policy passed",
-  "level_1_required_table_count": 19,
-  "level_1_figure_source_files_present": true,
-  "level_2_dataset_commands": "Blocked until AI-TOD-v2 and VisDrone are obtained under provider terms; no pixels are redistributed.",
-  "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved.",
-  "article_matched_pdf_sha256": {
-    "main.pdf": "c7df9ddcc37f37df7acf96f10f5ac1554507dde95b46290a7cde6db64e778eb1",
-    "supplementary.pdf": "3618dbdb8aa318441d27aa60cdf447ca6e3e18cfa6596e73358de5c89e5838e0"
+  "version": "3.3.0",
+  "tag": "v3.3.0",
+  "clean_environment": "fresh git clone (core.autocrlf default), external Python 3.13 with numpy/pandas/matplotlib/torch; no benchmark pixels or weights in the repository",
+  "checks": {
+    "level_1_verify_release": "PASS: 736 files verified; repository exclusion policy passed",
+    "level_1_sha256sums": "sha256sum -c SHA256SUMS.txt: zero FAILED lines",
+    "level_1_figure_2_regen": "python figures/src/plot_fig2_lowfi.py -> exit 0; figures/draft/Fig2.{pdf,png,svg} produced, numbers match the manuscript Figure 2",
+    "level_1_support_sensitivity_script": "python scripts/run_support_sensitivity.py --help -> OK (module import path resolves)",
+    "level_2_replay_driver": "python instrument_frozen/scripts/assignment_stability_audit_v2.py --help -> OK (imports torch + ultralytics_local); full GPU run not exercised in this smoke test",
+    "level_2_dataset_commands": "Blocked until AI-TOD-v2 and VisDrone are obtained under provider terms; no pixels are redistributed.",
+    "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved."
   },
-  "level_1_required_qa_files_present": true,
-  "github_release_asset_verification": {
-    "status": "PASS",
-    "release_url": "https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.1.0",
-    "tag": "v3.1.0",
-    "target_commit": "d7a881218039fd959342a21222f61234daf43e5a",
-    "asset_count": 5,
-    "mismatches": []
-  }
+  "figures_needing_release_asset": ["Fig3", "Fig4", "Fig6", "FigS1"],
+  "figures_needing_unincluded_run": ["Fig5 (o2m_positive_count_scale_controls_v5)"],
+  "github_release_assets": "Four seed-0..3 checkpoints and four dense-grid gzip parts; see RELEASE_ASSET_MANIFEST.csv. Uploaded to the GitHub Release, not committed to Git.",
+  "zenodo_doi": null
 }

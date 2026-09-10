@@ -11,7 +11,7 @@ final detector outputs.
 
 Only the following inputs are permitted:
 
-- `figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json`
+- `figures/source_data/figs1_primary_trace/primary_qualitative_trace.json`
 - its adjacent `validation.json`
 - the source image named by the trace
 - `results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv`

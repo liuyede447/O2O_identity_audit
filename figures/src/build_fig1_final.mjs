@@ -4,7 +4,7 @@ import sharp from "sharp";
 import { Presentation, PresentationFile } from "@oai/artifact-tool";
 
 const ROOT = "E:/two_paper/beifen/publication_reproducible";
-const OUT = `${ROOT}/figures_final`;
+const OUT = `${ROOT}/figures`;
 const IMAGE = `${OUT}/source_data/fig1_focal_audit_crop_500x375.png`;
 const ORIGINAL_IMAGE = `${OUT}/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png`;
 const TRACE = `${OUT}/source_data/figs1_primary_trace/primary_qualitative_trace.json`;

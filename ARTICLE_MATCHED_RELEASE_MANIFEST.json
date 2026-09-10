@@ -1,8 +1,8 @@
 {
-  "status": "ARTICLE_MATCHED_V3.2.3_READY",
-  "version": "3.2.3",
-  "tag": "v3.2.3",
-  "zenodo_doi": "10.5281/zenodo.22537930",
+  "status": "ARTICLE_MATCHED_V3.3.0_READY",
+  "version": "3.3.0",
+  "tag": "v3.3.0",
+  "zenodo_doi": null,
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
@@ -14,7 +14,9 @@
     "instrument_frozen",
     "four checkpoints",
     "complete 1/1024 dense-grid asset",
-    "SHA-256 manifests"
+    "SHA-256 manifests",
+    "read-only replay driver (instrument_frozen/scripts/assignment_stability_audit_v2.py)",
+    "corrected dense common-trajectory support sensitivity"
   ],
   "explicit_exclusions": [
     "main.tex",
@@ -27,7 +29,7 @@
     "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "repository_file_count": 762,
+  "repository_file_count": 745,
   "release_assets": [
     {
       "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
@@ -70,5 +72,9 @@
       "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
     }
   ],
-  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; DOI is reserved for this package and will be backfilled into the manuscript later."
+  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; DOI is reserved for this package and will be backfilled into the manuscript later.",
+  "predecessor": {
+    "tag": "v3.2.3",
+    "zenodo_doi": "10.5281/zenodo.22537930"
+  }
 }

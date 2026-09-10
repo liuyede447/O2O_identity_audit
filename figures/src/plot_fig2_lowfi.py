@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG_ROOT = ROOT / "figures_final"
+FIG_ROOT = ROOT / "figures"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from figure_style import (  # noqa: E402
     BRANCH,
@@ -39,23 +39,23 @@ from figure_style import (  # noqa: E402
 
 SOURCES = {
     "fixed": (
-        "results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
+        "evidence/artifacts/results/measurement_validation_20260831/fixed_branch_replay_v1/normalized_perturbation_summary.json",
         "aece532fd9ea842247ed22ea03557e13ece6209144d83f3598beadd38ba0bcfe",
     ),
     "equivalent": (
-        "results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json",
+        "evidence/artifacts/results/reviewer_controls_20260829/formal_s0e300_k00625/normalized_perturbation_summary.json",
         "5d09278684cf683a8b6227b7e792f162f01f3e65718327b6cf51e0fdc669b37b",
     ),
     "kappa": (
-        "results/stress_contract_sensitivity_20260829/frozen_matrix/kappa_sensitivity_matrix.csv",
+        "evidence/artifacts/results/stress_contract_sensitivity_20260829/frozen_matrix/kappa_sensitivity_matrix.csv",
         "38ee31b39b02f383cba7b816aa3b34fdccc7440d051cb725524bfb879815f0a8",
     ),
     "dynamics": (
-        "results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
+        "evidence/artifacts/results/five_experiment_upgrade_20260830/learning_dynamics/learning_dynamics_trajectory.csv",
         "3cb0c2d4bce8ca85d458a69a063c241457a72244feafa82465bf4ceaf1705aa9",
     ),
     "yolov10": (
-        "results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
+        "evidence/artifacts/results/five_experiment_upgrade_20260830/yolov10_normalized_k00625/normalized_perturbation_summary.json",
         "ca344ce4f99d92d4654b65c1c1e97818bf385f9d3a57695bc3e37d6f4af275eb",
     ),
 }

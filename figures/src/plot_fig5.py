@@ -16,7 +16,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG = ROOT / "figures_final"
+FIG = ROOT / "figures"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from figure_style import (  # noqa: E402
     BRANCH,
@@ -36,22 +36,22 @@ from figure_style import (  # noqa: E402
 
 SOURCES = {
     "rank_fixed": (
-        "runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
+        "evidence/artifacts/runs/20260831T161235_rank_set_fixed_v1/artifact/rank_set_summary.json",
         "649627210a886208014733f881429f6572f414d306bb051fe52c6ef2758ed4b4",
         "EV-RANK-SET-FIXED-V1",
     ),
     "rank_equivalent": (
-        "runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
+        "evidence/artifacts/runs/20260831T162551_rank_set_normalized_v1/artifact/rank_set_summary.json",
         "7f1a83d6b538143dbf1ff38b8deecc7627795298d73733a72abfd4b7e102b11d",
         "EV-RANK-SET-NORMALIZED-V1",
     ),
     "count_summary": (
-        "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
+        "evidence/artifacts/runs/20260905_o2m_positive_count_scale_controls_v5/artifact/summary.json",
         "2b232e52716cb5a45ef97f4bf64dd6458308fb639283762a30824e90cc056e9f",
         "SOURCE_ADDENDUM",
     ),
     "count_strata": (
-        "runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
+        "evidence/artifacts/runs/20260905_o2m_positive_count_scale_controls_v5/artifact/exact_positive_count_strata.csv",
         "8a68539c42a30b5db38ac3ca948f6b862990a885a84b21be335aa99de3c0f365",
         "SOURCE_ADDENDUM",
     ),

@@ -14,7 +14,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG = ROOT / "figures_final"
+FIG = ROOT / "figures"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from figure_style import (  # noqa: E402
     BRANCH,
@@ -34,27 +34,27 @@ from figure_style import (  # noqa: E402
 
 SOURCES = {
     "events": (
-        "runs/20260902_boundary_full_grid_1024_population_v1/per_direction_boundary_events.csv",
+        "evidence/artifacts/runs/20260902_boundary_full_grid_1024_population_v1/per_direction_boundary_events.csv",
         "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
         "EV-BOUNDARY-GEOMETRY-V3",
     ),
     "margin": (
-        "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
+        "evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/margin_construct.csv",
         "e818cfd5a12b167b8aea1f174368a5d2f1457fa84a31251a6b4d03c6b565ea22",
         "EV-MARGIN-RHOR-CONSTRUCT-V3",
     ),
     "rho_status": (
-        "runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rho_R_status.csv",
+        "evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rho_R_status.csv",
         "852482d938a5c10e61834a3327d342a5b6134b42b895cc291066bc7d45c43bab",
         "EV-MARGIN-RHOR-CONSTRUCT-V3",
     ),
     "increment_ai": (
-        "results/reviewer_controls_20260829/formal_s0e300_k00625/incremental_value_summary_foldwise.json",
+        "evidence/artifacts/results/reviewer_controls_20260829/formal_s0e300_k00625/incremental_value_summary_foldwise.json",
         "0f555db9c5e1ecf3d738607551d45beb75f6f0a6f3e0820683b27d9aa5b32a88",
         "SOURCE_ADDENDUM",
     ),
     "increment_vis": (
-        "results/reviewer_controls_20260829/vis_b4e150_equiv_k00625/incremental_value_summary_foldwise.json",
+        "evidence/artifacts/results/reviewer_controls_20260829/vis_b4e150_equiv_k00625/incremental_value_summary_foldwise.json",
         "8227b831cfe73cc3533ae1b953e21e62c138e5f9205b35e54eba38c38371ed5c",
         "SOURCE_ADDENDUM",
     ),

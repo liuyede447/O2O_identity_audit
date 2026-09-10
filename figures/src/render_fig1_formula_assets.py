@@ -4,7 +4,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
-ROOT = Path(r"E:\two_paper\beifen\publication_reproducible\figures_final")
+ROOT = Path(r"E:\two_paper\beifen\publication_reproducible\figures")
 OUT = ROOT / "source_data"
 
 

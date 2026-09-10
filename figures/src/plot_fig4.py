@@ -21,9 +21,9 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG_ROOT = ROOT / "figures_final"
+FIG_ROOT = ROOT / "figures"
 MANIFEST_PATH = FIG_ROOT / "FIGURE_EVIDENCE_MANIFEST.json"
-RUN_PREFIX = "runs/20260903_boundary_full_grid_1024_postprocess_v2/"
+RUN_PREFIX = "evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2/"
 TERMINAL_REL = RUN_PREFIX + "TERMINAL_VALIDATION.json"
 PANEL_IDS = ("Fig4a", "Fig4b", "Fig4c", "Fig4d")
 TAUS = (0.05, 0.0625, 0.10, 0.125, 0.20, 0.25)

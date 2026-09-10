@@ -35,17 +35,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dense-root",
         type=Path,
-        default=ROOT / "runs" / "20260903_boundary_full_grid_1024_postprocess_v2",
+        default=ROOT / "evidence" / "artifacts" / "runs" / "20260903_boundary_full_grid_1024_postprocess_v2",
     )
     parser.add_argument(
         "--legacy-tau-root",
         type=Path,
-        default=ROOT / "runs" / "20260901_rmcbd_tau_sensitivity",
+        default=ROOT / "evidence" / "artifacts" / "runs" / "20260901_rmcbd_tau_sensitivity",
     )
     parser.add_argument(
         "--legacy-primary",
         type=Path,
-        default=ROOT / "runs" / "20260831_boundary_geometry_formal_v2" / "artifact",
+        default=ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_geometry_formal_v2" / "artifact",
     )
     parser.add_argument("--output-dir", type=Path)
     parser.add_argument("--self-test", action="store_true")

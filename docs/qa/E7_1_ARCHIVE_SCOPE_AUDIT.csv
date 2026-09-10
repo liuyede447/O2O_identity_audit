@@ -1,8 +1,0 @@
-Artifact,GitHub,Zenodo,Verified evidence
-source package,GitHub v3.2.0 source archive and repository,Zenodo record source ZIP,GitHub tag/commit; Zenodo API file key and version
-code,Available in GitHub v3.2.0 repository/package,Corresponding source package only,Release manifest; Zenodo API file list
-derived data,Available in GitHub v3.2.0 release/package,Not separately claimed beyond source ZIP,GitHub release asset/package manifest; Zenodo API file list
-figure-source data,Available in GitHub v3.2.0 repository,Not separately claimed beyond source ZIP,Figure manifest and repository tree; Zenodo API file list
-dense 1/1024 records,GitHub gzip asset; decompression SHA matches raw curve,Not directly present as a Zenodo file,GitHub asset SHA; Zenodo API file list
-four protocol-matched checkpoints,GitHub release assets; SHA-256 verified,Not directly present as Zenodo files,GitHub asset manifest; Zenodo API file list
-SHA manifest,GitHub repository/release package manifests,Not separately claimed beyond source ZIP,ARTICLE_MATCHED_RELEASE_SHA256.txt; Zenodo API file list

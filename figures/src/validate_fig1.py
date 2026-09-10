@@ -12,7 +12,7 @@ import win32com.client
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG = ROOT / "figures_final"
+FIG = ROOT / "figures"
 PPTX = FIG / "draft/Fig1.pptx"
 PDF = FIG / "draft/Fig1.pdf"
 PNG = FIG / "draft/Fig1.png"

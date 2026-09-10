@@ -29,11 +29,11 @@ from run_reviewer_killer_controls import SelectedDataset  # noqa: E402
 CHECKPOINT = ROOT / "release_candidates" / "O2O_identity_e300_checkpoints_20260901" / "checkpoints" / "yolo26s_aitodv2_e300_seed0_best.pt"
 CHECKPOINT_SHA = "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
 DATA = ROOT / "configs" / "aitod_v2_local_g.yaml"
-SELECTION = ROOT / "results" / "five_experiment_upgrade_20260830" / "anatomy_fixed_1px_v2" / "selected_images.csv"
-FIXED_ROWS = ROOT / "results" / "measurement_validation_20260831" / "fixed_branch_replay_v1" / "per_direction.csv"
+SELECTION = ROOT / "evidence" / "artifacts" / "results" / "five_experiment_upgrade_20260830" / "anatomy_fixed_1px_v2" / "selected_images.csv"
+FIXED_ROWS = ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "fixed_branch_replay_v1" / "per_direction.csv"
 FIXED_ROWS_SHA = "930a50dadb0abdfdcede0de344cb93ed2f68c0c5a4c1f183a2f70ddde8be87f8"
 IMAGE_ID = "0000170_00401_d_0000001__160_0"
-OUT = ROOT / "figures_final" / "source_data" / "figs1_primary_trace"
+OUT = ROOT / "figures" / "source_data" / "figs1_primary_trace"
 
 
 def sha256(path: Path) -> str:

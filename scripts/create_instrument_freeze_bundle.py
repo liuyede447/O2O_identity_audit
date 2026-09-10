@@ -82,32 +82,32 @@ LEDGER_FILES = (
 )
 
 VALIDATION_FILES = {
-    "oracle_validation.json": ROOT / "results" / "measurement_validation_20260831" / "oracle_suite_v1" / "oracle_validation.json",
-    "mutation_validation.json": ROOT / "results" / "measurement_validation_20260831" / "mutation_suite_v1" / "mutation_validation.json",
-    "real_parity_summary.json": ROOT / "results" / "measurement_validation_20260831" / "parity_full_v1" / "summary.json",
-    "real_parity_deterministic_5k_summary.json": ROOT / "results" / "measurement_validation_20260831" / "parity_deterministic_5k_v1" / "summary.json",
-    "eligibility_lock_summary.json": ROOT / "results" / "measurement_validation_20260831" / "eligibility_lock_v1" / "summary.json",
-    "eligibility_stable_summary.json": ROOT / "results" / "five_experiment_upgrade_20260830" / "eligibility_stable_sensitivity_v2" / "summary.json",
-    "corrected_anatomy_bootstrap.json": ROOT / "results" / "five_experiment_upgrade_20260830" / "anatomy_bootstrap_summary_v2.json",
-    "rank_set_fixed_summary.json": ROOT / "runs" / "20260831T161235_rank_set_fixed_v1" / "artifact" / "rank_set_summary.json",
-    "rank_set_normalized_summary.json": ROOT / "runs" / "20260831T162551_rank_set_normalized_v1" / "artifact" / "rank_set_summary.json",
-    "preresolution_fixed_summary.json": ROOT / "runs" / "20260831T163900_preresolution_fixed_v1" / "artifact" / "summary.json",
-    "preresolution_normalized_summary.json": ROOT / "runs" / "20260831T164000_preresolution_normalized_v1" / "artifact" / "summary.json",
-    "boundary_numeric_repro_summary.json": ROOT / "results" / "measurement_validation_20260831" / "boundary_illegal_shift_repro_v4" / "summary.json",
-    "boundary_reference_smoke_summary.json": ROOT / "results" / "measurement_validation_20260831" / "boundary_reference_smoke_v3" / "summary.json",
-    "boundary_discovery_summary.json": ROOT / "runs" / "20260831T174200_boundary_discovery_v2" / "artifact" / "summary.json",
-    "boundary_discovery_manifest.json": ROOT / "runs" / "20260831T174200_boundary_discovery_v2" / "artifact" / "manifest.json",
-    "boundary_reference_formal_summary.json": ROOT / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "summary.json",
-    "boundary_reference_formal_manifest.json": ROOT / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "manifest.json",
-    "boundary_reference_output_inventory.json": ROOT / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "OUTPUT_INVENTORY.json",
-    "boundary_geometry_summary.json": ROOT / "runs" / "20260831_boundary_geometry_formal_v2" / "artifact" / "summary.json",
-    "freeze_builder_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "freeze_builder_selftest.json",
-    "lockbox_selector_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "selector_selftest.json",
-    "sealed_bundle_validator_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "sealed_bundle_validator_selftest.json",
-    "confirmatory_analyzer_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "confirmatory_analyzer_selftest.json",
-    "lockbox_chain_selftest_manifest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "manifest.json",
-    "run_output_inventory_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "run_output_inventory_selftest.json",
-    "boundary_geometry_analyzer_selftest.json": ROOT / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "boundary_geometry_analyzer_selftest.json",
+    "oracle_validation.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "oracle_suite_v1" / "oracle_validation.json",
+    "mutation_validation.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "mutation_suite_v1" / "mutation_validation.json",
+    "real_parity_summary.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "parity_full_v1" / "summary.json",
+    "real_parity_deterministic_5k_summary.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "parity_deterministic_5k_v1" / "summary.json",
+    "eligibility_lock_summary.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "eligibility_lock_v1" / "summary.json",
+    "eligibility_stable_summary.json": ROOT / "evidence" / "artifacts" / "results" / "five_experiment_upgrade_20260830" / "eligibility_stable_sensitivity_v2" / "summary.json",
+    "corrected_anatomy_bootstrap.json": ROOT / "evidence" / "artifacts" / "results" / "five_experiment_upgrade_20260830" / "anatomy_bootstrap_summary_v2.json",
+    "rank_set_fixed_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T161235_rank_set_fixed_v1" / "artifact" / "rank_set_summary.json",
+    "rank_set_normalized_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T162551_rank_set_normalized_v1" / "artifact" / "rank_set_summary.json",
+    "preresolution_fixed_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T163900_preresolution_fixed_v1" / "artifact" / "summary.json",
+    "preresolution_normalized_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T164000_preresolution_normalized_v1" / "artifact" / "summary.json",
+    "boundary_numeric_repro_summary.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "boundary_illegal_shift_repro_v4" / "summary.json",
+    "boundary_reference_smoke_summary.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "boundary_reference_smoke_v3" / "summary.json",
+    "boundary_discovery_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T174200_boundary_discovery_v2" / "artifact" / "summary.json",
+    "boundary_discovery_manifest.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831T174200_boundary_discovery_v2" / "artifact" / "manifest.json",
+    "boundary_reference_formal_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "summary.json",
+    "boundary_reference_formal_manifest.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "manifest.json",
+    "boundary_reference_output_inventory.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_reference_formal_v2" / "artifact" / "OUTPUT_INVENTORY.json",
+    "boundary_geometry_summary.json": ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_geometry_formal_v2" / "artifact" / "summary.json",
+    "freeze_builder_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "freeze_builder_selftest.json",
+    "lockbox_selector_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "selector_selftest.json",
+    "sealed_bundle_validator_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "sealed_bundle_validator_selftest.json",
+    "confirmatory_analyzer_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "confirmatory_analyzer_selftest.json",
+    "lockbox_chain_selftest_manifest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "manifest.json",
+    "run_output_inventory_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "run_output_inventory_selftest.json",
+    "boundary_geometry_analyzer_selftest.json": ROOT / "evidence" / "artifacts" / "results" / "measurement_validation_20260831" / "lockbox_chain_selftests_pre_freeze_current" / "boundary_geometry_analyzer_selftest.json",
 }
 
 EXPECTED_VALIDATION_STATUSES = {
@@ -139,7 +139,7 @@ EXPECTED_VALIDATION_STATUSES = {
     "boundary_geometry_analyzer_selftest.json": "PASS",
 }
 
-DISCOVERY_SELECTION = ROOT / "results" / "five_experiment_upgrade_20260830" / "anatomy_fixed_1px_v2" / "selected_images.csv"
+DISCOVERY_SELECTION = ROOT / "evidence" / "artifacts" / "results" / "five_experiment_upgrade_20260830" / "anatomy_fixed_1px_v2" / "selected_images.csv"
 DATA_YAML = ROOT / "configs" / "aitod_v2_local_g.yaml"
 CHECKPOINT = Path(r"E:\two_paper\beifen\archive_backup\artifacts\analysis_runs\detect\experiments\baseline_13zone\yolo26s_aitodv2_baseline_13zone_e300_s0\weights\best.pt")
 LOCAL_TAL = ROOT / "ultralytics_local" / "ultralytics" / "utils" / "tal.py"
@@ -245,7 +245,7 @@ def validate_qualification_inputs() -> None:
         if not path.is_file() or sha256(path) != expected:
             raise RuntimeError(f"lockbox self-test script hash mismatch: {relative}")
 
-    boundary_run = ROOT / "runs" / "20260831T174200_boundary_discovery_v2"
+    boundary_run = ROOT / "evidence" / "artifacts" / "runs" / "20260831T174200_boundary_discovery_v2"
     boundary_summary = read_json(
         boundary_run / "artifact" / "summary.json", "boundary discovery summary"
     )
@@ -270,7 +270,7 @@ def validate_qualification_inputs() -> None:
     ):
         raise RuntimeError("formal boundary discovery manifest differs from the qualified contract")
 
-    reference_run = ROOT / "runs" / "20260831_boundary_reference_formal_v2"
+    reference_run = ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_reference_formal_v2"
     reference_summary = read_json(
         reference_run / "artifact" / "summary.json", "formal boundary reference summary"
     )
@@ -322,7 +322,7 @@ def validate_qualification_inputs() -> None:
     ):
         raise RuntimeError("formal boundary reference output inventory is incomplete or stale")
 
-    geometry_run = ROOT / "runs" / "20260831_boundary_geometry_formal_v2"
+    geometry_run = ROOT / "evidence" / "artifacts" / "runs" / "20260831_boundary_geometry_formal_v2"
     geometry_summary = read_json(
         geometry_run / "artifact" / "summary.json", "boundary geometry summary"
     )

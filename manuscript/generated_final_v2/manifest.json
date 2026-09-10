@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "manifest_schema": "mixed_provenance_postreview_v1",
-  "rebuilt_at_utc": "2026-09-06T00:34:38.025639+00:00",
+  "rebuilt_at_utc": "2026-09-10T03:20:42.398046+00:00",
   "source_ledger": "E:\\two_paper\\beifen\\publication_reproducible\\evidence_freeze\\final_evidence_v4\\CURRENT_EVIDENCE_LEDGER.json",
   "source_ledger_sha256": "a55dc3c94427e51699cee915dd0d8e9171eb9206a9151fafee2cbaf4422e493f",
   "generator_sha256": "87cd9b2f0277b9383fd8d8dec208c3f682bbec1268afa01a94b5771be7b785f1",
@@ -49,7 +49,7 @@
     "tables/o2m_positive_count_controls.tex": "4466ed505208ffb1dfcd97018e15ace03a4675cb18ce8b936f9c38f6deacf252",
     "tables/prospective_precision_planning.tex": "bdbc43eb46f71e6946654ca46dad685012b8f8786f796f3d5bad67c5eba4518b",
     "tables/rank_set_empty_transitions.tex": "4d8fa29b599808011dd5e90652d1c0f34e205ce069712597ecd22d5b8d1ad0f8",
-    "tables/rank_set_summary.tex": "7a87cda1be8e3739c666fc02bd4c7fa47b8da7bc6dd55cf65e59f394544ad5ec",
+    "tables/rank_set_summary.tex": "1516420a6df0919f2f830715b13beaf09bbf5c981b7dfc62f0a524afe5d533c7",
     "tables/rmcbd_tau_sensitivity.tex": "47ceace069e6d2cf345d97928ff19c671d770f3a42bd4405b1d57cab4f3e4c9e",
     "tables/sample_efficiency_1000.tex": "ff2b03cf7c558f118c87601fd54d86148ed4e93a1e8bf9f167fdf535b94b1c7d",
     "tables/stress_contract_primary.tex": "e8d52e375f54735ab710f1c557f02ecf3c79cbfca3bc09a75da110045d51619b",

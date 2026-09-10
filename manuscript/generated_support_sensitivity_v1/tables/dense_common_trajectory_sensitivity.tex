@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Dense common-risk-set and common-trajectory sensitivity at $\tau=0.125$. Initial-defined rows require the indicated branch base state; common trajectories require both O2O and O2M base states on the same image/GT/direction row. Contrasts are O2O minus O2M RMCBD with 95\% stratified image-cluster bootstrap intervals. All trajectories use the four cardinal rays; event, censoring, observability, and return counts are descriptive and not mutually exclusive. Panel A's common-initial-defined count equals each branch's own initial-defined count in the 16--32 px stratum, so the common-trajectory restriction removes no rows there; in the 8--16 px stratum it is smaller than either branch's own count (by 56 rows relative to O2O, 4 relative to O2M). Panel B's contrasts closely match (16--32 px: to five decimal places) the branch-natural-support RMCBD contrasts reported in the main text. This sensitivity reuses the same frozen weighted Kaplan--Meier/RMCBD estimator as the primary dense-grid analysis, so it supports the robustness of the primary result to this row restriction rather than testing a different estimation procedure.}
+\label{tab:dense_common_sensitivity}
+\textbf{Panel A. Risk-set accounting}
+\begin{tabularx}{\textwidth}{@{}lrrr@{}}
+\toprule
+Quantity & All & 8--16 px & 16--32 px \\
+\midrule
+Total trajectories & 29,724 & 25,760 & 3,964 \\
+O2O initial-defined & 29,048 & 25,084 & 3,964 \\
+O2M initial-defined & 28,996 & 25,032 & 3,964 \\
+Common initial-defined & 28,992 & 25,028 & 3,964 \\
+\bottomrule
+\end{tabularx}
+\medskip
+\textbf{Panel B. Common-trajectory RMCBD contrast}
+\begin{tabularx}{\textwidth}{@{}lrr@{}}
+\toprule
+Population & Contrast & 95\% CI \\
+\midrule
+All & 0.01962 & [0.01795, 0.02138] \\
+8--16 px & 0.01747 & [0.01593, 0.01899] \\
+16--32 px & 0.03319 & [0.02937, 0.03655] \\
+\bottomrule
+\end{tabularx}
+\end{table}

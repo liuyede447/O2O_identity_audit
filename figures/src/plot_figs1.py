@@ -23,12 +23,12 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG_ROOT = ROOT / "figures_final"
+FIG_ROOT = ROOT / "figures"
 MANIFEST_PATH = FIG_ROOT / "FIGURE_EVIDENCE_MANIFEST.json"
-TRACE_REL = "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json"
-VALIDATION_REL = "figures_final/source_data/figs1_primary_trace/validation.json"
-IMAGE_REL = "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png"
-REPLAY_REL = "results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv"
+TRACE_REL = "figures/source_data/figs1_primary_trace/primary_qualitative_trace.json"
+VALIDATION_REL = "figures/source_data/figs1_primary_trace/validation.json"
+IMAGE_REL = "figures/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png"
+REPLAY_REL = "evidence/artifacts/results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv"
 PRIMARY_CHECKPOINT_SHA = "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa"
 EXPECTED_CASES = (
     ("Stable", 40, "down", 5552, 5452, 5552, 0),

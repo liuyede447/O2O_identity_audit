@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "read_only": true,
+  "new_model_outcome_access": false,
+  "inputs": {
+    "fixed_endpoint": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\measurement_validation_20260831\\fixed_branch_replay_v1\\per_gt.csv",
+      "sha256": "0596d59486c5da70a577a6928f9b14fddc6c1ba115511e20486175dabada0d7a",
+      "rows": 7434
+    },
+    "equivalent_endpoint": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\per_gt.csv",
+      "sha256": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de",
+      "rows": 7432
+    },
+    "dense_events": {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\publish_work\\O2O_identity_audit_v3.0.0_publish_payload\\data\\dense_grid_v3\\population\\per_direction_boundary_events.csv",
+      "sha256": "ee33d0927ebbb9953a8e0e3f6c02956ef02cb6570beb3660e03ab172527e897d",
+      "rows": 29724
+    }
+  },
+  "endpoint_support_definitions": {
+    "o2o_natural": "o2o_active is defined; no runner requirement",
+    "o2m_natural": "o2m_rank is defined; no runner requirement",
+    "state_common_runner_free": "o2o_active and o2m_rank are both defined; no runner requirement",
+    "competition_defined_common": "common_valid_margin == 1, equivalent to both states and both runners defined"
+  },
+  "dense_support_definitions": {
+    "o2o_natural": "o2o_base_active is defined",
+    "o2m_natural": "o2m_assigned_positive_base is defined",
+    "common_trajectory": "both dense base states are defined on the same (image_id, gt_id, direction) row"
+  },
+  "dense_rmcbd": {
+    "tau": 0.125,
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 20260831,
+    "estimator": "frozen weighted Kaplan-Meier integral"
+  },
+  "outputs": [
+    "RUNNER_FREE_ENDPOINT_SENSITIVITY.csv",
+    "DENSE_COMMON_RISKSET_COUNTS.csv",
+    "DENSE_COMMON_TRAJECTORY_RMCBD.csv",
+    "MANIFEST.json"
+  ]
+}

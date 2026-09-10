@@ -14,7 +14,7 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[2]
-FIG = ROOT / "figures_final"
+FIG = ROOT / "figures"
 MANUSCRIPT = ROOT / "manuscript"
 FIGURES = ("Fig1", "Fig2", "Fig3", "Fig4", "Fig5", "Fig6", "FigS1")
 
