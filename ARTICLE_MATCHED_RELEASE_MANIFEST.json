@@ -2,7 +2,7 @@
   "status": "ARTICLE_MATCHED_V3.3.2_READY",
   "version": "3.3.2",
   "tag": "v3.3.2",
-  "zenodo_doi": null,
+  "zenodo_doi": "10.5281/zenodo.22684364",
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
@@ -74,7 +74,8 @@
   ],
   "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; cite the version DOI displayed on the corresponding Zenodo record.",
   "predecessor": {
-    "tag": "v3.3.1",
-    "zenodo_doi": "10.5281/zenodo.22683896"
-  }
+    "tag": "v3.2.3",
+    "zenodo_doi": "10.5281/zenodo.22537930"
+  },
+  "zenodo_concept_doi": "10.5281/zenodo.22683896"
 }

@@ -33,6 +33,12 @@
     },
     {
       "identifier": "https://doi.org/10.5281/zenodo.22683896",
+      "relation": "isVersionOf",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.22537930",
       "relation": "isNewVersionOf",
       "scheme": "doi",
       "resource_type": "software"
