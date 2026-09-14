@@ -24,7 +24,7 @@ for row in rows:
         failures.append(f"sha256: {row['path']}")
 
 listed = {row["path"] for row in rows}
-actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts}
+actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*") if p.is_file() and ".git" not in p.parts and "__pycache__" not in p.parts}
 control_files = {"FILE_MANIFEST.csv", "SHA256SUMS.txt", "ARTICLE_MATCHED_RELEASE_MANIFEST.json", "ARTICLE_MATCHED_RELEASE_SHA256.txt", "REPRODUCTION_SMOKE_TEST.json", "RELEASE_NOTES.md"}
 unlisted = sorted(actual - listed - control_files)
 failures.extend(f"unlisted: {path}" for path in unlisted)

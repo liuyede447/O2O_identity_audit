@@ -1,19 +1,30 @@
 {
   "status": "PASS",
-  "version": "3.3.0",
-  "tag": "v3.3.0",
-  "clean_environment": "fresh git clone (core.autocrlf default), external Python 3.13 with numpy/pandas/matplotlib/torch; no benchmark pixels or weights in the repository",
+  "version": "3.3.3",
+  "tag": "v3.3.3",
+  "clean_environment": "three copies of the release tree: raw git archive (core.autocrlf=false), Windows clone with core.autocrlf=true, and git-archive zip extracted with Python zipfile; external Python 3.13 with numpy/pandas/matplotlib; no benchmark pixels or weights in the repository",
   "checks": {
-    "level_1_verify_release": "PASS: 736 files verified; repository exclusion policy passed",
-    "level_1_sha256sums": "sha256sum -c SHA256SUMS.txt: zero FAILED lines",
-    "level_1_figure_2_regen": "python figures/src/plot_fig2_lowfi.py -> exit 0; figures/draft/Fig2.{pdf,png,svg} produced, numbers match the manuscript Figure 2",
-    "level_1_support_sensitivity_script": "python scripts/run_support_sensitivity.py --help -> OK (module import path resolves)",
-    "level_2_replay_driver": "python instrument_frozen/scripts/assignment_stability_audit_v2.py --help -> OK (imports torch + ultralytics_local); full GPU run not exercised in this smoke test",
+    "level_1_verify_release": "PASS: 797 files verified; repository exclusion policy passed (all three environments)",
+    "level_1_sha256sums": "SHA256SUMS.txt and ARTICLE_MATCHED_RELEASE_SHA256.txt: 797/797 OK in all three environments",
+    "level_1_final_evidence_v4": "FINAL_EVIDENCE_MANIFEST.json sha256 00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24 (as cited); its SHA256SUMS.txt 9/9 OK after CR stripping",
+    "level_1_nested_checksums": "all shipped files listed by nested SHA256SUMS.txt files verify; the dense-grid post-processing lists also name 12 stdout/stderr run logs that are not shipped",
+    "level_1_hash_references": "4,379 SHA-256 references in text files resolve byte for byte to shipped files; the remaining references name files that are not part of the repository (e.g. release assets and run logs)",
+    "level_1_figure_2_regen": "python figures/src/plot_fig2_lowfi.py -> exit 0; PNG identical; PDF/SVG creation timestamps change",
+    "level_1_figure_3_regen": "python figures/src/rebuild_fig3_corrected.py -> QA PASS; PNG byte-identical to figures/rendered/Fig3.png; tracked outputs unchanged",
+    "level_1_correction_rerun": "data/post_submission_correction_20260908 scripts re-run in a scratch copy: all outputs byte-identical except the two documented editorial differences (see its README.md)",
+    "level_1_support_sensitivity_rerun": "scripts/run_support_sensitivity.py with data/support_sensitivity_20260909/inputs: the three CSV tables are byte-identical",
+    "level_2_replay_driver": "not re-exercised for v3.3.3; the driver is unchanged since v3.3.0",
     "level_2_dataset_commands": "Blocked until AI-TOD-v2 and VisDrone are obtained under provider terms; no pixels are redistributed.",
     "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved."
   },
-  "figures_needing_release_asset": ["Fig3", "Fig4", "Fig6", "FigS1"],
-  "figures_needing_unincluded_run": ["Fig5 (o2m_positive_count_scale_controls_v5)"],
+  "figures_needing_release_asset": [
+    "Fig4",
+    "Fig6",
+    "FigS1"
+  ],
+  "figures_needing_unincluded_run": [
+    "Fig5 (o2m_positive_count_scale_controls_v5)"
+  ],
   "github_release_assets": "Four seed-0..3 checkpoints and four dense-grid gzip parts; see RELEASE_ASSET_MANIFEST.csv. Uploaded to the GitHub Release, not committed to Git.",
   "zenodo_doi": null
 }

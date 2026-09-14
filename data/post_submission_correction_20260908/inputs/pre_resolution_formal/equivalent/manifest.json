@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "protocol": "o2o_preresolution_top7_vs_loss_active_v1",
+  "read_only": true,
+  "primary_pre_resolution_definition": "highest-q candidate inside the native pre-conflict Top-7 mask",
+  "secondary_definition": null,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "checkpoint_role": "frozen native O2O audit checkpoint",
+  "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+  "data_sha256": "23fb59a4541db5f64a6c43e666b168872a5be48487ca7ce0c72033adeaf6413e",
+  "selected_images_source": "E:\\two_paper\\beifen\\publication_reproducible\\results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "selected_images": 300,
+  "stress_mode": "equivalent_side",
+  "stress_definition": "kappa times focal-GT equivalent side in each cardinal direction",
+  "kappa": 0.0625,
+  "imgsz": 800,
+  "native_o2o_topk": 7,
+  "native_o2o_topk2": 1,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260831,
+  "bootstrap_unit": "image cluster within frozen outcome-blind sampling stratum",
+  "ipw": true,
+  "script": "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_o2o_preresolution_control.py",
+  "script_sha256": "f411ad13033b69dcb8abeeeee6970487b41c7d2e6c31074af7209b16e2dbc796",
+  "python": "3.13.5",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "cuda:0",
+  "focal_gt_by_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "per_gt_rows": 7432,
+  "per_direction_rows": 29612,
+  "elapsed_sec": 415.7952264000014,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction.csv",
+    "per_gt.csv",
+    "summary.json",
+    "bootstrap_replicates.csv"
+  ],
+  "artifact_sha256": {
+    "selected_images.csv": "ede67e6397f8c5b6fdef1487485ace54c4b59a2fdda54932ed1f2192333f4da6",
+    "per_direction.csv": "a486efb885034ae9827c152a74da7c4b33b40211250e52c2f40c53f3c3498744",
+    "per_gt.csv": "7f5162aba70fe2b065c606383fef8d268c566f7ed8b93447ba3be7eb2839e171",
+    "summary.json": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
+    "bootstrap_replicates.csv": "75bcd47d359b936c80d378786fc7488e474311f5b18b50b2334f42c1323a4557"
+  }
+}

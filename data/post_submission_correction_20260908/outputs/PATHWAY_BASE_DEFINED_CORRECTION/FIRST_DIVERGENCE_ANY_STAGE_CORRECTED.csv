@@ -1,0 +1,19 @@
+contract,family,metric,share,directions,images
+Fixed 1 px,first,eligibility_boundary,0.6390756984272928,1931,196
+Fixed 1 px,first,topk_membership_transition,0.0,1931,196
+Fixed 1 px,first,conflict_reassignment,0.018629728882701552,1931,196
+Fixed 1 px,first,within_set_geometry_rank_reversal,0.3422945726900054,1931,196
+Fixed 1 px,first,active_disappearance,0.0,1931,196
+Fixed 1 px,first,compound_or_other,0.0,1931,196
+Fixed 1 px,any,eligibility_any,0.042627617045821464,28942,298
+Fixed 1 px,any,within_set_any,0.05692921240169144,28942,298
+Fixed 1 px,any,eligibility_and_within,0.03382115638131051,28942,298
+Equivalent-area,first,eligibility_boundary,0.4018462427122236,988,149
+Equivalent-area,first,topk_membership_transition,0.0010133850063173695,988,149
+Equivalent-area,first,conflict_reassignment,0.027330631697162915,988,149
+Equivalent-area,first,within_set_geometry_rank_reversal,0.569809740584296,988,149
+Equivalent-area,first,active_disappearance,0.0,988,149
+Equivalent-area,first,compound_or_other,0.0,988,149
+Equivalent-area,any,eligibility_any,0.01371960580216499,28938,298
+Equivalent-area,any,within_set_any,0.03320853426781457,28938,298
+Equivalent-area,any,eligibility_and_within,0.013546823792189674,28938,298

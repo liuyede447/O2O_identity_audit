@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "protocol": "o2o_preresolution_top7_vs_loss_active_v1",
+  "read_only": true,
+  "primary_pre_resolution_definition": "highest-q candidate inside the native pre-conflict Top-7 mask",
+  "secondary_definition": null,
+  "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\best.pt",
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "checkpoint_role": "frozen native O2O audit checkpoint",
+  "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+  "data_sha256": "23fb59a4541db5f64a6c43e666b168872a5be48487ca7ce0c72033adeaf6413e",
+  "selected_images_source": "E:\\two_paper\\beifen\\publication_reproducible\\results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv",
+  "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+  "selected_images": 300,
+  "stress_mode": "fixed_1px",
+  "stress_definition": "one input pixel in each cardinal direction",
+  "kappa": null,
+  "imgsz": 800,
+  "native_o2o_topk": 7,
+  "native_o2o_topk2": 1,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260831,
+  "bootstrap_unit": "image cluster within frozen outcome-blind sampling stratum",
+  "ipw": true,
+  "script": "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_o2o_preresolution_control.py",
+  "script_sha256": "f411ad13033b69dcb8abeeeee6970487b41c7d2e6c31074af7209b16e2dbc796",
+  "python": "3.13.5",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "cuda:0",
+  "focal_gt_by_bin": {
+    "s_16_32": 995,
+    "t_8_16": 6449
+  },
+  "per_gt_rows": 7434,
+  "per_direction_rows": 29616,
+  "elapsed_sec": 439.18251220000093,
+  "outputs": [
+    "selected_images.csv",
+    "per_direction.csv",
+    "per_gt.csv",
+    "summary.json",
+    "bootstrap_replicates.csv"
+  ],
+  "artifact_sha256": {
+    "selected_images.csv": "ede67e6397f8c5b6fdef1487485ace54c4b59a2fdda54932ed1f2192333f4da6",
+    "per_direction.csv": "8b2be45ef8e69360f855fe6e2d4f1e9db4a53c79eeaf78c3e77e7e62d7e93e8b",
+    "per_gt.csv": "201543e5c8bd9bc8eef71ab168a9e933cd2ab541ab93bf8f699c781bdf1d7a8e",
+    "summary.json": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
+    "bootstrap_replicates.csv": "3da00cbf6b17fd22a0973625f71f0d2aff5c4ef1ce3006860e1fef72b8326311"
+  }
+}

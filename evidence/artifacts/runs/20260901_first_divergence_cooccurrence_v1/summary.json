@@ -1,0 +1,238 @@
+{
+  "status": "complete",
+  "estimand": "IPW multi-label stage occurrence among directional O2O identity exchanges",
+  "interpretation": "descriptive co-occurrence, not causal attribution",
+  "bootstrap": "stratified image-cluster percentile bootstrap",
+  "bootstrap_reps": 5000,
+  "contracts": {
+    "fixed_1px": {
+      "directional_flip_rows": 2194,
+      "point": {
+        "flag__eligibility": 0.6709427047629605,
+        "flag__topk": 0.6736814906168055,
+        "flag__conflict": 0.6987343711918854,
+        "flag__within_set_rank": 0.7511834244767575,
+        "flag__active_missing": 0.1225644164878169,
+        "flag__geometry_clipping": 0.44718455259569245,
+        "pair__eligibility__topk": 0.6709427047629605,
+        "pair__eligibility__conflict": 0.6709427047629605,
+        "pair__eligibility__within_set_rank": 0.44627162397774406,
+        "pair__eligibility__active_missing": 0.1152887014487036,
+        "pair__eligibility__geometry_clipping": 0.44718455259569245,
+        "pair__topk__conflict": 0.6736814906168055,
+        "pair__topk__within_set_rank": 0.44627162397774406,
+        "pair__topk__active_missing": 0.1152887014487036,
+        "pair__topk__geometry_clipping": 0.44718455259569245,
+        "pair__conflict__within_set_rank": 0.44991779566864276,
+        "pair__conflict__active_missing": 0.1225644164878169,
+        "pair__conflict__geometry_clipping": 0.44718455259569245,
+        "pair__within_set_rank__active_missing": 0.0,
+        "pair__within_set_rank__geometry_clipping": 0.44627162397774406,
+        "pair__active_missing__geometry_clipping": 0.0
+      },
+      "ci_95": {
+        "flag__eligibility": [
+          0.6300853553446484,
+          0.7113739124035067
+        ],
+        "flag__topk": [
+          0.6324087598992448,
+          0.7142933889880333
+        ],
+        "flag__conflict": [
+          0.6548402092077731,
+          0.7390895928915359
+        ],
+        "flag__within_set_rank": [
+          0.7097625601201085,
+          0.7935293918973403
+        ],
+        "flag__active_missing": [
+          0.09653549664989704,
+          0.15077111861601206
+        ],
+        "flag__geometry_clipping": [
+          0.41164183512403624,
+          0.4891056239231115
+        ],
+        "pair__eligibility__topk": [
+          0.6300853553446484,
+          0.7113739124035067
+        ],
+        "pair__eligibility__conflict": [
+          0.6300853553446484,
+          0.7113739124035067
+        ],
+        "pair__eligibility__within_set_rank": [
+          0.41066859547023177,
+          0.4881075765504195
+        ],
+        "pair__eligibility__active_missing": [
+          0.09360792884143906,
+          0.1374567305068239
+        ],
+        "pair__eligibility__geometry_clipping": [
+          0.41164183512403624,
+          0.4891056239231115
+        ],
+        "pair__topk__conflict": [
+          0.6324087598992448,
+          0.7142933889880333
+        ],
+        "pair__topk__within_set_rank": [
+          0.41066859547023177,
+          0.4881075765504195
+        ],
+        "pair__topk__active_missing": [
+          0.09360792884143906,
+          0.1374567305068239
+        ],
+        "pair__topk__geometry_clipping": [
+          0.41164183512403624,
+          0.4891056239231115
+        ],
+        "pair__conflict__within_set_rank": [
+          0.41567326189594467,
+          0.4907462028247203
+        ],
+        "pair__conflict__active_missing": [
+          0.09653549664989704,
+          0.15077111861601206
+        ],
+        "pair__conflict__geometry_clipping": [
+          0.41164183512403624,
+          0.4891056239231115
+        ],
+        "pair__within_set_rank__active_missing": [
+          0.0,
+          0.0
+        ],
+        "pair__within_set_rank__geometry_clipping": [
+          0.41066859547023177,
+          0.4881075765504195
+        ],
+        "pair__active_missing__geometry_clipping": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "equivalent_area_side": {
+      "directional_flip_rows": 1241,
+      "point": {
+        "flag__eligibility": 0.5100534607423877,
+        "flag__topk": 0.5148944054527479,
+        "flag__conflict": 0.5463360531950667,
+        "flag__within_set_rank": 0.7744125528001552,
+        "flag__active_missing": 0.009657396545697798,
+        "flag__geometry_clipping": 0.31832813364004175,
+        "pair__eligibility__topk": 0.5100534607423877,
+        "pair__eligibility__conflict": 0.5100534607423877,
+        "pair__eligibility__within_set_rank": 0.31590766128486164,
+        "pair__eligibility__active_missing": 0.001608749661782211,
+        "pair__eligibility__geometry_clipping": 0.31832813364004175,
+        "pair__topk__conflict": 0.5148944054527479,
+        "pair__topk__within_set_rank": 0.31590766128486164,
+        "pair__topk__active_missing": 0.002415573780175582,
+        "pair__topk__geometry_clipping": 0.31832813364004175,
+        "pair__conflict__within_set_rank": 0.32074860599522187,
+        "pair__conflict__active_missing": 0.009657396545697798,
+        "pair__conflict__geometry_clipping": 0.31832813364004175,
+        "pair__within_set_rank__active_missing": 0.0,
+        "pair__within_set_rank__geometry_clipping": 0.31590766128486164,
+        "pair__active_missing__geometry_clipping": 0.0
+      },
+      "ci_95": {
+        "flag__eligibility": [
+          0.4598141235807798,
+          0.5590281908212412
+        ],
+        "flag__topk": [
+          0.46466991741394853,
+          0.5640694665546923
+        ],
+        "flag__conflict": [
+          0.49661111951131404,
+          0.5932845740873679
+        ],
+        "flag__within_set_rank": [
+          0.7315456639240107,
+          0.8183999571827923
+        ],
+        "flag__active_missing": [
+          0.002224005518533891,
+          0.017599538678516248
+        ],
+        "flag__geometry_clipping": [
+          0.280528997133799,
+          0.3597519005587497
+        ],
+        "pair__eligibility__topk": [
+          0.4598141235807798,
+          0.5590281908212412
+        ],
+        "pair__eligibility__conflict": [
+          0.4598141235807798,
+          0.5590281908212412
+        ],
+        "pair__eligibility__within_set_rank": [
+          0.2778411839748264,
+          0.3567705765091451
+        ],
+        "pair__eligibility__active_missing": [
+          0.0,
+          0.0037174390144512352
+        ],
+        "pair__eligibility__geometry_clipping": [
+          0.280528997133799,
+          0.3597519005587497
+        ],
+        "pair__topk__conflict": [
+          0.46466991741394853,
+          0.5640694665546923
+        ],
+        "pair__topk__within_set_rank": [
+          0.2778411839748264,
+          0.3567705765091451
+        ],
+        "pair__topk__active_missing": [
+          0.0,
+          0.005027307537428003
+        ],
+        "pair__topk__geometry_clipping": [
+          0.280528997133799,
+          0.3597519005587497
+        ],
+        "pair__conflict__within_set_rank": [
+          0.28273216565280584,
+          0.36162622741170536
+        ],
+        "pair__conflict__active_missing": [
+          0.002224005518533891,
+          0.017599538678516248
+        ],
+        "pair__conflict__geometry_clipping": [
+          0.280528997133799,
+          0.3597519005587497
+        ],
+        "pair__within_set_rank__active_missing": [
+          0.0,
+          0.0
+        ],
+        "pair__within_set_rank__geometry_clipping": [
+          0.2778411839748264,
+          0.3567705765091451
+        ],
+        "pair__active_missing__geometry_clipping": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\per_direction_anatomy.csv": "d6c88f8d0af026c854fe30ac0e3303254ec79a6c7a59e7864d28730821d67976",
+    "results\\five_experiment_upgrade_20260830\\anatomy_normalized_k00625_v2\\per_direction_anatomy.csv": "5b41e6f7c0603ba389d256ec771a28279d557a4743ee66cb1da81868dab66a79",
+    "results\\five_experiment_upgrade_20260830\\anatomy_fixed_1px_v2\\selected_images.csv": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db"
+  }
+}

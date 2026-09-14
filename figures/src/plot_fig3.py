@@ -49,14 +49,15 @@ FIRST_LABELS = (
     ("Conflict", "conflict_reassignment", MECHANISM["Conflict"]),
     ("Within-set rank", "within_set_geometry_rank_reversal", MECHANISM["Within-set rank"]),
 )
+# The any-stage panel is bound to the corrected identity-exchange summary.
+# These are the three non-exclusive quantities reported in Supplementary Table
+# S18; historical fallback/geometry diagnostics remain in source artifacts but
+# are not plotted here because their old addendum values are not article-level
+# evidence for this panel.
 ANY_STAGE = (
-    ("Eligibility", "flag__eligibility", MECHANISM["Eligibility"]),
-    ("Top-k", "flag__topk", MECHANISM["Top-k"]),
-    ("Conflict", "flag__conflict", MECHANISM["Conflict"]),
-    ("Within-set rank", "flag__within_set_rank", MECHANISM["Within-set rank"]),
-    ("Active missing", "flag__active_missing", MECHANISM["Other/reserved"]),
-    ("Geometry clipping", "flag__geometry_clipping", MUTED),
-    ("Eligibility ∩ Within-set", "pair__eligibility__within_set_rank", INK),
+    ("Eligibility", "eligibility", MECHANISM["Eligibility"]),
+    ("Within-set rank", "within_set", MECHANISM["Within-set rank"]),
+    ("Eligibility ∩ Within-set", "eligibility_within", INK),
 )
 CONTRACTS = (
     ("Fixed 1 px", "fixed_1px", "fixed_1px", "fixed_1px", "fixed_1px", True),
@@ -399,7 +400,7 @@ def render_panel_b(ax: Any, data: pd.DataFrame) -> None:
     panel_label(ax, "b", x=-0.14, y=1.04)
 
 
-def render_panel_c(ax_left: Any, ax_right: Any, data: pd.DataFrame, *, display_label: str = "c") -> None:
+def render_panel_c(ax_left: Any, ax_right: Any, data: pd.DataFrame, *, display_label: str = "b") -> None:
     first = data[data.kind == "exclusive_first_observed"]
     y_map = {"Fixed 1 px": 1.0, "Equivalent-area-side": 0.0}
     color_map = {label: color for label, _, color in FIRST_LABELS}
@@ -412,6 +413,14 @@ def render_panel_c(ax_left: Any, ax_right: Any, data: pd.DataFrame, *, display_l
             value = float(subset.loc[label, "estimate"])
             ax_left.barh(y, value, left=left, height=0.46, color=color_map[label],
                          edgecolor="white", linewidth=0.45)
+            # Top-k is a genuinely small (or zero) component in the corrected
+            # source data.  Preserve its exact width while adding a hairline
+            # gold cue for non-zero values so the mechanism colour remains
+            # visible at final print size.
+            if label == "Top-k" and 0.0 < value < 0.75:
+                ax_left.plot([left + value / 2.0, left + value / 2.0],
+                             [y - 0.23, y + 0.23], color=color_map[label],
+                             linewidth=1.35, solid_capstyle="butt", zorder=4)
             if value >= 8:
                 ax_left.text(left + value / 2, y, f"{value:.1f}", ha="center", va="center",
                              fontsize=FONT["minimum"], color=INK)
@@ -442,45 +451,53 @@ def render_panel_c(ax_left: Any, ax_right: Any, data: pd.DataFrame, *, display_l
             errorbar_x(ax_right, row, float(y + offset), color=color, marker=marker, filled=filled,
                        size=4.1 if emphasized else 3.2, zorder=5 if emphasized else 3,
                        alpha=1.0 if emphasized else 0.48)
-    ax_right.set_xlim(-2, 86)
-    ax_right.set_xticks([0, 20, 40, 60, 80])
+    ax_right.set_xlim(-2, 102)
+    ax_right.set_xticks([0, 25, 50, 75, 100])
     ax_right.set_yticks(ys, labels)
     for tick in ax_right.get_yticklabels():
         if tick.get_text() in {"Eligibility", "Within-set rank", "Eligibility ∩ rank"}:
             tick.set_fontweight("bold")
     ax_right.set_xlabel("Any-stage occurrence (%)")
     ax_right.set_title("Any stage (non-exclusive)", loc="left", pad=4)
-    ax_right.legend(handles=[
-        Line2D([], [], marker="o", color=INK, markerfacecolor=INK, linestyle="none", label="Fixed"),
-        Line2D([], [], marker="o", color=INK, markerfacecolor="white", linestyle="none", label="Eq.-area"),
-    ], loc="upper left", ncol=1, handletextpad=0.3, labelspacing=0.25)
     finish_axes(ax_right)
     panel_label(ax_left, display_label, x=-0.16, y=1.06)
+    # The pathway block contains two distinct panels.  Label both explicitly
+    # so the figure cannot imply that the non-exclusive panel is a duplicate
+    # of the first-observed panel.
+    panel_label(ax_right, "c", x=-0.16, y=1.06)
 
 
 def render_panel_d(ax: Any, data: pd.DataFrame, *, display_label: str = "d") -> None:
     frame = data[data.kind == "pre_resolution_control"]
-    labels = ("Pre-conflict\nTop-7", "Final\nassigned", "Δ gap", "Definition\nmismatch")
-    source_labels = ("Pre-conflict Top-7 winner gap", "Final assigned gap",
-                     "Final minus pre-conflict", "Fragility-definition disagreement")
-    ys = np.arange(len(labels))[::-1]
-    for index, source_label in enumerate(source_labels):
-        y = ys[index]
-        for contract, offset, filled in (("Fixed 1 px", 0.14, True), ("Equivalent-area-side", -0.14, False)):
-            row = frame[(frame.contract == contract) & (frame.label == source_label)].iloc[0]
-            errorbar_x(ax, row, float(y + offset), color=BRANCH["O2O"], marker="o", filled=filled, size=3.8)
+    # Pre-conflict and final gaps are two endpoints of the same descriptive
+    # comparison.  Draw each contract as a dumbbell (not a time-series line)
+    # and retain the pre-computed delta and definition-mismatch values as
+    # text annotations.  All values still come directly from the frozen rows.
+    labels = ("Fixed 1 px", "Eq.-area")
+    ys = (1.0, 0.0)
+    for contract, y, filled in (("Fixed 1 px", ys[0], True), ("Equivalent-area-side", ys[1], False)):
+        pre = frame[(frame.contract == contract) & (frame.label == "Pre-conflict Top-7 winner gap")].iloc[0]
+        final = frame[(frame.contract == contract) & (frame.label == "Final assigned gap")].iloc[0]
+        delta = frame[(frame.contract == contract) & (frame.label == "Final minus pre-conflict")].iloc[0]
+        mismatch = frame[(frame.contract == contract) & (frame.label == "Fragility-definition disagreement")].iloc[0]
+        ax.plot([pre.estimate, final.estimate], [y, y], color=GUIDE, linewidth=1.3, zorder=1)
+        errorbar_x(ax, pre, y, color=BRANCH["O2O"], marker="o", filled=filled, size=4.0)
+        errorbar_x(ax, final, y, color=BRANCH["O2O"], marker="o", filled=filled, size=4.0)
+        ax.text(22.6, y + 0.17, f"Δ {float(delta.estimate):+.2f} pp",
+                ha="right", va="center", fontsize=FONT["minimum"], color=INK)
+        ax.text(22.6, y - 0.17, f"object disagreement {float(mismatch.estimate):.2f}%",
+                ha="right", va="center", fontsize=FONT["minimum"], color=MUTED)
     zero_line(ax)
-    ax.set_ylim(-0.58, 3.55)
+    ax.set_ylim(-0.55, 1.55)
     ax.set_yticks(ys, labels)
-    ax.set_xlim(-1.5, 23)
+    ax.set_xlim(-1.5, 24)
     ax.set_xticks([0, 5, 10, 15, 20])
-    ax.axhline(1.5, color=GUIDE, linewidth=LINE["guide"], zorder=0)
-    ax.set_xlabel("O2O contrast / difference (pp)")
+    ax.set_xlabel("O2O gap (pp); paired points: pre-conflict → final")
     ax.set_title("Pre-resolution same-branch control", loc="left", pad=4)
     ax.legend(handles=[
-        Line2D([], [], marker="o", color=BRANCH["O2O"], markerfacecolor=BRANCH["O2O"], linestyle="none", label="Fixed"),
-        Line2D([], [], marker="o", color=BRANCH["O2O"], markerfacecolor="white", linestyle="none", label="Eq.-area"),
-    ], loc="lower right", ncol=2, handletextpad=0.25, columnspacing=0.65)
+        Line2D([], [], marker="o", color=BRANCH["O2O"], markerfacecolor=BRANCH["O2O"], linestyle="none", label="Pre/final (fixed)"),
+        Line2D([], [], marker="o", color=BRANCH["O2O"], markerfacecolor="white", linestyle="none", label="Pre/final (eq.-area)"),
+    ], loc="lower left", ncol=1, handletextpad=0.25, labelspacing=0.25)
     finish_axes(ax)
     panel_label(ax, display_label, x=-0.22, y=1.04)
 
@@ -501,7 +518,20 @@ def make_figure(rows: list[dict[str, Any]]) -> tuple[Any, dict[str, Any]]:
 
     render_panel_a(axa, data[data.panel == "a"])
     render_panel_c(axc1, axc2, data[data.panel == "c"], display_label="b")
-    render_panel_d(axd, data[data.panel == "d"], display_label="c")
+    render_panel_d(axd, data[data.panel == "d"], display_label="d")
+
+    # The branch key is deliberately placed in the open gutter between the
+    # upper and lower panel rows.  Keeping it out of Panel C prevents the key
+    # from covering any of the three any-stage observations at final size.
+    branch_handles = [
+        Line2D([], [], marker="o", color=INK, markerfacecolor=INK,
+               linestyle="none", label="Fixed"),
+        Line2D([], [], marker="o", color=INK, markerfacecolor="white",
+               linestyle="none", label="Eq.-area"),
+    ]
+    fig.legend(handles=branch_handles, loc="center right",
+               bbox_to_anchor=(0.985, 0.56), ncol=1, frameon=False,
+               handletextpad=0.35, labelspacing=0.25, borderaxespad=0.0)
 
     fig.text(0.012, 0.018, "First observed ≠ causal contribution",
              ha="left", va="bottom", fontsize=FONT["minimum"], color=MUTED)
@@ -510,7 +540,7 @@ def make_figure(rows: list[dict[str, Any]]) -> tuple[Any, dict[str, Any]]:
                       for label, _, color in FIRST_LABELS]
     legend_handles.append(Patch(facecolor=MECHANISM["Other/reserved"], edgecolor="none", label="Other/reserved"))
     fig.legend(handles=legend_handles, loc="lower center", bbox_to_anchor=(0.5, 0.053),
-               ncol=5, columnspacing=0.65, handlelength=1.0, handletextpad=0.3)
+               ncol=5, columnspacing=1.05, handlelength=1.35, handletextpad=0.42)
 
     fig.subplots_adjust(left=0.085, right=0.992, top=0.95, bottom=0.18)
 
@@ -853,4 +883,7 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    # The article Figure 3 is rendered by rebuild_fig3_corrected.py, which binds
+    # every panel to the base-defined correction outputs. main() documents the
+    # original final_evidence_v3 binding and is not the article route.
+    raise SystemExit("Render the article Figure 3 with: python figures/src/rebuild_fig3_corrected.py")

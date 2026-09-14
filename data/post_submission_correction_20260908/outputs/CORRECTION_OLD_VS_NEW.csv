@@ -1,0 +1,8 @@
+analysis,old_status,new_status,old_value,new_value,reason
+Eligibility-lock,CORRECTED,BASE_DEFINED_GATE,17.10 -> 3.52 pp,15.51 -> 3.49 pp,169 base-undefined GTs excluded before aggregation
+Eligibility-stable,CORRECTED,BASE_DEFINED_GATE,submitted support,corrected summary,base-defined rows only
+First-divergence,CORRECTED,BASE_DEFINED_GATE,submitted shares,corrected shares,base-defined rows only
+Pre-resolution,CORRECTED,BASE_DEFINED_GATE,submitted control,corrected estimates,exact frozen row recovery
+Primary Table 1,UNAFFECTED,UNCHANGED,14.37 / 0.13 pp,14.37 / 0.13 pp,competition-defined support already requires base identity
+Rank-Set,UNAFFECTED,UNCHANGED, frozen, frozen, distinct O2M state estimand
+Dense boundary,UNAFFECTED,UNCHANGED, frozen, frozen, explicit base-defined risk-set gate

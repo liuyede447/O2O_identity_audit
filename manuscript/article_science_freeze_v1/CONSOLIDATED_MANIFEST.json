@@ -2,108 +2,103 @@
   "status": "PASS",
   "ledger": "article_science_freeze_v1",
   "scientific_recompute": false,
-  "purpose": "repo-relative single index for the frozen primary, corrected manuscript-generated, runner-free, and dense common-trajectory sources in this release",
-  "note": "Paths are relative to the repository root. The dense-grid post-processing root referenced by the manuscript is data/dense_grid_v3/postprocess and evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2.",
+  "purpose": "repo-relative single index for the frozen primary, corrected manuscript-generated, runner-free, dense common-trajectory, and post-submission base-defined correction sources in this release",
+  "note": "Paths are relative to the repository root. The dense-grid post-processing root referenced by the manuscript is data/dense_grid_v3/postprocess and evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2. Hashes are computed on the committed bytes. The superseded first_divergence_cooccurrence.tex is listed in manuscript/generated_final_v2/SUPERSEDED_VALUES.md. Hashes are computed on the committed bytes. The superseded first_divergence_cooccurrence.tex is listed in manuscript/generated_final_v2/SUPERSEDED_VALUES.md. Hashes are computed on the committed bytes. The superseded first_divergence_cooccurrence.tex is listed in manuscript/generated_final_v2/SUPERSEDED_VALUES.md.",
   "records": [
     {
       "path": "manuscript/generated_final_v2/evidence_values.tex",
-      "sha256": "8855d89c7380104b52c268bf748fa7720db4efe7e52cd81153c807230982da15",
-      "size_bytes": 1841
+      "sha256": "bc969b297ffb79aa9549cac5b31131152b2c3fb778728bad820ca366d5574203",
+      "size_bytes": 1798
     },
     {
       "path": "manuscript/generated_final_v2/tables/axis_normalization_aspect.tex",
-      "sha256": "c472fd4062fb1d2c2ba5fc6d20dbd215b9e505d6cc547dc01669e6cae9ac109d",
-      "size_bytes": 713
+      "sha256": "fccacce20730d25f87c7e75ab2ed5ff962af3b15a181eecebb07ff0e592a2e3a",
+      "size_bytes": 704
     },
     {
       "path": "manuscript/generated_final_v2/tables/axis_normalization_summary.tex",
-      "sha256": "8a66305db9575b6984724b90ea7d85a12b2e3613b432ffb1eef14b5a4788d3dc",
-      "size_bytes": 587
+      "sha256": "519c518b84b5f55cf743e6e76b7638f49d9b19a634280bba35a0e7b4bccd3c3c",
+      "size_bytes": 577
     },
     {
       "path": "manuscript/generated_final_v2/tables/boundary_rmsr_summary.tex",
-      "sha256": "a6e0f93ee6bc267aec425e557bb30652c35c30434c43df9dacfc9d024191f329",
-      "size_bytes": 321
+      "sha256": "3d5c6d256f12dc608669649caefd02953498d619dfdcb632a2892d0500c5a216",
+      "size_bytes": 311
     },
     {
       "path": "manuscript/generated_final_v2/tables/continuous_size_controls.tex",
-      "sha256": "749b821290299e38ba59bb76a28c33c40f49976ed75100298e3d0d5eb77409ea",
-      "size_bytes": 853
-    },
-    {
-      "path": "manuscript/generated_final_v2/tables/first_divergence_cooccurrence.tex",
-      "sha256": "58fb97dfa0455038b30a8ca305b639458b466df53bd68f2a787a25ab4fdf309d",
-      "size_bytes": 408
+      "sha256": "5a5876caf0abdf3e25fdde8885b81923cc4c8e06c57ac118ea342e44314a99f2",
+      "size_bytes": 836
     },
     {
       "path": "manuscript/generated_final_v2/tables/four_valid_direction_sensitivity.tex",
-      "sha256": "168bc93f755f9baccf08309318424cb9301ed6383ba8dd440a9cc778ea66fcd3",
-      "size_bytes": 542
+      "sha256": "060bf0dfd2fc0e20d9d6708e239ec651516054d9603dec7c22b5eadfea508875",
+      "size_bytes": 529
     },
     {
       "path": "manuscript/generated_final_v2/tables/instrument_qualification_detail.tex",
-      "sha256": "c684917363dd29b035960908209a4993f1fe600a4918f3e1807ff4d8f9935fd9",
-      "size_bytes": 2439
+      "sha256": "2a7d8cd34ca318f4a27512873b4b409d1bbc9640bbd30b84a6f696af7fa48e8e",
+      "size_bytes": 2404
     },
     {
       "path": "manuscript/generated_final_v2/tables/lockbox_corrective_exploratory.tex",
-      "sha256": "341a703c9def33177f097ee02ff2614f9d6ead67c78446fe012c853149a4476b",
-      "size_bytes": 433
+      "sha256": "d06271e5f933caacaa978fe6ac38186cc14a75e284063667b7a39bc9ddc2dd74",
+      "size_bytes": 422
     },
     {
       "path": "manuscript/generated_final_v2/tables/multiseed_equivalent_endpoint.tex",
-      "sha256": "43c745b2721675d488ba3f0535734e8adfaeecbba074282767ea91a012e29069",
-      "size_bytes": 417
+      "sha256": "56556a427f491d2c3b1a3580ccfc87a2740f9f909c165eaef6f7d317859799d7",
+      "size_bytes": 408
     },
     {
       "path": "manuscript/generated_final_v2/tables/multiseed_equivalent_rank_set.tex",
-      "sha256": "6d8b6d623d1576d4583edfcd7b755a859aa16d5ac89374922f2325c0e6b0e6b6",
-      "size_bytes": 708
+      "sha256": "ec359946a0abcd13ec765e81bd97cfebef097a2df6a3908cec921578cb7c6d14",
+      "size_bytes": 696
     },
     {
       "path": "manuscript/generated_final_v2/tables/multiseed_fixed_endpoint.tex",
-      "sha256": "297f24d048cd275583472483d730a1907b3fe69361716cd6873d95cebab901d6",
-      "size_bytes": 357
+      "sha256": "62bad15d2edcd191158d85e25b5017320f9514ce6094a3b7c4eb7a88844f860e",
+      "size_bytes": 345
     },
     {
       "path": "manuscript/generated_final_v2/tables/o2m_positive_count_controls.tex",
-      "sha256": "40b0f0a8ae6af5fa93c227c87a884dce3941ac239058ce57bce0af838b702e36",
-      "size_bytes": 500
+      "sha256": "4466ed505208ffb1dfcd97018e15ace03a4675cb18ce8b936f9c38f6deacf252",
+      "size_bytes": 491
     },
     {
       "path": "manuscript/generated_final_v2/tables/prospective_precision_planning.tex",
-      "sha256": "e6b1195e6ba9460b4873acd8afc94542976c9ac8ddf2ef1544bb4e1ebd73d76d",
-      "size_bytes": 470
+      "sha256": "bdbc43eb46f71e6946654ca46dad685012b8f8786f796f3d5bad67c5eba4518b",
+      "size_bytes": 459
     },
     {
       "path": "manuscript/generated_final_v2/tables/rank_set_empty_transitions.tex",
-      "sha256": "403bd5739437ab000b0b50fc4b3bc614b103e270279a2535fc5dd58db13fdb7f",
-      "size_bytes": 765
+      "sha256": "02c45ff3bc550089c1d9a613e4ca249eaeccbec2147c68cdd4fe9142a3f5a5d7",
+      "size_bytes": 752
     },
     {
       "path": "manuscript/generated_final_v2/tables/rank_set_summary.tex",
-      "sha256": "4f9200cd05411e9cebcf0e86cbec30ee35aa3f16c6e27365ad3bcea1992dbb59",
-      "size_bytes": 413
+      "sha256": "1516420a6df0919f2f830715b13beaf09bbf5c981b7dfc62f0a524afe5d533c7",
+      "size_bytes": 405
     },
     {
       "path": "manuscript/generated_final_v2/tables/rmcbd_tau_sensitivity.tex",
-      "sha256": "5e957bda2e128772c60b9be743dee35fcb9ee1d70fa378b41d360e7228b3f5cb",
-      "size_bytes": 645
+      "sha256": "47ceace069e6d2cf345d97928ff19c671d770f3a42bd4405b1d57cab4f3e4c9e",
+      "size_bytes": 633
     },
     {
       "path": "manuscript/generated_final_v2/tables/sample_efficiency_1000.tex",
-      "sha256": "f862a745e1d5b305adb6c6bc83f2df422aa50fb7a571812c1c772cf854a3ec40",
-      "size_bytes": 288
+      "sha256": "043174e3bce2fc5e9c2f179e6f8d1fe38cebcdee88b1386927ea12bb91784d5c",
+      "size_bytes": 277
     },
     {
       "path": "manuscript/generated_final_v2/tables/stress_contract_primary.tex",
-      "sha256": "81ab9df9e01919c282e5d2ec9db1beda7bb2e0ac9cbd42fbc9e48d81a2c6ea6c",
-      "size_bytes": 517
+      "sha256": "e8d52e375f54735ab710f1c557f02ecf3c79cbfca3bc09a75da110045d51619b",
+      "size_bytes": 507
     },
     {
       "path": "manuscript/generated_final_v2/tables/stress_contract_primary_full.tex",
-      "sha256": "7f8a79853bcb03e13ec2be7767c16fe18ff033a423039795b83c5f9135013329",
-      "size_bytes": 553
+      "sha256": "89cd940689d049ce24e56c0844cdcd1ae70e36aeb9e239ceed7c71915836c7fc",
+      "size_bytes": 540
     },
     {
       "path": "manuscript/generated_support_sensitivity_v1/tables/dense_common_trajectory_sensitivity.tex",
@@ -137,8 +132,48 @@
     },
     {
       "path": "data/support_sensitivity_20260909/SUPPORT_SENSITIVITY_REPORT.md",
-      "sha256": "42431ae2c9b9b0131a436682b62ba7c55c17a9cd44dcc6d239eb057349db89ac",
-      "size_bytes": 8646
+      "sha256": "7201b6718a6c2744659ac4f5b43ec00bc0a846058a0d9f6f8a92263aa2ad7092",
+      "size_bytes": 8576
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/LOCK_CORRECTED_ESTIMATES.json",
+      "sha256": "5061549fa6d164e6a74a221d1783e0019a8a8f662705715680c83d49e9ab550d",
+      "size_bytes": 3290
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/ANATOMY_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "d2f9fe2b0413f94ae27f401c68258fa0a43e9df01fc49f8c2fde38b338445f42",
+      "size_bytes": 5046
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/FIRST_DIVERGENCE_ANY_STAGE_CORRECTED_CI.csv",
+      "sha256": "85f29a2805efcff85058e661ee94e7ebe1a72fb9aeb7f5c9dbf0242dcacf03b1",
+      "size_bytes": 1765
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/first_divergence_corrected_table.tex",
+      "sha256": "35ee723493e68edb872f7104ee6be0652d0e83bb62357add71ed82abfa982845",
+      "size_bytes": 701
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/any_stage_corrected_table.tex",
+      "sha256": "46f72dbc9cd7aabc745520c17cab0115de95c2485951f996887c5f3f82f9e0a8",
+      "size_bytes": 334
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/PRE_RESOLUTION_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "5041876d744c689ce2250c7d1f877ffd87220ead5afe56747e4492eef58d3c22",
+      "size_bytes": 5066
+    },
+    {
+      "path": "data/post_submission_correction_20260908/outputs/CORRECTED_SECONDARY_ESTIMATES_MASTER.csv",
+      "sha256": "dd1c5816699d8b2ff0ccc90d003cdf98f25014085aa9815ea215a61523252c90",
+      "size_bytes": 10545
+    },
+    {
+      "path": "figures/source_data/fig3_source.csv",
+      "sha256": "b71a0d8ef59c3c367eb3413e85602585f59ef4523728d5313a2312a5b5c5bc64",
+      "size_bytes": 15306
     }
   ]
 }

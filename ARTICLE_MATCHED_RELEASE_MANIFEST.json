@@ -1,8 +1,8 @@
 {
-  "status": "ARTICLE_MATCHED_V3.3.2_READY",
-  "version": "3.3.2",
-  "tag": "v3.3.2",
-  "zenodo_doi": "10.5281/zenodo.22684364",
+  "status": "ARTICLE_MATCHED_V3.3.3_READY",
+  "version": "3.3.3",
+  "tag": "v3.3.3",
+  "zenodo_doi": null,
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
@@ -16,7 +16,9 @@
     "complete 1/1024 dense-grid asset",
     "SHA-256 manifests",
     "read-only replay driver (instrument_frozen/scripts/assignment_stability_audit_v2.py)",
-    "corrected dense common-trajectory support sensitivity"
+    "corrected dense common-trajectory support sensitivity",
+    "base-defined post-submission correction (data/post_submission_correction_20260908)",
+    "corrected Figure 3 renderer (figures/src/rebuild_fig3_corrected.py)"
   ],
   "explicit_exclusions": [
     "main.tex",
@@ -29,7 +31,7 @@
     "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "repository_file_count": 745,
+  "repository_file_count": 803,
   "release_assets": [
     {
       "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
@@ -72,10 +74,10 @@
       "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
     }
   ],
-  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request; cite the version DOI displayed on the corresponding Zenodo record.",
+  "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request. Zenodo assigns the version DOI when this GitHub release is archived; cite the version DOI displayed on that record.",
   "predecessor": {
-    "tag": "v3.2.3",
-    "zenodo_doi": "10.5281/zenodo.22537930"
+    "tag": "v3.3.2",
+    "zenodo_doi": "10.5281/zenodo.22684364"
   },
-  "zenodo_concept_doi": "10.5281/zenodo.22683896"
+  "zenodo_concept_doi": "10.5281/zenodo.22478276"
 }

@@ -1,152 +1,132 @@
 {
+  "status": "PASS",
+  "stage": "ARTICLE_FIGURE3_BASE_DEFINED_CORRECTION",
+  "figure": "Fig3",
+  "renderer": "figures/src/rebuild_fig3_corrected.py (layout from figures/src/plot_fig3.py)",
+  "read_only_science": true,
+  "model_inference_or_replay": false,
   "checks": {
-    "any_stage_not_stacked": "PASS",
-    "arial_or_permitted_fallback": "PASS",
-    "cooccurrence_summary_csv_parity": "PASS",
-    "first_observed_exclusive_100pct": "PASS",
-    "interpretation_guards": "PASS",
-    "manuscript_unchanged": "PASS (not touched by this script)",
-    "minimum_visible_font": "PASS",
-    "pdf_final_size": "PASS",
-    "pdf_type42_embedded": "PASS",
-    "png_600_dpi": "PASS",
-    "png_rgb": "PASS",
-    "source_hashes": "PASS",
-    "source_number_ci_n_support_parity": "PASS",
-    "svg_editable_text": "PASS",
-    "text_clipping_and_cross_panel_overlap": "PASS"
-  },
-  "cooccurrence_crosscheck": {
-    "max_abs_difference": 3.552713678800501e-15,
-    "rows": 42,
-    "status": "PASS"
-  },
-  "evidence_parity": {
-    "comparisons": 198,
-    "maximum_absolute_numeric_difference": 0.0,
-    "n_mismatches": [],
-    "status": "PASS"
+    "panel_rows": "PASS",
+    "values_finite": "PASS",
+    "ci_order_valid": "PASS",
+    "exclusive_first_observed_sums_100": "PASS",
+    "all_rows_bound_to_correction_outputs": "PASS"
   },
   "failures": [],
-  "figure": "Fig3",
-  "interpretation_guards": {
-    "any_stage_stacked": false,
-    "conflict_mediation_claim": false,
-    "eligibility_causal_contribution_claim": false,
-    "first_label_execution_order_invariant_claim": false,
-    "observational_subset_as_causal_proof": false
+  "corrected_sources": {
+    "panel_a": {
+      "path": "data/post_submission_correction_20260908/outputs/LOCK_CORRECTED_ESTIMATES.json",
+      "sha256": "5061549fa6d164e6a74a221d1783e0019a8a8f662705715680c83d49e9ab550d"
+    },
+    "panel_b": {
+      "path": "data/post_submission_correction_20260908/outputs/ANATOMY_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "d2f9fe2b0413f94ae27f401c68258fa0a43e9df01fc49f8c2fde38b338445f42"
+    },
+    "panel_c": {
+      "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/FIRST_DIVERGENCE_ANY_STAGE_CORRECTED_CI.csv",
+      "sha256": "85f29a2805efcff85058e661ee94e7ebe1a72fb9aeb7f5c9dbf0242dcacf03b1"
+    },
+    "panel_d": {
+      "path": "data/post_submission_correction_20260908/outputs/PRE_RESOLUTION_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "5041876d744c689ce2250c7d1f877ffd87220ead5afe56747e4492eef58d3c22"
+    }
   },
-  "notes": [
-    "Eligibility attenuation is explicitly limited to lock support and is not a causal contribution fraction.",
-    "The eligibility-stable observational subset is retained in source data for supplementary placement and omitted from the main figure.",
-    "Active-missing and geometry-clipping any-stage rows are retained in source data for supplementary placement and omitted from the main figure.",
-    "Only mutually exclusive first-observed labels are stacked; any-stage occurrence is a non-exclusive dot plot.",
-    "First-observed labels are execution-order dependent; all pathway values are descriptive, not causal.",
-    "Pre-resolution estimates are a same-branch descriptive control, not a mediation analysis."
-  ],
-  "output_validation": {
+  "source_data": {
+    "csv": "figures/source_data/fig3_source.csv",
+    "csv_sha256": "b71a0d8ef59c3c367eb3413e85602585f59ef4523728d5313a2312a5b5c5bc64",
+    "json": "figures/source_data/fig3_source.json",
+    "json_sha256": "4f05e29e172766196dcdaa0af2760522df6a7315b299f6b188a87b4637516961"
+  },
+  "draft_outputs": {
     "outputs": {
+      "svg": {
+        "path": "figures/draft/Fig3.svg",
+        "sha256": "1da79933aae0188dc62ad3bda5f9c845b1fb771ccbd223edb768c58bc1019d2c",
+        "bytes": 49679
+      },
       "pdf": {
-        "bytes": 56576,
-        "path": "figures_final/draft/Fig3.pdf",
-        "sha256": "9ede0163d839d64756b7fa508fc57a0195f29cc656fc774dd0db85055ac4b510"
+        "path": "figures/draft/Fig3.pdf",
+        "sha256": "a52441e4223727cfc948ad52315c9908ca14f8179a75c4da8f507ce2900ae6cd",
+        "bytes": 55490
       },
       "png": {
-        "bytes": 402112,
-        "path": "figures_final/draft/Fig3.png",
-        "sha256": "379c2f6b4532dfd590502e01e813ba572d4fa1087656126d60dda5ce7df2101d"
-      },
-      "svg": {
-        "bytes": 59814,
-        "path": "figures_final/draft/Fig3.svg",
-        "sha256": "d3f6e405f8aff4b3698d32e25c87fadee77711eb09f866b6b9f20af18ad95b27"
+        "path": "figures/draft/Fig3.png",
+        "sha256": "0192ec9ed787bfbd980c3e5fee9bc7597ce5c09b64cc7479ba4a8ff56bb50593",
+        "bytes": 429730
       }
     },
-    "pdf_fonts": {
-      "all_embedded": true,
-      "font_rows": [
-        "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     15  0",
-        "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     22  0"
+    "svg_text_nodes": 60,
+    "svg_editable_text": true,
+    "png": {
+      "pixels": [
+        4204,
+        3070
       ],
-      "status": "PASS",
-      "truetype_or_cid_truetype": true
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB",
+      "dpi_600": true
     },
     "pdf_geometry": {
+      "width_mm": 178.0000000000147,
       "height_mm": 130.00000000000915,
       "target_mm": [
         178.0,
         130.0
       ],
-      "width_mm": 178.0000000000147,
       "within_0_1_mm": true
     },
-    "png": {
-      "dpi": [
-        599.9988,
-        599.9988
+    "pdf_fonts": {
+      "status": "PASS",
+      "font_rows": [
+        "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     15  0",
+        "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     22  0"
       ],
-      "dpi_600": true,
-      "mode": "RGB",
-      "pixels": [
-        4204,
-        3070
-      ]
-    },
-    "svg_editable_text": true,
-    "svg_text_nodes": 62
+      "all_embedded": true,
+      "truetype_or_cid_truetype": true
+    }
   },
+  "article_render": {
+    "pdf": {
+      "path": "figures/rendered/Fig3.pdf",
+      "sha256": "35cb3ef5e6130035894fb9e37b680a15c79fdc8f2221d24a150db7ad05a83e4e"
+    },
+    "svg": {
+      "path": "figures/rendered/Fig3.svg",
+      "sha256": "7970fbd5df2e10fe0b5c3a9af162b34618e719f85186fdc6985e052d08e56d9e"
+    },
+    "png": {
+      "path": "figures/rendered/Fig3.png",
+      "sha256": "0192ec9ed787bfbd980c3e5fee9bc7597ce5c09b64cc7479ba4a8ff56bb50593"
+    }
+  },
+  "draft_png_identical_to_article_png": true,
   "preflight": {
+    "resolved_font": {
+      "family": "Arial",
+      "path": "arial.ttf"
+    },
+    "minimum_visible_font_pt": 7.0,
+    "visible_text_count": 63,
     "axes_count": 4,
     "geometry": {
+      "status": "PASS",
       "clipped_text": [],
+      "foreign_panel_text_intrusions": [],
       "figure_pixel_bounds": [
         0.0,
         0.0,
         700.7874015748032,
         511.8110236220473
-      ],
-      "foreign_panel_text_intrusions": [],
-      "status": "PASS"
-    },
-    "minimum_visible_font_pt": 7.0,
-    "resolved_font": {
-      "family": "Arial",
-      "path": "C:\\Windows\\Fonts\\arial.ttf"
-    },
-    "visible_text_count": 62
+      ]
+    }
   },
-  "source_data": {
-    "csv": "figures_final/source_data/fig3_source.csv",
-    "csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
-    "json": "figures_final/source_data/fig3_source.json",
-    "json_sha256": "f29d753f36b6ed38e97ea52efcdc2a41b5e3c0e6c4ae2e8f739bd35ba132a72e"
-  },
-  "source_validation": {
-    "actual_panel_rows": {
-      "a": 5,
-      "b": 4,
-      "c": 24,
-      "d": 8
-    },
-    "all_values_finite": true,
-    "any_stage_authority": [
-      "SOURCE_ADDENDUM"
-    ],
-    "any_stage_source_addendum_only": true,
-    "ci_order_valid": true,
-    "exclusive_composition_sum_valid": true,
-    "exclusive_composition_sums": {
-      "Equivalent-area-side": 100.0,
-      "Fixed 1 px": 100.00000000000001
-    },
-    "expected_panel_rows": {
-      "a": 5,
-      "b": 4,
-      "c": 24,
-      "d": 8
-    },
-    "status": "PASS"
-  },
-  "stage": "FINAL_FIGURE_SOURCE_VALIDATED",
-  "status": "PASS"
+  "notes": [
+    "Panels a, c and d are drawn; panel b rows are retained for the Supplement and are not drawn.",
+    "First-observed labels are mutually exclusive and stacked; any-stage occurrence is non-exclusive.",
+    "Eligibility attenuation is limited to lock support and is not a causal contribution fraction.",
+    "A PNG mismatch with figures/rendered/Fig3.png indicates a different font/renderer stack, not different values."
+  ]
 }

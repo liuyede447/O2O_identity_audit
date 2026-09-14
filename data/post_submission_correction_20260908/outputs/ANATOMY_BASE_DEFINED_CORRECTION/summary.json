@@ -1,0 +1,158 @@
+{
+  "status": "complete",
+  "protocol": "eligibility_stable_sensitivity_and_paired_pathway_contrast_base_defined_correction_v1",
+  "read_only": true,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260830,
+  "base_o2o_gate": "active_base must be defined before any O2O identity fragility or pathway summary",
+  "source_sha256": {
+    "inputs\\anatomy_fixed\\per_direction_anatomy.csv": "d6c88f8d0af026c854fe30ac0e3303254ec79a6c7a59e7864d28730821d67976",
+    "inputs\\anatomy_equivalent\\per_direction_anatomy.csv": "5b41e6f7c0603ba389d256ec771a28279d557a4743ee66cb1da81868dab66a79"
+  },
+  "fixed_1px": {
+    "definition": "object-level: retain a focal object only when candidate-pair eligibility is unchanged for every legal replay direction; direction-level: retain each unchanged-eligibility direction",
+    "object_level": {
+      "retained_objects": 6181,
+      "all_objects": 7265,
+      "weighted_retention": 0.8508263803420747,
+      "point": {
+        "fragility_8_16": 0.07829003659298078,
+        "fragility_16_32": 0.045895003566856704,
+        "scale_contrast": 0.03239503302612408
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.06478209021854124,
+          0.09307343016674356
+        ],
+        "fragility_16_32": [
+          0.02653762793479238,
+          0.07005810542967764
+        ],
+        "scale_contrast": [
+          0.00994909787254068,
+          0.05344828224249664
+        ]
+      },
+      "object_or_direction_rows": 6181,
+      "contributing_images": 282
+    },
+    "direction_level": {
+      "retained_directions": 27708,
+      "all_directions": 28942,
+      "point": {
+        "fragility_8_16": 0.026507308275417186,
+        "fragility_16_32": 0.01687616940026266,
+        "scale_contrast": 0.009631138875154526
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.02193816844410275,
+          0.03152777668189787
+        ],
+        "fragility_16_32": [
+          0.010077575104863805,
+          0.02532424349231381
+        ],
+        "scale_contrast": [
+          0.0014494297691714701,
+          0.016829763323449997
+        ]
+      },
+      "object_or_direction_rows": 27708,
+      "contributing_images": 298
+    }
+  },
+  "equivalent_side_k00625": {
+    "definition": "object-level: retain a focal object only when candidate-pair eligibility is unchanged for every legal replay direction; direction-level: retain each unchanged-eligibility direction",
+    "object_level": {
+      "retained_objects": 6963,
+      "all_objects": 7263,
+      "weighted_retention": 0.9586942574349825,
+      "point": {
+        "fragility_8_16": 0.061543942416293886,
+        "fragility_16_32": 0.051486270746199214,
+        "scale_contrast": 0.010057671670094671
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.05210171022936139,
+          0.07162865260035906
+        ],
+        "fragility_16_32": [
+          0.03260497331124118,
+          0.07518744606605246
+        ],
+        "scale_contrast": [
+          -0.012194535202372625,
+          0.029101794857957327
+        ]
+      },
+      "object_or_direction_rows": 6963,
+      "contributing_images": 293
+    },
+    "direction_level": {
+      "retained_directions": 28541,
+      "all_directions": 28938,
+      "point": {
+        "fragility_8_16": 0.02069068521939562,
+        "fragility_16_32": 0.020802086873249366,
+        "scale_contrast": -0.00011140165385374601
+      },
+      "ci_95": {
+        "fragility_8_16": [
+          0.017372460671161633,
+          0.02422094041835003
+        ],
+        "fragility_16_32": [
+          0.013062142956617912,
+          0.03045813180154994
+        ],
+        "scale_contrast": [
+          -0.008928464836725639,
+          0.007423667210944139
+        ]
+      },
+      "object_or_direction_rows": 28541,
+      "contributing_images": 298
+    }
+  },
+  "pathway_fraction_difference_equivalent_minus_fixed": {
+    "definition": "equivalent-side minus fixed-pixel pathway fraction using paired stratified image-cluster resampling",
+    "point": {
+      "eligibility_boundary": -0.23722945571506932,
+      "topk_membership_transition": 0.0010133850063173697,
+      "conflict_reassignment": 0.008700902814461363,
+      "within_set_geometry_rank_reversal": 0.22751516789429066,
+      "active_disappearance": 0.0,
+      "compound_or_other": 0.0
+    },
+    "ci_95": {
+      "eligibility_boundary": [
+        -0.2703070755002513,
+        -0.20426452181939903
+      ],
+      "topk_membership_transition": [
+        0.0,
+        0.003378283102669986
+      ],
+      "conflict_reassignment": [
+        0.00022047936915330278,
+        0.018623548098240975
+      ],
+      "within_set_geometry_rank_reversal": [
+        0.19407936108658275,
+        0.2606221638201992
+      ],
+      "active_disappearance": [
+        0.0,
+        0.0
+      ],
+      "compound_or_other": [
+        0.0,
+        0.0
+      ]
+    },
+    "paired_images": 196
+  }
+}

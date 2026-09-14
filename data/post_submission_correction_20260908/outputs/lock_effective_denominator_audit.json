@@ -1,0 +1,92 @@
+{
+  "audit": "LOCK_EFFECTIVE_DENOMINATOR_AUDIT_V1",
+  "read_only": true,
+  "finding": "The original lock output contains every sampled in-scope row; the source script does not filter base O2O-unavailable rows before calculating fragility.",
+  "interpretation": "This audit establishes a denominator defect in the derived lock summary. It does not alter submitted files or establish the corrected bootstrap interval.",
+  "summaries": {
+    "fixed_1px": {
+      "input_rows": 7434,
+      "base_o2o_defined_rows": 7265,
+      "base_o2o_undefined_rows": 169,
+      "undefined_by_size_bin": {
+        "t_8_16": 169
+      },
+      "published_like_unfiltered": {
+        "native": {
+          "tiny_rate": 0.24862918584770197,
+          "small_rate": 0.07764366406267403,
+          "tiny_minus_small": 0.17098552178502793
+        },
+        "eligibility_lock": {
+          "tiny_rate": 0.09062212673078993,
+          "small_rate": 0.05545976004476715,
+          "tiny_minus_small": 0.035162366686022774
+        }
+      },
+      "base_defined_only": {
+        "native": {
+          "tiny_rate": 0.23269570145065605,
+          "small_rate": 0.07764366406267403,
+          "tiny_minus_small": 0.155052037387982
+        },
+        "eligibility_lock": {
+          "tiny_rate": 0.09035257174962096,
+          "small_rate": 0.05545976004476715,
+          "tiny_minus_small": 0.0348928117048538
+        }
+      },
+      "base_defined_only_ci_95": {
+        "native_tiny_minus_small": [
+          0.11982179406925979,
+          0.18850896365605702
+        ],
+        "eligibility_lock_tiny_minus_small": [
+          0.010997079159532642,
+          0.0567434200783754
+        ]
+      }
+    },
+    "equivalent_side": {
+      "input_rows": 7432,
+      "base_o2o_defined_rows": 7263,
+      "base_o2o_undefined_rows": 169,
+      "undefined_by_size_bin": {
+        "t_8_16": 169
+      },
+      "published_like_unfiltered": {
+        "native": {
+          "tiny_rate": 0.11923902693878712,
+          "small_rate": 0.08974397534516868,
+          "tiny_minus_small": 0.02949505159361844
+        },
+        "eligibility_lock": {
+          "tiny_rate": 0.06257337948172248,
+          "small_rate": 0.06453499350663815,
+          "tiny_minus_small": -0.001961614024915667
+        }
+      },
+      "base_defined_only": {
+        "native": {
+          "tiny_rate": 0.10045192253131366,
+          "small_rate": 0.08974397534516868,
+          "tiny_minus_small": 0.010707947186144984
+        },
+        "eligibility_lock": {
+          "tiny_rate": 0.06282176562018377,
+          "small_rate": 0.06453499350663815,
+          "tiny_minus_small": -0.0017132278864543798
+        }
+      },
+      "base_defined_only_ci_95": {
+        "native_tiny_minus_small": [
+          -0.02523267086712194,
+          0.04181259266977295
+        ],
+        "eligibility_lock_tiny_minus_small": [
+          -0.026699413865432012,
+          0.020487686778664062
+        ]
+      }
+    }
+  }
+}

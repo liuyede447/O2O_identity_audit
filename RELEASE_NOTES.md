@@ -1,15 +1,37 @@
-# v3.3.2 article-matched release
+# v3.3.3 article-matched release
 
-This release supersedes the immutable `v3.3.1` predecessor and is the article-matched package for **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection** (post-audit corrected manuscript). The `v3.3.1` tag and its assets remain unchanged.
+This release supersedes the immutable `v3.3.2` predecessor. It is the article-matched package for the corrected manuscript **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**. The `v3.3.2` tag and its assets remain unchanged.
 
-## What changed since v3.3.1
+## What changed since v3.3.2
 
-- **Metadata synchronization only.** Version identifiers and Zenodo/GitHub release wording were synchronized for v3.3.2. Scientific code, evidence, derived data, figure sources, dense-grid records, checkpoints, and their hashes are unchanged from v3.3.1.
+- **Figure 3 matches the article.** In v3.3.2, the Figure 3 files and their source table predated the post-submission correction.
+  - `figures/rendered/Fig3.*` are now the files used in the corrected manuscript.
+  - Every row of `figures/source_data/fig3_source.csv` is now bound to the base-defined correction outputs.
+  - `figures/src/rebuild_fig3_corrected.py` regenerates the table and the figure from those outputs. On the reference stack, its PNG is byte-identical to the article figure.
+  - `figures/src/plot_fig3.py` now holds the corrected layout. Its `main()` records the original `final_evidence_v3` binding and is no longer an entry point.
+- **Post-submission correction added.** `data/post_submission_correction_20260908/` contains the frozen input rows, the six unmodified correction scripts, and the outputs behind the corrected eligibility-lock, eligibility-stable, first-divergence/any-stage, and pre-resolution estimates. Its `README.md` gives the re-run commands and the result of re-running them.
+- **Support-sensitivity inputs added.** `data/support_sensitivity_20260909/inputs/` contains the two per-GT endpoint files. Supplementary Tables S37 and S38 now re-run from the repository alone.
+- **Missing pinned source added.** `figures/FIGURE_EVIDENCE_MANIFEST.json` pins `evidence/artifacts/runs/20260901_first_divergence_cooccurrence_v1/`, but v3.3.2 did not include it.
+- **Evidence authority byte-exact again.** v3.3.2 stored the `evidence/final_evidence_v4/` files with converted line endings. They are now the frozen originals (CRLF), so `FINAL_EVIDENCE_MANIFEST.json` has the SHA-256 cited in the Supplement (`00513d01…`).
+- **Checksums valid on every platform.** v3.3.2's manifests were computed on a Windows (CRLF) checkout, so 496 entries failed on Linux, in the GitHub source archive, and in the Zenodo zip.
+  - `.gitattributes` (`* -text`) now turns off line-ending conversion.
+  - `FILE_MANIFEST.csv`, `SHA256SUMS.txt`, `ARTICLE_MATCHED_RELEASE_SHA256.txt`, and `manuscript/article_science_freeze_v1/CONSOLIDATED_MANIFEST.json` are now computed on the committed bytes.
+- **Metadata corrected.** v3.3.2's `CITATION.cff`, `.zenodo.json`, and `ARTICLE_MATCHED_RELEASE_MANIFEST.json` recorded `10.5281/zenodo.22683896`, which is not this record's concept DOI.
+  - The all-versions concept DOI is now `10.5281/zenodo.22478276`.
+  - `.zenodo.json` declares this record a new version of `10.5281/zenodo.22684364` (v3.3.2).
+- **Housekeeping.**
+  - `manuscript/generated_final_v2/SUPERSEDED_VALUES.md` lists the pre-correction entries that remain in the frozen generation snapshot.
+  - The figure evidence manifests use the article's wording for the RMCBD question, and their Figure S1 trace paths are fixed.
+  - The stale internal `RELEASE_CHECKLIST.md` (v3.2.0 wording) was removed.
+  - `scripts/verify_release.py` now ignores `__pycache__/`, so it still passes after the analysis or figure scripts have been run.
+  - `README.md` and `docs/REPRODUCIBILITY.md` were updated.
+
+Unchanged: the eight release assets (checkpoints and dense-grid parts, with the same SHA-256 values), the primary Table 1 endpoint, the Rank-Set and dense-boundary data, and all other code, evidence, and derived data.
 
 ## Assets and exclusions
 
-Four protocol-eligible seed-0–3 checkpoints and the complete 1/1024 dense curve are attached as separate GitHub release assets with SHA-256 verification (see `RELEASE_ASSET_MANIFEST.csv`); the dense curve ships as four ordered `.part01`–`.part04` gzip parts joined with `scripts/join_dense_grid_asset.py`. AI-TOD-v2 and VisDrone images/annotations, raw prediction dumps, and image-bearing Figure 1/Figure S1 renders are not redistributed. Original code and derived data are AGPL-3.0-only.
+Four protocol-eligible seed-0–3 checkpoints and the complete 1/1024 dense curve are attached as separate GitHub release assets, each with SHA-256 verification (see `RELEASE_ASSET_MANIFEST.csv`). The dense curve ships as four ordered gzip parts, `.part01`–`.part04`, which `scripts/join_dense_grid_asset.py` joins. The following are not redistributed: AI-TOD-v2 and VisDrone images and annotations, raw prediction dumps, and the image-bearing Figure 1 and Figure S1 renders. Original code and derived data are AGPL-3.0-only.
 
 ## DOI
 
-The corresponding Zenodo version is generated from this GitHub release. Use the version DOI displayed on the Zenodo record; the concept DOI remains stable across versions.
+Zenodo generates the corresponding version from this GitHub release. Cite the version DOI shown on that record. The all-versions concept DOI, [10.5281/zenodo.22478276](https://doi.org/10.5281/zenodo.22478276), stays the same across versions.

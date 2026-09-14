@@ -1,0 +1,115 @@
+{
+  "audit": "LOCK_CORRECTED_ESTIMATES_V1",
+  "read_only": true,
+  "estimator": "inverse-inclusion weighted object-level fragility; base O2O identity must be defined; 5,000 image-cluster bootstrap replicates resampled within frozen outcome-blind strata",
+  "effective_population": {
+    "fixed_1px": {
+      "gt": 7265,
+      "images": 298,
+      "tiny_gt": 6273,
+      "small_gt": 992,
+      "base_undefined_excluded": 169
+    },
+    "equivalent_side": {
+      "gt": 7263,
+      "images": 298,
+      "tiny_gt": 6271,
+      "small_gt": 992,
+      "base_undefined_excluded": 169
+    }
+  },
+  "estimates": {
+    "fixed_1px": {
+      "point": {
+        "native_tiny": 0.23269570145065605,
+        "native_small": 0.07764366406267403,
+        "native_gap": 0.155052037387982,
+        "eligibility_lock_tiny": 0.09035257174962096,
+        "eligibility_lock_small": 0.05545976004476715,
+        "eligibility_lock_gap": 0.0348928117048538,
+        "reduction_pp": 0.1201592256831282,
+        "reduction_fraction": 0.774960637134083
+      },
+      "ci_95": {
+        "native_tiny": [
+          0.21286204276803736,
+          0.25423108887795853
+        ],
+        "native_small": [
+          0.04795103053904425,
+          0.11364907566639955
+        ],
+        "native_gap": [
+          0.11961371638066327,
+          0.18867778259147913
+        ],
+        "eligibility_lock_tiny": [
+          0.0768451196042158,
+          0.10462708721953828
+        ],
+        "eligibility_lock_small": [
+          0.034016995367250176,
+          0.08056849212342068
+        ],
+        "eligibility_lock_gap": [
+          0.011247619350785953,
+          0.056438676035476844
+        ],
+        "reduction_pp": [
+          0.09772903462414356,
+          0.1405333734306833
+        ],
+        "reduction_fraction": [
+          0.6801188459869594,
+          0.9152819900581523
+        ]
+      }
+    },
+    "equivalent_side": {
+      "point": {
+        "native_tiny": 0.10045192253131366,
+        "native_small": 0.08974397534516868,
+        "native_gap": 0.010707947186144984,
+        "eligibility_lock_tiny": 0.06282176562018377,
+        "eligibility_lock_small": 0.06453499350663815,
+        "eligibility_lock_gap": -0.0017132278864543798,
+        "reduction_pp": 0.012421175072599364,
+        "reduction_fraction": 1.159995922343652
+      },
+      "ci_95": {
+        "native_tiny": [
+          0.08890586730706926,
+          0.11212041529640442
+        ],
+        "native_small": [
+          0.0568870634480022,
+          0.12955757251996103
+        ],
+        "native_gap": [
+          -0.025586069148285803,
+          0.04164259715403487
+        ],
+        "eligibility_lock_tiny": [
+          0.05320701676241082,
+          0.07249179185246846
+        ],
+        "eligibility_lock_small": [
+          0.041074322816790194,
+          0.0931383281856082
+        ],
+        "eligibility_lock_gap": [
+          -0.027033469147546327,
+          0.020625874322740052
+        ],
+        "reduction_pp": [
+          -0.003961319231932181,
+          0.027038333334173117
+        ],
+        "reduction_fraction": [
+          -5.866273946207912,
+          7.519644229225858
+        ]
+      }
+    }
+  }
+}

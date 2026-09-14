@@ -1,8 +1,8 @@
 {
-  "addendum_path": "figures_final/FIGURE_EVIDENCE_ADDENDUM.json",
-  "addendum_sha256": "851a589591e1261fa2a9498c57f847156db10b794ff23cd7b761d948ed48caa0",
-  "fig3_source_csv": "figures_final/source_data/fig3_source.csv",
-  "fig3_source_csv_sha256": "a6d7021ef46e8dd967e35e971d565ea6cc3bcdd51042670bfcec6fdb9013feb3",
+  "addendum_path": "figures/FIGURE_EVIDENCE_ADDENDUM.json",
+  "addendum_sha256": "e143093827bcb2702512c9575c78582934e93076ffd154618b5e2887df783137",
+  "fig3_source_csv": "figures/source_data/fig3_source.csv",
+  "fig3_source_csv_sha256": "b71a0d8ef59c3c367eb3413e85602585f59ef4523728d5313a2312a5b5c5bc64",
   "figure": "Figure 3",
   "interpretation_guards": {
     "any_stage_stacked": false,
@@ -11,8 +11,8 @@
     "first_label_execution_order_invariant_claim": false,
     "observational_subset_as_causal_proof": false
   },
-  "manifest_path": "figures_final/FIGURE_EVIDENCE_MANIFEST.json",
-  "manifest_sha256": "9f1f4c3e12dbcf6f1319d42fff19effb54fe3484328133179f5394f620d6bf30",
+  "manifest_path": "figures/FIGURE_EVIDENCE_MANIFEST.json",
+  "manifest_sha256": "b20ded69e874d0f468b31d3df5dac309b94a906a60ec5b2e38b1d8c4d0decf9d",
   "panel_support": {
     "Fig3a": {
       "bootstrap_repetitions": 5000,
@@ -53,15 +53,14 @@
       },
       "source_artifacts": [
         {
-          "authority": "final_evidence_v3",
-          "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
-          "expected_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
-          "path": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
-          "role": "eligibility-lock estimates"
+          "authority": "derived_correction_from_frozen_evidence",
+          "expected_sha256": "5061549fa6d164e6a74a221d1783e0019a8a8f662705715680c83d49e9ab550d",
+          "path": "data/post_submission_correction_20260908/outputs/LOCK_CORRECTED_ESTIMATES.json",
+          "role": "base-defined corrected panel_a"
         }
       ],
       "statistical_unit": "GT and directional replay on lock support",
-      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "status_reason": "Values are re-derived from the SHA-bound base-defined correction output.",
       "stress_contract": [
         "fixed_1px",
         "equivalent_side_kappa_0.0625"
@@ -102,15 +101,14 @@
       },
       "source_artifacts": [
         {
-          "authority": "final_evidence_v3",
-          "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
-          "expected_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
-          "path": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
-          "role": "eligibility-stable subset"
+          "authority": "derived_correction_from_frozen_evidence",
+          "expected_sha256": "d2f9fe2b0413f94ae27f401c68258fa0a43e9df01fc49f8c2fde38b338445f42",
+          "path": "data/post_submission_correction_20260908/outputs/ANATOMY_BASE_DEFINED_CORRECTION/summary.json",
+          "role": "base-defined corrected panel_b"
         }
       ],
       "statistical_unit": "post-replay conditioned focal GT",
-      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "status_reason": "Values are re-derived from the SHA-bound base-defined correction output.",
       "stress_contract": [
         "fixed_1px",
         "equivalent_side_kappa_0.0625"
@@ -128,7 +126,7 @@
       ],
       "ci_type": "95% stratified image-cluster percentile bootstrap",
       "dataset": "AI-TOD-v2",
-      "evidence_class": "discovery plus figure-only descriptive addendum",
+      "evidence_class": "discovery corrected descriptive sensitivity",
       "figure_number": "Fig3",
       "image_n": {
         "equivalent_side_contributing": 159,
@@ -141,7 +139,7 @@
       },
       "panel": "c",
       "panel_id": "Fig3c",
-      "panel_status": "WARN",
+      "panel_status": "PASS",
       "point_estimate_columns": [
         "exclusive first-observed pathway fraction",
         "non-exclusive flag__* and pair__* occurrence"
@@ -154,29 +152,14 @@
       },
       "source_artifacts": [
         {
-          "authority": "final_evidence_v3",
-          "evidence_id": "EV-PATHWAY-ANATOMY-V2",
-          "expected_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
-          "path": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
-          "role": "exclusive first-observed labels"
-        },
-        {
-          "authority": "SOURCE_ADDENDUM",
-          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
-          "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
-          "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
-          "role": "non-exclusive any-stage summary"
-        },
-        {
-          "authority": "SOURCE_ADDENDUM",
-          "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
-          "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
-          "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
-          "role": "non-exclusive any-stage rows"
+          "authority": "derived_correction_from_frozen_evidence",
+          "expected_sha256": "85f29a2805efcff85058e661ee94e7ebe1a72fb9aeb7f5c9dbf0242dcacf03b1",
+          "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/FIRST_DIVERGENCE_ANY_STAGE_CORRECTED_CI.csv",
+          "role": "base-defined corrected panel_c"
         }
       ],
       "statistical_unit": "O2O identity-flip directional replay",
-      "status_reason": "Any-stage co-occurrence is SHA-verified in SOURCE_ADDENDUM; it remains descriptive and does not upgrade EV-PATHWAY-ANATOMY-V2.",
+      "status_reason": "Values are re-derived from the SHA-bound base-defined correction output.",
       "stress_contract": [
         "fixed_1px",
         "equivalent_side_kappa_0.0625"
@@ -221,22 +204,14 @@
       },
       "source_artifacts": [
         {
-          "authority": "final_evidence_v3",
-          "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
-          "expected_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
-          "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
-          "role": "fixed pre-resolution control"
-        },
-        {
-          "authority": "final_evidence_v3",
-          "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
-          "expected_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
-          "path": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
-          "role": "equivalent-side pre-resolution control"
+          "authority": "derived_correction_from_frozen_evidence",
+          "expected_sha256": "5041876d744c689ce2250c7d1f877ffd87220ead5afe56747e4492eef58d3c22",
+          "path": "data/post_submission_correction_20260908/outputs/PRE_RESOLUTION_BASE_DEFINED_CORRECTION/summary.json",
+          "role": "base-defined corrected panel_d"
         }
       ],
       "statistical_unit": "focal GT and directional replay",
-      "status_reason": "All sources are SHA-bound to final_evidence_v3 or a non-numeric contract source.",
+      "status_reason": "Values are re-derived from the SHA-bound base-defined correction output.",
       "stress_contract": [
         "fixed_1px",
         "equivalent_side_kappa_0.0625"
@@ -245,7 +220,7 @@
     }
   },
   "scientific_role": "localisation and sensitivity; not causal decomposition",
-  "source_row_count": 41,
+  "source_row_count": 33,
   "sources": [
     {
       "actual_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
@@ -253,7 +228,7 @@
       "evidence_id": "EV-ELIGIBILITY-LOCK-V1",
       "expected_sha256": "dd01d94b093cf078ac22609e0066bfe1d3edab014c5c742c7231e26f7a5908df",
       "panel_id": "Fig3a",
-      "path": "results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
+      "path": "evidence/artifacts/results/measurement_validation_20260831/eligibility_lock_v1/summary.json",
       "role": "eligibility-lock estimates"
     },
     {
@@ -262,7 +237,7 @@
       "evidence_id": "EV-ELIGIBILITY-STABLE-V2",
       "expected_sha256": "27c12ddde8d15d144f7167f9fcc2f187b32dafb5cc5ccc9157c36ce0e2d750e7",
       "panel_id": "Fig3b",
-      "path": "results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
+      "path": "evidence/artifacts/results/five_experiment_upgrade_20260830/eligibility_stable_sensitivity_v2/summary.json",
       "role": "eligibility-stable subset"
     },
     {
@@ -271,26 +246,8 @@
       "evidence_id": "EV-PATHWAY-ANATOMY-V2",
       "expected_sha256": "ca23d877b18858bf2b8024cb280c0a91f5db47756cfb9057cfc9bcaa762ae2dd",
       "panel_id": "Fig3c",
-      "path": "results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
+      "path": "evidence/artifacts/results/five_experiment_upgrade_20260830/anatomy_bootstrap_summary_v2.json",
       "role": "exclusive first-observed labels"
-    },
-    {
-      "actual_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
-      "authority": "SOURCE_ADDENDUM",
-      "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
-      "expected_sha256": "72c5ea1adbc8207f23d1cd3caf0d61c66f66c188e150af164704f05d29a6430b",
-      "panel_id": "Fig3c",
-      "path": "runs/20260901_first_divergence_cooccurrence_v1/summary.json",
-      "role": "non-exclusive any-stage summary"
-    },
-    {
-      "actual_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
-      "authority": "SOURCE_ADDENDUM",
-      "evidence_id": "ADD-FIG-COOCCURRENCE-V1",
-      "expected_sha256": "9eb9b9e02d8f8122ea9e81546b8ebc40bd5e5174d53403f87e04098c1c4503b0",
-      "panel_id": "Fig3c",
-      "path": "runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv",
-      "role": "non-exclusive any-stage rows"
     },
     {
       "actual_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
@@ -298,7 +255,7 @@
       "evidence_id": "EV-PRERESOLUTION-FIXED-V1",
       "expected_sha256": "964fc7b08e1edee1adc870cfa93d6b02f34f299d3022f311ad213a11288d8526",
       "panel_id": "Fig3d",
-      "path": "runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
+      "path": "evidence/artifacts/runs/20260831T163900_preresolution_fixed_v1/artifact/summary.json",
       "role": "fixed pre-resolution control"
     },
     {
@@ -307,10 +264,40 @@
       "evidence_id": "EV-PRERESOLUTION-NORMALIZED-V1",
       "expected_sha256": "6fa33d8c15749f526a64efe58fb477d5cb860c863d7774f05ff6e157935b0c80",
       "panel_id": "Fig3d",
-      "path": "runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
+      "path": "evidence/artifacts/runs/20260831T164000_preresolution_normalized_v1/artifact/summary.json",
       "role": "equivalent-side pre-resolution control"
     }
   ],
-  "status": "SOURCE_BOUND_DRAFT",
-  "title": "Eligibility and native-path localisation"
+  "status": "SOURCE_BOUND_ARTICLE_CORRECTED",
+  "title": "Eligibility and native-path localisation",
+  "corrected_sources": {
+    "panel_a": {
+      "path": "data/post_submission_correction_20260908/outputs/LOCK_CORRECTED_ESTIMATES.json",
+      "sha256": "5061549fa6d164e6a74a221d1783e0019a8a8f662705715680c83d49e9ab550d"
+    },
+    "panel_b": {
+      "path": "data/post_submission_correction_20260908/outputs/ANATOMY_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "d2f9fe2b0413f94ae27f401c68258fa0a43e9df01fc49f8c2fde38b338445f42"
+    },
+    "panel_c": {
+      "path": "data/post_submission_correction_20260908/outputs/PATHWAY_BASE_DEFINED_CORRECTION/FIRST_DIVERGENCE_ANY_STAGE_CORRECTED_CI.csv",
+      "sha256": "85f29a2805efcff85058e661ee94e7ebe1a72fb9aeb7f5c9dbf0242dcacf03b1"
+    },
+    "panel_d": {
+      "path": "data/post_submission_correction_20260908/outputs/PRE_RESOLUTION_BASE_DEFINED_CORRECTION/summary.json",
+      "sha256": "5041876d744c689ce2250c7d1f877ffd87220ead5afe56747e4492eef58d3c22"
+    }
+  },
+  "panel_c_any_stage_labels": [
+    "Eligibility",
+    "Eligibility ∩ Within-set",
+    "Within-set rank"
+  ],
+  "panel_c_any_stage_status": "PASS",
+  "historical_addendum_not_plotted": true,
+  "archived_not_plotted_sources": [
+    "evidence/artifacts/runs/20260901_first_divergence_cooccurrence_v1/summary.json",
+    "evidence/artifacts/runs/20260901_first_divergence_cooccurrence_v1/cooccurrence.csv"
+  ],
+  "sources_note": "'sources' lists the frozen final_evidence_v3 artifacts the correction re-derives from; the plotted values come from 'corrected_sources'."
 }

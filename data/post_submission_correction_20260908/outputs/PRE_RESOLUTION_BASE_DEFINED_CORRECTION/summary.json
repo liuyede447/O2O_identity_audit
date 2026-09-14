@@ -1,0 +1,163 @@
+{
+  "protocol": "PRE_RESOLUTION_BASE_DEFINED_CORRECTION_V1",
+  "read_only": true,
+  "base_gate": "loss_active_base must be defined",
+  "contracts": {
+    "fixed": {
+      "effective_gt": 7265,
+      "effective_images": 298,
+      "effective_directions": 28942,
+      "excluded_base_undefined_gt": 169,
+      "point": {
+        "pre_tiny": 0.2317398664875403,
+        "pre_small": 0.07764366406267403,
+        "pre_gap": 0.15409620242486627,
+        "active_tiny": 0.23269570145065605,
+        "active_small": 0.07764366406267403,
+        "active_gap": 0.155052037387982,
+        "active_minus_pre_gap": 0.0009558349631157426,
+        "object_disagreement": 0.002751227960793162,
+        "object_conflict": 0.14342482404719484,
+        "object_disagreement_with_conflict": 0.002751227960793162,
+        "directional_disagreement": 0.002210211062842962,
+        "directional_disagreement_with_conflict": 0.002210211062842962,
+        "directional_conflict": 0.09957888287997668,
+        "directional_disagreement_count": 64,
+        "object_disagreement_count": 20,
+        "directional_disagreement_conflict_count": 64
+      },
+      "ci_95": {
+        "pre_tiny": [
+          0.2120614696613035,
+          0.25305696695222013
+        ],
+        "pre_small": [
+          0.04859576132780703,
+          0.11387391471854807
+        ],
+        "pre_gap": [
+          0.11888243779342088,
+          0.18771732293029672
+        ],
+        "active_tiny": [
+          0.21306775713136847,
+          0.2542349683332811
+        ],
+        "active_small": [
+          0.04820648930675432,
+          0.11382114942847883
+        ],
+        "active_gap": [
+          0.11984454356926727,
+          0.18932342909896197
+        ],
+        "active_minus_pre_gap": [
+          -0.0017549268473044332,
+          0.004367368413268346
+        ],
+        "object_disagreement": [
+          0.0009905626871891374,
+          0.004809588128640481
+        ],
+        "object_conflict": [
+          0.11266098478693654,
+          0.1746582844836296
+        ],
+        "object_disagreement_with_conflict": [
+          0.0009905626871891374,
+          0.004809588128640481
+        ],
+        "directional_disagreement": [
+          0.0010993822968101323,
+          0.003601590624322657
+        ],
+        "directional_disagreement_with_conflict": [
+          0.0010993822968101323,
+          0.003601590624322657
+        ],
+        "directional_conflict": [
+          0.07623753133642751,
+          0.12318828064401473
+        ]
+      }
+    },
+    "equivalent": {
+      "effective_gt": 7263,
+      "effective_images": 298,
+      "effective_directions": 28938,
+      "excluded_base_undefined_gt": 169,
+      "point": {
+        "pre_tiny": 0.10108676405047368,
+        "pre_small": 0.08671889752454502,
+        "pre_gap": 0.014367866525928655,
+        "active_tiny": 0.10045192253131366,
+        "active_small": 0.08974397534516868,
+        "active_gap": 0.010707947186144984,
+        "active_minus_pre_gap": -0.003659919339783671,
+        "object_disagreement": 0.003715265438286996,
+        "object_conflict": 0.13658942189034165,
+        "object_disagreement_with_conflict": 0.003715265438286996,
+        "directional_disagreement": 0.0019343602768780539,
+        "directional_disagreement_with_conflict": 0.0019343602768780539,
+        "directional_conflict": 0.09734945961904098,
+        "directional_disagreement_count": 56,
+        "object_disagreement_count": 27,
+        "directional_disagreement_conflict_count": 56
+      },
+      "ci_95": {
+        "pre_tiny": [
+          0.08927123033197418,
+          0.11344612858422251
+        ],
+        "pre_small": [
+          0.05628484941957912,
+          0.12563739522778863
+        ],
+        "pre_gap": [
+          -0.02077215714467583,
+          0.04401234916725215
+        ],
+        "active_tiny": [
+          0.08916242478939272,
+          0.11233676649458431
+        ],
+        "active_small": [
+          0.05785123240928718,
+          0.13003370377323006
+        ],
+        "active_gap": [
+          -0.025833245658474918,
+          0.04166358247132496
+        ],
+        "active_minus_pre_gap": [
+          -0.009017867186681286,
+          0.0004402819135674742
+        ],
+        "object_disagreement": [
+          0.001576207739512221,
+          0.0062978680475082975
+        ],
+        "object_conflict": [
+          0.10599569004435078,
+          0.16807601373448938
+        ],
+        "object_disagreement_with_conflict": [
+          0.001576207739512221,
+          0.0062978680475082975
+        ],
+        "directional_disagreement": [
+          0.0009844215340111255,
+          0.003100196644875371
+        ],
+        "directional_disagreement_with_conflict": [
+          0.0009844215340111255,
+          0.003100196644875371
+        ],
+        "directional_conflict": [
+          0.07410379216338168,
+          0.12074505765838478
+        ]
+      }
+    }
+  }
+}

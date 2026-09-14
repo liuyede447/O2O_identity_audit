@@ -90,21 +90,21 @@
           "role": "equivalent-side replay contract"
         },
         {
-          "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+          "path": "figures/source_data/figs1_primary_trace/primary_qualitative_trace.json",
           "expected_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",
           "role": "primary-checkpoint qualitative candidate trace"
         },
         {
-          "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+          "path": "figures/source_data/figs1_primary_trace/validation.json",
           "expected_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",
           "role": "primary-checkpoint trace validation"
         },
         {
-          "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+          "path": "figures/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
           "expected_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",
@@ -857,7 +857,7 @@
       "figure_number": "Fig4",
       "panel": "c",
       "panel_id": "Fig4c",
-      "scientific_question": "What are absolute and paired restricted mean cardinal boundary distances?",
+      "scientific_question": "What are absolute branch-specific restricted mean cardinal boundary distances and their O2O-minus-O2M branch contrast?",
       "source_artifacts": [
         {
           "path": "evidence/artifacts/runs/20260903_boundary_full_grid_1024_postprocess_v2/tau_01250/rmsr.csv",
@@ -1483,21 +1483,21 @@
       "scientific_question": "Can real-image stable, fragile and undefined cases be shown under the primary frozen checkpoint?",
       "source_artifacts": [
         {
-          "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+          "path": "figures/source_data/figs1_primary_trace/primary_qualitative_trace.json",
           "expected_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",
           "role": "primary-checkpoint qualitative candidate trace"
         },
         {
-          "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+          "path": "figures/source_data/figs1_primary_trace/validation.json",
           "expected_sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",
           "role": "primary-checkpoint trace validation"
         },
         {
-          "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+          "path": "figures/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
           "expected_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
           "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
           "authority": "SOURCE_ADDENDUM",

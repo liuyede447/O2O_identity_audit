@@ -32,18 +32,12 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.22683896",
-      "relation": "isVersionOf",
-      "scheme": "doi",
-      "resource_type": "software"
-    },
-    {
-      "identifier": "https://doi.org/10.5281/zenodo.22537930",
+      "identifier": "https://doi.org/10.5281/zenodo.22684364",
       "relation": "isNewVersionOf",
       "scheme": "doi",
       "resource_type": "software"
     }
   ],
-  "version": "3.3.2",
-  "notes": "Article-matched Zenodo archive for GitHub release v3.3.2."
+  "version": "3.3.3",
+  "notes": "Article-matched Zenodo archive for GitHub release v3.3.3. All-versions concept DOI: 10.5281/zenodo.22478276."
 }
