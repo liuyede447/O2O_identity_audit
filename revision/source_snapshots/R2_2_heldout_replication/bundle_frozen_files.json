@@ -1,0 +1,127 @@
+[
+  {
+    "name": "PREREGISTRATION_DRAFT.md",
+    "sha256": "1b9949c6577bbe79de928c73dcb32046c9f5d785f15eca049f6c2a233a2605df",
+    "path": "source_snapshots/R2_2_heldout_replication/PREREGISTRATION_DRAFT.md"
+  },
+  {
+    "name": "selected_images_preregistered.csv",
+    "sha256": "389dc7ed8fe254ed11617157da8465817b644b9fbb0536519bef9d38b96ee9ba",
+    "path": "source_snapshots/R2_2_heldout_replication/selected_images_preregistered.csv"
+  },
+  {
+    "name": "conversion_manifest.json",
+    "sha256": "3cb5c36f5968f7b8bcdf526d120c684517c9cde105a42e26b7c1a0558c7720c5",
+    "path": "source_snapshots/R2_2_heldout_replication/conversion_manifest.json"
+  },
+  {
+    "name": "validation_files_sha256.txt",
+    "sha256": "a0f55160422677586cbac799e3889c64d3fd0e66dc3c37b4ad2e8449bddf8993",
+    "path": "source_snapshots/R2_2_heldout_replication/validation_files_sha256.txt"
+  },
+  {
+    "name": "rehearsal_results.json",
+    "sha256": "e32b09386807840e402ae50c690ff022f9f020b1ff3536a1bf4e0a92f8e4e3ec",
+    "path": "source_snapshots/R2_2_heldout_replication/rehearsal_results.json"
+  },
+  {
+    "name": "prepare_validation_split.py",
+    "sha256": "b2118094ff70d21218596424756a8f2990798d3f458c14c7782d9a37faeb62ed",
+    "path": "source_snapshots/R2_2_heldout_replication/prepare_validation_split.py"
+  },
+  {
+    "name": "select_sample.py",
+    "sha256": "05da587039f401e2d4c424698464d0777aa2d963c1d18bb68ee5e2b3eb0c5dcf",
+    "path": "source_snapshots/R2_2_heldout_replication/select_sample.py"
+  },
+  {
+    "name": "predict_row_structure.py",
+    "sha256": "c3a71e27c3798324cd12dafd99e402bb197aa0392df29d1002dfa08a093463ca",
+    "path": "source_snapshots/R2_2_heldout_replication/predict_row_structure.py"
+  },
+  {
+    "name": "run_lock_checked.py",
+    "sha256": "113c206c58cda4c9dac5753282cb353dc9119f4620b764f99fea1f21846a3eff",
+    "path": "source_snapshots/R2_2_heldout_replication/run_lock_checked.py"
+  },
+  {
+    "name": "base_gate.py",
+    "sha256": "bfb89e34c93a051ceeea6b9aef5b9d26894dc798f4d7f17828708f102730e236",
+    "path": "source_snapshots/R2_2_heldout_replication/base_gate.py"
+  },
+  {
+    "name": "analyze_replication.py",
+    "sha256": "2d43008c5a219910420f7dbbe2a2282936ae291cc03ff51f9023abc233aaed82",
+    "path": "source_snapshots/R2_2_heldout_replication/analyze_replication.py"
+  },
+  {
+    "name": "rehearsal.py",
+    "sha256": "24e840bc5d8d7d86c4eec77718401eb646ae0b3eb9f59c80fff2cc6cacc14881",
+    "path": "source_snapshots/R2_2_heldout_replication/rehearsal.py"
+  },
+  {
+    "name": "run_s2.sh",
+    "sha256": "5def49fb2115806b0f2f43dd54bc99055f6eaa2dd983196cf00859f8da60e685",
+    "path": "source_snapshots/R2_2_heldout_replication/run_s2.sh"
+  },
+  {
+    "name": "analyze_s2.py",
+    "sha256": "c0e52e3be9d951eb74ced86c0b9d754575eea70725287a4476eb3895791e1cca",
+    "path": "source_snapshots/R2_2_heldout_replication/analyze_s2.py"
+  },
+  {
+    "name": "run_formal.sh",
+    "sha256": "5bbbdc4928fb402c063a0e4d1b2ab6cd694eabe9f4ca32f08f8e7171f81c9f5e",
+    "path": "source_snapshots/R2_2_heldout_replication/run_formal.sh"
+  },
+  {
+    "name": "freeze.py",
+    "sha256": "ab313f038375d6755da15ff929d40e5cfa2878e330f10748211df4cb2d519aa9",
+    "path": "source_snapshots/R2_2_heldout_replication/freeze.py"
+  },
+  {
+    "name": "check_s2_manifest.py",
+    "sha256": "d1b7fed0d5e500cc97999999dff8c867964be4b8cdd27b9a6742482c777b175d",
+    "path": "source_snapshots/R2_2_heldout_replication/check_s2_manifest.py"
+  },
+  {
+    "name": "comparable_measure.py",
+    "sha256": "54f0b192484ee3f0a615faa079befe2622f751e893d0faed81d38f56d8decb99",
+    "path": "source_snapshots/R2_1_comparable_measure/comparable_measure.py"
+  },
+  {
+    "name": "run_eligibility_lock_counterfactual.py",
+    "sha256": "cfcb4bc8bc88670013acaaf113371608b028d906170071daf216169916141c5d",
+    "path": "source_snapshots/R2_2_heldout_replication/replay_sources/run_eligibility_lock_counterfactual.py"
+  },
+  {
+    "name": "run_reviewer_killer_controls.py",
+    "sha256": "a3a472f04d2a2f9ffe232e68ccc30c21c18f433acaea63970916d1ca570c7dfc",
+    "path": "source_snapshots/R2_2_heldout_replication/replay_sources/run_reviewer_killer_controls.py"
+  },
+  {
+    "name": "analyze_o2m_rank_set_decoupling.py",
+    "sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+    "path": "source_snapshots/R2_2_heldout_replication/replay_sources/analyze_o2m_rank_set_decoupling.py"
+  },
+  {
+    "name": "margin_o2o_replay.py",
+    "sha256": "b38679eb0439c99f5efef46448841d1cc5c0eb3bb9eee4467393ca14536f5c9f",
+    "path": "source_snapshots/R2_2_heldout_replication/replay_sources/margin_o2o_replay.py"
+  },
+  {
+    "name": "data.yaml",
+    "sha256": "38a742c896774201efc1ab4af618cb356e4f722b5feecef69effd52861250797",
+    "path": "source_snapshots/R2_2_heldout_replication/historical_data.yaml"
+  },
+  {
+    "name": "aitod_val_v2.json",
+    "sha256": "d0439ba687db66bb38584a3398a906f15c47e055cdd84bb9060496a91f30d7cf",
+    "source": "Dataset-author archive. See the frozen plan."
+  },
+  {
+    "name": "last.pt",
+    "sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b",
+    "path": "assets/yolo26s_aitodv2_seed0_final_epoch.pt"
+  }
+]

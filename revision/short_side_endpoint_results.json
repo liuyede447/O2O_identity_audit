@@ -1,0 +1,78 @@
+{
+  "design": "Post hoc seed-0 discovery sample. Contract-specific Table 2 GTs intersected, then legal directions matched within each GT. An object changes if any matched direction changes its O2O identity.",
+  "short_side_exclusion": {
+    "centre_px": 8,
+    "tolerance_px": 0.001,
+    "applies_to_both_size_groups": true
+  },
+  "bootstrap": {
+    "seed": 20260823,
+    "replicates": 5000,
+    "unit": "image within original sampling stratum"
+  },
+  "results": {
+    "matched_full": {
+      "objects": 6377,
+      "directions": 25396,
+      "contributing_images": 288,
+      "estimates_pp": {
+        "fixed_1px": {
+          "point": 14.372504749144941,
+          "ci_95": [
+            10.876998935186563,
+            17.886488360647395
+          ]
+        },
+        "size_scaled": {
+          "point": 0.1310902116297849,
+          "ci_95": [
+            -3.468726116283204,
+            3.1936894506872537
+          ]
+        },
+        "fixed_minus_scaled": {
+          "point": 14.241414537515157,
+          "ci_95": [
+            12.575891082581501,
+            16.08085029553164
+          ]
+        }
+      }
+    },
+    "excluding_8px_short_side": {
+      "objects": 5227,
+      "directions": 20805,
+      "contributing_images": 281,
+      "estimates_pp": {
+        "fixed_1px": {
+          "point": 11.581518605888464,
+          "ci_95": [
+            8.65169414014,
+            14.786345057509388
+          ]
+        },
+        "size_scaled": {
+          "point": 0.9372682490929568,
+          "ci_95": [
+            -2.0563340272132806,
+            3.742499001333052
+          ]
+        },
+        "fixed_minus_scaled": {
+          "point": 10.644250356795506,
+          "ci_95": [
+            9.078603566190326,
+            12.424646973068135
+          ]
+        }
+      }
+    }
+  },
+  "upstream_sha256": {
+    "results/measurement_validation_20260831/fixed_branch_replay_v1/per_gt.csv": "0596d59486c5da70a577a6928f9b14fddc6c1ba115511e20486175dabada0d7a",
+    "results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv": "930a50dadb0abdfdcede0de344cb93ed2f68c0c5a4c1f183a2f70ddde8be87f8",
+    "results/reviewer_controls_20260829/formal_s0e300_k00625/per_gt.csv": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de",
+    "results/reviewer_controls_20260829/formal_s0e300_k00625/per_direction.csv": "bc3b08e9d64f46f616abdea4153108bb7ba5b727bc5aca554fe5f501a166b14d",
+    "results/measurement_validation_20260831/fixed_branch_replay_v1/selected_images.csv": "ede67e6397f8c5b6fdef1487485ace54c4b59a2fdda54932ed1f2192333f4da6"
+  }
+}

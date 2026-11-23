@@ -1,0 +1,585 @@
+{
+  "status": "complete",
+  "protocol": "o2m_positive_count_and_continuous_scale_controls_v1",
+  "read_only_inputs": true,
+  "estimand_scope": "Descriptive standardization/association on common-valid O2O/O2M margin support, conditional on one frozen seed-0 checkpoint and the selected image sample.",
+  "analysis_filter": "per_gt common_valid_margin == 1; direction, boundary, and rank-set rows joined by those frozen GT keys",
+  "causal_claim": false,
+  "gap_orientation": "small_16_32_minus_tiny_8_16",
+  "stress": "equivalent-area-side shift (delta = kappa * sqrt(width * height), kappa=0.0625)",
+  "positive_count_means": {
+    "t_8_16": 3.066767294855865,
+    "s_16_32": 6.536452248868534,
+    "small_minus_tiny": 3.4696849540126693
+  },
+  "standardized_analyses": {
+    "object_any_top1_fragility": {
+      "full_common_support": {
+        "positive_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "point": {
+          "crude_tiny": 0.5792576460094706,
+          "crude_small": 0.7537181188184509,
+          "crude_gap_small_minus_tiny": 0.17446047280898025,
+          "overlap_crude_tiny": 0.5795612249030069,
+          "overlap_crude_small": 0.7537181188184509,
+          "overlap_crude_gap_small_minus_tiny": 0.17415689391544398,
+          "standardized_tiny": 0.5994662252658096,
+          "standardized_small": 0.6912334733010764,
+          "standardized_gap_small_minus_tiny": 0.09176724803526681,
+          "coverage_tiny": 0.998513881790162,
+          "coverage_small": 1.0
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.09143723118068015,
+          "high": 0.21854189612595992,
+          "valid_replicates": 2966
+        }
+      },
+      "adequate_overlap_support": {
+        "positive_counts": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minimum_raw_gt_per_size_cell": 20,
+        "point": {
+          "crude_tiny": 0.5792576460094706,
+          "crude_small": 0.7537181188184509,
+          "crude_gap_small_minus_tiny": 0.17446047280898025,
+          "overlap_crude_tiny": 0.6627340119696509,
+          "overlap_crude_small": 0.7080102446447173,
+          "overlap_crude_gap_small_minus_tiny": 0.04527623267506642,
+          "standardized_tiny": 0.666072796547601,
+          "standardized_small": 0.6876382108733722,
+          "standardized_gap_small_minus_tiny": 0.021565414325771193,
+          "coverage_tiny": 0.6028970374970802,
+          "coverage_small": 0.6429609485181138
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.04743855038768318,
+          "high": 0.09705296292079166,
+          "valid_replicates": 5000
+        }
+      },
+      "full_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.11847377923637348,
+        "high": 0.22731058697654807,
+        "valid_replicates": 5000
+      },
+      "adequate_overlap_crude_ci_95_gap_small_minus_tiny": {
+        "low": -0.014572869531873847,
+        "high": 0.1052189679385449,
+        "valid_replicates": 5000
+      }
+    },
+    "direction_top1_flip": {
+      "full_common_support": {
+        "positive_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "point": {
+          "crude_tiny": 0.20248002735324028,
+          "crude_small": 0.31840973574502335,
+          "crude_gap_small_minus_tiny": 0.11592970839178307,
+          "overlap_crude_tiny": 0.20250218375636161,
+          "overlap_crude_small": 0.31840973574502346,
+          "overlap_crude_gap_small_minus_tiny": 0.11590755198866184,
+          "standardized_tiny": 0.2162089178148351,
+          "standardized_small": 0.2361964516751059,
+          "standardized_gap_small_minus_tiny": 0.0199875338602708,
+          "coverage_tiny": 0.9985089679502552,
+          "coverage_small": 0.9999999999999998
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.020623763169168023,
+          "high": 0.05851756263730633,
+          "valid_replicates": 2966
+        }
+      },
+      "adequate_overlap_support": {
+        "positive_counts": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minimum_raw_gt_per_size_cell": 20,
+        "point": {
+          "crude_tiny": 0.20248002735324028,
+          "crude_small": 0.31840973574502335,
+          "crude_gap_small_minus_tiny": 0.11592970839178307,
+          "overlap_crude_tiny": 0.2415522402633587,
+          "overlap_crude_small": 0.2774732829427555,
+          "overlap_crude_gap_small_minus_tiny": 0.035921042679396775,
+          "standardized_tiny": 0.24509301603985328,
+          "standardized_small": 0.25385228925629594,
+          "standardized_gap_small_minus_tiny": 0.008759273216442653,
+          "coverage_tiny": 0.6030742019263944,
+          "coverage_small": 0.6437797378887825
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.021813733264870138,
+          "high": 0.0447090686247886,
+          "valid_replicates": 5000
+        }
+      },
+      "full_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.0842197715737035,
+        "high": 0.14661791726317241,
+        "valid_replicates": 5000
+      },
+      "adequate_overlap_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.007951638520972979,
+        "high": 0.06629715251170576,
+        "valid_replicates": 5000
+      }
+    },
+    "rank_set_assigned_top1_flip": {
+      "full_common_support": {
+        "positive_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "point": {
+          "crude_tiny": 0.2018761004192731,
+          "crude_small": 0.31790080918570807,
+          "crude_gap_small_minus_tiny": 0.11602470876643498,
+          "overlap_crude_tiny": 0.20203745431740786,
+          "overlap_crude_small": 0.3179008091857082,
+          "overlap_crude_gap_small_minus_tiny": 0.11586335486830032,
+          "standardized_tiny": 0.21580062558606614,
+          "standardized_small": 0.23342087147614732,
+          "standardized_gap_small_minus_tiny": 0.017620245890081182,
+          "coverage_tiny": 0.9985089679502552,
+          "coverage_small": 0.9999999999999998
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.023416541558047475,
+          "high": 0.05585945464076726,
+          "valid_replicates": 2966
+        }
+      },
+      "adequate_overlap_support": {
+        "positive_counts": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minimum_raw_gt_per_size_cell": 20,
+        "point": {
+          "crude_tiny": 0.2018761004192731,
+          "crude_small": 0.31790080918570807,
+          "crude_gap_small_minus_tiny": 0.11602470876643498,
+          "overlap_crude_tiny": 0.2415527097106778,
+          "overlap_crude_small": 0.2774732829427555,
+          "overlap_crude_gap_small_minus_tiny": 0.035920573232077674,
+          "standardized_tiny": 0.24509342317373148,
+          "standardized_small": 0.25385228925629594,
+          "standardized_gap_small_minus_tiny": 0.00875886608256446,
+          "coverage_tiny": 0.6030742019263944,
+          "coverage_small": 0.6437797378887825
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": -0.02177245690276246,
+          "high": 0.0446773453346812,
+          "valid_replicates": 5000
+        }
+      },
+      "full_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.08432712425628162,
+        "high": 0.14681832339768028,
+        "valid_replicates": 5000
+      },
+      "adequate_overlap_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.007888286774712306,
+        "high": 0.06629495122575339,
+        "valid_replicates": 5000
+      }
+    },
+    "rank_set_turnover": {
+      "full_common_support": {
+        "positive_counts": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "point": {
+          "crude_tiny": 0.14487724856990764,
+          "crude_small": 0.476463691587296,
+          "crude_gap_small_minus_tiny": 0.3315864430173884,
+          "overlap_crude_tiny": 0.14495348844540068,
+          "overlap_crude_small": 0.47646369158729607,
+          "overlap_crude_gap_small_minus_tiny": 0.3315102031418954,
+          "standardized_tiny": 0.13725553308436167,
+          "standardized_small": 0.4774561005114227,
+          "standardized_gap_small_minus_tiny": 0.340200567427061,
+          "coverage_tiny": 0.9985089679502552,
+          "coverage_small": 0.9999999999999998
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": 0.2871693199869393,
+          "high": 0.4617355983435728,
+          "valid_replicates": 2966
+        }
+      },
+      "adequate_overlap_support": {
+        "positive_counts": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "minimum_raw_gt_per_size_cell": 20,
+        "point": {
+          "crude_tiny": 0.14487724856990764,
+          "crude_small": 0.476463691587296,
+          "crude_gap_small_minus_tiny": 0.3315864430173884,
+          "overlap_crude_tiny": 0.12625509502221247,
+          "overlap_crude_small": 0.4944686967451662,
+          "overlap_crude_gap_small_minus_tiny": 0.3682136017229537,
+          "standardized_tiny": 0.12247617412428584,
+          "standardized_small": 0.5337548066413572,
+          "standardized_gap_small_minus_tiny": 0.41127863251707136,
+          "coverage_tiny": 0.6030742019263944,
+          "coverage_small": 0.6437797378887825
+        },
+        "ci_95_gap_small_minus_tiny": {
+          "low": 0.3823072736119784,
+          "high": 0.44261542280995425,
+          "valid_replicates": 5000
+        }
+      },
+      "full_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.3134757811375946,
+        "high": 0.34788544716271075,
+        "valid_replicates": 5000
+      },
+      "adequate_overlap_crude_ci_95_gap_small_minus_tiny": {
+        "low": 0.34725436027298506,
+        "high": 0.3887102252620947,
+        "valid_replicates": 5000
+      }
+    }
+  },
+  "size_cutpoint_sensitivity": {
+    "support": "objects with equivalent-area side in [8, 32) px",
+    "gap_orientation": "upper_at_or_above_cutpoint_minus_lower_below_cutpoint",
+    "paired_definition": "within-GT O2O fragility minus O2M fragility, followed by upper-minus-lower contrast",
+    "estimates": [
+      {
+        "cutpoint_equivalent_side_px": 14.0,
+        "lower_weight": 193939.39130434764,
+        "upper_weight": 87161.61304347822,
+        "o2m_fragility_lower": 0.5559647528833538,
+        "o2m_fragility_upper": 0.718595388097403,
+        "o2m_fragility_gap_upper_minus_lower": 0.1626306352140492,
+        "o2o_fragility_lower": 0.09450919617199989,
+        "o2o_fragility_upper": 0.08300341978426785,
+        "o2o_fragility_gap_upper_minus_lower": -0.011505776387732036,
+        "paired_o2o_minus_o2m_lower": -0.4614555567113532,
+        "paired_o2o_minus_o2m_upper": -0.6355919683131354,
+        "paired_o2o_minus_o2m_gap_upper_minus_lower": -0.17413641160178217,
+        "o2m_fragility_gap_ci_low": 0.11405445399999672,
+        "o2m_fragility_gap_ci_high": 0.20906614894049502,
+        "o2m_fragility_gap_valid_replicates": 5000,
+        "o2o_fragility_gap_ci_low": -0.032061210295371935,
+        "o2o_fragility_gap_ci_high": 0.01024255924077091,
+        "o2o_fragility_gap_valid_replicates": 5000,
+        "paired_o2o_minus_o2m_gap_ci_low": -0.225498870679324,
+        "paired_o2o_minus_o2m_gap_ci_high": -0.12137780215416347,
+        "paired_o2o_minus_o2m_gap_valid_replicates": 5000
+      },
+      {
+        "cutpoint_equivalent_side_px": 16.0,
+        "lower_weight": 237380.54021739116,
+        "upper_weight": 43720.46413043475,
+        "o2m_fragility_lower": 0.5792576460094706,
+        "o2m_fragility_upper": 0.7537181188184515,
+        "o2m_fragility_gap_upper_minus_lower": 0.17446047280898092,
+        "o2o_fragility_lower": 0.09114546297399187,
+        "o2o_fragility_upper": 0.08983456085769409,
+        "o2o_fragility_gap_upper_minus_lower": -0.0013109021162977796,
+        "paired_o2o_minus_o2m_lower": -0.4881121830354797,
+        "paired_o2o_minus_o2m_upper": -0.6638835579607573,
+        "paired_o2o_minus_o2m_gap_upper_minus_lower": -0.17577137492527756,
+        "o2m_fragility_gap_ci_low": 0.11847377923637394,
+        "o2m_fragility_gap_ci_high": 0.22731058697654852,
+        "o2m_fragility_gap_valid_replicates": 5000,
+        "o2o_fragility_gap_ci_low": -0.03229906175285208,
+        "o2o_fragility_gap_ci_high": 0.033066194171867215,
+        "o2o_fragility_gap_valid_replicates": 5000,
+        "paired_o2o_minus_o2m_gap_ci_low": -0.24022738807368407,
+        "paired_o2o_minus_o2m_gap_ci_high": -0.11126424059936955,
+        "paired_o2o_minus_o2m_gap_valid_replicates": 5000
+      },
+      {
+        "cutpoint_equivalent_side_px": 18.0,
+        "lower_weight": 257459.35217391266,
+        "upper_weight": 23641.652173913026,
+        "o2m_fragility_lower": 0.5897886987681691,
+        "o2m_fragility_upper": 0.7872031308045129,
+        "o2m_fragility_gap_upper_minus_lower": 0.1974144320363438,
+        "o2o_fragility_lower": 0.09106488798037536,
+        "o2o_fragility_upper": 0.08959868176652122,
+        "o2o_fragility_gap_upper_minus_lower": -0.0014662062138541404,
+        "paired_o2o_minus_o2m_lower": -0.4987238107877945,
+        "paired_o2o_minus_o2m_upper": -0.6976044490379916,
+        "paired_o2o_minus_o2m_gap_upper_minus_lower": -0.19888063825019708,
+        "o2m_fragility_gap_ci_low": 0.13902105870893838,
+        "o2m_fragility_gap_ci_high": 0.25498566020911784,
+        "o2m_fragility_gap_valid_replicates": 5000,
+        "o2o_fragility_gap_ci_low": -0.03768294027493895,
+        "o2o_fragility_gap_ci_high": 0.040036773904767065,
+        "o2o_fragility_gap_valid_replicates": 5000,
+        "paired_o2o_minus_o2m_gap_ci_low": -0.2638389655863426,
+        "paired_o2o_minus_o2m_gap_ci_high": -0.13627651751607414,
+        "paired_o2o_minus_o2m_gap_valid_replicates": 5000
+      }
+    ]
+  },
+  "continuous_log_area_models": [
+    {
+      "name": "object_any_top1_fragility",
+      "coefficient_names": [
+        "intercept",
+        "log_area",
+        "log_aspect_signed",
+        "log_aspect_abs",
+        "border_scan_limit_min",
+        "positive_count_1",
+        "positive_count_10",
+        "positive_count_2",
+        "positive_count_3",
+        "positive_count_4",
+        "positive_count_5",
+        "positive_count_6",
+        "positive_count_7",
+        "positive_count_8",
+        "positive_count_9",
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5",
+        "class_6",
+        "class_7",
+        "base_stride_32",
+        "base_stride_8",
+        "legal_directions_3",
+        "legal_directions_4",
+        "sampling_stratum_t_and_s",
+        "sampling_stratum_t_only"
+      ],
+      "point_beta_log_area": 0.1025542906742492,
+      "point_probability_change_per_area_doubling": 0.07108521743518093,
+      "design_rank": 28,
+      "design_columns": 28,
+      "n_rows": 6376,
+      "n_images": 288,
+      "ci_95_beta_log_area": {
+        "low": 0.047303985476851884,
+        "high": 0.15644491529216914,
+        "valid_replicates": 5000
+      },
+      "ci_95_probability_change_per_area_doubling": {
+        "low": 0.03278862416252848,
+        "high": 0.10843935194770651,
+        "valid_replicates": 5000
+      },
+      "model_type": "sampling-weighted linear probability model",
+      "interpretation": "Descriptive adjusted association conditional on the frozen checkpoint; not a causal size effect."
+    },
+    {
+      "name": "rank_set_turnover",
+      "coefficient_names": [
+        "intercept",
+        "log_area",
+        "log_aspect_signed",
+        "log_aspect_abs",
+        "border_scan_limit_min",
+        "direction_scan_limit",
+        "positive_count_10",
+        "positive_count_2",
+        "positive_count_3",
+        "positive_count_4",
+        "positive_count_5",
+        "positive_count_6",
+        "positive_count_7",
+        "positive_count_8",
+        "positive_count_9",
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5",
+        "class_6",
+        "class_7",
+        "base_stride_32",
+        "base_stride_8",
+        "legal_directions_3",
+        "legal_directions_4",
+        "sampling_stratum_t_and_s",
+        "sampling_stratum_t_only",
+        "direction_left",
+        "direction_right",
+        "direction_up"
+      ],
+      "point_beta_log_area": 0.2272512531041129,
+      "point_probability_change_per_area_doubling": 0.15751856536783038,
+      "design_rank": 31,
+      "design_columns": 31,
+      "n_rows": 25371,
+      "n_images": 288,
+      "ci_95_beta_log_area": {
+        "low": 0.20080317903379039,
+        "high": 0.25371497892128025,
+        "valid_replicates": 5000
+      },
+      "ci_95_probability_change_per_area_doubling": {
+        "low": 0.1391861573947457,
+        "high": 0.17586182230511138,
+        "valid_replicates": 5000
+      },
+      "model_type": "sampling-weighted linear probability model",
+      "interpretation": "Descriptive adjusted association conditional on the frozen checkpoint; not a causal size effect."
+    },
+    {
+      "name": "assigned_positive_boundary_event_by_tau_0.125",
+      "coefficient_names": [
+        "intercept",
+        "log_area",
+        "log_aspect_signed",
+        "log_aspect_abs",
+        "border_scan_limit_min",
+        "direction_scan_limit",
+        "positive_count_10",
+        "positive_count_2",
+        "positive_count_3",
+        "positive_count_4",
+        "positive_count_5",
+        "positive_count_6",
+        "positive_count_7",
+        "positive_count_8",
+        "positive_count_9",
+        "class_1",
+        "class_2",
+        "class_3",
+        "class_4",
+        "class_5",
+        "class_6",
+        "class_7",
+        "base_stride_32",
+        "base_stride_8",
+        "legal_directions_3",
+        "legal_directions_4",
+        "sampling_stratum_t_and_s",
+        "sampling_stratum_t_only",
+        "direction_left",
+        "direction_right",
+        "direction_up"
+      ],
+      "point_beta_log_area": 0.05101838366619699,
+      "point_probability_change_per_area_doubling": 0.03536324879495001,
+      "design_rank": 31,
+      "design_columns": 31,
+      "n_rows": 25321,
+      "n_images": 288,
+      "ci_95_beta_log_area": {
+        "low": 0.027651514739885384,
+        "high": 0.07540184139016716,
+        "valid_replicates": 5000
+      },
+      "ci_95_probability_change_per_area_doubling": {
+        "low": 0.019166569480163324,
+        "high": 0.05226457376862255,
+        "valid_replicates": 5000
+      },
+      "model_type": "sampling-weighted linear probability model",
+      "interpretation": "Descriptive adjusted association conditional on the frozen checkpoint; not a causal size effect."
+    }
+  ],
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20260905,
+    "unit": "image cluster",
+    "within": "outcome-blind sampling stratum",
+    "interval": "percentile 95%"
+  },
+  "border_distance_proxy": "minimum direction-level scan_limit across each GT, capped at the scanner rmax=0.25; it is a censored proxy, not exact pixel distance",
+  "fixed_k_limitation": "Frozen rank-set tables contain set IDs and the selected set top-1 but not a complete ordered q-score list. They support exact base-count matching/standardization and set-turnover analysis, but not a new fixed-K replay. A fixed-K intervention still requires re-executing the assigner from frozen candidate scores.",
+  "input_validation": {
+    "per_gt_rows": 7432,
+    "per_direction_rows": 29612,
+    "boundary_event_rows": 29724,
+    "rank_set_rows": 29612,
+    "analysis_per_gt_rows": 6377,
+    "analysis_per_direction_rows": 25404,
+    "analysis_boundary_event_rows": 25504,
+    "analysis_rank_set_rows": 25404,
+    "images": 300,
+    "per_gt_boundary_joined": 6376,
+    "per_gt_missing_boundary": 1,
+    "positive_count_mismatches": 0,
+    "boundary_tau": 0.125,
+    "boundary_rows_evaluable_at_tau": 25353
+  },
+  "input_files": [
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\per_gt.csv",
+      "sha256": "bf6d2f87ec2b0922427870218d3341fb0d33a45b8d8794591e927bc0f35993de"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\formal_s0e300_k00625\\per_direction.csv",
+      "sha256": "bc3b08e9d64f46f616abdea4153108bb7ba5b727bc5aca554fe5f501a166b14d"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260831T174200_boundary_discovery_v2\\artifact\\per_direction_boundary_events.csv",
+      "sha256": "e43fcee03d5b95ecb7392a7e7ed365d646b11e6d7e3b48b35369d28f7aa8f57b"
+    },
+    {
+      "path": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260831T162551_rank_set_normalized_v1\\artifact\\per_direction_rank_set.csv",
+      "sha256": "5c0995b71c282917c08da9b4c82526ecf704c555f94bf50d46a5ed38df2734a8"
+    }
+  ]
+}

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or its derived audit data, cite the associated manuscript and this release."
 title: "Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection"
 type: software
-version: "3.3.3"
+version: "3.4.0"
 doi: "10.5281/zenodo.22478276"  # all-versions concept DOI
 repository-code: "https://github.com/liuyede447/O2O_identity_audit"
 url: "https://github.com/liuyede447/O2O_identity_audit"
@@ -14,6 +14,7 @@ authors:
     affiliation: "Sichuan Normal University"
   - family-names: Wang
     given-names: Fang
+    orcid: "https://orcid.org/0009-0007-3029-4547"
     affiliation: "Sichuan Normal University"
   - family-names: Li
     given-names: Jun

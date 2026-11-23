@@ -1,0 +1,21 @@
+{
+  "converter": "E:\\two_paper\\SWD-MicroDet\\scripts\\prepare_aitod_v2_yolo.py",
+  "converter_sha256": "ab77bb788422759bac3607adb26b8325af85e88f11a13a6cf4e3fff4d211a519",
+  "annotation": "G:\\revision_20261120\\heldout_replication\\extracted\\annotations\\aitod_val_v2.json",
+  "annotation_sha256": "d0439ba687db66bb38584a3398a906f15c47e055cdd84bb9060496a91f30d7cf",
+  "source_images": "G:\\two_paper\\SWD-MicroDet\\third_party\\AI-TOD-official\\aitodtoolkit\\aitod\\images\\val",
+  "conversion_gate": "100/100 test labels byte-identical (seed 20261121)",
+  "images": 2804,
+  "annotations_kept": 75082,
+  "missing_images": [],
+  "classes": [
+    "airplane",
+    "bridge",
+    "storage-tank",
+    "ship",
+    "swimming-pool",
+    "vehicle",
+    "person",
+    "wind-mill"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "note": "post hoc exploratory sensitivity",
+  "discovery_seed0_epoch280": {
+    "boundary": {
+      "point": {
+        "native_gap|rule_clear": 11.243878667173925,
+        "locked_gap|rule_clear": 10.506330143816164,
+        "reduction|rule_clear": 0.7375485233577603,
+        "native_gap|boundary_8": 29.381281906371836,
+        "locked_gap|boundary_8": 1.6816431123237732,
+        "reduction|boundary_8": 27.699638794048063,
+        "native_gap|norule_clear": 11.129739114155674,
+        "locked_gap|norule_clear": 2.2017898317070514,
+        "reduction|norule_clear": 8.927949282448623
+      },
+      "ci_95": {
+        "native_gap|rule_clear": [
+          7.685057439806668,
+          14.93228260755774
+        ],
+        "locked_gap|rule_clear": [
+          6.985106658467936,
+          14.039606784061256
+        ],
+        "reduction|rule_clear": [
+          -0.9627197457908372,
+          2.6744680122335485
+        ],
+        "native_gap|boundary_8": [
+          25.621855513930377,
+          32.75817224231605
+        ],
+        "locked_gap|boundary_8": [
+          -1.1084633402192485,
+          4.060964569596859
+        ],
+        "reduction|boundary_8": [
+          25.258998177884056,
+          30.147967693443633
+        ],
+        "native_gap|norule_clear": [
+          7.771949954963647,
+          14.410038337916978
+        ],
+        "locked_gap|norule_clear": [
+          -0.4940871457293783,
+          4.6172809104069055
+        ],
+        "reduction|norule_clear": [
+          7.198936808883993,
+          10.706357654251017
+        ]
+      },
+      "n_gt": {
+        "rule_clear": 1126,
+        "boundary_8": 1620,
+        "norule_clear": 3527,
+        "ref": 986
+      }
+    },
+    "aspect_band_2_4": {
+      "point": {
+        "native_gap|rule_ar2to4": 10.919856878220395,
+        "locked_gap|rule_ar2to4": 10.695433642346973,
+        "reduction|rule_ar2to4": 0.22442323587342078,
+        "native_gap|norule_ar2to4": 15.043042060752576,
+        "locked_gap|norule_ar2to4": 1.5197550851214867,
+        "reduction|norule_ar2to4": 13.523286975631088
+      },
+      "ci_95": {
+        "native_gap|rule_ar2to4": [
+          7.113855180050827,
+          14.771631400046902
+        ],
+        "locked_gap|rule_ar2to4": [
+          6.9011341993734385,
+          14.300260398743045
+        ],
+        "reduction|rule_ar2to4": [
+          -1.3983259993000556,
+          2.05341581662277
+        ],
+        "native_gap|norule_ar2to4": [
+          9.601303536227293,
+          20.31962182466
+        ],
+        "locked_gap|norule_ar2to4": [
+          -1.5302563755755578,
+          5.511971765242862
+        ],
+        "reduction|norule_ar2to4": [
+          8.2755192994015,
+          18.521602699937187
+        ]
+      },
+      "n_gt": {
+        "rule_ar2to4": 884,
+        "norule_ar2to4": 343,
+        "ref": 986
+      }
+    }
+  },
+  "validation_seed0_final_epoch": {
+    "boundary": {
+      "point": {
+        "native_gap|rule_clear": 14.898188037077292,
+        "locked_gap|rule_clear": 12.892624778172824,
+        "reduction|rule_clear": 2.005563258904469,
+        "native_gap|boundary_8": 30.62641233902607,
+        "locked_gap|boundary_8": 1.6355312007595282,
+        "reduction|boundary_8": 28.990881138266545,
+        "native_gap|norule_clear": 10.471415160436703,
+        "locked_gap|norule_clear": 1.5768981474727537,
+        "reduction|norule_clear": 8.894517012963949
+      },
+      "ci_95": {
+        "native_gap|rule_clear": [
+          10.842211537020805,
+          18.498193827447594
+        ],
+        "locked_gap|rule_clear": [
+          9.222243161754106,
+          16.227455144466532
+        ],
+        "reduction|rule_clear": [
+          0.906935040951625,
+          3.066122543330934
+        ],
+        "native_gap|boundary_8": [
+          28.388483687470437,
+          32.75439835420558
+        ],
+        "locked_gap|boundary_8": [
+          0.04473853073607025,
+          3.1010795528945096
+        ],
+        "reduction|boundary_8": [
+          27.172035526437163,
+          30.829927051284596
+        ],
+        "native_gap|norule_clear": [
+          8.076779412195734,
+          13.34133386751228
+        ],
+        "locked_gap|norule_clear": [
+          0.010094305232735367,
+          3.071746175472857
+        ],
+        "reduction|norule_clear": [
+          7.432333808466279,
+          10.625008599602078
+        ]
+      },
+      "n_gt": {
+        "rule_clear": 2058,
+        "boundary_8": 3348,
+        "norule_clear": 7850,
+        "ref": 2183
+      }
+    },
+    "aspect_band_2_4": {
+      "point": {
+        "native_gap|rule_ar2to4": 14.222261694989523,
+        "locked_gap|rule_ar2to4": 13.26570311138191,
+        "reduction|rule_ar2to4": 0.956558583607614,
+        "native_gap|norule_ar2to4": 15.368937750070028,
+        "locked_gap|norule_ar2to4": 1.0569854047476943,
+        "reduction|norule_ar2to4": 14.311952345322332
+      },
+      "ci_95": {
+        "native_gap|rule_ar2to4": [
+          9.608575579398376,
+          17.768955784107842
+        ],
+        "locked_gap|rule_ar2to4": [
+          9.156054810564529,
+          16.474153881006533
+        ],
+        "reduction|rule_ar2to4": [
+          -0.15185364775750135,
+          1.8989408031586372
+        ],
+        "native_gap|norule_ar2to4": [
+          12.142063531444753,
+          18.951173022077423
+        ],
+        "locked_gap|norule_ar2to4": [
+          -1.2200077700761336,
+          3.5770610708877686
+        ],
+        "reduction|norule_ar2to4": [
+          11.493327025249272,
+          17.279714679988835
+        ]
+      },
+      "n_gt": {
+        "rule_ar2to4": 1613,
+        "norule_ar2to4": 700,
+        "ref": 2183
+      }
+    }
+  }
+}

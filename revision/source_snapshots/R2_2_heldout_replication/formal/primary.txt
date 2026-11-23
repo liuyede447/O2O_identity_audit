@@ -1,0 +1,77 @@
+{
+ "counts": {
+  "fixed_1px": {
+   "gt": 15446,
+   "tiny": 13256,
+   "small": 2190,
+   "images": 597
+  },
+  "equivalent_side": {
+   "gt": 15442,
+   "tiny": 13252,
+   "small": 2190,
+   "images": 597
+  },
+  "S1_common_gt": 15442,
+  "clusters": 597,
+  "clusters_by_stratum": {
+   "t_and_s": 282,
+   "t_only": 312,
+   "s_only": 3
+  }
+ },
+ "estimates_pp": {
+  "fixed_1px|native_tiny": "23.17 [21.21, 25.15]",
+  "fixed_1px|native_small": "7.03 [5.75, 8.43]",
+  "fixed_1px|eligibility_lock_tiny": "8.43 [6.98, 10.01]",
+  "fixed_1px|eligibility_lock_small": "5.11 [3.97, 6.39]",
+  "fixed_1px|native_gap": "16.13 [13.96, 18.42]",
+  "fixed_1px|eligibility_lock_gap": "3.32 [1.59, 5.13]",
+  "fixed_1px|reduction_pp": "12.82 [11.61, 14.10]",
+  "fixed_1px|tiny_drop": "14.73 [13.67, 15.90]",
+  "fixed_1px|small_drop": "1.92 [1.32, 2.59]",
+  "equivalent_side|native_tiny": "9.83 [8.59, 11.04]",
+  "equivalent_side|native_small": "8.17 [6.68, 9.81]",
+  "equivalent_side|eligibility_lock_tiny": "6.02 [5.04, 7.05]",
+  "equivalent_side|eligibility_lock_small": "6.03 [4.71, 7.53]",
+  "equivalent_side|native_gap": "1.66 [-0.09, 3.27]",
+  "equivalent_side|eligibility_lock_gap": "-0.01 [-1.58, 1.40]",
+  "equivalent_side|reduction_pp": "1.66 [0.82, 2.47]",
+  "equivalent_side|tiny_drop": "3.81 [3.36, 4.28]",
+  "equivalent_side|small_drop": "2.15 [1.46, 2.91]",
+  "S1|fixed_minus_equivalent_native_gap": "14.48 [13.24, 15.72]"
+ },
+ "decision": {
+  "R1_native_gap_lower_gt_0": true,
+  "R2_reduction_lower_gt_0": true,
+  "verdict": "replicated: native tiny-object disadvantage and its attenuation under eligibility locking"
+ },
+ "zero_row_images": [
+  "847__1800_1800",
+  "9999999_00346_d_0000152__600_0",
+  "f561966cd"
+ ],
+ "single_stress_images": [],
+ "single_stress_gts": 4,
+ "undefined_replicates": {
+  "fixed_1px|native_tiny": 0,
+  "fixed_1px|native_small": 0,
+  "fixed_1px|eligibility_lock_tiny": 0,
+  "fixed_1px|eligibility_lock_small": 0,
+  "fixed_1px|native_gap": 0,
+  "fixed_1px|eligibility_lock_gap": 0,
+  "fixed_1px|reduction_pp": 0,
+  "fixed_1px|tiny_drop": 0,
+  "fixed_1px|small_drop": 0,
+  "equivalent_side|native_tiny": 0,
+  "equivalent_side|native_small": 0,
+  "equivalent_side|eligibility_lock_tiny": 0,
+  "equivalent_side|eligibility_lock_small": 0,
+  "equivalent_side|native_gap": 0,
+  "equivalent_side|eligibility_lock_gap": 0,
+  "equivalent_side|reduction_pp": 0,
+  "equivalent_side|tiny_drop": 0,
+  "equivalent_side|small_drop": 0,
+  "S1|fixed_minus_equivalent_native_gap": 0
+ }
+}

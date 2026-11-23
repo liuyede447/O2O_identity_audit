@@ -1,0 +1,319 @@
+{
+  "point": {
+    "fixed_1px|native_tiny": 0.230274201505574,
+    "fixed_1px|native_small": 0.07562694551559165,
+    "fixed_1px|eligibility_lock_tiny": 0.08747401100750514,
+    "fixed_1px|eligibility_lock_small": 0.054451400771225976,
+    "fixed_1px|native_gap": 0.15464725598998236,
+    "fixed_1px|eligibility_lock_gap": 0.033022610236279164,
+    "fixed_1px|reduction_pp": 0.12162464575370319,
+    "fixed_1px|tiny_drop": 0.14280019049806886,
+    "fixed_1px|small_drop": 0.021175544744365678,
+    "equivalent_side|native_tiny": 0.09931636568491595,
+    "equivalent_side|native_small": 0.08873561607162751,
+    "equivalent_side|eligibility_lock_tiny": 0.061533531551837724,
+    "equivalent_side|eligibility_lock_small": 0.0655433527801794,
+    "equivalent_side|native_gap": 0.010580749613288434,
+    "equivalent_side|eligibility_lock_gap": -0.004009821228341683,
+    "equivalent_side|reduction_pp": 0.014590570841630117,
+    "equivalent_side|tiny_drop": 0.03778283413307822,
+    "equivalent_side|small_drop": 0.023192263291448106,
+    "S1|fixed_minus_equivalent_native_gap": 0.14414003494233518
+  },
+  "ci_95": {
+    "fixed_1px|native_tiny": [
+      0.2109519985631667,
+      0.2512516279224787
+    ],
+    "fixed_1px|native_small": [
+      0.047661633749588525,
+      0.11053346841427895
+    ],
+    "fixed_1px|eligibility_lock_tiny": [
+      0.0749465784086062,
+      0.10065917606400276
+    ],
+    "fixed_1px|eligibility_lock_small": [
+      0.033964825287600066,
+      0.07886319626053014
+    ],
+    "fixed_1px|native_gap": [
+      0.12101164991079806,
+      0.18572162415211774
+    ],
+    "fixed_1px|eligibility_lock_gap": [
+      0.011359343766365989,
+      0.05268323879604044
+    ],
+    "fixed_1px|reduction_pp": [
+      0.1008806699401012,
+      0.14077224770176403
+    ],
+    "fixed_1px|tiny_drop": [
+      0.12948109161681048,
+      0.15708806866010722
+    ],
+    "fixed_1px|small_drop": [
+      0.009607592897523215,
+      0.035922406741054826
+    ],
+    "equivalent_side|native_tiny": [
+      0.08740734009251354,
+      0.11134460659331621
+    ],
+    "equivalent_side|native_small": [
+      0.05766181831136985,
+      0.12620343111751894
+    ],
+    "equivalent_side|eligibility_lock_tiny": [
+      0.05148247025113175,
+      0.07177819484386225
+    ],
+    "equivalent_side|eligibility_lock_small": [
+      0.04259804822077274,
+      0.09185618050961465
+    ],
+    "equivalent_side|native_gap": [
+      -0.022234962106663782,
+      0.03928229686288114
+    ],
+    "equivalent_side|eligibility_lock_gap": [
+      -0.026247928341764135,
+      0.016167170253123423
+    ],
+    "equivalent_side|reduction_pp": [
+      -0.0021558501230199718,
+      0.028648700487871014
+    ],
+    "equivalent_side|tiny_drop": [
+      0.03214849596688147,
+      0.04371420811875263
+    ],
+    "equivalent_side|small_drop": [
+      0.009921489297446904,
+      0.039225898562374927
+    ],
+    "S1|fixed_minus_equivalent_native_gap": [
+      0.12879266288622992,
+      0.16106972364420452
+    ]
+  },
+  "counts": {
+    "fixed_1px": {
+      "gt": 7266,
+      "tiny": 6274,
+      "small": 992,
+      "images": 298
+    },
+    "equivalent_side": {
+      "gt": 7264,
+      "tiny": 6272,
+      "small": 992,
+      "images": 298
+    },
+    "S1_common_gt": 7264,
+    "clusters": 298,
+    "clusters_by_stratum": {
+      "t_and_s": 138,
+      "t_only": 158,
+      "s_only": 2
+    }
+  },
+  "undefined_replicates": {
+    "fixed_1px|native_tiny": 0,
+    "fixed_1px|native_small": 0,
+    "fixed_1px|eligibility_lock_tiny": 0,
+    "fixed_1px|eligibility_lock_small": 0,
+    "fixed_1px|native_gap": 0,
+    "fixed_1px|eligibility_lock_gap": 0,
+    "fixed_1px|reduction_pp": 0,
+    "fixed_1px|tiny_drop": 0,
+    "fixed_1px|small_drop": 0,
+    "equivalent_side|native_tiny": 0,
+    "equivalent_side|native_small": 0,
+    "equivalent_side|eligibility_lock_tiny": 0,
+    "equivalent_side|eligibility_lock_small": 0,
+    "equivalent_side|native_gap": 0,
+    "equivalent_side|eligibility_lock_gap": 0,
+    "equivalent_side|reduction_pp": 0,
+    "equivalent_side|tiny_drop": 0,
+    "equivalent_side|small_drop": 0,
+    "S1|fixed_minus_equivalent_native_gap": 0
+  },
+  "replicates": 5000,
+  "decision": {
+    "R1_native_gap_lower_gt_0": true,
+    "R2_reduction_lower_gt_0": true,
+    "verdict": "replicated: native tiny-object disadvantage and its attenuation under eligibility locking"
+  },
+  "validation": {
+    "selection_matches_preregistered": true,
+    "rows": {
+      "fixed_1px": 7434,
+      "equivalent_side": 7432
+    },
+    "gated_rows": {
+      "fixed_1px": 7266,
+      "equivalent_side": 7264
+    },
+    "base_undefined_excluded": {
+      "fixed_1px": 168,
+      "equivalent_side": 168
+    },
+    "selected_images": 300,
+    "zero_row_images": [
+      "3d4e85911",
+      "d67d144f8"
+    ],
+    "single_stress_images": [],
+    "single_stress_gts": 2
+  },
+  "inputs": {
+    "G:\\revision_20261120\\checkpoint_last\\seed0\\per_gt.csv": "fe56c9d63e0168331e66c5699eb41f30a976b17eadaa99929b638c146a531da3",
+    "G:\\revision_20261120\\checkpoint_last\\seed0\\selected_images.csv": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+    "rehearsal\\base_gate_seed0_last_discovery.csv": "dfd30f631b55727c1fd41c511c8ab6c577e8a9dbc2f85bc96cea8edfafa9da80"
+  },
+  "secondary_table2_support": {
+    "point": {
+      "fixed_1px|native_tiny": 0.21823377767042412,
+      "fixed_1px|native_small": 0.07570328162165237,
+      "fixed_1px|eligibility_lock_tiny": 0.10046292476456166,
+      "fixed_1px|eligibility_lock_small": 0.05450636276758968,
+      "fixed_1px|native_gap": 0.14253049604877177,
+      "fixed_1px|eligibility_lock_gap": 0.04595656199697198,
+      "fixed_1px|reduction_pp": 0.09657393405179979,
+      "fixed_1px|tiny_drop": 0.11777085290586246,
+      "fixed_1px|small_drop": 0.021196918854062684,
+      "equivalent_side|native_tiny": 0.09009363738095998,
+      "equivalent_side|native_small": 0.08882518376940542,
+      "equivalent_side|eligibility_lock_tiny": 0.07114762568382878,
+      "equivalent_side|eligibility_lock_small": 0.06560951073876536,
+      "equivalent_side|native_gap": 0.0012684536115545597,
+      "equivalent_side|eligibility_lock_gap": 0.005538114945063413,
+      "equivalent_side|reduction_pp": -0.0042696613335088535,
+      "equivalent_side|tiny_drop": 0.0189460116971312,
+      "equivalent_side|small_drop": 0.023215673030640052,
+      "S1|fixed_minus_equivalent_native_gap": 0.14130264356849073
+    },
+    "ci_95": {
+      "fixed_1px|native_tiny": [
+        0.19753277204076697,
+        0.2411767181282712
+      ],
+      "fixed_1px|native_small": [
+        0.047234811593503095,
+        0.11084263113591443
+      ],
+      "fixed_1px|eligibility_lock_tiny": [
+        0.08487907572449395,
+        0.11637667327123001
+      ],
+      "fixed_1px|eligibility_lock_small": [
+        0.03312795710035377,
+        0.07925222008032248
+      ],
+      "fixed_1px|native_gap": [
+        0.10810344826805422,
+        0.17421124680610955
+      ],
+      "fixed_1px|eligibility_lock_gap": [
+        0.024039957285907045,
+        0.0683053622358568
+      ],
+      "fixed_1px|reduction_pp": [
+        0.07602074952673565,
+        0.11558820472838549
+      ],
+      "fixed_1px|tiny_drop": [
+        0.10514106410189508,
+        0.13158344652875492
+      ],
+      "fixed_1px|small_drop": [
+        0.009723846859270954,
+        0.03600759254734494
+      ],
+      "equivalent_side|native_tiny": [
+        0.07667165541671575,
+        0.10412389588778728
+      ],
+      "equivalent_side|native_small": [
+        0.057261628642530385,
+        0.1268446202971307
+      ],
+      "equivalent_side|eligibility_lock_tiny": [
+        0.05919455946021028,
+        0.08328517451812775
+      ],
+      "equivalent_side|eligibility_lock_small": [
+        0.04280535437786599,
+        0.09234483175515056
+      ],
+      "equivalent_side|native_gap": [
+        -0.031651310889585525,
+        0.030896167272366104
+      ],
+      "equivalent_side|eligibility_lock_gap": [
+        -0.01626338668989223,
+        0.02665458061823324
+      ],
+      "equivalent_side|reduction_pp": [
+        -0.020836984827320777,
+        0.009426577180239796
+      ],
+      "equivalent_side|tiny_drop": [
+        0.014302624298029611,
+        0.024453085996033474
+      ],
+      "equivalent_side|small_drop": [
+        0.009720910932217807,
+        0.039300249521865935
+      ],
+      "S1|fixed_minus_equivalent_native_gap": [
+        0.12636233847868708,
+        0.1581937129083989
+      ]
+    },
+    "counts": {
+      "fixed_1px": {
+        "gt": 6374,
+        "tiny": 5383,
+        "small": 991,
+        "images": 288
+      },
+      "equivalent_side": {
+        "gt": 6373,
+        "tiny": 5382,
+        "small": 991,
+        "images": 288
+      },
+      "S1_common_gt": 6373,
+      "clusters": 288,
+      "clusters_by_stratum": {
+        "t_and_s": 138,
+        "t_only": 148,
+        "s_only": 2
+      }
+    },
+    "undefined_replicates": {
+      "fixed_1px|native_tiny": 0,
+      "fixed_1px|native_small": 0,
+      "fixed_1px|eligibility_lock_tiny": 0,
+      "fixed_1px|eligibility_lock_small": 0,
+      "fixed_1px|native_gap": 0,
+      "fixed_1px|eligibility_lock_gap": 0,
+      "fixed_1px|reduction_pp": 0,
+      "fixed_1px|tiny_drop": 0,
+      "fixed_1px|small_drop": 0,
+      "equivalent_side|native_tiny": 0,
+      "equivalent_side|native_small": 0,
+      "equivalent_side|eligibility_lock_tiny": 0,
+      "equivalent_side|eligibility_lock_small": 0,
+      "equivalent_side|native_gap": 0,
+      "equivalent_side|eligibility_lock_gap": 0,
+      "equivalent_side|reduction_pp": 0,
+      "equivalent_side|tiny_drop": 0,
+      "equivalent_side|small_drop": 0,
+      "S1|fixed_minus_equivalent_native_gap": 0
+    }
+  }
+}

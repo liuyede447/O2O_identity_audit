@@ -1,0 +1,139 @@
+{
+ "D1_max_abs_diff_vs_published": 8.326672684688674e-16,
+ "D2_seed0_last_discovery": {
+  "fixed_1px|native_tiny": [
+   23.03,
+   21.1,
+   25.13
+  ],
+  "fixed_1px|native_small": [
+   7.56,
+   4.77,
+   11.05
+  ],
+  "fixed_1px|eligibility_lock_tiny": [
+   8.75,
+   7.49,
+   10.07
+  ],
+  "fixed_1px|eligibility_lock_small": [
+   5.45,
+   3.4,
+   7.89
+  ],
+  "fixed_1px|native_gap": [
+   15.46,
+   12.1,
+   18.57
+  ],
+  "fixed_1px|eligibility_lock_gap": [
+   3.3,
+   1.14,
+   5.27
+  ],
+  "fixed_1px|reduction_pp": [
+   12.16,
+   10.09,
+   14.08
+  ],
+  "fixed_1px|tiny_drop": [
+   14.28,
+   12.95,
+   15.71
+  ],
+  "fixed_1px|small_drop": [
+   2.12,
+   0.96,
+   3.59
+  ],
+  "equivalent_side|native_tiny": [
+   9.93,
+   8.74,
+   11.13
+  ],
+  "equivalent_side|native_small": [
+   8.87,
+   5.77,
+   12.62
+  ],
+  "equivalent_side|eligibility_lock_tiny": [
+   6.15,
+   5.15,
+   7.18
+  ],
+  "equivalent_side|eligibility_lock_small": [
+   6.55,
+   4.26,
+   9.19
+  ],
+  "equivalent_side|native_gap": [
+   1.06,
+   -2.22,
+   3.93
+  ],
+  "equivalent_side|eligibility_lock_gap": [
+   -0.4,
+   -2.62,
+   1.62
+  ],
+  "equivalent_side|reduction_pp": [
+   1.46,
+   -0.22,
+   2.86
+  ],
+  "equivalent_side|tiny_drop": [
+   3.78,
+   3.21,
+   4.37
+  ],
+  "equivalent_side|small_drop": [
+   2.32,
+   0.99,
+   3.92
+  ],
+  "S1|fixed_minus_equivalent_native_gap": [
+   14.41,
+   12.88,
+   16.11
+  ]
+ },
+ "D2_counts": {
+  "fixed_1px": {
+   "gt": 7266,
+   "tiny": 6274,
+   "small": 992,
+   "images": 298
+  },
+  "equivalent_side": {
+   "gt": 7264,
+   "tiny": 6272,
+   "small": 992,
+   "images": 298
+  },
+  "S1_common_gt": 7264,
+  "clusters": 298,
+  "clusters_by_stratum": {
+   "t_and_s": 138,
+   "t_only": 158,
+   "s_only": 2
+  }
+ },
+ "D2_decision": {
+  "R1_native_gap_lower_gt_0": true,
+  "R2_reduction_lower_gt_0": true,
+  "verdict": "replicated: native tiny-object disadvantage and its attenuation under eligibility locking"
+ },
+ "T0_baseline": "pass",
+ "T1_single_stress_image": "pass",
+ "T2_all_gated_out_image": "pass",
+ "T3_zero_row_image": "pass",
+ "T4_all_zero_outcomes": "pass",
+ "T5_single_stress_gt": "pass",
+ "T6_duplicate_keys": "pass (aborted: duplicate keys in per_gt: 1)",
+ "T7_missing_gate_row": "pass (aborted: 2 per_gt rows lack a base-gate row)",
+ "T8_stratum_mismatch": "pass (aborted: per_gt stratum disagrees with the selection manifest)",
+ "T9_row_order_invariance": "pass",
+ "T10_primary_empty_size_cell": "pass (structural failure reported)",
+ "T11_secondary_failure_isolated": "pass (primary unchanged, secondary NaN)",
+ "T12_partial_undefined_replicates": "pass (90 of 300 primary replicates undefined, counted and excluded)"
+}

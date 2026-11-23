@@ -1,0 +1,406 @@
+[34m[1mval: [0mFast image access  (ping: 1.20.8 ms, read: 20.74.0 MB/s, size: 922.5 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 2.3Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+{
+  "manifest": {
+    "status": "complete",
+    "protocol": "o2m_rank_set_decoupling_v1",
+    "read_only": true,
+    "script_sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+    "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\last.pt",
+    "checkpoint_sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b",
+    "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+    "data_sha256": "23fb59a4541db5f64a6c43e666b168872a5be48487ca7ce0c72033adeaf6413e",
+    "selected_images_source": "G:\\revision_20261120\\checkpoint_last\\seed0\\selected_images.csv",
+    "selected_images_source_sha256": "f0101d64030ac54b1eeaf17f18e17be3c57810f30743ea24c35e765452a3c6db",
+    "selected_images_processed": 300,
+    "smoke_manifest_prefix_only": false,
+    "stratum_population_counts": {
+      "t_only": 7018,
+      "s_only": 76,
+      "t_and_s": 6090
+    },
+    "stratum_sample_allocation": {
+      "t_and_s": 138,
+      "t_only": 160,
+      "s_only": 2
+    },
+    "detector_contract": "YOLO26 native O2M Top-10 -> multi-GT conflict resolution -> Top-10",
+    "rank_contracts": {
+      "legacy_q_positive_top1": "q Top-1 among all candidates with q > 0",
+      "pre_conflict_topk_top1": "q Top-1 inside the native pre-conflict Top-10 mask",
+      "assigned_set_q_top1": "q Top-1 inside P_g = fg_mask & (target_gt_idx == focal_gt)"
+    },
+    "set_contract": "exact membership; no Jaccard or retention threshold",
+    "empty_set_contract": {
+      "empty_empty": "separate structural state; Jaccard and retention are undefined",
+      "empty_to_nonempty": "separate structural state; Jaccard is zero and base retention is undefined",
+      "nonempty_to_empty": "separate structural state; Jaccard and base retention are zero",
+      "nonempty_nonempty": "Jaccard and base retention are calculated normally"
+    },
+    "stress": "equivalent_side",
+    "kappa": 0.0625,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260831,
+    "elapsed_sec": 389.0810782999997,
+    "direction_rows": 29612,
+    "focal_gt": 7432,
+    "outputs": [
+      "selected_images.csv",
+      "per_direction_rank_set.csv",
+      "rank_set_summary.json",
+      "manifest.json"
+    ]
+  },
+  "summary": {
+    "status": "complete",
+    "estimand": "IPW directional O2M rank and exact assigned-positive-set stability for 8-16 px and 16-32 px focal GTs",
+    "direction_rows": 29612,
+    "images": 300,
+    "focal_gt": 7432,
+    "direction_rows_by_size_bin": {
+      "s_16_32": 3935,
+      "t_8_16": 25677
+    },
+    "classification_counts_unweighted": {
+      "rank_only_exchange": 4137,
+      "set_turnover_with_rank_exchange": 1922,
+      "set_turnover_without_rank_exchange": 4226,
+      "stable_exact_set_and_rank": 19327
+    },
+    "set_structural_state_counts_unweighted": {
+      "empty_empty": 473,
+      "empty_to_nonempty": 257,
+      "nonempty_nonempty": 28870,
+      "nonempty_to_empty": 12
+    },
+    "point": {
+      "all.jaccard": 0.9213402545260505,
+      "all.base_retention": 0.9889636910846151,
+      "all.base_set_size": 3.2086532146705147,
+      "all.shift_set_size": 3.4032544939484537,
+      "all.intersection_size": 3.1468015306411092,
+      "all.union_size": 3.4651061779778596,
+      "all.exact_set_equal": 0.7923386697260208,
+      "all.set_turnover": 0.20766133027397932,
+      "all.legacy_q_positive_top1_flip": 0.20547110001343147,
+      "all.pre_conflict_topk_top1_flip": 0.20547110001343147,
+      "all.assigned_set_q_top1_flip": 0.2046278679234477,
+      "all.rank_only_exchange": 0.13971252072069734,
+      "all.set_turnover_with_assigned_top1_flip": 0.06491534720275034,
+      "all.set_turnover_without_assigned_top1_flip": 0.14274598307122896,
+      "all.assigned_top1_defined_both": 0.9749566952309192,
+      "all.rank_only_fraction_among_assigned_top1_flips": 0.6827638978917794,
+      "t_8_16.jaccard": 0.9292648857956044,
+      "t_8_16.base_retention": 0.9956573226639037,
+      "t_8_16.base_set_size": 2.700323385637013,
+      "t_8_16.shift_set_size": 2.8907504671363413,
+      "t_8_16.intersection_size": 2.6864219802675464,
+      "t_8_16.union_size": 2.9046518725058084,
+      "t_8_16.exact_set_equal": 0.8335413928615206,
+      "t_8_16.set_turnover": 0.1664586071384792,
+      "t_8_16.legacy_q_positive_top1_flip": 0.18935352135429778,
+      "t_8_16.pre_conflict_topk_top1_flip": 0.18935352135429778,
+      "t_8_16.assigned_set_q_top1_flip": 0.18845892272022996,
+      "t_8_16.rank_only_exchange": 0.13677771031804267,
+      "t_8_16.set_turnover_with_assigned_top1_flip": 0.051681212402187295,
+      "t_8_16.set_turnover_without_assigned_top1_flip": 0.11477739473629194,
+      "t_8_16.assigned_top1_defined_both": 0.9711536997754004,
+      "t_8_16.rank_only_fraction_among_assigned_top1_flips": 0.7257693525134451,
+      "s_16_32.jaccard": 0.8706361074884136,
+      "s_16_32.base_retention": 0.9465724423114524,
+      "s_16_32.base_set_size": 6.522104211487954,
+      "s_16_32.shift_set_size": 6.743914202512656,
+      "s_16_32.intersection_size": 6.147697785342524,
+      "s_16_32.union_size": 7.118320628658085,
+      "s_16_32.exact_set_equal": 0.5237665808039709,
+      "s_16_32.set_turnover": 0.47623341919602874,
+      "s_16_32.legacy_q_positive_top1_flip": 0.3105304611292837,
+      "s_16_32.pre_conflict_topk_top1_flip": 0.3105304611292837,
+      "s_16_32.assigned_set_q_top1_flip": 0.31002205205572947,
+      "s_16_32.rank_only_exchange": 0.15884252234313864,
+      "s_16_32.set_turnover_with_assigned_top1_flip": 0.15117952971259077,
+      "s_16_32.set_turnover_without_assigned_top1_flip": 0.325053889483438,
+      "s_16_32.assigned_top1_defined_both": 0.9997457954632226,
+      "s_16_32.rank_only_fraction_among_assigned_top1_flips": 0.5123587863826705,
+      "t_8_16_minus_s_16_32.jaccard": 0.05862877830719082,
+      "t_8_16_minus_s_16_32.base_retention": 0.04908488035245129,
+      "t_8_16_minus_s_16_32.base_set_size": -3.821780825850941,
+      "t_8_16_minus_s_16_32.shift_set_size": -3.8531637353763144,
+      "t_8_16_minus_s_16_32.intersection_size": -3.461275805074978,
+      "t_8_16_minus_s_16_32.union_size": -4.213668756152277,
+      "t_8_16_minus_s_16_32.exact_set_equal": 0.30977481205754975,
+      "t_8_16_minus_s_16_32.set_turnover": -0.30977481205754953,
+      "t_8_16_minus_s_16_32.legacy_q_positive_top1_flip": -0.12117693977498589,
+      "t_8_16_minus_s_16_32.pre_conflict_topk_top1_flip": -0.12117693977498589,
+      "t_8_16_minus_s_16_32.assigned_set_q_top1_flip": -0.12156312933549951,
+      "t_8_16_minus_s_16_32.rank_only_exchange": -0.02206481202509597,
+      "t_8_16_minus_s_16_32.set_turnover_with_assigned_top1_flip": -0.09949831731040348,
+      "t_8_16_minus_s_16_32.set_turnover_without_assigned_top1_flip": -0.21027649474714605,
+      "t_8_16_minus_s_16_32.assigned_top1_defined_both": -0.028592095687822172,
+      "t_8_16_minus_s_16_32.rank_only_fraction_among_assigned_top1_flips": 0.21341056613077458
+    },
+    "ci_95": {
+      "all.jaccard": [
+        0.9178928112789959,
+        0.9247230271162921
+      ],
+      "all.base_retention": [
+        0.9867653731887082,
+        0.990830275753071
+      ],
+      "all.base_set_size": [
+        2.99133767105245,
+        3.424067744064434
+      ],
+      "all.shift_set_size": [
+        3.1793415246672727,
+        3.626739863373703
+      ],
+      "all.intersection_size": [
+        2.939882701933994,
+        3.350649987503914
+      ],
+      "all.union_size": [
+        3.2308592373614258,
+        3.7007090267239504
+      ],
+      "all.exact_set_equal": [
+        0.7777405140626472,
+        0.806075862485573
+      ],
+      "all.set_turnover": [
+        0.1939241375144268,
+        0.2222594859373527
+      ],
+      "all.legacy_q_positive_top1_flip": [
+        0.1927709249183429,
+        0.2191168795910854
+      ],
+      "all.pre_conflict_topk_top1_flip": [
+        0.1927709249183429,
+        0.2191168795910854
+      ],
+      "all.assigned_set_q_top1_flip": [
+        0.1916776768330108,
+        0.21838330876903442
+      ],
+      "all.rank_only_exchange": [
+        0.12978453276930688,
+        0.15030870502718338
+      ],
+      "all.set_turnover_with_assigned_top1_flip": [
+        0.05992179549089568,
+        0.0703273057469527
+      ],
+      "all.set_turnover_without_assigned_top1_flip": [
+        0.13222902360081973,
+        0.15464021742288997
+      ],
+      "all.assigned_top1_defined_both": [
+        0.9662228467565769,
+        0.9820799783447569
+      ],
+      "all.rank_only_fraction_among_assigned_top1_flips": [
+        0.6643335532333279,
+        0.7005116775693921
+      ],
+      "t_8_16.jaccard": [
+        0.9261058562519046,
+        0.932396311000728
+      ],
+      "t_8_16.base_retention": [
+        0.9948264093899136,
+        0.99646683234656
+      ],
+      "t_8_16.base_set_size": [
+        2.555140526977947,
+        2.8399766286967036
+      ],
+      "t_8_16.shift_set_size": [
+        2.7366493506849574,
+        3.0389537396100215
+      ],
+      "t_8_16.intersection_size": [
+        2.541161432064723,
+        2.825388155780126
+      ],
+      "t_8_16.union_size": [
+        2.750782418391806,
+        3.053395678548413
+      ],
+      "t_8_16.exact_set_equal": [
+        0.825944334144582,
+        0.8405989540161715
+      ],
+      "t_8_16.set_turnover": [
+        0.15940104598382826,
+        0.17405566585541785
+      ],
+      "t_8_16.legacy_q_positive_top1_flip": [
+        0.17856183750153243,
+        0.20119896864504888
+      ],
+      "t_8_16.pre_conflict_topk_top1_flip": [
+        0.17856183750153243,
+        0.20119896864504888
+      ],
+      "t_8_16.assigned_set_q_top1_flip": [
+        0.17746467280986997,
+        0.20050151438114175
+      ],
+      "t_8_16.rank_only_exchange": [
+        0.12647864271559614,
+        0.14769329136933393
+      ],
+      "t_8_16.set_turnover_with_assigned_top1_flip": [
+        0.048339147665183685,
+        0.05522627718424283
+      ],
+      "t_8_16.set_turnover_without_assigned_top1_flip": [
+        0.10861721625767715,
+        0.1211327770495488
+      ],
+      "t_8_16.assigned_top1_defined_both": [
+        0.9615656297427589,
+        0.9790981270510132
+      ],
+      "t_8_16.rank_only_fraction_among_assigned_top1_flips": [
+        0.7052923317262667,
+        0.744755993432713
+      ],
+      "s_16_32.jaccard": [
+        0.864113228563286,
+        0.8772748118242985
+      ],
+      "s_16_32.base_retention": [
+        0.9424924739498098,
+        0.9506971039281774
+      ],
+      "s_16_32.base_set_size": [
+        6.274881681233259,
+        6.786595181448987
+      ],
+      "s_16_32.shift_set_size": [
+        6.484921081015906,
+        7.009809817151746
+      ],
+      "s_16_32.intersection_size": [
+        5.903008036713766,
+        6.40743338936981
+      ],
+      "s_16_32.union_size": [
+        6.856260863663463,
+        7.38890731036411
+      ],
+      "s_16_32.exact_set_equal": [
+        0.5087861164336104,
+        0.5399445752408497
+      ],
+      "s_16_32.set_turnover": [
+        0.4600554247591501,
+        0.4912138835663893
+      ],
+      "s_16_32.legacy_q_positive_top1_flip": [
+        0.2770313571029888,
+        0.34111637615379803
+      ],
+      "s_16_32.pre_conflict_topk_top1_flip": [
+        0.2770313571029888,
+        0.34111637615379803
+      ],
+      "s_16_32.assigned_set_q_top1_flip": [
+        0.27678561984136013,
+        0.34048929644526355
+      ],
+      "s_16_32.rank_only_exchange": [
+        0.13952342674666612,
+        0.17833668133115727
+      ],
+      "s_16_32.set_turnover_with_assigned_top1_flip": [
+        0.13278250244558198,
+        0.1705291873286337
+      ],
+      "s_16_32.set_turnover_without_assigned_top1_flip": [
+        0.3041463445068597,
+        0.34482915236402045
+      ],
+      "s_16_32.assigned_top1_defined_both": [
+        0.9991351695570206,
+        1.0
+      ],
+      "s_16_32.rank_only_fraction_among_assigned_top1_flips": [
+        0.4796617214380529,
+        0.5468633228893861
+      ],
+      "t_8_16_minus_s_16_32.jaccard": [
+        0.051154766490304045,
+        0.06606339559565018
+      ],
+      "t_8_16_minus_s_16_32.base_retention": [
+        0.04507147635774424,
+        0.05309516136437364
+      ],
+      "t_8_16_minus_s_16_32.base_set_size": [
+        -4.144698944165353,
+        -3.517540870561933
+      ],
+      "t_8_16_minus_s_16_32.shift_set_size": [
+        -4.187396711197806,
+        -3.5354851143681483
+      ],
+      "t_8_16_minus_s_16_32.intersection_size": [
+        -3.7807273572446487,
+        -3.160653725350498
+      ],
+      "t_8_16_minus_s_16_32.union_size": [
+        -4.545354104068048,
+        -3.896299819980873
+      ],
+      "t_8_16_minus_s_16_32.exact_set_equal": [
+        0.2916866576992385,
+        0.3266807930729584
+      ],
+      "t_8_16_minus_s_16_32.set_turnover": [
+        -0.32668079307295855,
+        -0.2916866576992385
+      ],
+      "t_8_16_minus_s_16_32.legacy_q_positive_top1_flip": [
+        -0.15137420444410774,
+        -0.08927722543222945
+      ],
+      "t_8_16_minus_s_16_32.pre_conflict_topk_top1_flip": [
+        -0.15137420444410774,
+        -0.08927722543222945
+      ],
+      "t_8_16_minus_s_16_32.assigned_set_q_top1_flip": [
+        -0.15159878318226672,
+        -0.0894308772883979
+      ],
+      "t_8_16_minus_s_16_32.rank_only_exchange": [
+        -0.04312732289335144,
+        -0.0017583060671924628
+      ],
+      "t_8_16_minus_s_16_32.set_turnover_with_assigned_top1_flip": [
+        -0.11879895897426497,
+        -0.08123945965557225
+      ],
+      "t_8_16_minus_s_16_32.set_turnover_without_assigned_top1_flip": [
+        -0.2294386794376846,
+        -0.18877941784985608
+      ],
+      "t_8_16_minus_s_16_32.assigned_top1_defined_both": [
+        -0.03818091931975318,
+        -0.02076543344914352
+      ],
+      "t_8_16_minus_s_16_32.rank_only_fraction_among_assigned_top1_flips": [
+        0.1725132840667878,
+        0.2520081045235868
+      ]
+    },
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "image cluster within outcome-blind sampling stratum"
+  }
+}

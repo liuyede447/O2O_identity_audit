@@ -1,3 +1,15 @@
+# v3.4.0 release for the revised article
+
+This release builds on v3.3.3 and adds `revision/`, the reproducibility bundle for the results added in the first revision (main Tables 3, 4, 5, 7 and 8, Figures 2-5, and Supplementary Tables S39-S48 and Section 17).
+
+- `revision/rerun_revision_analyses.py` recomputes the revision estimates and their bootstrap intervals from `revision/revision_inputs.tar.gz` and checks every output against the archived copy. It needs numpy and pandas only.
+- The runner option `--only s40_per_direction` reproduces the RFLA/ATSS per-direction estimates and bootstrap intervals in Results and Table S40.
+- `revision/figures/` regenerates Figures 2-5, including the `o2m_positive_count_scale_controls_v5` records that v3.3.3 lacked for Figure 5.
+- The four final-epoch (epoch 300) checkpoints are new release assets; their SHA-256 values are in `RELEASE_ASSET_MANIFEST.csv` and `revision/README.md`.
+- `CITATION.cff` and `.zenodo.json` now carry Fang Wang's ORCID, and `.zenodo.json` declares this record a new version of `10.5281/zenodo.22744638` (v3.3.3).
+
+Unchanged: all v3.3.3 code, evidence, derived data and release assets.
+
 # v3.3.3 article-matched release
 
 This release supersedes the immutable `v3.3.2` predecessor. It is the article-matched package for the corrected manuscript **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**. The `v3.3.2` tag and its assets remain unchanged.

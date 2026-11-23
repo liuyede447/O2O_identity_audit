@@ -1,0 +1,3 @@
+[34m[1mval: [0mFast image access  (ping: 0.40.3 ms, read: 272.8572.2 MB/s, size: 923.4 KB)
+[K[34m[1mval: [0mScanning G:\revision_20261120\heldout_replication\AI-TOD-v2-officialval-YOLO\val\labels.cache... 2804 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 2804/2804 588.0Mit/s 0.0s
+wrote 17866 GT rows to G:\revision_20261120\heldout_replication\formal\base_gate.csv

@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-11-22T06:07:02+00:00",
+  "note": "Written before any forward pass on replication images.",
+  "sha256": {
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\PREREGISTRATION_DRAFT.md": "1b9949c6577bbe79de928c73dcb32046c9f5d785f15eca049f6c2a233a2605df",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\selected_images_preregistered.csv": "389dc7ed8fe254ed11617157da8465817b644b9fbb0536519bef9d38b96ee9ba",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\conversion_manifest.json": "3cb5c36f5968f7b8bcdf526d120c684517c9cde105a42e26b7c1a0558c7720c5",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\validation_files_sha256.txt": "a0f55160422677586cbac799e3889c64d3fd0e66dc3c37b4ad2e8449bddf8993",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\rehearsal_results.json": "e32b09386807840e402ae50c690ff022f9f020b1ff3536a1bf4e0a92f8e4e3ec",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\prepare_validation_split.py": "b2118094ff70d21218596424756a8f2990798d3f458c14c7782d9a37faeb62ed",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\select_sample.py": "05da587039f401e2d4c424698464d0777aa2d963c1d18bb68ee5e2b3eb0c5dcf",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\predict_row_structure.py": "c3a71e27c3798324cd12dafd99e402bb197aa0392df29d1002dfa08a093463ca",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\run_lock_checked.py": "113c206c58cda4c9dac5753282cb353dc9119f4620b764f99fea1f21846a3eff",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\base_gate.py": "bfb89e34c93a051ceeea6b9aef5b9d26894dc798f4d7f17828708f102730e236",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\analyze_replication.py": "2d43008c5a219910420f7dbbe2a2282936ae291cc03ff51f9023abc233aaed82",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\rehearsal.py": "24e840bc5d8d7d86c4eec77718401eb646ae0b3eb9f59c80fff2cc6cacc14881",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\run_s2.sh": "5def49fb2115806b0f2f43dd54bc99055f6eaa2dd983196cf00859f8da60e685",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\analyze_s2.py": "c0e52e3be9d951eb74ced86c0b9d754575eea70725287a4476eb3895791e1cca",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\run_formal.sh": "5bbbdc4928fb402c063a0e4d1b2ab6cd694eabe9f4ca32f08f8e7171f81c9f5e",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\freeze.py": "ab313f038375d6755da15ff929d40e5cfa2878e330f10748211df4cb2d519aa9",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\check_s2_manifest.py": "d1b7fed0d5e500cc97999999dff8c867964be4b8cdd27b9a6742482c777b175d",
+    "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_1_comparable_measure\\comparable_measure.py": "54f0b192484ee3f0a615faa079befe2622f751e893d0faed81d38f56d8decb99",
+    "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\run_eligibility_lock_counterfactual.py": "cfcb4bc8bc88670013acaaf113371608b028d906170071daf216169916141c5d",
+    "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\run_reviewer_killer_controls.py": "a3a472f04d2a2f9ffe232e68ccc30c21c18f433acaea63970916d1ca570c7dfc",
+    "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\analyze_o2m_rank_set_decoupling.py": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+    "E:\\two_paper\\beifen\\publication_reproducible\\scripts\\margin_o2o_replay.py": "b38679eb0439c99f5efef46448841d1cc5c0eb3bb9eee4467393ca14536f5c9f",
+    "G:\\revision_20261120\\heldout_replication\\AI-TOD-v2-officialval-YOLO\\data.yaml": "38a742c896774201efc1ab4af618cb356e4f722b5feecef69effd52861250797",
+    "G:\\revision_20261120\\heldout_replication\\extracted\\annotations\\aitod_val_v2.json": "d0439ba687db66bb38584a3398a906f15c47e055cdd84bb9060496a91f30d7cf",
+    "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\last.pt": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b"
+  }
+}

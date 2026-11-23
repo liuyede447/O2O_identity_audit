@@ -1,0 +1,99 @@
+[34m[1mval: [0mFast image access  (ping: 0.30.3 ms, read: 995.01348.5 MB/s, size: 1054.8 KB)
+[K[34m[1mval: [0mScanning G:\revision_20261120\heldout_replication\AI-TOD-v2-officialval-YOLO\val\labels.cache... 2804 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 2804/2804 619.0Mit/s 0.0s
+{
+  "manifest": {
+    "status": "complete",
+    "protocol": "normalized_o2m_o2o_replay_and_incremental_value_v1",
+    "read_only": true,
+    "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\last.pt",
+    "checkpoint_sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b",
+    "checkpoint_role": "pre-specified replication checkpoint",
+    "detector_contract": "yolo26",
+    "native_o2m_topk": 10,
+    "native_o2o_topk": 7,
+    "data": "G:\\revision_20261120\\heldout_replication\\AI-TOD-v2-officialval-YOLO\\data.yaml",
+    "selection_seed": 20260823,
+    "selected_images_source": "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\selected_images_preregistered.csv",
+    "requested_images": 600,
+    "stratum_population_counts": {
+      "t_only": 1374,
+      "s_only": 12,
+      "t_and_s": 1227
+    },
+    "stratum_sample_allocation": {
+      "t_and_s": 282,
+      "t_only": 315,
+      "s_only": 3
+    },
+    "stress_mode": "normalized",
+    "normalized_shift": "delta_x = delta_y = kappa * sqrt(width * height)",
+    "normalization": "equivalent_side",
+    "kappa": 0.0625,
+    "bootstrap_replicates": 5000,
+    "selected_images": 600,
+    "focal_gt_by_bin": {
+      "s_16_32": 2197,
+      "t_8_16": 13677
+    },
+    "audited_gt_by_bin": {
+      "s_16_32": 2191,
+      "t_8_16": 13639
+    },
+    "per_gt_rows": 15830,
+    "per_direction_rows": 63057,
+    "audit_elapsed_sec": 1426.5700149999975,
+    "common_valid_normalized_gt": 13666,
+    "total_elapsed_sec": 1467.7269282999987,
+    "outputs": [
+      "per_direction.csv",
+      "per_gt.csv",
+      "normalized_perturbation_summary.json"
+    ]
+  },
+  "normalized": {
+    "estimand": "common-valid O2M/O2O margins; population-weighted 8-16 minus 16-32 rates",
+    "n_gt": 13666,
+    "n_images": 575,
+    "point": {
+      "o2o_8_16": 0.08705479116613839,
+      "o2o_16_32": 0.08174674174766158,
+      "o2o_scale_contrast": 0.005308049418476804,
+      "o2m_8_16": 0.5738942553085356,
+      "o2m_16_32": 0.7849378789929093,
+      "o2m_scale_contrast": -0.2110436236843738,
+      "paired_difference_in_scale_gradients": 0.21635167310285058
+    },
+    "ci_95": {
+      "o2o_8_16": [
+        0.0748717150471527,
+        0.10031720512006859
+      ],
+      "o2o_16_32": [
+        0.06718940656673124,
+        0.09793692084711829
+      ],
+      "o2o_scale_contrast": [
+        -0.012552901083276861,
+        0.021927327611495108
+      ],
+      "o2m_8_16": [
+        0.5530092209712284,
+        0.5953507383021686
+      ],
+      "o2m_16_32": [
+        0.7510776251802838,
+        0.814453114210954
+      ],
+      "o2m_scale_contrast": [
+        -0.24502363689084278,
+        -0.17700831842549963
+      ],
+      "paired_difference_in_scale_gradients": [
+        0.17749437970338422,
+        0.2554627529651287
+      ]
+    },
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "image cluster within outcome-blind sampling stratum"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "short<8": {
+    "directions": 8258,
+    "count_change_directions": 1793,
+    "share_count_changes_with_tie": 67.5404350250976,
+    "share_all_directions_with_tie": 59.421167352869944,
+    "ties_exactly_zero_share": 92.60240472793969,
+    "max_abs_tie_distance": 6.103515625e-05,
+    "count_change_without_tie": 582
+  },
+  "short=8": {
+    "directions": 14401,
+    "count_change_directions": 3150,
+    "share_count_changes_with_tie": 99.65079365079364,
+    "share_all_directions_with_tie": 45.56628011943615,
+    "ties_exactly_zero_share": 95.0624809509296,
+    "max_abs_tie_distance": 6.103515625e-05,
+    "count_change_without_tie": 11
+  },
+  "short>8": {
+    "directions": 31699,
+    "count_change_directions": 7294,
+    "share_count_changes_with_tie": 100.0,
+    "share_all_directions_with_tie": 58.58859900943247,
+    "ties_exactly_zero_share": 93.59788929571397,
+    "max_abs_tie_distance": 6.103515625e-05,
+    "count_change_without_tie": 0
+  },
+  "tiny_drop_decomposition": {
+    "short<8": {
+      "weight_share": 15.525914924239016,
+      "contribution_to_tiny_drop_pp": 0.5959101628383029
+    },
+    "short=8": {
+      "weight_share": 25.256355295873767,
+      "contribution_to_tiny_drop_pp": 7.784888237169782
+    },
+    "short>8": {
+      "weight_share": 59.217729779887215,
+      "contribution_to_tiny_drop_pp": 6.352355931050303
+    }
+  }
+}

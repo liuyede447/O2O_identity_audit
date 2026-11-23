@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "4b57787f7351c77dfe6c85e64b30206245207722b7ed86cae0c741b1f06828fa",
+  "identity_checks": 9,
+  "image_sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+  "records": 3,
+  "status": "PASS",
+  "trace_sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46"
+}

@@ -1,0 +1,403 @@
+[34m[1mval: [0mFast image access  (ping: 0.30.2 ms, read: 19.55.3 MB/s, size: 783.3 KB)
+[K[34m[1mval: [0mScanning G:\revision_20261120\heldout_replication\AI-TOD-v2-officialval-YOLO\val\labels.cache... 2804 images, 0 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 2804/2804 470.4Mit/s 0.0s
+{
+  "manifest": {
+    "status": "complete",
+    "protocol": "o2m_rank_set_decoupling_v1",
+    "read_only": true,
+    "script_sha256": "6a2888117f36afeb13bc0f04ed192c4e5970457dadb314d2ae41d29eebf96b27",
+    "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\last.pt",
+    "checkpoint_sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b",
+    "data": "G:\\revision_20261120\\heldout_replication\\AI-TOD-v2-officialval-YOLO\\data.yaml",
+    "data_sha256": "38a742c896774201efc1ab4af618cb356e4f722b5feecef69effd52861250797",
+    "selected_images_source": "E:\\two_paper\\00_\u5f53\u524d\u7a3f\u4ef6_NEUCOM-D-26-20749\\05_\u5ba1\u7a3f\u610f\u89c1\u4e0e\u56de\u590d\\experiments\\R2_2_heldout_replication\\selected_images_preregistered.csv",
+    "selected_images_source_sha256": "389dc7ed8fe254ed11617157da8465817b644b9fbb0536519bef9d38b96ee9ba",
+    "selected_images_processed": 600,
+    "smoke_manifest_prefix_only": false,
+    "stratum_population_counts": {
+      "t_only": 1374,
+      "s_only": 12,
+      "t_and_s": 1227
+    },
+    "stratum_sample_allocation": {
+      "t_and_s": 282,
+      "t_only": 315,
+      "s_only": 3
+    },
+    "detector_contract": "YOLO26 native O2M Top-10 -> multi-GT conflict resolution -> Top-10",
+    "rank_contracts": {
+      "legacy_q_positive_top1": "q Top-1 among all candidates with q > 0",
+      "pre_conflict_topk_top1": "q Top-1 inside the native pre-conflict Top-10 mask",
+      "assigned_set_q_top1": "q Top-1 inside P_g = fg_mask & (target_gt_idx == focal_gt)"
+    },
+    "set_contract": "exact membership; no Jaccard or retention threshold",
+    "empty_set_contract": {
+      "empty_empty": "separate structural state; Jaccard and retention are undefined",
+      "empty_to_nonempty": "separate structural state; Jaccard is zero and base retention is undefined",
+      "nonempty_to_empty": "separate structural state; Jaccard and base retention are zero",
+      "nonempty_nonempty": "Jaccard and base retention are calculated normally"
+    },
+    "stress": "equivalent_side",
+    "kappa": 0.0625,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 20260831,
+    "elapsed_sec": 851.6131349999996,
+    "direction_rows": 63057,
+    "focal_gt": 15830,
+    "outputs": [
+      "selected_images.csv",
+      "per_direction_rank_set.csv",
+      "rank_set_summary.json",
+      "manifest.json"
+    ]
+  },
+  "summary": {
+    "status": "complete",
+    "estimand": "IPW directional O2M rank and exact assigned-positive-set stability for 8-16 px and 16-32 px focal GTs",
+    "direction_rows": 63057,
+    "images": 599,
+    "focal_gt": 15830,
+    "direction_rows_by_size_bin": {
+      "s_16_32": 8680,
+      "t_8_16": 54377
+    },
+    "classification_counts_unweighted": {
+      "rank_only_exchange": 9162,
+      "set_turnover_with_rank_exchange": 3996,
+      "set_turnover_without_rank_exchange": 8718,
+      "stable_exact_set_and_rank": 41181
+    },
+    "set_structural_state_counts_unweighted": {
+      "empty_empty": 1129,
+      "empty_to_nonempty": 487,
+      "nonempty_nonempty": 61402,
+      "nonempty_to_empty": 39
+    },
+    "point": {
+      "all.jaccard": 0.9238740958624434,
+      "all.base_retention": 0.9885706305160777,
+      "all.base_set_size": 3.204707422733573,
+      "all.shift_set_size": 3.3879866626365853,
+      "all.intersection_size": 3.1413149726303407,
+      "all.union_size": 3.451379112739819,
+      "all.exact_set_equal": 0.7983905222235267,
+      "all.set_turnover": 0.2016094777764733,
+      "all.legacy_q_positive_top1_flip": 0.20989557621693766,
+      "all.pre_conflict_topk_top1_flip": 0.20989557621693766,
+      "all.assigned_set_q_top1_flip": 0.20865833208162587,
+      "all.rank_only_exchange": 0.14529294115035898,
+      "all.set_turnover_with_assigned_top1_flip": 0.06336539093126686,
+      "all.set_turnover_without_assigned_top1_flip": 0.13824408684520648,
+      "all.assigned_top1_defined_both": 0.973755101445349,
+      "all.rank_only_fraction_among_assigned_top1_flips": 0.6963198627195069,
+      "t_8_16.jaccard": 0.9314284248068375,
+      "t_8_16.base_retention": 0.9951970634285584,
+      "t_8_16.base_set_size": 2.6458845525839862,
+      "t_8_16.shift_set_size": 2.827401314812299,
+      "t_8_16.intersection_size": 2.631209356687392,
+      "t_8_16.union_size": 2.842076510708893,
+      "t_8_16.exact_set_equal": 0.838714421444724,
+      "t_8_16.set_turnover": 0.16128557855527612,
+      "t_8_16.legacy_q_positive_top1_flip": 0.18868065822234512,
+      "t_8_16.pre_conflict_topk_top1_flip": 0.18868065822234512,
+      "t_8_16.assigned_set_q_top1_flip": 0.187172473715158,
+      "t_8_16.rank_only_exchange": 0.13838260612701492,
+      "t_8_16.set_turnover_with_assigned_top1_flip": 0.04878986758814303,
+      "t_8_16.set_turnover_without_assigned_top1_flip": 0.11249571096713307,
+      "t_8_16.assigned_top1_defined_both": 0.9698066872228827,
+      "t_8_16.rank_only_fraction_among_assigned_top1_flips": 0.7393320362779827,
+      "s_16_32.jaccard": 0.8774785867721215,
+      "s_16_32.base_retention": 0.9482081034442366,
+      "s_16_32.base_set_size": 6.707172557808456,
+      "s_16_32.shift_set_size": 6.90149826151373,
+      "s_16_32.intersection_size": 6.338440986044619,
+      "s_16_32.union_size": 7.270229833277567,
+      "s_16_32.exact_set_equal": 0.5456573957236913,
+      "s_16_32.set_turnover": 0.4543426042763086,
+      "s_16_32.legacy_q_positive_top1_flip": 0.3428616994531663,
+      "s_16_32.pre_conflict_topk_top1_flip": 0.3428616994531663,
+      "s_16_32.assigned_set_q_top1_flip": 0.3433225948480491,
+      "s_16_32.rank_only_exchange": 0.18860399512435022,
+      "s_16_32.set_turnover_with_assigned_top1_flip": 0.15471859972369884,
+      "s_16_32.set_turnover_without_assigned_top1_flip": 0.2996240045526097,
+      "s_16_32.assigned_top1_defined_both": 0.9985020899666308,
+      "s_16_32.rank_only_fraction_among_assigned_top1_flips": 0.5493492067069583,
+      "t_8_16_minus_s_16_32.jaccard": 0.05394983803471598,
+      "t_8_16_minus_s_16_32.base_retention": 0.04698895998432184,
+      "t_8_16_minus_s_16_32.base_set_size": -4.06128800522447,
+      "t_8_16_minus_s_16_32.shift_set_size": -4.074096946701431,
+      "t_8_16_minus_s_16_32.intersection_size": -3.7072316293572265,
+      "t_8_16_minus_s_16_32.union_size": -4.428153322568674,
+      "t_8_16_minus_s_16_32.exact_set_equal": 0.29305702572103265,
+      "t_8_16_minus_s_16_32.set_turnover": -0.29305702572103254,
+      "t_8_16_minus_s_16_32.legacy_q_positive_top1_flip": -0.1541810412308212,
+      "t_8_16_minus_s_16_32.pre_conflict_topk_top1_flip": -0.1541810412308212,
+      "t_8_16_minus_s_16_32.assigned_set_q_top1_flip": -0.15615012113289112,
+      "t_8_16_minus_s_16_32.rank_only_exchange": -0.0502213889973353,
+      "t_8_16_minus_s_16_32.set_turnover_with_assigned_top1_flip": -0.10592873213555581,
+      "t_8_16_minus_s_16_32.set_turnover_without_assigned_top1_flip": -0.1871282935854766,
+      "t_8_16_minus_s_16_32.assigned_top1_defined_both": -0.028695402743748155,
+      "t_8_16_minus_s_16_32.rank_only_fraction_among_assigned_top1_flips": 0.18998282957102441
+    },
+    "ci_95": {
+      "all.jaccard": [
+        0.921692463002944,
+        0.9258747620535319
+      ],
+      "all.base_retention": [
+        0.9874723336501229,
+        0.989662844856747
+      ],
+      "all.base_set_size": [
+        2.991550874117017,
+        3.4011856268238096
+      ],
+      "all.shift_set_size": [
+        3.1636465343661078,
+        3.5932120882727347
+      ],
+      "all.intersection_size": [
+        2.9325030118192688,
+        3.330357359107478
+      ],
+      "all.union_size": [
+        3.2221896710917965,
+        3.663080920092092
+      ],
+      "all.exact_set_equal": [
+        0.7879292666151673,
+        0.8091006764218834
+      ],
+      "all.set_turnover": [
+        0.19089932357811665,
+        0.21207073338483243
+      ],
+      "all.legacy_q_positive_top1_flip": [
+        0.197554407950096,
+        0.22187965316420122
+      ],
+      "all.pre_conflict_topk_top1_flip": [
+        0.197554407950096,
+        0.22187965316420122
+      ],
+      "all.assigned_set_q_top1_flip": [
+        0.19562189849062495,
+        0.22103730922945328
+      ],
+      "all.rank_only_exchange": [
+        0.13350386750437235,
+        0.1555467993172753
+      ],
+      "all.set_turnover_with_assigned_top1_flip": [
+        0.05978337881698036,
+        0.06705043294248055
+      ],
+      "all.set_turnover_without_assigned_top1_flip": [
+        0.12862956572443204,
+        0.14699349140046986
+      ],
+      "all.assigned_top1_defined_both": [
+        0.9575441052236808,
+        0.9844297716329388
+      ],
+      "all.rank_only_fraction_among_assigned_top1_flips": [
+        0.6781052412155152,
+        0.7105466976062014
+      ],
+      "t_8_16.jaccard": [
+        0.9290320437898741,
+        0.9336949338417829
+      ],
+      "t_8_16.base_retention": [
+        0.9941665756410345,
+        0.9960824498656939
+      ],
+      "t_8_16.base_set_size": [
+        2.468462813051225,
+        2.794246919694013
+      ],
+      "t_8_16.shift_set_size": [
+        2.6403332740322885,
+        2.9852629950686556
+      ],
+      "t_8_16.intersection_size": [
+        2.4537088276246615,
+        2.780025626660202
+      ],
+      "t_8_16.union_size": [
+        2.6549829698776914,
+        3.0003454051721787
+      ],
+      "t_8_16.exact_set_equal": [
+        0.8323176638329965,
+        0.8453583818469997
+      ],
+      "t_8_16.set_turnover": [
+        0.15464161815299984,
+        0.16768233616700337
+      ],
+      "t_8_16.legacy_q_positive_top1_flip": [
+        0.17779735516546563,
+        0.19908084731053546
+      ],
+      "t_8_16.pre_conflict_topk_top1_flip": [
+        0.17779735516546563,
+        0.19908084731053546
+      ],
+      "t_8_16.assigned_set_q_top1_flip": [
+        0.17527178098068932,
+        0.19819180040697484
+      ],
+      "t_8_16.rank_only_exchange": [
+        0.12594163198584415,
+        0.14931725191456008
+      ],
+      "t_8_16.set_turnover_with_assigned_top1_flip": [
+        0.04635443136313053,
+        0.051398460551868114
+      ],
+      "t_8_16.set_turnover_without_assigned_top1_flip": [
+        0.10482341622054875,
+        0.11915183466880101
+      ],
+      "t_8_16.assigned_top1_defined_both": [
+        0.9517548316112914,
+        0.9819306868613971
+      ],
+      "t_8_16.rank_only_fraction_among_assigned_top1_flips": [
+        0.7152799623590784,
+        0.7575592187622476
+      ],
+      "s_16_32.jaccard": [
+        0.8733541513185495,
+        0.8816051195331794
+      ],
+      "s_16_32.base_retention": [
+        0.9457798249836699,
+        0.950554387878354
+      ],
+      "s_16_32.base_set_size": [
+        6.429931038309072,
+        6.978466886047686
+      ],
+      "s_16_32.shift_set_size": [
+        6.61947233557505,
+        7.171762742828303
+      ],
+      "s_16_32.intersection_size": [
+        6.067065125565038,
+        6.601805057729051
+      ],
+      "s_16_32.union_size": [
+        6.9799154829186545,
+        7.554447505844515
+      ],
+      "s_16_32.exact_set_equal": [
+        0.5327883814057376,
+        0.5576494601298111
+      ],
+      "s_16_32.set_turnover": [
+        0.44235053987018896,
+        0.4672116185942624
+      ],
+      "s_16_32.legacy_q_positive_top1_flip": [
+        0.3202317012557878,
+        0.36271575501413816
+      ],
+      "s_16_32.pre_conflict_topk_top1_flip": [
+        0.3202317012557878,
+        0.36271575501413816
+      ],
+      "s_16_32.assigned_set_q_top1_flip": [
+        0.320707129533472,
+        0.3634542237761159
+      ],
+      "s_16_32.rank_only_exchange": [
+        0.1737075019955275,
+        0.20309113682753235
+      ],
+      "s_16_32.set_turnover_with_assigned_top1_flip": [
+        0.14358055279589269,
+        0.1653989553246987
+      ],
+      "s_16_32.set_turnover_without_assigned_top1_flip": [
+        0.2855889437424345,
+        0.31337622885043054
+      ],
+      "s_16_32.assigned_top1_defined_both": [
+        0.9967166894307303,
+        0.9998917649430491
+      ],
+      "s_16_32.rank_only_fraction_among_assigned_top1_flips": [
+        0.5287930594582955,
+        0.5698472004501155
+      ],
+      "t_8_16_minus_s_16_32.jaccard": [
+        0.049051020876890714,
+        0.05877054507277199
+      ],
+      "t_8_16_minus_s_16_32.base_retention": [
+        0.04445734219114117,
+        0.04943229694316652
+      ],
+      "t_8_16_minus_s_16_32.base_set_size": [
+        -4.40642607956623,
+        -3.7162380201877485
+      ],
+      "t_8_16_minus_s_16_32.shift_set_size": [
+        -4.421948013108568,
+        -3.723112607494448
+      ],
+      "t_8_16_minus_s_16_32.intersection_size": [
+        -4.044291837901068,
+        -3.3694118983674377
+      ],
+      "t_8_16_minus_s_16_32.union_size": [
+        -4.787079653453884,
+        -4.069029556964335
+      ],
+      "t_8_16_minus_s_16_32.exact_set_equal": [
+        0.27839045789694383,
+        0.30746794424787677
+      ],
+      "t_8_16_minus_s_16_32.set_turnover": [
+        -0.30746794424787677,
+        -0.2783904578969437
+      ],
+      "t_8_16_minus_s_16_32.legacy_q_positive_top1_flip": [
+        -0.17635204058232135,
+        -0.1306860833057502
+      ],
+      "t_8_16_minus_s_16_32.pre_conflict_topk_top1_flip": [
+        -0.17635204058232135,
+        -0.1306860833057502
+      ],
+      "t_8_16_minus_s_16_32.assigned_set_q_top1_flip": [
+        -0.1787544295455564,
+        -0.1324234899667892
+      ],
+      "t_8_16_minus_s_16_32.rank_only_exchange": [
+        -0.06961863233055322,
+        -0.03183580017549691
+      ],
+      "t_8_16_minus_s_16_32.set_turnover_with_assigned_top1_flip": [
+        -0.11623325702827499,
+        -0.09534308863497673
+      ],
+      "t_8_16_minus_s_16_32.set_turnover_without_assigned_top1_flip": [
+        -0.20315648390479846,
+        -0.1708087392758462
+      ],
+      "t_8_16_minus_s_16_32.assigned_top1_defined_both": [
+        -0.04698981364227578,
+        -0.01628548080690362
+      ],
+      "t_8_16_minus_s_16_32.rank_only_fraction_among_assigned_top1_flips": [
+        0.15861260742296948,
+        0.21861571622176357
+      ]
+    },
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "image cluster within outcome-blind sampling stratum"
+  }
+}

@@ -1,0 +1,515 @@
+{
+  "gate_seed0_reproduces_frozen": true,
+  "bootstrap_seed": 20261724,
+  "replicates": 5000,
+  "seeds": {
+    "0": {
+      "lock_input": "E:\\two_paper\\beifen\\\u4fee\u590d\\post_submission_audit_20260908\\inputs\\eligibility_lock_per_gt.csv",
+      "gate_input": "E:\\two_paper\\beifen\\\u4fee\u590d\\post_submission_audit_20260908\\inputs\\fixed_branch_per_gt.csv",
+      "population": {
+        "fixed_1px": {
+          "gt": 7265,
+          "images": 298,
+          "tiny_gt": 6273,
+          "small_gt": 992,
+          "base_undefined_excluded": 169
+        },
+        "equivalent_side": {
+          "gt": 7263,
+          "images": 298,
+          "tiny_gt": 6271,
+          "small_gt": 992,
+          "base_undefined_excluded": 169
+        }
+      },
+      "estimates": {
+        "fixed_1px": {
+          "point": {
+            "native_tiny": 0.23269570145065605,
+            "native_small": 0.07764366406267403,
+            "native_gap": 0.155052037387982,
+            "eligibility_lock_tiny": 0.09035257174962096,
+            "eligibility_lock_small": 0.05545976004476715,
+            "eligibility_lock_gap": 0.0348928117048538,
+            "reduction_pp": 0.1201592256831282,
+            "reduction_fraction": 0.774960637134083
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.21286204276803736,
+              0.25423108887795853
+            ],
+            "native_small": [
+              0.04795103053904425,
+              0.11364907566639955
+            ],
+            "native_gap": [
+              0.11961371638066327,
+              0.18867778259147913
+            ],
+            "eligibility_lock_tiny": [
+              0.0768451196042158,
+              0.10462708721953828
+            ],
+            "eligibility_lock_small": [
+              0.034016995367250176,
+              0.08056849212342068
+            ],
+            "eligibility_lock_gap": [
+              0.011247619350785953,
+              0.056438676035476844
+            ],
+            "reduction_pp": [
+              0.09772903462414356,
+              0.1405333734306833
+            ],
+            "reduction_fraction": [
+              0.6801188459869594,
+              0.9152819900581523
+            ]
+          }
+        },
+        "equivalent_side": {
+          "point": {
+            "native_tiny": 0.10045192253131366,
+            "native_small": 0.08974397534516868,
+            "native_gap": 0.010707947186144984,
+            "eligibility_lock_tiny": 0.06282176562018377,
+            "eligibility_lock_small": 0.06453499350663815,
+            "eligibility_lock_gap": -0.0017132278864543798,
+            "reduction_pp": 0.012421175072599364,
+            "reduction_fraction": 1.159995922343652
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.08890586730706926,
+              0.11212041529640442
+            ],
+            "native_small": [
+              0.0568870634480022,
+              0.12955757251996103
+            ],
+            "native_gap": [
+              -0.025586069148285803,
+              0.04164259715403487
+            ],
+            "eligibility_lock_tiny": [
+              0.05320701676241082,
+              0.07249179185246846
+            ],
+            "eligibility_lock_small": [
+              0.041074322816790194,
+              0.0931383281856082
+            ],
+            "eligibility_lock_gap": [
+              -0.027033469147546327,
+              0.020625874322740052
+            ],
+            "reduction_pp": [
+              -0.003961319231932181,
+              0.027038333334173117
+            ],
+            "reduction_fraction": [
+              -5.866273946207912,
+              7.519644229225858
+            ]
+          }
+        }
+      }
+    },
+    "1": {
+      "lock_input": "G:\\revision_20261120\\eligibility_lock\\seed1\\per_gt.csv",
+      "gate_input": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260905_multiseed_equivalent_s1_v1\\per_gt.csv",
+      "population": {
+        "fixed_1px": {
+          "gt": 7265,
+          "images": 298,
+          "tiny_gt": 6273,
+          "small_gt": 992,
+          "base_undefined_excluded": 169
+        },
+        "equivalent_side": {
+          "gt": 7263,
+          "images": 298,
+          "tiny_gt": 6271,
+          "small_gt": 992,
+          "base_undefined_excluded": 169
+        }
+      },
+      "estimates": {
+        "fixed_1px": {
+          "point": {
+            "native_tiny": 0.23540505950753784,
+            "native_small": 0.06957678987434425,
+            "native_gap": 0.16582826963319358,
+            "eligibility_lock_tiny": 0.09034851992099069,
+            "eligibility_lock_small": 0.045376167309354946,
+            "eligibility_lock_gap": 0.04497235261163574,
+            "reduction_pp": 0.12085591702155785,
+            "reduction_fraction": 0.7288016529925022
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.2172009972189942,
+              0.25578475286922764
+            ],
+            "native_small": [
+              0.04929440414303973,
+              0.0952685289929197
+            ],
+            "native_gap": [
+              0.14187376124264905,
+              0.1898431468522555
+            ],
+            "eligibility_lock_tiny": [
+              0.07731079873973795,
+              0.1045880947691943
+            ],
+            "eligibility_lock_small": [
+              0.03202119791939536,
+              0.0613349192141637
+            ],
+            "eligibility_lock_gap": [
+              0.027941993099688662,
+              0.060735460370250946
+            ],
+            "reduction_pp": [
+              0.09914744156212643,
+              0.14014659529683784
+            ],
+            "reduction_fraction": [
+              0.6435371222823864,
+              0.8178555818639223
+            ]
+          }
+        },
+        "equivalent_side": {
+          "point": {
+            "native_tiny": 0.10282462297518484,
+            "native_small": 0.07764366406267403,
+            "native_gap": 0.025180958912510806,
+            "eligibility_lock_tiny": 0.06408259904024603,
+            "eligibility_lock_small": 0.05243468222414349,
+            "eligibility_lock_gap": 0.011647916816102541,
+            "reduction_pp": 0.013533042096408265,
+            "reduction_fraction": 0.5374315626115638
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.09078549512616081,
+              0.11593282810926495
+            ],
+            "native_small": [
+              0.05370847645643583,
+              0.10668904349050772
+            ],
+            "native_gap": [
+              -0.0002064940534874531,
+              0.047616903794876965
+            ],
+            "eligibility_lock_tiny": [
+              0.05363849320067717,
+              0.07578432700687528
+            ],
+            "eligibility_lock_small": [
+              0.0363346896874818,
+              0.07145673381639824
+            ],
+            "eligibility_lock_gap": [
+              -0.0067384065947866095,
+              0.02788694836907553
+            ],
+            "reduction_pp": [
+              -0.004277149280771993,
+              0.027481897768310424
+            ],
+            "reduction_fraction": [
+              -0.4121412358664316,
+              1.7589341167885137
+            ]
+          }
+        }
+      }
+    },
+    "2": {
+      "lock_input": "G:\\revision_20261120\\eligibility_lock\\seed2\\per_gt.csv",
+      "gate_input": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s2e300_equiv_k00625\\per_gt.csv",
+      "population": {
+        "fixed_1px": {
+          "gt": 7266,
+          "images": 298,
+          "tiny_gt": 6274,
+          "small_gt": 992,
+          "base_undefined_excluded": 168
+        },
+        "equivalent_side": {
+          "gt": 7264,
+          "images": 298,
+          "tiny_gt": 6272,
+          "small_gt": 992,
+          "base_undefined_excluded": 168
+        }
+      },
+      "estimates": {
+        "fixed_1px": {
+          "point": {
+            "native_tiny": 0.23472713769683262,
+            "native_small": 0.07865202333621524,
+            "native_gap": 0.15607511436061738,
+            "eligibility_lock_tiny": 0.0904985482103106,
+            "eligibility_lock_small": 0.05445140077122594,
+            "eligibility_lock_gap": 0.03604714743908466,
+            "reduction_pp": 0.12002796692153272,
+            "reduction_fraction": 0.7690397499514472
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.21443472489040946,
+              0.2582474326895217
+            ],
+            "native_small": [
+              0.05234846473245037,
+              0.10958177928082664
+            ],
+            "native_gap": [
+              0.1260679954279841,
+              0.18690453447445118
+            ],
+            "eligibility_lock_tiny": [
+              0.0770493706617222,
+              0.10480984633402696
+            ],
+            "eligibility_lock_small": [
+              0.03545679709808964,
+              0.07759363133632854
+            ],
+            "eligibility_lock_gap": [
+              0.014152131942869024,
+              0.05543557137863642
+            ],
+            "reduction_pp": [
+              0.09917211215165564,
+              0.14061333016555672
+            ],
+            "reduction_fraction": [
+              0.6794074038344654,
+              0.8946181716731582
+            ]
+          }
+        },
+        "equivalent_side": {
+          "point": {
+            "native_tiny": 0.10791907523349835,
+            "native_small": 0.08974397534516868,
+            "native_gap": 0.018175099888329674,
+            "eligibility_lock_tiny": 0.06822143493763429,
+            "eligibility_lock_small": 0.06453499350663816,
+            "eligibility_lock_gap": 0.0036864414309961263,
+            "reduction_pp": 0.014488658457333548,
+            "reduction_fraction": 0.7971707746506962
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.09629398355194527,
+              0.12048441791229039
+            ],
+            "native_small": [
+              0.05957469462931418,
+              0.12623346391101548
+            ],
+            "native_gap": [
+              -0.015130216366739651,
+              0.04610182556668425
+            ],
+            "eligibility_lock_tiny": [
+              0.05827026847200488,
+              0.07878171236877288
+            ],
+            "eligibility_lock_small": [
+              0.041736245454264555,
+              0.09312412189092623
+            ],
+            "eligibility_lock_gap": [
+              -0.023096011741000094,
+              0.024798898898897612
+            ],
+            "reduction_pp": [
+              -0.002090997130120415,
+              0.028446485789220183
+            ],
+            "reduction_fraction": [
+              -4.002543954497766,
+              4.521697787722582
+            ]
+          }
+        }
+      }
+    },
+    "3": {
+      "lock_input": "G:\\revision_20261120\\eligibility_lock\\seed3\\per_gt.csv",
+      "gate_input": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s3e300_equiv_k00625\\per_gt.csv",
+      "population": {
+        "fixed_1px": {
+          "gt": 7267,
+          "images": 298,
+          "tiny_gt": 6275,
+          "small_gt": 992,
+          "base_undefined_excluded": 167
+        },
+        "equivalent_side": {
+          "gt": 7265,
+          "images": 298,
+          "tiny_gt": 6273,
+          "small_gt": 992,
+          "base_undefined_excluded": 167
+        }
+      },
+      "estimates": {
+        "fixed_1px": {
+          "point": {
+            "native_tiny": 0.23245827504956015,
+            "native_small": 0.06554335278017936,
+            "native_gap": 0.1669149222693808,
+            "eligibility_lock_tiny": 0.08999559794135938,
+            "eligibility_lock_small": 0.04335944876227251,
+            "eligibility_lock_gap": 0.046636149179086865,
+            "reduction_pp": 0.12027877309029392,
+            "reduction_fraction": 0.7205992816878188
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.21264389365583977,
+              0.25409487212259146
+            ],
+            "native_small": [
+              0.043270316674284194,
+              0.09009161872853394
+            ],
+            "native_gap": [
+              0.14180638927481332,
+              0.19443233661855538
+            ],
+            "eligibility_lock_tiny": [
+              0.07570638041947401,
+              0.105285594240114
+            ],
+            "eligibility_lock_small": [
+              0.028629512443866374,
+              0.05883963946877054
+            ],
+            "eligibility_lock_gap": [
+              0.028443818383639068,
+              0.06509357794862065
+            ],
+            "reduction_pp": [
+              0.10045952988708515,
+              0.13901945621863515
+            ],
+            "reduction_fraction": [
+              0.6390096954350469,
+              0.8110502516996597
+            ]
+          }
+        },
+        "equivalent_side": {
+          "point": {
+            "native_tiny": 0.105024555412042,
+            "native_small": 0.07865202333621525,
+            "native_gap": 0.026372532075826752,
+            "eligibility_lock_tiny": 0.06676994625539087,
+            "eligibility_lock_small": 0.05445140077122595,
+            "eligibility_lock_gap": 0.012318545484164924,
+            "reduction_pp": 0.014053986591661828,
+            "reduction_fraction": 0.5329024361882874
+          },
+          "ci_95": {
+            "native_tiny": [
+              0.09203156034594392,
+              0.11876359706554127
+            ],
+            "native_small": [
+              0.05086446388838454,
+              0.10985065149449579
+            ],
+            "native_gap": [
+              -0.001132173606896337,
+              0.05371975639719355
+            ],
+            "eligibility_lock_tiny": [
+              0.055896945201404195,
+              0.07823243496342272
+            ],
+            "eligibility_lock_small": [
+              0.03457043894710791,
+              0.07502932034867227
+            ],
+            "eligibility_lock_gap": [
+              -0.007130811072697711,
+              0.03256902890348576
+            ],
+            "reduction_pp": [
+              -0.00027777555607245654,
+              0.02662982186858384
+            ],
+            "reduction_fraction": [
+              -0.26162361158662173,
+              1.7204048584726777
+            ]
+          }
+        }
+      }
+    }
+  },
+  "across_seed_fixed_1px": {
+    "native_gap": {
+      "mean": 0.16096758591279345,
+      "sd": 0.006269690268968617,
+      "min": 0.155052037387982,
+      "max": 0.1669149222693808
+    },
+    "eligibility_lock_gap": {
+      "mean": 0.04063711523366527,
+      "sd": 0.00602349618267431,
+      "min": 0.0348928117048538,
+      "max": 0.046636149179086865
+    },
+    "reduction_pp": {
+      "mean": 0.12033047067912817,
+      "sd": 0.0003649656931267161,
+      "min": 0.12002796692153272,
+      "max": 0.12085591702155785
+    },
+    "reduction_fraction": {
+      "mean": 0.7483503304414628,
+      "sd": 0.027619027250949398,
+      "min": 0.7205992816878188,
+      "max": 0.774960637134083
+    }
+  },
+  "across_seed_equivalent_side": {
+    "native_gap": {
+      "mean": 0.020109134515703054,
+      "sd": 0.007235937277541413,
+      "min": 0.010707947186144984,
+      "max": 0.026372532075826752
+    },
+    "eligibility_lock_gap": {
+      "mean": 0.006484918961202303,
+      "sd": 0.006726287571459943,
+      "min": -0.0017132278864543798,
+      "max": 0.012318545484164924
+    },
+    "reduction_pp": {
+      "mean": 0.013624215554500751,
+      "sd": 0.0008921105456901187,
+      "min": 0.012421175072599364,
+      "max": 0.014488658457333548
+    },
+    "reduction_fraction": {
+      "mean": 0.7568751739485498,
+      "sd": 0.2957754548296278,
+      "min": 0.5329024361882874,
+      "max": 1.159995922343652
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
   "status": "PASS",
-  "version": "3.3.3",
-  "tag": "v3.3.3",
-  "clean_environment": "three copies of the release tree: raw git archive (core.autocrlf=false), Windows clone with core.autocrlf=true, and git-archive zip extracted with Python zipfile; external Python 3.13 with numpy/pandas/matplotlib; no benchmark pixels or weights in the repository",
+  "version": "3.4.0",
+  "tag": "v3.4.0",
+  "clean_environment": "git archive zip of the staged v3.4.0 tree (same content as the GitHub/Zenodo source archive), extracted into an empty directory; fresh venv with Python 3.13.5 and the pinned revision/requirements.txt (numpy 2.2.6, pandas 2.2.3); an audit-hook guard refused every file open outside the extracted revision/ directory; no benchmark pixels or weights in the repository",
   "checks": {
-    "level_1_verify_release": "PASS: 797 files verified; repository exclusion policy passed (all three environments)",
-    "level_1_sha256sums": "SHA256SUMS.txt and ARTICLE_MATCHED_RELEASE_SHA256.txt: 797/797 OK in all three environments",
+    "level_1_verify_release": "PASS: 991 files verified; repository exclusion policy passed (git archive copy)",
+    "level_1_sha256sums": "SHA256SUMS.txt 991/991 OK; revision/SHA256SUMS.txt 192/192 OK",
     "level_1_final_evidence_v4": "FINAL_EVIDENCE_MANIFEST.json sha256 00513d016526909f2c431df12b056f93aa1ea83756497f385caca6164c01cb24 (as cited); its SHA256SUMS.txt 9/9 OK after CR stripping",
     "level_1_nested_checksums": "all shipped files listed by nested SHA256SUMS.txt files verify; the dense-grid post-processing lists also name 12 stdout/stderr run logs that are not shipped",
     "level_1_hash_references": "4,379 SHA-256 references in text files resolve byte for byte to shipped files; the remaining references name files that are not part of the repository (e.g. release assets and run logs)",
@@ -15,7 +15,15 @@
     "level_1_support_sensitivity_rerun": "scripts/run_support_sensitivity.py with data/support_sensitivity_20260909/inputs: the three CSV tables are byte-identical",
     "level_2_replay_driver": "not re-exercised for v3.3.3; the driver is unchanged since v3.3.0",
     "level_2_dataset_commands": "Blocked until AI-TOD-v2 and VisDrone are obtained under provider terms; no pixels are redistributed.",
-    "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved."
+    "level_3_training_status": "Exact from-scratch training not claimed; unpreserved fields remain explicitly marked not preserved.",
+    "revision_rerun_revision_analyses": "16/16 analyses (Tables 3, 4, 5, 7, 8, S39-S42, S47, Section 17) equal the archived outputs, estimates and bootstrap intervals, relative tolerance 1e-9; 33.5 min on one CPU Original 16-analysis run.",
+    "revision_checkpoint_tables_S43_S44": "recompute_checkpoint_tables.py: CSVs byte-identical, JSON numerically identical",
+    "revision_validation_replication_S45_S46": "analyze_replication.py and analyze_s2.py from heldout_inputs.tar.gz: estimates, intervals, counts and decision identical",
+    "revision_short_side_endpoint": "recompute_short_side_endpoint.py: identical",
+    "revision_point_estimates": "audit_stats.py: point_estimates_match, max abs error 1.9e-16",
+    "revision_S48_dataset_dependent": "boundary8 scripts rerun with the converted validation labels on the author machine: outputs identical (not part of the guarded run)",
+    "revision_figures": "Figures 2-5 regenerate from revision/figures; pixel-identical with Anaconda matplotlib 3.10.0 (FreeType 2.13.3); pip wheel (FreeType 2.6.1) differs in text rasterization and panel offsets",
+    "revision_s40_per_direction": "PASS: new runner case matched all archived estimates, bootstrap intervals and counts in both perturbations using only the bundled derived inputs."
   },
   "figures_needing_release_asset": [
     "Fig4",

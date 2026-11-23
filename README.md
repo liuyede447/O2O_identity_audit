@@ -1,6 +1,6 @@
 # Stress-Dependent Assignment Stability — reproducibility package
 
-Article-matched release `v3.3.3` for **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**. It supersedes the immutable `v3.3.2` predecessor. Zenodo archives this release. Cite the version DOI shown on its Zenodo record. The all-versions concept DOI is [10.5281/zenodo.22478276](https://doi.org/10.5281/zenodo.22478276); `RELEASE_NOTES.md` lists what changed.
+Release `v3.4.0` for **Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection**, matching the revised article. It keeps the `v3.3.3` package unchanged and adds `revision/`, which reproduces the results added in the first revision; `revision/README.md` maps each revised table and figure to its command. Zenodo archives this release. Cite the version DOI shown on its Zenodo record. The all-versions concept DOI is [10.5281/zenodo.22478276](https://doi.org/10.5281/zenodo.22478276); `RELEASE_NOTES.md` lists what changed.
 
 This package measures native post-training assignment states under controlled geometric stress. It is read-only: no weights are updated, and no detector-performance improvement or treatment effect is claimed. The article's primary mechanistic estimates are conditional on the audited seed-0 checkpoint. The cross-dataset, archived-stage, detector-contract, and four-seed analyses are sensitivity or replication analyses.
 
@@ -15,9 +15,9 @@ Run `verify_release.py` before you regenerate figures. `plot_fig2_lowfi.py` rewr
 
 The corrected support-sensitivity tables (Supplementary Tables S37 and S38) re-run with `scripts/run_support_sensitivity.py`; see `data/support_sensitivity_20260909/inputs/README.md`.
 
-Figures 4, 6, and S1 also need the complete `1/1024` dense-grid asset. It ships as four GitHub release parts, `.part01`–`.part04`, which you join with `scripts/join_dense_grid_asset.py`. Figure 5 also needs the `o2m_positive_count_scale_controls_v5` analysis run, which is not in this snapshot. Until that data is in place, those `plot_fig*.py` scripts stop with an explicit `FileNotFoundError` that names the missing input.
+Figures 4, 6, and S1 also need the complete `1/1024` dense-grid asset. It ships as four GitHub release parts, `.part01`–`.part04`, which you join with `scripts/join_dense_grid_asset.py`. The `o2m_positive_count_scale_controls_v5` records that Figure 5 needs are in `revision/figures/analysis_root/`; `revision/figures/render_fig5_s1_revision.py` draws the article's Figure 5 from them. Until the dense-grid asset is in place, the other `plot_fig*.py` scripts stop with an explicit `FileNotFoundError` that names the missing input.
 
-**Level 2 — replay reproduction.** Obtain AI-TOD-v2 from <https://github.com/Chasel-Tsui/AI-TOD-v2> and VisDrone from <https://github.com/VisDrone/VisDrone-Dataset>. Configure an absolute dataset path from `instrument_frozen/configs/aitod_v2.template.yaml`, and verify the four checkpoint assets against `RELEASE_ASSET_MANIFEST.csv`. The read-only replay driver is `instrument_frozen/scripts/assignment_stability_audit_v2.py` and needs a GPU. Run it with `--checkpoint <asset> --expected-sha256 <from RELEASE_ASSET_MANIFEST.csv> --data <your configured yaml> --output-dir <dir>`. Its outputs feed the downstream `scripts/analyze_*.py` analyses. End-to-end equivalence to the frozen per-object and per-direction intermediates depends on the GPU and runtime stack, so confirm it in your environment.
+**Level 2 — replay reproduction.** Obtain AI-TOD-v2 from <https://github.com/Chasel-Tsui/AI-TOD-v2> and VisDrone from <https://github.com/VisDrone/VisDrone-Dataset>. Configure an absolute dataset path from `instrument_frozen/configs/aitod_v2.template.yaml`, and verify the checkpoint assets against `RELEASE_ASSET_MANIFEST.csv` (four epoch-280 discovery checkpoints and, for the revision analyses, four final-epoch checkpoints). The read-only replay driver is `instrument_frozen/scripts/assignment_stability_audit_v2.py` and needs a GPU. Run it with `--checkpoint <asset> --expected-sha256 <from RELEASE_ASSET_MANIFEST.csv> --data <your configured yaml> --output-dir <dir>`. Its outputs feed the downstream `scripts/analyze_*.py` analyses. End-to-end equivalence to the frozen per-object and per-direction intermediates depends on the GPU and runtime stack, so confirm it in your environment.
 
 **Level 3 — training reproduction.** The released checkpoints and training contract are provided for provenance and replay. The initial pretrained-weight hash, the resolved `optimizer=auto` state, and the complete training lineage were **not preserved**, so exact from-scratch training reproduction is not claimed.
 
@@ -36,7 +36,7 @@ Pre-correction entries that remain in the frozen generation snapshot are listed 
 
 Figure 1 and Figure S1 contain third-party benchmark pixels. Only their audit source records are included; the image-bearing renders are not redistributed.
 
-The complete 1/1024 curve and the four protocol-matched checkpoints are attached as GitHub release assets and are not committed to Git history. The dense-grid gzip ships as four ordered parts (`.part01`–`.part04`). Concatenate them in order with `scripts/join_dense_grid_asset.py`, then check the result against the SHA-256 in the manifest.
+The complete 1/1024 curve, the four epoch-280 checkpoints and the four final-epoch checkpoints are attached as GitHub release assets and are not committed to Git history. The dense-grid gzip ships as four ordered parts (`.part01`–`.part04`). Concatenate them in order with `scripts/join_dense_grid_asset.py`, then check the result against the SHA-256 in the manifest.
 
 ## Line endings and checksums
 

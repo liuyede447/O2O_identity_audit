@@ -1,0 +1,85 @@
+{
+  "status": "point_estimates_match",
+  "max_abs_error": 1.942890293094024e-16,
+  "replicated_rows": {
+    "R1.2": 8,
+    "R1.3": 4,
+    "R1.4": 16,
+    "R2.1": 4,
+    "R2.2": 2
+  },
+  "official_validation_replication": {
+    "primary_from_archived_inputs": "estimates, intervals, gates, counts and decision matched exactly",
+    "s2_from_archived_inputs": "complete result matched exactly",
+    "original_frozen_input_hashes_verified": 25,
+    "primary_bootstrap_replicates": 5000,
+    "analysis_input_members": 12
+  },
+  "checkpoint_tables": {
+    "S43": "CSV and JSON matched; absolute input paths replaced by local paths",
+    "S44": "CSV and JSON matched byte-for-byte",
+    "analysis_input_members": 17,
+    "bootstrap_replicates": 5000
+  },
+  "short_side_strata": {
+    "status": "post hoc; not part of the prespecified decision",
+    "seeds_0_3_recombination_max_abs_diff": 8.326672684688674e-17,
+    "validation_recombined_gaps_pp": {
+      "native": 16.13,
+      "eligibility_lock": 3.32
+    },
+    "bootstrap_replicates": 5000
+  },
+  "short_side_matched_endpoint": {
+    "verified_from_compact_inputs": true,
+    "objects": 5227,
+    "directions": 20805,
+    "contributing_images": 281,
+    "paired_difference_pp": {
+      "point": 10.644250356795506,
+      "ci_95": [
+        9.078603566190326,
+        12.424646973068135
+      ]
+    },
+    "bootstrap_replicates": 5000
+  },
+  "revision_analysis_reruns": {
+    "command": "python -B rerun_revision_analyses.py --output-dir rerun_check",
+    "analyses": 17,
+    "items": [
+      "Table 3/S39",
+      "Table 4/S40 (object level)",
+      "Results and Table S40 (RFLA/ATSS per-direction sensitivity)",
+      "Table 5",
+      "Table 7/S41 (7 direction sets)",
+      "Table 8/S42",
+      "Table S47 and Section 17"
+    ],
+    "result_pinned_env": "16 previously verified outputs plus the separately verified S40 per-direction output equal the archived outputs (relative tolerance 1e-9); Python 3.13.5, numpy 2.2.6, pandas 2.2.3",
+    "result_newer_env": "15/16 in the original test with numpy 2.5.5 and pandas 3.1.1; the Section 17 aspect-band sensitivity moves one validation GT across an exact ratio edge (700 -> 701 targets)",
+    "input_archive_members": 42,
+    "bootstrap_replicates": 5000,
+    "open_guard": "original 16-analysis test used an audit-hook guard for external file opens",
+    "s40_per_direction": {
+      "command": "python -B rerun_revision_analyses.py --output-dir s40_direction_check --only s40_per_direction",
+      "status": "PASS",
+      "common_gt_count": 5701,
+      "fixed_direction_count": 22740,
+      "size_scaled_direction_count": 22732,
+      "seed": 20261123,
+      "bootstrap_replicates": 5000
+    }
+  },
+  "stride8_tie_tables_S48": {
+    "status": "needs the converted validation labels and the v3.3.3 ultralytics_local runtime",
+    "rerun_2026_11_22": "boundary8_per_gt.csv, boundary8_tie_events.csv, boundary8_mechanism.json and boundary8_ties.json reproduced exactly"
+  },
+  "figures": {
+    "figures_2_to_5": "regenerated pixel-identical to the article PNGs with Anaconda matplotlib 3.10.0 (FreeType 2.13.3), Pillow 12.2.0 and Arial; pip wheels (FreeType 2.6.1) differ in text rasterization and panel offsets only",
+    "figure_S1_and_1": "not redistributed (benchmark pixels)"
+  },
+  "checkpoints": {
+    "final_epoch_seeds_0_3": "SHA-256 equal to checkpoint_sha256 in each replay manifest; distributed as release assets"
+  }
+}

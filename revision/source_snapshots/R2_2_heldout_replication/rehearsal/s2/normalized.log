@@ -1,0 +1,102 @@
+[34m[1mval: [0mFast image access  (ping: 4.32.4 ms, read: 15.01.5 MB/s, size: 847.5 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 2.7Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+{
+  "manifest": {
+    "status": "complete",
+    "protocol": "normalized_o2m_o2o_replay_and_incremental_value_v1",
+    "read_only": true,
+    "checkpoint": "E:\\two_paper\\beifen\\archive_backup\\artifacts\\analysis_runs\\detect\\experiments\\baseline_13zone\\yolo26s_aitodv2_baseline_13zone_e300_s0\\weights\\last.pt",
+    "checkpoint_sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b",
+    "checkpoint_role": "pre-specified replication checkpoint",
+    "detector_contract": "yolo26",
+    "native_o2m_topk": 10,
+    "native_o2o_topk": 7,
+    "data": "E:\\two_paper\\beifen\\publication_reproducible\\configs\\aitod_v2_local_g.yaml",
+    "selection_seed": 20260823,
+    "selected_images_source": "G:\\revision_20261120\\checkpoint_last\\seed0\\selected_images.csv",
+    "requested_images": 300,
+    "stratum_population_counts": {
+      "t_only": 7018,
+      "s_only": 76,
+      "t_and_s": 6090
+    },
+    "stratum_sample_allocation": {
+      "t_and_s": 138,
+      "t_only": 160,
+      "s_only": 2
+    },
+    "stress_mode": "normalized",
+    "normalized_shift": "delta_x = delta_y = kappa * sqrt(width * height)",
+    "normalization": "equivalent_side",
+    "kappa": 0.0625,
+    "bootstrap_replicates": 5000,
+    "selected_images": 300,
+    "focal_gt_by_bin": {
+      "s_16_32": 995,
+      "t_8_16": 6449
+    },
+    "audited_gt_by_bin": {
+      "s_16_32": 992,
+      "t_8_16": 6440
+    },
+    "per_gt_rows": 7432,
+    "per_direction_rows": 29612,
+    "audit_elapsed_sec": 547.9126952999995,
+    "common_valid_normalized_gt": 6373,
+    "total_elapsed_sec": 565.6752326999995,
+    "outputs": [
+      "per_direction.csv",
+      "per_gt.csv",
+      "normalized_perturbation_summary.json"
+    ]
+  },
+  "normalized": {
+    "estimand": "common-valid O2M/O2O margins; population-weighted 8-16 minus 16-32 rates",
+    "n_gt": 6373,
+    "n_images": 288,
+    "point": {
+      "o2o_8_16": 0.09009363738095996,
+      "o2o_16_32": 0.08882518376940535,
+      "o2o_scale_contrast": 0.0012684536115546152,
+      "o2m_8_16": 0.5744760895313853,
+      "o2m_16_32": 0.7466524792004301,
+      "o2m_scale_contrast": -0.1721763896690448,
+      "paired_difference_in_scale_gradients": 0.17344484328059942
+    },
+    "ci_95": {
+      "o2o_8_16": [
+        0.07686298810176918,
+        0.10512896739102603
+      ],
+      "o2o_16_32": [
+        0.05839630155691374,
+        0.12664003049088754
+      ],
+      "o2o_scale_contrast": [
+        -0.03016523122715006,
+        0.029390022048967252
+      ],
+      "o2m_8_16": [
+        0.550724465374898,
+        0.5991362090201348
+      ],
+      "o2m_16_32": [
+        0.6905864245641398,
+        0.7963206281198043
+      ],
+      "o2m_scale_contrast": [
+        -0.22331161530887603,
+        -0.12057054804917086
+      ],
+      "paired_difference_in_scale_gradients": [
+        0.11217705055172535,
+        0.2337554978933503
+      ]
+    },
+    "bootstrap_replicates": 5000,
+    "bootstrap_unit": "image cluster within outcome-blind sampling stratum"
+  }
+}

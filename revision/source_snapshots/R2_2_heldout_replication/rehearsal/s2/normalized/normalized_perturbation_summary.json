@@ -1,0 +1,46 @@
+{
+  "estimand": "common-valid O2M/O2O margins; population-weighted 8-16 minus 16-32 rates",
+  "n_gt": 6373,
+  "n_images": 288,
+  "point": {
+    "o2o_8_16": 0.09009363738095996,
+    "o2o_16_32": 0.08882518376940535,
+    "o2o_scale_contrast": 0.0012684536115546152,
+    "o2m_8_16": 0.5744760895313853,
+    "o2m_16_32": 0.7466524792004301,
+    "o2m_scale_contrast": -0.1721763896690448,
+    "paired_difference_in_scale_gradients": 0.17344484328059942
+  },
+  "ci_95": {
+    "o2o_8_16": [
+      0.07686298810176918,
+      0.10512896739102603
+    ],
+    "o2o_16_32": [
+      0.05839630155691374,
+      0.12664003049088754
+    ],
+    "o2o_scale_contrast": [
+      -0.03016523122715006,
+      0.029390022048967252
+    ],
+    "o2m_8_16": [
+      0.550724465374898,
+      0.5991362090201348
+    ],
+    "o2m_16_32": [
+      0.6905864245641398,
+      0.7963206281198043
+    ],
+    "o2m_scale_contrast": [
+      -0.22331161530887603,
+      -0.12057054804917086
+    ],
+    "paired_difference_in_scale_gradients": [
+      0.11217705055172535,
+      0.2337554978933503
+    ]
+  },
+  "bootstrap_replicates": 5000,
+  "bootstrap_unit": "image cluster within outcome-blind sampling stratum"
+}

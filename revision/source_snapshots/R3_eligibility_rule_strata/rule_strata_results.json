@@ -1,0 +1,303 @@
+{
+  "note": "post hoc exploratory; not part of the preregistered decision rule",
+  "discovery_seed0_epoch280": {
+    "point": {
+      "native|tiny_rule": 18.18146222593556,
+      "native|tiny_norule": 24.525874610258196,
+      "native|small_norule": 7.764366406267411,
+      "eligibility_lock|tiny_rule": 15.767461036310065,
+      "eligibility_lock|tiny_norule": 7.373009065050981,
+      "eligibility_lock|small_norule": 5.545976004476722,
+      "native_gap|tiny_rule": 10.41709581966815,
+      "locked_gap|tiny_rule": 10.221485031833344,
+      "reduction|tiny_rule": 0.19561078783480595,
+      "drop|tiny_rule": 2.4140011896254947,
+      "native_gap|tiny_norule": 16.761508203990783,
+      "locked_gap|tiny_norule": 1.8270330605742595,
+      "reduction|tiny_norule": 14.934475143416522,
+      "drop|tiny_norule": 17.152865545207213
+    },
+    "ci_95": {
+      "native|tiny_rule": [
+        14.842724286144914,
+        21.87527127048462
+      ],
+      "native|tiny_norule": [
+        22.35395458694903,
+        26.860206493265025
+      ],
+      "native|small_norule": [
+        4.795103053904426,
+        11.364907566639962
+      ],
+      "eligibility_lock|tiny_rule": [
+        12.490250624335838,
+        19.368192577475853
+      ],
+      "eligibility_lock|tiny_norule": [
+        6.192837401415781,
+        8.572264937564189
+      ],
+      "eligibility_lock|small_norule": [
+        3.401699536725019,
+        8.056849212342069
+      ],
+      "native_gap|tiny_rule": [
+        6.841597176031858,
+        14.063846894933526
+      ],
+      "locked_gap|tiny_rule": [
+        6.778602417629037,
+        13.563942346009279
+      ],
+      "reduction|tiny_rule": [
+        -1.852550087814775,
+        2.198115079217482
+      ],
+      "drop|tiny_rule": [
+        1.3533296485123454,
+        3.7305806977741662
+      ],
+      "native_gap|tiny_norule": [
+        12.823297677855564,
+        20.351388244044628
+      ],
+      "locked_gap|tiny_norule": [
+        -0.8251331785907708,
+        4.113375843029653
+      ],
+      "reduction|tiny_norule": [
+        12.73641879394644,
+        17.04769701638862
+      ],
+      "drop|tiny_norule": [
+        15.61992797203156,
+        18.73702897720129
+      ]
+    },
+    "counts": {
+      "tiny_rule": {
+        "gt": 1243,
+        "images": 154,
+        "weight_share_within_size_bin": 0.1980174662506054
+      },
+      "tiny_norule": {
+        "gt": 5030,
+        "images": 279,
+        "weight_share_within_size_bin": 0.8019825337493948
+      },
+      "small_norule": {
+        "gt": 992,
+        "images": 142,
+        "weight_share_within_size_bin": 1.0
+      },
+      "small_rule": {
+        "gt": 0,
+        "images": 0,
+        "weight_share_within_size_bin": 0.0
+      }
+    },
+    "undefined_replicates": {
+      "native|tiny_rule": 0,
+      "native|tiny_norule": 0,
+      "native|small_norule": 0,
+      "eligibility_lock|tiny_rule": 0,
+      "eligibility_lock|tiny_norule": 0,
+      "eligibility_lock|small_norule": 0,
+      "native_gap|tiny_rule": 0,
+      "locked_gap|tiny_rule": 0,
+      "reduction|tiny_rule": 0,
+      "drop|tiny_rule": 0,
+      "native_gap|tiny_norule": 0,
+      "locked_gap|tiny_norule": 0,
+      "reduction|tiny_norule": 0,
+      "drop|tiny_norule": 0
+    }
+  },
+  "validation_seed0_final_epoch": {
+    "point": {
+      "native|tiny_rule": 21.104495914784046,
+      "native|tiny_norule": 23.59979642924914,
+      "native|small_norule": 7.03295990454741,
+      "eligibility_lock|tiny_rule": 17.36267596678101,
+      "eligibility_lock|tiny_norule": 6.5615050291604,
+      "eligibility_lock|small_norule": 5.114879930579935,
+      "native_gap|tiny_rule": 14.071536010236635,
+      "locked_gap|tiny_rule": 12.247796036201072,
+      "reduction|tiny_rule": 1.8237399740355626,
+      "drop|tiny_rule": 3.741819948003039,
+      "native_gap|tiny_norule": 16.566836524701728,
+      "locked_gap|tiny_norule": 1.4466250985804647,
+      "reduction|tiny_norule": 15.120211426121264,
+      "drop|tiny_norule": 17.038291400088738
+    },
+    "ci_95": {
+      "native|tiny_rule": [
+        17.40106169814519,
+        24.473800307401284
+      ],
+      "native|tiny_norule": [
+        21.59504974710705,
+        25.737121407788962
+      ],
+      "native|small_norule": [
+        5.750962111899753,
+        8.42696753559735
+      ],
+      "eligibility_lock|tiny_rule": [
+        13.92220459537384,
+        20.520750095599304
+      ],
+      "eligibility_lock|tiny_norule": [
+        5.443175624509349,
+        7.721646582511726
+      ],
+      "eligibility_lock|small_norule": [
+        3.9657508589981787,
+        6.389723236701423
+      ],
+      "native_gap|tiny_rule": [
+        10.149260029639924,
+        17.74783665870011
+      ],
+      "locked_gap|tiny_rule": [
+        8.673874497313346,
+        15.60678117943518
+      ],
+      "reduction|tiny_rule": [
+        0.7425029218258249,
+        2.8272166639454634
+      ],
+      "drop|tiny_rule": [
+        2.928251796283497,
+        4.535523293418789
+      ],
+      "native_gap|tiny_norule": [
+        14.3822291954383,
+        18.92338495170379
+      ],
+      "locked_gap|tiny_norule": [
+        -0.026017799740977725,
+        2.827252093769729
+      ],
+      "reduction|tiny_norule": [
+        13.68203251661398,
+        16.53757291324872
+      ],
+      "drop|tiny_norule": [
+        15.69970827028109,
+        18.347742422723485
+      ]
+    },
+    "counts": {
+      "tiny_rule": {
+        "gt": 2298,
+        "images": 282,
+        "weight_share_within_size_bin": 0.173364570994417
+      },
+      "tiny_norule": {
+        "gt": 10958,
+        "images": 561,
+        "weight_share_within_size_bin": 0.826635429005583
+      },
+      "small_norule": {
+        "gt": 2190,
+        "images": 288,
+        "weight_share_within_size_bin": 1.0
+      },
+      "small_rule": {
+        "gt": 0,
+        "images": 0,
+        "weight_share_within_size_bin": 0.0
+      }
+    },
+    "undefined_replicates": {
+      "native|tiny_rule": 0,
+      "native|tiny_norule": 0,
+      "native|small_norule": 0,
+      "eligibility_lock|tiny_rule": 0,
+      "eligibility_lock|tiny_norule": 0,
+      "eligibility_lock|small_norule": 0,
+      "native_gap|tiny_rule": 0,
+      "locked_gap|tiny_rule": 0,
+      "reduction|tiny_rule": 0,
+      "drop|tiny_rule": 0,
+      "native_gap|tiny_norule": 0,
+      "locked_gap|tiny_norule": 0,
+      "reduction|tiny_norule": 0,
+      "drop|tiny_norule": 0
+    }
+  },
+  "validation_small_only_influence": {
+    "s_only_images": [
+      "259aa4443",
+      "9999984_00000_d_0000076__0_0",
+      "9cfcf6c98"
+    ],
+    "full": {
+      "fixed_1px|native_gap": [
+        16.134239821509304,
+        13.958444621212468,
+        18.4191313454706
+      ],
+      "fixed_1px|eligibility_lock_gap": [
+        3.3191654644184334,
+        1.586701914669823,
+        5.132227774914408
+      ],
+      "fixed_1px|reduction_pp": [
+        12.815074357090872,
+        11.609307562745256,
+        14.098857805867123
+      ],
+      "fixed_1px|native_small": [
+        7.03295990454741,
+        5.750962111899752,
+        8.42696753559735
+      ]
+    },
+    "without_s_only": {
+      "fixed_1px|native_gap": [
+        16.117082098804445,
+        13.951101922192338,
+        18.441809348572512
+      ],
+      "fixed_1px|eligibility_lock_gap": [
+        3.311146083024034,
+        1.5296857642962738,
+        5.159925004550028
+      ],
+      "fixed_1px|reduction_pp": [
+        12.805936015780414,
+        11.604723328498551,
+        14.140819665389836
+      ],
+      "fixed_1px|native_small": [
+        7.044790593524232,
+        5.729089273167787,
+        8.461636757802994
+      ]
+    },
+    "leave_one_out_point": {
+      "259aa4443": {
+        "fixed_1px|native_gap": 16.125958842333144,
+        "fixed_1px|eligibility_lock_gap": 3.317601896499447,
+        "fixed_1px|reduction_pp": 12.808356945833696,
+        "fixed_1px|native_small": 7.035913849995539
+      },
+      "9999984_00000_d_0000076__0_0": {
+        "fixed_1px|native_gap": 16.128329448170287,
+        "fixed_1px|eligibility_lock_gap": 3.314867011080965,
+        "fixed_1px|reduction_pp": 12.81346243708932,
+        "fixed_1px|native_small": 7.038870277886429
+      },
+      "9cfcf6c98": {
+        "fixed_1px|native_gap": 16.13128587606118,
+        "fixed_1px|eligibility_lock_gap": 3.3170171404561586,
+        "fixed_1px|reduction_pp": 12.814268735605022,
+        "fixed_1px|native_small": 7.035913849995539
+      }
+    },
+    "gts_in_s_only_images": 5
+  }
+}

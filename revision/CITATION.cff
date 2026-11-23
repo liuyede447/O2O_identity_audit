@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software or its derived audit data, cite the associated manuscript and identify this revision reproducibility bundle."
+title: "Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection"
+type: software
+version: "3.4.0"
+repository-code: "https://github.com/liuyede447/O2O_identity_audit"
+url: "https://github.com/liuyede447/O2O_identity_audit"
+license: AGPL-3.0-only
+authors:
+  - family-names: Liu
+    given-names: Yede
+    orcid: "https://orcid.org/0009-0004-1760-860X"
+    affiliation: "Sichuan Normal University"
+  - family-names: Wang
+    given-names: Fang
+    orcid: "https://orcid.org/0009-0007-3029-4547"
+    affiliation: "Sichuan Normal University"
+  - family-names: Li
+    given-names: Jun
+    affiliation: "Sichuan Normal University"
+keywords:
+  - tiny-object detection
+  - one-to-one assignment
+  - assignment-state geometry
+  - aerial imagery
+  - reproducibility

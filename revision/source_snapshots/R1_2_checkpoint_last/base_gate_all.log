@@ -1,0 +1,49 @@
+[34m[1mval: [0mFast image access  (ping: 5.11.2 ms, read: 15.23.6 MB/s, size: 858.4 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 2.3Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 0 e280: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 4.41.6 ms, read: 18.82.3 MB/s, size: 842.0 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 1.8Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 1 e280: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 3.01.2 ms, read: 21.45.5 MB/s, size: 922.6 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 5.3Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 2 e280: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 3.21.9 ms, read: 15.38.9 MB/s, size: 926.5 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 4.2Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 3 e280: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 2.21.0 ms, read: 17.78.0 MB/s, size: 912.2 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 2.9Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 0 last: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 1.61.2 ms, read: 315.1664.6 MB/s, size: 958.2 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 4.2Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 1 last: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 2.30.9 ms, read: 12.810.3 MB/s, size: 755.0 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 4.9Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 2 last: 8282 GT rows
+[34m[1mval: [0mFast image access  (ping: 1.51.2 ms, read: 8.44.7 MB/s, size: 751.9 KB)
+[K[34m[1mval: [0mScanning G:\data\processed\AI-TOD-v2-YOLO\val\labels.cache... 14018 images, 18 backgrounds, 0 corrupt: 100% ━━━━━━━━━━━━ 14018/14018 6.5Git/s 0.0s
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\0000140_00118_d_0000002__600_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\111__0_0.png: 1 duplicate labels removed
+[34m[1mval: [0mG:\data\processed\AI-TOD-v2-YOLO\val\images\2078__2400_1800.png: 1 duplicate labels removed
+seed 3 last: 8282 GT rows
+wrote E:\two_paper\00_当前稿件_NEUCOM-D-26-20749\05_审稿意见与回复\experiments\R1_2_checkpoint_last\base_gate_all.csv

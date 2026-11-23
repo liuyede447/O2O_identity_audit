@@ -1,0 +1,26 @@
+{
+  "seed0": {
+    "epoch280": "E:\\two_paper\\beifen\\\u4fee\u590d\\post_submission_audit_20260908\\inputs\\eligibility_lock_per_gt.csv",
+    "final_epoch": "G:\\revision_20261120\\checkpoint_last\\seed0\\per_gt.csv",
+    "epoch280_gate": "E:\\two_paper\\beifen\\\u4fee\u590d\\post_submission_audit_20260908\\inputs\\fixed_branch_per_gt.csv",
+    "competition_flag": "E:\\two_paper\\beifen\\\u4fee\u590d\\post_submission_audit_20260908\\inputs\\fixed_branch_per_gt.csv"
+  },
+  "seed1": {
+    "epoch280": "G:\\revision_20261120\\eligibility_lock\\seed1\\per_gt.csv",
+    "final_epoch": "G:\\revision_20261120\\checkpoint_last\\seed1\\per_gt.csv",
+    "epoch280_gate": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260905_multiseed_equivalent_s1_v1\\per_gt.csv",
+    "competition_flag": "E:\\two_paper\\beifen\\publication_reproducible\\runs\\20260905_multiseed_fixed_s1_v1\\per_gt.csv"
+  },
+  "seed2": {
+    "epoch280": "G:\\revision_20261120\\eligibility_lock\\seed2\\per_gt.csv",
+    "final_epoch": "G:\\revision_20261120\\checkpoint_last\\seed2\\per_gt.csv",
+    "epoch280_gate": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s2e300_equiv_k00625\\per_gt.csv",
+    "competition_flag": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s2e300_equiv_k00625\\per_gt.csv"
+  },
+  "seed3": {
+    "epoch280": "G:\\revision_20261120\\eligibility_lock\\seed3\\per_gt.csv",
+    "final_epoch": "G:\\revision_20261120\\checkpoint_last\\seed3\\per_gt.csv",
+    "epoch280_gate": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s3e300_equiv_k00625\\per_gt.csv",
+    "competition_flag": "E:\\two_paper\\beifen\\publication_reproducible\\results\\reviewer_controls_20260829\\ai_s3e300_equiv_k00625\\per_gt.csv"
+  }
+}

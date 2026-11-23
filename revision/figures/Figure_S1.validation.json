@@ -1,0 +1,194 @@
+{
+  "figure": "FigS1",
+  "minimum_canvas_font_pt": 8.7,
+  "source_artifacts": {
+    "primary-checkpoint qualitative candidate trace": {
+      "path": "figures_final/source_data/figs1_primary_trace/primary_qualitative_trace.json",
+      "sha256": "eb85f4f399eebda1284ac1997622c8a2b88d6cb91bf27020723d09cadb44ec46",
+      "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+      "authority": "SOURCE_ADDENDUM",
+      "role": "primary-checkpoint qualitative candidate trace"
+    },
+    "primary-checkpoint trace validation": {
+      "path": "figures_final/source_data/figs1_primary_trace/validation.json",
+      "sha256": "ad0f2731de4a24caac1328d5d7be98122bfb5bebfb953080960e7a4e96571960",
+      "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+      "authority": "SOURCE_ADDENDUM",
+      "role": "primary-checkpoint trace validation"
+    },
+    "real AI-TOD-v2 source image": {
+      "path": "figures_final/source_data/figs1_primary_trace/0000170_00401_d_0000001__160_0.png",
+      "sha256": "a0a38c98f96b9b5bd93f14464944ba19320c1ed8b0db49036d4b0eda680f43fa",
+      "evidence_id": "ADD-FIG-S1-PRIMARY-TRACE-V1",
+      "authority": "SOURCE_ADDENDUM",
+      "role": "real AI-TOD-v2 source image"
+    },
+    "frozen fixed-pixel replay identities": {
+      "path": "results/measurement_validation_20260831/fixed_branch_replay_v1/per_direction.csv",
+      "sha256": "930a50dadb0abdfdcede0de344cb93ed2f68c0c5a4c1f183a2f70ddde8be87f8",
+      "evidence_id": "EV-STRESS-CONTRACT-PRIMARY-V1",
+      "authority": "final_evidence_v3",
+      "role": "frozen fixed-pixel replay identities"
+    }
+  },
+  "coordinate_checks": [
+    {
+      "status": "PASS",
+      "coordinate_comparisons": 168,
+      "maximum_absolute_difference": 0.0,
+      "candidate_mismatches": []
+    },
+    {
+      "status": "PASS",
+      "boxes_within_image": true,
+      "overlays_within_crops": true,
+      "expected_case_rows": {
+        "Stable": 8,
+        "Fragile": 8,
+        "Undefined": 5
+      },
+      "actual_case_rows": {
+        "Fragile": 8,
+        "Stable": 8,
+        "Undefined": 5
+      },
+      "total_overlay_rows": 21
+    },
+    {
+      "status": "PASS",
+      "detected_nonpadding_bbox_xyxy": [
+        0,
+        0,
+        800,
+        540
+      ],
+      "displayed_crops": 9,
+      "records": [
+        {
+          "case": "Stable",
+          "column": "context",
+          "crop_xyxy": [
+            331.5,
+            353.0000305175781,
+            511.5,
+            533.0000305175781
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Stable",
+          "column": "base",
+          "crop_xyxy": [
+            391.5,
+            413.0000305175781,
+            451.5,
+            473.0000305175781
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Stable",
+          "column": "shift",
+          "crop_xyxy": [
+            391.5,
+            413.0000305175781,
+            451.5,
+            473.0000305175781
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Fragile",
+          "column": "context",
+          "crop_xyxy": [
+            429.0,
+            360.0,
+            609.0,
+            540.0
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Fragile",
+          "column": "base",
+          "crop_xyxy": [
+            495.0,
+            477.5,
+            543.0,
+            525.5
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Fragile",
+          "column": "shift",
+          "crop_xyxy": [
+            495.0,
+            477.5,
+            543.0,
+            525.5
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Undefined",
+          "column": "context",
+          "crop_xyxy": [
+            157.5,
+            228.0,
+            337.5,
+            408.0
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Undefined",
+          "column": "base",
+          "crop_xyxy": [
+            231.5,
+            302.0,
+            263.5,
+            334.0
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        },
+        {
+          "case": "Undefined",
+          "column": "shift",
+          "crop_xyxy": [
+            231.5,
+            302.0,
+            263.5,
+            334.0
+          ],
+          "within_nonpadding_bbox": true,
+          "all_black_rows": 0
+        }
+      ],
+      "failures": []
+    }
+  ],
+  "text_geometry": {
+    "status": "PASS",
+    "clipped_text": [],
+    "text_over_image_intrusions": [],
+    "in_image_annotation_count": 0
+  },
+  "runner_overlay_count": 4,
+  "assigned_overlay_count": 5,
+  "original_plot_script_sha256": "6e82d580a279b5fb8bca61b633c3493fe3fc9faec2cab5f394b50cb29f389d49",
+  "status": "PASS",
+  "outputs": {
+    "pdf": "10d68d7df2707c84ca38f1ba57c9aa1cbd26949f1accc054de392d79db8f939a",
+    "svg": "7f475dc4a2d9e067020fd27ff26a704a623cf5de6db6ca2e4ec55ad412e74bcf",
+    "png": "8f6022668c8ca3d1e566cbb3b34abad84a41f2a378cc1939a0ea55755fd2f183"
+  }
+}

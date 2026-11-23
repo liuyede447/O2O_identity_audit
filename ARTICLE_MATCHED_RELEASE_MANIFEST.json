@@ -1,7 +1,7 @@
 {
-  "status": "ARTICLE_MATCHED_V3.3.3_READY",
-  "version": "3.3.3",
-  "tag": "v3.3.3",
+  "status": "ARTICLE_MATCHED_V3.4.0_READY",
+  "version": "3.4.0",
+  "tag": "v3.4.0",
   "zenodo_doi": null,
   "article_manuscript_sources_in_repo": false,
   "required_content": [
@@ -18,7 +18,9 @@
     "read-only replay driver (instrument_frozen/scripts/assignment_stability_audit_v2.py)",
     "corrected dense common-trajectory support sensitivity",
     "base-defined post-submission correction (data/post_submission_correction_20260908)",
-    "corrected Figure 3 renderer (figures/src/rebuild_fig3_corrected.py)"
+    "corrected Figure 3 renderer (figures/src/rebuild_fig3_corrected.py)",
+    "revision/ bundle for the first-revision analyses",
+    "four final-epoch checkpoints (release assets)"
   ],
   "explicit_exclusions": [
     "main.tex",
@@ -31,7 +33,7 @@
     "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "repository_file_count": 803,
+  "repository_file_count": 999,
   "release_assets": [
     {
       "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
@@ -72,12 +74,32 @@
       "name": "yolo26s_aitodv2_seed3_best_epoch280.pt",
       "bytes": 60231446,
       "sha256": "28fee07d38f6914a4e0d74b574f2f4318314f42e02b1160de495b2082af60ff2"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed0_final_epoch.pt",
+      "bytes": 20396990,
+      "sha256": "46ff9c348e4eda88d439b776717d2dcfb3c386ea8833dc681e77ea1aa01d349b"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed1_final_epoch.pt",
+      "bytes": 20396990,
+      "sha256": "1c689b3e6ae7dd27009fc911dc1e8d7928aa4aff9327dfc627ce770da4e12f5f"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed2_final_epoch.pt",
+      "bytes": 20396990,
+      "sha256": "b47855abfb339a682299b40dca54298c62f2d897f6a542af2134051db9a352f7"
+    },
+    {
+      "name": "yolo26s_aitodv2_seed3_final_epoch.pt",
+      "bytes": 20396990,
+      "sha256": "326a5bc8ca16a390f5ba93fa8a99c4314eaa0e83648aefc866906b9b54f836ae"
     }
   ],
   "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request. Zenodo assigns the version DOI when this GitHub release is archived; cite the version DOI displayed on that record.",
   "predecessor": {
-    "tag": "v3.3.2",
-    "zenodo_doi": "10.5281/zenodo.22684364"
+    "tag": "v3.3.3",
+    "zenodo_doi": "10.5281/zenodo.22744638"
   },
   "zenodo_concept_doi": "10.5281/zenodo.22478276"
 }
