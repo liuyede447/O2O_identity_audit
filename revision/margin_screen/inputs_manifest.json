@@ -1,0 +1,242 @@
+[
+  {
+    "file": "inputs/cardinal.csv.gz",
+    "rows": 29724,
+    "sha256": "f3a98c304bc203ea07a56c3d6d4370606a4accec1e09ded23852c79f1a858d4c",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "size_bin",
+      "o2o_base_margin",
+      "rho_R_event_observed",
+      "rho_R_competing_censored",
+      "rho_R_right_censored",
+      "rho_R_censor_reason",
+      "rho_R_radius",
+      "rho_R_censor_radius",
+      "o2o_base_active",
+      "o2o_event_observed",
+      "o2o_radius",
+      "o2o_censor_radius",
+      "o2o_first_divergence"
+    ]
+  },
+  {
+    "file": "inputs/diagonal.csv.gz",
+    "rows": 29724,
+    "sha256": "020d50a5978c656aede1de97caf51e11117d834b4d15bf10f0fea3c10044bbab",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "size_bin",
+      "o2o_base_margin",
+      "rho_R_event_observed",
+      "rho_R_competing_censored",
+      "rho_R_right_censored",
+      "rho_R_censor_reason",
+      "rho_R_radius",
+      "rho_R_censor_radius",
+      "o2o_base_active",
+      "o2o_event_observed",
+      "o2o_radius",
+      "o2o_censor_radius",
+      "o2o_first_divergence"
+    ]
+  },
+  {
+    "file": "inputs/frozen_cif.csv.gz",
+    "rows": 4566,
+    "sha256": "69363a5da3faa6ea3890836b0a0b36e5a2f85e36c307b55a39f8fdf15a2e9ba1",
+    "columns": [
+      "size_group",
+      "estimand",
+      "radius",
+      "metric",
+      "estimate",
+      "ci_low",
+      "ci_high"
+    ]
+  },
+  {
+    "file": "inputs/fixed_seed0.csv.gz",
+    "rows": 7434,
+    "sha256": "8dbb2cddf757183c9d11f5f08d6c94382cddaaf55f959d767b7af377bfa9cca2",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "o2o_active",
+      "o2o_runner",
+      "o2o_fragile"
+    ]
+  },
+  {
+    "file": "inputs/oof_seed0.csv.gz",
+    "rows": 6410,
+    "sha256": "d71e37a7ed322351ffa979127e132c0c1fc54e33749edfe4de2d2d7e62eb8dce",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "log_area",
+      "log1p_o2m_count",
+      "log_q_active",
+      "active_ciou",
+      "margin",
+      "oof_fold",
+      "fn_at_iou50",
+      "o2o_fragile",
+      "prob_M2_plus_active_ciou",
+      "prob_M3_plus_margin"
+    ]
+  },
+  {
+    "file": "inputs/oof_visdrone.csv.gz",
+    "rows": 13946,
+    "sha256": "eecbcd64cdb7cd5b1a3350c3fab4628c5a7bfbce2bc1ef8a3af04741908a88cf",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "log_area",
+      "log1p_o2m_count",
+      "log_q_active",
+      "active_ciou",
+      "margin",
+      "oof_fold",
+      "fn_at_iou50",
+      "o2o_fragile",
+      "prob_M2_plus_active_ciou",
+      "prob_M3_plus_margin"
+    ]
+  },
+  {
+    "file": "inputs/endpoints_seed0.csv.gz",
+    "rows": 7432,
+    "sha256": "42a6a4ea327c453cbbbaaf2fe41c147fed875b399dd03d54f7cad278aa993120",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "o2o_margin",
+      "q_active",
+      "active_ciou",
+      "area",
+      "o2m_positive_count",
+      "o2o_active",
+      "o2o_runner",
+      "o2o_fragile"
+    ]
+  },
+  {
+    "file": "inputs/endpoints_seed1.csv.gz",
+    "rows": 7432,
+    "sha256": "08fdaedeb9393f17610ae70ae0b80cb034aa4cd1fc49ad125d5070300ef46009",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "o2o_margin",
+      "q_active",
+      "active_ciou",
+      "area",
+      "o2m_positive_count",
+      "o2o_active",
+      "o2o_runner",
+      "o2o_fragile"
+    ]
+  },
+  {
+    "file": "inputs/endpoints_seed2.csv.gz",
+    "rows": 7432,
+    "sha256": "5c1d47711b20b938f77636ddfa9787d84bfca2c17df24f49cd4d50b0181b6054",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "o2o_margin",
+      "q_active",
+      "active_ciou",
+      "area",
+      "o2m_positive_count",
+      "o2o_active",
+      "o2o_runner",
+      "o2o_fragile"
+    ]
+  },
+  {
+    "file": "inputs/endpoints_seed3.csv.gz",
+    "rows": 7432,
+    "sha256": "162b94c72867395b58fc2a679c944255589f5a0aa323272ca8cc2508778a0fec",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stratum",
+      "sampling_weight",
+      "o2o_margin",
+      "q_active",
+      "active_ciou",
+      "area",
+      "o2m_positive_count",
+      "o2o_active",
+      "o2o_runner",
+      "o2o_fragile"
+    ]
+  },
+  {
+    "file": "inputs/lock_seed0.csv.gz",
+    "rows": 59228,
+    "sha256": "a15f844a387901b2622b6ea35e4c84184a1296d3bc364022d4ade299ead0f7f8",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stress",
+      "native_o2o_flip",
+      "eligibility_lock_o2o_flip"
+    ]
+  },
+  {
+    "file": "inputs/lock_seed1.csv.gz",
+    "rows": 59228,
+    "sha256": "020c446a910bd07cc3bc14b68b0665a091d9433cad8ace709174bbbb0ab8f300",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stress",
+      "native_o2o_flip",
+      "eligibility_lock_o2o_flip"
+    ]
+  },
+  {
+    "file": "inputs/lock_seed2.csv.gz",
+    "rows": 59228,
+    "sha256": "bf5bb3eb2fa7c49fda0484d1dcdc1c4b965fbf75c5ecdf266f976be46c00d570",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stress",
+      "native_o2o_flip",
+      "eligibility_lock_o2o_flip"
+    ]
+  },
+  {
+    "file": "inputs/lock_seed3.csv.gz",
+    "rows": 59228,
+    "sha256": "9cfe6f8d577a8f9f901a5bfffb2e2e4d1a0d10b966793160b78962244da9f942",
+    "columns": [
+      "image_id",
+      "gt_id",
+      "stress",
+      "native_o2o_flip",
+      "eligibility_lock_o2o_flip"
+    ]
+  }
+]

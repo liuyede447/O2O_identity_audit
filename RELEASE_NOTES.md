@@ -1,3 +1,12 @@
+# v3.4.1
+
+Adds a CPU reproduction of the base-margin analyses in Supplementary Section 18
+and Tables S49–S50. Includes the minimum derived inputs, pinned dependencies,
+the analysis code and five archived output tables with a verification command.
+
+The checkpoints and complete dense-grid records are available as [v3.4.0 release
+assets](https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.4.0).
+
 # v3.4.0 release for the revised article
 
 This release builds on v3.3.3 and adds `revision/`, the reproducibility bundle for the results added in the first revision (main Tables 3, 4, 5, 7 and 8, Figures 2-5, and Supplementary Tables S39-S48 and Section 17).

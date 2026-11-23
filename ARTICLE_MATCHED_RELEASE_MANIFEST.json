@@ -1,8 +1,7 @@
 {
-  "status": "ARTICLE_MATCHED_V3.4.0_READY",
-  "version": "3.4.0",
-  "tag": "v3.4.0",
-  "zenodo_doi": "10.5281/zenodo.24459274",
+  "status": "ARTICLE_MATCHED_V3.4.1_READY",
+  "version": "3.4.1",
+  "tag": "v3.4.1",
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
@@ -20,7 +19,8 @@
     "base-defined post-submission correction (data/post_submission_correction_20260908)",
     "corrected Figure 3 renderer (figures/src/rebuild_fig3_corrected.py)",
     "revision/ bundle for the first-revision analyses",
-    "four final-epoch checkpoints (release assets)"
+    "four final-epoch checkpoints (release assets)",
+    "Section 18 base-margin CPU reproduction and reference outputs"
   ],
   "explicit_exclusions": [
     "main.tex",
@@ -33,7 +33,7 @@
     "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "repository_file_count": 999,
+  "repository_file_count": 1019,
   "release_assets": [
     {
       "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
@@ -98,8 +98,9 @@
   ],
   "notes": "Manuscript and Supplement sources/PDFs are intentionally excluded at the author's request. Zenodo assigns the version DOI when this GitHub release is archived; cite the version DOI displayed on that record.",
   "predecessor": {
-    "tag": "v3.3.3",
-    "zenodo_doi": "10.5281/zenodo.22744638"
+    "tag": "v3.4.0",
+    "zenodo_doi": "10.5281/zenodo.24459274"
   },
-  "zenodo_concept_doi": "10.5281/zenodo.22478276"
+  "zenodo_concept_doi": "10.5281/zenodo.22478276",
+  "release_assets_source_tag": "v3.4.0"
 }

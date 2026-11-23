@@ -1,4 +1,6 @@
-# Reproducing the v3.4.0 analyses
+# Reproducing the analyses
+
+The [base-margin reproduction guide](margin_screen/README.md) covers the v3.4.1 addition for Supplementary Section 18 and Tables S49–S50.
 
 Version 3.4.0 of the revision analyses. It extends the v3.3.3 baseline
 release (commit f3faf9bbc8354d127530d882ef4e561af9d17bf1, Zenodo
