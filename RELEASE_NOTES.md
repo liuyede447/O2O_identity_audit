@@ -1,5 +1,7 @@
 # v3.4.1
 
+Version DOI: [10.5281/zenodo.24466302](https://doi.org/10.5281/zenodo.24466302).
+
 Adds a CPU reproduction of the base-margin analyses in Supplementary Section 18
 and Tables S49–S50. Includes the minimum derived inputs, pinned dependencies,
 the analysis code and five archived output tables with a verification command.
