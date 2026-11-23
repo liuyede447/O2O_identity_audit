@@ -2,7 +2,7 @@
   "status": "ARTICLE_MATCHED_V3.4.0_READY",
   "version": "3.4.0",
   "tag": "v3.4.0",
-  "zenodo_doi": null,
+  "zenodo_doi": "10.5281/zenodo.24459274",
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",

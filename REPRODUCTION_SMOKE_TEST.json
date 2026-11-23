@@ -34,5 +34,5 @@
     "Fig5 (o2m_positive_count_scale_controls_v5)"
   ],
   "github_release_assets": "Four seed-0..3 checkpoints and four dense-grid gzip parts; see RELEASE_ASSET_MANIFEST.csv. Uploaded to the GitHub Release, not committed to Git.",
-  "zenodo_doi": null
+  "zenodo_doi": "10.5281/zenodo.24459274"
 }
