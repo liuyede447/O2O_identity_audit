@@ -1,4 +1,4 @@
-# NEUCOM-D-26-20749 revision reproducibility bundle
+# Reproducing the v3.4.0 analyses
 
 Version 3.4.0 of the revision analyses. It extends the v3.3.3 baseline
 release (commit f3faf9bbc8354d127530d882ef4e561af9d17bf1, Zenodo
@@ -39,8 +39,7 @@ minutes on one desktop CPU. The report is written to
 ## Rerun the revision analyses with intervals
 
 The scripts in `source_snapshots/` are the unmodified originals and name their
-inputs by absolute Windows paths such as `G:\revision_20261120\fixed_k` or
-`E:\two_paper\beifen\publication_reproducible`. `revision_inputs.tar.gz`
+inputs by paths from the original run environment. `revision_inputs.tar.gz`
 holds exactly the files those scripts read (42 files, 392 MB uncompressed),
 stored under the same layout with the drive letter as the first directory.
 `revision_inputs_manifest.csv` lists each member with its SHA-256.
@@ -130,7 +129,10 @@ The historical protocol, frozen hashes, selected image list, logs and formal
 results for Supplementary Tables S45 and S46 are in
 source_snapshots/R2_2_heldout_replication/. The original file
 PREREGISTRATION_DRAFT.md keeps its frozen filename and contents. Its SHA-256 was
-recorded before inference in FREEZE_RECORD.json.
+recorded before inference in FREEZE_RECORD.json. The public copy retains the
+freeze timestamp, file hashes and original record digest. It lists filenames
+without local path prefixes. For local file verification, use the paths
+indexed in bundle_frozen_files.json.
 
 To recompute estimates and intervals from the archived derived CSV inputs,
 run these commands from the bundle root with the requirements installed:
@@ -304,11 +306,8 @@ so the test annotations cannot be matched byte for byte against it. The archived
 dependency is in the validation study's replay_sources directory, with its
 hash in conversion_manifest.json.
 
-The local workspace prefix E:/two_paper/beifen/publication_reproducible
-identifies the baseline code checkout and its retained replay directories.
-The prefix G:/revision_20261120 identifies experiment output and converted
-dataset directories. The SHA-256 records preserve these original paths as
-provenance. Archived statistical reruns use the derived tables directly.
+The archive preserves original run paths for provenance. The runner maps those
+paths to the bundled files for statistical reruns.
 For full detector replay, obtain the dataset, use the provided final-epoch
 checkpoint, and map the historical paths to your checkout. The formal
 validation replay used Git Bash and one GPU, with approximately 70 minutes
