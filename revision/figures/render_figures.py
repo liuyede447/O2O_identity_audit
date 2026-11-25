@@ -1,5 +1,6 @@
 """Render the R2.3 artwork from frozen, SHA-verified panel data."""
 from pathlib import Path
+import argparse
 import hashlib
 
 import matplotlib
@@ -14,7 +15,7 @@ import pandas as pd
 HERE = Path(__file__).resolve().parent
 HASHES = {
     2: "380ef2f6688462598dcf4a1d010fd73d0fb0f407777a1d0a4e66f6b765a89ddb",
-    3: "6eca2b91d10c365ab2df08d92b57c4113affb918ebca1233a716ea00c482e78e",
+    3: "d350e0200b8e15b1b55dc5454d5001341a129e8438c9fde3899990573d0a685e",
     4: "1a359e2b9a9802b24d320b42456a634c03166cce9eb8c71708ca6234d10053d7",
 }
 BRANCH = {"O2O": "#1F4E79", "O2M": "#C86718", "Paired": "#805399"}
@@ -115,44 +116,60 @@ def figure_2(data):
             row = data.loc[data.panel.eq("d") & data.x.eq(detector) & data.series.eq(branch)].iloc[0]
             forest(d, row.estimate, 2 - i + (.13 if j == 0 else -.13), row,
                    BRANCH[branch], "o^"[j], opened=bool(j))
-    groups(d, ["O2O", "O2M", "Paired"], top_pad=.90)
+    groups(d, ["O2O", "O2M", "Paired"], top_pad=1.10)
     d.set(xlim=(-33, 43), xlabel=GAP)
     d.legend(handles=[marker_key(name, "#464A50", "o^"[j], bool(j))
-                      for j, name in enumerate(detector_names)], loc="upper right", ncol=2)
-    style(d, "d  Detector comparison", horizontal=True, zero=True)
+                      for j, name in enumerate(detector_names)], loc="upper right",
+             ncol=2, columnspacing=.9, borderpad=.25, handletextpad=.5,
+             frameon=True, facecolor="white", edgecolor="none", framealpha=1)
+    style(d, "d  Detector comparison", horizontal=True)
+    d.vlines(0, -.5, 2.34, color="#767E84", linewidth=.75, zorder=2)
     return fig
 
 
 def figure_3(data):
-    fig, (a, b, c, d) = canvas(126, left=.148, right=.974, bottom=.162,
-                              top=.940, wspace=.46, hspace=.73)
-    lock_styles = [("Native", BRANCH["O2O"], "o"), ("Eligibility locked", CAUSE["Eligibility"], "s")]
-    for i, contract in enumerate(STRESS):
-        pair = data.loc[data.kind.eq("o2o_gap") & data.contract.eq(contract)].set_index("label")
-        a.plot(pair.estimate, [1-i, 1-i], color="#D3D6D8", linewidth=1.2)
-        for label, color, marker in lock_styles:
-            row = pair.loc[label]
-            forest(a, row.estimate, 1-i, row, color, marker, opened=bool(i))
-    groups(a, SHORT_STRESS, top_pad=.76)
+    fig, (a, b, c, d) = canvas(151, left=.167, right=.974, bottom=.145,
+                              top=.935, wspace=.58, hspace=.66)
+    locks = data.loc[data.kind.eq("lock_figure_cohorts")]
+    lock_order = [
+        "1 px: whole (S0)", "1 px: half (S0)", "1 px: val 600",
+        "1 px: val + trans.", "1 px: train + Mosaic", "Eq.: whole (S0)", "Eq.: half (S0)",
+    ]
+    cohorts_a = []
+    for label in lock_order:
+        pair = locks.loc[locks.contract.eq(label)].set_index("label")
+        cohorts_a.append((label, pair.loc["Native"], pair.loc["Eligibility locked"], label.startswith("Eq.")))
+    n_a = len(cohorts_a)
+    for idx, (_, r_nat, r_loc, opened) in enumerate(cohorts_a):
+        y = (n_a - 1) - idx
+        a.plot([r_nat.estimate, r_loc.estimate], [y, y], color="#D3D6D8", linewidth=1.2)
+        forest(a, r_nat.estimate, y, r_nat, BRANCH["O2O"], "o", opened=opened)
+        forest(a, r_loc.estimate, y, r_loc, CAUSE["Eligibility"], "s", opened=opened)
+    groups(a, [x[0] for x in cohorts_a], top_pad=1.05)
     a.set(xlim=(-4, 22), xlabel="O2O scale gap (pp)")
     a.legend(handles=[marker_key("Native", BRANCH["O2O"]),
-                      marker_key("Locked", CAUSE["Eligibility"], "s")], loc="upper right", ncol=2)
+                      marker_key("Locked", CAUSE["Eligibility"], "s")], loc="upper right", ncol=2,
+             borderpad=.2, handletextpad=.4, columnspacing=.9)
     style(a, "a  Eligibility locking", horizontal=True, zero=True)
 
-    composition = data.loc[data.kind.eq("exclusive_first_observed")]
+    composition = data.loc[data.kind.eq("first_divergence_figure_cohorts")]
     order = ["Eligibility", "Within-set rank", "Conflict", "Top-k"]
     hatches = {"Within-set rank": "///", "Conflict": "...", "Top-k": "xx"}
-    for i, contract in enumerate(STRESS):
-        values = composition.loc[composition.contract.eq(contract)].set_index("label").estimate
-        assert np.isclose(values.sum(), 100)
+    bars_b = [
+        (label, rows.set_index("label").estimate.to_dict())
+        for label, rows in composition.groupby("contract", sort=False)
+    ]
+    n_b = len(bars_b)
+    for idx, (_, vals) in enumerate(bars_b):
+        y = (n_b - 1) - idx
+        assert np.isclose(sum(vals.values()), 100.0, atol=0.02)
         left = 0.0
         for label in order:
-            value = values[label]
-            b.barh(1-i, value, left=left, height=.38, color=CAUSE[label],
+            value = vals[label]
+            b.barh(y, value, left=left, height=.52, color=CAUSE[label],
                    edgecolor="white", linewidth=0, hatch=hatches.get(label))
             left += value
-        assert np.isclose(left, 100)
-    groups(b, SHORT_STRESS)
+    groups(b, [x[0] for x in bars_b], top_pad=0.65)
     b.set(xlim=(0, 100), xlabel="First observed stage (%)")
     b.set_xticks([0, 25, 50, 75, 100])
     style(b, "b  Exclusive first divergence", horizontal=True)
@@ -279,7 +296,14 @@ def figure_4(data):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("figures", type=int, nargs="*", metavar="N")
+    selected = set(parser.parse_args().figures or [2, 3, 4])
+    if selected - {2, 3, 4}:
+        parser.error("figure numbers must be 2, 3, or 4")
     for number, draw in [(2, figure_2), (3, figure_3), (4, figure_4)]:
+        if number not in selected:
+            continue
         source = HERE / f"fig{number}_source.csv"
         if hashlib.sha256(source.read_bytes()).hexdigest() != HASHES[number]:
             raise ValueError(f"Source SHA-256 mismatch for {source.name}")

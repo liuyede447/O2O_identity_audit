@@ -12,3 +12,5 @@ data/**/images/
 data/**/labels/
 o2m_rank_set_radius_curve.csv
 .venv/
+/revision/additional_checks/inputs/
+/revision/additional_checks/out/

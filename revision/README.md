@@ -1,8 +1,10 @@
 # Reproducing the analyses
 
+The [v3.4.2 analysis guide](additional_checks/README.md) covers Sections 19–20 and Tables S51–S55, including the half-pixel check.
+
 The [base-margin reproduction guide](margin_screen/README.md) covers the v3.4.1 addition for Supplementary Section 18 and Tables S49–S50.
 
-Version 3.4.0 of the revision analyses. It extends the v3.3.3 baseline
+The revision analyses build on v3.4.0. It extends the v3.3.3 baseline
 release (commit f3faf9bbc8354d127530d882ef4e561af9d17bf1, Zenodo
 10.5281/zenodo.22744638). The baseline covers the results carried over from
 the original submission, as listed in its README; this bundle covers the
@@ -28,7 +30,7 @@ repository) after `pip install -r requirements.txt`.
 | Section 17.1 (matched comparison without 8 px boxes) | `recompute_short_side_endpoint.py` | derived |
 | Table S48 (stride-8 edge ties) | `boundary8_mechanism.py`, then `boundary8_ties.py` (see Section "Short side at the smallest stride") | needs the validation images and labels |
 | Figures 2-4 | `python figures/render_figures.py` | derived |
-| Figure 5 | `python figures/render_fig5_s1_revision.py --analysis-root figures/analysis_root --output figures/out` | derived |
+| Figure 5 | `python figures/render_fig5_s1_revision.py --analysis-root figures/analysis_root --output figures/out --figure5-only` | derived |
 | Figure 1, Figure S1 | not redistributed: they contain benchmark image pixels | - |
 | Every other table and figure | the v3.3.3 release | see its README |
 
@@ -222,7 +224,7 @@ records it reads (the Rank-Set summaries, the fixed-branch replay rows and the
 baseline layout. Install `requirements-figures.txt` as well.
 
     python figures/render_figures.py
-    python figures/render_fig5_s1_revision.py --analysis-root figures/analysis_root --output figures/out
+    python figures/render_fig5_s1_revision.py --analysis-root figures/analysis_root --output figures/out --figure5-only
 
 The same script then draws Figure S1, which needs the AI-TOD-v2 tile
 `0000170_00401_d_0000001__160_0.png` at

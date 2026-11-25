@@ -1,7 +1,7 @@
 {
   "title": "Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection",
   "upload_type": "software",
-  "description": "Code and derived audit data for Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection. Version 3.4.1 adds base-margin competing-risk and out-of-fold endpoint analyses from Supplementary Section 18 and Tables S49–S50. The CPU runner verifies the archived results from derived inputs.",
+  "description": "Code and derived audit data for Stress-Dependent Assignment Stability in Aerial Tiny-Object Detection. Version 3.4.2 adds the validation-split margin replication, screening by margin availability, augmentation and first-divergence controls, and the paired half-pixel check.",
   "creators": [
     {
       "name": "Liu, Yede",
@@ -33,12 +33,12 @@
       "scheme": "url"
     },
     {
-      "identifier": "10.5281/zenodo.24459274",
+      "identifier": "10.5281/zenodo.24466302",
       "relation": "isNewVersionOf",
       "scheme": "doi",
       "resource_type": "software"
     }
   ],
-  "version": "3.4.1",
-  "notes": "Archive of GitHub release v3.4.1. All-versions concept DOI: 10.5281/zenodo.22478276."
+  "version": "3.4.2",
+  "notes": "Archive of GitHub release v3.4.2. All-versions concept DOI: 10.5281/zenodo.22478276."
 }

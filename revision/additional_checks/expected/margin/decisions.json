@@ -1,0 +1,41 @@
+[
+ {
+  "test": "P1",
+  "name": "AUC gain, native change, scaled",
+  "point": 0.10412904505590126,
+  "ci": [
+   0.08867209817270105,
+   0.12076241970568433
+  ],
+  "rule": "lower bound > 0",
+  "met": true,
+  "formally_tested": true,
+  "confirmed": true
+ },
+ {
+  "test": "P2",
+  "name": "AUC gain lock-persistent minus lock-removed, scaled",
+  "point": 0.17181064974524085,
+  "ci": [
+   0.15559688201816285,
+   0.18828848783733523
+  ],
+  "rule": "lower bound > 0",
+  "met": true,
+  "formally_tested": true,
+  "confirmed": true
+ },
+ {
+  "test": "P3",
+  "name": "recall at 20% budget, margin minus M2, native change, scaled",
+  "point": 0.17122197994148325,
+  "ci": [
+   0.13330454900632865,
+   0.210273121036179
+  ],
+  "rule": "lower bound > 0",
+  "met": true,
+  "formally_tested": true,
+  "confirmed": true
+ }
+]

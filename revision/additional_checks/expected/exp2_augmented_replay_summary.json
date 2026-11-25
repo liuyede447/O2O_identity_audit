@@ -1,0 +1,194 @@
+{
+  "seed": 20261124,
+  "train_images_sampled": 1000,
+  "augmented_train": {
+    "n_focal_all": 20755,
+    "n_base_defined_both_legal": 20612,
+    "geometry_diagnostics_t_8_16": {
+      "n": 16456,
+      "integer_box_pct": 0.0,
+      "s8_edge_coincidence_pct": 0.006076810889645114,
+      "short_eq8_pct": 0.006076810889645114,
+      "short_lt8_pct": 35.25157997083131,
+      "short_gt8_pct": 64.74234321827905,
+      "rule_toggles_1px_pct": 0.0,
+      "s8_changes_1px_pct": 57.3954788526981,
+      "s8_changes_scaled_pct": 45.2175498298493
+    },
+    "size_bins": {
+      "t_8_16": {
+        "n": 16315,
+        "fixed_native_pct": 18.976402083971806,
+        "fixed_lock_pct": 12.001225865767697,
+        "fixed_removed_pp": 6.9751762182041075,
+        "scaled_native_pct": 12.47931351517009,
+        "scaled_lock_pct": 8.286852589641434,
+        "scaled_removed_pp": 4.192460925528654
+      },
+      "s_16_32": {
+        "n": 4297,
+        "fixed_native_pct": 5.701652315569001,
+        "fixed_lock_pct": 5.23621131021643,
+        "fixed_removed_pp": 0.46544100535257155,
+        "scaled_native_pct": 6.585990225738887,
+        "scaled_lock_pct": 5.980916918780545,
+        "scaled_removed_pp": 0.605073306958343
+      },
+      "fixed_native_gap_pp": 13.274749768402804,
+      "fixed_lock_gap_pp": 6.765014555551267,
+      "fixed_gap_attenuation_pp": 6.509735212851537,
+      "scaled_native_gap_pp": 5.893323289431202,
+      "scaled_lock_gap_pp": 2.3059356708608894
+    },
+    "t_8_16_by_short_band": {
+      "short_lt8": {
+        "n": 5748,
+        "fixed_native_pct": 21.416144745998608,
+        "fixed_lock_pct": 19.015309672929714,
+        "fixed_removed_pp": 2.4008350730688934,
+        "scaled_native_pct": 12.630480167014612,
+        "scaled_lock_pct": 11.464857341684063,
+        "scaled_removed_pp": 1.1656228253305498
+      },
+      "short_eq8": {
+        "n": 1,
+        "fixed_native_pct": 0.0,
+        "fixed_lock_pct": 0.0,
+        "fixed_removed_pp": 0.0,
+        "scaled_native_pct": 0.0,
+        "scaled_lock_pct": 0.0,
+        "scaled_removed_pp": 0.0
+      },
+      "short_gt8": {
+        "n": 10566,
+        "fixed_native_pct": 17.650955896271057,
+        "fixed_lock_pct": 8.186636380844217,
+        "fixed_removed_pp": 9.46431951542684,
+        "scaled_native_pct": 12.398258565209161,
+        "scaled_lock_pct": 6.5587734241908,
+        "scaled_removed_pp": 5.83948514101836
+      }
+    },
+    "t_8_16_by_mechanism_1px": {
+      "rule_toggles_1px_yes": {
+        "n": 0
+      },
+      "s8_changes_1px_only": {
+        "n": 9361,
+        "fixed_native_pct": 20.692233735711994,
+        "fixed_lock_pct": 11.868390129259694,
+        "fixed_removed_pp": 8.823843606452302,
+        "scaled_native_pct": 14.026279243670547,
+        "scaled_lock_pct": 8.471317166969342,
+        "scaled_removed_pp": 5.554962076701207
+      },
+      "no_s8_change_1px": {
+        "n": 6954,
+        "fixed_native_pct": 16.666666666666664,
+        "fixed_lock_pct": 12.180040264595917,
+        "fixed_removed_pp": 4.486626402070751,
+        "scaled_native_pct": 10.396893874029335,
+        "scaled_lock_pct": 8.038538970376761,
+        "scaled_removed_pp": 2.358354903652574
+      }
+    }
+  },
+  "clean_val_discovery": {
+    "n_focal_all": 7444,
+    "n_base_defined_both_legal": 7263,
+    "geometry_diagnostics_t_8_16": {
+      "n": 6449,
+      "integer_box_pct": 100.0,
+      "s8_edge_coincidence_pct": 34.48596681656071,
+      "short_eq8_pct": 27.244534036284694,
+      "short_lt8_pct": 17.59962784927896,
+      "short_gt8_pct": 55.15583811443635,
+      "rule_toggles_1px_pct": 0.031012560086835166,
+      "s8_changes_1px_pct": 63.32764769731741,
+      "s8_changes_scaled_pct": 36.78089626298651
+    },
+    "size_bins": {
+      "t_8_16": {
+        "n": 6271,
+        "fixed_native_pct": 23.281773241907192,
+        "fixed_lock_pct": 9.041620156274917,
+        "fixed_removed_pp": 14.240153085632276,
+        "scaled_native_pct": 10.04624461808324,
+        "scaled_lock_pct": 6.282889491309201,
+        "scaled_removed_pp": 3.7633551267740395
+      },
+      "s_16_32": {
+        "n": 992,
+        "fixed_native_pct": 7.762096774193548,
+        "fixed_lock_pct": 5.544354838709677,
+        "fixed_removed_pp": 2.217741935483871,
+        "scaled_native_pct": 8.971774193548388,
+        "scaled_lock_pct": 6.451612903225806,
+        "scaled_removed_pp": 2.5201612903225805
+      },
+      "fixed_native_gap_pp": 15.519676467713644,
+      "fixed_lock_gap_pp": 3.4972653175652395,
+      "fixed_gap_attenuation_pp": 12.022411150148404,
+      "scaled_native_gap_pp": 1.0744704245348515,
+      "scaled_lock_gap_pp": -0.16872341191660478
+    },
+    "t_8_16_by_short_band": {
+      "short_lt8": {
+        "n": 1126,
+        "fixed_native_pct": 18.650088809946713,
+        "fixed_lock_pct": 15.985790408525755,
+        "fixed_removed_pp": 2.664298401420959,
+        "scaled_native_pct": 9.769094138543517,
+        "scaled_lock_pct": 9.236234458259325,
+        "scaled_removed_pp": 0.5328596802841918
+      },
+      "short_eq8": {
+        "n": 1619,
+        "fixed_native_pct": 36.81284743668932,
+        "fixed_lock_pct": 7.164916615194565,
+        "fixed_removed_pp": 29.64793082149475,
+        "scaled_native_pct": 12.106238418777023,
+        "scaled_lock_pct": 4.694255713403336,
+        "scaled_removed_pp": 7.4119827053736875
+      },
+      "short_gt8": {
+        "n": 3526,
+        "fixed_native_pct": 18.547929665343165,
+        "fixed_lock_pct": 7.685762904140669,
+        "fixed_removed_pp": 10.862166761202497,
+        "scaled_native_pct": 9.188882586500284,
+        "scaled_lock_pct": 6.0692002268859895,
+        "scaled_removed_pp": 3.119682359614294
+      }
+    },
+    "t_8_16_by_mechanism_1px": {
+      "rule_toggles_1px_yes": {
+        "n": 2,
+        "fixed_native_pct": 50.0,
+        "fixed_lock_pct": 50.0,
+        "fixed_removed_pp": 0.0,
+        "scaled_native_pct": 50.0,
+        "scaled_lock_pct": 50.0,
+        "scaled_removed_pp": 0.0
+      },
+      "s8_changes_1px_only": {
+        "n": 3935,
+        "fixed_native_pct": 29.758576874205843,
+        "fixed_lock_pct": 8.970775095298603,
+        "fixed_removed_pp": 20.78780177890724,
+        "scaled_native_pct": 11.664548919949175,
+        "scaled_lock_pct": 6.2770012706480305,
+        "scaled_removed_pp": 5.387547649301143
+      },
+      "no_s8_change_1px": {
+        "n": 2334,
+        "fixed_native_pct": 12.339331619537274,
+        "fixed_lock_pct": 9.125964010282777,
+        "fixed_removed_pp": 3.2133676092544987,
+        "scaled_native_pct": 7.28363324764353,
+        "scaled_lock_pct": 6.2553556126820915,
+        "scaled_removed_pp": 1.0282776349614395
+      }
+    }
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "parity_gate_25_images": {
+    "fixed_1px": {
+      "checked_rows": 2029,
+      "mismatches": {
+        "o2o_flip": 0,
+        "eligibility_pair_changed": 0,
+        "topk_pair_changed": 0,
+        "conflict_pair_changed": 0,
+        "pair_rank_reversal": 0,
+        "first_divergence": 0
+      }
+    },
+    "equivalent_side": {
+      "checked_rows": 2028,
+      "mismatches": {
+        "o2o_flip": 0,
+        "eligibility_pair_changed": 0,
+        "topk_pair_changed": 0,
+        "conflict_pair_changed": 0,
+        "pair_rank_reversal": 0,
+        "first_divergence": 0
+      }
+    }
+  },
+  "discovery_300": {
+    "seed0_published_ref": {
+      "equivalent_side": {
+        "n_directions": 29612,
+        "n_base_defined_exchanges": 988,
+        "first_divergence_pct": {
+          "eligibility_boundary": 40.184624271222354,
+          "topk_membership_transition": 0.10133850063173697,
+          "conflict_reassignment": 2.7330631697162913,
+          "within_set_geometry_rank_reversal": 56.980974058429595,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 40.184624271222354,
+        "anystage_within_set_rank_pct": 97.26755209975181,
+        "anystage_both_pct": 39.67854703753179,
+        "all_flips_first_div_elig_pct": 51.00534607423877,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 867,
+            "first_div_pct": {
+              "eligibility_boundary": 41.18063688192929,
+              "topk_membership_transition": 0.1155012113189537,
+              "conflict_reassignment": 2.7685227848827054,
+              "within_set_geometry_rank_reversal": 55.935339121869035,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 41.18063688192929,
+            "anystage_rev_pct": 97.11667726115277
+          },
+          "s_16_32": {
+            "n_exchanges": 121,
+            "first_div_pct": {
+              "eligibility_boundary": 33.05785123966941,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.479338842975206,
+              "within_set_geometry_rank_reversal": 64.46280991735533,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 33.05785123966941,
+            "anystage_rev_pct": 98.34710743801656
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 29616,
+        "n_base_defined_exchanges": 1931,
+        "first_divergence_pct": {
+          "eligibility_boundary": 63.90756984272928,
+          "topk_membership_transition": 0.0,
+          "conflict_reassignment": 1.8629728882701553,
+          "within_set_geometry_rank_reversal": 34.22945726900054,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 63.90756984272928,
+        "anystage_within_set_rank_pct": 85.34860425676311,
+        "anystage_both_pct": 50.70487311728215,
+        "all_flips_first_div_elig_pct": 67.09427047629606,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1832,
+            "first_div_pct": {
+              "eligibility_boundary": 65.56234677771434,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 1.854463137227031,
+              "within_set_geometry_rank_reversal": 32.583190085058625,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 65.56234677771434,
+            "anystage_rev_pct": 84.61029310119955
+          },
+          "s_16_32": {
+            "n_exchanges": 99,
+            "first_div_pct": {
+              "eligibility_boundary": 33.33333333333333,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.02020202020202,
+              "within_set_geometry_rank_reversal": 64.64646464646464,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 33.33333333333333,
+            "anystage_rev_pct": 98.98989898989899
+          }
+        }
+      }
+    },
+    "seed1": {
+      "equivalent_side": {
+        "n_directions": 29612,
+        "n_base_defined_exchanges": 970,
+        "first_divergence_pct": {
+          "eligibility_boundary": 40.828872500240564,
+          "topk_membership_transition": 0.3096989983818227,
+          "conflict_reassignment": 1.651727991369721,
+          "within_set_geometry_rank_reversal": 57.20970051000788,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 40.828872500240564,
+        "anystage_within_set_rank_pct": 97.62626778418846,
+        "anystage_both_pct": 40.210101275259355,
+        "all_flips_first_div_elig_pct": 51.725532156043116,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 863,
+            "first_div_pct": {
+              "eligibility_boundary": 41.256743969750204,
+              "topk_membership_transition": 0.34815607836993323,
+              "conflict_reassignment": 1.8568324179729772,
+              "within_set_geometry_rank_reversal": 56.53826753390688,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 41.256743969750204,
+            "anystage_rev_pct": 97.56361205299763
+          },
+          "s_16_32": {
+            "n_exchanges": 107,
+            "first_div_pct": {
+              "eligibility_boundary": 37.383177570093444,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 0.0,
+              "within_set_geometry_rank_reversal": 62.61682242990651,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 37.383177570093444,
+            "anystage_rev_pct": 98.13084112149532
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 29616,
+        "n_base_defined_exchanges": 1935,
+        "first_divergence_pct": {
+          "eligibility_boundary": 64.29259835009546,
+          "topk_membership_transition": 0.1035118234531914,
+          "conflict_reassignment": 1.1897575050693068,
+          "within_set_geometry_rank_reversal": 34.41413232138203,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 64.29259835009546,
+        "anystage_within_set_rank_pct": 85.94375980820737,
+        "anystage_both_pct": 51.374359751645564,
+        "all_flips_first_div_elig_pct": 67.59874664109556,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1845,
+            "first_div_pct": {
+              "eligibility_boundary": 65.53372327700023,
+              "topk_membership_transition": 0.10856900238657932,
+              "conflict_reassignment": 1.247884358502601,
+              "within_set_geometry_rank_reversal": 33.10982336211058,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 65.53372327700023,
+            "anystage_rev_pct": 85.36559642187589
+          },
+          "s_16_32": {
+            "n_exchanges": 90,
+            "first_div_pct": {
+              "eligibility_boundary": 38.8888888888889,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 0.0,
+              "within_set_geometry_rank_reversal": 61.11111111111109,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 38.8888888888889,
+            "anystage_rev_pct": 97.77777777777779
+          }
+        }
+      }
+    },
+    "seed2": {
+      "equivalent_side": {
+        "n_directions": 29612,
+        "n_base_defined_exchanges": 1030,
+        "first_divergence_pct": {
+          "eligibility_boundary": 39.61458771641121,
+          "topk_membership_transition": 0.09720885600452159,
+          "conflict_reassignment": 3.108322605641723,
+          "within_set_geometry_rank_reversal": 57.17988082194251,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 39.61458771641121,
+        "anystage_within_set_rank_pct": 97.18212356912035,
+        "anystage_both_pct": 39.129133633014334,
+        "all_flips_first_div_elig_pct": 50.5476353492095,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 907,
+            "first_div_pct": {
+              "eligibility_boundary": 40.467611147651645,
+              "topk_membership_transition": 0.11041026878591291,
+              "conflict_reassignment": 2.867985596191792,
+              "within_set_geometry_rank_reversal": 56.553992987370634,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 40.467611147651645,
+            "anystage_rev_pct": 97.46190451404497
+          },
+          "s_16_32": {
+            "n_exchanges": 123,
+            "first_div_pct": {
+              "eligibility_boundary": 33.33333333333332,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 4.878048780487803,
+              "within_set_geometry_rank_reversal": 61.78861788617882,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 33.33333333333332,
+            "anystage_rev_pct": 95.1219512195122
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 29616,
+        "n_base_defined_exchanges": 1939,
+        "first_divergence_pct": {
+          "eligibility_boundary": 64.67399394425132,
+          "topk_membership_transition": 0.10329635262423463,
+          "conflict_reassignment": 1.700940457953312,
+          "within_set_geometry_rank_reversal": 33.52176924517112,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 64.67399394425132,
+        "anystage_within_set_rank_pct": 85.71697352754279,
+        "anystage_both_pct": 51.62864223400498,
+        "all_flips_first_div_elig_pct": 68.13098266930142,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1838,
+            "first_div_pct": {
+              "eligibility_boundary": 66.43517216616927,
+              "topk_membership_transition": 0.10898132624435752,
+              "conflict_reassignment": 1.6310806958068453,
+              "within_set_geometry_rank_reversal": 31.824765811779514,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 66.43517216616927,
+            "anystage_rev_pct": 85.09437101719473
+          },
+          "s_16_32": {
+            "n_exchanges": 101,
+            "first_div_pct": {
+              "eligibility_boundary": 32.67326732673266,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.9702970297029694,
+              "within_set_geometry_rank_reversal": 64.35643564356432,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 32.67326732673266,
+            "anystage_rev_pct": 97.02970297029701
+          }
+        }
+      }
+    },
+    "seed3": {
+      "equivalent_side": {
+        "n_directions": 29612,
+        "n_base_defined_exchanges": 975,
+        "first_divergence_pct": {
+          "eligibility_boundary": 40.313847295999615,
+          "topk_membership_transition": 0.30811057061344077,
+          "conflict_reassignment": 3.6935855047181256,
+          "within_set_geometry_rank_reversal": 55.68445662866881,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 40.313847295999615,
+        "anystage_within_set_rank_pct": 95.58811338762436,
+        "anystage_both_pct": 39.698249711879924,
+        "all_flips_first_div_elig_pct": 51.56030549747114,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 874,
+            "first_div_pct": {
+              "eligibility_boundary": 40.96895674800102,
+              "topk_membership_transition": 0.34377002767348724,
+              "conflict_reassignment": 3.662705944847828,
+              "within_set_geometry_rank_reversal": 55.02456727947766,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 40.96895674800102,
+            "anystage_rev_pct": 95.6504497248612
+          },
+          "s_16_32": {
+            "n_exchanges": 101,
+            "first_div_pct": {
+              "eligibility_boundary": 34.653465346534645,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 3.9603960396039595,
+              "within_set_geometry_rank_reversal": 61.38613861386135,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 34.653465346534645,
+            "anystage_rev_pct": 95.04950495049502
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 29616,
+        "n_base_defined_exchanges": 1902,
+        "first_divergence_pct": {
+          "eligibility_boundary": 64.83196237154637,
+          "topk_membership_transition": 0.0,
+          "conflict_reassignment": 2.4706084121678664,
+          "within_set_geometry_rank_reversal": 32.697429216285755,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 64.83196237154637,
+        "anystage_within_set_rank_pct": 84.54481448481837,
+        "anystage_both_pct": 51.47976240757714,
+        "all_flips_first_div_elig_pct": 68.29832767688926,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1818,
+            "first_div_pct": {
+              "eligibility_boundary": 66.12433934785354,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.3645749179829205,
+              "within_set_geometry_rank_reversal": 31.511085734163533,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 66.12433934785354,
+            "anystage_rev_pct": 84.105056627889
+          },
+          "s_16_32": {
+            "n_exchanges": 84,
+            "first_div_pct": {
+              "eligibility_boundary": 36.904761904761926,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 4.761904761904764,
+              "within_set_geometry_rank_reversal": 58.33333333333334,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 36.904761904761926,
+            "anystage_rev_pct": 94.04761904761904
+          }
+        }
+      }
+    }
+  },
+  "heldout_600": {
+    "seed0": {
+      "equivalent_side": {
+        "n_directions": 63057,
+        "n_base_defined_exchanges": 2018,
+        "first_divergence_pct": {
+          "eligibility_boundary": 38.90535945683553,
+          "topk_membership_transition": 0.39633804229518477,
+          "conflict_reassignment": 3.2207403434507476,
+          "within_set_geometry_rank_reversal": 57.47756215741852,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 38.90535945683553,
+        "anystage_within_set_rank_pct": 96.77950653145044,
+        "anystage_both_pct": 38.558563669827244,
+        "all_flips_first_div_elig_pct": 49.40506704892896,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1776,
+            "first_div_pct": {
+              "eligibility_boundary": 40.93661969551187,
+              "topk_membership_transition": 0.45028810063364977,
+              "conflict_reassignment": 3.2651496892722442,
+              "within_set_geometry_rank_reversal": 55.347942514582215,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 40.93661969551187,
+            "anystage_rev_pct": 96.7351307905669
+          },
+          "s_16_32": {
+            "n_exchanges": 242,
+            "first_div_pct": {
+              "eligibility_boundary": 23.982934325461013,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.894492073762536,
+              "within_set_geometry_rank_reversal": 73.12257360077645,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 23.982934325461013,
+            "anystage_rev_pct": 97.10550792623746
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 63068,
+        "n_base_defined_exchanges": 4056,
+        "first_divergence_pct": {
+          "eligibility_boundary": 64.96629373251085,
+          "topk_membership_transition": 0.3204701851652065,
+          "conflict_reassignment": 2.045932437604037,
+          "within_set_geometry_rank_reversal": 32.667303644719915,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 64.96629373251085,
+        "anystage_within_set_rank_pct": 84.27096309936115,
+        "anystage_both_pct": 51.06130640004543,
+        "all_flips_first_div_elig_pct": 67.9435489436695,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 3857,
+            "first_div_pct": {
+              "eligibility_boundary": 67.07298747599111,
+              "topk_membership_transition": 0.3369990410175894,
+              "conflict_reassignment": 2.0218650934765985,
+              "within_set_geometry_rank_reversal": 30.56814838951469,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 67.07298747599111,
+            "anystage_rev_pct": 83.66705256144456
+          },
+          "s_16_32": {
+            "n_exchanges": 199,
+            "first_div_pct": {
+              "eligibility_boundary": 24.120603015075375,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 2.5125628140703515,
+              "within_set_geometry_rank_reversal": 73.36683417085428,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 24.120603015075375,
+            "anystage_rev_pct": 95.97989949748744
+          }
+        }
+      }
+    },
+    "seed0_last": {
+      "equivalent_side": {
+        "n_directions": 63057,
+        "n_base_defined_exchanges": 1973,
+        "first_divergence_pct": {
+          "eligibility_boundary": 39.33313093796542,
+          "topk_membership_transition": 0.5066766520921078,
+          "conflict_reassignment": 4.003376758906552,
+          "within_set_geometry_rank_reversal": 56.15681565103589,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 39.33313093796542,
+        "anystage_within_set_rank_pct": 96.0475433892542,
+        "anystage_both_pct": 39.02912494671016,
+        "all_flips_first_div_elig_pct": 49.920294339633415,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 1752,
+            "first_div_pct": {
+              "eligibility_boundary": 40.869449733405666,
+              "topk_membership_transition": 0.5705660992223281,
+              "conflict_reassignment": 4.051730104019998,
+              "within_set_geometry_rank_reversal": 54.508254063352005,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 40.869449733405666,
+            "anystage_rev_pct": 95.94855421579659
+          },
+          "s_16_32": {
+            "n_exchanges": 221,
+            "first_div_pct": {
+              "eligibility_boundary": 27.149321266968318,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 3.6199095022624426,
+              "within_set_geometry_rank_reversal": 69.23076923076923,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 27.149321266968318,
+            "anystage_rev_pct": 96.83257918552036
+          }
+        }
+      },
+      "fixed_1px": {
+        "n_directions": 63068,
+        "n_base_defined_exchanges": 4006,
+        "first_divergence_pct": {
+          "eligibility_boundary": 65.9020739642666,
+          "topk_membership_transition": 0.2995151411726595,
+          "conflict_reassignment": 2.3211335371493096,
+          "within_set_geometry_rank_reversal": 31.477277357411424,
+          "active_disappearance": 0.0,
+          "compound_or_other": 0.0
+        },
+        "anystage_eligibility_pct": 65.9020739642666,
+        "anystage_within_set_rank_pct": 83.90005081182353,
+        "anystage_both_pct": 51.873589824303025,
+        "all_flips_first_div_elig_pct": 68.80778888594345,
+        "by_size_bin": {
+          "t_8_16": {
+            "n_exchanges": 3824,
+            "first_div_pct": {
+              "eligibility_boundary": 67.70432859546084,
+              "topk_membership_transition": 0.31376543639666393,
+              "conflict_reassignment": 2.2224346131121515,
+              "within_set_geometry_rank_reversal": 29.75947135503032,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 67.70432859546084,
+            "anystage_rev_pct": 83.3693246003383
+          },
+          "s_16_32": {
+            "n_exchanges": 182,
+            "first_div_pct": {
+              "eligibility_boundary": 28.021978021978015,
+              "topk_membership_transition": 0.0,
+              "conflict_reassignment": 4.395604395604395,
+              "within_set_geometry_rank_reversal": 67.58241758241758,
+              "active_disappearance": 0.0,
+              "compound_or_other": 0.0
+            },
+            "anystage_elig_pct": 28.021978021978015,
+            "anystage_rev_pct": 95.05494505494505
+          }
+        }
+      }
+    }
+  }
+}

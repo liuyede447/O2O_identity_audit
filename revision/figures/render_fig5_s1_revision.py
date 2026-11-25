@@ -41,6 +41,11 @@ def set_legend(ax, labels, **kw):
 
 def apply_fig5_layout(fig):
     a, b, c, d = fig.axes
+    for axes, letter in zip((a, b, c, d), "abcd", strict=True):
+        for text in list(axes.texts):
+            if text.get_text() == letter:
+                text.remove()
+    a.set_title("a  Rank and set change types", loc="left", pad=20)
     case_centres = [[.17 + .31 * case + .067 * value for value in range(3)]
                     for case in range(3)]
     for index, patch in enumerate(a.patches):
@@ -72,10 +77,10 @@ def apply_fig5_layout(fig):
     for text in list(b.texts):
         if text.get_text() in {"SET PERSISTENCE", "RANK TURNOVER"}:
             text.remove()
-    b.set_title("Native rank and set changes", loc="left", pad=20)
+    b.set_title("b  Native rank and set changes", loc="left", pad=20)
     set_legend(b, ["Fixed 1 px", "Eq. area"], loc="lower left", bbox_to_anchor=(0, 1.015), ncol=2)
     b.set_xlabel("16–32 minus 8–16 px (pp)")
-    c.set_title("Positive-count distribution", loc="left", pad=20)
+    c.set_title("c  Positive-count distribution", loc="left", pad=20)
     # Match the size symbols in Figure 4(d). Move the paired stems apart
     # within each integer count so the low-proportion markers stay distinct.
     size_color = "#805399"
@@ -89,7 +94,7 @@ def apply_fig5_layout(fig):
         stems.set_color(size_color)
         stems.set_segments([segment + (offset, 0) for segment in stems.get_segments()])
     set_legend(c, ["8–16 px", "16–32 px"], loc="lower left", bbox_to_anchor=(0, 1.015), ncol=2)
-    d.set_title("Support and count adjustment", loc="left", pad=20)
+    d.set_title("d  Support and count adjustment", loc="left", pad=20)
     set_legend(d, ["Full", "Overlap", "Std. overlap"], loc="lower left", bbox_to_anchor=(0, 1.015), ncol=3)
     d.set_xlabel("16–32 minus 8–16 px (pp)")
     fig.set_size_inches(178/25.4, 135/25.4)
@@ -152,6 +157,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--analysis-root", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--figure5-only", action="store_true")
     args = parser.parse_args()
     baseline = args.analysis_root.resolve() / "figures_final" / "src"
     sys.path.insert(0, str(baseline))
@@ -179,6 +185,10 @@ def main() -> None:
     f5_validation.update({"figure":"Fig5","source_rows":len(rows),
                           "contrast_orientation":"16–32 minus 8–16 px in b and d",
                           "source_artifacts":plot_fig5.verify(),"original_plot_script_sha256":coverage(baseline/"plot_fig5.py")})
+
+    if args.figure5_only:
+        (out / "Figure_5.validation.json").write_text(json.dumps(f5_validation, indent=2) + "\n", encoding="utf-8")
+        return
 
     trace, _, replay, verified = plot_figs1.load_and_verify_sources()
     for result in [plot_figs1.validate_identities(trace,replay), plot_figs1.validate_shift_coordinates(trace)]:
@@ -221,7 +231,8 @@ def main() -> None:
     for ax in fig.axes:
         t = ax.get_title(loc="left")
         if not t: continue
-        t = t.replace("Identity-disappearance departure", "Identity disappearance").replace("assigned O2O ", "O2O ")
+        t = t.replace("Identity-disappearance departure", "Identity disappears")
+        t = t.replace("Fragile", "Identity change", 1).replace("assigned O2O ", "O2O ")
         ax.set_title(t.replace("undefined","none"), loc="left", pad=4)
     fig.subplots_adjust(left=.035,right=.992,top=.903,bottom=.093,hspace=.31,wspace=.08)
     fig.canvas.draw()

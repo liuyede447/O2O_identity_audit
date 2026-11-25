@@ -1,7 +1,7 @@
 {
-  "status": "ARTICLE_MATCHED_V3.4.1_READY",
-  "version": "3.4.1",
-  "tag": "v3.4.1",
+  "status": "ARTICLE_MATCHED_V3.4.2",
+  "version": "3.4.2",
+  "tag": "v3.4.2",
   "article_manuscript_sources_in_repo": false,
   "required_content": [
     "code snapshot",
@@ -20,7 +20,8 @@
     "corrected Figure 3 renderer (figures/src/rebuild_fig3_corrected.py)",
     "revision/ bundle for the first-revision analyses",
     "four final-epoch checkpoints (release assets)",
-    "Section 18 base-margin CPU reproduction and reference outputs"
+    "Section 18 base-margin CPU reproduction and reference outputs",
+    "Portable CPU scripts, checksummed derived inputs and reference outputs for Sections 19–20 (S51–S55)"
   ],
   "explicit_exclusions": [
     "main.tex",
@@ -33,7 +34,7 @@
     "Figure 1/Figure S1 image-bearing renders",
     "raw prediction dumps"
   ],
-  "repository_file_count": 1019,
+  "repository_file_count": 1051,
   "release_assets": [
     {
       "name": "boundary_full_grid_1024_o2m_rank_set_radius_curve.csv.gz.part01",
@@ -103,5 +104,6 @@
   },
   "zenodo_concept_doi": "10.5281/zenodo.22478276",
   "release_assets_source_tag": "v3.4.0",
-  "zenodo_doi": "10.5281/zenodo.24466302"
+  "zenodo_doi": "10.5281/zenodo.24466302",
+  "release_asset_source": "https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.4.0"
 }

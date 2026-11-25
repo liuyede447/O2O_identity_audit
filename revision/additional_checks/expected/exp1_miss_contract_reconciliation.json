@@ -1,0 +1,19 @@
+{
+  "n_overlap_6410": 6410,
+  "recomputed_800_fp32_vs_discovery_per_gt_max_abs_iou_diff": 1.1102230246251565e-16,
+  "mismatch_ext_miss_vs_recomputed_800_fp32": 0,
+  "mismatch_oof_fn_vs_ext_or_800_fp32": 163,
+  "mismatch_oof_fn_vs_832_fp16_pad16": 33,
+  "mismatch_oof_fn_vs_832_fp32_pad16": 2,
+  "mismatch_800_fp32_vs_832_fp16_pad16": 166,
+  "mismatch_832_fp16_vs_832_fp32": 31,
+  "discovery_miss_rate_published_oof_pct": 9.799377896625764,
+  "discovery_miss_rate_unified_800_fp32_pct": 9.658623559003507,
+  "discovery_unified_n_gt": 6410,
+  "discovery_unified_auc_M2": 0.9502604762366362,
+  "discovery_unified_auc_M3clip": 0.9498058207407396,
+  "discovery_unified_delta_auc": -0.00045465549589662757,
+  "overlap6410_unified_auc_M2": 0.9502604762366362,
+  "overlap6410_unified_auc_M3clip": 0.9498058207407396,
+  "overlap6410_unified_delta_auc": -0.00045465549589662757
+}

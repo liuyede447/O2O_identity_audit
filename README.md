@@ -2,7 +2,7 @@
 
 Reproducibility materials for an audit of how controlled annotation shifts affect label assignment in aerial tiny-object detectors. The audit freezes detector predictions and replays each native assignment rule. It reports candidate eligibility, positive-set membership and ranking as distinct measurements.
 
-[GitHub release v3.4.1](https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.4.1) · [Zenodo archive v3.4.1](https://doi.org/10.5281/zenodo.24466302) · [Revision reproduction guide](revision/README.md)
+[GitHub release v3.4.2](https://github.com/liuyede447/O2O_identity_audit/releases/tag/v3.4.2) · [Zenodo collection](https://doi.org/10.5281/zenodo.22478276) · [Revision reproduction guide](revision/README.md)
 
 ## Reproduce results from archived inputs
 
@@ -13,6 +13,8 @@ python scripts/verify_release.py
 python -m pip install -r revision/requirements.txt
 python -B revision/rerun_revision_analyses.py --output-dir rerun_check
 ```
+
+For the new margin replication and coordinate controls in Supplementary Tables S51–S55, see the [additional analysis guide](revision/additional_checks/README.md).
 
 For the base-margin results in Supplementary Tables S49–S50, see the [CPU reproduction instructions](revision/margin_screen/README.md).
 
